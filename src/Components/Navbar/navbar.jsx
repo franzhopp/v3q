@@ -9,10 +9,18 @@ import "../Section/section.jsx";
 // import Home from "../Hompage/homepage";
 
 const Navbar = () => {
+  const [isAnimating, setIsAnimating] = useState(false);
   const [scrollNavbar, setScrollNavbar] = useState();
   const [toggleMenu, setToggleMenu] = useState(false);
 
-  // Fonctionnalité du toggle de la liste/navbar :
+  const handleAnimateButtonClick = () => {
+    setIsAnimating(true);
+
+    setTimeout(() => {
+      setIsAnimating(false);
+    }, 1000);
+  };
+
   const toggleMenuMobile = () => {
     setToggleMenu(!toggleMenu);
   };
@@ -101,7 +109,43 @@ const Navbar = () => {
               onClick={toggleMenuMobile}
               className="icon-toggle bg-C22E2E rounded-md p-2 inline-flex items-center justify-center ring-1 ring-white ring-opacity-20"
             >
-              <HiOutlineMenuAlt1 className="h-6 w-6 cursor-pointer" />
+              <svg
+                className={`rotateAnimation ${
+                  isAnimating ? "animate-rotate" : ""
+                }`}
+                onClick={handleAnimateButtonClick}
+                width="53"
+                height="53"
+                viewBox="0 0 53 53"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="26.5"
+                  cy="26.5"
+                  r="26.5"
+                  transform="rotate(90 26.5 26.5)"
+                  fill="#C22E2E"
+                />
+                <path
+                  d="M26 12L26 41"
+                  stroke="#FFF6E4"
+                  strokeWidth="6"
+                  strokeLinecap="round"
+                />
+                <path
+                  d="M17 18L17 35"
+                  stroke="#FFF6E4"
+                  strokeWidth="6"
+                  strokeLinecap="round"
+                />
+                <path
+                  d="M35 18L35 35"
+                  stroke="#FFF6E4"
+                  strokeWidth="6"
+                  strokeLinecap="round"
+                />
+              </svg>
             </a>
           </div>
         </div>
@@ -164,7 +208,7 @@ const Navbar = () => {
       <Button />
       <p className="mt-20 text-center overflow-hidden">
         <span className="text-4xl heading-responsive inline-block whitespace-nowrap animation-scrolling-rtl">
-          DESIGN | DEVELOPPEMENT | MARKETING DIGITAL | STRATEGIE DE MARQUE
+          DESIGN | DÉVELOPPEMENT | MARKETING DIGITAL | STRATÉGIE DE MARQUE
         </span>
       </p>
     </div>
