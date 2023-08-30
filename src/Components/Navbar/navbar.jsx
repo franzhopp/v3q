@@ -50,14 +50,14 @@ const Navbar = () => {
         <div className="container mt-2 mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-24">
             <div className="flex items-center">
-              <img className="ml-4 w-auto h-12 aaa" src={Image} />
+              <img className="ml-4 w-auto h-12" src={Image} />
             </div>
             <div className="flex items-center">
               <NavLink
                 to="/"
                 href="about"
                 onClick={SectionToScroll}
-                className="text-C22E2E hover:text-0C3E78   px-6 py-2 rounded-md text-lg font-extrabold"
+                className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md text-lg font-extrabold"
               >
                 Agence
               </NavLink>
@@ -74,9 +74,7 @@ const Navbar = () => {
               >
                 Contact
               </NavLink>
-              <NavLink
-                className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md text-lg font-extrabold"
-              >
+              <NavLink className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md text-lg font-extrabold">
                 FR
               </NavLink>
               {/* <NavLink
@@ -154,18 +152,18 @@ const Navbar = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 3, delay: 0.5 }}
-            className="block xl:inline mr-3"
+            className="block xl:inline"
           >
             Agence digitale
           </motion.span>
         </h1>
-        <span className="stroke block xl:inline mr-3 text-FFF6E4 font-extrabold">
+        <span className="block xl:inline text-FFF6E4 font-extrabold">
           PARIS X LONDON
         </span>
       </div>
       <Button />
-      <p className="mt-20 text-4xl text-center overflow-hidden">
-        <span className="inline-block pr-8 pl-0 whitespace-nowrap animation-scrolling-rtl">
+      <p className="mt-20 text-center overflow-hidden">
+        <span className="text-4xl heading-responsive inline-block whitespace-nowrap animation-scrolling-rtl">
           DESIGN | DEVELOPPEMENT | MARKETING DIGITAL | STRATEGIE DE MARQUE
         </span>
       </p>
