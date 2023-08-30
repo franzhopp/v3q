@@ -9,7 +9,6 @@ import "../Section/section.jsx";
 // import Home from "../Hompage/homepage";
 
 const Navbar = () => {
-
   const [scrollNavbar, setScrollNavbar] = useState();
   const [toggleMenu, setToggleMenu] = useState(false);
 
@@ -70,25 +69,23 @@ const Navbar = () => {
                 Portfolio
               </NavLink>
               <NavLink
-                to="/nos-services"
+                to="/contact"
                 className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md text-lg font-extrabold"
               >
                 Contact
               </NavLink>
               <NavLink
-                to="/"
-                href="contact"
                 className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md text-lg font-extrabold"
               >
                 FR
               </NavLink>
-              <NavLink
+              {/* <NavLink
                 to="/"
                 href="contact"
                 className="text-C22E2E hover:text-0C3E78 px-6 py-2 text-lg font-extrabold"
               >
                 <AiOutlineSearch />
-              </NavLink>
+              </NavLink> */}
             </div>
           </div>
         </div>
@@ -115,37 +112,39 @@ const Navbar = () => {
         <ul className={`toggle-menu ${toggleMenu ? "block" : "hidden"} p-2`}>
           <NavLink
             to="/"
+            href="about"
+            onClick={SectionToScroll}
             className="text-C22E2E block px-3 py-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             Agence
           </NavLink>
           <NavLink
             to="/"
-            href="about"
+            href="portfolio"
             className="text-C22E2E block px-3 py-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             Portfolio
           </NavLink>
           <NavLink
-            to="/nos-services"
+            to="/"
             className="text-C22E2E block px-3 py-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             Contact
           </NavLink>
           <NavLink
             to="/"
-            href="contact"
+            href="translate"
             className="text-C22E2E block px-3 py-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             FR
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to="/"
             href="contact"
             className="text-C22E2E block px-3 py-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             <AiOutlineSearch />
-          </NavLink>
+          </NavLink> */}
         </ul>
       </nav>
 
@@ -160,7 +159,9 @@ const Navbar = () => {
             Agence digitale
           </motion.span>
         </h1>
-        <span className="stroke block xl:inline mr-3 text-FFF6E4 font-extrabold">PARIS X LONDON</span>
+        <span className="stroke block xl:inline mr-3 text-FFF6E4 font-extrabold">
+          PARIS X LONDON
+        </span>
       </div>
       <Button />
       <p className="mt-20 text-4xl text-center overflow-hidden">
