@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+    -webkit-tap-highlight-color: transparent;
+}
+
 /* STYLES SCROLL-BAR */
 ::-webkit-scrollbar {
     width: 5px;
