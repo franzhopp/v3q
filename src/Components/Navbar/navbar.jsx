@@ -148,7 +148,7 @@ const Navbar = () => {
         </ul>
       </nav>
 
-      <div className="pt-52 px-4 text-center sm:mt-28">
+      <div className="pt-52 text-center sm:mt-28">
         <h1 className="text-4xl tracking-tight font-extrabold text-FFF6E4 sm:text-5xl md:text-6xl">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
