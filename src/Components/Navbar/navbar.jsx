@@ -9,6 +9,7 @@ import "../Section/section.jsx";
 // import Home from "../Hompage/homepage";
 
 const Navbar = () => {
+
   const [scrollNavbar, setScrollNavbar] = useState();
   const [toggleMenu, setToggleMenu] = useState(false);
 
@@ -159,7 +160,7 @@ const Navbar = () => {
             Agence digitale
           </motion.span>
         </h1>
-        <span className="stroke block xl:inline mr-3">PARIS X LONDON</span>
+        <span className="stroke block xl:inline mr-3 text-FFF6E4 font-extrabold">PARIS X LONDON</span>
       </div>
       <Button />
       <p className="mt-20 text-4xl text-center overflow-hidden">

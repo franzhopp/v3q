@@ -4,7 +4,10 @@ const SectionDuplicate = () => {
       <div className="bg-C22E2E h-1/2">
         <div className="border-beige">
           <section className="max-w-7xl mx-auto py-40 px-4 sm:px-6 lg:px-8">
-            <h3 className="text-left ml-24 font-extrabold text-xl text-FFF6E4" data-aos="fade-left">
+            <h3
+              className="text-left ml-24 font-extrabold text-xl text-FFF6E4"
+              data-aos="fade-left"
+            >
               Découvrez des offres adaptées à vos besoins
             </h3>
             <div className="mt-8 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
@@ -17,7 +20,7 @@ const SectionDuplicate = () => {
                 >
                   <h1 className="text-4xl font-extrabold pb-5">01</h1>
                   <span className="font-extrabold">
-                    La performance rencontre la beauté. 
+                    La performance rencontre la beauté.
                   </span>
                   {
                     " Nos sites internet ne sont pas seulement esthétiquement plaisants, ils sont optimisés pour des performances exceptionnelles. Charge rapide, navigation fluide et convivialité mobile font de nos sites la solution idéale pour convertir les visiteurs en clients."
@@ -34,15 +37,15 @@ const SectionDuplicate = () => {
                 >
                   <h1 className="text-4xl font-extrabold pb-5">02</h1>
                   <span className="font-extrabold">
-                    Donnez à vos clients une expérience en ligne mémorable. 
+                    Donnez à vos clients une expérience en ligne mémorable.
                   </span>
                   {
-                    " Nos sites internet offrent une navigation intuitive, un contenu engageant et des fonctionnalités conviviales, garantissant que chaque visiteur se sent connecté à votre marque."
+                    " Nos sites internet offrent une navigation intuitive, un contenu engageant et des fonctionnalités conviviales, garantissant que chaque visiteur se sent connecté à votre marque. "
                   }
                   <span className="font-extrabold">
-                    Créez des relations solides
+                    Créez des relations solides grâce à une présence en ligne
+                    exceptionnelle.
                   </span>
-                  grâce à une présence en ligne exceptionnelle.
                 </p>
               </div>
 
@@ -55,7 +58,7 @@ const SectionDuplicate = () => {
                 >
                   <h1 className="text-4xl font-extrabold pb-5">03</h1>
                   <span className="font-extrabold">
-                  {`Un site internet n'est pas seulement une dépense.`}   
+                    {`Un site internet n'est pas seulement une dépense.`}
                   </span>
                   {` Avec notre approche axée sur la conversion, nous créons des sites qui génèrent un retour sur investissement tangible. Obtenez plus de prospects, plus de ventes et plus de croissance grâce à notre expertise.`}
                   {/* <span className="font-extrabold">
