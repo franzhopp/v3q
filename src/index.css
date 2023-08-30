@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
+/* STYLES SCROLL-BAR */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #FFF6E4;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #C22E2E;
+}
+
+/* HOMEPAGE IMAGE */
+.image-navi-studios {
+    background-image: url('./assets/pexels-google-deepmind-18068537.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 89vh;
+}
+
+/* TEXT ANIMATE */
+.animation-scrolling-rtl {
+    display: inline-block;
+    padding-right: 2em;
+    padding-left: 100%;
+    white-space: nowrap;
+    animation: scrolling-rtl 17s infinite linear;
+}
+
+@keyframes scrolling-rtl {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+/* STROKE */
+.stroke {
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #FFF6E4;
+}
+
+/* Z-INDEX */
+.z-max {
+    z-index: 50 !important;
+}
+
+/* ANIMATION ENTRÉE */
+.fade-in {
+    opacity: 0;
+    animation: fade-in-animation 1s ease-in forwards;
+}
+
+@keyframes fade-in-animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* MOVE SVG */
+@keyframes moveDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+.svg-animation {
+    animation: moveDown 0.5s forwards;
+}
+
+.btn-contact-rel {
+    position: relative;
+    right: 450px;
+    top: 80px;
+}
+
+.border-red {
+    border-right: 4px solid #C22E2E;
+    border-left: 4px solid #C22E2E;
+}
+
+.border-beige {
+    border-right: 4px solid #FFF6E4;
+    border-left: 4px solid #FFF6E4;
+}
