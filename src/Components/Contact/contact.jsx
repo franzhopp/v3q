@@ -18,7 +18,7 @@ const Form = () => {
               <span className="font-extrabold">
                 Nous sommes impatients de vous entendre !{" "}
               </span>
-              {`Veuillez fournir toutes les informations nécessaires dans le formulaire de contact ci-dessous afin que nous puissions vous assister au mieux, trouver une solution qui vous conviendra selon vos besoins. Votre satisfaction est notre priorité.`}
+              {`Veuillez fournir toutes les informations nécessaires dans le formulaire de contact ci-dessous afin que nous puissions vous assister au mieux.`}
             </p>
           </div>
         </div>
