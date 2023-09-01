@@ -25,6 +25,13 @@ const Navbar = () => {
     setToggleMenu(!toggleMenu);
   };
 
+  const SectionToSectionContact = () => {
+    const ContactToScroll = document.getElementById("contact");
+    if (ContactToScroll) {
+      ContactToScroll.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const SectionToScroll = () => {
     const contactSection = document.getElementById("about");
     if (contactSection) {
@@ -37,6 +44,7 @@ const Navbar = () => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
         setScrollNavbar(true);
+        
       } else {
         setScrollNavbar(false);
       }
@@ -50,7 +58,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="image-navi-studios sm:pb-24 mb:min-h-650 min-h-500">
+    <div className="image-navi-studio sm:pb-24 mb:min-h-650 min-h-500">
       <nav
         className="bg-FFF6E4 border-b-4 border-C22E2E h-28 items-center transition duration-300 ease-in-out fixed w-full top-0 left-0 shadow-md z-max"
         data-aos="fade-left"
@@ -77,7 +85,8 @@ const Navbar = () => {
                 Portfolio
               </NavLink>
               <NavLink
-                to="/contact"
+                to="/"
+                onClick={SectionToSectionContact}
                 className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md text-lg font-extrabold"
               >
                 Contact
@@ -107,7 +116,7 @@ const Navbar = () => {
           <div className="-mr-2">
             <a
               onClick={toggleMenuMobile}
-              className="icon-toggle bg-C22E2E rounded-md p-2 inline-flex items-center justify-center ring-1 ring-white ring-opacity-20"
+              className="icon-toggle bg-C22E2E cursor-pointer rounded-md p-2 inline-flex items-center justify-center ring-1 ring-white ring-opacity-20"
             >
               <svg
                 className={`rotateAnimation ${
@@ -169,6 +178,7 @@ const Navbar = () => {
           </NavLink>
           <NavLink
             to="/"
+            onClick={SectionToSectionContact}
             className="text-C22E2E block px-3 py-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             Contact
@@ -207,7 +217,7 @@ const Navbar = () => {
       </div>
       <Button />
       <p className="mt-20 text-center overflow-hidden">
-        <span className="text-4xl heading-responsive inline-block whitespace-nowrap animation-scrolling-rtl">
+        <span className="text-4xl text-black heading-responsive inline-block whitespace-nowrap animation-scrolling-rtl">
           DESIGN | DÉVELOPPEMENT | MARKETING DIGITAL | STRATÉGIE DE MARQUE
         </span>
       </p>

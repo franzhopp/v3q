@@ -37,7 +37,7 @@ const Button = () => {
           href="about"
           onClick={SectionToScroll}
           data-aos="fade-right"
-          className="inline-flex items-center gap-2 border rounded-full bg-FFF6E4 px-8 py-3 text-black hover:bg-0C3E78"
+          className="inline-flex items-center gap-2 border rounded-full bg-FFF6E4 px-8 py-3 text-black"
         >
           <span className="text-3xl font-extrabold heading-responsive">
             Découvrir{" "}

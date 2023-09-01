@@ -1,3 +1,4 @@
+import Form from "../Contact/contact";
 import Footer from "../Footer/footer";
 import Section from "../Section/section";
 import SectionDuplicate from "../Section/section-duplicate";
@@ -7,6 +8,7 @@ const Home = () => {
     <>
     <Section/>
     <SectionDuplicate/>
+    <Form/>
     <Footer/>
     </>
   );

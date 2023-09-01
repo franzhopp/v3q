@@ -3,7 +3,7 @@ const SectionDuplicate = () => {
     <>
       <div className="bg-C22E2E h-1/2">
         <div className="border-beige">
-          <section className="max-w-7xl mx-auto py-40 px-4 sm:px-6 lg:px-8">
+          <section className="max-w-7xl mx-auto py-60 px-4 sm:px-6 lg:px-8">
             <h3
               className="text-left ml-24 font-extrabold text-xl text-FFF6E4"
               data-aos="fade-left"

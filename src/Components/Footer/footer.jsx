@@ -22,8 +22,8 @@ const Footer = () => {
             <img src={LogoLinkedin} alt="icône linkedin" className="flex-shrink-0 h-10 w-10" />
           </a>
         </div>
-        <div className="text-center mt-8 font-semibold">
-          &copy; navi studio. | Tous droits réservés.
+        <div className="text-center text-black mt-8 font-semibold">
+          &copy; Développé, designé par <span className="text-C22E2E">Mélissa</span> et <span className="text-C22E2E">Louisa</span>. | Tous droits réservés.
         </div>
       </footer>
     </>

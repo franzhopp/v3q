@@ -22,11 +22,18 @@ body {
 }
 
 /* HOMEPAGE IMAGE */
-.image-navi-studios {
+.image-navi-studio {
     background-image: url('./assets/pexels-google-deepmind-18068537.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 89vh;
+}
+
+.image-navi-studio-contact {
+    background-image: url('./assets/pexels-google-deepmind-18068537.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30%;
 }
 
 /* TEXT ANIMATE */

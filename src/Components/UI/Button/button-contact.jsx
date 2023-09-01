@@ -1,46 +1,41 @@
-// import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../../Section/section.jsx";
 
 const ButtonContact = () => {
-  //   const [scrollNavbar, setScrollNavbar] = useState();
-  //   const [toggleMoveButton, setToggleMoveButton] = useState();
+    const [scrollNavbar, setScrollNavbar] = useState();
 
-  //   const toggleMove = () => {
-  //     setToggleMoveButton(!toggleMove);
-  //   };
+    const SectionToScrollContact = () => {
+      const contactSection = document.getElementById("contact");
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: "smooth" });
+      }
+    };
 
-  //   const SectionToScroll = () => {
-  //     const contactSection = document.getElementById("contact");
-  //     if (contactSection) {
-  //       contactSection.scrollIntoView({ behavior: "smooth" });
-  //     }
-  //   };
+    useEffect(() => {
+      // Gestion de l'évènement du scroll :
+      const handleScroll = () => {
+        if (window.scrollY > 0) {
+          setScrollNavbar(true);
+        } else {
+          setScrollNavbar(false);
+        }
+      };
 
-  //   useEffect(() => {
-  //     // Gestion de l'évènement du scroll :
-  //     const handleScroll = () => {
-  //       if (window.scrollY > 0) {
-  //         setScrollNavbar(true);
-  //       } else {
-  //         setScrollNavbar(false);
-  //       }
-  //     };
+      window.addEventListener("scroll", handleScroll);
 
-  //     window.addEventListener("scroll", handleScroll);
-
-  //     return () => {
-  //       window.removeEventListener("scroll", handleScroll);
-  //     };
-  //   }, []);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
 
   return (
     <>
       <div className="btn-contact-rel flex justify-center sm:justify-end">
         <NavLink
-          //   to="/"
-          //   href="about"
-          //   onClick={SectionToScroll}
+            to="/"
+            href="about"
+            onClick={SectionToScrollContact}
           className=""
         >
           <svg

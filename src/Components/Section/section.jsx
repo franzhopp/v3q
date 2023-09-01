@@ -29,7 +29,7 @@ const Section = () => {
                   className="mt-2 text-medium text-black"
                 >
                   <span className="font-extrabold">
-                    {`Découvrez l'avenir en ligne de votre entreprise avec nos sites internets sur mesure.`}
+                    {`Découvrez l'avenir en ligne de votre entreprise avec nos sites internet sur mesure.`}
                   </span>{" "}
                   {`Du design moderne à la fonctionnalité intuitive, nous créons des plateformes qui captivent les visiteurs et génèrent des conversions. Augmentez votre présence en ligne dès aujourd'hui !`}
                 </p>
