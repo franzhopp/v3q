@@ -2,14 +2,14 @@ const Form = () => {
   return (
     <>
       <section id="contact" className="image-navi-studio-contact bg-FFF6E4">
-        <div className="px-10 py-10 sm:py-10 md:px-24">
+        <div className="px-10 py-5 sm:py-5 md:px-20">
           <div
-            className="sm:text-left text-FFF6E4 text-center mt-28 font-extrabold pb-12 text-4xl md:text-6xl"
+            className="sm:text-left text-FFF6E4 text-center mt-24 font-extrabold pb-12 text-4xl md:text-6xl"
             data-aos="fade-right"
           >
             Contactez-nous
           </div>
-          <div className="w-96 h-48">
+          <div className="w-72 h-48">
             <p
               className="text-left text-black"
               data-aos="zoom-in"
