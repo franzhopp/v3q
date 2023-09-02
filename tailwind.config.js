@@ -15,13 +15,11 @@ export default {
       },
 
       height: {
-        'h-form-900': '900px',
+        'h-f': '987px',
       },
 
       width: {
-        'w-form-648': '648px',
-        'input-w-28': '28rem',
-        'input-w-38': '30rem',
+        'w-f': '712px',
       },
 
       backgroundColor: {
@@ -33,7 +31,7 @@ export default {
         'FFF6E4': '#FFF6E4',
         'C22E2E': '#C22E2E',
         '0C3E78': '#0C3E78',
-        '3E9BF0' : '#3E9BF0',
+        '3E9BF0': '#3E9BF0',
       },
 
       fontFamily: {

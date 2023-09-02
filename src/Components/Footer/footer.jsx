@@ -23,7 +23,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="text-center text-black mt-8 font-semibold">
-          &copy; Développé, designé par <span className="text-C22E2E">Mélissa</span> et <span className="text-C22E2E">Louisa</span>. | Tous droits réservés.
+          &copy; Designé, développé par <span className="text-C22E2E">Mélissa</span> et <span className="text-C22E2E">Louisa</span>. | Tous droits réservés.
         </div>
       </footer>
     </>
