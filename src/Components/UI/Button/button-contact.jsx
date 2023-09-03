@@ -31,7 +31,7 @@ const ButtonContact = () => {
 
   return (
     <>
-      <div className="btn-contact-rel flex justify-center sm:justify-end">
+      <div className="flex justify-center sm:justify-end relative right-20 top-20 sm:right-96">
         <NavLink
             to="/"
             href="about"

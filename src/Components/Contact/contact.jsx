@@ -179,15 +179,15 @@ const Form = () => {
         <Title />
       </div>
 
-      <div className="flex justify-center sm:flex-row flex-col m-10 mt-20 sm:mt-72">
+      <div className="flex justify-center sm:flex-row md:flex-row lg:flex-row flex-col m-10 mt-20 sm:mt-72">
         <div className="w-96 h-3/6 mr-64 mb-20 sm:mb-10 sm:text-left md:text-left">
-          <p className="font-extrabold text-2xl sm:text-4xl text-black w-80 sm:w-96">
+          <p className="font-extrabold text-2xl sm:text-4xl text-black w-80 sm:w-96 md:w-96 lg:w-96">
             Si vous recherchez une agence digitale qui peut donner vie à votre
             projet numérique, qui excelle dans le design et le développement
             web, ne cherchez pas plus loin.
           </p>
           <p  data-aos="zoom-in"
-                data-aos-duration="1000" className="text-black text-lg w-80 sm:w-96 mt-10">
+                data-aos-duration="1000" className="text-black text-medium w-80 sm:w-96 md:w-96 lg:w-96 mt-10">
           {`Contactez-nous aujourd'hui pour discuter de
           votre projet et découvrir comment nous pouvons vous aider à briller
           sur le web. Votre succès numérique est notre mission.`}
@@ -196,7 +196,7 @@ const Form = () => {
 
         <div>
           <div className="flex flex-col">
-            <div className="sm:w-w-f">
+            <div className="sm:w-w-f md:w-w-f lg:w-w-f">
               <div className="bg-0c3e78 relative bottom-10 sm:bottom-40 mb-20 rounded-rounded-form-56 p-10">
                 <div className="flex justify-center sm:space-x-2">
                   <input
