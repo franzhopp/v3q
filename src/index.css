@@ -30,10 +30,10 @@ body {
 }
 
 .image-navi-studio-contact {
-    background-image: url('./assets/pexels-google-deepmind-18068537.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 30%;
+    height: 30vh;
+    border-radius: 0px 0px 0px 190px;
+    background: url("./assets/rectangle_top.png"), lightgray -46.697px -768.547px / 106.886% 974.977%;
 }
 
 /* TEXT ANIMATE */
@@ -136,4 +136,21 @@ body {
 
 .w-f {
     width: 712px;
+}
+
+.svg {
+    top: -14rem;
+    left: 38.5rem;
+}
+
+.svg-other {
+    left: -5rem;
+    top: -29rem;
+}
+
+.bg-contact {
+    border-radius: 56px;
+    border: 0px solid #C22E2E;
+    background: rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(6.5px);
 }

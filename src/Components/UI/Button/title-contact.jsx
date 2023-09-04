@@ -1,10 +1,12 @@
 const Title = () => {
   return (
-    <div
-      className="text-black mt-20 sm:mt-44 ml-10 sm:ml-44 sm:text-left text-center font-extrabold text-4xl sm:text-5xl md:text-6xl"
-      data-aos="fade-right"
-    >
-      Contactez-nous
+    <div className="image-navi-studio-contact">
+      <div
+        className="pt-20 text-FFF6E4 sm:ml-44 sm:text-left text-center font-extrabold text-5xl sm:text-8xl"
+        data-aos="fade-right"
+      >
+        <p className="">Contactez-nous</p>
+      </div>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import Image from "../../assets/logo-5.png";
-import { AiOutlineSearch } from "react-icons/ai";
-import { HiOutlineMenuAlt1 } from "react-icons/hi";
+// import { AiOutlineSearch } from "react-icons/ai";
+// import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import Button from "../UI/Button/button";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
@@ -20,6 +20,10 @@ const Navbar = () => {
       setIsAnimating(false);
     }, 1000);
   };
+
+  // const closeMobileMenu = () => {
+  //   setToggleMenu(false);
+  // };
 
   const toggleMenuMobile = () => {
     setToggleMenu(!toggleMenu);
