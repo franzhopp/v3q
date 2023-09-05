@@ -220,8 +220,8 @@ const Navbar = () => {
         </span>
       </div>
       <Button />
-      <p className="mt-20 text-center overflow-x-hidden">
-        <span className="text-base sm:text-5xl md:text-5xl lg:text-5xl xl:text-5xl 2xl:text-5xl text-black heading-responsive inline-block whitespace-nowrap animation-scrolling-rtl">
+      <p className="text-center">
+        <span className="inline-block text-black text-sm sm:text-5xl mt-5 sm:mt-10 whitespace-nowrap animation-scrolling-rtl">
           DESIGN | DÉVELOPPEMENT | MARKETING DIGITAL | STRATÉGIE DE MARQUE
         </span>
       </p>

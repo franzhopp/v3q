@@ -4,11 +4,9 @@
 
 html,
 body {
-    overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
 }
 
-/* STYLES SCROLL-BAR */
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -21,7 +19,26 @@ body {
     background: #C22E2E;
 }
 
-/* HOMEPAGE IMAGE */
+/* Z-INDEX */
+.z-max {
+    z-index: 50 !important;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fade-in-animation 1s ease-in forwards;
+}
+
+@keyframes fade-in-animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .image-navi-studio {
     background-image: url('./assets/pexels-google-deepmind-18068537.jpg');
     background-repeat: no-repeat;
@@ -37,11 +54,7 @@ body {
     background: url("./assets/rectangle_top.png"), lightgray -46.697px -768.547px / 106.886% 974.977% no-repeat;
 }
 
-/* TEXT ANIMATE */
 .animation-scrolling-rtl {
-    display: inline-block;
-    padding-right: 2em;
-    padding-left: 100%;
     white-space: nowrap;
     animation: scrolling-rtl 17s infinite linear;
 }
@@ -56,25 +69,25 @@ body {
     }
 }
 
-/* Z-INDEX */
-.z-max {
-    z-index: 50 !important;
-}
-
-/* ANIMATION ENTRÉE */
-.fade-in {
-    opacity: 0;
-    animation: fade-in-animation 1s ease-in forwards;
-}
-
-@keyframes fade-in-animation {
-    0% {
-        opacity: 0;
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
     }
 
-    100% {
-        opacity: 1;
+    to {
+        transform: rotate(360deg);
     }
+}
+
+.animate-rotate {
+    animation: rotateAnimation 1s ease-in-out forwards;
+}
+
+.bg-contact {
+    border-radius: 56px;
+    border: 0px solid #C22E2E;
+    background: rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(6.5px);
 }
 
 .btn-contact-rel {
@@ -91,20 +104,6 @@ body {
 .border-beige {
     border-right: 4px solid #FFF6E4;
     border-left: 4px solid #FFF6E4;
-}
-
-@keyframes rotateAnimation {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.animate-rotate {
-    animation: rotateAnimation 1s ease-in-out forwards;
 }
 
 .h-f {
@@ -125,9 +124,3 @@ body {
     top: -29rem;
 }
 
-.bg-contact {
-    border-radius: 56px;
-    border: 0px solid #C22E2E;
-    background: rgba(0, 0, 0, 0.08);
-    backdrop-filter: blur(6.5px);
-}
