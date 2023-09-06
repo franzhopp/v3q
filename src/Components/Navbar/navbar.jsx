@@ -48,7 +48,6 @@ const Navbar = () => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
         setScrollNavbar(true);
-        
       } else {
         setScrollNavbar(false);
       }
@@ -209,19 +208,20 @@ const Navbar = () => {
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 5, delay: 0.5 }}
-            className="block xl:inline"
+            transition={{ duration: 2, delay: 0.5 }}
+            className="block xl:inline test-text"
           >
             Agence digitale
           </motion.span>
         </h1>
-        <span className="block xl:inline text-FFF6E4 font-extrabold">
+        <span className="block xl:inline text-FFF6E4 font-extrabold test-text">
           PARIS X LONDON
         </span>
       </div>
       <Button />
+
       <p className="text-center mt-10">
-        <span className="inline-block text-black text-sm sm:text-5xl mt-5 sm:mt-10 whitespace-nowrap animation-scrolling-rtl">
+        <span className="text-black text-xl font-extrabold sm:text-5xl mt-5 sm:mt-10 whitespace-nowrap animation-scrolling-rtl">
           DESIGN | DÉVELOPPEMENT | MARKETING DIGITAL | STRATÉGIE DE MARQUE
         </span>
       </p>

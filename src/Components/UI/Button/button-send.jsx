@@ -3,12 +3,12 @@ import { NavLink } from "react-router-dom";
 const ButtonSend = () => {
   return (
     <>
-      <div className="flex justify-center sm:justify-end px-48 relative top-20 left-0 sm:left-44">
+      <div className="flex justify-center sm:justify-end px-48 relative top-20 left-0 sm:left-56">
         <NavLink
           to="/"
           href="about"
           data-aos="fade-right"
-          className="inline-flex items-center gap-2 border rounded-full bg-black px-8 py-3 text-FFF6E4 text-3xl"
+          className="inline-flex items-center gap-2 border rounded-full bg-black px-8 sm:px-6 py-3 text-FFF6E4 text-3xl"
         >
           <span className="text-3xl font-extrabold heading-responsive">
             Envoyer{" "}
