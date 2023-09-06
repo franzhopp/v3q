@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const ButtonSend = () => {
   return (
     <>
-      <div className="flex justify-center sm:justify-end px-48 relative top-20 left-0 sm:left-56">
+      <div className="flex justify-center sm:justify-end px-36 relative top-20 left-0 sm:left-56">
         <NavLink
           to="/"
           href="about"

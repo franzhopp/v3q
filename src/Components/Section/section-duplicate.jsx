@@ -5,7 +5,7 @@ const SectionDuplicate = () => {
         <div className="border-beige">
           <section className="max-w-6xl mx-auto py-60 px-4 sm:px-6 lg:px-8">
             <h3
-              className="text-left ml-10 font-extrabold text-xl text-FFF6E4"
+              className="text-left ml-9 font-extrabold text-xl text-FFF6E4"
               data-aos="fade-right"
             >
               Découvrez des offres adaptées à vos besoins
