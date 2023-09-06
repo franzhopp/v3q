@@ -39,7 +39,7 @@ const Button = () => {
           data-aos="fade-right"
           className="inline-flex items-center gap-2 border rounded-full bg-FFF6E4 px-8 py-3 text-black"
         >
-          <span className="text-3xl font-extrabold heading-responsive">
+          <span className="text-3xl mr-3 font-semibold heading-responsive">
             Découvrir{" "}
           </span>
 

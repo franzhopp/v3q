@@ -61,7 +61,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="image-navi-studio sm:pb-24 mb:min-h-650 min-h-500">
+    <div className="image-navi-studio sm:pb-10 mb:min-h-650 min-h-500">
       <nav
         className="bg-FFF6E4 border-b-4 border-C22E2E h-28 items-center transition duration-300 ease-in-out fixed w-full top-0 left-0 shadow-md z-max"
         data-aos="fade-left"
@@ -69,41 +69,57 @@ const Navbar = () => {
         <div className="container mt-2 mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-24">
             <div className="flex items-center">
-              <img className="ml-4 w-auto h-12" src={Image} />
+              <img className="h-20 bg-cover bg-no-repeat" src={Image} />
             </div>
             <div className="flex items-center">
               <NavLink
                 to="/"
                 href="about"
                 onClick={SectionToScroll}
-                className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md text-lg font-extrabold"
+                className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md text-2xl font-extrabold"
               >
                 Agence
               </NavLink>
               <NavLink
                 to="/"
                 href="about"
-                className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md text-lg font-extrabold"
+                className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md text-2xl font-extrabold"
               >
                 Portfolio
               </NavLink>
               <NavLink
                 to="/"
                 onClick={SectionToSectionContact}
-                className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md text-lg font-extrabold"
+                className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md text-2xl font-extrabold"
               >
                 Contact
               </NavLink>
-              <NavLink className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md text-lg font-extrabold">
+              <NavLink className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md text-2xl font-extrabold">
                 FR
               </NavLink>
-              {/* <NavLink
+              <NavLink
                 to="/"
                 href="contact"
                 className="text-C22E2E hover:text-0C3E78 px-6 py-2 text-lg font-extrabold"
               >
-                <AiOutlineSearch />
-              </NavLink> */}
+                <svg
+                  className="h-7"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="31"
+                  height="32"
+                  viewBox="0 0 31 32"
+                  fill="none"
+                >
+                  <path
+                    d="M23.8885 12.0905C23.8885 18.7679 18.5409 24.181 11.9443 24.181C5.34762 24.181 0 18.7679 0 12.0905C0 5.4131 5.34762 0 11.9443 0C18.5409 0 23.8885 5.4131 23.8885 12.0905ZM2.32617 12.0905C2.32617 17.4675 6.63233 21.8264 11.9443 21.8264C17.2562 21.8264 21.5623 17.4675 21.5623 12.0905C21.5623 6.71355 17.2562 2.35466 11.9443 2.35466C6.63233 2.35466 2.32617 6.71355 2.32617 12.0905Z"
+                    fill="#C22E2E"
+                  />
+                  <path
+                    d="M26.704 30.7329C27.6489 31.7396 29.2216 31.78 30.2168 30.8229C31.2121 29.8659 31.2529 28.2739 30.308 27.2671L26.704 30.7329ZM18.4013 21.8861L26.704 30.7329L30.308 27.2671L22.0053 18.4204L18.4013 21.8861Z"
+                    fill="#C22E2E"
+                  />
+                </svg>
+              </NavLink>
             </div>
           </div>
         </div>
@@ -193,18 +209,34 @@ const Navbar = () => {
           >
             FR
           </NavLink>
-          {/* <NavLink
-            to="/"
-            href="contact"
-            className="text-C22E2E block px-3 py-2 rounded-md text-base font-extrabold hover:text-0C3E78"
-          >
-            <AiOutlineSearch />
-          </NavLink> */}
+          <NavLink
+                to="/"
+                href="contact"
+                className="text-C22E2E hover:text-0C3E78 px-3 py-2 text-base font-extrabold"
+              >
+                <svg
+                  className="h-5 ml-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="31"
+                  height="32"
+                  viewBox="0 0 31 32"
+                  fill="none"
+                >
+                  <path
+                    d="M23.8885 12.0905C23.8885 18.7679 18.5409 24.181 11.9443 24.181C5.34762 24.181 0 18.7679 0 12.0905C0 5.4131 5.34762 0 11.9443 0C18.5409 0 23.8885 5.4131 23.8885 12.0905ZM2.32617 12.0905C2.32617 17.4675 6.63233 21.8264 11.9443 21.8264C17.2562 21.8264 21.5623 17.4675 21.5623 12.0905C21.5623 6.71355 17.2562 2.35466 11.9443 2.35466C6.63233 2.35466 2.32617 6.71355 2.32617 12.0905Z"
+                    fill="#C22E2E"
+                  />
+                  <path
+                    d="M26.704 30.7329C27.6489 31.7396 29.2216 31.78 30.2168 30.8229C31.2121 29.8659 31.2529 28.2739 30.308 27.2671L26.704 30.7329ZM18.4013 21.8861L26.704 30.7329L30.308 27.2671L22.0053 18.4204L18.4013 21.8861Z"
+                    fill="#C22E2E"
+                  />
+                </svg>
+              </NavLink>
         </ul>
       </nav>
 
       <div className="pt-52 text-center sm:mt-28">
-        <h1 className="text-4xl tracking-tight font-extrabold text-FFF6E4 sm:text-5xl md:text-6xl">
+        <h1 className="text-normal text-4xl tracking-tight font-extrabold text-FFF6E4 sm:text-8xl md:text-8xl">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -221,7 +253,7 @@ const Navbar = () => {
       <Button />
 
       <p className="text-center mt-10">
-        <span className="text-black text-xl font-extrabold sm:text-5xl mt-5 sm:mt-10 whitespace-nowrap animation-scrolling-rtl">
+        <span className="text-black text-xl font-medium sm:text-4xl mt-5 sm:mt-10 whitespace-nowrap animation-scrolling-rtl">
           DESIGN | DÉVELOPPEMENT | MARKETING DIGITAL | STRATÉGIE DE MARQUE
         </span>
       </p>

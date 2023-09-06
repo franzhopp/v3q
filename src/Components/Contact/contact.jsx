@@ -3,30 +3,33 @@ import Title from "../UI/Button/title-contact";
 
 const Form = () => {
   return (
-    <section id="contact">
-      <div>
-        <Title className="mt-20" />
-      </div>
-      <div className="flex justify-center sm:flex-row md:flex-row lg:flex-row flex-col m-10 mt-20 ">
-        <div className="w-96 h-3/6 mr-64 mb-20 sm:mb-10 sm:text-left md:text-left">
-          <p className="font-extrabold text-2xl sm:text-4xl text-black w-80 sm:w-96 md:w-96 lg:w-96">
-            Si vous recherchez une agence digitale qui peut donner vie à votre
-            projet numérique, qui excelle dans le design et le développement
-            web, ne cherchez pas plus loin.
-          </p>
-          <p
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-            className="text-black text-medium w-80 sm:w-96 md:w-96 lg:w-96 mt-10"
-          >
-            {`Contactez-nous aujourd'hui pour discuter de
+    <div id="contact">
+      <section
+      //id="contact"
+      >
+        <div>
+          <Title className="mt-20" />
+        </div>
+        <div className="flex justify-center sm:flex-row md:flex-row lg:flex-row flex-col m-10 mt-20 ">
+          <div className="w-96 h-3/6 mr-64 mb-20 sm:mb-10 sm:text-left md:text-left">
+            <p className="font-extrabold text-4xl sm:text-4xl text-black w-80 sm:w-96 md:w-96 lg:w-96">
+              Si vous recherchez une agence digitale qui peut donner vie à votre
+              projet numérique, qui excelle dans le design et le développement
+              web, ne cherchez pas plus loin.
+            </p>
+            <p
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              className="text-black text-2xl w-80 sm:w-96 md:w-96 lg:w-96 mt-10"
+            >
+              {`Contactez-nous aujourd'hui pour discuter de
           votre projet et découvrir comment nous pouvons vous aider à briller
           sur le web. Votre succès numérique est notre mission.`}
-          </p>
-        </div>
+            </p>
+          </div>
 
-        <div>
-          {/* <svg
+          <div>
+            {/* <svg
             className=""
             width="138"
             height="140"
@@ -39,53 +42,53 @@ const Form = () => {
               fill="#E18AB0"
             />
           </svg> */}
-          <div className="flex flex-col mt-10 sm:mt-32">
-            <div className="sm:w-w-f md:w-w-f lg:w-w-f">
-              <div className="bg-contact relative bottom-10 sm:bottom-72 mb-20 rounded-rounded-form-56 p-10">
-                <form>
-                  <div className="flex justify-center sm:space-x-0">
+            <div className="flex flex-col mt-10 sm:mt-32">
+              <div className="sm:w-w-f md:w-w-f lg:w-w-f">
+                <div className="bg-contact relative bottom-10 sm:bottom-72 mb-20 rounded-rounded-form-56 p-10">
+                  <form>
+                    <div className="flex justify-center sm:space-x-0">
+                      <input
+                        type="text"
+                        placeholder="Prénom"
+                        className="rounded-input-rounded-form-22 p-6 mr-1 outline-none input-bordered input-secondary bg-white w-full mt-10"
+                      />
+                      <input
+                        type="text"
+                        placeholder="Nom"
+                        className="rounded-input-rounded-form-22 p-6 outline-none input-bordered input-secondary bg-white w-full mt-10"
+                      />
+                    </div>
                     <input
                       type="text"
-                      placeholder="Prénom"
-                      className="rounded-input-rounded-form-22 p-6 mr-1 outline-none input-bordered input-secondary bg-white w-full mt-10"
+                      placeholder="E-mail"
+                      className="rounded-input-rounded-form-22 p-6 outline-none input-bordered input-secondary bg-white w-full  mt-5"
                     />
                     <input
                       type="text"
-                      placeholder="Nom"
-                      className="rounded-input-rounded-form-22 p-6 outline-none input-bordered input-secondary bg-white w-full mt-10"
+                      placeholder="Numéro de téléphone"
+                      className="rounded-input-rounded-form-22 p-6 outline-none input-bordered input-secondary bg-white w-full  mt-5"
                     />
-                  </div>
-                  <input
-                    type="text"
-                    placeholder="E-mail"
-                    className="rounded-input-rounded-form-22 p-6 outline-none input-bordered input-secondary bg-white w-full  mt-5"
-                  />
-                  <input
-                    type="text"
-                    placeholder="Numéro de téléphone"
-                    className="rounded-input-rounded-form-22 p-6 outline-none input-bordered input-secondary bg-white w-full  mt-5"
-                  />
-                  <input
-                    type="text"
-                    placeholder="Le meilleur moyen de vous contacter ?"
-                    className="rounded-input-rounded-form-22 p-6 outline-none input-bordered input-secondary bg-white w-full  mt-5"
-                  />
-                  <input
-                    type="text"
-                    placeholder="Le meilleur moment de vous contacter ?"
-                    className="rounded-input-rounded-form-22 p-6 outline-none input-bordered input-secondary bg-white w-full  mt-5"
-                  />
-                  <textarea
-                    className="rounded-input-rounded-form-22 p-6 outline-none input-bordered input-secondary bg-white w-full mt-20"
-                    placeholder="Votre message"
-                    rows="5"
-                  ></textarea>
-                  <ButtonSend />
-                </form>
+                    <input
+                      type="text"
+                      placeholder="Le meilleur moyen de vous contacter ?"
+                      className="rounded-input-rounded-form-22 p-6 outline-none input-bordered input-secondary bg-white w-full  mt-5"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Le meilleur moment de vous contacter ?"
+                      className="rounded-input-rounded-form-22 p-6 outline-none input-bordered input-secondary bg-white w-full  mt-5"
+                    />
+                    <textarea
+                      className="rounded-input-rounded-form-22 p-6 outline-none input-bordered input-secondary bg-white w-full mt-20"
+                      placeholder="Votre message"
+                      rows="5"
+                    ></textarea>
+                    <ButtonSend />
+                  </form>
+                </div>
               </div>
             </div>
-          </div>
-          {/* <svg
+            {/* <svg
             className=""
             width="204"
             height="208"
@@ -98,9 +101,10 @@ const Form = () => {
               fill="#E18AB0"
             />
           </svg> */}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 

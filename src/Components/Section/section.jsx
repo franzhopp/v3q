@@ -12,11 +12,10 @@ const Section = () => {
             {/* Step 1 */}
             <div className="min-h-500 w-80 rounded-lg mt-5">
               <p
-                data-aos="zoom-in"
-                data-aos-duration="1000"
+                data-aos="fade-left"
                 className="mt-2 font-extrabold text-black text-4xl"
               >
-                Confiez votre image à des professionnels.
+                Confiez votre image à des professionnels
               </p>
             </div>
 
@@ -26,7 +25,7 @@ const Section = () => {
                 <p
                   data-aos="zoom-in"
                   data-aos-duration="1000"
-                  className="mt-2 text-medium text-black"
+                  className="mt-2 text-base text-black text-arial"
                 >
                   <span className="font-extrabold">
                     {`Découvrez l'avenir en ligne de votre entreprise avec nos sites internet sur mesure.`}
@@ -42,7 +41,7 @@ const Section = () => {
                 <p
                   data-aos="zoom-in"
                   data-aos-duration="1000"
-                  className="mt-2 font-extrabold text-black"
+                  className="mt-2 font-extrabold text-base text-black text-arial"
                 >
                   {`Votre site internet, votre vision. Chez nous, chaque site est conçu avec votre marque à l'esprit. Notre équipe experte en conception web crée des expériences uniques qui reflètent votre identité et vos objectifs. Obtenez un site qui se démarque dans un monde en ligne saturé.`}
                 </p>

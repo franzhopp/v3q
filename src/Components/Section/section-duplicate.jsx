@@ -3,10 +3,10 @@ const SectionDuplicate = () => {
     <>
       <div className="bg-C22E2E h-1/2">
         <div className="border-beige">
-          <section className="max-w-7xl mx-auto py-60 px-4 sm:px-6 lg:px-8">
+          <section className="max-w-6xl mx-auto py-60 px-4 sm:px-6 lg:px-8">
             <h3
-              className="text-left ml-24 font-extrabold text-xl text-FFF6E4"
-              data-aos="fade-left"
+              className="text-left ml-10 font-extrabold text-xl text-FFF6E4"
+              data-aos="fade-right"
             >
               Découvrez des offres adaptées à vos besoins
             </h3>
@@ -16,9 +16,9 @@ const SectionDuplicate = () => {
                 <p
                   data-aos="zoom-in"
                   data-aos-duration="1000"
-                  className="mt-2 text-FFF6E4"
+                  className="mt-2 text-FFF6E4 text-arial"
                 >
-                  <h1 className="text-4xl font-extrabold pb-5">01</h1>
+                  <h1 className="text-4xl number font-semibold pb-5">01</h1>
                   <span className="font-extrabold">
                     La performance rencontre la beauté.
                   </span>
@@ -33,9 +33,9 @@ const SectionDuplicate = () => {
                 <p
                   data-aos="zoom-in"
                   data-aos-duration="1000"
-                  className="mt-2 text-FFF6E4"
+                  className="mt-2 text-FFF6E4 text-arial"
                 >
-                  <h1 className="text-4xl font-extrabold pb-5">02</h1>
+                  <h1 className="text-4xl number font-semibold pb-5">02</h1>
                   <span className="font-extrabold">
                     Donnez à vos clients une expérience en ligne mémorable.
                   </span>
@@ -54,13 +54,13 @@ const SectionDuplicate = () => {
                 <p
                   data-aos="zoom-in"
                   data-aos-duration="1000"
-                  className="mt-2 text-FFF6E4"
+                  className="mt-2 text-FFF6E4 text-arial"
                 >
-                  <h1 className="text-4xl font-extrabold pb-5">03</h1>
+                  <h1 className="text-4xl number font-semibold pb-5">03</h1>
                   <span className="font-extrabold">
                     {`Un site internet n'est pas seulement une dépense.`}
                   </span>
-                  {` Avec notre approche axée sur la conversion, nous créons des sites qui génèrent un retour sur investissement tangible. Obtenez plus de prospects, plus de ventes et plus de croissance grâce à notre expertise.`}
+                  {` Avec notre approche axée sur la conversion, nous créons des sites qui génèrent un retour sur investissement tangible. Obtenez plus de prospects, plus de ventes et plus de croissance grâce à notre expertise. Ceci n'est qu'un exemple de texte, car notre site est perpétuellement.`}
                   {/* <span className="font-extrabold">
                     Corem ipsum dolor sit amet
                   </span> */}

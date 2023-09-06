@@ -36,6 +36,8 @@ export default {
 
       fontFamily: {
         'sans': ['Helvetica', 'sans-serif'],
+        'font-aoboshi': ['Aoboshi One', 'sans-serif'],
+        'font-arial' : ['Arial'],
       },
     },
 
