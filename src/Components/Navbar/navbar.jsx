@@ -253,7 +253,7 @@ const Navbar = () => {
       <Button />
 
       <p className="text-center mt-10">
-        <span className="text-black text-xl font-medium sm:text-4xl mt-5 sm:mt-10 whitespace-nowrap animation-scrolling-rtl">
+        <span className="text-black text-3xl font-medium sm:text-4xl mt-5 sm:mt-10 whitespace-nowrap animation-scrolling-rtl">
           DESIGN | DÉVELOPPEMENT | MARKETING DIGITAL | STRATÉGIE DE MARQUE
         </span>
       </p>
