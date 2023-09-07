@@ -55,9 +55,9 @@ export default {
       {
         light: {
           ...require("daisyui/src/theming/themes"),
-          "primary": "#3E9BF0",
-          "primary-focus": "#3E9BF0",
-          "secondary": "#3E9BF0",
+          "primary": "#FFF6E4",
+          "primary-focus": "#FFF6E4",
+          "secondary": "#FFF6E4",
         },
       },
     ],
