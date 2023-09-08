@@ -28,7 +28,7 @@ const Form = () => {
         </div>
         <div className="flex justify-center sm:flex-row md:flex-row lg:flex-row flex-col m-10 mt-12">
           <div className="w-96 h-3/6 mr-64 mb-20 sm:mb-10 sm:text-left md:text-left">
-            <p className="font-extrabold text-4xl sm:text-4xl text-black w-80 sm:w-96 md:w-96 lg:w-96">
+            <p className="font-extrabold text-2xl sm:text-4xl text-black w-80 sm:w-96 md:w-96 lg:w-96">
               Si vous recherchez une agence digitale qui peut donner vie à votre
               projet numérique, qui excelle dans le design et le développement
               web, ne cherchez pas plus loin.
@@ -36,7 +36,7 @@ const Form = () => {
             <p
               data-aos="zoom-in"
               data-aos-duration="1000"
-              className="text-black text-2xl w-80 sm:w-96 md:w-96 lg:w-96 mt-10"
+              className="text-black text-lg sm:text-2xl w-80 sm:w-96 md:w-96 lg:w-96 mt-10"
             >
               {`Contactez-nous aujourd'hui pour discuter de
           votre projet et découvrir comment nous pouvons vous aider à briller

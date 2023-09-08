@@ -1,3 +1,4 @@
+import ButtonAgency from "../UI/Button/button-agency";
 import TitleAgency from "../UI/Button/title-agency";
 
 const SectionAgency = () => {
@@ -36,22 +37,22 @@ const SectionAgency = () => {
                   <span className="font-extrabold">artisans du web.</span>
                   <br />
                   <span className="text-black">
-                    Si vous recherchez une équipe{" "}
-                    <span className="font-extrabold">passionnée</span> et{" "}
-                    <span className="font-extrabold">compétente</span> pour vous
-                    accompagner dans le domaine du{" "}
-                    <span className="font-extrabold">Design</span>,{" "}
+                    {"Si vous recherchez une équipe"}
+                    <span className="font-extrabold">{"passionnée"}</span> et
+                    <span className="font-extrabold">compétente</span> {` pour vous
+                    accompagner dans le domaine du`}
+                    <span className="font-extrabold">{" Design, "}</span> 
                     <span className="font-extrabold">Développement web</span> ou
                     <span className="font-extrabold">
                       {" Marketing Digital "}
-                    </span>{" "}
-                    ne cherchez pas plus loin.
+                    </span>{"ne cherchez pas plus loin."}
                   </span>
                 </p>
-                {/* <p className="text-black text-center text-2xl">Si vous recherchez une équipe passionnée et compétente pour vous accompagner dans le domaine du Design, Développement web ou Marketing Digital ne cherchez pas plus loin.</p> */}
               </div>
             </div>
           </div>
+
+          <ButtonAgency/>
 
           <section className="bg-0C3E78 py-24 px-4 sm:px-6 lg:px-8">
             <div className="mt-8 mb-10 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
