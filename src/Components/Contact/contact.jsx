@@ -26,7 +26,7 @@ const Form = () => {
         <div>
           <Title />
         </div>
-        <div className="flex justify-center sm:flex-row md:flex-row lg:flex-row flex-col mt-10">
+        <div className="flex justify-center sm:flex-row md:flex-row lg:flex-row flex-col mt-10 p-10">
           <div className="w-96 h-3/6 mr-64 sm:mb-5 sm:text-left md:text-left">
             <p className="font-extrabold text-2xl sm:text-4xl text-black w-80 sm:w-96 md:w-96 lg:w-96">
               Si vous recherchez une agence digitale qui peut donner vie à votre
