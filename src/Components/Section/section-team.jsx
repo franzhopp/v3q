@@ -177,8 +177,8 @@ const SectionTeam = () => {
                         </animated.h1>
                       </div>
 
-                      <div className="w-96 sm:w-80">
-                        <p className="text-black text-right text-base mb-10 ml-6 sm:ml-0 z">
+                      <div className="w-96 sm:w-72">
+                        <p className="text-black text-right text-base mb-10 ml-10 sm:ml-0 z">
                           <span className="font-extrabold">
                             Corem ipsum dolor sit amet
                           </span> 

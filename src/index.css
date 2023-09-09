@@ -63,21 +63,21 @@ body {
     background-image: url("./assets/z.png");
 }
 
-.input-with-svg {
+/* .input-with-svg {
     background-image: url('./assets/Arrow\ 3.svg');
     background-repeat: no-repeat;
     background-position: right center;
     padding-right: 30px;
-}
+} */
 
 .image-navi-studio-agency {
     height: 30vh;
     border-radius: 0px 0px 0px 190px;
-    background: url("./assets/photo-bg-agency.png"), lightgray -46.697px -768.547px / 106.886% 974.977% no-repeat;
+    background: url("./assets/bg-title-agency.png"), lightgray -46.697px -768.547px / 106.886% 974.977% no-repeat;
 }
 
 .image-navi-studio {
-    background-image: url('./assets/pexels-google-deepmind-18068537.jpg');
+    background-image: url('./assets/bg-home.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
@@ -97,7 +97,7 @@ body {
 .image-navi-studio-contact {
     height: 30vh;
     border-radius: 0px 0px 0px 181px;
-    background: url("./assets/photo-bg-contact.png"), lightgray -1432.171px -108.115px / 298.913% 133.472% no-repeat;
+    background: url("./assets/bg-title-contact.png"), lightgray -1432.171px -108.115px / 298.913% 133.472% no-repeat;
 }
 
 .animation-scrolling-rtl {
