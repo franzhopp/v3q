@@ -68,11 +68,11 @@ const SectionTeam = () => {
                   <div className="flex flex-col space-x-3 mb-20 sm:flex-row">
                     {/* Image */}
                     <div className="mb-10 sm:mb-0">
-                      <div className="w-auto h-auto ml-3 sm:ml-0">
+                      <div className="w-auto h-auto">
                         <img
                           src={ImageLondon}
                           alt="Image London"
-                          className="rounded-lg ml-10"
+                          className="rounded-lg"
                         />
                       </div>
                     </div>
