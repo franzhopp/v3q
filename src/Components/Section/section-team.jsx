@@ -68,25 +68,18 @@ const SectionTeam = () => {
                   <div className="flex flex-col space-x-3 mb-20 sm:flex-row">
                     {/* Image */}
                     <div className="mb-10 sm:mb-0">
-                      <div className="w-auto h-auto ml-6 sm:ml-0">
-                        <div className="relative group">
-                          <img
-                            src={ImageLondon}
-                            alt="Image Paris"
-                            className="rounded-lg transition-transform transform scale-100 group-hover:scale-90"
-                          />
-                          <div className="w-auto h-auto absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-C22E2E transition-opacity">
-                            <p className="text-white text-xl font-semibold number">
-                              London
-                            </p>
-                          </div>
-                        </div>
+                      <div className="w-auto h-auto ml-3 sm:ml-0">
+                        <img
+                          src={ImageLondon}
+                          alt="Image London"
+                          className="rounded-lg ml-10"
+                        />
                       </div>
                     </div>
                     <div className="flex flex-col">
-                      <div className="text-black text-left mb-5 ml-3">
+                      <div className="text-black text-left mb-5 ml-10 sm:ml-0">
                         <p className="text-4xl font-extrabold">Mélissa Nefti</p>
-                        <p className="text-4xl font-extrabold">Designer</p>
+                        <p data-aos="fade-right" className="text-4xl font-extrabold">Designer</p>
                         <animated.h1
                           style={props}
                           className="text-4xl font-extrabold tracking-wide"
@@ -96,7 +89,7 @@ const SectionTeam = () => {
                       </div>
 
                       <div className="w-72">
-                        <p className="text-black text-left text-base ml-3 mb-10">
+                        <p className="text-black text-left text-base mb-10 ml-10 sm:ml-0">
                           <span className="font-extrabold">
                             Corem ipsum dolor sit amet
                           </span>
@@ -164,11 +157,11 @@ const SectionTeam = () => {
                       </div>
 
                       <div className="flex flex-col">
-                        <div className="text-black text-right mb-5 mr-6">
+                        <div className="text-black text-right mb-5 mr-10 sm:mr-0">
                           <p className="text-4xl font-extrabold">
                             Louisa Fernandez
                           </p>
-                          <p className="text-4xl font-extrabold">
+                          <p data-aos="fade-left" className="text-4xl font-extrabold">
                             Web Developper
                           </p>
                           <animated.h1
@@ -180,7 +173,7 @@ const SectionTeam = () => {
                         </div>
 
                         <div className="w-96 sm:w-80">
-                          <p className="text-black text-right text-base mb-10 mr-6">
+                          <p className="text-black text-right text-base mb-10 mr-10 sm:mr-0">
                             <span className="font-extrabold">
                               Corem ipsum dolor sit amet
                             </span>
@@ -197,18 +190,11 @@ const SectionTeam = () => {
 
                       <div className="mb-10 sm:mb-0">
                         <div className="w-auto h-auto">
-                          <div className="relative group">
-                            <img
-                              src={ImageParis}
-                              alt="Image Paris"
-                              className="rounded-lg transition-transform transform scale-100 group-hover:scale-90"
-                            />
-                            <div className="w-auto h-auto absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-C22E2E transition-opacity">
-                              <p className="text-white text-xl font-semibold number">
-                                Paris
-                              </p>
-                            </div>
-                          </div>
+                          <img
+                            src={ImageParis}
+                            alt="Image Paris"
+                            className="rounded-lg ml-10 sm:ml-0"
+                          />
                         </div>
                       </div>
                     </div>

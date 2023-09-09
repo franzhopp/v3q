@@ -27,12 +27,14 @@ const Form = () => {
           <Title />
         </div>
         <div className="flex justify-center sm:flex-row md:flex-row lg:flex-row flex-col m-10">
-          <div className="w-96 h-3/6 mr-64 sm:mb-5 sm:text-left md:text-left">
-            <p className="font-extrabold text-3xl sm:text-4xl text-black w-80">
+          <div className="w-96 mr-64 sm:mb-5">
+            <div className=" w-4/5 sm:w-96">
+            <p className="font-extrabold text-left text-3xl sm:text-4xl text-black">
               Si vous recherchez une agence digitale qui peut donner vie à votre
               projet numérique, qui excelle dans le design et le développement
               web, ne cherchez pas plus loin.
             </p>
+            </div>
             <p
               data-aos="zoom-in"
               data-aos-duration="1000"
