@@ -26,7 +26,7 @@ const Footer = () => {
                 className="text-black transition hover:text-gray-700/75"
                 href="/"
               >
-                About
+                À propos
               </a>
             </li>
 
@@ -35,16 +35,7 @@ const Footer = () => {
                 className="text-black transition hover:text-gray-700/75"
                 href="/"
               >
-                Careers
-              </a>
-            </li>
-
-            <li>
-              <a
-                className="text-black transition hover:text-gray-700/75"
-                href="/"
-              >
-                History
+                Histoire
               </a>
             </li>
 
@@ -63,15 +54,6 @@ const Footer = () => {
                 href="/"
               >
                 Projects
-              </a>
-            </li>
-
-            <li>
-              <a
-                className="text-black transition hover:text-gray-700/75"
-                href="/"
-              >
-                Blog
               </a>
             </li>
           </ul>
