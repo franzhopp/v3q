@@ -8,7 +8,7 @@ const ButtonSend = () => {
           to="/"
           href="about"
           data-aos="fade-right"
-          className="inline-flex items-center gap-2 border rounded-full bg-black px-8 sm:px-6 py-3 text-FFF6E4 text-3xl"
+          className="inline-flex items-center gap-2 rounded-full bg-black px-8 sm:px-6 py-3 text-FFF6E4 text-3xl"
         >
           <span className="text-3xl mr-3 font-extrabold heading-responsive">
             Envoyer{" "}

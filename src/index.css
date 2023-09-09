@@ -85,6 +85,15 @@ body {
     max-width: 100%;
 }
 
+.bg-contact-blur {
+    background-image: url('./assets/bg-contact-blur.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+
 .image-navi-studio-contact {
     height: 30vh;
     border-radius: 0px 0px 0px 181px;
