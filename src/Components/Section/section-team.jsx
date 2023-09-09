@@ -68,7 +68,11 @@ const SectionTeam = () => {
                   {/* Image */}
                   <div className="mb-10 sm:mb-0">
                     <div className="w-auto h-auto ml-3">
-                      <img src={ImageLondon} alt="Image London" className="" />
+                      <img
+                        src={ImageLondon}
+                        alt="Image London"
+                        className=" rounded-lg "
+                      />
                     </div>
                   </div>
                   <div className="flex flex-col">
@@ -185,7 +189,11 @@ const SectionTeam = () => {
 
                     <div className="mb-10 sm:mb-0">
                       <div className="w-auto h-auto">
-                        <img src={ImageParis} alt="Image Paris" className="" />
+                        <img
+                          src={ImageParis}
+                          alt="Image Paris"
+                          className="rounded-lg"
+                        />
                       </div>
                     </div>
                   </div>

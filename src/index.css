@@ -172,10 +172,9 @@ body {
 
 
 .test {
-    width: 86px;
-    height: 299px;
+    width: 270px;
+    height: 72px;
     border-radius: 43px;
-
     background-color: black;
     flex-direction: column;
 }
