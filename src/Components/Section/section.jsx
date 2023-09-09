@@ -6,7 +6,7 @@ const Section = () => {
       <div className="border-red">
         <section
           id="about"
-          className="max-w-6xl mx-auto py-40 px-4 sm:px-6 lg:px-8"
+          className="max-w-6xl mx-auto mt-20 px-4 sm:px-6 lg:px-8"
         >
           <div className="mt-8 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
             {/* Step 1 */}

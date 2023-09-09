@@ -26,8 +26,8 @@ const Form = () => {
         <div>
           <Title />
         </div>
-        <div className="flex justify-center sm:flex-row md:flex-row lg:flex-row flex-col m-10 mt-12">
-          <div className="w-96 h-3/6 mr-64 mb-20 sm:mb-10 sm:text-left md:text-left">
+        <div className="flex justify-center sm:flex-row md:flex-row lg:flex-row flex-col m-10">
+          <div className="w-96 h-3/6 mr-64 sm:mb-5 sm:text-left md:text-left">
             <p className="font-extrabold text-2xl sm:text-4xl text-black w-80 sm:w-96 md:w-96 lg:w-96">
               Si vous recherchez une agence digitale qui peut donner vie à votre
               projet numérique, qui excelle dans le design et le développement
@@ -58,7 +58,7 @@ const Form = () => {
                 fill="#E18AB0"
               />
             </svg>
-            <div className="flex flex-col mt-10 sm:mt-6">
+            <div className="flex flex-col sm:mt-6">
               <div className="sm:w-w-f md:w-w-f">
                 <div className="bg-contact relative bottom-10 sm:bottom-72 mb-20 rounded-rounded-form-56 p-10">
                   <form>
