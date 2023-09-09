@@ -67,19 +67,25 @@ const SectionTeam = () => {
                 <div className="flex flex-col justify-center mb-10">
                   <div className="flex flex-col space-x-3 mb-20 sm:flex-row">
                     {/* Image */}
+
                     <div className="mb-10 sm:mb-0">
                       <div className="w-auto h-auto">
                         <img
                           src={ImageLondon}
                           alt="Image London"
-                          className="rounded-lg"
+                          className="rounded-lg ml-10 sm:ml-0"
                         />
                       </div>
                     </div>
                     <div className="flex flex-col">
-                      <div className="text-black text-left mb-5 sm:ml-0">
+                      <div className="text-black text-left mb-5 ml-10 sm:ml-0">
                         <p className="text-4xl font-extrabold">Mélissa Nefti</p>
-                        <p data-aos="fade-right" className="text-4xl font-extrabold">Designer</p>
+                        <p
+                          data-aos="fade-right"
+                          className="text-4xl font-extrabold"
+                        >
+                          Designer
+                        </p>
                         <animated.h1
                           style={props}
                           className="text-4xl font-extrabold tracking-wide"
@@ -89,7 +95,7 @@ const SectionTeam = () => {
                       </div>
 
                       <div className="w-72">
-                        <p className="text-black text-left text-base mb-10 sm:ml-0">
+                        <p className="text-black text-left text-base mb-10 ml-10 sm:ml-0">
                           <span className="font-extrabold">
                             Corem ipsum dolor sit amet
                           </span>
@@ -161,7 +167,10 @@ const SectionTeam = () => {
                           <p className="text-4xl font-extrabold">
                             Louisa Fernandez
                           </p>
-                          <p data-aos="fade-left" className="text-4xl font-extrabold">
+                          <p
+                            data-aos="fade-left"
+                            className="text-4xl font-extrabold"
+                          >
                             Web Developper
                           </p>
                           <animated.h1
