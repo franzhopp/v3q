@@ -76,7 +76,7 @@ const SectionTeam = () => {
                             className="rounded-lg transition-transform transform scale-100 group-hover:scale-90"
                           />
                           <div className="w-auto h-auto absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-C22E2E transition-opacity">
-                            <p className="text-white text-xl font-semibold">
+                            <p className="text-white text-xl font-semibold number">
                               London
                             </p>
                           </div>
@@ -204,7 +204,7 @@ const SectionTeam = () => {
                               className="rounded-lg transition-transform transform scale-100 group-hover:scale-90"
                             />
                             <div className="w-auto h-auto absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-C22E2E transition-opacity">
-                              <p className="text-white text-xl font-semibold">
+                              <p className="text-white text-xl font-semibold number">
                                 Paris
                               </p>
                             </div>
