@@ -77,7 +77,7 @@ const SectionTeam = () => {
                     <div className="text-black text-left mb-5 ml-10 sm:ml-0">
                       <p className="text-4xl font-extrabold">Mélissa Nefti</p>
                       <p
-                        data-aos="fade-right"
+                        data-aos="fade-down-left"
                         className="text-4xl font-extrabold"
                       >
                         Designer
@@ -164,7 +164,7 @@ const SectionTeam = () => {
                           Louisa Fernandez
                         </p>
                         <p
-                          data-aos="fade-left"
+                          data-aos="fade-down-left"
                           className="text-4xl font-extrabold"
                         >
                           Web Developper

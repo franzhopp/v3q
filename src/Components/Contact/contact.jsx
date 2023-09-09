@@ -20,7 +20,9 @@ const Form = () => {
 
   return (
     <div id="contact" className="bg-FFF6E4">
-      <section>
+      <section
+  
+      >
         <div>
           <Title />
         </div>
@@ -105,16 +107,8 @@ const Form = () => {
             <div className="relative">
               <FloatSvg />
             </div>
-            {/* <div
-              style={{
-                position: "absolute",
-                top: position.y,
-                left: position.x,
-                transform: "translate(-50%, -50%)",
-              }}
-            > */}
             {/* <svg
-              className=""
+              className="relative bottom-1/3 right-20 "
               width="204"
               height="208"
               viewBox="0 0 204 208"
@@ -126,6 +120,14 @@ const Form = () => {
                 fill="#E18AB0"
               />
             </svg> */}
+            {/* <div
+              style={{
+                position: "absolute",
+                top: position.y,
+                left: position.x,
+                transform: "translate(-50%, -50%)",
+              }}
+            > */}
           </div>
           {/* </div> */}
         </div>
