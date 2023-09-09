@@ -91,7 +91,7 @@ const SectionTeam = () => {
                     </div>
 
                     <div className="w-72">
-                      <p className="text-black text-left text-base mb-10 ml-10 sm:ml-0">
+                      <p className="text-black text-left text-base mb-10 ml-10 sm:ml-0 p">
                         <span className="font-extrabold">
                           Corem ipsum dolor sit amet
                         </span>
@@ -178,11 +178,11 @@ const SectionTeam = () => {
                       </div>
 
                       <div className="w-96 sm:w-80">
-                        <p className="text-black text-right text-base mb-10 mr-10 sm:mr-0">
+                        <p className="text-black text-right text-base mb-10 ml-10 sm:ml-3 z">
                           <span className="font-extrabold">
                             Corem ipsum dolor sit amet
-                          </span>
-                          , consectetur adipiscing elit. Etiam eu turpis
+                          </span> 
+                          , consectetur adipiscing elit. Etiam eu turpis ml-30
                           molestie, dictum est a, mattis tellus. Sed dignissim,
                           metus nec fringilla accumsan, risus sem.{" "}
                           <span className="font-extrabold">
