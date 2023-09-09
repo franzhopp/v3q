@@ -159,7 +159,7 @@ const SectionTeam = () => {
                     </div>
 
                     <div className="flex flex-col">
-                      <div className="text-black text-right mb-5 mr-10 sm:mr-3">
+                      <div className="text-black text-right mb-5 mr-9 sm:mr-0">
                         <p className="text-4xl font-extrabold">
                           Louisa Fernandez
                         </p>
@@ -178,7 +178,7 @@ const SectionTeam = () => {
                       </div>
 
                       <div className="w-96 sm:w-80">
-                        <p className="text-black text-right text-base mb-10 ml-10 sm:ml-3 z">
+                        <p className="text-black text-right text-base mb-10 ml-6 sm:ml-0 z">
                           <span className="font-extrabold">
                             Corem ipsum dolor sit amet
                           </span> 
