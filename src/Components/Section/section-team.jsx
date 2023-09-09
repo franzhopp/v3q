@@ -159,7 +159,7 @@ const SectionTeam = () => {
                     </div>
 
                     <div className="flex flex-col">
-                      <div className="text-black text-right mb-5 mr-10 sm:mr-0">
+                      <div className="text-black text-right mb-5 mr-10 sm:mr-3">
                         <p className="text-4xl font-extrabold">
                           Louisa Fernandez
                         </p>
@@ -182,7 +182,7 @@ const SectionTeam = () => {
                           <span className="font-extrabold">
                             Corem ipsum dolor sit amet
                           </span> 
-                          , consectetur adipiscing elit. Etiam eu turpis ml-30
+                          , consectetur adipiscing elit. Etiam eu turpis
                           molestie, dictum est a, mattis tellus. Sed dignissim,
                           metus nec fringilla accumsan, risus sem.{" "}
                           <span className="font-extrabold">
