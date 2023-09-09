@@ -77,7 +77,7 @@ const SectionTeam = () => {
                       </div>
                     </div>
                     <div className="flex flex-col">
-                      <div className="text-black text-left mb-5 ml-10 sm:ml-0">
+                      <div className="text-black text-left mb-5 sm:ml-0">
                         <p className="text-4xl font-extrabold">Mélissa Nefti</p>
                         <p data-aos="fade-right" className="text-4xl font-extrabold">Designer</p>
                         <animated.h1
@@ -89,7 +89,7 @@ const SectionTeam = () => {
                       </div>
 
                       <div className="w-72">
-                        <p className="text-black text-left text-base mb-10 ml-10 sm:ml-0">
+                        <p className="text-black text-left text-base mb-10 sm:ml-0">
                           <span className="font-extrabold">
                             Corem ipsum dolor sit amet
                           </span>
