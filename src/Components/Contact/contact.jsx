@@ -20,32 +20,26 @@ const Form = () => {
 
   return (
     <div id="contact" className="bg-FFF6E4">
-      <section
-      //id="contact"
-      >
+      <section>
         <div>
           <Title />
         </div>
         <div className="flex justify-center sm:flex-row md:flex-row lg:flex-row flex-col m-10">
-          <div className="w-96 mr-64 sm:mb-5">
-            <div className=" w-4/5 sm:w-96">
-              <p className="font-extrabold text-left text-2xl sm:text-4xl text-black">
-                Si vous recherchez une agence digitale qui peut donner vie à
-                votre projet numérique, qui excelle dans le design et le
-                développement web, ne cherchez pas plus loin.
-              </p>
-            </div>
-            <div className=" w-64 sm:w-0">
-              <p
-                data-aos="zoom-in"
-                data-aos-duration="1000"
-                className="text-black text-base sm:text-2xl mt-10"
-              >
-                {`Contactez-nous aujourd'hui pour discuter de
+          <div className="w-96 h-3/6 mr-64 sm:mb-5 sm:text-left md:text-left">
+            <p className="font-extrabold text-2xl sm:text-4xl text-black w-80 sm:w-96 md:w-96 lg:w-96">
+              Si vous recherchez une agence digitale qui peut donner vie à votre
+              projet numérique, qui excelle dans le design et le développement
+              web, ne cherchez pas plus loin.
+            </p>
+            <p
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              className="text-black text-lg sm:text-2xl w-80 sm:w-96 md:w-96 lg:w-96 mt-10"
+            >
+              {`Contactez-nous aujourd'hui pour discuter de
           votre projet et découvrir comment nous pouvons vous aider à briller
           sur le web. Votre succès numérique est notre mission.`}
-              </p>
-            </div>
+            </p>
           </div>
 
           <div>
