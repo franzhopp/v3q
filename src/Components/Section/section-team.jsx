@@ -50,7 +50,7 @@ const SectionTeam = () => {
               </div>
             </div>
 
-            <div className="flex justify-center py-20 p-3 sm:p-11">
+            <div className="flex justify-center py-0 p-3 sm:p-11">
               <div className="flex flex-col justify-center mb-10">
                 <div className="flex flex-col space-x-3 mb-20 sm:flex-row">
                   {/* Image */}
@@ -150,7 +150,7 @@ const SectionTeam = () => {
                     </div>
 
                     <div className="flex flex-col">
-                      <div className="text-black text-right mb-5 mr-3">
+                      <div className="text-black text-right mb-5 mr-6">
                         <p className="text-4xl font-extrabold">
                           Louisa Fernandez
                         </p>
@@ -160,9 +160,8 @@ const SectionTeam = () => {
                         <p className="text-4xl font-extrabold">Paris</p>
                       </div>
 
-                                            
                       <div className="w-96 sm:w-80">
-                        <p className="text-black text-right text-base mr-4 mb-10">
+                        <p className="text-black text-right text-base mr-6 mb-10">
                           <span className="font-extrabold">
                             Corem ipsum dolor sit amet
                           </span>
@@ -175,10 +174,6 @@ const SectionTeam = () => {
                           , consectetur adipiscing elit.
                         </p>
                       </div>
-
-            
-
-
                     </div>
 
                     <div className="mb-10 sm:mb-0">

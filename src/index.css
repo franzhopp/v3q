@@ -49,6 +49,20 @@ body {
     }
 }
 
+/* .p {
+    width: 248px;
+    height: 139px;
+    background-repeat: no-repeat;
+    background-image: url("./assets/P.png");
+}
+
+.z {
+    width: 248px;
+    height: 139px;
+    background-repeat: no-repeat;
+    background-image: url("./assets/z.png");
+} */
+
 .input-with-svg {
     background-image: url('./assets/Arrow\ 3.svg');
     background-repeat: no-repeat;
@@ -163,6 +177,5 @@ body {
     border-radius: 43px;
 
     background-color: black;
-    flex-direction: column; 
+    flex-direction: column;
 }
-
