@@ -7,7 +7,6 @@ const SectionAgency = () => {
     <>
       <section
         className="bg-FFF6E4 h-1/2"
-        //id="contact"
       >
         <div>
           <TitleAgency className="mt-20" />
