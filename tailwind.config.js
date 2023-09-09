@@ -15,7 +15,7 @@ export default {
       },
 
       height: {
-        'h-f': '987px',
+        'h-f': '700px',
       },
 
       width: {

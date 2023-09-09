@@ -24,7 +24,7 @@ const Form = () => {
       //id="contact"
       >
         <div>
-          <Title className="mt-20" />
+          <Title />
         </div>
         <div className="flex justify-center sm:flex-row md:flex-row lg:flex-row flex-col m-10 mt-12">
           <div className="w-96 h-3/6 mr-64 mb-20 sm:mb-10 sm:text-left md:text-left">
@@ -59,7 +59,7 @@ const Form = () => {
               />
             </svg>
             <div className="flex flex-col mt-10 sm:mt-6">
-              <div className="sm:w-w-f md:w-w-f lg:w-w-f">
+              <div className="sm:w-w-f md:w-w-f">
                 <div className="bg-contact relative bottom-10 sm:bottom-72 mb-20 rounded-rounded-form-56 p-10">
                   <form>
                     {/* <div className="flex space-x-2 sm:justify-center"> */}

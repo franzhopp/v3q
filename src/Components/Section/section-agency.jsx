@@ -1,5 +1,6 @@
 import ButtonAgency from "../UI/Button/button-agency";
 import TitleAgency from "../UI/Button/title-agency";
+import SectionTeam from "./section-team";
 
 const SectionAgency = () => {
   return (
@@ -15,10 +16,10 @@ const SectionAgency = () => {
 
           <div className="h-1/3">
             <div className="flex justify-center">
-              <div className="w-1/2">
+              <div className="w-4/5 sm:w-1/2">
                 <h3
                   data-aos="fade-right"
-                  className="text-center font-extrabold mt-20 text-lg sm:text-4xl text-black"
+                  className="text-center font-extrabold mt-20 text-black text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
                 >
                   Bienvenue chez navi studio.™ – Votre partenaire numérique.
                 </h3>
@@ -26,8 +27,8 @@ const SectionAgency = () => {
             </div>
 
             <div className="flex justify-center">
-              <div className="w-96 sm:w-1/2">
-                <p className="text-black text-arial text-center text-lg sm:text-2xl mt-10 mb-32">
+              <div className="w-4/5 sm:w-1/2">
+                <p className="px-5 text-black text-arial text-justify sm:text-center text-lg sm:text-2xl mt-10">
                   {`Nous sommes bien plus qu'une simple agence digitale. Nous
                   sommes des `}
                   <span className="font-extrabold">
@@ -38,21 +39,23 @@ const SectionAgency = () => {
                   <br />
                   <span className="text-black">
                     {"Si vous recherchez une équipe"}
-                    <span className="font-extrabold">{"passionnée"}</span> et
-                    <span className="font-extrabold">compétente</span> {` pour vous
+                    <span className="font-extrabold">{" passionnée"}</span> et
+                    <span className="font-extrabold"> compétente</span>{" "}
+                    {` pour vous
                     accompagner dans le domaine du`}
-                    <span className="font-extrabold">{" Design, "}</span> 
+                    <span className="font-extrabold">{" Design, "}</span>
                     <span className="font-extrabold">Développement web</span> ou
                     <span className="font-extrabold">
                       {" Marketing Digital "}
-                    </span>{"ne cherchez pas plus loin."}
+                    </span>
+                    {"ne cherchez pas plus loin."}
                   </span>
                 </p>
               </div>
             </div>
           </div>
 
-          <ButtonAgency/>
+          <ButtonAgency />
 
           <section className="bg-0C3E78 py-24 px-4 sm:px-6 lg:px-8">
             <div className="mt-8 mb-10 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
@@ -113,6 +116,8 @@ const SectionAgency = () => {
               </div>
             </div>
           </section>
+
+          <SectionTeam />
         </section>
       </div>
     </>

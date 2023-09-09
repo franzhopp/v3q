@@ -59,7 +59,7 @@ body {
 .image-navi-studio-agency {
     height: 30vh;
     border-radius: 0px 0px 0px 190px;
-    background: url("./assets/Rectangle_41.png"), lightgray -46.697px -768.547px / 106.886% 974.977% no-repeat;
+    background: url("./assets/photo-bg-agency.png"), lightgray -46.697px -768.547px / 106.886% 974.977% no-repeat;
 }
 
 .image-navi-studio {
@@ -74,7 +74,7 @@ body {
 .image-navi-studio-contact {
     height: 30vh;
     border-radius: 0px 0px 0px 181px;
-    background: url("./assets/photo-contact.png"), lightgray -1432.171px -108.115px / 298.913% 133.472% no-repeat;
+    background: url("./assets/photo-bg-contact.png"), lightgray -1432.171px -108.115px / 298.913% 133.472% no-repeat;
 }
 
 .animation-scrolling-rtl {
@@ -122,24 +122,6 @@ body {
     top: 80px;
 }
 
-.border-red {
-    border-right: 4px solid #C22E2E;
-    border-left: 4px solid #C22E2E;
-}
-
-.border-beige {
-    border-right: 4px solid #FFF6E4;
-    border-left: 4px solid #FFF6E4;
-}
-
-.h-f {
-    height: 987px;
-}
-
-.w-f {
-    width: 712px;
-}
-
 .svg {
     top: -14rem;
     left: 38.5rem;
@@ -169,7 +151,18 @@ body {
     }
 }
 
-.test {
+/* .test {
     left: -87rem;
     top: 5rem;
+} */
+
+
+.test {
+    width: 86px;
+    height: 299px;
+    border-radius: 43px;
+
+    background-color: black;
+    flex-direction: column; 
 }
+
