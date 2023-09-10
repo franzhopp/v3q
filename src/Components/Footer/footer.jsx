@@ -16,7 +16,8 @@ const Footer = () => {
             <div className="text-center text-black mt-8 font-semibold">
               &copy; Designé, développé par{" "}
               <span className="text-FFF6E4">Mélissa</span> et{" "}
-              <span className="text-FFF6E4">Louisa</span>. {`Les droits d'auteur de ce contenu sont protégés par la loi.`}
+              <span className="text-FFF6E4">Louisa</span>.{" "}
+              {`Les droits d'auteur de ce contenu sont protégés par la loi.`}
             </div>
           </p>
 
@@ -61,15 +62,22 @@ const Footer = () => {
 
           <ul className="mt-12 flex justify-center gap-6 md:gap-8">
             <li>
-              <img
-                src={LogoTwitter}
-                alt="icône twitter"
-                className="flex-shrink-0 h-10 w-10"
-              />
+              <a href="">
+                <img
+                  src={LogoTwitter}
+                  alt="icône twitter"
+                  className="flex-shrink-0 h-10 w-10"
+                />
+              </a>
             </li>
 
             <li>
-              <a href="" className="">
+              <a
+                href="https://www.instagram.com/navistudio.fr/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className=""
+              >
                 {" "}
                 <img
                   src={LogoInsta}
@@ -93,8 +101,6 @@ const Footer = () => {
           </ul>
         </div>
       </footer>
-
-  
     </>
   );
 };

@@ -7,11 +7,13 @@ import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import "../Section/section.jsx";
 // import Home from "../Hompage/homepage";
+import ModalSearch from "../Modal/modal";
 
 const Navbar = () => {
   const [isAnimating, setIsAnimating] = useState(false);
   const [scrollNavbar, setScrollNavbar] = useState();
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [openModel, setOpenModel] = useState(false);
 
   const handleAnimateButtonClick = () => {
     setIsAnimating(true);
@@ -104,6 +106,9 @@ const Navbar = () => {
               >
                 <svg
                   className="h-7"
+                  onClick={() => {
+                    setOpenModel(true);
+                  }}
                   xmlns="http://www.w3.org/2000/svg"
                   width="31"
                   height="32"
@@ -120,6 +125,7 @@ const Navbar = () => {
                   />
                 </svg>
               </NavLink>
+              {openModel && <ModalSearch />}
             </div>
           </div>
         </div>
@@ -216,6 +222,9 @@ const Navbar = () => {
           >
             <svg
               className="h-5 ml-2"
+              onClick={() => {
+                setOpenModel(true);
+              }}
               xmlns="http://www.w3.org/2000/svg"
               width="31"
               height="32"
@@ -232,6 +241,7 @@ const Navbar = () => {
               />
             </svg>
           </NavLink>
+          {openModel && <ModalSearch />}
         </ul>
       </nav>
 
