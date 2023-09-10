@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import ImageLondon from "../../assets/london.png";
 import ImageParis from "../../assets/paris.png";
-import { HiLocationMarker } from "react-icons/hi"
+import { HiLocationMarker } from "react-icons/hi";
 import { useSpring, animated } from "react-spring";
 
 const SectionTeam = () => {
@@ -87,9 +87,9 @@ const SectionTeam = () => {
                         style={props}
                         className="text-4xl font-extrabold tracking-wide"
                       >
-                         London
+                        London
                       </animated.h1>
-                      <HiLocationMarker className="h-10 w-10 ml-60"/>
+                      <HiLocationMarker className="h-10 w-10 ml-60" />
                     </div>
 
                     <div className="w-72">
@@ -176,15 +176,15 @@ const SectionTeam = () => {
                           className="text-4xl font-extrabold tracking-wide"
                         >
                           Paris
-                        </animated.h1> 
-                        <HiLocationMarker className="h-10 w-10 ml-16 sm:ml-0"/>
+                        </animated.h1>
+                        <HiLocationMarker className="h-10 w-10 ml-16 sm:ml-0" />
                       </div>
 
                       <div className="w-96 sm:w-80">
                         <p className="text-black text-right text-base mb-10 ml-6 sm:ml-3 z">
                           <span className="font-extrabold">
                             Corem ipsum dolor sit amet
-                          </span> 
+                          </span>
                           , consectetur adipiscing elit. Etiam eu turpis
                           molestie, dictum est a, mattis tellus. Sed dignissim,
                           metus nec fringilla accumsan, risus sem.{" "}
@@ -211,6 +211,7 @@ const SectionTeam = () => {
             </div>
           </div>
         </div>
+        <div id="contact" className="mb-20"></div>
       </section>
     </>
   );

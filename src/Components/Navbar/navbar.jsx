@@ -257,6 +257,7 @@ const Navbar = () => {
           DESIGN | DÉVELOPPEMENT | MARKETING DIGITAL | STRATÉGIE DE MARQUE
         </span>
       </p>
+      <div id="about" className="mb-7"></div>
     </div>
   );
 };

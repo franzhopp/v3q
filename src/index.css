@@ -11,6 +11,14 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
+a {
+    cursor: crosshair;
+}
+
+button {
+    cursor: crosshair;
+}
+
 ::-webkit-scrollbar {
     width: 5px;
 }

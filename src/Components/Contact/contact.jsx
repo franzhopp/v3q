@@ -19,7 +19,7 @@ const Form = () => {
   // }, []);
 
   return (
-    <div id="contact" className="bg-FFF6E4 bg-contact-blur">
+    <div className="bg-FFF6E4 bg-contact-blur">
       <section
   
       >
