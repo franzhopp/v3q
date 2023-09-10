@@ -89,7 +89,7 @@ const SectionTeam = () => {
                       >
                         London
                       </animated.h1>
-                      <HiLocationMarker className="h-10 w-10 ml-60" />
+                      {/* <HiLocationMarker className="h-10 w-10 ml-60" /> */}
                     </div>
 
                     <div className="w-72">
@@ -178,7 +178,7 @@ const SectionTeam = () => {
                         >
                           Paris
                         </animated.h1>
-                        <HiLocationMarker className="h-10 w-10 ml-16 sm:ml-0" />
+                        {/* <HiLocationMarker className="h-10 w-10 ml-16 sm:ml-0" /> */}
                       </div>
 
                       <div className="w-96 sm:w-80">
