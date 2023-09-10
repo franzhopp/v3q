@@ -181,7 +181,7 @@ const SectionTeam = () => {
                         {/* <HiLocationMarker className="h-10 w-10 ml-16 sm:ml-0" /> */}
                       </div>
 
-                      <div className="w-96 sm:w-80">
+                      <div className="w-80 sm:w-72">
                         <p className="text-black text-right text-base mb-10 ml-10 sm:ml-0 z">
                           <span className="font-extrabold">
                             Corem ipsum dolor sit amet
