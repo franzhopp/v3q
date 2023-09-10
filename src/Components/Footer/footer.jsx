@@ -23,6 +23,7 @@ const Footer = () => {
           <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
             <li>
               <a
+                id="about"
                 className="text-black transition hover:text-gray-700/75"
                 href="/"
               >
