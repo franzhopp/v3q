@@ -6,6 +6,7 @@
 
 html,
 body {
+    cursor: crosshair;
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
 }
