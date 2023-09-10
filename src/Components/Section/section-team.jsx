@@ -112,21 +112,21 @@ const SectionTeam = () => {
                   <div className="flex justify-center items-center h-24 w-96 mt-0 sm:mt-32">
                     <NavLink
                       to="/"
-                      className="p-6 inline-flex gap-2 border rounded-full bg-black text-FFF6E4"
+                      href="about"
+                      className="inline-flex items-center gap-2 border rounded-full bg-black px-8 py-3 text-FFF6E4"
                     >
-                      <span className="text-4xl mt-2 mr-3 font-semibold">
+                      <span className="text-3xl mr-3 font-semibold heading-responsive">
                         Découvrir{" "}
                       </span>
-
                       <svg
-                        width="69"
-                        height="60"
-                        viewBox="0 0 69 60"
+                        width="44"
+                        height="38"
+                        viewBox="0 0 44 38"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          d="M4 26C1.79086 26 -1.93129e-07 27.7909 0 30C1.93129e-07 32.2091 1.79086 34 4 34L4 26ZM67.8284 32.8284C69.3905 31.2663 69.3905 28.7337 67.8284 27.1716L42.3726 1.71573C40.8105 0.153628 38.2778 0.153628 36.7157 1.71573C35.1536 3.27782 35.1536 5.81048 36.7157 7.37258L59.3431 30L36.7157 52.6274C35.1536 54.1895 35.1536 56.7222 36.7157 58.2843C38.2778 59.8464 40.8105 59.8464 42.3726 58.2843L67.8284 32.8284ZM4 34L65 34L65 26L4 26L4 34Z"
+                          d="M3 16.5C1.61929 16.5 0.5 17.6193 0.5 19C0.5 20.3807 1.61929 21.5 3 21.5L3 16.5ZM42.7678 20.7678C43.7441 19.7915 43.7441 18.2085 42.7678 17.2322L26.8579 1.32233C25.8816 0.346021 24.2986 0.346021 23.3223 1.32233C22.346 2.29864 22.346 3.88155 23.3223 4.85787L37.4645 19L23.3223 33.1421C22.346 34.1184 22.346 35.7014 23.3223 36.6777C24.2986 37.654 25.8816 37.654 26.8579 36.6777L42.7678 20.7678ZM3 21.5L41 21.5L41 16.5L3 16.5L3 21.5Z"
                           fill="#FFF6E4"
                         />
                       </svg>
@@ -140,21 +140,22 @@ const SectionTeam = () => {
                     <div className="flex justify-center items-center h-24 w-96 mt-0 sm:mt-32">
                       <NavLink
                         to="/"
-                        className="p-6 inline-flex gap-2 border rounded-full bg-black text-FFF6E4"
+                        href="about"
+                        className="inline-flex items-center gap-2 border rounded-full bg-black px-8 py-3 text-FFF6E4"
                       >
                         <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="77"
-                          height="60"
-                          viewBox="0 0 77 60"
+                          width="44"
+                          height="38"
+                          viewBox="0 0 44 38"
                           fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
                           <path
-                            d="M73 34C75.2091 34 77 32.2091 77 30C77 27.7909 75.2091 26 73 26L73 34ZM1.17157 27.1716C-0.390526 28.7337 -0.390526 31.2663 1.17157 32.8284L26.6274 58.2843C28.1895 59.8464 30.7222 59.8464 32.2843 58.2843C33.8464 56.7222 33.8464 54.1895 32.2843 52.6274L9.65685 30L32.2843 7.37259C33.8464 5.81049 33.8464 3.27783 32.2843 1.71573C30.7222 0.153635 28.1895 0.153635 26.6274 1.71573L1.17157 27.1716ZM73 26L4 26L4 34L73 34L73 26Z"
+                            d="M41 21.5C42.3807 21.5 43.5 20.3807 43.5 19C43.5 17.6193 42.3807 16.5 41 16.5L41 21.5ZM1.23223 17.2322C0.255922 18.2085 0.255922 19.7915 1.23223 20.7678L17.1421 36.6777C18.1184 37.654 19.7014 37.654 20.6777 36.6777C21.654 35.7014 21.654 34.1184 20.6777 33.1421L6.53553 19L20.6777 4.85787C21.654 3.88156 21.654 2.29864 20.6777 1.32233C19.7014 0.346022 18.1184 0.346022 17.1421 1.32233L1.23223 17.2322ZM41 16.5L3 16.5L3 21.5L41 21.5L41 16.5Z"
                             fill="#FFF6E4"
                           />
                         </svg>
-                        <span className="text-4xl mt-2 ml-3 font-semibold">
+                        <span className="text-3xl ml-3 font-semibold heading-responsive">
                           Découvrir{" "}
                         </span>
                       </NavLink>
