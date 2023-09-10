@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import "../Section/section.jsx";
 // import Home from "../Hompage/homepage";
-import ModalSearch from "../Modal/modal";
+import ModalSearch from "../Modal/modal.jsx";
 
 const Navbar = () => {
   const [isAnimating, setIsAnimating] = useState(false);
@@ -125,7 +125,7 @@ const Navbar = () => {
                   />
                 </svg>
               </NavLink>
-              {openModel && <ModalSearch />}
+              {openModel && <ModalSearch closeModal={setOpenModel} />}
             </div>
           </div>
         </div>
@@ -241,7 +241,7 @@ const Navbar = () => {
               />
             </svg>
           </NavLink>
-          {openModel && <ModalSearch />}
+          {openModel && <ModalSearch closeModal={setOpenModel} />}
         </ul>
       </nav>
 
