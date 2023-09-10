@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import ImageLondon from "../../assets/london.png";
 import ImageParis from "../../assets/paris.png";
+import { HiLocationMarker } from "react-icons/hi"
 import { useSpring, animated } from "react-spring";
 
 const SectionTeam = () => {
@@ -59,7 +60,7 @@ const SectionTeam = () => {
           </div>
 
           <div className="flex justify-center">
-            <div className="flex justify-center px-32">
+            <div className="flex justify-center">
               <div className="flex flex-col justify-center mb-10">
                 <div className="flex flex-col space-x-3 mb-20 sm:flex-row">
                   {/* Image */}
@@ -86,8 +87,9 @@ const SectionTeam = () => {
                         style={props}
                         className="text-4xl font-extrabold tracking-wide"
                       >
-                        London
+                         London
                       </animated.h1>
+                      <HiLocationMarker className="h-10 w-10 ml-60"/>
                     </div>
 
                     <div className="w-72">
@@ -174,7 +176,8 @@ const SectionTeam = () => {
                           className="text-4xl font-extrabold tracking-wide"
                         >
                           Paris
-                        </animated.h1>
+                        </animated.h1> 
+                        <HiLocationMarker className="h-10 w-10"/>
                       </div>
 
                       <div className="w-96 sm:w-80">
