@@ -12,7 +12,7 @@ const ModalSearch = ({ closeModal }) => {
           className="rounded-xl p-3 outline-none input-bordered input-primary mb-5 ml-3 mr-3 sm:mb-0 md:ml-0 "
         />
         <button onClick={() => closeModal(false)}>
-          <ImCross className="text-C22E2E" />
+          <ImCross className="text-C22E2E mb-4 sm:mb-0" />
         </button>
       </div>
     </>
