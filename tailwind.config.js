@@ -32,6 +32,7 @@ export default {
         'C22E2E': '#C22E2E',
         '0C3E78': '#0C3E78',
         '3E9BF0': '#3E9BF0',
+        'E18AB0': '#E18AB0',
       },
 
       fontFamily: {

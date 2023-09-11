@@ -290,7 +290,7 @@ const Navbar = () => {
                   showSousListsMenu ? "block" : "hidden"
                 } p-2`}
               >
-                <li className="list-decimal ml-3">
+                <li className="list-decimal ml-4">
                   <NavLink
                     to="/plats"
                     className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
@@ -298,7 +298,7 @@ const Navbar = () => {
                     Nos valeurs
                   </NavLink>
                 </li>
-                <li className="list-decimal ml-3">
+                <li className="list-decimal ml-4">
                   <NavLink
                     to="/desserts"
                     className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
@@ -306,7 +306,7 @@ const Navbar = () => {
                     Qui sommes-nous ?
                   </NavLink>
                 </li>
-                <li className="list-decimal ml-3">
+                <li className="list-decimal ml-4">
                   <NavLink
                     to="/events"
                     className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
@@ -314,7 +314,7 @@ const Navbar = () => {
                     Prestations
                   </NavLink>
                 </li>
-                <li className="list-decimal ml-3">
+                <li className="list-decimal ml-4">
                   <a
                     to="/events"
                     className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
@@ -322,7 +322,7 @@ const Navbar = () => {
                     Tarifications
                   </a>
                 </li>
-                <li className="list-decimal ml-3">
+                <li className="list-decimal ml-4">
                   <a
                     to="/events"
                     className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
