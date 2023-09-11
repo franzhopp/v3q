@@ -263,7 +263,7 @@ const Navbar = () => {
             to="/"
             href="about"
             onClick={SectionToScroll}
-            className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:bg-slate-200"
+            className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           > 
             Agence
           </NavLink>
@@ -282,7 +282,7 @@ const Navbar = () => {
               <button onClick={toggleSousListsMenu}>
                 <div className="flex items-center justify-between">
                   <div className="pr-2">Services</div>
-                  <LuArrowDown className="mt-1 h-4" />
+                  <LuArrowDown className="mt-1" />
                 </div>
               </button>
 
