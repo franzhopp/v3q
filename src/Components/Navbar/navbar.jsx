@@ -8,12 +8,15 @@ import { motion } from "framer-motion";
 import "../Section/section.jsx";
 // import Home from "../Hompage/homepage";
 import ModalSearch from "../Modal/modal.jsx";
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 const Navbar = () => {
   const [isAnimating, setIsAnimating] = useState(false);
   const [scrollNavbar, setScrollNavbar] = useState();
   const [toggleMenu, setToggleMenu] = useState(false);
   const [openModel, setOpenModel] = useState(false);
+  const [showSousListsMenu, setShowSousListsMenu] = useState(false);
+  const [isMouseOnSubmenu, setIsMouseOnSubmenu] = useState(false);
 
   const handleAnimateButtonClick = () => {
     setIsAnimating(true);
@@ -22,10 +25,6 @@ const Navbar = () => {
       setIsAnimating(false);
     }, 1000);
   };
-
-  // const closeMobileMenu = () => {
-  //   setToggleMenu(false);
-  // };
 
   const toggleMenuMobile = () => {
     setToggleMenu(!toggleMenu);
@@ -45,8 +44,21 @@ const Navbar = () => {
     }
   };
 
+  const toggleSousListsMenu = () => {
+    setShowSousListsMenu(!showSousListsMenu);
+  };
+
+  const handleMouseEnterSubmenu = () => {
+    setIsMouseOnSubmenu(true);
+  };
+
+  const closeSubmenuWithDelay = () => {
+    setTimeout(() => {
+      setShowSousListsMenu(false);
+    }, 500);
+  };
+
   useEffect(() => {
-    // Gestion de l'évènement du scroll :
     const handleScroll = () => {
       if (window.scrollY > 0) {
         setScrollNavbar(true);
@@ -64,26 +76,83 @@ const Navbar = () => {
 
   return (
     <div className="image-navi-studio h-screen sm:pb-20 mb:min-h-650 min-h-500">
-      <nav
-        className="bg-FFF6E4 border-b-4 border-C22E2E h-28 items-center transition duration-300 ease-in-out fixed w-full top-0 left-0 shadow-md z-max"
-        data-aos="fade-left"
-      >
+      <nav className="bg-FFF6E4 border-b-4 border-C22E2E h-28 items-center transition duration-300 ease-in-out fixed w-full top-0 left-0 shadow-md z-max">
         <div className="container mt-2 mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-24">
             <div className="flex items-center">
-              <img className="lg:h-20 h-10 bg-cover bg-no-repeat" src={Image} />
+              <img
+                data-aos="fade-left"
+                className="lg:h-20 h-10 bg-cover bg-no-repeat"
+                src={Image}
+              />
             </div>
             <div className="flex items-center">
               <NavLink
                 to="/"
                 href="about"
+                data-aos="fade-left"
                 onClick={SectionToScroll}
                 className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md text-2xl font-extrabold"
               >
                 Agence
               </NavLink>
+
+              <li data-aos="fade-left" className="relative group list-none">
+                <NavLink
+                  to=""
+                  className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md text-2xl font-extrabold"
+                >
+                  Services
+                </NavLink>
+                <ul className="absolute hidden group-hover:block bg-FFF6E4 border border-gray-300 mt-2 py-2">
+                  <li>
+                    <NavLink
+                      to="/plats"
+                      onMouseEnter={handleMouseEnterSubmenu}
+                      onMouseLeave={closeSubmenuWithDelay}
+                      className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
+                    >
+                      Nos valeurs
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/desserts"
+                      className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
+                    >
+                      Qui sommes-nous ?
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/events"
+                      className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
+                    >
+                      Prestations
+                    </NavLink>
+                  </li>
+                  <li>
+                    <a
+                      to="/events"
+                      className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
+                    >
+                      Tarifications
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      to="/events"
+                      className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
+                    >
+                      Devis gratuit
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
               <NavLink
                 to="/"
+                data-aos="fade-left"
                 href="about"
                 className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md text-2xl font-extrabold"
               >
@@ -91,6 +160,7 @@ const Navbar = () => {
               </NavLink>
               <NavLink
                 to="/"
+                data-aos="fade-left"
                 onClick={SectionToSectionContact}
                 className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md text-2xl font-extrabold"
               >
@@ -101,10 +171,12 @@ const Navbar = () => {
               </NavLink>
               <NavLink
                 to="/"
+                data-aos="fade-left"
                 href="contact"
                 className="text-C22E2E hover:text-0C3E78 px-6 py-2 text-lg font-extrabold"
               >
                 <svg
+                  data-aos="fade-left"
                   className="h-7"
                   onClick={() => {
                     setOpenModel(true);
@@ -201,6 +273,66 @@ const Navbar = () => {
           >
             Portfolio
           </NavLink>
+          <li>
+            <NavLink
+              to="/"
+              className="text-C22E2E block px-3 py-2 rounded-md text-base font-extrabold"
+            >
+              <button onClick={toggleSousListsMenu}>
+                <div className="flex items-center justify-between">
+                  <div className="pr-2">Services</div>{" "}
+                  <MdOutlineKeyboardArrowDown />
+                </div>
+              </button>
+
+              <ul
+                className={`toggle-menu ${
+                  showSousListsMenu ? "block" : "hidden"
+                } p-2`}
+              >
+                <li className="list-decimal ml-3">
+                  <NavLink
+                    to="/plats"
+                    className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
+                  >
+                    Nos valeurs
+                  </NavLink>
+                </li>
+                <li className="list-decimal ml-3">
+                  <NavLink
+                    to="/desserts"
+                    className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
+                  >
+                    Qui sommes-nous ?
+                  </NavLink>
+                </li>
+                <li className="list-decimal ml-3">
+                  <NavLink
+                    to="/events"
+                    className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
+                  >
+                    Prestations
+                  </NavLink>
+                </li>
+                <li className="list-decimal ml-3">
+                  <a
+                    to="/events"
+                    className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
+                  >
+                    Tarifications
+                  </a>
+                </li>
+                <li className="list-decimal ml-3">
+                  <a
+                    to="/events"
+                    className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
+                  >
+                    Devis gratuit
+                  </a>
+                </li>
+              </ul>
+            </NavLink>
+          </li>
           <NavLink
             to="/"
             onClick={SectionToSectionContact}
