@@ -20,6 +20,7 @@ const ModalSearch = ({ closeModal, searchQuery }) => {
   return (
     <>
       <div className="bg-FFF6E4 flex space-x-2">
+      
         <input
           type="text"
           placeholder="Votre recherche..."
@@ -30,7 +31,8 @@ const ModalSearch = ({ closeModal, searchQuery }) => {
         <button onClick={() => closeModal(false)}>
           <ImCross className="text-C22E2E mb-4 sm:mb-0" />
         </button>
-      </div>
+        </div>
+    
     </>
   );
 };

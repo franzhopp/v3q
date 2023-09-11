@@ -82,11 +82,11 @@ const Navbar = () => {
         className={`bg-FFF6E4 border-b-4 border-C22E2E h-28 items-center transition duration-300 ease-in-out fixed w-full top-0 left-0 shadow-md z-max`}
       >
         <div className="container mt-2 mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-24">
+          <div className="flex items-center justify-between h-24 ">
             <div className="flex items-center">
               <img
                 data-aos="fade-left"
-                className="lg:h-20 h-10 bg-cover bg-no-repeat"
+                className="lg:h-20 h-10 bg-cover bg-no-repeat xl:logo"
                 src={Image}
               />
             </div>
@@ -96,7 +96,7 @@ const Navbar = () => {
                 href="about"
                 data-aos="fade-left"
                 onClick={SectionToScroll}
-                className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md text-2xl font-extrabold"
+                className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
               >
                 Agence
               </NavLink>
@@ -104,7 +104,7 @@ const Navbar = () => {
               <li data-aos="fade-left" className="relative group list-none">
                 <NavLink
                   to=""
-                  className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md text-2xl font-extrabold"
+                  className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
                 >
                   Services
                 </NavLink>
@@ -158,7 +158,7 @@ const Navbar = () => {
                 to="/"
                 data-aos="fade-left"
                 href="about"
-                className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md text-2xl font-extrabold"
+                className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
               >
                 Portfolio
               </NavLink>
@@ -166,22 +166,22 @@ const Navbar = () => {
                 to="/"
                 data-aos="fade-left"
                 onClick={SectionToSectionContact}
-                className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md text-2xl font-extrabold"
+                className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
               >
                 Contact
               </NavLink>
-              <NavLink className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md text-2xl font-extrabold">
+              <NavLink className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold">
                 FR
               </NavLink>
               <NavLink
                 to="/"
                 data-aos="fade-left"
                 href="contact"
-                className="text-C22E2E hover:text-0C3E78 px-6 py-2 text-lg font-extrabold"
+                className="text-C22E2E hover:text-0C3E78 px-6 py-2 xl:text-2xl text-base font-extrabold"
               >
                 <svg
                   data-aos="fade-left"
-                  className="h-7"
+                  className="h-7 xl:flex hidden"
                   onClick={() => {
                     setOpenModel(true);
                   }}
@@ -213,7 +213,7 @@ const Navbar = () => {
       </nav>
 
       <nav
-        className={`fixed w-full top-0 left-0 shadow-md xl:hidden overflow-x-scroll xl:mb-40 bg-FFF6E4 z-max`}
+        className={`fixed w-full top-0 left-0 shadow-md md:hidden bg-FFF6E4 z-max`}
       >
         {/* 2 items */}
         <div className="px-5 h-28 flex items-center justify-between">
