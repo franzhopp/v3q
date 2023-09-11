@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import "../Section/section.jsx";
 import "../Hompage/homepage";
 import ModalSearch from "../Modal/modal.jsx";
-import { MdKeyboardDoubleArrowDown } from "react-icons/md";
+import { LuArrowDown } from "react-icons/lu";
 
 const Navbar = () => {
   const [isAnimating, setIsAnimating] = useState(false);
@@ -263,26 +263,26 @@ const Navbar = () => {
             to="/"
             href="about"
             onClick={SectionToScroll}
-            className="text-C22E2E block px-3 py-2 rounded-md text-base font-extrabold hover:text-0C3E78"
-          >
+            className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:bg-slate-200"
+          > 
             Agence
           </NavLink>
           <NavLink
             to="/"
             href="portfolio"
-            className="text-C22E2E block px-3 py-2 rounded-md text-base font-extrabold hover:text-0C3E78"
+            className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             Portfolio
           </NavLink>
           <li>
             <NavLink
               to="/"
-              className="text-C22E2E block px-3 py-2 rounded-md text-base font-extrabold"
+              className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold"
             >
               <button onClick={toggleSousListsMenu}>
                 <div className="flex items-center justify-between">
                   <div className="pr-2">Services</div>
-                  <MdKeyboardDoubleArrowDown />
+                  <LuArrowDown className="mt-1 h-4" />
                 </div>
               </button>
 
@@ -294,7 +294,7 @@ const Navbar = () => {
                 <li className="list-decimal ml-4">
                   <NavLink
                     to="/nos-valeurs"
-                    className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
+                    className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Nos valeurs
                   </NavLink>
@@ -302,7 +302,7 @@ const Navbar = () => {
                 <li className="list-decimal ml-4">
                   <NavLink
                     to="/qui-sommes-nous"
-                    className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
+                    className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Qui sommes-nous ?
                   </NavLink>
@@ -310,7 +310,7 @@ const Navbar = () => {
                 <li className="list-decimal ml-4">
                   <NavLink
                     to="/prestations"
-                    className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
+                    className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Prestations
                   </NavLink>
@@ -318,7 +318,7 @@ const Navbar = () => {
                 <li className="list-decimal ml-4">
                   <a
                     to="/tarifs"
-                    className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
+                    className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Tarifications
                   </a>
@@ -326,7 +326,7 @@ const Navbar = () => {
                 <li className="list-decimal ml-4">
                   <a
                     to="/devis-gratuit"
-                    className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
+                    className="block text-C22E2E  hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Devis gratuit
                   </a>
@@ -337,14 +337,14 @@ const Navbar = () => {
           <NavLink
             to="/"
             onClick={SectionToSectionContact}
-            className="text-C22E2E block px-3 py-2 rounded-md text-base font-extrabold hover:text-0C3E78"
+            className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             Contact
           </NavLink>
           <NavLink
             to="/"
             href="translate"
-            className="text-C22E2E block px-3 py-2 rounded-md text-base font-extrabold hover:text-0C3E78"
+            className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             FR
           </NavLink>
