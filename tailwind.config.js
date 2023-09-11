@@ -48,6 +48,7 @@ export default {
       'lg': '1024px',
       'xl': '1247px',
       '2xl': '1536px',
+      'tl' : '800px',
     }
   },
   plugins: [require("daisyui")],
