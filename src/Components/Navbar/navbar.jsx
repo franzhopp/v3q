@@ -18,6 +18,7 @@ const Navbar = () => {
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
   const [isMouseOnSubmenu, setIsMouseOnSubmenu] = useState(false);
   const [openSearch, setSearchQuery] = useState("");
+  const [isMobileView, setIsMobileView] = useState(false);
 
   const handleAnimateButtonClick = () => {
     setIsAnimating(true);
@@ -77,7 +78,9 @@ const Navbar = () => {
 
   return (
     <div className="image-navi-studio h-screen sm:pb-20 mb:min-h-650 min-h-500">
-      <nav className="bg-FFF6E4 border-b-4 border-C22E2E h-28 items-center transition duration-300 ease-in-out fixed w-full top-0 left-0 shadow-md z-max">
+      <nav
+        className={`bg-FFF6E4 border-b-4 border-C22E2E h-28 items-center transition duration-300 ease-in-out fixed w-full top-0 left-0 shadow-md z-max`}
+      >
         <div className="container mt-2 mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-24">
             <div className="flex items-center">
@@ -141,7 +144,7 @@ const Navbar = () => {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink  
+                    <NavLink
                       to="/devis-gratuit"
                       className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
@@ -198,13 +201,20 @@ const Navbar = () => {
                   />
                 </svg>
               </NavLink>
-              {openModel && <ModalSearch closeModal={setOpenModel} searchQuery={setSearchQuery} />}
+              {openModel && (
+                <ModalSearch
+                  closeModal={setOpenModel}
+                  searchQuery={setSearchQuery}
+                />
+              )}
             </div>
           </div>
         </div>
       </nav>
 
-      <nav className="fixed w-full top-0 left-0 shadow-md md:hidden bg-FFF6E4 z-max">
+      <nav
+        className={`fixed w-full top-0 left-0 shadow-md xl:hidden bg-FFF6E4 z-max`}
+      >
         {/* 2 items */}
         <div className="px-5 h-28 flex items-center justify-between">
           <a href="">
@@ -264,7 +274,7 @@ const Navbar = () => {
             href="about"
             onClick={SectionToScroll}
             className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
-          > 
+          >
             Agence
           </NavLink>
           <NavLink
