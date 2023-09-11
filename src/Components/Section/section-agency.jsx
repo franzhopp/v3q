@@ -6,6 +6,7 @@ const SectionAgency = () => {
   return (
     <>
       <section
+        id="all"
         className="bg-FFF6E4 h-1/2"
       >
         <div>

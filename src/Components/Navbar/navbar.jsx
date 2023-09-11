@@ -1,14 +1,14 @@
 import Image from "../../assets/logo-5.png";
 // import { AiOutlineSearch } from "react-icons/ai";
-// import { HiOutlineMenuAlt1 } from "react-icons/hi";
+// import { HiOutlineMenuMdKeyboardDoubleArrowDownAlt1 } from "react-icons/hi";
 import Button from "../UI/Button/button";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import "../Section/section.jsx";
-// import Home from "../Hompage/homepage";
+import "../Hompage/homepage";
 import ModalSearch from "../Modal/modal.jsx";
-import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 
 const Navbar = () => {
   const [isAnimating, setIsAnimating] = useState(false);
@@ -17,6 +17,7 @@ const Navbar = () => {
   const [openModel, setOpenModel] = useState(false);
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
   const [isMouseOnSubmenu, setIsMouseOnSubmenu] = useState(false);
+  const [openSearch, setSearchQuery] = useState("");
 
   const handleAnimateButtonClick = () => {
     setIsAnimating(true);
@@ -107,7 +108,7 @@ const Navbar = () => {
                 <ul className="absolute hidden group-hover:block bg-FFF6E4 border border-gray-300 mt-2 py-2">
                   <li>
                     <NavLink
-                      to="/plats"
+                      to="/nos-valeurs"
                       onMouseEnter={handleMouseEnterSubmenu}
                       onMouseLeave={closeSubmenuWithDelay}
                       className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
@@ -117,7 +118,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <NavLink
-                      to="/desserts"
+                      to="/qui-sommes-nous"
                       className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       Qui sommes-nous ?
@@ -125,27 +126,27 @@ const Navbar = () => {
                   </li>
                   <li>
                     <NavLink
-                      to="/events"
+                      to="/prestations"
                       className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       Prestations
                     </NavLink>
                   </li>
                   <li>
-                    <a
-                      to="/events"
+                    <NavLink
+                      to="/tarifs"
                       className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       Tarifications
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a
-                      to="/events"
+                    <NavLink  
+                      to="/devis-gratuit"
                       className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       Devis gratuit
-                    </a>
+                    </NavLink>
                   </li>
                 </ul>
               </li>
@@ -197,7 +198,7 @@ const Navbar = () => {
                   />
                 </svg>
               </NavLink>
-              {openModel && <ModalSearch closeModal={setOpenModel} />}
+              {openModel && <ModalSearch closeModal={setOpenModel} searchQuery={setSearchQuery} />}
             </div>
           </div>
         </div>
@@ -280,8 +281,8 @@ const Navbar = () => {
             >
               <button onClick={toggleSousListsMenu}>
                 <div className="flex items-center justify-between">
-                  <div className="pr-2">Services</div>{" "}
-                  <MdOutlineKeyboardArrowDown />
+                  <div className="pr-2">Services</div>
+                  <MdKeyboardDoubleArrowDown />
                 </div>
               </button>
 
@@ -292,7 +293,7 @@ const Navbar = () => {
               >
                 <li className="list-decimal ml-4">
                   <NavLink
-                    to="/plats"
+                    to="/nos-valeurs"
                     className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Nos valeurs
@@ -300,7 +301,7 @@ const Navbar = () => {
                 </li>
                 <li className="list-decimal ml-4">
                   <NavLink
-                    to="/desserts"
+                    to="/qui-sommes-nous"
                     className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Qui sommes-nous ?
@@ -308,7 +309,7 @@ const Navbar = () => {
                 </li>
                 <li className="list-decimal ml-4">
                   <NavLink
-                    to="/events"
+                    to="/prestations"
                     className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Prestations
@@ -316,7 +317,7 @@ const Navbar = () => {
                 </li>
                 <li className="list-decimal ml-4">
                   <a
-                    to="/events"
+                    to="/tarifs"
                     className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Tarifications
@@ -324,7 +325,7 @@ const Navbar = () => {
                 </li>
                 <li className="list-decimal ml-4">
                   <a
-                    to="/events"
+                    to="/devis-gratuit"
                     className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Devis gratuit
@@ -380,6 +381,7 @@ const Navbar = () => {
       <div className="pt-52 text-center sm:mt-28">
         <h1 className="text-normal text-4xl tracking-tight font-extrabold text-FFF6E4 sm:text-8xl md:text-8xl">
           <motion.span
+            id="all"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
@@ -394,7 +396,7 @@ const Navbar = () => {
       </div>
       <Button />
 
-      <p className="text-center mt-10">
+      <p id="all" className="text-center mt-10">
         <span className="text-black text-2xl font-medium sm:text-4xl mt-5 sm:mt-10 whitespace-nowrap animation-scrolling-rtl">
           DESIGN | DÉVELOPPEMENT | MARKETING DIGITAL | STRATÉGIE DE MARQUE
         </span>
