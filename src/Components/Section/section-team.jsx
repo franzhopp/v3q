@@ -65,6 +65,7 @@ const SectionTeam = () => {
                 <div className="mb-10 sm:mb-0">
                   <div className="w-auto h-auto">
                     <img
+                      data-aos="fade-right"
                       src={ImageLondon}
                       alt="Image London"
                       className="rounded-lg ml-10 sm:ml-0"
@@ -161,6 +162,7 @@ const SectionTeam = () => {
                   <div className="mb-10 sm:mb-0">
                     <div className="w-auto h-auto">
                       <img
+                        data-aos="fade-left"
                         src={ImageParis}
                         alt="Image London"
                         className="rounded-lg ml-10 sm:ml-0"
