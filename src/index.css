@@ -167,27 +167,6 @@ button {
     left: 38rem;
 }
 
-
-.float-svg {
-    position: fixed;
-    top: 50%;
-    left: -50px;
-    z-index: 50 !important;
-    animation: float 5s linear infinite alternate;
-}
-
-@keyframes float {
-    to {
-        left: 100%;
-    }
-}
-
-/* .test {
-    left: -87rem;
-    top: 5rem;
-} */
-
-
 .test {
     width: 270px;
     height: 72px;
@@ -196,11 +175,3 @@ button {
     flex-direction: column;
 }
 
-@media screen and (max-width: 1024px) {
-
-    .test-res {
-        display: flex;
-        flex-direction: column;
-    }
-    
-}
