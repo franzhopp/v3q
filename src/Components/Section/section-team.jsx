@@ -110,7 +110,7 @@ const SectionTeam = () => {
                   <NavLink
                     to="/"
                     href="about"
-                    className="inline-flex items-center gap-2 border rounded-full ml-6 bg-black px-8 py-3 text-FFF6E4"
+                    className="inline-flex items-center gap-2 border rounded-full mr-6 bg-black px-8 py-3 text-FFF6E4"
                   >
                     <span className="text-3xl mr-3 font-semibold">
                       Découvrir{" "}
@@ -138,7 +138,7 @@ const SectionTeam = () => {
                     <NavLink
                       to="/"
                       href="about"
-                      className="inline-flex items-center gap-2 border rounded-full mr-6 bg-black px-8 py-3 text-FFF6E4"
+                      className="inline-flex items-center gap-2 border rounded-full mr-2 sm:mr-0 bg-black px-8 py-3 text-FFF6E4"
                     >
                       <svg
                         width="44"
