@@ -108,7 +108,7 @@ const Navbar = () => {
                 >
                   Services
                 </NavLink>
-                <ul className="absolute hidden group-hover:block bg-FFF6E4 border border-gray-300 mt-2 py-2">
+                <ul className="absolute hidden group-hover:block rounded-lg bg-FFF6E4 border border-gray-300 mt-2 py-2">
                   <li>
                     <NavLink
                       to="/nos-valeurs"
