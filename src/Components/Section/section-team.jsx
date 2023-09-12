@@ -99,9 +99,8 @@ const SectionTeam = () => {
                       dictum est a, mattis tellus. Sed dignissim, metus nec
                       fringilla accumsan, risus sem.{" "}
                       <span className="font-extrabold">
-                        Corem ipsum dolor sit amet
+                        Corem ipsum dolor sit amet.
                       </span>
-                      , consectetur adipiscing elit.
                     </p>
                   </div>
                 </div>
@@ -198,9 +197,8 @@ const SectionTeam = () => {
                         dictum est a, mattis tellus. Sed dignissim, metus nec
                         fringilla accumsan, risus sem.{" "}
                         <span className="font-extrabold">
-                          Corem ipsum dolor sit amet
+                          Corem ipsum dolor sit amet.
                         </span>
-                        , consectetur adipiscing elit.
                       </p>
                     </div>
                   </div>
