@@ -79,7 +79,9 @@ button {
 }
 
 .image-navi-studio-agency {
-    height: 30vh;
+    height: auto;
+    display: block;
+    max-width: 100%;
     border-radius: 0px 0px 0px 190px;
     background: url("./assets/bg-title-agency.png"), lightgray -46.697px -768.547px / 106.886% 974.977% no-repeat;
 }
@@ -93,17 +95,17 @@ button {
     max-width: 100%;
 }
 
+
 .bg-contact-blur {
     background-image: url('./assets/bg-contact-blur.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: auto;
-    display: block;
-    max-width: 100%;
 }
 
 .image-navi-studio-contact {
-    height: 30vh;
+    height: auto;
+    display: block;
+    max-width: 100%;
     border-radius: 0px 0px 0px 181px;
     background: url("./assets/bg-title-contact.png"), lightgray -1432.171px -108.115px / 298.913% 133.472% no-repeat;
 }
@@ -164,8 +166,14 @@ button {
 }
 
 .left-svg {
-    left: 38rem;
-}
+    /* position: relative;
+    left: 62rem;
+    bottom: 35rem; */
+    width: 248px;
+    height: 230px;
+    background-repeat: no-repeat;
+    background-image: url("./assets/P.png");
+}   
 
 .test {
     width: 270px;
@@ -174,4 +182,3 @@ button {
     background-color: black;
     flex-direction: column;
 }
-

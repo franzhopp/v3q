@@ -5,7 +5,6 @@ import './index.css';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 
-
 // lib
 AOS.init();
 
