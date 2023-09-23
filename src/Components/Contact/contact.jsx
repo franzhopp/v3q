@@ -20,7 +20,7 @@ const Form = () => {
             <div className="mt-8">
               <p
                 data-aos="zoom-in"
-                data-aos-duration="1000"
+                data-aos-duration="300"
                 className="text-black text-lg sm:text-2xl w-80 sm:w-96 ml-6 sm:ml-0"
               >
                 {`Contactez-nous aujourd'hui pour discuter de
@@ -36,7 +36,7 @@ const Form = () => {
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <div>
                     <input
-                      className="rounded-input-rounded-form-22 w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
+                      className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
                       placeholder="Prénom"
                       type="name"
                     />
@@ -44,7 +44,7 @@ const Form = () => {
 
                   <div>
                     <input
-                      className="rounded-input-rounded-form-22 w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
+                      className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
                       placeholder="Nom"
                       type="name"
                     />
@@ -52,28 +52,28 @@ const Form = () => {
                 </div>
                 <div>
                   <input
-                    className="rounded-input-rounded-form-22 w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
+                    className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
                     placeholder="E-mail"
                     type="text"
                   />
                 </div>
                 <div>
                   <input
-                    className="rounded-input-rounded-form-22 w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
+                    className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
                     placeholder="Numéro de téléphone"
                     type="text"
                   />
                 </div>
                 <div>
                   <input
-                    className="rounded-input-rounded-form-22 w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
+                    className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
                     placeholder="Le meilleur moyen de vous contacter ?"
                     type="text"
                   />
                 </div>
                 <div>
                   <input
-                    className="rounded-input-rounded-form-22 w-full p-4 outline-none input-secondary border-gray-200 text-md mb-4"
+                    className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-4"
                     placeholder="Le meilleur moment de vous contacter ?"
                     type="text"
                   />
@@ -82,7 +82,7 @@ const Form = () => {
 
               <div>
                 <textarea
-                  className="rounded-input-rounded-form-22 w-full p-4 outline-none input-secondary border-gray-200 text-md mt-20"
+                  className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mt-20"
                   placeholder="Message"
                   rows="8"
                   id="message"

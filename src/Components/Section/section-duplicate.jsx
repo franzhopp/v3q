@@ -15,7 +15,7 @@ const SectionDuplicate = () => {
               <div className="min-h-500 w-80 rounded-lg mt-5">
                 <p
                   data-aos="zoom-in"
-                  data-aos-duration="1000"
+                  data-aos-duration="300"
                   className="mt-2 text-FFF6E4 text-arial"
                 >
                   <h1 className="text-4xl number font-semibold pb-5">01</h1>
@@ -32,7 +32,7 @@ const SectionDuplicate = () => {
               <div className="min-h-500 w-80 rounded-lg mt-5">
                 <p
                   data-aos="zoom-in"
-                  data-aos-duration="1000"
+                  data-aos-duration="300"
                   className="mt-2 text-FFF6E4 text-arial"
                 >
                   <h1 className="text-4xl number font-semibold pb-5">02</h1>
@@ -53,7 +53,7 @@ const SectionDuplicate = () => {
               <div className="min-h-500 w-80 rounded-lg mt-5">
                 <p
                   data-aos="zoom-in"
-                  data-aos-duration="1000"
+                  data-aos-duration="300"
                   className="mt-2 text-FFF6E4 text-arial"
                 >
                   <h1 className="text-4xl number font-semibold pb-5">03</h1>
