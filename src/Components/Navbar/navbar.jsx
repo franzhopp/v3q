@@ -109,7 +109,7 @@ const Navbar = () => {
                 <ul className="absolute hidden group-hover:block rounded-lg bg-FFF6E4 border border-gray-300 mt-2 py-2">
                   <li>
                     <NavLink
-                      to="/nos-valeurs"
+                      to="/nosvaleurs"
                       onMouseEnter={handleMouseEnterSubmenu}
                       onMouseLeave={closeSubmenuWithDelay}
                       className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
@@ -119,7 +119,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <NavLink
-                      to="/qui-sommes-nous"
+                      to="/services"
                       className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       Qui sommes-nous ?
@@ -143,7 +143,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <NavLink
-                      to="/devis-gratuit"
+                      to="/devisgratuit"
                       className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       Devis gratuit
@@ -284,7 +284,7 @@ const Navbar = () => {
           </NavLink>
           <li>
             <NavLink
-              to="/services"
+              to="/"
               className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold"
             >
               <button onClick={toggleSousListsMenu}>
@@ -301,7 +301,7 @@ const Navbar = () => {
               >
                 <li className="list-decimal ml-4">
                   <NavLink
-                    to="/nos-valeurs"
+                    to="/nosvaleurs"
                     className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Nos valeurs
@@ -309,7 +309,7 @@ const Navbar = () => {
                 </li>
                 <li className="list-decimal ml-4">
                   <NavLink
-                    to="/qui-sommes-nous"
+                    to="/services"
                     className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Qui sommes-nous ?
@@ -333,7 +333,7 @@ const Navbar = () => {
                 </li>
                 <li className="list-decimal ml-4">
                   <a
-                    to="/devis-gratuit"
+                    to="/devisgratuit"
                     className="block text-C22E2E  hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Devis gratuit

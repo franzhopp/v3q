@@ -89,6 +89,15 @@ button {
     max-width: 100%;
 }
 
+.image-navi-studio-e-services {
+    background-image: url('./assets/bg-navbar-ethics.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+
 .bg-contact-blur {
     background-image: url('./assets/bg-contact-blur.png');
     background-repeat: no-repeat;
@@ -109,11 +118,6 @@ button {
     padding-bottom: 50px;
     border-radius: 0px 0px 290px 0px;
     background: url("./assets/bg-services-marketing.png"), lightgray -9px -327.869px / 127.649% 272.306% no-repeat;
-}
-
-.image-navi-studio-artwork {
-    
-    background-image: url("./assets/artworkheart.png");
 }
 
 .animation-scrolling-rtl {

@@ -7,7 +7,7 @@ import "../../Hompage/homepage";
 import ModalSearch from "../../Modal/modal.jsx";
 import { LuArrowDown } from "react-icons/lu";
 
-const NavbarServices = () => {
+const NavbarEthics = () => {
   const [isAnimating, setIsAnimating] = useState(false);
   const [scrollNavbar, setScrollNavbar] = useState();
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -74,7 +74,7 @@ const NavbarServices = () => {
   }, []);
 
   return (
-    <div className="image-navi-studio-n-services h-screen sm:pb-20 mb:min-h-650 min-h-500">
+    <div className="image-navi-studio-e-services h-screen sm:pb-20 mb:min-h-650 min-h-500">
       <nav
         className={`bg-FFF6E4 border-b-4 border-C22E2E h-28 items-center transition duration-300 ease-in-out fixed w-full top-0 left-0 shadow-md z-max`}
       >
@@ -392,12 +392,12 @@ const NavbarServices = () => {
             transition={{ duration: 1, delay: 0.5 }}
             className="block"
           >
-            Découvrez nos talents
+            Nos valeurs
           </motion.span>
         </h1>
         <div className="w-full sm:w-1/2">
           <span className="block pt-10 text-base sm:text-4xl text-FFF6E4 font-extrabold ">
-            Bénéficiez d’une expertise adaptée à vos besoins & envies.
+            Entre les fondations d'une agence et les valeurs qui y sont nées.
           </span>
         </div>
       </div>
@@ -407,4 +407,4 @@ const NavbarServices = () => {
   );
 };
 
-export default NavbarServices;
+export default NavbarEthics;

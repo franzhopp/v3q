@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Header from "./Components/Navbar/navbar.jsx";
 import Homepage from "./Components/Hompage/homepage.jsx";
 import Section from "./Components/Section/section.jsx";
 import Services from "./Components/Services/services.jsx";
+import EthicsPage from "./Components/Ethics/ethics.jsx";
 
 const App = () => {
   return (
@@ -12,6 +12,7 @@ const App = () => {
           <Route path="/" element={<Homepage />} />
           <Route path="/" element={<Section />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/nosvaleurs" element={<EthicsPage />} />
         </Routes>
       </Router>
     </>
