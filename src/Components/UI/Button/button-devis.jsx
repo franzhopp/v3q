@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const ButtonDevis = () => {
   return (
     <>
-      <div className="flex justify-end px-5 mt-10 mr-8 sm:mr-28">
+      <div className="flex justify-center sm:justify-end mt-10 px-10">
         <NavLink
           to="/"
           href="about"
