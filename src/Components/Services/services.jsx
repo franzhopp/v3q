@@ -1,6 +1,7 @@
 import NavbarServices from "../Navbar/NavbarServices/n-services";
 import Gears from "../../assets/gears-star.png";
 import DetailsServices from "./DetailsService/d-services";
+import Footer from "../Footer/footer";
 
 const Services = () => {
   return (
@@ -21,8 +22,9 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <DetailsServices/>
+        <DetailsServices />
       </section>
+      <Footer />
     </>
   );
 };
