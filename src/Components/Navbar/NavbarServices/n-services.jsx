@@ -90,9 +90,7 @@ const NavbarServices = () => {
             <div className="flex items-center">
               <NavLink
                 to="/"
-                href="about"
                 data-aos="fade-left"
-                onClick={SectionToScroll}
                 className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
               >
                 Agence
