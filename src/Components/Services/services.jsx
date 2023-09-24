@@ -1,7 +1,7 @@
 import NavbarServices from "../Navbar/NavbarServices/n-services";
-
-import Gears from "../../assets/gears.png";
+import Gears from "../../assets/gears-star.png";
 import DetailsServices from "./DetailsService/d-services";
+
 const Services = () => {
   return (
     <>

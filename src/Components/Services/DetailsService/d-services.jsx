@@ -1,19 +1,20 @@
 import ButtonContactServices from "../../UI/Button/button-contact-services";
 import ButtonDevis from "../../UI/Button/button-devis";
+import Artwork from "../../../assets/artworkheart.png";
 import ButtonSend from "../../UI/Button/button-send";
 import DetailsMarketingServices from "./d-m-services.jsx";
 
 const DetailsServices = () => {
   return (
     <>
-      <section className="bg-0C3E78 py-20 px-4 sm:px-6 lg:px-8">
+      <div className="bg-0C3E78 py-20 px-4 sm:px-6 lg:px-8">
         <h3
           className="text-center font-extrabold text-3xl text-FFF6E4"
           data-aos="fade-right"
         >
           Des offres adaptées à vos besoins
         </h3>
-        <div className="mt-8 mb-10 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
+        <div className="mt-8 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
           <div className="min-h-500 w-80 rounded-lg mt-5">
             <p
               data-aos="zoom-in"
@@ -53,40 +54,41 @@ const DetailsServices = () => {
         </div>
         <ButtonDevis />
         {/* <DetailsMarketingServices /> */}
-      </section>
-        <div className="image-navi-studio-service pb-10">
-          <h1 className="text-center text-FFF6E4 text-4xl sm:text-5xl font-extrabold pt-10">
-            Marketing digital
-          </h1>
-          <div className="mt-10 sm:mt-20">
-            <div className="mt-8 mb-10 flex flex-wrap justify-center">
-              <div className="font-extrabold text-FFF6E4 text-left mr-20">
-                <p className="text-2xl mb-10 font-extrabold text-FFF6E4">
-                  <div className="w-44">Stratégie de marque</div>
+      </div>
+      <div className="image-navi-studio-service">
+        <h1 className="text-center text-FFF6E4 text-4xl sm:text-5xl font-extrabold pt-10">
+          Marketing digital
+        </h1>
+        <div className="mt-10 sm:mt-20">
+          <div className="flex flex-wrap justify-center">
+            {/* Texts */}
+            <div className="font-extrabold text-FFF6E4 text-left mr-20">
+              <p className="text-2xl mb-10 font-extrabold text-FFF6E4">
+                <div className="w-44">Stratégie de marque</div>
+              </p>
+              <div className="w-60">
+                <p className="text-base mb-10 text-FFF6E4">
+                  Bénéficiez d’une analyse complète de votre marque et d’une
+                  stratégie digitale adaptée au marché actuel. Profitez d’un
+                  Benchmark complet et d’une analyse secteur.
                 </p>
-                <div className="w-60">
-                  <p className="text-base mb-10 text-FFF6E4">
-                    Bénéficiez d’une analyse complète de votre marque et d’une
-                    stratégie digitale adaptée au marché actuel. Profitez d’un
-                    Benchmark complet et d’une analyse secteur{" "}
-                  </p>
-                </div>
               </div>
-              <div className="font-extrabold text-FFF6E4 text-left mr-20">
-                <p className="text-2xl mb-10 font-extrabold text-FFF6E4">
-                  <div className="w-44">Social Media & Référencement</div>
+            </div>
+            <div className="font-extrabold text-FFF6E4 text-left mr-20">
+              <p className="text-2xl mb-10 font-extrabold text-FFF6E4">
+                <div className="w-44">Social Media & Référencement</div>
+              </p>
+              <div className="w-60">
+                <p className="text-base text-FFF6E4">
+                  Du SEO en passant par le Social Media Marketing profitez de
+                  nos services complémentaires. Boostez votre présence en ligne
+                  & générez des conversions.
                 </p>
-                <div className="w-60">
-                  <p className="text-base text-FFF6E4">
-                    Du SEO en passant par le Social Media Marketing profitez de
-                    nos services complémentaires. Boostez votre présence en
-                    ligne & générez des conversions .
-                  </p>
-                </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
       <div className="mb-10">
         <div className="flex justify-center mt-10">
           <svg
@@ -112,6 +114,7 @@ const DetailsServices = () => {
           </div>
         </div>
         <ButtonContactServices />
+        <img src={Artwork} alt="Artwork Heart" className="mt-10" />
       </div>
     </>
   );

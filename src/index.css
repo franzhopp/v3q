@@ -106,10 +106,14 @@ button {
 .image-navi-studio-service {
     height: auto;
     display: block;
-    max-width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background: url("./assets/bg-service.png");
+    padding-bottom: 40px;
+    border-radius: 0px 0px 290px 0px;
+    background: url("./assets/bg-services-marketing.png"), lightgray -9px -327.869px / 127.649% 272.306% no-repeat;
+}
+
+.image-navi-studio-artwork {
+    
+    background-image: url("./assets/artworkheart.png");
 }
 
 .animation-scrolling-rtl {
