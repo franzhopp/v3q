@@ -14,7 +14,7 @@ const Services = () => {
           <img src={Gears} alt="Icône Gears" className="mt-10" />
         </div>
         <div className="flex justify-center mt-10 mb-20">
-          <div className="w-96 sm:w-1/3">
+          <div className="w-96 sm:w-1/3 px-5">
             <p className="text-black text-center text-2xl font-extrabold">
               Ou besoin de modifications sur votre site web ? Nous pouvons le
               faire rapidement !

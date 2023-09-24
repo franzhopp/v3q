@@ -9,7 +9,7 @@ const DetailsServices = () => {
     <>
       <div className="bg-0C3E78 py-20 px-4 sm:px-6 lg:px-8">
         <h3
-          className="text-center font-extrabold text-3xl text-FFF6E4"
+          className="text-center font-extrabold text-3xl text-FFF6E4 px-5"
           data-aos="fade-right"
         >
           Des offres adaptées à vos besoins
@@ -19,11 +19,11 @@ const DetailsServices = () => {
             <p
               data-aos="zoom-in"
               data-aos-duration="300"
-              className="mt-2 text-FFF6E4"
+              className="mt-2 text-FFF6E4 px-5"
             >
-              Nous mettons notre expertise à vôtre service, grâce à notre
+              Nous mettons notre expertise à votre service, grâce à notre
               diagnostic personnalisé. Découvrez des solutions sur mesure
-              adaptées à vôtre business & situation.
+              adaptées à votre business & situation.
             </p>
           </div>
 
@@ -32,7 +32,7 @@ const DetailsServices = () => {
             <p
               data-aos="zoom-in"
               data-aos-duration="300"
-              className="mt-2 text-FFF6E4"
+              className="mt-2 text-FFF6E4 px-5"
             >
               Vous disposez d’un suivi de production complet, notre équipe reste
               disponible et à votre écoute 24/7. Nous travaillons main dans la
@@ -45,7 +45,7 @@ const DetailsServices = () => {
             <p
               data-aos="zoom-in"
               data-aos-duration="300"
-              className="mt-2 text-FFF6E4"
+              className="mt-2 text-FFF6E4 px-5"
             >
               Obtenez un devis gratuit dès maintenant et commencez votre
               aventure dans le monde du digital à nos côtés !
@@ -106,7 +106,7 @@ const DetailsServices = () => {
         </div>
         <div className="flex justify-center">
           <div className="w-96 sm:w-1/2 mt-10">
-            <p className="text-black text-center text-2xl font-extrabold">
+            <p className="text-black text-center text-2xl font-extrabold px-5">
               Des questions ? Une demande ? N’hésitez pas à nous contacter
               directement, notre équipe saura vous aiguiller répondre a toutes
               vos questions.

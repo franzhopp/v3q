@@ -397,9 +397,11 @@ const NavbarServices = () => {
             Découvrez nos talents
           </motion.span>
         </h1>
-        <span className="block pt-10 text-base sm:text-4xl text-FFF6E4 font-extrabold ">
-          Bénéficiez d’une expertise adaptée à vos besoins & envies.
-        </span>
+        <div className="w-full sm:w-1/2">
+          <span className="block pt-10 text-base sm:text-4xl text-FFF6E4 font-extrabold ">
+            Bénéficiez d’une expertise adaptée à vos besoins & envies.
+          </span>
+        </div>
       </div>
 
       {/* <div id="about" sm:text-9xl className="mb-7"></div> */}

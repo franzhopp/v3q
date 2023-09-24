@@ -106,7 +106,7 @@ button {
 .image-navi-studio-service {
     height: auto;
     display: block;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
     border-radius: 0px 0px 290px 0px;
     background: url("./assets/bg-services-marketing.png"), lightgray -9px -327.869px / 127.649% 272.306% no-repeat;
 }

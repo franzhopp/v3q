@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const ButtonContactServices = () => {
   return (
     <>
-      <div className="flex justify-center mt-10">
+      <div className="flex justify-center mt-10 px-5">
         <NavLink
           to="/"
           href="about"
