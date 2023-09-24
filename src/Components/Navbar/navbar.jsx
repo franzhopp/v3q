@@ -284,7 +284,6 @@ const Navbar = () => {
           </NavLink>
           <li>
             <NavLink
-              to="/"
               className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold"
             >
               <button onClick={toggleSousListsMenu}>
