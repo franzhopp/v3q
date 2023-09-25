@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import "../Section/section.jsx";
-import "../Hompage/homepage";
+import "../Homepage/homepage";
 import ModalSearch from "../Modal/modal.jsx";
 import { LuArrowDown } from "react-icons/lu";
 
@@ -82,11 +82,13 @@ const Navbar = () => {
         <div className="container mt-2 mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-24 ">
             <div className="flex items-center">
-              <img
-                data-aos="fade-left"
-                className="lg:h-20 h-10 bg-cover bg-no-repeat xl:logo"
-                src={Image}
-              />
+              <NavLink to="/">
+                <img
+                  data-aos="fade-left"
+                  className="lg:h-20 h-10 bg-cover bg-no-repeat xl:logo"
+                  src={Image}
+                />
+              </NavLink>
             </div>
             <div className="flex items-center">
               <NavLink
@@ -283,9 +285,7 @@ const Navbar = () => {
             Portfolio
           </NavLink>
           <li>
-            <NavLink
-              className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold"
-            >
+            <NavLink className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
               <button onClick={toggleSousListsMenu}>
                 <div className="flex items-center justify-between">
                   <div className="pr-2">Services</div>

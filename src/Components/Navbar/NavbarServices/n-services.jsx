@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import "../../Section/section.jsx";
-import "../../Hompage/homepage";
+import "../../Homepage/homepage";
 import ModalSearch from "../../Modal/modal.jsx";
 import { LuArrowDown } from "react-icons/lu";
 
@@ -280,9 +280,7 @@ const NavbarServices = () => {
             Portfolio
           </NavLink>
           <li>
-            <NavLink
-              className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold"
-            >
+            <NavLink className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
               <button onClick={toggleSousListsMenu}>
                 <div className="flex items-center justify-between">
                   <div className="pr-2">Services</div>

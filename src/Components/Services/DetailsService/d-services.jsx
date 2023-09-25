@@ -3,10 +3,12 @@ import ButtonDevis from "../../UI/Button/button-devis";
 import Artwork from "../../../assets/artworkheart.png";
 import ButtonSend from "../../UI/Button/button-send";
 import DetailsMarketingServices from "./d-m-services.jsx";
+import ButtonServices from "../../UI/Button/button-services";
 
 const DetailsServices = () => {
   return (
     <>
+      <ButtonServices />
       <div className="bg-0C3E78 py-20 px-4 sm:px-6 lg:px-8">
         <h3
           className="text-center font-extrabold text-3xl text-FFF6E4 px-5"

@@ -81,7 +81,7 @@ button {
 }
 
 .image-navi-studio-n-services {
-    background-image: url('./assets/bg-services.png');
+    background-image: url('./assets/bg-services-home.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
@@ -90,7 +90,7 @@ button {
 }
 
 .image-navi-studio-e-services {
-    background-image: url('./assets/bg-navbar-ethics.png');
+    background-image: url('./assets/bg-ethics.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
@@ -115,6 +115,7 @@ button {
 .image-navi-studio-service {
     height: auto;
     display: block;
+    max-width: 100%;
     padding-bottom: 50px;
     border-radius: 0px 0px 290px 0px;
     background: url("./assets/bg-services-marketing.png"), lightgray -9px -327.869px / 127.649% 272.306% no-repeat;
