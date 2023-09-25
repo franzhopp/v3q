@@ -3,41 +3,10 @@ import { NavLink } from "react-router-dom";
 import "../../Section/section.jsx";
 
 const ButtonServices = () => {
-  const [scrollNavbar, setScrollNavbar] = useState();
-
-  const SectionToScrollContact = () => {
-    const contactSection = document.getElementById("contact");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  useEffect(() => {
-    // Gestion de l'évènement du scroll :
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrollNavbar(true);
-      } else {
-        setScrollNavbar(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <>
       <div className="flex justify-center sm:justify-end relative right-20 top-20 sm:right-96">
-        <NavLink
-          to="/"
-          href="about"
-          onClick={SectionToScrollContact}
-          className=""
-        >
+        <NavLink to="/" className="">
           <svg
             width="200"
             height="195"

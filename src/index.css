@@ -121,6 +121,11 @@ button {
     background: url("./assets/bg-services-marketing.png"), lightgray -9px -327.869px / 127.649% 272.306% no-repeat;
 }
 
+.artwork {
+    background: url("./assets/artworkheart.png");
+}
+
+
 .animation-scrolling-rtl {
     display: inline-block;
     padding-right: 2em;

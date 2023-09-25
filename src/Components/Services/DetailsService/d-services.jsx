@@ -57,10 +57,10 @@ const DetailsServices = () => {
         <ButtonDevis />
         {/* <DetailsMarketingServices /> */}
       </div>
-      <div className="image-navi-studio-service">
-        <h1 className="text-center text-FFF6E4 text-4xl sm:text-5xl font-extrabold pt-10">
+      <div className="image-navi-studio-service pr-0 sm:pr-10 md:pr-20 lg:pr-32 xl:pr-96">
+        <div data-aos="fade-right" className="text-center text-FFF6E4 text-4xl sm:text-5xl font-extrabold pt-10">
           Marketing digital
-        </h1>
+        </div>
         <div className="mt-10 sm:mt-20">
           <div className="flex flex-wrap justify-center">
             {/* Texts */}
