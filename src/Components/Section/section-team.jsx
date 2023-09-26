@@ -66,6 +66,7 @@ const SectionTeam = () => {
                   <div className="w-auto h-auto">
                     <img
                       data-aos="fade-right"
+                      data-aos-duration="300"
                       src={ImageLondon}
                       alt="Image London"
                       className="rounded-lg ml-10 sm:ml-0"
@@ -162,6 +163,7 @@ const SectionTeam = () => {
                     <div className="w-auto h-auto">
                       <img
                         data-aos="fade-left"
+                        data-aos-duration="300"
                         src={ImageParis}
                         alt="Image London"
                         className="rounded-lg ml-10 sm:ml-0"

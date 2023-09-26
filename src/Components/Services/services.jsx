@@ -8,7 +8,7 @@ const Services = () => {
     <>
       <section>
         <NavbarServices />
-        <h1 className="text-black text-center text-4xl mt-10 font-extrabold sm:text-5xl md:text-6xl">
+        <h1 className="text-black text-center text-4xl mt-20 font-extrabold sm:text-5xl md:text-6xl">
           Websites
         </h1>
         <div className="flex justify-center">
