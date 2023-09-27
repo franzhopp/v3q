@@ -1,5 +1,5 @@
 import Image from "../../../assets/logo-5.png";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import "../../Section/section.jsx";
@@ -15,7 +15,6 @@ const NavbarEthics = () => {
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
   const [isMouseOnSubmenu, setIsMouseOnSubmenu] = useState(false);
   const [openSearch, setSearchQuery] = useState("");
-  const [isMobileView, setIsMobileView] = useState(false);
 
   const handleAnimateButtonClick = () => {
     setIsAnimating(true);
@@ -27,20 +26,6 @@ const NavbarEthics = () => {
 
   const toggleMenuMobile = () => {
     setToggleMenu(!toggleMenu);
-  };
-
-  const SectionToSectionContact = () => {
-    const ContactToScroll = document.getElementById("contact");
-    if (ContactToScroll) {
-      ContactToScroll.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  const SectionToScroll = () => {
-    const contactSection = document.getElementById("about");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
   };
 
   const toggleSousListsMenu = () => {
@@ -56,22 +41,6 @@ const NavbarEthics = () => {
       setShowSousListsMenu(false);
     }, 500);
   };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrollNavbar(true);
-      } else {
-        setScrollNavbar(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <div className="image-navi-studio-e-services h-screen sm:pb-20 mb:min-h-650 min-h-500">
@@ -160,7 +129,6 @@ const NavbarEthics = () => {
               <NavLink
                 to="/"
                 data-aos="fade-left"
-                onClick={SectionToSectionContact}
                 className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
               >
                 Contact
@@ -266,8 +234,6 @@ const NavbarEthics = () => {
         <ul className={`toggle-menu ${toggleMenu ? "block" : "hidden"} p-2`}>
           <NavLink
             to="/"
-            href="about"
-            onClick={SectionToScroll}
             className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             Agence
@@ -280,9 +246,7 @@ const NavbarEthics = () => {
             Portfolio
           </NavLink>
           <li>
-            <NavLink
-              className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold"
-            >
+            <NavLink className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
               <button onClick={toggleSousListsMenu}>
                 <div className="flex items-center justify-between">
                   <div className="pr-2">Services</div>
@@ -340,7 +304,6 @@ const NavbarEthics = () => {
           </li>
           <NavLink
             to="/"
-            onClick={SectionToSectionContact}
             className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             Contact
@@ -400,8 +363,6 @@ const NavbarEthics = () => {
           </span>
         </div>
       </div>
-
-      {/* <div id="about" sm:text-9xl className="mb-7"></div> */}
     </div>
   );
 };

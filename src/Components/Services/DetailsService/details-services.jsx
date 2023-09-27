@@ -120,7 +120,7 @@ const DetailsServices = () => {
         <ButtonContactServices />
       </div>
         <div className="">
-        <img src={Artwork} alt="Artwork Heart" className="" />
+        {/* <img src={Artwork} alt="Artwork Heart" className="" /> */}
       </div>
     </>
   );

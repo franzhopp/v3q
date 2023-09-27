@@ -15,7 +15,6 @@ const NavbarServices = () => {
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
   const [isMouseOnSubmenu, setIsMouseOnSubmenu] = useState(false);
   const [openSearch, setSearchQuery] = useState("");
-  const [isMobileView, setIsMobileView] = useState(false);
 
   const handleAnimateButtonClick = () => {
     setIsAnimating(true);
@@ -27,20 +26,6 @@ const NavbarServices = () => {
 
   const toggleMenuMobile = () => {
     setToggleMenu(!toggleMenu);
-  };
-
-  const SectionToSectionContact = () => {
-    const ContactToScroll = document.getElementById("contact");
-    if (ContactToScroll) {
-      ContactToScroll.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  const SectionToScroll = () => {
-    const contactSection = document.getElementById("about");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
   };
 
   const toggleSousListsMenu = () => {
@@ -56,22 +41,6 @@ const NavbarServices = () => {
       setShowSousListsMenu(false);
     }, 500);
   };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrollNavbar(true);
-      } else {
-        setScrollNavbar(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <div className="image-navi-studio-n-services h-screen sm:pb-20 mb:min-h-650 min-h-500">
@@ -160,7 +129,6 @@ const NavbarServices = () => {
               <NavLink
                 to="/"
                 data-aos="fade-left"
-                onClick={SectionToSectionContact}
                 className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
               >
                 Contact
@@ -266,8 +234,6 @@ const NavbarServices = () => {
         <ul className={`toggle-menu ${toggleMenu ? "block" : "hidden"} p-2`}>
           <NavLink
             to="/"
-            href="about"
-            onClick={SectionToScroll}
             className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             Agence
@@ -338,7 +304,6 @@ const NavbarServices = () => {
           </li>
           <NavLink
             to="/"
-            onClick={SectionToSectionContact}
             className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             Contact
@@ -398,8 +363,6 @@ const NavbarServices = () => {
           </span>
         </div>
       </div>
-
-      {/* <div id="about" sm:text-9xl className="mb-7"></div> */}
     </div>
   );
 };
