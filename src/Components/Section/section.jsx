@@ -19,8 +19,6 @@ const Section = () => {
           <div className="min-h-500 w-96 rounded-lg mt-5">
             <div className="p-6">
               <p
-                data-aos="zoom-in"
-                data-aos-duration="300"
                 className="mt-2 text-center text-black"
               >
                 <span className="font-extrabold">
@@ -37,8 +35,6 @@ const Section = () => {
           <div className="min-h-500 w-96 rounded-lg mt-5">
             <div className="p-6">
               <p
-                data-aos="zoom-in"
-                data-aos-duration="300"
                 className="mt-2 font-extrabold text-right text-black"
               >
                 {`Votre site internet, votre vision. Chez nous, chaque site est conçu avec votre marque à l'esprit. Notre équipe experte en conception web crée des expériences unique  reflètent votre identité et vos objectifs. Obtenez un sit  se démarque dans un monde en ligne saturé.`}
