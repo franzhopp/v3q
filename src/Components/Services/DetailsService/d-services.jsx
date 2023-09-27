@@ -1,64 +1,66 @@
 import ButtonContactServices from "../../UI/Button/button-contact-services";
 import ButtonDevis from "../../UI/Button/button-devis";
 import Artwork from "../../../assets/artworkheart.png";
-import ButtonSend from "../../UI/Button/button-send";
-import DetailsMarketingServices from "./d-m-services.jsx";
 import ButtonServices from "../../UI/Button/button-services";
 
 const DetailsServices = () => {
   return (
     <>
       <ButtonServices />
-      <div className="bg-0C3E78 py-20 px-4 sm:px-6 lg:px-8">
-        <h3
-          className="text-center font-extrabold text-3xl text-FFF6E4 px-5"
-          data-aos="fade-right"
-        >
-          Des offres adaptées à vos besoins
-        </h3>
-        <div className="mt-8 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
-          <div className="min-h-500 w-80 rounded-lg mt-5">
-            <p
-              data-aos="zoom-in"
-              data-aos-duration="300"
-              className="mt-2 text-FFF6E4 px-5"
-            >
-              Nous mettons notre expertise à votre service, grâce à notre
-              diagnostic personnalisé. Découvrez des solutions sur mesure
-              adaptées à votre business & situation.
-            </p>
-          </div>
+      <div className="">
+        <div className="bg-0C3E78 py-20 px-4 sm:px-6 lg:px-8">
+          <h3
+            className="text-center mt-10 font-extrabold text-3xl text-FFF6E4 px-5"
+            data-aos="fade-right"
+          >
+            Des offres adaptées à vos besoins
+          </h3>
+          <div className="mt-8 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
+            <div className="min-h-500 w-80 rounded-lg mt-5">
+              <p
+                data-aos="zoom-in"
+                data-aos-duration="300"
+                className="mt-2 text-FFF6E4 px-5"
+              >
+                Nous mettons notre expertise à votre service, grâce à notre
+                diagnostic personnalisé. Découvrez des solutions sur mesure
+                adaptées à votre business & situation.
+              </p>
+            </div>
 
-          {/* Step 2 */}
-          <div className="min-h-500 w-80 mt-5">
-            <p
-              data-aos="zoom-in"
-              data-aos-duration="300"
-              className="mt-2 text-FFF6E4 px-5"
-            >
-              Vous disposez d’un suivi de production complet, notre équipe reste
-              disponible et à votre écoute 24/7. Nous travaillons main dans la
-              main avec nos clients.
-            </p>
-          </div>
+            {/* Step 2 */}
+            <div className="min-h-500 w-80 mt-5">
+              <p
+                data-aos="zoom-in"
+                data-aos-duration="300"
+                className="mt-2 text-FFF6E4 px-5"
+              >
+                Vous disposez d’un suivi de production complet, notre équipe
+                reste disponible et à votre écoute 24/7. Nous travaillons main
+                dans la main avec nos clients.
+              </p>
+            </div>
 
-          {/* Step 3 */}
-          <div className="min-h-500 w-80 mt-5">
-            <p
-              data-aos="zoom-in"
-              data-aos-duration="300"
-              className="mt-2 text-FFF6E4 px-5"
-            >
-              Obtenez un devis gratuit dès maintenant et commencez votre
-              aventure dans le monde du digital à nos côtés !
-            </p>
+            {/* Step 3 */}
+            <div className="min-h-500 w-80 mt-5">
+              <p
+                data-aos="zoom-in"
+                data-aos-duration="300"
+                className="mt-2 text-FFF6E4 px-5"
+              >
+                Obtenez un devis gratuit dès maintenant et commencez votre
+                aventure dans le monde du digital à nos côtés !
+              </p>
+            </div>
           </div>
+          <ButtonDevis />
         </div>
-        <ButtonDevis />
-        {/* <DetailsMarketingServices /> */}
       </div>
       <div className="image-navi-studio-service pr-0 sm:pr-10 md:pr-20 lg:pr-32 xl:pr-96">
-        <div data-aos="fade-right" className="text-center text-FFF6E4 text-4xl sm:text-5xl font-extrabold pt-10">
+        <div
+          data-aos="fade-right"
+          className="text-center text-FFF6E4 text-4xl sm:text-5xl font-extrabold pt-10"
+        >
           Marketing digital
         </div>
         <div className="mt-10 sm:mt-20">
@@ -92,7 +94,7 @@ const DetailsServices = () => {
         </div>
       </div>
       <div className="mb-10">
-        <div className="flex justify-center mt-10">
+        <div className="flex justify-center mt-20">
           <svg
             width="108"
             height="181"
@@ -116,7 +118,9 @@ const DetailsServices = () => {
           </div>
         </div>
         <ButtonContactServices />
-        <img src={Artwork} alt="Artwork Heart" className="mt-10" />
+      </div>
+        <div className="">
+        <img src={Artwork} alt="Artwork Heart" className="" />
       </div>
     </>
   );

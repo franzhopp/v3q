@@ -24,7 +24,7 @@ const SectionAgency = () => {
 
           <div className="flex justify-center">
             <div className="w-4/5 sm:w-1/2">
-              <p className="px-5 text-black text-arial text-justify sm:text-center text-lg sm:text-2xl mt-10">
+              <p className="px-5 text-black text-arial text-center text-lg sm:text-2xl mt-10">
                 {`Nous sommes bien plus qu'une simple agence digitale. Nous
                   sommes des `}
                 <span className="font-extrabold">

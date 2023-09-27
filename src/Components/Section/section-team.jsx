@@ -32,7 +32,7 @@ const SectionTeam = () => {
 
         <div className="flex justify-center">
           <div className="w-4/5 sm:w-1/2">
-            <p className="px-5 text-black text-arial text-justify sm:text-center md:text-center lg:text-center text-lg sm:text-2xl mt-10 mb-16">
+            <p className="px-5 text-black text-arial text-center md:text-center lg:text-center text-lg sm:text-2xl mt-10 mb-16">
               {`Nous sommes bien plus qu'une simple agence digitale. Nous
                   sommes des `}
               <span className="font-extrabold">
@@ -65,8 +65,6 @@ const SectionTeam = () => {
                 <div className="mb-10 sm:mb-0">
                   <div className="w-auto h-auto">
                     <img
-                      data-aos="fade-right"
-                      data-aos-duration="300"
                       src={ImageLondon}
                       alt="Image London"
                       className="rounded-lg ml-10 sm:ml-0"
@@ -76,12 +74,7 @@ const SectionTeam = () => {
                 <div className="flex flex-col">
                   <div className="text-black text-left mb-5 ml-10 sm:ml-0">
                     <p className="text-4xl font-extrabold">Mélissa Nefti</p>
-                    <p
-                      data-aos="fade-down-left"
-                      className="text-4xl font-extrabold"
-                    >
-                      Designer
-                    </p>
+                    <p className="text-4xl font-extrabold">Designer</p>
                     <animated.h1
                       style={props}
                       className="text-4xl font-extrabold tracking-wide"
@@ -162,8 +155,6 @@ const SectionTeam = () => {
                   <div className="mb-10 sm:mb-0">
                     <div className="w-auto h-auto">
                       <img
-                        data-aos="fade-left"
-                        data-aos-duration="300"
                         src={ImageParis}
                         alt="Image London"
                         className="rounded-lg ml-10 sm:ml-0"
@@ -175,12 +166,7 @@ const SectionTeam = () => {
                       <p className="text-4xl font-extrabold">
                         Louisa Fernandez
                       </p>
-                      <p
-                        data-aos="fade-down-left"
-                        className="text-4xl font-extrabold"
-                      >
-                        Web Developper
-                      </p>
+                      <p className="text-4xl font-extrabold">Web Developper</p>
                       <animated.h1
                         style={props}
                         className="text-4xl font-extrabold tracking-wide"
