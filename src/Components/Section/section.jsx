@@ -18,9 +18,7 @@ const Section = () => {
           {/* Step 2 */}
           <div className="min-h-500 w-96 rounded-lg mt-5">
             <div className="p-6">
-              <p
-                className="mt-2 text-center text-black"
-              >
+              <p className="mt-2 text-center text-black">
                 <span className="font-extrabold">
                   {`Découvrez l'avenir en ligne de votre entreprise avec nos sites internet sur mesure.`}
                 </span>{" "}
@@ -34,9 +32,7 @@ const Section = () => {
           {/* Step 3 */}
           <div className="min-h-500 w-96 rounded-lg mt-5">
             <div className="p-6">
-              <p
-                className="mt-2 font-extrabold text-right text-black"
-              >
+              <p className="mt-2 font-extrabold text-right text-black">
                 {`Votre site internet, votre vision. Chez nous, chaque site est conçu avec votre marque à l'esprit. Notre équipe experte en conception web crée des expériences unique  reflètent votre identité et vos objectifs. Obtenez un sit  se démarque dans un monde en ligne saturé.`}
               </p>
             </div>

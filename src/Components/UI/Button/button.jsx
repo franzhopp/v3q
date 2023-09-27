@@ -31,7 +31,7 @@ const Button = () => {
 
   return (
     <>
-      <div className="flex justify-center sm:justify-end px-48 mt-60">
+      <div className="button-design-formbounce animate-bounce-bounce flex justify-center sm:justify-end px-48 mt-60">
         <NavLink
           to="/"
           href="about"

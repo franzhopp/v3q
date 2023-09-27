@@ -31,7 +31,7 @@ const ButtonAgency = () => {
 
   return (
     <>
-      <div className="flex justify-center sm:justify-end relative right-20 top-20 sm:right-96">
+      <div className="button-design-formbounce animate-bounce-bounce flex justify-center sm:justify-end relative right-20 top-20 sm:right-96">
         <NavLink
             to="/"
             href="about"

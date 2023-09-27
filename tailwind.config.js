@@ -6,6 +6,24 @@ export default {
   ],
   theme: {
     extend: {
+
+      animation: {
+        'bounce-bounce': 'button-design-formbounce 4s infinite',
+      },
+
+      keyframes: {
+        'button-design-formbounce': {
+          '5%, 50%': { transform: 'scale(1)' },
+          '10%': { transform: 'scale(1)' },
+          '15%': { transform: 'scale(1)' },
+          '20%': { transform: 'scale(1) rotate(-5deg)' },
+          '25%': { transform: 'scale(1) rotate(5deg)' },
+          '30%': { transform: 'scale(1) rotate(-3deg)' },
+          '35%': { transform: 'scale(1) rotate(2deg)' },
+          '40%': { transform: 'scale(1) rotate(0)' },
+        },
+      },
+
       backgroundColor: {
         'FFF6E4': '#FFF6E4',
         '0c3e78': '#0C3E78',
