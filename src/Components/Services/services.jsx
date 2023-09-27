@@ -39,7 +39,7 @@ const Services = () => {
         </div>
 
         <div className="flex justify-center">
-          <img src={Gears} alt="Icône Gears" className="mt-10 button-design-formbounce animate-bounce-bounce" />
+          <img src={Gears} alt="Icône Gears" className="mt-10 h-20 w-20 button-design-formbounce animate-bounce-bounce" />
         </div>
         <div className="flex justify-center mt-10">
           <div className="w-96 sm:w-1/3 px-5">
