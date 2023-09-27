@@ -58,7 +58,7 @@ const SectionTeam = () => {
 
         <div className="flex justify-center">
           <div className="flex justify-center">
-            <div className="flex flex-col justify-center mb-10">
+            <div className="flex flex-col justify-center">
               <div className="flex flex-col space-x-3 mb-20 sm:flex-row">
                 {/* Image */}
 

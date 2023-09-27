@@ -17,10 +17,10 @@ const Navbar = () => {
   const [isMouseOnSubmenu, setIsMouseOnSubmenu] = useState(false);
   const [openSearch, setSearchQuery] = useState("");
   const [isMobileView, setIsMobileView] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleAnimateButtonClick = () => {
     setIsAnimating(true);
-
     setTimeout(() => {
       setIsAnimating(false);
     }, 1000);
@@ -28,6 +28,7 @@ const Navbar = () => {
 
   const toggleMenuMobile = () => {
     setToggleMenu(!toggleMenu);
+    setIsOpen(!isOpen);
   };
 
   const SectionToSectionContact = () => {
@@ -35,6 +36,7 @@ const Navbar = () => {
     if (ContactToScroll) {
       ContactToScroll.scrollIntoView({ behavior: "smooth" });
     }
+    setIsOpen(false);
   };
 
   const SectionToScroll = () => {
@@ -42,6 +44,7 @@ const Navbar = () => {
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: "smooth" });
     }
+    setIsOpen(false);
   };
 
   const toggleSousListsMenu = () => {
@@ -268,7 +271,7 @@ const Navbar = () => {
         </div>
         {/* end 2 items */}
 
-        <ul className={`toggle-menu ${toggleMenu ? "block" : "hidden"} p-2`}>
+        <ul className={`toggle-menu ${isOpen ? "block" : "hidden"} p-2`}>
           <NavLink
             to="/"
             href="about"
