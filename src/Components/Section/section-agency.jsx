@@ -5,7 +5,7 @@ import SectionTeam from "./section-team";
 const SectionAgency = () => {
   return (
     <>
-      <section id="all" className="bg-FFF6E4 h-1/2">
+      <section className="bg-FFF6E4 h-1/2">
         <div>
           <TitleAgency className="mt-20" />
         </div>

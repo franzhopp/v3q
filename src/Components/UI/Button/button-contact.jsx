@@ -6,7 +6,7 @@ const ButtonContact = () => {
     const [scrollNavbar, setScrollNavbar] = useState();
 
     const SectionToScrollContact = () => {
-      const contactSection = document.getElementById("contact");
+      const contactSection = document.getElementById("team");
       if (contactSection) {
         contactSection.scrollIntoView({ behavior: "smooth" });
       }
