@@ -13,7 +13,6 @@ const ButtonContact = () => {
     };
 
     useEffect(() => {
-      // Gestion de l'évènement du scroll :
       const handleScroll = () => {
         if (window.scrollY > 0) {
           setScrollNavbar(true);
