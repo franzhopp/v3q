@@ -26,16 +26,21 @@ const SectionAgency = () => {
             <div className="w-4/5 sm:w-1/2">
               <p className="px-5 text-black text-arial text-center text-lg sm:text-2xl mt-10">
                 {`Agence créée par`}{" "}
-                <span className="font-extrabold text-C22E2E">
-                  {"Mélissa"}
-                </span>
+                <span className="font-extrabold text-C22E2E">{"Mélissa"}</span>
                 {" et "}
-                <span className="font-extrabold text-C22E2E">Louisa.</span>
-                <br />
+                <span className="font-extrabold text-C22E2E">Louisa.</span>{" "}
                 <span className="text-black">
-                  {"Nous avons décidé de collaborer pour créer des expériences exceptionnelles. Notre "}
-                  <span className="font-extrabold">{"Voyage"}</span> a débuté avec une vision commune :
-                  <span className="font-extrabold"> celle de repousser les limites de la créativité et l'intuitivité</span>.{" "}
+                  {
+                    "Nous avons décidé de collaborer pour créer des expériences exceptionnelles. Notre "
+                  }
+                  <span className="font-extrabold">{"Voyage"}</span> a débuté
+                  avec une vision commune :
+                  <span className="font-extrabold">
+                    {" "}
+                    celle de repousser les limites de la créativité et
+                    l'intuitivité
+                  </span>
+                  .{" "}
                   {` Notre approche repose sur la fusion de nos compétences et de notre expérience.`}
                   <span className="font-extrabold">{" Design, "}</span>
                   <span className="font-extrabold">Développement web</span> ou
