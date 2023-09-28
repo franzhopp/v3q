@@ -11,7 +11,7 @@ const Form = () => {
     });
   }, []);
   return (
-    <section data-aos="fade-in" className="bg-contact-blur pb-56">
+    <section className="bg-contact-blur pb-56">
       <div>
         <Title />
       </div>

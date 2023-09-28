@@ -79,7 +79,7 @@ const SectionTeam = () => {
                 </div>
                 <div className="flex flex-col">
                   <div className="text-black text-left mb-5 ml-10 sm:ml-0">
-                    <p className="text-4xl font-extrabold">Mélissa Nefti</p>
+                    <p data-aos="fade-right" className="text-4xl font-extrabold">Mélissa Nefti</p>
                     <p className="text-4xl font-extrabold">Designer</p>
                     <animated.h1
                       style={props}
@@ -174,7 +174,7 @@ const SectionTeam = () => {
                   </div>
                   <div className="flex flex-col">
                     <div className="text-black text-left mb-5 ml-10 sm:ml-0">
-                      <p className="text-4xl font-extrabold">
+                      <p data-aos="fade-left" className="text-4xl font-extrabold">
                         Louisa Fernandez
                       </p>
                       <p className="text-4xl font-extrabold">Web Developper</p>
