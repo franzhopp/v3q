@@ -1,8 +1,16 @@
+import { useEffect } from "react";
 import ButtonAgency from "../UI/Button/button-agency";
 import TitleAgency from "../UI/Button/title-agency";
 import SectionTeam from "./section-team";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const SectionAgency = () => {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+    });
+  }, []);
   return (
     <>
       <section className="bg-FFF6E4 h-1/2">

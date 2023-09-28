@@ -1,4 +1,13 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const SectionDuplicate = () => {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+    });
+  }, []);
   return (
     <>
       <div className="bg-C22E2E h-1/2">
@@ -46,7 +55,7 @@ const SectionDuplicate = () => {
                   </span>{" "}
                   Nos sites internet sont créés avec une navigation fluide, des
                   contenus liés à vous, une identité visuelle qui vous est
-                  propre,{" "}
+                  propre.{" "}
                   <span className="font-extrabold">
                     Notre approche est axée sur le fait que votre site puisse se
                     démarquer,

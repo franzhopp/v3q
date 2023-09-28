@@ -1,8 +1,10 @@
 import { NavLink } from "react-router-dom";
 import ImageLondon from "../../assets/london.png";
 import ImageParis from "../../assets/paris.png";
-import { HiLocationMarker } from "react-icons/hi";
 import { useSpring, animated } from "react-spring";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const SectionTeam = () => {
   const props = useSpring({
@@ -15,6 +17,11 @@ const SectionTeam = () => {
     },
     config: { duration: 1000 },
   });
+  useEffect(() => {
+    AOS.init({
+      once: true,
+    });
+  }, []);
 
   return (
     <>
@@ -195,7 +202,7 @@ const SectionTeam = () => {
                             Découvrir
                           </span>{" "}
                           ».
-                        </span> 
+                        </span>
                       </p>
                     </div>
                   </div>

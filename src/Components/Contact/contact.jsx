@@ -1,10 +1,17 @@
+import { useEffect } from "react";
 import ButtonSend from "../UI/Button/button-send";
 import Title from "../UI/Button/title-contact";
-import Image from "../../assets/logo-5.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Form = () => {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+    });
+  }, []);
   return (
-    <section className="bg-contact-blur pb-56">
+    <section data-aos="fade-in" className="bg-contact-blur pb-56">
       <div>
         <Title />
       </div>

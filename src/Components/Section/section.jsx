@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
 import ButtonContact from "../UI/Button/button-contact";
 import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Section = () => {
   const [scrollNavbar, setScrollNavbar] = useState();
@@ -13,6 +15,9 @@ const Section = () => {
   };
 
   useEffect(() => {
+    AOS.init({
+      once: true,
+    });
     const handleScroll = () => {
       if (window.scrollY > 0) {
         setScrollNavbar(true);
@@ -45,7 +50,11 @@ const Section = () => {
           {/* Step 2 */}
           <div className="min-h-500 w-96 rounded-lg mt-5">
             <div className="p-6">
-              <p className="mt-2 text-center text-black">
+              <p
+                data-aos="zoom-in"
+                data-aos-duration="300"
+                className="mt-2 text-center text-black"
+              >
                 <span className="font-extrabold">
                   {`Imaginez que vous avez déjà vu une agence qui design et développe des sites rien que pour vous ?`}
                 </span>{" "}
@@ -59,11 +68,20 @@ const Section = () => {
           {/* Step 3 */}
           <div className="min-h-500 w-96 rounded-lg mt-5">
             <div className="p-6">
-              <p className="mt-2 font-extrabold text-center text-black">
+              <p
+                data-aos="zoom-in"
+                data-aos-duration="300"
+                className="mt-2 font-extrabold text-center text-black"
+              >
                 {`Votre site est votre perception. Chez navi studio.™, chaque site représente son histoire, son originalité, sa vision. Notre équipe en conception web développe des expériences uniques qui reflètent l'identité de votre marque. Découvrez navi studio.™ son histoire, `}
-                <NavLink href="about" onClick={SectionToScroll} className="font-extrabold underline text-C22E2E">
+                <NavLink
+                  href="about"
+                  onClick={SectionToScroll}
+                  className="font-extrabold underline text-C22E2E"
+                >
                   en cliquant sur ce lien
-                </NavLink>.
+                </NavLink>
+                .
               </p>
             </div>
           </div>
