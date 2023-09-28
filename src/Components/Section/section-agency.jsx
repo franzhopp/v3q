@@ -25,26 +25,24 @@ const SectionAgency = () => {
           <div className="flex justify-center">
             <div className="w-4/5 sm:w-1/2">
               <p className="px-5 text-black text-arial text-center text-lg sm:text-2xl mt-10">
-                {`Nous sommes bien plus qu'une simple agence digitale. Nous
-                  sommes des `}
-                <span className="font-extrabold">
-                  {"architectes de l'expérience numérique"}
+                {`Agence créée par`}{" "}
+                <span className="font-extrabold text-C22E2E">
+                  {"Mélissa"}
                 </span>
-                {" et les "}
-                <span className="font-extrabold">artisans du web.</span>
+                {" et "}
+                <span className="font-extrabold text-C22E2E">Louisa.</span>
                 <br />
                 <span className="text-black">
-                  {"Si vous recherchez une équipe"}
-                  <span className="font-extrabold">{" passionnée"}</span> et
-                  <span className="font-extrabold"> compétente</span>{" "}
-                  {` pour vous
-                    accompagner dans le domaine du`}
+                  {"Nous avons décidé de collaborer pour créer des expériences exceptionnelles. Notre "}
+                  <span className="font-extrabold">{"Voyage"}</span> a débuté avec une vision commune :
+                  <span className="font-extrabold"> celle de repousser les limites de la créativité et l'intuitivité</span>.{" "}
+                  {` Notre approche repose sur la fusion de nos compétences et de notre expérience.`}
                   <span className="font-extrabold">{" Design, "}</span>
                   <span className="font-extrabold">Développement web</span> ou
                   <span className="font-extrabold">
                     {" Marketing Digital "}
                   </span>
-                  {"ne cherchez pas plus loin."}
+                  {"sont notre art."}
                 </span>
               </p>
             </div>

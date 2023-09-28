@@ -32,75 +32,63 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a
-                className="text-black transition hover:text-0C3E78"
-                href="/"
-              >
+              <a className="text-black transition hover:text-0C3E78" href="/">
                 Services
               </a>
             </li>
             <li>
-              <a
-                className="text-black transition hover:text-0C3E78"
-                href="/"
-              >
+              <a className="text-black transition hover:text-0C3E78" href="/">
                 Qui sommes-nous ?
               </a>
             </li>
             <li>
-              <a
-                className="text-black transition hover:text-0C3E78"
-                href="/"
-              >
+              <a className="text-black transition hover:text-0C3E78" href="/">
                 Prestations
               </a>
             </li>
             <li>
-              <a
-                className="text-black transition hover:text-0C3E78"
-                href="/"
-              >
+              <a className="text-black transition hover:text-0C3E78" href="/">
                 Tarifications
               </a>
             </li>
             <li>
-              <a
-                className="text-black transition hover:text-0C3E78"
-                href="/"
-              >
+              <a className="text-black transition hover:text-0C3E78" href="/">
                 Devis gratuit
               </a>
             </li>
             <li>
-              <a
-                className="text-black transition hover:text-0C3E78"
-                href="/"
-              >
+              <a className="text-black transition hover:text-0C3E78" href="/">
                 Portfolio
               </a>
             </li>
             <li>
-              <a
-                className="text-black transition hover:text-0C3E78"
-                href="/"
-              >
+              <a className="text-black transition hover:text-0C3E78" href="/">
                 Contact
               </a>
             </li>
             <li>
-              <a
-                className="text-black transition hover:text-0C3E78"
-                href="/"
-              >
+              <a className="text-black transition hover:text-0C3E78" href="/">
                 FR/UK
               </a>
             </li>
             <li>
-              <a
-                className="text-black transition hover:text-0C3E78"
-                href="/"
-              >
+              <a className="text-black transition hover:text-0C3E78" href="/">
                 Histoire
+              </a>
+            </li>
+            <li>
+              <a className="text-black transition hover:text-0C3E78" href="/">
+                Politique de confidentialité
+              </a>
+            </li>
+            <li>
+              <a className="text-black transition hover:text-0C3E78" href="/">
+                Condition d'utilisation
+              </a>
+            </li>
+            <li>
+              <a className="text-black transition hover:text-0C3E78" href="/">
+                Mentions légales
               </a>
             </li>
           </ul>

@@ -92,7 +92,7 @@ const SectionTeam = () => {
                       Résidante à Londres, elle pratique celui-ci avec beaucoup
                       de créativité et rigueur.{" "}
                       <span className="font-extrabold">
-                        Venez découvrir son histoire en cliquant sur «{" "}
+                        Venez connaître son histoire en cliquant sur «{" "}
                         <span className="text-C22E2E underline">
                           {" "}
                           Découvrir
@@ -189,7 +189,7 @@ const SectionTeam = () => {
                         Résidante à Paris, elle pratique celui-ci avec beaucoup
                         de passion et plaisir.{" "}
                         <span className="font-extrabold">
-                          Venez découvrir son histoire en cliquant sur «{" "}
+                          Venez connaître son histoire en cliquant sur «{" "}
                           <span className="text-C22E2E underline">
                             {" "}
                             Découvrir
