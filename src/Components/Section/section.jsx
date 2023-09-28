@@ -1,6 +1,33 @@
+import { NavLink } from "react-router-dom";
 import ButtonContact from "../UI/Button/button-contact";
+import { useEffect, useState } from "react";
 
 const Section = () => {
+  const [scrollNavbar, setScrollNavbar] = useState();
+
+  const SectionToScroll = () => {
+    const contactSection = document.getElementById("team");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrollNavbar(true);
+      } else {
+        setScrollNavbar(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <section className="max-w-7xl mx-auto mt-24 px-4 sm:px-6 lg:px-8">
@@ -20,11 +47,11 @@ const Section = () => {
             <div className="p-6">
               <p className="mt-2 text-center text-black">
                 <span className="font-extrabold">
-                  {`Découvrez l'avenir en ligne de votre entreprise avec nos sites internet sur mesure.`}
+                  {`Imaginez que vous avez déjà vu une agence qui design et développe des sites rien que pour vous ?`}
                 </span>{" "}
-                {`Du design moderne à la fonctionnalité intuitive, nous créons des plateformes`}
-                <span className="font-extrabold">{` qui captivent les visiteurs et génèrent des conversions`}</span>
-                . Augmentez votre présence en ligne dès aujourd'hui !
+                {`Des projets élaborés à deux. Du design moderne à la fonctionnalité intuitive, nous créons des sites`}
+                <span className="font-extrabold">{` qui attirent les visiteurs`}</span>
+                . Venez découvrir navi studio.™ dès aujourd'hui !
               </p>
             </div>
           </div>
@@ -32,8 +59,11 @@ const Section = () => {
           {/* Step 3 */}
           <div className="min-h-500 w-96 rounded-lg mt-5">
             <div className="p-6">
-              <p className="mt-2 font-extrabold text-right text-black">
-                {`Votre site internet, votre vision. Chez nous, chaque site est conçu avec votre marque à l'esprit. Notre équipe experte en conception web crée des expériences unique  reflètent votre identité et vos objectifs. Obtenez un sit  se démarque dans un monde en ligne saturé.`}
+              <p className="mt-2 font-extrabold text-left text-black">
+                {`Votre site est votre perception. Chez navi studio.™, chaque site représente son histoire, son originalité, sa vision. Notre équipe en conception web développe des expériences uniques qui reflètent l'identité de votre marque. Découvrez navi studio.™ son histoire, `}
+                <NavLink href="about" onClick={SectionToScroll} className="font-extrabold underline text-C22E2E">
+                  en cliquant sur ce lien
+                </NavLink>.
               </p>
             </div>
           </div>

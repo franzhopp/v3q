@@ -33,24 +33,23 @@ const SectionTeam = () => {
         <div className="flex justify-center">
           <div className="w-4/5 sm:w-1/2">
             <p className="px-5 text-black text-arial text-center md:text-center lg:text-center text-lg sm:text-2xl mt-10 mb-16">
-              {`Nous sommes bien plus qu'une simple agence digitale. Nous
-                  sommes des `}
+              {`Quoi de mieux que de connaître navi studio.™ et son équipe ?`}{" "}
               <span className="font-extrabold">
-                {"architectes de l'expérience numérique"}
+                {
+                  "Nous vous laissons parcourir entre ces lignes pour en savoir davantage"
+                }
               </span>
-              {" et les "}
-              <span className="font-extrabold">artisans du web.</span>
               <br />
               <span className="text-black">
-                {"Si vous recherchez une équipe"}
-                <span className="font-extrabold">{" passionnée"}</span> et
+                {"concernant les concepteurs de ce site et son expérience."}
+                {/* <span className="font-extrabold">{" passionnée"}</span> et
                 <span className="font-extrabold"> compétente</span>{" "}
                 {` pour vous
                     accompagner dans le domaine du`}
                 <span className="font-extrabold">{" Design, "}</span>
                 <span className="font-extrabold">Développement web</span> ou
                 <span className="font-extrabold">{" Marketing Digital "}</span>
-                {"ne cherchez pas plus loin."}
+                {"ne cherchez pas plus loin."} */}
               </span>
             </p>
           </div>
@@ -87,13 +86,18 @@ const SectionTeam = () => {
                   <div className="w-72">
                     <p className="text-black text-left text-base mb-10 ml-10 sm:ml-0 p">
                       <span className="font-extrabold">
-                        Corem ipsum dolor sit amet
-                      </span>
-                      , consectetur adipiscing elit. Etiam eu turpis molestie,
-                      dictum est a, mattis tellus. Sed dignissim, metus nec
-                      fringilla accumsan, risus sem.{" "}
+                        Mélissa est designer et exerce le métier UX/UI Designer
+                        depuis 5 ans.
+                      </span>{" "}
+                      Résidante à Londres, elle pratique celui-ci avec beaucoup
+                      de créativité et rigueur.{" "}
                       <span className="font-extrabold">
-                        Corem ipsum dolor sit amet.
+                        Venez découvrir son histoire en cliquant sur «{" "}
+                        <span className="text-C22E2E underline">
+                          {" "}
+                          Découvrir
+                        </span>{" "}
+                        ».
                       </span>
                     </p>
                   </div>
@@ -179,14 +183,19 @@ const SectionTeam = () => {
                     <div className="w-72">
                       <p className="text-black text-left text-base mb-10 ml-10 sm:ml-0 z">
                         <span className="font-extrabold">
-                          Corem ipsum dolor sit amet
-                        </span>
-                        , consectetur adipiscing elit. Etiam eu turpis molestie,
-                        dictum est a, mattis tellus. Sed dignissim, metus nec
-                        fringilla accumsan, risus sem.{" "}
+                          Louisa est développeuse web et exerce le métier du
+                          développement web depuis depuis 2 ans.
+                        </span>{" "}
+                        Résidante à Paris, elle pratique celui-ci avec beaucoup
+                        de passion et plaisir.{" "}
                         <span className="font-extrabold">
-                          Corem ipsum dolor sit amet.
-                        </span>
+                          Venez découvrir son histoire en cliquant sur «{" "}
+                          <span className="text-C22E2E underline">
+                            {" "}
+                            Découvrir
+                          </span>{" "}
+                          ».
+                        </span> 
                       </p>
                     </div>
                   </div>

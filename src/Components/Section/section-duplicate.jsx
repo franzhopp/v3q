@@ -1,7 +1,7 @@
 const SectionDuplicate = () => {
   return (
     <>
-      <div id="all" className="bg-C22E2E h-1/2">
+      <div className="bg-C22E2E h-1/2">
         <div className="border-beige">
           <section className="max-w-6xl mx-auto py-60 px-4 sm:px-6 lg:px-8">
             <h3
@@ -20,11 +20,16 @@ const SectionDuplicate = () => {
                 >
                   <h1 className="text-4xl number font-semibold pb-5">01</h1>
                   <span className="font-extrabold">
-                    La performance rencontre la beauté.
+                    Nous visons la performance.
+                  </span>{" "}
+                  Nos sites internet ne sont esthétiquement pas plaisants, ils
+                  sont élaborés pour une identité visuelle qui contribue à votre
+                  perception. Nous nous inspirons de vous et votre histoire,{" "}
+                  <span className="font-extrabold">
+                    chaque histoire est différente de chaque site
                   </span>
-                  {
-                    " Nos sites internet ne sont pas seulement esthétiquement plaisants, ils sont optimisés pour des performances exceptionnelles. Charge rapide, navigation fluide et convivialité mobile font de nos sites la solution idéale pour convertir les visiteurs en clients."
-                  }
+                  . Chaque navigation font de nos sites :{" "}
+                  <span className="font-extrabold">la solution</span>.
                 </p>
               </div>
 
@@ -37,15 +42,20 @@ const SectionDuplicate = () => {
                 >
                   <h1 className="text-4xl number font-semibold pb-5">02</h1>
                   <span className="font-extrabold">
-                    Donnez à vos clients une expérience en ligne mémorable.
-                  </span>
-                  {
-                    " Nos sites internet offrent une navigation intuitive, un contenu engageant et des fonctionnalités conviviales, garantissant que chaque visiteur se sent connecté à votre marque. "
-                  }
+                    Nous visons une expérience en ligne mémorable.
+                  </span>{" "}
+                  Nos sites internet sont créés avec une navigation fluide, des
+                  contenus liés à vous, une identité visuelle qui vous est
+                  propre,{" "}
                   <span className="font-extrabold">
-                    Créez des relations solides grâce à une présence en ligne
-                    exceptionnelle.
+                    Notre approche est axée sur le fait que votre site puisse se
+                    démarquer,
+                  </span>{" "}
+                  créer des relations solides grâce à une présence,{" "}
+                  <span className="font-extrabold">
+                    en ligne exceptionnelle
                   </span>
+                  .
                 </p>
               </div>
 
@@ -58,12 +68,15 @@ const SectionDuplicate = () => {
                 >
                   <h1 className="text-4xl number font-semibold pb-5">03</h1>
                   <span className="font-extrabold">
-                    {`Un site internet n'est pas seulement une dépense.`}
+                    Nous visons la qualité.
+                  </span>{" "}
+                  Ce que vous voulons vous créer dans votre projet, est une
+                  interface en harmonie avec la qualité de votre marque.{" "}
+                  <span className="font-extrabold">
+                    Il est essentiel que vous soyez connectés à celle-ci, car
+                    cela nous permet de mieux comprendre vos besoins
                   </span>
-                  {` Avec notre approche axée sur la conversion, nous créons des sites qui génèrent un retour sur investissement tangible. Obtenez plus de prospects, plus de ventes et plus de croissance grâce à notre expertise. Ceci n'est qu'un exemple de texte, car notre site est perpétuellement.`}
-                  {/* <span className="font-extrabold">
-                    Corem ipsum dolor sit amet
-                  </span> */}
+                  .{" "}
                 </p>
               </div>
             </div>

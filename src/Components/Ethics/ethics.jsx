@@ -89,7 +89,7 @@ const EthicsPage = () => {
         <div className="text-center mt-20">
           <h1
             data-aos="fade-left"
-            className="text-black font-extrabold text-4xl mb-10"
+            className="text-black font-extrabold text-2xl sm:text-4xl mb-10"
           >
             Environnement de travail
           </h1>
