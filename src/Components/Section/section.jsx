@@ -59,7 +59,7 @@ const Section = () => {
           {/* Step 3 */}
           <div className="min-h-500 w-96 rounded-lg mt-5">
             <div className="p-6">
-              <p className="mt-2 font-extrabold text-left text-black">
+              <p className="mt-2 font-extrabold text-center text-black">
                 {`Votre site est votre perception. Chez navi studio.™, chaque site représente son histoire, son originalité, sa vision. Notre équipe en conception web développe des expériences uniques qui reflètent l'identité de votre marque. Découvrez navi studio.™ son histoire, `}
                 <NavLink href="about" onClick={SectionToScroll} className="font-extrabold underline text-C22E2E">
                   en cliquant sur ce lien
