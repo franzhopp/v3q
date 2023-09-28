@@ -4,7 +4,7 @@ import Artwork from "../../../assets/artworkheart.png";
 const ButtonContactServices = () => {
   return (
     <>
-      <div className="flex justify-end sm:justify-center mt-10 px-10">
+      <div className="button-design-formbounce animate-bounce-bounce flex justify-end sm:justify-center mt-10 px-10">
         <NavLink
           to="/"
           href="about"

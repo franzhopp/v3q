@@ -109,7 +109,7 @@ const NavbarEthics = () => {
                   </li>
                   <li>
                     <NavLink
-                      to="/devisgratuit"
+                      to="/devis"
                       className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       Devis gratuit
@@ -293,7 +293,7 @@ const NavbarEthics = () => {
                 </li>
                 <li className="list-decimal ml-4">
                   <a
-                    to="/devisgratuit"
+                    to="/devis"
                     className="block text-C22E2E  hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Devis gratuit

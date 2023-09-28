@@ -1,4 +1,4 @@
-import NavbarServices from "../Navbar/NavbarServices/n-services";
+import NavbarServices from "../Navbar/NavbarServices/s-navbar";
 import Gears from "../../assets/gears-star.png";
 import DetailsServices from "./DetailsService/details-services";
 import Footer from "../Footer/footer";

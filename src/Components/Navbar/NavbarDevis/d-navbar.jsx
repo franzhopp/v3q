@@ -1,5 +1,5 @@
 import Image from "../../../assets/logo-5.png";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import "../../Section/section.jsx";
@@ -7,7 +7,7 @@ import "../../Homepage/homepage";
 import ModalSearch from "../../Modal/modal.jsx";
 import { LuArrowDown } from "react-icons/lu";
 
-const NavbarServices = () => {
+const NavbarDevis = () => {
   const [isAnimating, setIsAnimating] = useState(false);
   const [scrollNavbar, setScrollNavbar] = useState();
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -43,7 +43,7 @@ const NavbarServices = () => {
   };
 
   return (
-    <div className="image-navi-studio-n-services h-screen sm:pb-20 mb:min-h-650 min-h-500">
+    <div className="sm:pb-20 mb:min-h-650 min-h-500">
       <nav
         className={`bg-FFF6E4 border-b-4 border-C22E2E h-28 items-center transition duration-300 ease-in-out fixed w-full top-0 left-0 shadow-md z-max`}
       >
@@ -109,7 +109,7 @@ const NavbarServices = () => {
                   </li>
                   <li>
                     <NavLink
-                      to="/devisgratuit"
+                      to="/devis"
                       className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       Devis gratuit
@@ -293,7 +293,7 @@ const NavbarServices = () => {
                 </li>
                 <li className="list-decimal ml-4">
                   <a
-                    to="/devisgratuit"
+                    to="/devis"
                     className="block text-C22E2E  hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Devis gratuit
@@ -344,27 +344,8 @@ const NavbarServices = () => {
           {openModel && <ModalSearch closeModal={setOpenModel} />}
         </ul>
       </nav>
-
-      <div className="pt-44 px-14 py-20 text-left sm:mt-28">
-        <h1 className="text-5xl tracking-tight font-extrabold text-FFF6E4 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
-          <motion.span
-            id="all"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            className="block"
-          >
-            Découvrez nos talents
-          </motion.span>
-        </h1>
-        <div className="w-full sm:w-1/2">
-          <span className="block pt-10 text-base sm:text-4xl text-FFF6E4 font-extrabold ">
-            Bénéficiez d’une expertise adaptée à vos besoins & envies.
-          </span>
-        </div>
-      </div>
     </div>
   );
 };
 
-export default NavbarServices;
+export default NavbarDevis;

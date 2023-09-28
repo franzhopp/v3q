@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const ButtonDevis = () => {
   return (
     <>
-      <div className="flex justify-center sm:justify-end mt-10 px-10">
+      <div className="button-design-formbounce animate-bounce-bounce flex justify-center sm:justify-end mt-10 px-10">
         <NavLink
           to="/"
           href="about"

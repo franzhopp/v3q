@@ -89,6 +89,7 @@ const DetailsServices = () => {
                   & générez des conversions.
                 </p>
               </div>
+              <div id="contact-services"></div>
             </div>
           </div>
         </div>
@@ -118,9 +119,6 @@ const DetailsServices = () => {
           </div>
         </div>
         <ButtonContactServices />
-      </div>
-        <div className="">
-        {/* <img src={Artwork} alt="Artwork Heart" className="" /> */}
       </div>
     </>
   );

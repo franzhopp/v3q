@@ -37,7 +37,7 @@ const EthicsPage = () => {
           </div>
 
           <div class="p-6 rounded-lg shadow-md">
-            <h2 class="text-7xl number text-E18AB0 font-bold mb-2">02</h2>
+            <h2  data-aos="fade-right" class="text-7xl number text-E18AB0 font-bold mb-2">02</h2>
             <p className="text-black text-xl font-extrabold mb-5">
               Satisfaction client
             </p>

@@ -3,6 +3,7 @@ import Homepage from "./Components/Homepage/homepage.jsx";
 import Section from "./Components/Section/section.jsx";
 import Services from "./Components/Services/services.jsx";
 import EthicsPage from "./Components/Ethics/ethics.jsx";
+import DevisGratuit from "./Components/Devis/devis.jsx";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
           <Route path="/" element={<Section />} />
           <Route path="/services" element={<Services />} />
           <Route path="/nosvaleurs" element={<EthicsPage />} />
+          <Route path="/devis" element={<DevisGratuit />} />
         </Routes>
       </Router>
     </>

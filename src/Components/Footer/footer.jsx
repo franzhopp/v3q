@@ -2,6 +2,7 @@ import Image from "../../assets/logo-4.png";
 import LogoInsta from "../../assets/instagram2.png";
 import LogoTwitter from "../../assets/twitter.png";
 import LogoLinkedin from "../../assets/linkedin.png";
+import LogoSnap from "../../assets/snapchat.png";
 
 const Footer = () => {
   return (
@@ -62,7 +63,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a className="text-black transition hover:text-0C3E78" href="/">
+              <a href="/" className="text-black transition hover:text-0C3E78">
                 Contact
               </a>
             </li>
@@ -95,10 +96,10 @@ const Footer = () => {
 
           <ul className="mt-12 flex justify-center gap-6 md:gap-8">
             <li>
-              <a href="">
+              <a href="" rel="noreferrer" target="_blank">
                 <img
                   src={LogoTwitter}
-                  alt="icône twitter"
+                  alt="Icône Twitter"
                   className="flex-shrink-0 h-10 w-10"
                 />
               </a>
@@ -114,35 +115,37 @@ const Footer = () => {
                 {" "}
                 <img
                   src={LogoInsta}
-                  alt="icône instagram"
+                  alt="Icône Instagram"
+                  className="flex-shrink-0 h-10 w-10"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="" rel="noreferrer" target="_blank">
+                {" "}
+                <img
+                  src={LogoLinkedin}
+                  alt="Icône Linkedin"
                   className="flex-shrink-0 h-10 w-10"
                 />
               </a>
             </li>
             <li>
               <a href="">
-                <a href="" className="">
+                <a
+                  href="https://t.snapchat.com/BYKwKD2r"
+                  rel="noreferrer"
+                  target="_blank"
+                >
                   {" "}
                   <img
-                    src={LogoLinkedin}
-                    alt="icône linkedin"
+                    src={LogoSnap}
+                    alt="Icône Snapchat"
                     className="flex-shrink-0 h-10 w-10"
                   />
                 </a>
               </a>
             </li>
-            {/* <li>
-              <a href="">
-                <a href="" className="">
-                  {" "}
-                  <img
-                    src={LogoLinkedin}
-                    alt="icône linkedin"
-                    className="flex-shrink-0 h-10 w-10"
-                  />
-                </a>
-              </a>
-            </li> */}
           </ul>
         </div>
       </footer>

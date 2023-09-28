@@ -1,14 +1,13 @@
-import Image from "../../assets/logo-5.png";
-import Button from "../UI/Button/button";
+import Image from "../../../assets/logo-5.png";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
-import "../Section/section.jsx";
-import "../Homepage/homepage";
-import ModalSearch from "../Modal/modal.jsx";
+import "../../Section/section.jsx";
+import "../../Homepage/homepage";
+import ModalSearch from "../../Modal/modal.jsx";
 import { LuArrowDown } from "react-icons/lu";
 
-const Navbar = () => {
+const NavbarServices = () => {
   const [isAnimating, setIsAnimating] = useState(false);
   const [scrollNavbar, setScrollNavbar] = useState();
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -16,11 +15,10 @@ const Navbar = () => {
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
   const [isMouseOnSubmenu, setIsMouseOnSubmenu] = useState(false);
   const [openSearch, setSearchQuery] = useState("");
-  const [isMobileView, setIsMobileView] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
 
   const handleAnimateButtonClick = () => {
     setIsAnimating(true);
+
     setTimeout(() => {
       setIsAnimating(false);
     }, 1000);
@@ -28,23 +26,6 @@ const Navbar = () => {
 
   const toggleMenuMobile = () => {
     setToggleMenu(!toggleMenu);
-    setIsOpen(!isOpen);
-  };
-
-  const SectionToSectionContact = () => {
-    const ContactToScroll = document.getElementById("contact");
-    if (ContactToScroll) {
-      ContactToScroll.scrollIntoView({ behavior: "smooth" });
-    }
-    setIsOpen(false);
-  };
-
-  const SectionToScroll = () => {
-    const contactSection = document.getElementById("about");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
-    setIsOpen(false);
   };
 
   const toggleSousListsMenu = () => {
@@ -61,44 +42,24 @@ const Navbar = () => {
     }, 500);
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrollNavbar(true);
-      } else {
-        setScrollNavbar(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
-    <div className="image-navi-studio h-screen sm:pb-20 mb:min-h-650 min-h-500">
+    <div className="image-navi-studio-n-services h-screen sm:pb-20 mb:min-h-650 min-h-500">
       <nav
         className={`bg-FFF6E4 border-b-4 border-C22E2E h-28 items-center transition duration-300 ease-in-out fixed w-full top-0 left-0 shadow-md z-max`}
       >
         <div className="container mt-2 mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-24 ">
             <div className="flex items-center">
-              <NavLink to="/">
-                <img
-                  data-aos="fade-left"
-                  className="lg:h-20 h-10 bg-cover bg-no-repeat xl:logo"
-                  src={Image}
-                />
-              </NavLink>
+              <img
+                data-aos="fade-left"
+                className="lg:h-20 h-10 bg-cover bg-no-repeat xl:logo"
+                src={Image}
+              />
             </div>
             <div className="flex items-center">
               <NavLink
                 to="/"
-                href="about"
                 data-aos="fade-left"
-                onClick={SectionToScroll}
                 className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
               >
                 Agence
@@ -168,7 +129,6 @@ const Navbar = () => {
               <NavLink
                 to="/"
                 data-aos="fade-left"
-                onClick={SectionToSectionContact}
                 className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
               >
                 Contact
@@ -271,11 +231,9 @@ const Navbar = () => {
         </div>
         {/* end 2 items */}
 
-        <ul className={`toggle-menu ${isOpen ? "block" : "hidden"} p-2`}>
+        <ul className={`toggle-menu ${toggleMenu ? "block" : "hidden"} p-2`}>
           <NavLink
             to="/"
-            href="about"
-            onClick={SectionToScroll}
             className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             Agence
@@ -346,7 +304,6 @@ const Navbar = () => {
           </li>
           <NavLink
             to="/"
-            onClick={SectionToSectionContact}
             className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             Contact
@@ -388,32 +345,26 @@ const Navbar = () => {
         </ul>
       </nav>
 
-      <div className="pt-52 text-center sm:mt-28">
-        <h1 className="text-normal text-4xl tracking-tight font-extrabold text-FFF6E4 sm:text-8xl md:text-8xl">
+      <div className="pt-44 px-14 py-20 text-left sm:mt-28">
+        <h1 className="text-5xl tracking-tight font-extrabold text-FFF6E4 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
           <motion.span
             id="all"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="block xl:inline test-text"
+            className="block"
           >
-            Agence digitale
+            Découvrez nos talents
           </motion.span>
         </h1>
-        <span className="block xl:inline text-FFF6E4 font-extrabold test-text">
-          PARIS X LONDON
-        </span>
+        <div className="w-full sm:w-1/2">
+          <span className="block pt-10 text-base sm:text-4xl text-FFF6E4 font-extrabold ">
+            Bénéficiez d’une expertise adaptée à vos besoins & envies.
+          </span>
+        </div>
       </div>
-      <Button />
-
-      <p id="all" className="text-center mt-10">
-        <span className="text-black text-2xl font-medium sm:text-4xl mt-5 sm:mt-10 whitespace-nowrap animation-scrolling-rtl">
-          DESIGN | DÉVELOPPEMENT | MARKETING DIGITAL | STRATÉGIE DE MARQUE
-        </span>
-      </p>
-      <div id="about" className="mb-40 sm:mb-0"></div>
     </div>
   );
 };
 
-export default Navbar;
+export default NavbarServices;
