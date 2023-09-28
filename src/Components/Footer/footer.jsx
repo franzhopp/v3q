@@ -25,37 +25,82 @@ const Footer = () => {
             <li>
               <a
                 id="about"
-                className="text-black transition hover:text-gray-700/75"
+                className="text-black transition hover:text-0C3E78"
                 href="/"
               >
-                À propos
+                Agence
               </a>
             </li>
-
             <li>
               <a
-                className="text-black transition hover:text-gray-700/75"
-                href="/"
-              >
-                Histoire
-              </a>
-            </li>
-
-            <li>
-              <a
-                className="text-black transition hover:text-gray-700/75"
+                className="text-black transition hover:text-0C3E78"
                 href="/"
               >
                 Services
               </a>
             </li>
-
             <li>
               <a
-                className="text-black transition hover:text-gray-700/75"
+                className="text-black transition hover:text-0C3E78"
                 href="/"
               >
-                Projects
+                Qui sommes-nous ?
+              </a>
+            </li>
+            <li>
+              <a
+                className="text-black transition hover:text-0C3E78"
+                href="/"
+              >
+                Prestations
+              </a>
+            </li>
+            <li>
+              <a
+                className="text-black transition hover:text-0C3E78"
+                href="/"
+              >
+                Tarifications
+              </a>
+            </li>
+            <li>
+              <a
+                className="text-black transition hover:text-0C3E78"
+                href="/"
+              >
+                Devis gratuit
+              </a>
+            </li>
+            <li>
+              <a
+                className="text-black transition hover:text-0C3E78"
+                href="/"
+              >
+                Portfolio
+              </a>
+            </li>
+            <li>
+              <a
+                className="text-black transition hover:text-0C3E78"
+                href="/"
+              >
+                Contact
+              </a>
+            </li>
+            <li>
+              <a
+                className="text-black transition hover:text-0C3E78"
+                href="/"
+              >
+                FR/UK
+              </a>
+            </li>
+            <li>
+              <a
+                className="text-black transition hover:text-0C3E78"
+                href="/"
+              >
+                Histoire
               </a>
             </li>
           </ul>
@@ -98,6 +143,18 @@ const Footer = () => {
                 </a>
               </a>
             </li>
+            {/* <li>
+              <a href="">
+                <a href="" className="">
+                  {" "}
+                  <img
+                    src={LogoLinkedin}
+                    alt="icône linkedin"
+                    className="flex-shrink-0 h-10 w-10"
+                  />
+                </a>
+              </a>
+            </li> */}
           </ul>
         </div>
       </footer>
