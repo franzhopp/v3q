@@ -119,7 +119,7 @@ const NavbarServices = () => {
               </li>
 
               <NavLink
-                to="/"
+                to="/portfolio"
                 data-aos="fade-left"
                 href="about"
                 className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
@@ -239,8 +239,7 @@ const NavbarServices = () => {
             Agence
           </NavLink>
           <NavLink
-            to="/"
-            href="portfolio"
+            to="/portfolio"
             className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             Portfolio
