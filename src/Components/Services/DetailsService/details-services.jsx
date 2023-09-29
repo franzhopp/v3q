@@ -1,11 +1,10 @@
 import ButtonContactServices from "../../UI/Button/button-contact-services";
 import ButtonDevis from "../../UI/Button/button-devis";
-import Artwork from "../../../assets/artworkheart.png";
 import ButtonServices from "../../UI/Button/button-services";
 
 const DetailsServices = () => {
   return (
-    <>
+    <section>
       <ButtonServices />
       <div className="">
         <div className="bg-0C3E78 py-20 px-4 sm:px-6 lg:px-8">
@@ -71,7 +70,11 @@ const DetailsServices = () => {
                 <div className="w-44">Stratégie de marque</div>
               </p>
               <div className="w-60">
-                <p className="text-base mb-10 text-FFF6E4">
+                <p
+                  data-aos="zoom-in"
+                  data-aos-duration="300"
+                  className="text-base mb-10 text-FFF6E4"
+                >
                   Bénéficiez d’une analyse complète de votre marque et d’une
                   stratégie digitale adaptée au marché actuel. Profitez d’un
                   Benchmark complet et d’une analyse secteur.
@@ -83,7 +86,11 @@ const DetailsServices = () => {
                 <div className="w-44">Social Media & Référencement</div>
               </p>
               <div className="w-60">
-                <p className="text-base text-FFF6E4">
+                <p
+                  data-aos="zoom-in"
+                  data-aos-duration="300"
+                  className="text-base text-FFF6E4"
+                >
                   Du SEO en passant par le Social Media Marketing profitez de
                   nos services complémentaires. Boostez votre présence en ligne
                   & générez des conversions.
@@ -111,7 +118,10 @@ const DetailsServices = () => {
         </div>
         <div className="flex justify-center">
           <div className="w-96 sm:w-1/2 mt-10">
-            <p className="text-black text-center text-2xl font-extrabold px-5">
+            <p
+              data-aos="fade-right"
+              className="text-black text-center text-2xl font-extrabold px-5"
+            >
               Des questions ? Une demande ? N’hésitez pas à nous contacter
               directement, notre équipe saura vous aiguiller répondre a toutes
               vos questions.
@@ -120,7 +130,7 @@ const DetailsServices = () => {
         </div>
         <ButtonContactServices />
       </div>
-    </>
+    </section>
   );
 };
 

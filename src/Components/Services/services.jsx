@@ -1,9 +1,8 @@
 import NavbarServices from "../Navbar/NavbarServices/s-navbar";
-import Gears from "../../assets/gears-star.png";
 import DetailsServices from "./DetailsService/details-services";
-import Footer from "../Footer/footer";
+import Gears from "../../assets/gears-star.png";
 import ImgCards from "../../assets/cards.png";
-import linetest from "./line.jsx";
+import Footer from "../Footer/footer";
 
 const Services = () => {
   return (

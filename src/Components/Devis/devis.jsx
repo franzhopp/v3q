@@ -1,19 +1,10 @@
 import { useEffect } from "react";
-import ButtonSend from "../UI/Button/button-send";
-import Title from "../UI/Button/title-contact";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import Footer from "../Footer/footer";
 import NavbarDevis from "../Navbar/NavbarDevis/d-navbar";
 import TitleDevis from "../UI/Button/title-devis";
-import { NavLink } from "react-router-dom";
+import ButtonSend from "../UI/Button/button-send";
+import Footer from "../Footer/footer";
 
 const DevisGratuit = () => {
-  useEffect(() => {
-    AOS.init({
-      once: true,
-    });
-  }, []);
   return (
     <section className="bg-devis-blur">
       <NavbarDevis />
@@ -34,7 +25,7 @@ const DevisGratuit = () => {
                 data-aos-duration="300"
                 className="text-black text-lg sm:text-2xl w-80 sm:w-96 ml-6 sm:ml-0"
               >
-                N'hésitez pas à revoir notre page « Services », {" "}
+                N'hésitez pas à revoir notre page « Services »,{" "}
                 <a
                   href="/services"
                   className="font-extrabold underline text-C22E2E"

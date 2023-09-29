@@ -33,12 +33,18 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a className="text-black transition hover:text-0C3E78" href="/">
+              <a
+                className="text-black transition hover:text-0C3E78"
+                href="/services"
+              >
                 Services
               </a>
             </li>
             <li>
-              <a className="text-black transition hover:text-0C3E78" href="/">
+              <a
+                className="text-black transition hover:text-0C3E78"
+                href="/services"
+              >
                 Qui sommes-nous ?
               </a>
             </li>
@@ -53,12 +59,18 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a className="text-black transition hover:text-0C3E78" href="/">
+              <a
+                className="text-black transition hover:text-0C3E78"
+                href="/devis"
+              >
                 Devis gratuit
               </a>
             </li>
             <li>
-              <a className="text-black transition hover:text-0C3E78" href="/">
+              <a
+                className="text-black transition hover:text-0C3E78"
+                href="/portfolio"
+              >
                 Portfolio
               </a>
             </li>
@@ -69,12 +81,12 @@ const Footer = () => {
             </li>
             <li>
               <a className="text-black transition hover:text-0C3E78" href="/">
-                FR/UK
+                🇬🇧 / <a href="/">🇫🇷</a>
               </a>
             </li>
             <li>
               <a className="text-black transition hover:text-0C3E78" href="/">
-                Histoire
+                Team
               </a>
             </li>
             <li>

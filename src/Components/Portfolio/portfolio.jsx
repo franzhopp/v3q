@@ -1,15 +1,9 @@
 import { useEffect, useState } from "react";
-import ButtonSend from "../UI/Button/button-send";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import Footer from "../Footer/footer";
-import NavbarDevis from "../Navbar/NavbarDevis/d-navbar";
 import { NavLink } from "react-router-dom";
-import Pattern from "../../assets/pattern.png";
-import ImgStar from "../../assets/star.png";
+import NavbarDevis from "../Navbar/NavbarDevis/d-navbar";
 import TitlePorfolio from "../UI/Button/title-porfolio";
 import Image1 from "../../assets/projetbysarahcuisine.png";
-import ImgMade from "../../assets/madewithlove.png";
+import Footer from "../Footer/footer";
 
 const Portfolio = () => {
   const cards = [
@@ -28,7 +22,6 @@ const Portfolio = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
   };
@@ -39,14 +32,8 @@ const Portfolio = () => {
     );
   };
 
-  useEffect(() => {
-    AOS.init({
-      once: true,
-    });
-  }, []);
   return (
     <section className="bg-pattern-portfolio">
-      
       <NavbarDevis />
       <div>
         <TitlePorfolio />

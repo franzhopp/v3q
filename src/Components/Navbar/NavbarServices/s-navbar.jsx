@@ -1,11 +1,11 @@
-import Image from "../../../assets/logo-5.png";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
-import "../../Section/section.jsx";
-import "../../Homepage/homepage";
+import Image from "../../../assets/logo-5.png";
 import ModalSearch from "../../Modal/modal.jsx";
 import { LuArrowDown } from "react-icons/lu";
+import "../../Section/section.jsx";
+import "../../Homepage/homepage";
 
 const NavbarServices = () => {
   const [isAnimating, setIsAnimating] = useState(false);
