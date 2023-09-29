@@ -15,7 +15,7 @@ const DevisGratuit = () => {
     });
   }, []);
   return (
-    <section className="">
+    <section className="bg-devis-blur">
       <NavbarDevis />
       <div>
         <TitleDevis />

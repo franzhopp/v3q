@@ -7,7 +7,7 @@ import NavbarDevis from "../Navbar/NavbarDevis/d-navbar";
 import { NavLink } from "react-router-dom";
 import Pattern from "../../assets/pattern.png";
 import TitlePorfolio from "../UI/Button/title-porfolio";
-import Image1 from "../../assets/cards.png";
+import Image1 from "../../assets/projetbysarahcuisine.png";
 import ImgMade from "../../assets/madewithlove.png";
 
 const Portfolio = () => {
@@ -20,16 +20,9 @@ const Portfolio = () => {
         "Nous avons l'heureux de vous annoncer que le site By Sarah Cuisine a été créé par la société navi studio.™ Développé et designé par Louisa, ce projet a été riche en développement car il permet à Sarah de promouvoir sa marque influente en tant que traiteur. Nous te souhaitons toute la réussite ainsi que de belles choses avec ce site, nous espérons que ta marque de fabrique puisse davantage s'accroîte dans les meilleures années à venir, encore et plus fort !",
     },
     {
-      image: Image1,
-      title: "Test",
-      content:
-        "Nous avons l'heureux de vous annoncer que le site By Sarah Cuisine a été créé par la société navi studio.™ Développé et designé par Louisa, ce projet a été riche en développement car il permet à Sarah de promouvoir sa marque influente en tant que traiteur.",
-    },
-    {
-      image: Image1,
-      title: "Test",
-      content:
-        "Nous avons l'heureux de vous annoncer que le site By Sarah Cuisine a été créé par la société navi studio.™ Développé et designé par Louisa, ce projet a été riche en développement car il permet à Sarah de promouvoir sa marque influente en tant que traiteur.",
+      // image: Image1,
+      title: "Prochain projet arrive très bientôt...",
+      content: "Il arrive !",
     },
   ];
 
@@ -61,12 +54,12 @@ const Portfolio = () => {
           <img src={Pattern} className="h-auto w-32" />
         </div> */}
         <div className="flex justify-center mt-10">
-          <div className="p-6  h-1/2 w-96 rounded-xl shadow-xl">
-            <div className="mt-4">
+          <div className="p-6 h-1/2 w-96 rounded-2xl shadow-2xl">
+            <div className="flex justify-center mt-3">
               <img
                 src={cards[currentIndex].image}
                 alt={cards[currentIndex].title}
-                className="w-full h-60 object-cover rounded"
+                className="w-auto h-44 object-cover rounded-2xl"
               />
             </div>
             <p className="mt-6 text-black text-xl font-extrabold ">
@@ -81,7 +74,7 @@ const Portfolio = () => {
                   rel="noreferrer"
                   target="_blank"
                 >
-                  Lien vers le site ➔ 
+                  Lien vers le site ➔
                 </NavLink>
               </div>
             </p>

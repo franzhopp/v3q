@@ -106,6 +106,12 @@ button {
     background-size: cover;
 }
 
+.bg-devis-blur {
+    background-image: url('./assets/bg-portfolio-blur.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .image-navi-studio-contact {
     height: auto;
     display: block;
