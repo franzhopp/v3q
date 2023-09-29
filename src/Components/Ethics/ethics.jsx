@@ -30,6 +30,7 @@ const EthicsPage = () => {
                 Nous nous consacrons à la réussite de nos collaborateurs et à
                 faire de notre entreprise un endroit où il fait bon travailler.
                 <span className="font-extrabold">
+                  {" "}
                   L’éthique est au coeur de notre travail et est notre priorité.
                 </span>
               </p>
@@ -37,7 +38,12 @@ const EthicsPage = () => {
           </div>
 
           <div class="p-6 rounded-lg shadow-md">
-            <h2  data-aos="fade-right" class="text-7xl number text-E18AB0 font-bold mb-2">02</h2>
+            <h2
+              data-aos="fade-right"
+              class="text-7xl number text-E18AB0 font-bold mb-2"
+            >
+              02
+            </h2>
             <p className="text-black text-xl font-extrabold mb-5">
               Satisfaction client
             </p>
@@ -78,8 +84,6 @@ const EthicsPage = () => {
         </div>
       </div>
 
-
-      
       <div className="flex justify-center">
         <div className="mt-20">
           <div className="px-10">
@@ -98,23 +102,37 @@ const EthicsPage = () => {
           </h1>
           <div className="flex justify-center">
             <div className="w-full sm:w-1/3 sm:px-0 px-10">
-              <p className="text-black font-extrabold">
-                Notre environnement de travail est une fusion créative où le
-                design et le développement web se rencontrent. C'est un espace
-                vibrant et inspirant où l'innovation prend vie, où les écrans
-                brillent de projets en constante évolution, et où la
-                collaboration est le moteur de notre succès.
+              <p className="text-black text-center">
+                Notre environnement de travail est{" "}
+                <span className="font-extrabold">
+                  une fusion créative où le design et le développement web se
+                  rencontrent
+                </span>
+                . C'est un espace vibrant et inspirant où l'innovation prend
+                vie, où les écrans brillent de projets en constante évolution,
+                et où{" "}
+                <span className="font-extrabold">
+                  la collaboration est le moteur de notre succès
+                </span>
+                .
               </p>
               <div className="text-transparent">Division invisible</div>
-              <p className="text-black font-extrabold">
+              <p className="text-black text-center">
                 En somme, notre environnement de travail est bien plus qu'un
                 lieu physique où nous accomplissons nos tâches. C'est un lieu où
-                l'innovation, la passion et la collaboration se rencontrent pour
-                donner vie à des projets web extraordinaires. Chez nous, chaque
-                journée est une nouvelle opportunité de repousser les limites du
-                design et du développement web, de créer des expériences
-                mémorables pour nos clients et de se réaliser
-                professionnellement.
+                l'innovation,{" "}
+                <span className="font-extrabold">
+                  la passion et la collaboration se rencontrent pour donner vie
+                  à des projets web extraordinaires
+                </span>
+                . Chez nous, chaque journée est une nouvelle opportunité de
+                repousser les limites du design et du développement web, de
+                créer{" "}
+                <span className="font-extrabold">
+                  des expériences mémorables pour nos clients et de se réaliser
+                  professionnellement
+                </span>
+                .
               </p>
             </div>
           </div>
