@@ -310,7 +310,7 @@ const NavbarServices = () => {
           <NavLink
             to="/"
             href="translate"
-            className="mt-20 text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
+            className="mb-10 text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             FR
           </NavLink>
