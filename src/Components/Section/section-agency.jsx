@@ -36,7 +36,7 @@ const SectionAgency = () => {
                 {`Agence créée par`}{" "}
                 <span className="font-extrabold text-C22E2E">{"Mélissa"}</span>
                 {" et "}
-                <span className="font-extrabold text-C22E2E">Louisa.</span>{" "}
+                <span className="font-extrabold text-C22E2E">Louisa</span>.{" "}
                 <span className="text-black">
                   {
                     "Nous avons décidé de collaborer pour créer des expériences exceptionnelles. Notre "
