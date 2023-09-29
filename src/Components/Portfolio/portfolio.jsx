@@ -15,8 +15,9 @@ const Portfolio = () => {
     {
       image: Image1,
       title: "By Sarah Cuisine",
+      url: "http://bysarahcuisine.com",
       content:
-        "Nous avons l'heureux de vous annoncer que le site By Sarah Cuisine a été créé par la société navi studio.™ Développé et designé par Louisa, ce projet a été riche en développement car il permet à Sarah de promouvoir sa marque influente en tant que traiteur.",
+        "Nous avons l'heureux de vous annoncer que le site By Sarah Cuisine a été créé par la société navi studio.™ Développé et designé par Louisa, ce projet a été riche en développement car il permet à Sarah de promouvoir sa marque influente en tant que traiteur. Nous te souhaitons toute la réussite ainsi que de belles choses avec ce site, nous espérons que ta marque de fabrique puisse davantage s'accroîte dans les meilleures années à venir, encore et plus fort !",
     },
     {
       image: Image1,
@@ -73,6 +74,16 @@ const Portfolio = () => {
                 {currentIndex + 1}.
               </span>{" "}
               {cards[currentIndex].title}
+              <div className="flex flex-col">
+                <NavLink
+                  to={cards[currentIndex].url}
+                  className="underline text-C22E2E text-base mb-2"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Lien vers le site ➔ 
+                </NavLink>
+              </div>
             </p>
             <div className="">
               <p className="text-black overflow-auto p-5 h-40">
@@ -96,7 +107,11 @@ const Portfolio = () => {
           </div>
         </div>
         <div className="flex justify-center mt-10">
-          <img src={ImgMade} alt="Icône made with love" className="button-design-formbounce animate-bounce-bounce" />
+          <img
+            src={ImgMade}
+            alt="Icône made with love"
+            className="button-design-formbounce animate-bounce-bounce"
+          />
         </div>
       </div>
       <Footer />
