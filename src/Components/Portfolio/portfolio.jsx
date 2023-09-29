@@ -45,7 +45,7 @@ const Portfolio = () => {
     });
   }, []);
   return (
-    <section className="">
+    <section className="bg-pattern-portfolio">
       <NavbarDevis />
       <div>
         <TitlePorfolio />
@@ -81,7 +81,7 @@ const Portfolio = () => {
                 {cards[currentIndex].content}
               </p>
             </div>
-            <div className="flex justify-center mt-4">
+            <div className="flex justify-center mt-5">
               <button
                 className="bg-black font-extrabold text-FFF6E4 px-4 py-2 rounded-full mr-2"
                 onClick={handlePrev}
@@ -95,6 +95,13 @@ const Portfolio = () => {
                 Suivant
               </button>
             </div>
+        <div className="flex justify-center mt-10">
+          <img
+            src={ImgMade}
+            alt="Icône made with love"
+            className="button-design-formbounce animate-bounce-bounce"
+          />
+        </div>
           </div>
           <svg
             className="button-design-formbounce animate-bounce-bounce h-14 w-14"
@@ -113,13 +120,6 @@ const Portfolio = () => {
               fill="#E18AB0"
             />
           </svg>
-        </div>
-        <div className="flex justify-center mt-10">
-          <img
-            src={ImgMade}
-            alt="Icône made with love"
-            className="button-design-formbounce animate-bounce-bounce"
-          />
         </div>
       </div>
       <Footer />
