@@ -119,7 +119,7 @@ const DetailsServices = () => {
         <div className="flex justify-center">
           <div className="w-96 sm:w-1/2 mt-10">
             <p
-              data-aos="fade-right"
+              data-aos="fade-left"
               className="text-black text-center text-2xl font-extrabold px-5"
             >
               Des questions ? Une demande ? N’hésitez pas à nous contacter

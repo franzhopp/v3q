@@ -77,6 +77,9 @@ const EthicsPage = () => {
           </div>
         </div>
       </div>
+
+
+      
       <div className="flex justify-center">
         <div className="mt-20">
           <div className="px-10">

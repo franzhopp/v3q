@@ -176,7 +176,7 @@ const Navbar = () => {
               <NavLink className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold">
                 FR
               </NavLink>
-              <NavLink
+              {/* <NavLink
                 to="/"
                 data-aos="fade-left"
                 href="contact"
@@ -209,7 +209,7 @@ const Navbar = () => {
                   closeModal={setOpenModel}
                   searchQuery={setSearchQuery}
                 />
-              )}
+              )} */}
             </div>
           </div>
         </div>
@@ -357,7 +357,7 @@ const Navbar = () => {
           >
             FR
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to="/"
             href="contact"
             className="text-C22E2E hover:text-0C3E78 px-3 py-2 text-base font-extrabold"
@@ -383,7 +383,7 @@ const Navbar = () => {
               />
             </svg>
           </NavLink>
-          {openModel && <ModalSearch closeModal={setOpenModel} />}
+          {openModel && <ModalSearch closeModal={setOpenModel} />} */}
         </ul>
       </nav>
 

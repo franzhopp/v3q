@@ -12,7 +12,7 @@ const Portfolio = () => {
       title: "By Sarah Cuisine",
       url: "http://bysarahcuisine.com",
       content:
-        "Nous avons l'heureux de vous annoncer que le site By Sarah Cuisine a été créé par la société navi studio.™ Développé et designé par Louisa, ce projet a été riche en développement car il permet à Sarah de promouvoir sa marque influente en tant que traiteur. Nous te souhaitons toute la réussite ainsi que de belles choses avec ce site, nous espérons que ta marque de fabrique puisse davantage s'accroîte dans les meilleures années à venir, encore et plus fort !",
+        "Nous avons l'heureux de vous annoncer que le site By Sarah Cuisine a été créé par la société navi studio.™ Développé et designé par Louisa, ce projet a été riche en développement car il permet à Sarah de promouvoir sa marque influente en tant que traiteur. Nous te souhaitons toute la réussite ainsi que de belles choses avec ce site, nous espérons que ta marque de fabrique puisse davantage s'accroître dans les meilleures années à venir, encore et plus fort ! ❤",
     },
     {
       // image:
@@ -71,16 +71,16 @@ const Portfolio = () => {
             </div>
             <div className="flex justify-center mt-5">
               <button
-                className="bg-black font-extrabold text-FFF6E4 px-4 py-2 rounded-full mr-2"
+                className="bg-black font-extrabold text-FFF6E4 hover:bg-C22E2E px-4 py-2 rounded-full mr-2"
                 onClick={handlePrev}
               >
-                Précédent
+                ❮
               </button>
               <button
-                className="bg-black font-extrabold text-FFF6E4 px-4 py-2 rounded-full"
+                className="bg-black font-extrabold text-FFF6E4 hover:bg-C22E2E  px-4 py-2 rounded-full"
                 onClick={handleNext}
               >
-                Suivant
+                ❯
               </button>
             </div>
             <div className="flex justify-center mt-10">
