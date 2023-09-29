@@ -100,6 +100,17 @@ button {
     max-width: 100%;
 }
 
+.bg-pattern-portfolio {
+    background-image: url('./assets/pattern.png');
+    background-repeat: no-repeat;
+}
+
+.star {
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
 .bg-contact-blur {
     background-image: url('./assets/bg-contact-blur.png');
     background-repeat: no-repeat;
@@ -171,7 +182,6 @@ button {
 
 .bg-contact {
     border-radius: 56px;
-    border: 0px solid #C22E2E;
     background: rgba(0, 0, 0, 0.08);
     backdrop-filter: blur(6.5px);
 }
@@ -182,7 +192,8 @@ button {
     top: 80px;
 }
 
+/* 
 .test-1 {
     border-radius: 138.5px 0px 0px 138.5px;
     background: #C22E2E;
-}
+} */

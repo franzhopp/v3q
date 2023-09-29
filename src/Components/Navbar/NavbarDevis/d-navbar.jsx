@@ -119,7 +119,7 @@ const NavbarDevis = () => {
               </li>
 
               <NavLink
-                to="/"
+                to="/portfolio"
                 data-aos="fade-left"
                 href="about"
                 className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
@@ -139,7 +139,6 @@ const NavbarDevis = () => {
               <NavLink
                 to="/"
                 data-aos="fade-left"
-                href="contact"
                 className="text-C22E2E hover:text-0C3E78 px-6 py-2 xl:text-2xl text-base font-extrabold"
               >
                 <svg

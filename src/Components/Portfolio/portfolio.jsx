@@ -6,6 +6,7 @@ import Footer from "../Footer/footer";
 import NavbarDevis from "../Navbar/NavbarDevis/d-navbar";
 import { NavLink } from "react-router-dom";
 import Pattern from "../../assets/pattern.png";
+import ImgStar from "../../assets/star.png";
 import TitlePorfolio from "../UI/Button/title-porfolio";
 import Image1 from "../../assets/projetbysarahcuisine.png";
 import ImgMade from "../../assets/madewithlove.png";
@@ -20,9 +21,9 @@ const Portfolio = () => {
         "Nous avons l'heureux de vous annoncer que le site By Sarah Cuisine a été créé par la société navi studio.™ Développé et designé par Louisa, ce projet a été riche en développement car il permet à Sarah de promouvoir sa marque influente en tant que traiteur. Nous te souhaitons toute la réussite ainsi que de belles choses avec ce site, nous espérons que ta marque de fabrique puisse davantage s'accroîte dans les meilleures années à venir, encore et plus fort !",
     },
     {
-      // image: Image1,
+      // image:
       title: "Prochain projet arrive très bientôt...",
-      content: "Il arrive !",
+      content: "Ce projet...",
     },
   ];
 
@@ -50,11 +51,8 @@ const Portfolio = () => {
         <TitlePorfolio />
       </div>
       <div className="mb-10 mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-        {/* <div className="sm:h-auto">
-          <img src={Pattern} className="h-auto w-32" />
-        </div> */}
-        <div className="flex justify-center mt-10">
-          <div className="p-6 h-1/2 w-96 rounded-2xl shadow-2xl">
+        <div className=" flex space-x-px justify-center mt-10">
+          <div className="bg-FFF6E4 p-6 h-1/2 w-96 rounded-2xl shadow-2xl mr-2">
             <div className="flex justify-center mt-3">
               <img
                 src={cards[currentIndex].image}
@@ -98,6 +96,23 @@ const Portfolio = () => {
               </button>
             </div>
           </div>
+          <svg
+            className="button-design-formbounce animate-bounce-bounce h-14 w-14"
+            width="192"
+            height="193"
+            viewBox="0 0 192 193"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M41.5 0L54.9987 28.0013L83 41.5L54.9987 54.9987L41.5 83L28.0013 54.9987L0 41.5L28.0013 28.0013L41.5 0Z"
+              fill="#E18AB0"
+            />
+            <path
+              d="M116.5 42L141.058 92.9422L192 117.5L141.058 142.058L116.5 193L91.9422 142.058L41 117.5L91.9422 92.9422L116.5 42Z"
+              fill="#E18AB0"
+            />
+          </svg>
         </div>
         <div className="flex justify-center mt-10">
           <img
