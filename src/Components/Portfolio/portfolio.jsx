@@ -52,7 +52,7 @@ const Portfolio = () => {
       </div>
       <div className="mb-10 mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className=" flex space-x-px justify-center mt-10">
-          <div className="bg-FFF6E4 p-6 h-1/2 w-96 rounded-2xl shadow-2xl mr-2 ml-2">
+          <div className="bg-FFF6E4 p-6 h-1/2 w-96 rounded-2xl shadow-2xl mr-5 ml-5">
             <div className="flex justify-center mt-3">
               <img
                 src={cards[currentIndex].image}
@@ -146,7 +146,7 @@ const Portfolio = () => {
             </div>
           </div>
           <svg
-            className="button-design-formbounce animate-bounce-bounce h-14 w-14"
+            className="button-design-formbounce animate-bounce-bounce h-14 w-14 sm:flex hidden"
             width="192"
             height="193"
             viewBox="0 0 192 193"
