@@ -46,6 +46,7 @@ const Portfolio = () => {
   }, []);
   return (
     <section className="bg-pattern-portfolio">
+      
       <NavbarDevis />
       <div>
         <TitlePorfolio />

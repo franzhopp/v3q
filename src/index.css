@@ -103,6 +103,7 @@ button {
 .bg-pattern-portfolio {
     background-image: url('./assets/pattern-portfolio.png');
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .star {
