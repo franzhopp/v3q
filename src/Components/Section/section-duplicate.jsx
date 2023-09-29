@@ -79,13 +79,15 @@ const SectionDuplicate = () => {
                   <span className="font-extrabold">
                     Nous visons la qualité.
                   </span>{" "}
-                  Ce que vous voulons vous créer dans votre projet, est une
-                  interface en harmonie avec la qualité de votre marque.{" "}
+                  Ce que nous créons, est une interface en harmonie avec la
+                  qualité de votre marque.{" "}
                   <span className="font-extrabold">
                     Il est essentiel que vous soyez connectés à celle-ci, car
                     cela nous permet de mieux comprendre vos besoins
                   </span>
-                  .{" "}
+                  . Préparez ce qui vous semble nécessaire pour votre site, pour
+                  le reste ?{" "}
+                  <span className="font-extrabold">On s'occupe de tout</span> !
                 </p>
               </div>
             </div>

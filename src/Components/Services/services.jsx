@@ -12,16 +12,19 @@ const Services = () => {
     <>
       <section>
         <NavbarServices />
-        <h1 className="text-black text-center text-4xl mt-20 mb-10 font-extrabold sm:text-5xl md:text-6xl">
+        <h1
+          data-aos="fade-right"
+          className="text-black text-center text-4xl mt-20 mb-10 font-extrabold sm:text-5xl md:text-6xl"
+        >
           Websites
         </h1>
 
         <div class="flex justify-center mt-10">
-          <div class="mt-5 flex flex-wrap justify-center space-x-0 sm:space-x-7">
+          <div class="mt-5 flex flex-wrap justify-center space-x-0 sm:space-x-6">
             <div
               data-aos="zoom-in"
               data-aos-duration="300"
-              class="bg-C22E2E p-6 rounded-2xl shadow-2xl"
+              class="bg-C22E2E p-6 rounded-2xl shadow-2xl mb-5"
             >
               <p className="text-FFF6E4 text-center text-xl font-extrabold mb-5">
                 Site vitrine
@@ -44,7 +47,7 @@ const Services = () => {
             <div
               data-aos="zoom-in"
               data-aos-duration="300"
-              class="bg-C22E2E p-6 rounded-2xl shadow-2xl"
+              class="bg-C22E2E p-6 rounded-2xl shadow-2xl mb-5"
             >
               <p className="text-FFF6E4 text-center text-xl font-extrabold mb-5">
                 Site e-commerce
@@ -67,7 +70,7 @@ const Services = () => {
             <div
               data-aos="zoom-in"
               data-aos-duration="300"
-              class="bg-C22E2E p-6 rounded-2xl shadow-2xl"
+              class="bg-C22E2E p-6 rounded-2xl shadow-2xl mb-5"
             >
               <p className="text-FFF6E4 text-center text-xl font-extrabold mb-5">
                 Landing page
@@ -89,7 +92,7 @@ const Services = () => {
             <div
               data-aos="zoom-in"
               data-aos-duration="300"
-              class="bg-C22E2E p-6 rounded-2xl shadow-2xl"
+              class="bg-C22E2E p-6 rounded-2xl shadow-2xl mb-5"
             >
               <p className="text-FFF6E4 text-center text-xl font-extrabold mb-5">
                 Refonte
@@ -103,7 +106,7 @@ const Services = () => {
                 </p>
               </div>
               <div className="flex justify-center mt-10">
-                <img src={ImgService4} alt="Icône Gears" className="" />
+                <img src={ImgService4} alt="Icône Gears" />
               </div>
             </div>
           </div>
@@ -131,11 +134,18 @@ const Services = () => {
               </div> */}
 
         <div className="flex justify-center mt-20">
-          <img src={Gears} alt="Icône Gears" className="" />
+          <img
+            src={Gears}
+            alt="Icône Gears"
+            className="button-design-formbounce animate-bounce-bounce"
+          />
         </div>
         <div className="flex justify-center mt-10">
           <div className="w-96 sm:w-1/3 px-5">
-            <p data-aos="fade-left" className="text-black text-center text-2xl font-extrabold">
+            <p
+              data-aos="fade-left"
+              className="text-black text-center text-2xl font-extrabold"
+            >
               Ou besoin de modifications sur votre site web ? Nous pouvons le
               faire rapidement !
             </p>
