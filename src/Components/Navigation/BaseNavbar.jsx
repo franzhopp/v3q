@@ -147,6 +147,17 @@ const Navbar = () => {
                   </li>
                   <li>
                     <NavLink
+                      to="/discover"
+                      // onClick={() => {
+                      //   window.location.href = "/discover";
+                      // }}
+                      className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
+                    >
+                      Notre équipe 
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
                       to="/rate"
                       // onClick={() => {
                       //   window.location.href = "/rate";
@@ -354,6 +365,17 @@ const Navbar = () => {
                     className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Qui sommes-nous ?
+                  </NavLink>
+                </li>
+                <li className="list-decimal ml-4">
+                  <NavLink
+                    to="/discover"
+                    // onClick={() => {
+                    //   window.location.href = "/discover";
+                    // }}
+                    className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
+                  >
+                    Notre équipe
                   </NavLink>
                 </li>
                 <li className="list-decimal ml-4">
