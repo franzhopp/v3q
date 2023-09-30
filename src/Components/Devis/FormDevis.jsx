@@ -82,7 +82,7 @@ const DevisFree = () => {
                   </li>
                   <br />
                   Toute l'équipe de navi studio.™ vous souhaite une excellente
-                  journée ! Merci et à bientôt. ✨
+                  journée ! Merci et à bientôt. ✨😎
                 </ul>
               </p>
             </div>

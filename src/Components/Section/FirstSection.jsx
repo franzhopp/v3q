@@ -1,8 +1,6 @@
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import ButtonContact from "../UI/Button/ButtonFormContact";
-import { useEffect, useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const Section = () => {
   const [scrollNavbar, setScrollNavbar] = useState();
@@ -15,9 +13,6 @@ const Section = () => {
   };
 
   useEffect(() => {
-    AOS.init({
-      once: true,
-    });
     const handleScroll = () => {
       if (window.scrollY > 0) {
         setScrollNavbar(true);

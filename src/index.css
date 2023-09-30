@@ -86,6 +86,7 @@ button {
     background-position: right;
 }
 
+/* Blur */
 .bg-contact-blur {
     background-image: url('./assets/bg-contact-blur.png');
     background-repeat: no-repeat;
@@ -94,6 +95,12 @@ button {
 
 .bg-devis-blur {
     background-image: url('./assets/bg-portfolio-blur.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-ethics-blur {
+    background-image: url('./assets/bg-ethics-blur.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
