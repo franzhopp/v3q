@@ -14,7 +14,7 @@ const Services = () => {
         <NavbarServices />
         <h1
           data-aos="fade-right"
-          className="text-black text-center text-4xl mt-20 mb-10 font-extrabold sm:text-5xl md:text-6xl"
+          className="text-black text-center number text-4xl mt-20 mb-10 font-extrabold sm:text-5xl md:text-6xl"
         >
           Websites
         </h1>
@@ -25,7 +25,7 @@ const Services = () => {
               Vous y trouverez{" "}
               <span className="font-extrabold">tous les services</span> que
               notre agence propose, adaptés à{" "}
-              <span className="font-extrabold">vos besoins</span>.
+              <span className="font-extrabold">vos besoins</span> :
             </p>
           </div>
         </div>
@@ -112,7 +112,10 @@ const Services = () => {
                 <p className="text-FFF6E4 text-center">
                   Vous avez déjà un site internet ? Nous pouvons{" "}
                   <span className="font-extrabold">l'améliorer</span> ou
-                  <span className="font-extrabold">le refaire entièrement</span>
+                  <span className="font-extrabold">
+                    {" "}
+                    le refaire entièrement
+                  </span>
                   .
                 </p>
               </div>
