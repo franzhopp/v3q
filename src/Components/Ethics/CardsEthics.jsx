@@ -246,9 +246,9 @@ const EthicsPage = () => {
             className="text-FFF6E4 font-extrabold text-2xl sm:text-4xl mb-10 mt-20"
           >
             <div className="flex justify-center">
-              <p className="mt-4 sm:mt-3 text-2xl sm:text-4xl">Faites confiance à</p>
+              <p className="mt-4 sm:mt-3 text-2xl sm:text-4xl">Faites confiance à navi studio.™</p>
               <span className="sm:px-0 px-1">
-                <img src={ImgLogo} alt="" className="h-20 w-full" />
+                {/* <img src={ImgLogo} alt="" className="h-20 w-full" /> */}
               </span>
             </div>
           </h1>
