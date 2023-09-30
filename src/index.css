@@ -47,14 +47,6 @@ button {
     width: 40px;
 }
 
-.image-navi-studio-agency {
-    height: auto;
-    display: block;
-    max-width: 100%;
-    border-radius: 0px 0px 0px 190px;
-    background: url("./assets/bg-title-agency.png"), lightgray -46.697px -768.547px / 106.886% 974.977% no-repeat;
-}
-
 .image-navi-studio {
     background-image: url('./assets/bg-home.png');
     background-repeat: no-repeat;
@@ -106,13 +98,39 @@ button {
     background-size: cover;
 }
 
-.image-navi-studio-contact {
+/* Title */
+.image-navi-studio-title-agency {
+    height: auto;
+    display: block;
+    max-width: 100%;
+    border-radius: 0px 0px 0px 190px;
+    background: url("./assets/bg-title-agency.png"), lightgray -46.697px -768.547px / 106.886% 974.977% no-repeat;
+}
+
+.image-navi-studio-title-devis {
+    height: auto;
+    display: block;
+    max-width: 100%;
+    border-radius: 0px 0px 290px 0px;
+    background: url("./assets/bg-devis.png")
+}
+
+.image-navi-studio-title-porfolio {
+    height: auto;
+    display: block;
+    max-width: 100%;
+    border-radius: 0px 0px 290px 0px;
+    background: url("./assets/bg-portfolio.png")
+}
+
+.image-navi-studio-title-contact {
     height: auto;
     display: block;
     max-width: 100%;
     border-radius: 0px 0px 0px 181px;
     background: url("./assets/bg-title-contact.png"), lightgray -1432.171px -108.115px / 298.913% 133.472% no-repeat;
 }
+
 
 .image-navi-studio-service {
     height: auto;

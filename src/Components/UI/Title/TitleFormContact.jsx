@@ -1,6 +1,6 @@
 const Title = () => {
   return (
-    <div className="image-navi-studio-contact pb-24">
+    <div className="image-navi-studio-title-contact pb-24">
       <div
         className="pt-20 text-FFF6E4 sm:ml-44 sm:text-left text-center font-extrabold"
         data-aos="fade-left"
