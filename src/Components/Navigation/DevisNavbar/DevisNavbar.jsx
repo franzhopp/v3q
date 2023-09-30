@@ -82,7 +82,7 @@ const NavbarDevis = () => {
                   Services
                 </NavLink>
                 <div className="flex justify-center">
-                  <ul className="absolute hidden group-hover:block rounded-2xl text-left w-48 bg-FFF6E4 border border-gray-300 mt-2 py-2">
+                  <ul className="absolute hidden group-hover:block rounded-md text-left w-48 bg-FFF6E4 border border-gray-300 mt-2 py-2">
                     <li>
                       <NavLink
                         to="/ethics"
@@ -128,7 +128,7 @@ const NavbarDevis = () => {
                           // onClick={() => {
                           //   window.location.href = "/discover";
                           // }}
-                          className="block text-C22E2E border-C22E2E border-b-2 rounded-2xl hover:text-0C3E78 px-4 py-2 font-extrabold"
+                          className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
                         >
                           Designer
                         </NavLink>
@@ -139,7 +139,7 @@ const NavbarDevis = () => {
                           // onClick={() => {
                           //   window.location.href = "/discover";
                           // }}
-                          className="block text-C22E2E border-C22E2E border-b-2 rounded-2xl hover:text-0C3E78 px-4 py-2 font-extrabold"
+                          className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
                         >
                           Web Developper
                         </NavLink>
@@ -317,6 +317,7 @@ const NavbarDevis = () => {
             // onClick={() => {
             //   window.location.href = "/";
             // }}
+
             className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             Agence
@@ -358,43 +359,46 @@ const NavbarDevis = () => {
                     Qui sommes-nous ?
                   </NavLink>
                 </li>
-                <button onClick={toggleSousListsTwoMenu}>
-                  <div className="flex items-center justify-between">
-                    <div className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold pr-2">
-                      Notre équipe
+                <li className="list-decimal ml-4">
+                  <button onClick={toggleSousListsTwoMenu}>
+                    <div className="flex items-center justify-between">
+                      <div className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold pr-2">
+                        Notre équipe
+                      </div>
+                      <LuArrowDown className="mt-1 text-C22E2E font-extrabold" />
                     </div>
-                    <LuArrowDown className="mt-1 text-C22E2E font-extrabold" />
-                  </div>
-                </button>
+                  </button>
 
-                <ul
-                  className={`toggle-menu ${
-                    showSousListsTwoMenu ? "block" : "hidden"
-                  } p-2`}
-                >
-                  <li className="list-decimal ml-4 text-C22E2E font-extrabold">
-                    <NavLink
-                      to="/ethics"
-                      // onClick={() => {
-                      //   window.location.href = "/discover";
-                      // }}
-                      className="block text-C22E2E border-C22E2E border-b-2 rounded-2xl hover:text-0C3E78 px-4 py-2 font-extrabold"
-                    >
-                      Designer
-                    </NavLink>
-                  </li>
-                  <li className="list-decimal ml-4 text-C22E2E font-extrabold">
-                    <NavLink
-                      to="/services"
-                      // onClick={() => {
-                      //   window.location.href = "/discover";
-                      // }}
-                      className="block text-C22E2E border-C22E2E border-b-2 rounded-2xl hover:text-0C3E78 px-4 py-2 font-extrabold"
-                    >
-                      Web Developper
-                    </NavLink>
-                  </li>
-                </ul>
+                  <ul
+                    className={`toggle-menu ${
+                      showSousListsTwoMenu ? "block" : "hidden"
+                    } p-2`}
+                  >
+                    <li className="list-decimal ml-4 text-C22E2E font-extrabold">
+                      <NavLink
+                        to="/ethics"
+                        // onClick={() => {
+                        //   window.location.href = "/discover";
+                        // }}
+                        className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                      >
+                        Designer
+                      </NavLink>
+                    </li>
+                    <li className="list-decimal ml-4 text-C22E2E font-extrabold">
+                      <NavLink
+                        to="/services"
+                        // onClick={() => {
+                        //   window.location.href = "/discover";
+                        // }}
+                        className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                      >
+                        Web Developper
+                      </NavLink>
+                    </li>
+                  </ul>
+                </li>
+
                 <li className="list-decimal ml-4">
                   <NavLink
                     to="/rate"
@@ -447,6 +451,7 @@ const NavbarDevis = () => {
             // onClick={() => {
             //   window.location.href = "/";
             // }}
+
             className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             Contact
