@@ -8,25 +8,25 @@ import { LuArrowDown } from "react-icons/lu";
 const NavbarEthics = () => {
   const [isAnimating, setIsAnimating] = useState(false);
   const [toggleMenu, setToggleMenu] = useState(false);
-  const [openModel, setOpenModel] = useState(false);
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
   const [isMouseOnSubmenu, setIsMouseOnSubmenu] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleAnimateButtonClick = () => {
-    setIsAnimating(true);
-
-    setTimeout(() => {
-      setIsAnimating(false);
-    }, 1000);
-  };
-
+  // Toggle → HandleMouse from list items
   const toggleMenuMobile = () => {
     setToggleMenu(!toggleMenu);
+    setIsOpen(!isOpen);
   };
 
   const toggleSousListsMenu = () => {
     setShowSousListsMenu(!showSousListsMenu);
+  };
+
+  const handleAnimateButtonClick = () => {
+    setIsAnimating(true);
+    setTimeout(() => {
+      setIsAnimating(false);
+    }, 1000);
   };
 
   const handleMouseEnterSubmenu = () => {
