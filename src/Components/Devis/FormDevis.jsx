@@ -49,7 +49,7 @@ const DevisFree = () => {
                     que nous puissions vous recontacter rapidement.
                   </li>
                   <li>
-                    2. Sélectionnez le service que vous souhaitez afin que nous
+                    2. Renseignez le service que vous souhaitez afin que nous
                     puissions élaborer votre projet en conséquence. N'hésitez
                     pas à consulter notre page «{" "}
                     <span className="font-extrabold">Services</span> »{" "}
@@ -82,7 +82,7 @@ const DevisFree = () => {
                   </li>
                   <br />
                   Toute l'équipe de navi studio.™ vous souhaite une excellente
-                  journée ! Merci et à bientôt.
+                  journée ! Merci et à bientôt. ✨
                 </ul>
               </p>
             </div>
