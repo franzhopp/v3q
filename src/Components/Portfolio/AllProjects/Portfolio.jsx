@@ -46,7 +46,7 @@ const Portfolio = () => {
               <img
                 src={cards[currentIndex].image}
                 alt={cards[currentIndex].title}
-                className="w-auto h-44 object-cover rounded-2xl"
+                className="w-auto h-44 object-cover rounded-2xl transition"
               />
             </div>
             <p className="mt-6 text-black text-xl font-extrabold ">

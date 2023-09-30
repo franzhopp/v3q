@@ -14,7 +14,7 @@ const Services = () => {
         <NavbarServices />
         <h1
           data-aos="fade-right"
-          className="text-black text-center number text-4xl mt-20 mb-10 font-extrabold sm:text-5xl md:text-6xl"
+          className="text-black text-center text-4xl mt-20 mb-10 font-extrabold sm:text-5xl md:text-6xl"
         >
           Websites
         </h1>
@@ -58,7 +58,7 @@ const Services = () => {
             <div
               data-aos="zoom-in"
               data-aos-duration="300"
-              class="bg-C22E2E p-6 rounded-2xl shadow-2xl mb-5"
+              class="bg-cards p-6 rounded-2xl shadow-2xl mb-5"
             >
               <p className="text-FFF6E4 text-center text-xl font-extrabold mb-5">
                 Site e-commerce
@@ -81,7 +81,7 @@ const Services = () => {
             <div
               data-aos="zoom-in"
               data-aos-duration="300"
-              class="bg-C22E2E p-6 rounded-2xl shadow-2xl mb-5"
+              class="bg-cards-2 p-6 rounded-2xl shadow-2xl mb-5"
             >
               <p className="text-FFF6E4 text-center text-xl font-extrabold mb-5">
                 Landing page
@@ -151,7 +151,7 @@ const Services = () => {
           <img
             src={Gears}
             alt="Icône Gears"
-            className="button-design-formbounce animate-bounce-bounce"
+            className="animate-bounce-bounce"
           />
         </div>
         <div className="flex justify-center mt-10">
