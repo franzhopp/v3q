@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import "../../Section/section.jsx";
+import "../../Section/FirstSection.jsx";
 
 const Button = () => {
   const [scrollNavbar, setScrollNavbar] = useState();

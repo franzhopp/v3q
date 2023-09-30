@@ -1,10 +1,10 @@
 import { useEffect } from "react";
-import NavbarDevis from "../Navbar/NavbarDevis/d-navbar";
-import TitleDevis from "../UI/Button/title-devis";
-import ButtonSend from "../UI/Button/button-send";
-import Footer from "../Footer/footer";
+import NavbarDevis from "../Navigation/DevisNavbar/DevisNavbar.jsx";
+import TitleDevis from "../UI/Title/TitleFormDevis.jsx";
+import ButtonSend from "../UI/Button/ButtonSend.jsx";
+import Footer from "../Footer/Footer.jsx";
 
-const DevisGratuit = () => {
+const DevisFree = () => {
   return (
     <section className="bg-devis-blur">
       <NavbarDevis />
@@ -172,7 +172,7 @@ const DevisGratuit = () => {
                   Conditions d'utilisation.
                 </span>
               </div>
-              
+
               <button
                 type="submit"
                 className="inline-block w-full px-5 sm:w-auto"
@@ -188,4 +188,4 @@ const DevisGratuit = () => {
   );
 };
 
-export default DevisGratuit;
+export default DevisFree;

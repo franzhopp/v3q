@@ -1,26 +1,20 @@
-import Image from "../../assets/logo-5.png";
-import Button from "../UI/Button/button";
-import { useEffect, useState } from "react";
+import Image from "../../../assets/logo-5.png";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { motion } from "framer-motion";
-import "../Section/section.jsx";
-import "../Homepage/homepage";
-import ModalSearch from "../Modal/modal.jsx";
+import "../../Section/FirstSection.jsx";
+import "../../Homepage/Hompage";
 import { LuArrowDown } from "react-icons/lu";
 
-const Navbar = () => {
+const NavbarDevis = () => {
   const [isAnimating, setIsAnimating] = useState(false);
-  const [scrollNavbar, setScrollNavbar] = useState();
   const [toggleMenu, setToggleMenu] = useState(false);
-  const [openModel, setOpenModel] = useState(false);
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
   const [isMouseOnSubmenu, setIsMouseOnSubmenu] = useState(false);
-  const [openSearch, setSearchQuery] = useState("");
-  const [isMobileView, setIsMobileView] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   const handleAnimateButtonClick = () => {
     setIsAnimating(true);
+
     setTimeout(() => {
       setIsAnimating(false);
     }, 1000);
@@ -28,23 +22,6 @@ const Navbar = () => {
 
   const toggleMenuMobile = () => {
     setToggleMenu(!toggleMenu);
-    setIsOpen(!isOpen);
-  };
-
-  const SectionToSectionContact = () => {
-    const ContactToScroll = document.getElementById("contact");
-    if (ContactToScroll) {
-      ContactToScroll.scrollIntoView({ behavior: "smooth" });
-    }
-    setIsOpen(false);
-  };
-
-  const SectionToScroll = () => {
-    const contactSection = document.getElementById("about");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
-    setIsOpen(false);
   };
 
   const toggleSousListsMenu = () => {
@@ -61,24 +38,8 @@ const Navbar = () => {
     }, 500);
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrollNavbar(true);
-      } else {
-        setScrollNavbar(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
-    <div className="image-navi-studio h-screen sm:pb-20 mb:min-h-650 min-h-500">
+    <div className="sm:pb-20 mb:min-h-650 min-h-500">
       <nav
         className={`bg-FFF6E4 border-b-4 border-C22E2E h-28 items-center transition duration-300 ease-in-out fixed w-full top-0 left-0 shadow-md z-max`}
       >
@@ -96,9 +57,10 @@ const Navbar = () => {
             <div className="flex items-center">
               <NavLink
                 to="/"
-                href="about"
+                // onClick={() => {
+                //   window.location.href = "/";
+                // }}
                 data-aos="fade-left"
-                onClick={SectionToScroll}
                 className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
               >
                 Agence
@@ -107,6 +69,9 @@ const Navbar = () => {
               <li data-aos="fade-left" className="relative group list-none">
                 <NavLink
                   to="/services"
+                  // onClick={() => {
+                  //   window.location.href = "/services";
+                  // }}
                   className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
                 >
                   Services
@@ -114,7 +79,10 @@ const Navbar = () => {
                 <ul className="absolute hidden group-hover:block rounded-lg bg-FFF6E4 border border-gray-300 mt-2 py-2">
                   <li>
                     <NavLink
-                      to="/nosvaleurs"
+                      to="/ethics"
+                      // onClick={() => {
+                      //   window.location.href = "/ethics";
+                      // }}
                       onMouseEnter={handleMouseEnterSubmenu}
                       onMouseLeave={closeSubmenuWithDelay}
                       className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
@@ -125,6 +93,9 @@ const Navbar = () => {
                   <li>
                     <NavLink
                       to="/services"
+                      // onClick={() => {
+                      //   window.location.href = "/services";
+                      // }}
                       className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       Qui sommes-nous ?
@@ -132,7 +103,10 @@ const Navbar = () => {
                   </li>
                   <li>
                     <NavLink
-                      to="/prestations"
+                      to="/rate"
+                      // onClick={() => {
+                      //   window.location.href = "/rate";
+                      // }}
                       className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       Prestations
@@ -140,7 +114,10 @@ const Navbar = () => {
                   </li>
                   <li>
                     <NavLink
-                      to="/tarifs"
+                      to="/rate"
+                      // onClick={() => {
+                      //   window.location.href = "/rate";
+                      // }}
                       className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       Tarifications
@@ -149,6 +126,9 @@ const Navbar = () => {
                   <li>
                     <NavLink
                       to="/devis"
+                      // onClick={() => {
+                      //   window.location.href = "/devis";
+                      // }}
                       className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       Devis gratuit
@@ -159,23 +139,31 @@ const Navbar = () => {
 
               <NavLink
                 to="/portfolio"
+                // onClick={() => {
+                //   window.location.href = "/portfolio";
+                // }}
                 data-aos="fade-left"
                 href="about"
                 className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
               >
                 Portfolio
               </NavLink>
+
               <NavLink
                 to="/"
+                // onClick={() => {
+                //   window.location.href = "/";
+                // }}
                 data-aos="fade-left"
-                onClick={SectionToSectionContact}
                 className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
               >
                 Contact
               </NavLink>
+
               <NavLink className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold">
                 FR
               </NavLink>
+
               {/* <NavLink
                 to="/"
                 data-aos="fade-left"
@@ -215,14 +203,19 @@ const Navbar = () => {
         </div>
       </nav>
 
+      {/* Navigation Mobile */}
       <nav
         className={`fixed w-full top-0 left-0 shadow-md md:hidden bg-FFF6E4 z-max`}
       >
-        {/* 2 items */}
         <div className="px-5 h-28 flex items-center justify-between">
-          <a href="">
+          <NavLink
+            to="/"
+            // onClick={() => {
+            //   window.location.href = "/";
+            // }}
+          >
             <img src={Image} alt="" className="h-10 w-auto sm:h-10" />
-          </a>
+          </NavLink>
 
           <div className="-mr-2">
             <a
@@ -269,22 +262,17 @@ const Navbar = () => {
             </a>
           </div>
         </div>
-        {/* end 2 items */}
 
+        {/* Toggle List Item */}
         <ul className={`toggle-menu ${isOpen ? "block" : "hidden"} p-2`}>
           <NavLink
             to="/"
-            href="about"
-            onClick={SectionToScroll}
+            // onClick={() => {
+            //   window.location.href = "/";
+            // }}
             className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             Agence
-          </NavLink>
-          <NavLink
-            to="/portfolio"
-            className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
-          >
-            Portfolio
           </NavLink>
           <li>
             <NavLink className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
@@ -302,7 +290,10 @@ const Navbar = () => {
               >
                 <li className="list-decimal ml-4">
                   <NavLink
-                    to="/nosvaleurs"
+                    to="/ethics"
+                    // onClick={() => {
+                    //   window.location.href = "/ethics";
+                    // }}
                     className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Nos valeurs
@@ -311,6 +302,9 @@ const Navbar = () => {
                 <li className="list-decimal ml-4">
                   <NavLink
                     to="/services"
+                    // onClick={() => {
+                    //   window.location.href = "/services";
+                    // }}
                     className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Qui sommes-nous ?
@@ -318,7 +312,10 @@ const Navbar = () => {
                 </li>
                 <li className="list-decimal ml-4">
                   <NavLink
-                    to="/prestations"
+                    to="/rate"
+                    // onClick={() => {
+                    //   window.location.href = "/rate";
+                    // }}
                     className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Prestations
@@ -326,7 +323,10 @@ const Navbar = () => {
                 </li>
                 <li className="list-decimal ml-4">
                   <a
-                    to="/tarifs"
+                    to="/rate"
+                    // onClick={() => {
+                    //   window.location.href = "/rate";
+                    // }}
                     className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Tarifications
@@ -335,6 +335,9 @@ const Navbar = () => {
                 <li className="list-decimal ml-4">
                   <NavLink
                     to="/devis"
+                    // onClick={() => {
+                    //   window.location.href = "/devis";
+                    // }}
                     className="block text-C22E2E  hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Devis gratuit
@@ -344,12 +347,25 @@ const Navbar = () => {
             </NavLink>
           </li>
           <NavLink
+            to="/portfolio"
+            // onClick={() => {
+            //   window.location.href = "/portfolio";
+            // }}
+            className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
+          >
+            Portfolio
+          </NavLink>
+
+          <NavLink
             to="/"
-            onClick={SectionToSectionContact}
+            // onClick={() => {
+            //   window.location.href = "/";
+            // }}
             className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             Contact
           </NavLink>
+
           <NavLink
             to="/"
             href="translate"
@@ -357,6 +373,7 @@ const Navbar = () => {
           >
             FR
           </NavLink>
+
           {/* <NavLink
             to="/"
             href="contact"
@@ -386,33 +403,8 @@ const Navbar = () => {
           {openModel && <ModalSearch closeModal={setOpenModel} />} */}
         </ul>
       </nav>
-
-      <div className="pt-52 text-center sm:mt-28">
-        <h1 className="text-normal text-4xl tracking-tight font-extrabold text-FFF6E4 sm:text-8xl md:text-8xl">
-          <motion.span
-            id="all"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            className="block xl:inline test-text"
-          >
-            Agence digitale
-          </motion.span>
-        </h1>
-        <span className="block xl:inline text-FFF6E4 font-extrabold test-text">
-          PARIS X LONDON
-        </span>
-      </div>
-      <Button />
-
-      <p id="all" className="text-center mt-10">
-        <span className="text-black text-2xl font-medium sm:text-4xl mt-5 sm:mt-10 whitespace-nowrap animation-scrolling-rtl">
-          DESIGN | DÉVELOPPEMENT | MARKETING DIGITAL | STRATÉGIE DE MARQUE
-        </span>
-      </p>
-      <div id="about" className="mb-40 sm:mb-0"></div>
     </div>
   );
 };
 
-export default Navbar;
+export default NavbarDevis;

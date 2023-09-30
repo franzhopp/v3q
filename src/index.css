@@ -41,20 +41,6 @@ button {
     z-index: 50 !important;
 }
 
-.p {
-    width: 248px;
-    height: 230px;
-    background-repeat: no-repeat;
-    background-image: url("./assets/P.png");
-}
-
-.z {
-    width: 248px;
-    height: 230px;
-    background-repeat: no-repeat;
-    background-image: url("./assets/z.png");
-}
-
 .logo {
     background-image: url("./assets/logo-bit.png");
     height: 40px;
@@ -145,6 +131,26 @@ button {
     background: url("./assets/bg-portfolio.png")
 }
 
+.animate-rotate {
+    animation: rotateAnimation 0.5s ease-in-out forwards;
+}
+
+.bg-contact {
+    border-radius: 56px;
+    background: rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(6.5px);
+}
+
+.btn-contact-rel {
+    position: relative;
+    right: 450px;
+    top: 80px;
+}
+
+.bg-services-2 {
+    background-image: url("./assets/homeservices2.png");
+}
+
 .animation-scrolling-rtl {
     display: inline-block;
     padding-right: 2em;
@@ -171,31 +177,4 @@ button {
     to {
         transform: rotate(360deg);
     }
-}
-
-.animate-rotate {
-    animation: rotateAnimation 0.5s ease-in-out forwards;
-}
-
-.bg-contact {
-    border-radius: 56px;
-    background: rgba(0, 0, 0, 0.08);
-    backdrop-filter: blur(6.5px);
-}
-
-.btn-contact-rel {
-    position: relative;
-    right: 450px;
-    top: 80px;
-}
-
-.bg-services-2 {
-    background-image: url("./assets/homeservices2.png");
-}
-
-
-
-.test-1 {
-    border-radius: 138.5px 0px 0px 138.5px;
-    background: #C22E2E;
 }

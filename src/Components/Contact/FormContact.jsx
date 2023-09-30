@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import ButtonSend from "../UI/Button/button-send";
-import Title from "../UI/Button/title-contact";
+import ButtonSend from "../UI/Button/ButtonSend";
+import Title from "../UI/Title/TitleFormContact";
 import AOS from "aos";
 import "aos/dist/aos.css";
 

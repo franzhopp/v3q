@@ -1,11 +1,11 @@
-import NavbarServices from "../Navbar/NavbarServices/s-navbar";
-import DetailsServices from "./DetailsService/details-services";
+import NavbarServices from "../Navigation/ServicesNavbar/ServicesNavbar";
+import DetailsServices from "./AllServices/DetailsServices";
 import Gears from "../../assets/gears-star.png";
 import ImgService1 from "../../assets/home1.png";
 import ImgService2 from "../../assets/home2.png";
 import ImgService3 from "../../assets/home3.png";
 import ImgService4 from "../../assets/home4.png";
-import Footer from "../Footer/footer";
+import Footer from "../Footer/Footer";
 
 const Services = () => {
   return (

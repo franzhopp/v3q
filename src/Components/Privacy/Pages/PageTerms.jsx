@@ -1,5 +1,5 @@
-import Navbar from "../Navbar/navbar";
-import Footer from "../Footer/footer";
+import Navbar from "../../Navigation/BaseNavbar";
+import Footer from "../../Footer/Footer";
 
 const PageConditions = () => {
   return (

@@ -2,10 +2,9 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import Image from "../../../assets/logo-5.png";
-import ModalSearch from "../../Modal/modal.jsx";
 import { LuArrowDown } from "react-icons/lu";
-import "../../Section/section.jsx";
-import "../../Homepage/homepage";
+import "../../Section/FirstSection.jsx";
+import "../../Homepage/Hompage";
 
 const NavbarServices = () => {
   const [isAnimating, setIsAnimating] = useState(false);
@@ -15,6 +14,7 @@ const NavbarServices = () => {
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
   const [isMouseOnSubmenu, setIsMouseOnSubmenu] = useState(false);
   const [openSearch, setSearchQuery] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleAnimateButtonClick = () => {
     setIsAnimating(true);
@@ -50,15 +50,20 @@ const NavbarServices = () => {
         <div className="container mt-2 mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-24 ">
             <div className="flex items-center">
-              <img
-                data-aos="fade-left"
-                className="lg:h-20 h-10 bg-cover bg-no-repeat xl:logo"
-                src={Image}
-              />
+              <NavLink to="/">
+                <img
+                  data-aos="fade-left"
+                  className="lg:h-20 h-10 bg-cover bg-no-repeat xl:logo"
+                  src={Image}
+                />
+              </NavLink>
             </div>
             <div className="flex items-center">
               <NavLink
                 to="/"
+                // onClick={() => {
+                //   window.location.href = "/";
+                // }}
                 data-aos="fade-left"
                 className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
               >
@@ -68,6 +73,9 @@ const NavbarServices = () => {
               <li data-aos="fade-left" className="relative group list-none">
                 <NavLink
                   to="/services"
+                  // onClick={() => {
+                  //   window.location.href = "/services";
+                  // }}
                   className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
                 >
                   Services
@@ -75,7 +83,10 @@ const NavbarServices = () => {
                 <ul className="absolute hidden group-hover:block rounded-lg bg-FFF6E4 border border-gray-300 mt-2 py-2">
                   <li>
                     <NavLink
-                      to="/nosvaleurs"
+                      to="/ethics"
+                      // onClick={() => {
+                      //   window.location.href = "/ethics";
+                      // }}
                       onMouseEnter={handleMouseEnterSubmenu}
                       onMouseLeave={closeSubmenuWithDelay}
                       className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
@@ -86,6 +97,9 @@ const NavbarServices = () => {
                   <li>
                     <NavLink
                       to="/services"
+                      // onClick={() => {
+                      //   window.location.href = "/services";
+                      // }}
                       className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       Qui sommes-nous ?
@@ -93,7 +107,10 @@ const NavbarServices = () => {
                   </li>
                   <li>
                     <NavLink
-                      to="/prestations"
+                      to="/rate"
+                      // onClick={() => {
+                      //   window.location.href = "/rate";
+                      // }}
                       className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       Prestations
@@ -101,7 +118,10 @@ const NavbarServices = () => {
                   </li>
                   <li>
                     <NavLink
-                      to="/tarifs"
+                      to="/rate"
+                      // onClick={() => {
+                      //   window.location.href = "/rate";
+                      // }}
                       className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       Tarifications
@@ -110,6 +130,9 @@ const NavbarServices = () => {
                   <li>
                     <NavLink
                       to="/devis"
+                      // onClick={() => {
+                      //   window.location.href = "/devis";
+                      // }}
                       className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       Devis gratuit
@@ -120,22 +143,31 @@ const NavbarServices = () => {
 
               <NavLink
                 to="/portfolio"
+                // onClick={() => {
+                //   window.location.href = "/portfolio";
+                // }}
                 data-aos="fade-left"
                 href="about"
                 className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
               >
                 Portfolio
               </NavLink>
+
               <NavLink
                 to="/"
+                // onClick={() => {
+                //   window.location.href = "/";
+                // }}
                 data-aos="fade-left"
                 className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
               >
                 Contact
               </NavLink>
+
               <NavLink className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold">
                 FR
               </NavLink>
+
               {/* <NavLink
                 to="/"
                 data-aos="fade-left"
@@ -175,14 +207,19 @@ const NavbarServices = () => {
         </div>
       </nav>
 
+      {/* Navigation Mobile */}
       <nav
         className={`fixed w-full top-0 left-0 shadow-md md:hidden bg-FFF6E4 z-max`}
       >
-        {/* 2 items */}
         <div className="px-5 h-28 flex items-center justify-between">
-          <a href="">
+          <NavLink
+            to="/"
+            // onClick={() => {
+            //   window.location.href = "/";
+            // }}
+          >
             <img src={Image} alt="" className="h-10 w-auto sm:h-10" />
-          </a>
+          </NavLink>
 
           <div className="-mr-2">
             <a
@@ -229,20 +266,17 @@ const NavbarServices = () => {
             </a>
           </div>
         </div>
-        {/* end 2 items */}
 
-        <ul className={`toggle-menu ${toggleMenu ? "block" : "hidden"} p-2`}>
+        {/* Toggle List Item */}
+        <ul className={`toggle-menu ${isOpen ? "block" : "hidden"} p-2`}>
           <NavLink
             to="/"
+            // onClick={() => {
+            //   window.location.href = "/";
+            // }}
             className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             Agence
-          </NavLink>
-          <NavLink
-            to="/portfolio"
-            className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
-          >
-            Portfolio
           </NavLink>
           <li>
             <NavLink className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
@@ -260,7 +294,10 @@ const NavbarServices = () => {
               >
                 <li className="list-decimal ml-4">
                   <NavLink
-                    to="/nosvaleurs"
+                    to="/ethics"
+                    // onClick={() => {
+                    //   window.location.href = "/ethics";
+                    // }}
                     className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Nos valeurs
@@ -269,6 +306,9 @@ const NavbarServices = () => {
                 <li className="list-decimal ml-4">
                   <NavLink
                     to="/services"
+                    // onClick={() => {
+                    //   window.location.href = "/services";
+                    // }}
                     className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Qui sommes-nous ?
@@ -276,7 +316,10 @@ const NavbarServices = () => {
                 </li>
                 <li className="list-decimal ml-4">
                   <NavLink
-                    to="/prestations"
+                    to="/rate"
+                    // onClick={() => {
+                    //   window.location.href = "/rate";
+                    // }}
                     className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Prestations
@@ -284,7 +327,10 @@ const NavbarServices = () => {
                 </li>
                 <li className="list-decimal ml-4">
                   <a
-                    to="/tarifs"
+                    to="/rate"
+                    // onClick={() => {
+                    //   window.location.href = "/rate";
+                    // }}
                     className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Tarifications
@@ -293,6 +339,9 @@ const NavbarServices = () => {
                 <li className="list-decimal ml-4">
                   <NavLink
                     to="/devis"
+                    // onClick={() => {
+                    //   window.location.href = "/devis";
+                    // }}
                     className="block text-C22E2E  hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Devis gratuit
@@ -302,11 +351,25 @@ const NavbarServices = () => {
             </NavLink>
           </li>
           <NavLink
+            to="/portfolio"
+            // onClick={() => {
+            //   window.location.href = "/portfolio";
+            // }}
+            className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
+          >
+            Portfolio
+          </NavLink>
+
+          <NavLink
             to="/"
+            // onClick={() => {
+            //   window.location.href = "/";
+            // }}
             className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             Contact
           </NavLink>
+
           <NavLink
             to="/"
             href="translate"
@@ -314,6 +377,7 @@ const NavbarServices = () => {
           >
             FR
           </NavLink>
+
           {/* <NavLink
             to="/"
             href="contact"

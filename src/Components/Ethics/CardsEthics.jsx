@@ -1,6 +1,6 @@
-import NavbarEthics from "../Navbar/NavbarEthics/e-navbar";
+import NavbarEthics from "../Navigation/EthicsNavbar/EthicsNavbar";
 import ImgMac from "../../assets/bg-ethics-mac.png";
-import Footer from "../Footer/footer";
+import Footer from "../Footer/Footer";
 
 const EthicsPage = () => {
   return (

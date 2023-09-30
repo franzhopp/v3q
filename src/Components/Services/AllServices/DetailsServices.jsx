@@ -1,6 +1,6 @@
-import ButtonContactServices from "../../UI/Button/button-contact-services";
-import ButtonDevis from "../../UI/Button/button-devis";
-import ButtonServices from "../../UI/Button/button-services";
+import ButtonContactServices from "../../UI/Button/ButtonContactServices";
+import ButtonDevis from "../../UI/Button/ButtonFormDevis";
+import ButtonServices from "../../UI/Button/ButtonServices";
 
 const DetailsServices = () => {
   return (

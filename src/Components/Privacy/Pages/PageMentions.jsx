@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
-import Navbar from "../Navbar/navbar";
-import Footer from "../Footer/footer";
+import Navbar from "../../Navigation/BaseNavbar";
+import Footer from "../../Footer/Footer";
 
 const PageMentions = () => {
   const keywordsStyle = "font-extrabold";
@@ -195,8 +195,8 @@ const PageMentions = () => {
               {" "}
               Technologies utilisées :
             </span>{" "}
-            React, Tailwind CSS, HTML/CSS, JS, EmailJS, Postman, PNPM, AOS, Motion,
-            Notion, React Icons, Hyper UI, Daisy UI etc...
+            React, Tailwind CSS, HTML/CSS, JS, EmailJS, Postman, PNPM, AOS,
+            Motion, Notion, React Icons, Hyper UI, Daisy UI etc...
             <br />
             <div className="mt-16">
               Modèle de formule de collecte de données à caractère personnel
@@ -214,7 +214,7 @@ const PageMentions = () => {
           </p>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

@@ -1,6 +1,6 @@
-import TitleAgency from "../UI/Button/title-agency";
-import SectionTeam from "./section-team";
-import ButtonAgency from "../UI/Button/button-agency";
+import TitleAgency from "../UI/Title/TitleAgency";
+import SectionTeam from "./SectionTeam";
+import ButtonAgency from "../UI/Button/ButtonAgency";
 
 const SectionAgency = () => {
   return (

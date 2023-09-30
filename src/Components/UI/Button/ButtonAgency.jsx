@@ -1,40 +1,40 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import "../../Section/section.jsx";
+import "../../Section/FirstSection.jsx";
 
-const ButtonContact = () => {
-    const [scrollNavbar, setScrollNavbar] = useState();
+const ButtonAgency = () => {
+  const [scrollNavbar, setScrollNavbar] = useState();
 
-    const SectionToScrollContact = () => {
-      const contactSection = document.getElementById("team");
-      if (contactSection) {
-        contactSection.scrollIntoView({ behavior: "smooth" });
+  const SectionToScrollContact = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrollNavbar(true);
+      } else {
+        setScrollNavbar(false);
       }
     };
 
-    useEffect(() => {
-      const handleScroll = () => {
-        if (window.scrollY > 0) {
-          setScrollNavbar(true);
-        } else {
-          setScrollNavbar(false);
-        }
-      };
+    window.addEventListener("scroll", handleScroll);
 
-      window.addEventListener("scroll", handleScroll);
-
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }, []);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
       <div className="button-design-formbounce animate-bounce-bounce flex justify-center sm:justify-end relative right-20 top-20 sm:right-96">
         <NavLink
-            to="/"
-            href="about"
-            onClick={SectionToScrollContact}
+          to="/"
+          href="about"
+          onClick={SectionToScrollContact}
           className=""
         >
           <svg
@@ -56,4 +56,4 @@ const ButtonContact = () => {
   );
 };
 
-export default ButtonContact;
+export default ButtonAgency;

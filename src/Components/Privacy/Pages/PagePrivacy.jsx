@@ -1,5 +1,5 @@
-import Footer from "../Footer/footer";
-import Navbar from "../Navbar/navbar";
+import Footer from "../../Footer/Footer";
+import Navbar from "../../Navigation/BaseNavbar";
 
 const PagePrivacy = () => {
   return (
@@ -73,7 +73,7 @@ const PagePrivacy = () => {
           </p>
         </div>
       </div>
-      <Footer/> 
+      <Footer />
     </>
   );
 };

@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import ButtonContact from "../UI/Button/button-contact";
+import ButtonContact from "../UI/Button/ButtonFormContact";
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";

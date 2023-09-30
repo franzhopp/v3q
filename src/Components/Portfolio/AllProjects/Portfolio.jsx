@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import NavbarDevis from "../Navbar/NavbarDevis/d-navbar";
-import TitlePorfolio from "../UI/Button/title-porfolio";
-import Image1 from "../../assets/projetbysarahcuisine.png";
-import ImgDefault from "../../assets/imgdefault.svg";
-import Footer from "../Footer/footer";
+import NavbarDevis from "../../Navigation/DevisNavbar/DevisNavbar";
+import TitlePorfolio from "../../UI/Title/TitlePorfolio";
+import Image1 from "../../../assets/projetbysarahcuisine.png";
+import ImgDefault from "../../../assets/imgdefault.svg";
+import Footer from "../../Footer/Footer";
 
 const Portfolio = () => {
   const cards = [
