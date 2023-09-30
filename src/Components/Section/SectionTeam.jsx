@@ -73,7 +73,7 @@ const SectionTeam = () => {
                     <img
                       src={ImageLondon}
                       alt="Image London"
-                      className="rounded-lg ml-10 sm:ml-0"
+                      className="rounded-2xl ml-10 sm:ml-0"
                     />
                   </div>
                 </div>
@@ -168,7 +168,7 @@ const SectionTeam = () => {
                       <img
                         src={ImageParis}
                         alt="Image London"
-                        className="rounded-lg ml-10 sm:ml-0"
+                        className="rounded-2xl ml-10 sm:ml-0"
                       />
                     </div>
                   </div>
