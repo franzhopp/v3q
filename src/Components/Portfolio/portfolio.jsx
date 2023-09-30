@@ -18,7 +18,7 @@ const Portfolio = () => {
     {
       image: ImgDefault,
       title: "Prochain projet",
-      content: "Qui dit que le prochain projet arrive très bientôt ? 😎",
+      content: "Qui a dit que le prochain projet arrive très bientôt ? 😎",
     },
   ];
 

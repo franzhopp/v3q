@@ -45,11 +45,11 @@ const DevisGratuit = () => {
                 <ul>
                   <br />
                   <li>
-                    • Assurez-vous de fournir des informations complètes afin
+                    1. Assurez-vous de fournir des informations complètes afin
                     que nous puissions vous recontacter rapidement.
                   </li>
                   <li>
-                    • Sélectionnez le service que vous souhaitez afin que nous
+                    2. Sélectionnez le service que vous souhaitez afin que nous
                     puissions élaborer votre projet en conséquence. N'hésitez
                     pas à consulter notre page «{" "}
                     <span className="font-extrabold">Services</span> »{" "}
@@ -63,7 +63,7 @@ const DevisGratuit = () => {
                     avant de soumettre votre devis.
                   </li>
                   <li>
-                    • Indiquez vos moyens budgétaires pour nous aider à
+                    3. Indiquez vos moyens budgétaires pour nous aider à
                     déterminer les tarifs qui correspondent à votre service.
                     Avant de soumettre votre devis, consultez notre page «{" "}
                     <span className="font-extrabold">Tarifs</span> »{" "}
@@ -76,7 +76,7 @@ const DevisGratuit = () => {
                     </a>
                   </li>
                   <li>
-                    • Si vous possédez déjà une charte graphique, veuillez
+                    4. Si vous possédez déjà une charte graphique, veuillez
                     simplement répondre « oui » et nous l'envoyer à notre
                     adresse de contact, ou contactez-nous directement.
                   </li>
