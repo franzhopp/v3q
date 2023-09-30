@@ -14,25 +14,76 @@ const DevisGratuit = () => {
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="mb-20 grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
           <div className="mr-10 lg:col-span-2 lg:py-12">
-            <p className="text-black font-extrabold text-2xl sm:text-4xl max-w-xl ml-6 sm:ml-0">
-              Les devis ne servent qu'à des cas différents, veuillez bien lire
-              ces lignes !
+            <p className="text-black font-extrabold text-2xl sm:text-3xl max-w-xl ml-6 sm:ml-0">
+              Le devis revêt une importance particulière, car il ne devrait être
+              envoyé que lorsque vous êtes certain de votre demande. Avant de
+              soumettre un devis, nous vous invitons à lire attentivement ces
+              lignes.
             </p>
-
             <div className="mt-8">
               <p
                 data-aos="zoom-in"
                 data-aos-duration="300"
-                className="text-black text-lg sm:text-2xl w-80 sm:w-96 ml-6 sm:ml-0"
+                className="text-black text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0"
               >
-                N'hésitez pas à revoir notre page « Services »,{" "}
-                <a
-                  href="/services"
-                  className="font-extrabold underline text-C22E2E"
-                >
-                  en cliquant sur ce lien
-                </a>
-                , avant d'effectuer un envoi de devis.
+                Le devis permet de sécuriser le traitement de votre demande.
+                Prenez le temps de bien comprendre les questions qui vous sont
+                posées et veillez à fournir des réponses claires. Nous ne
+                pourrons pas traiter un devis si les informations fournies sont
+                illisibles.{" "}
+              </p>
+              <br />
+              <p
+                data-aos="zoom-in"
+                data-aos-duration="300"
+                className="text-black text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0"
+              >
+                <span className="font-extrabold underline">
+                  Veuillez prendre en considération ces directives essentielles
+                  :
+                </span>
+                <ul className=" list-disc">
+                  <br />
+                  <li>
+                    Assurez-vous de fournir des informations complètes afin que
+                    nous puissions vous recontacter rapidement.
+                  </li>
+                  <li>
+                    Sélectionnez le service que vous souhaitez afin que nous
+                    puissions élaborer votre projet en conséquence. N'hésitez
+                    pas à consulter notre page «{" "}
+                    <span className="font-extrabold">Services</span> »{" "}
+                    <a
+                      href="/services"
+                      className="underline font-extrabold text-C22E2E "
+                    >
+                      {" "}
+                      en suivant ce lien
+                    </a>{" "}
+                    avant de soumettre votre devis.
+                  </li>
+                  <li>
+                    Indiquez vos moyens budgétaires pour nous aider à déterminer
+                    les tarifs qui correspondent à votre service. Avant de
+                    soumettre votre devis, consultez notre page «{" "}
+                    <span className="font-extrabold">Tarifs</span> »{" "}
+                    <a
+                      href="/tarifs"
+                      className="underline font-extrabold text-C22E2E "
+                    >
+                      {" "}
+                      en suivant ce lien.
+                    </a>
+                  </li>
+                  <li>
+                    Si vous possédez déjà une charte graphique, veuillez
+                    simplement répondre « oui » et nous l'envoyer à notre
+                    adresse de contact, ou contactez-nous directement.
+                  </li>
+                  <br />
+                  Toute l'équipe de navi studio.™ vous souhaite une excellente
+                  journée ! Merci et à bientôt.
+                </ul>
               </p>
             </div>
           </div>
@@ -43,7 +94,7 @@ const DevisGratuit = () => {
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <div>
                     <input
-                      className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
+                      className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-8"
                       placeholder="Prénom"
                       type="name"
                     />
@@ -51,7 +102,7 @@ const DevisGratuit = () => {
 
                   <div>
                     <input
-                      className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
+                      className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-8"
                       placeholder="Nom"
                       type="name"
                     />
@@ -59,50 +110,43 @@ const DevisGratuit = () => {
                 </div>
                 <div>
                   <input
-                    className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
+                    className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-8"
                     placeholder="E-mail"
                     type="text"
                   />
                 </div>
                 <div>
                   <input
-                    className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
+                    className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-8"
                     placeholder="Numéro de téléphone"
                     type="text"
                   />
                 </div>
                 <div>
                   <input
-                    className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
-                    placeholder="Le meilleur moyen de vous contacter ?"
+                    className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-8"
+                    placeholder="Code postal"
                     type="text"
                   />
                 </div>
                 <div>
                   <input
-                    className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-4"
-                    placeholder="Quel est le type de projet souhaitez-vous réaliser ?"
+                    className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-8"
+                    placeholder="Quels services établissez-vous pour la réalisation de votre projet ?"
                     type="text"
                   />
                 </div>
                 <div>
                   <input
-                    className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-4"
+                    className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-8"
                     placeholder="Votre budget approximatif"
                     type="text"
                   />
                 </div>
                 <div>
                   <input
-                    className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-4"
+                    className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-24"
                     placeholder="Disposez vous d'une charte graphique existante ?"
-                    type="text"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-4"
-                    placeholder="Quels services établissez-vous pour la réalisation de votre projet ?"
                     type="text"
                   />
                 </div>
@@ -110,11 +154,23 @@ const DevisGratuit = () => {
 
               <div>
                 <textarea
-                  className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mt-20"
+                  className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mt-24"
                   placeholder="Message"
                   rows="8"
                   id="message"
                 ></textarea>
+              </div>
+
+              <div>
+                <input
+                  className="outline-none input-secondary border-gray-200  mb-4 mr-3"
+                  type="checkbox"
+                />
+                <span className="text-black">
+                  {" "}
+                  J'ai lu et j'accepte la Politique de confidentialité et et les
+                  Conditions d'utilisation.
+                </span>
               </div>
 
               <button
