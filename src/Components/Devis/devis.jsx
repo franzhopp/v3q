@@ -42,14 +42,14 @@ const DevisGratuit = () => {
                   Veuillez prendre en considération ces directives essentielles
                   :
                 </span>
-                <ul className=" list-disc">
+                <ul>
                   <br />
                   <li>
-                    Assurez-vous de fournir des informations complètes afin que
-                    nous puissions vous recontacter rapidement.
+                    • Assurez-vous de fournir des informations complètes afin
+                    que nous puissions vous recontacter rapidement.
                   </li>
                   <li>
-                    Sélectionnez le service que vous souhaitez afin que nous
+                    • Sélectionnez le service que vous souhaitez afin que nous
                     puissions élaborer votre projet en conséquence. N'hésitez
                     pas à consulter notre page «{" "}
                     <span className="font-extrabold">Services</span> »{" "}
@@ -63,9 +63,9 @@ const DevisGratuit = () => {
                     avant de soumettre votre devis.
                   </li>
                   <li>
-                    Indiquez vos moyens budgétaires pour nous aider à déterminer
-                    les tarifs qui correspondent à votre service. Avant de
-                    soumettre votre devis, consultez notre page «{" "}
+                    • Indiquez vos moyens budgétaires pour nous aider à
+                    déterminer les tarifs qui correspondent à votre service.
+                    Avant de soumettre votre devis, consultez notre page «{" "}
                     <span className="font-extrabold">Tarifs</span> »{" "}
                     <a
                       href="/tarifs"
@@ -76,7 +76,7 @@ const DevisGratuit = () => {
                     </a>
                   </li>
                   <li>
-                    Si vous possédez déjà une charte graphique, veuillez
+                    • Si vous possédez déjà une charte graphique, veuillez
                     simplement répondre « oui » et nous l'envoyer à notre
                     adresse de contact, ou contactez-nous directement.
                   </li>
@@ -163,7 +163,7 @@ const DevisGratuit = () => {
 
               <div>
                 <input
-                  className="outline-none input-secondary border-gray-200  mb-4 mr-3"
+                  className="outline-none input-secondary border-gray-200 mr-1"
                   type="checkbox"
                 />
                 <span className="text-black">
@@ -172,7 +172,7 @@ const DevisGratuit = () => {
                   Conditions d'utilisation.
                 </span>
               </div>
-
+              
               <button
                 type="submit"
                 className="inline-block w-full px-5 sm:w-auto"

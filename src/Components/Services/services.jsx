@@ -19,6 +19,17 @@ const Services = () => {
           Websites
         </h1>
 
+        <div className="flex justify-center">
+          <div className="w-96">
+            <p className="text-black text-center">
+              Vous y trouverez{" "}
+              <span className="font-extrabold">tous les services</span> que
+              notre agence propose, adaptés à{" "}
+              <span className="font-extrabold">vos besoins</span>.
+            </p>
+          </div>
+        </div>
+
         <div class="flex justify-center mt-10">
           <div class="mt-5 flex flex-wrap justify-center space-x-0 sm:space-x-6">
             <div

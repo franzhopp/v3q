@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import NavbarDevis from "../Navbar/NavbarDevis/d-navbar";
 import TitlePorfolio from "../UI/Button/title-porfolio";
 import Image1 from "../../assets/projetbysarahcuisine.png";
+import ImgDefault from "../../assets/imgdefault.svg";
 import Footer from "../Footer/footer";
 
 const Portfolio = () => {
@@ -15,9 +16,9 @@ const Portfolio = () => {
         "Nous avons l'heureux de vous annoncer que le site By Sarah Cuisine a été créé par la société navi studio.™ Développé et designé par Louisa, ce projet a été riche en développement car il permet à Sarah de promouvoir sa marque influente en tant que traiteur. Nous te souhaitons toute la réussite ainsi que de belles choses avec ce site, nous espérons que ta marque de fabrique puisse davantage s'accroître dans les meilleures années à venir, encore et plus fort ! ✨",
     },
     {
-      // image:
-      title: "Prochain projet arrive très bientôt...",
-      content: "Ce projet...",
+      image: ImgDefault,
+      title: "Prochain projet",
+      content: "Qui dit que le prochain projet arrive très bientôt ? 😎",
     },
   ];
 
