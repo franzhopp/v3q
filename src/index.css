@@ -194,6 +194,7 @@ button {
     }
 }
 
+
 @keyframes rotateAnimation {
     from {
         transform: rotate(0deg);
