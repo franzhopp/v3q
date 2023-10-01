@@ -73,22 +73,25 @@ const DiscoverWebDeveloper = () => {
                 </svg>
               </div>
               <p className="text-center text-C22E2E font-extrabold">
-                Je te laisse découvrir à travers ces lignes ma description, par
-                laquelle j'ai souhaité t'écrire. Pour te parler de moi, je suis
-                passionnée par le métier du développement web, en particulier le
-                front-end. J'ai commencé à dev en 2021, je ne sais pas pourquoi
-                d'où m'est venu à l'esprit de me lancer dans ce milieu. J'ai
-                découvert React et ça a été un véritable coup de ♥, je passe mon
-                temps à comprendre cette fascinante technologie et j'ai
-                également un fort intérêt pour le design.
+                Jeune passionnée de design et d’art j’ai commencé mon voyage
+                dans le monde du digital en 2015, j’ai exploré l’univers du
+                graphisme, du design web, et de l’illustration. J’ai étudié en
+                France le Design Graphique & le Marketing, à la fin de cela j’ai
+                commencé ma carrière au Royaume-Uni en tant que UX/UI Designer
+                puis, Product Designer.
                 <br />
               </p>
               <br />
               <p className="text-center text-C22E2E font-extrabold">
-                J'écris beaucoup de textes, créatrice de Univers Imaginaire.
-                J'ai donc décidé de forger des liens plus forts avec ma collabatrice
-                UX/UI pour unir ces deux forces si liées en créant mon agence
-                navi studio.™ C'est pourquoi je te laisse parcourir notre site qui est pour nous un art !
+                Aujourd’hui je vis de ma passion et je m’épanouis à travers mon
+                art, mes créations & mes designs.
+                <br />
+              </p>
+              <p className="text-center text-C22E2E font-extrabold">
+                Je puise mon inspiration dans tout ce qui m’entoure; des
+                voyages, des lectures, des images, des sons. Ce projet et cette
+                collaboration me tenait à coeur, navistudio c’est un peu comme
+                un enfant né de l’amour du design et du developpement web ♥
                 <br />
               </p>
             </div>

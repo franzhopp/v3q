@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import LogoInsta from "../../../assets/instagram2.png";
 import LogoLinkedin from "../../../assets/linkedin.png";
 import LogoSnap from "../../../assets/snapchat.png";
+import ImageLogoLouisa from "../../../assets/logo-louisa.png";
 
 const DiscoverWebDeveloper = () => {
   const props = useSpring({ opacity: 1, from: { opacity: 0 } });
@@ -14,7 +15,7 @@ const DiscoverWebDeveloper = () => {
     <div>
       <NavbarDiscoverWebDevelopper />
       <Avatar />
-      <div className="flex justify-center">
+      <div className="flex flex-wrap justify-center">
         <div className="w-1/2">
           <div className="flex justify-start mt-28">
             <div className="text-left flex-col">
@@ -111,27 +112,29 @@ const DiscoverWebDeveloper = () => {
               data-aos="fade-right"
               className="text-left text-FFF6E4 font-extrabold"
             >
-              Je vous souhaite la bienvenue dans la page « Web Developper », je
-              vous laisse parcourir au travers de ces lignes ma description.
+              Je vous souhaite la bienvenue sur la page « Web Developer ». Je
+              vous invite à parcourir ces lignes pour mieux me connaître.
             </p>
             <br />
             <p
               data-aos="fade-left"
               className="text-left text-FFF6E4 font-extrabold"
             >
-              Pour vous parler de moi, j'ai commencé à étudier le développement
-              web en 2021, j'ai étudié en France, je ne sais pas pourquoi d'où
-              m'est venu à l'esprit de coder car tout est inattendu. Au début
-              que je ne m'étais absolument pas lancée à ce milieu !
+              Pour commencer, mon voyage dans le développement web a débuté en
+              2021, alors que j'étudiais en France. Le choix de me lancer dans
+              la programmation est survenu de manière inattendue, sans prévenir.
+              Au départ, je n'avais aucune intention de me plonger dans ce
+              domaine !
             </p>
             <br />
             <p
               data-aos="fade-right"
               className="text-left text-FFF6E4 font-extrabold"
             >
-              Puis, j'ai découvert React, et ce fut un véritable coup de ❤️, je
-              passe mon temps à travailler sur cette technologie, j'ai également
-              un fort intérêt pour le design.
+              Cependant, ma rencontre avec React a été un véritable coup de
+              cœur, et depuis, je consacre une grande partie de mon temps à
+              travailler avec cette technologie. Parallèlement, je nourris un
+              vif intérêt pour le design.
             </p>
             <br />
             <br />
@@ -139,29 +142,17 @@ const DiscoverWebDeveloper = () => {
               data-aos="fade-left"
               className="text-left text-FFF6E4 font-extrabold"
             >
-              J'écris beaucoup de textes parce que l'écriture est quelque chose
-              qui m'inspire, créatrice de Univers Imaginaire. J'ai donc décidé
-              de forger des liens encore plus forts avec ma collabatrice UX/UI
-              pour unir ces deux forces si liées en créant mon agence navi
-              studio.™ C'est pourquoi je vous laisse naviguer ces pages de notre
-              site qui a été créé avec beaucoup de passion et plaisir.
+              L'écriture est une autre passion qui m'anime, et elle m'inspire.
+              Créatrice d'Univers-Imaginaire. Forte de cette inspiration, j'ai
+              décidé de renforcer ma collaboration avec ma UX/UI pour unir nos
+              compétences et créer ensemble notre agence, navi studio.™. Je vous
+              invite donc à explorer les pages de notre site, conçu avec une
+              grande passion et un immense plaisir de vous la partager.
             </p>
             <br />
           </div>
         </div>
       </div>
-
-      {/* <div className="mt-10 sm:mt-56">
-            <img
-              data-aos="fade-in"
-              src={ImageLouisa}
-              alt="Picture Louisa"
-              className="h-96 w-96 transition-opacity duration-500 hover:opacity-50"
-            />
-            <p className="text-black text-xs font-extrabold">
-              Photo : Louisa Fernandez, Maison Victor Hugo
-            </p>
-          </div> */}
 
       <div class="bg-devis-blur pt-10 flex flex-wrap justify-center pb-20 space-x-0 sm:space-x-10">
         <div class="p-6">
@@ -177,7 +168,7 @@ const DiscoverWebDeveloper = () => {
                 <img
                   src={LogoInsta}
                   alt="Icône Instagram"
-                  className="flex-shrink-0 h-10 w-10"
+                  className="flex-shrink-0 h-20 w-20"
                 />
               </a>
             </li>
@@ -187,7 +178,7 @@ const DiscoverWebDeveloper = () => {
                 <img
                   src={LogoLinkedin}
                   alt="Icône Linkedin"
-                  className="flex-shrink-0 h-10 w-10"
+                  className="flex-shrink-0 h-20 w-20"
                 />
               </a>
             </li>
@@ -202,23 +193,30 @@ const DiscoverWebDeveloper = () => {
                   <img
                     src={LogoSnap}
                     alt="Icône Snapchat"
-                    className="flex-shrink-0 h-10 w-10"
+                    className="flex-shrink-0 h-20 w-20"
                   />
                 </a>
               </a>
             </li>
           </div>
+          <div className="flex justify-center mt-10">
+            <img
+              data-aos="fade-in"
+              src={ImageLogoLouisa}
+              alt="Picture Logo Louisa"
+            />
+          </div>
         </div>
 
-        <div className="mt-10 sm:mt-14">
+        <div className="mt-5 sm:mt-14">
           <img
             data-aos="fade-in"
             src={ImageLouisa}
             alt="Picture Louisa"
             className="h-80 w-80 sm:h-96 sm:w-96 transition-opacity duration-500 hover:opacity-50"
           />
-          <p className="text-black text-sm font-extrabold">
-            Photo : Louisa Fernandez, Maison Victor Hugo
+          <p className="text-black text-xs italic font-extrabold">
+            Photo : Louisa. Place des Vosges, 75004 Paris.
           </p>
         </div>
       </div>
