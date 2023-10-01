@@ -30,7 +30,7 @@ const DiscoverWebDeveloper = () => {
                 className="block xl:inline"
               >
                 <h3 className="font-extrabold text-black text-3xl">
-                  Developper
+                  Developer
                 </h3>{" "}
               </motion.span>
               <motion.span
@@ -215,7 +215,7 @@ const DiscoverWebDeveloper = () => {
             alt="Picture Louisa"
             className="h-80 w-80 sm:h-96 sm:w-96 transition-opacity duration-500 hover:opacity-50"
           />
-          <p className="text-black text-xs italic font-extrabold">
+          <p className="text-black text-xs font-extrabold">
             Photo : Louisa. Place des Vosges, 75004 Paris.
           </p>
         </div>
