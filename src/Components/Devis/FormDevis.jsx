@@ -33,26 +33,24 @@ const DevisFree = () => {
                 illisibles.{" "}
               </p>
               <br />
-              <p
-                data-aos="zoom-in"
-                data-aos-duration="300"
-                className="text-black text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0"
-              >
+              <p className="text-black text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0">
                 <span className="font-extrabold underline">
                   Veuillez prendre en considération ces directives essentielles
                   :
                 </span>
                 <ul>
                   <br />
-                  <li>
-                    1. Assurez-vous de fournir des informations complètes afin
-                    que nous puissions vous recontacter rapidement.
+                  <li data-aos="zoom-in" data-aos-duration="300">
+                    <span className="font-extrabold">1</span>. Assurez-vous de
+                    fournir des informations complètes afin que nous puissions
+                    vous recontacter rapidement.
                   </li>
-                  <li>
-                    2. Renseignez le service que vous souhaitez afin que nous
-                    puissions élaborer votre projet en conséquence. N'hésitez
-                    pas à consulter notre page «{" "}
-                    <span className="font-extrabold">Services</span> »{" "}
+                  <br />
+                  <li data-aos="zoom-in" data-aos-duration="300">
+                    <span className="font-extrabold">2</span>. Renseignez le
+                    service que vous souhaitez afin que nous puissions élaborer
+                    votre projet en conséquence. N'hésitez pas à consulter notre
+                    page « <span className="font-extrabold">Services</span> »{" "}
                     <a
                       href="/services"
                       className="underline font-extrabold text-C22E2E "
@@ -62,10 +60,12 @@ const DevisFree = () => {
                     </a>{" "}
                     avant de soumettre votre devis.
                   </li>
-                  <li>
-                    3. Indiquez vos moyens budgétaires pour nous aider à
-                    déterminer les tarifs qui correspondent à votre service.
-                    Avant de soumettre votre devis, consultez notre page «{" "}
+                  <br />
+                  <li data-aos="zoom-in" data-aos-duration="300">
+                    <span className="font-extrabold">3</span>. Indiquez vos
+                    moyens budgétaires pour nous aider à déterminer les tarifs
+                    qui correspondent à votre service. Avant de soumettre votre
+                    devis, consultez notre page «{" "}
                     <span className="font-extrabold">Tarifs</span> »{" "}
                     <a
                       href="/tarifs"
@@ -75,14 +75,13 @@ const DevisFree = () => {
                       en suivant ce lien.
                     </a>
                   </li>
-                  <li>
-                    4. Si vous possédez déjà une charte graphique, veuillez
-                    simplement répondre « oui » et nous l'envoyer à notre
-                    adresse de contact, ou contactez-nous directement.
-                  </li>
                   <br />
-                  Toute l'équipe de navi studio.™ vous souhaite une excellente
-                  journée ! Merci et à bientôt. ✨😎
+                  <li data-aos="zoom-in" data-aos-duration="300">
+                    <span className="font-extrabold">4</span>. Si vous possédez
+                    déjà une charte graphique, veuillez simplement répondre «
+                    oui » et nous l'envoyer à notre adresse de contact, ou
+                    contactez-nous directement.
+                  </li>
                 </ul>
               </p>
             </div>

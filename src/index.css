@@ -209,3 +209,17 @@ button {
     background-size: cover;
     background: url("./assets/picture-bannier.png")
 }
+
+.p {
+    width: 248px;
+    height: 230px;
+    background-repeat: no-repeat;
+    background-image: url("./assets/P.png");
+}
+
+.z {
+    width: 248px;
+    height: 230px;
+    background-repeat: no-repeat;
+    background-image: url("./assets/z.png");
+}
