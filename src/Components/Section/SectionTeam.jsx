@@ -141,7 +141,7 @@ const SectionTeam = () => {
                   {/* Button */}
                   <div className="flex justify-center items-center h-24 w-96 mt-0 sm:mt-32">
                     <NavLink
-                      to="/"
+                      to="/discover"
                       href="about"
                       className="button-design-formbounce animate-bounce-bounce inline-flex items-center gap-2 border rounded-full mr-2 sm:mr-0 bg-black px-8 py-3 text-FFF6E4"
                     >

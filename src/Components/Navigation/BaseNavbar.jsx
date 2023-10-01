@@ -180,7 +180,7 @@ const Navbar = () => {
                       </li>
                       <li className="list-decimal ml-4 text-C22E2E font-extrabold">
                         <NavLink
-                          to="/services"
+                          to="/discover"
                           // onClick={() => {
                           //   window.location.href = "/discover";
                           // }}
@@ -433,7 +433,7 @@ const Navbar = () => {
                     </li>
                     <li className="list-decimal ml-4 text-C22E2E font-extrabold">
                       <NavLink
-                        to="/services"
+                        to="/discover"
                         // onClick={() => {
                         //   window.location.href = "/discover";
                         // }}
