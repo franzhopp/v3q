@@ -54,7 +54,7 @@ const DiscoverWebDeveloper = () => {
           </div>
         </div>
       </div>
-      <div className=" bg-C22E2E flex justify-center mt-20 pb-20">
+      <div className=" bg-C22E2E flex justify-center mt-20 pb-20 px-10">
         <div className="w-96 sm:w-1/2">
           <div className="flex justify-start flex-col mt-10">
             <div className="flex justify-center mt-10 mb-10">
@@ -215,7 +215,7 @@ const DiscoverWebDeveloper = () => {
             data-aos="fade-in"
             src={ImageLouisa}
             alt="Picture Louisa"
-            className="h-96 w-96 transition-opacity duration-500 hover:opacity-50"
+            className="h-80 w-80 sm:h-96 sm:w-96 transition-opacity duration-500 hover:opacity-50"
           />
           <p className="text-black text-sm font-extrabold">
             Photo : Louisa Fernandez, Maison Victor Hugo
