@@ -200,3 +200,12 @@ button {
 .bg-cards-2 {
     background-image: url("./assets/bg-cards-2.png");
 }
+
+.picture-bannier {
+    height: auto;
+    display: block;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: url("./assets/picture-bannier.png")
+}
