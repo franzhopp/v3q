@@ -424,7 +424,7 @@ const Navbar = () => {
                       <NavLink
                         to="/designer"
                         // onClick={() => {
-                        //   window.location.href = "/discover";
+                        //   window.location.href = "/designer";
                         // }}
                         className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
@@ -435,7 +435,7 @@ const Navbar = () => {
                       <NavLink
                         to="/webdev"
                         // onClick={() => {
-                        //   window.location.href = "/discover";
+                        //   window.location.href = "/webdev";
                         // }}
                         className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >

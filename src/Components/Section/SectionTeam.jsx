@@ -79,7 +79,12 @@ const SectionTeam = () => {
                 </div>
                 <div className="flex flex-col">
                   <div className="text-black text-left mb-5 ml-10 sm:ml-0">
-                    <p data-aos="fade-right" className="text-4xl font-extrabold">Mélissa Nefti</p>
+                    <p
+                      data-aos="fade-right"
+                      className="text-4xl font-extrabold"
+                    >
+                      Mélissa Nefti
+                    </p>
                     <p className="text-4xl font-extrabold">Designer</p>
                     <animated.h1
                       style={props}
@@ -113,8 +118,10 @@ const SectionTeam = () => {
                 {/* Button */}
                 <div className="flex justify-center items-center h-24 w-96 mt-0 sm:mt-32">
                   <NavLink
-                    to="/"
-                    href="about"
+                    to="/designer"
+                    // onClick={() => {
+                    //   window.location.href = "/designer";
+                    // }}
                     className="button-design-formbounce animate-bounce-bounce inline-flex items-center gap-2 border rounded-full mr-6 bg-black px-8 py-3 text-FFF6E4"
                   >
                     <span className="text-3xl mr-3 font-semibold">
@@ -141,8 +148,10 @@ const SectionTeam = () => {
                   {/* Button */}
                   <div className="flex justify-center items-center h-24 w-96 mt-0 sm:mt-32">
                     <NavLink
-                      to="/discover"
-                      href="about"
+                      to="/webdev"
+                      // onClick={() => {
+                      //   window.location.href = "/webdev";
+                      // }}
                       className="button-design-formbounce animate-bounce-bounce inline-flex items-center gap-2 border rounded-full mr-2 sm:mr-0 bg-black px-8 py-3 text-FFF6E4"
                     >
                       <svg
@@ -174,7 +183,10 @@ const SectionTeam = () => {
                   </div>
                   <div className="flex flex-col">
                     <div className="text-black text-left mb-5 ml-10 sm:ml-0">
-                      <p data-aos="fade-left" className="text-4xl font-extrabold">
+                      <p
+                        data-aos="fade-left"
+                        className="text-4xl font-extrabold"
+                      >
                         Louisa Fernandez
                       </p>
                       <p className="text-4xl font-extrabold">Web Developper</p>
