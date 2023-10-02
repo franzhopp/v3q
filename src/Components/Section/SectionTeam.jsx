@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import ImageLondon from "../../assets/london.png";
 import ImageParis from "../../assets/paris.png";
+// import Test from "../../assets/logo-bit.png";
 import { useSpring, animated } from "react-spring";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -49,14 +50,6 @@ const SectionTeam = () => {
               <br />
               <span className="text-black">
                 {"concernant les concepteurs de ce site et son expérience."}
-                {/* <span className="font-extrabold">{" passionnée"}</span> et
-                <span className="font-extrabold"> compétente</span>{" "}
-                {` pour vous
-                    accompagner dans le domaine du`}
-                <span className="font-extrabold">{" Design, "}</span>
-                <span className="font-extrabold">Développement web</span> ou
-                <span className="font-extrabold">{" Marketing Digital "}</span>
-                {"ne cherchez pas plus loin."} */}
               </span>
             </p>
           </div>
@@ -66,8 +59,6 @@ const SectionTeam = () => {
           <div className="flex justify-center">
             <div className="flex flex-col justify-center">
               <div className="flex flex-col space-x-3 mb-20 sm:flex-row">
-                {/* Image */}
-
                 <div className="mb-10 sm:mb-0">
                   <div className="w-auto h-auto">
                     <img
@@ -122,7 +113,7 @@ const SectionTeam = () => {
                     // onClick={() => {
                     //   window.location.href = "/designer";
                     // }}
-                    className="button-design-formbounce animate-bounce-bounce inline-flex items-center gap-2 border rounded-full mr-6 bg-black px-8 py-3 text-FFF6E4"
+                    className="animate-bounce-bounce inline-flex items-center gap-2 border rounded-full mr-6 bg-black px-8 py-3 text-FFF6E4"
                   >
                     <span className="text-3xl mr-3 font-semibold">
                       Découvrir{" "}
@@ -152,7 +143,7 @@ const SectionTeam = () => {
                       // onClick={() => {
                       //   window.location.href = "/webdev";
                       // }}
-                      className="button-design-formbounce animate-bounce-bounce inline-flex items-center gap-2 border rounded-full mr-2 sm:mr-0 bg-black px-8 py-3 text-FFF6E4"
+                      className="animate-bounce-bounce inline-flex items-center gap-2 border rounded-full mr-2 sm:mr-0 bg-black px-8 py-3 text-FFF6E4"
                     >
                       <svg
                         width="44"
