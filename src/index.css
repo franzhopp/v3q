@@ -210,6 +210,15 @@ button {
     background: url("./assets/picture-bannier.png")
 }
 
+.picture-bannier-melissa {
+    height: auto;
+    display: block;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: url("./assets/picture-bannier-melissa.png")
+}
+
 .p {
     width: 248px;
     height: 230px;

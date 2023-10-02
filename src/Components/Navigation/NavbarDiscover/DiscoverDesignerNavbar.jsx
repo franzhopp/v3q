@@ -1,15 +1,12 @@
-import { useEffect, useState } from "react";
+import Image from "../../../assets/logo-5.png";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
+import "../../Section/FirstSection.jsx";
 import { LuArrowDown } from "react-icons/lu";
-import Image from "../../assets/logo-5.png";
-import Button from "../UI/Button/BaseButton";
-import "../Section/FirstSection.jsx";
-import "../Homepage/Hompage";
 
-const Navbar = () => {
+const NavbarDiscoverDesigner = () => {
   const [isAnimating, setIsAnimating] = useState(false);
-  const [scrollNavbar, setScrollNavbar] = useState();
   const [toggleMenu, setToggleMenu] = useState(false);
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
   const [showSousListsTwoMenu, setShowSousListsTwoMenu] = useState(false);
@@ -20,36 +17,8 @@ const Navbar = () => {
   const toggleMenuMobile = () => {
     setToggleMenu(!toggleMenu);
     setIsOpen(!isOpen);
-    document.body.style.overflowY = "hidden";
   };
 
-  // Agence → SectionToScroll → FormSection
-  const SectionToScroll = () => {
-    const contactSection = document.getElementById("about");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
-    setIsOpen(false);
-  };
-
-  // Contact → SectionToScroll → FormContact
-  const SectionToSectionContact = () => {
-    const ContactToScroll = document.getElementById("contact");
-    if (ContactToScroll) {
-      ContactToScroll.scrollIntoView({ behavior: "smooth" });
-    }
-    setIsOpen(false);
-  };
-
-  // Rotate Animation
-  const handleAnimateButtonClick = () => {
-    setIsAnimating(true);
-    setTimeout(() => {
-      setIsAnimating(false);
-    }, 1000);
-  };
-
-  // The Click Toggle List item Mobile
   const toggleSousListsMenu = () => {
     setShowSousListsMenu(!showSousListsMenu);
   };
@@ -58,7 +27,13 @@ const Navbar = () => {
     setShowSousListsTwoMenu(!showSousListsTwoMenu);
   };
 
-  // Delay list from Desktop
+  const handleAnimateButtonClick = () => {
+    setIsAnimating(true);
+    setTimeout(() => {
+      setIsAnimating(false);
+    }, 1000);
+  };
+
   const handleMouseEnterSubmenu = () => {
     setIsMouseOnSubmenu(true);
   };
@@ -68,27 +43,9 @@ const Navbar = () => {
       setShowSousListsMenu(false);
     }, 500);
   };
-  // -----------------------
-
-  // Instructions from SectionToScroll
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrollNavbar(true);
-      } else {
-        setScrollNavbar(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
-    <div className="image-navi-studio-home h-screen sm:pb-20 mb:min-h-650 min-h-500">
+    <div className="picture-bannier-melissa border-b pt-80 sm:pt-64 sm:pb-20 mb:min-h-650 min-h-500">
       <nav
         className={`bg-FFF6E4 border-b-4 border-C22E2E h-28 items-center transition duration-300 ease-in-out fixed w-full top-0 left-0 shadow-md z-max`}
       >
@@ -110,7 +67,6 @@ const Navbar = () => {
                 //   window.location.href = "/";
                 // }}
                 data-aos="fade-left"
-                onClick={SectionToScroll}
                 className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
               >
                 Agence
@@ -169,7 +125,7 @@ const Navbar = () => {
                     >
                       <li className="list-decimal ml-4 text-C22E2E font-extrabold">
                         <NavLink
-                          to="/ethics"
+                          to="/designer"
                           // onClick={() => {
                           //   window.location.href = "/discover";
                           // }}
@@ -180,7 +136,7 @@ const Navbar = () => {
                       </li>
                       <li className="list-decimal ml-4 text-C22E2E font-extrabold">
                         <NavLink
-                          to="/webdeveloper"
+                          to="/webdev"
                           // onClick={() => {
                           //   window.location.href = "/discover";
                           // }}
@@ -247,7 +203,6 @@ const Navbar = () => {
                 //   window.location.href = "/";
                 // }}
                 data-aos="fade-left"
-                onClick={SectionToSectionContact}
                 className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
               >
                 Contact
@@ -363,7 +318,7 @@ const Navbar = () => {
             // onClick={() => {
             //   window.location.href = "/";
             // }}
-            onClick={SectionToScroll}
+
             className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             Agence
@@ -422,7 +377,7 @@ const Navbar = () => {
                   >
                     <li className="list-decimal ml-4 text-C22E2E font-extrabold">
                       <NavLink
-                        to="/ethics"
+                        to="/designer"
                         // onClick={() => {
                         //   window.location.href = "/discover";
                         // }}
@@ -433,7 +388,7 @@ const Navbar = () => {
                     </li>
                     <li className="list-decimal ml-4 text-C22E2E font-extrabold">
                       <NavLink
-                        to="/webdeveloper"
+                        to="/webdev"
                         // onClick={() => {
                         //   window.location.href = "/discover";
                         // }}
@@ -497,7 +452,7 @@ const Navbar = () => {
             // onClick={() => {
             //   window.location.href = "/";
             // }}
-            onClick={SectionToSectionContact}
+
             className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             Contact
@@ -540,33 +495,8 @@ const Navbar = () => {
           {openModel && <ModalSearch closeModal={setOpenModel} />} */}
         </ul>
       </nav>
-
-      <div className="pt-52 text-center sm:mt-28">
-        <h1 className="text-normal text-4xl tracking-tight font-extrabold text-FFF6E4 sm:text-8xl md:text-8xl">
-          <motion.span
-            id="all"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            className="block xl:inline test-text"
-          >
-            Agence digitale
-          </motion.span>
-        </h1>
-        <span className="block xl:inline text-FFF6E4 font-extrabold test-text">
-          PARIS X LONDON
-        </span>
-      </div>
-      <Button />
-
-      <p id="all" className="text-center mt-10">
-        <span className="text-black text-2xl font-medium sm:text-4xl mt-5 sm:mt-10 whitespace-nowrap animation-scrolling-rtl">
-          DESIGN | DÉVELOPPEMENT | MARKETING DIGITAL | STRATÉGIE DE MARQUE
-        </span>
-      </p>
-      <div id="about" className="mb-40 sm:mb-0"></div>
     </div>
   );
 };
 
-export default Navbar;
+export default NavbarDiscoverDesigner;

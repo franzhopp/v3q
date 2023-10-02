@@ -1,13 +1,17 @@
 import Footer from "../../Footer/Footer";
-import NavbarDiscoverWebDevelopper from "../../Navigation/NavbarDiscover/DiscoverWebDevelopperNavbar";
-import Avatar from "../../UI/Avatar/TemplateAvatar";
-import ImageLouisa from "../../../assets/picture-louisa.png";
+import NavbarDiscoverDesigner from "../../Navigation/NavbarDiscover/DiscoverDesignerNavbar";
+import AvatarDesigner from "../../UI/Avatar/TemplateAvatarDesigner";
+import ImageMelissa from "../../../assets/picture-melissa.png";
+import LogoMelissa from "../../../assets/logo-melissa.png";
+import LogoInsta from "../../../assets/instagram2.png";
+import LogoLinkedin from "../../../assets/linkedin.png";
+import LogoSnap from "../../../assets/snapchat.png";
 
-const DiscoverWebDeveloper = () => {
+const DiscoverDesigner = () => {
   return (
     <div>
-      <NavbarDiscoverWebDevelopper />
-      <Avatar />
+      <NavbarDiscoverDesigner />
+      <AvatarDesigner />
       <div class="flex justify-center mt-20 mb-20">
         <div class="mt-5 flex flex-wrap justify-center space-x-0 sm:space-x-10">
           <div class="p-6">
@@ -100,19 +104,79 @@ const DiscoverWebDeveloper = () => {
           <div className="mt-10 sm:mt-56">
             <img
               data-aos="fade-in"
-              src={ImageLouisa}
+              src={ImageMelissa}
               alt="Picture Louisa"
               className="h-96 w-96 transition-opacity duration-500 hover:opacity-50"
             />
-            <p className="text-black text-sm font-extrabold">
-              Photo : Louisa Fernandez, Maison Victor Hugo
-            </p>
           </div>
         </div>
       </div>
+      <div class="flex justify-center">
+        <p class="text-center text-black sm:text-xl md:text-2xl lg:text-3xl">
+          UX/UI DESIGNER | GRAPHIC DESIGNER | ILLUSTRATOR | FASHION DESIGNER
+        </p>
+      </div>  
+
+      <div className="flex justify-center mt-20">
+        <img
+          data-aos="fade-in"
+          src={LogoMelissa}
+          alt="Picture Louisa"
+          className="h-96 w-96 transition-opacity duration-500 hover:opacity-50"
+        />
+      </div>
+
+      <div class="pt-10 flex flex-wrap justify-center pb-20 space-x-0 sm:space-x-10">
+        <div class="p-6">
+          <div className="flex flex-row space-x-10 list-none mt-20">
+            <li>
+              <a
+                href="https://www.instagram.com/navistudio.fr/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className=""
+              >
+                {" "}
+                <img
+                  src={LogoInsta}
+                  alt="Icône Instagram"
+                  className="flex-shrink-0 h-20 w-20"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="" rel="noreferrer" target="_blank">
+                {" "}
+                <img
+                  src={LogoLinkedin}
+                  alt="Icône Linkedin"
+                  className="flex-shrink-0 h-20 w-20"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <a
+                  href="https://t.snapchat.com/BYKwKD2r"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  {" "}
+                  <img
+                    src={LogoSnap}
+                    alt="Icône Snapchat"
+                    className="flex-shrink-0 h-20 w-20"
+                  />
+                </a>
+              </a>
+            </li>
+          </div>
+        </div>
+      </div>
+
       <Footer />
     </div>
   );
 };
 
-export default DiscoverWebDeveloper;
+export default DiscoverDesigner;
