@@ -12,8 +12,8 @@ const DiscoverDesigner = () => {
     <div>
       <NavbarDiscoverDesigner />
       <AvatarDesigner />
-      <div class="flex justify-center mt-20 mb-20">
-        <div class="mt-5 flex flex-wrap justify-center space-x-0 sm:space-x-10">
+      <div class="flex justify-center mt-10 mb-20">
+        <div class="mt-5 flex flex-wrap justify-center space-x-0 sm:space-x-20">
           <div class="p-6">
             <div className="w-72">
               <div className="flex justify-center mt-10 mb-10">
@@ -76,7 +76,10 @@ const DiscoverDesigner = () => {
                   />
                 </svg>
               </div>
-              <p className="text-center text-C22E2E font-extrabold">
+              <p
+                data-aos="fade-left"
+                className="text-center text-C22E2E font-extrabold"
+              >
                 Jeune passionnée de design et d’art j’ai commencé mon voyage
                 dans le monde du digital en 2015, j’ai exploré l’univers du
                 graphisme, du design web, et de l’illustration. J’ai étudié en
@@ -86,12 +89,18 @@ const DiscoverDesigner = () => {
                 <br />
               </p>
               <br />
-              <p className="text-center text-C22E2E font-extrabold">
+              <p
+                data-aos="fade-left"
+                className="text-center text-C22E2E font-extrabold"
+              >
                 Aujourd’hui je vis de ma passion et je m’épanouis à travers mon
                 art, mes créations & mes designs.
                 <br />
               </p>
-              <p className="text-center text-C22E2E font-extrabold">
+              <p
+                data-aos="fade-left"
+                className="text-center text-C22E2E font-extrabold"
+              >
                 Je puise mon inspiration dans tout ce qui m’entoure; des
                 voyages, des lectures, des images, des sons. Ce projet et cette
                 collaboration me tenait à coeur, navistudio c’est un peu comme
@@ -103,7 +112,7 @@ const DiscoverDesigner = () => {
 
           <div className="mt-10 sm:mt-56">
             <img
-              data-aos="fade-in"
+              data-aos="fade-right"
               src={ImageMelissa}
               alt="Picture Louisa"
               className="h-96 w-96 transition-opacity duration-500 hover:opacity-50"
@@ -112,10 +121,10 @@ const DiscoverDesigner = () => {
         </div>
       </div>
       <div class="flex justify-center">
-        <p class="text-center text-black sm:text-xl md:text-2xl lg:text-3xl">
+        <p class="text-center text-black sm:text-xl md:text-2xl lg:text-3xl px-8">
           UX/UI DESIGNER | GRAPHIC DESIGNER | ILLUSTRATOR | FASHION DESIGNER
         </p>
-      </div>  
+      </div>
 
       <div className="flex justify-center mt-20">
         <img

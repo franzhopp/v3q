@@ -169,7 +169,7 @@ const Navbar = () => {
                     >
                       <li className="list-decimal ml-4 text-C22E2E font-extrabold">
                         <NavLink
-                          to="/ethics"
+                          to="/designer"
                           // onClick={() => {
                           //   window.location.href = "/discover";
                           // }}
@@ -180,7 +180,7 @@ const Navbar = () => {
                       </li>
                       <li className="list-decimal ml-4 text-C22E2E font-extrabold">
                         <NavLink
-                          to="/webdeveloper"
+                          to="/webdev"
                           // onClick={() => {
                           //   window.location.href = "/discover";
                           // }}
@@ -422,7 +422,7 @@ const Navbar = () => {
                   >
                     <li className="list-decimal ml-4 text-C22E2E font-extrabold">
                       <NavLink
-                        to="/ethics"
+                        to="/designer"
                         // onClick={() => {
                         //   window.location.href = "/discover";
                         // }}
@@ -433,7 +433,7 @@ const Navbar = () => {
                     </li>
                     <li className="list-decimal ml-4 text-C22E2E font-extrabold">
                       <NavLink
-                        to="/webdeveloper"
+                        to="/webdev"
                         // onClick={() => {
                         //   window.location.href = "/discover";
                         // }}

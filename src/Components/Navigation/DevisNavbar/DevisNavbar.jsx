@@ -124,7 +124,7 @@ const NavbarDevis = () => {
                     >
                       <li className="list-decimal ml-4 text-C22E2E font-extrabold">
                         <NavLink
-                          to="/ethics"
+                          to="/designer"
                           // onClick={() => {
                           //   window.location.href = "/discover";
                           // }}
@@ -135,7 +135,7 @@ const NavbarDevis = () => {
                       </li>
                       <li className="list-decimal ml-4 text-C22E2E font-extrabold">
                         <NavLink
-                          to="/services"
+                          to="/webdev"
                           // onClick={() => {
                           //   window.location.href = "/discover";
                           // }}
