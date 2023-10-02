@@ -207,7 +207,7 @@ button {
     max-width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background: url("./assets/picture-bannier.png")
+    background-image: url("./assets/picture-bannier.png")
 }
 
 .picture-bannier-melissa {
@@ -216,7 +216,7 @@ button {
     max-width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background: url("./assets/picture-bannier-melissa.png")
+    background-image: url("./assets/picture-bannier-melissa.png")
 }
 
 .p {

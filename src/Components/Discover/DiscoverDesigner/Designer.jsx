@@ -80,12 +80,13 @@ const DiscoverDesigner = () => {
                 data-aos="fade-left"
                 className="text-center text-C22E2E font-extrabold"
               >
-                Jeune passionnée de design et d’art j’ai commencé mon voyage
-                dans le monde du digital en 2015, j’ai exploré l’univers du
-                graphisme, du design web, et de l’illustration. J’ai étudié en
-                France le Design Graphique & le Marketing, à la fin de cela j’ai
-                commencé ma carrière au Royaume-Uni en tant que UX/UI Designer
-                puis, Product Designer.
+                Je vous souhaite la bienvenue sur la page « Designer ». Jeune
+                passionnée de design et d'art j'ai commencé mon voyage dans le
+                monde du digital en 2015, j'ai exploré l'univers du graphisme,
+                du design web, et de l'illustration. J'ai étudié en France le
+                Design Graphique & le Marketing, à la fin de cela j'ai commencé
+                ma carrière au Royaume-Uni en tant que UX/UI Designer puis,
+                Product Designer.
                 <br />
               </p>
               <br />
@@ -93,7 +94,7 @@ const DiscoverDesigner = () => {
                 data-aos="fade-left"
                 className="text-center text-C22E2E font-extrabold"
               >
-                Aujourd’hui je vis de ma passion et je m’épanouis à travers mon
+                Aujourd'hui je vis de ma passion et je m'épanouis à travers mon
                 art, mes créations & mes designs.
                 <br />
               </p>
@@ -101,12 +102,20 @@ const DiscoverDesigner = () => {
                 data-aos="fade-left"
                 className="text-center text-C22E2E font-extrabold"
               >
-                Je puise mon inspiration dans tout ce qui m’entoure; des
+                Je puise mon inspiration dans tout ce qui m'entoure; des
                 voyages, des lectures, des images, des sons. Ce projet et cette
-                collaboration me tenait à coeur, navistudio c’est un peu comme
-                un enfant né de l’amour du design et du developpement web ♥
+                collaboration me tenait à coeur, navistudio c'est un peu comme
+                un enfant né de l'amour du design et du developpement web ♥
                 <br />
               </p>
+            </div>
+            <div className="flex justify-center">
+              <a
+                className="mt-7 text-C22E2E text-center font-extrabold underline transition hover:text-0C3E78"
+                href="/webdev"
+              >
+                Découvrir Web Developer ➔
+              </a>
             </div>
           </div>
 
@@ -131,7 +140,7 @@ const DiscoverDesigner = () => {
           data-aos="fade-in"
           src={LogoMelissa}
           alt="Picture Louisa"
-          className="h-96 w-96 transition-opacity duration-500 hover:opacity-50"
+          className="h-80 w-80 transition-opacity duration-500 hover:opacity-50"
         />
       </div>
 

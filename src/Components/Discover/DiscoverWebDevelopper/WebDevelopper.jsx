@@ -150,6 +150,12 @@ const DiscoverWebDeveloper = () => {
               grande passion et un immense plaisir de vous la partager.
             </p>
             <br />
+            <a
+              className="text-FFF6E4 font-extrabold underline transition hover:text-0C3E78"
+              href="/designer"
+            >
+              Découvrir Designer ➔
+            </a>
           </div>
         </div>
       </div>

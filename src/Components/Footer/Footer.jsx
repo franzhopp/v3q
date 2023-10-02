@@ -85,22 +85,42 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a className="text-black transition hover:text-0C3E78" href="/">
-                Team
+              <a
+                className="text-black transition hover:text-0C3E78"
+                href="/designer"
+              >
+                Designer
               </a>
             </li>
             <li>
-              <a className="text-black transition hover:text-0C3E78" href="/privacy">
+              <a
+                className="text-black transition hover:text-0C3E78"
+                href="/webdev"
+              >
+                Web Developer
+              </a>
+            </li>
+            <li>
+              <a
+                className="text-black transition hover:text-0C3E78"
+                href="/privacy"
+              >
                 Politique de confidentialité
               </a>
             </li>
             <li>
-              <a className="text-black transition hover:text-0C3E78" href="/terms">
+              <a
+                className="text-black transition hover:text-0C3E78"
+                href="/terms"
+              >
                 Condition d'utilisation
               </a>
             </li>
             <li>
-              <a className="text-black transition hover:text-0C3E78" href="/mentions">
+              <a
+                className="text-black transition hover:text-0C3E78"
+                href="/mentions"
+              >
                 Mentions légales
               </a>
             </li>
