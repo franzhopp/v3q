@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 import ImageLondon from "../../assets/london.png";
 import ImageParis from "../../assets/paris.png";
-// import Test from "../../assets/logo-bit.png";
 import { useSpring, animated } from "react-spring";
 import { useEffect } from "react";
 import AOS from "aos";
