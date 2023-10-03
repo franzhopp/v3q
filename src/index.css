@@ -51,7 +51,7 @@ button {
     background-image: url('./assets/bg-home.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80%;
+    height: auto;
     display: block;
     max-width: 100%;
 }
