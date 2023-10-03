@@ -17,11 +17,17 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-  }, []);
+    const hasLoaded = localStorage.getItem("hasLoaded");
 
+    if (hasLoaded) {
+      setIsLoading(false);
+    } else {
+      setTimeout(() => {
+        setIsLoading(false);
+        localStorage.setItem("hasLoaded", "true");
+      }, 2000);
+    }
+  }, []);
   return (
     <>
       {isLoading ? (
