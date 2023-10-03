@@ -232,3 +232,17 @@ button {
     background-repeat: no-repeat;
     background-image: url("./assets/z.png");
 }
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg) translateX(0);
+    }
+    100% {
+        transform: rotate(360deg) translateX(-100px); /* Ajustez la distance à gauche selon vos besoins */
+    }
+}
+
+.animate-spin {
+    animation: spin 5s linear infinite; /* Augmentez la durée pour une rotation plus lente */
+}

@@ -21,7 +21,7 @@ export default {
           '30%': { transform: 'scale(1) rotate(-3deg)' },
           '35%': { transform: 'scale(1) rotate(2deg)' },
           '40%': { transform: 'scale(1) rotate(0)' },
-        },
+        }
       },
 
       backgroundColor: {
