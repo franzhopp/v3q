@@ -22,7 +22,7 @@ const DiscoverWebDeveloper = () => {
             <div className="text-center flex-col">
               <p
                 data-aos="fade-left"
-                className="text-black text-6xl font-extrabold sm:text-8xl"
+                className="text-black text-6xl font-extrabold sm:text-7xl"
               >
                 Ohsion
               </p>
@@ -215,7 +215,7 @@ const DiscoverWebDeveloper = () => {
               src={ImageLogoLouisa}
               alt="Picture Logo Louisa"
             /> */}
-            <div className="flex flex-col">
+            <div className="flex flex-col mt-10 mb-10">
               <p className="font-emblema text-black text-2xl">
                 O<span className="text-0C3E78">h</span>
                 <span className="text-C22E2E">s</span>ion
@@ -234,7 +234,7 @@ const DiscoverWebDeveloper = () => {
           />
           <p className="flex text-black text-xs font-extrabold">
             📸 : Louisa.{" "}
-            <span className="ml-1 italic"> Place des Vosges, 75004 Paris</span>.
+            <span className="ml-1"> Place des Vosges, 75004 Paris</span>.
           </p>
         </div>
       </div>
