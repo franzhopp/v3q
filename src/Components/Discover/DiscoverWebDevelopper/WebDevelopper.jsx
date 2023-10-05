@@ -20,8 +20,11 @@ const DiscoverWebDeveloper = () => {
         <div className="w-1/2">
           <div className="flex justify-center mt-28">
             <div className="text-center flex-col">
-              <p data-aos="fade-left" className="text-black text-6xl font-extrabold sm:text-8xl">
-               Ohsion
+              <p
+                data-aos="fade-left"
+                className="text-black text-6xl font-extrabold sm:text-8xl"
+              >
+                Ohsion
               </p>
               <motion.span
                 id="all"
@@ -206,12 +209,19 @@ const DiscoverWebDeveloper = () => {
               </a>
             </li>
           </div>
-          <div className="flex justify-center mt-10">
-            <img
+          <div data-aos="fade-in" className="flex justify-center mt-10">
+            {/* <img
               data-aos="fade-in"
               src={ImageLogoLouisa}
               alt="Picture Logo Louisa"
-            />
+            /> */}
+            <div className="flex flex-col">
+              <p className="font-emblema text-black text-2xl">
+                O<span className="text-0C3E78">h</span>
+                <span className="text-C22E2E">s</span>ion
+              </p>
+              <p className="text-center text-xs text-black">DEV</p>
+            </div>
           </div>
         </div>
 
@@ -223,7 +233,8 @@ const DiscoverWebDeveloper = () => {
             className="h-80 w-80 sm:h-96 sm:w-96 transition-opacity duration-500 hover:opacity-50"
           />
           <p className="flex text-black text-xs font-extrabold">
-          📸 : Louisa. <span className="ml-1 italic">{" "}Place des Vosges, 75004 Paris</span>.
+            📸 : Louisa.{" "}
+            <span className="ml-1 italic"> Place des Vosges, 75004 Paris</span>.
           </p>
         </div>
       </div>

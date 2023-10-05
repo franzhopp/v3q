@@ -39,8 +39,9 @@ export default {
 
       fontFamily: {
         'sans': ['Helvetica', 'sans-serif'],
-        'font-aoboshi': ['Aoboshi One', 'sans-serif'],
-        'font-arial': ['Arial'],
+        'aoboshi': ['Aoboshi One', 'sans-serif'],
+        'arial': ['Arial'],
+        'emblema': ['Emblema One', 'cursive'],
       },
     },
     screens: {
