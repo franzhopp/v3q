@@ -20,7 +20,7 @@ button {
 }
 
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 10px;
     height: 10px;
 }
 
@@ -201,13 +201,13 @@ button {
     background-image: url("./assets/bg-cards-2.png");
 }
 
-.picture-bannier {
+.picture-bannier-louisa {
     height: auto;
     display: block;
     max-width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("./assets/picture-bannier.png")
+    background-image: url("./assets/picture-bannier-louisa.png")
 }
 
 .picture-bannier-melissa {
@@ -233,16 +233,3 @@ button {
     background-image: url("./assets/z.png");
 }
 
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg) translateX(0);
-    }
-    100% {
-        transform: rotate(360deg) translateX(-100px); /* Ajustez la distance à gauche selon vos besoins */
-    }
-}
-
-.animate-spin {
-    animation: spin 5s linear infinite; /* Augmentez la durée pour une rotation plus lente */
-}

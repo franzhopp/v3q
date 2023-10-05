@@ -2,8 +2,9 @@ import Footer from "../../Footer/Footer";
 import NavbarDiscoverWebDevelopper from "../../Navigation/NavbarDiscover/DiscoverWebDevelopperNavbar";
 import Avatar from "../../UI/Avatar/TemplateAvatar";
 import ImageLouisa from "../../../assets/picture-louisa.png";
-import { useSpring, animated } from "react-spring";
+import { useSpring } from "react-spring";
 import { motion } from "framer-motion";
+import { MdPhotoCamera } from "react-icons/md";
 import LogoInsta from "../../../assets/instagram2.png";
 import LogoLinkedin from "../../../assets/linkedin.png";
 import LogoSnap from "../../../assets/snapchat.png";
@@ -17,10 +18,10 @@ const DiscoverWebDeveloper = () => {
       <Avatar />
       <div className="flex flex-wrap justify-center">
         <div className="w-1/2">
-          <div className="flex justify-start mt-28">
-            <div className="text-left flex-col">
-              <p className="text-black text-6xl font-extrabold sm:text-8xl">
-                Louisa
+          <div className="flex justify-center mt-28">
+            <div className="text-center flex-col">
+              <p data-aos="fade-left" className="text-black text-6xl font-extrabold sm:text-8xl">
+               Ohsion
               </p>
               <motion.span
                 id="all"
@@ -221,8 +222,8 @@ const DiscoverWebDeveloper = () => {
             alt="Picture Louisa"
             className="h-80 w-80 sm:h-96 sm:w-96 transition-opacity duration-500 hover:opacity-50"
           />
-          <p className="text-black text-xs font-extrabold">
-            Photo : Louisa. Place des Vosges, 75004 Paris.
+          <p className="flex text-black text-xs font-extrabold">
+          📸 : Louisa. <span className="ml-1 italic">{" "}Place des Vosges, 75004 Paris</span>.
           </p>
         </div>
       </div>

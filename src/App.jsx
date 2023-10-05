@@ -6,6 +6,7 @@ import EthicsPage from "./Components/Ethics/CardsEthics.jsx";
 import Services from "./Components/Services/BaseServices.jsx";
 import DiscoverWebDeveloper from "./Components/Discover/DiscoverWebDevelopper/WebDevelopper.jsx";
 import DiscoverDesigner from "./Components/Discover/DiscoverDesigner/Designer.jsx";
+import Rate from "./Components/Rate/Prices/PageAllRates.jsx";
 import Portfolio from "./Components/Portfolio/AllProjects/Portfolio.jsx";
 import DevisFree from "./Components/Devis/FormDevis.jsx";
 import PagePrivacy from "./Components/Privacy/Pages/PagePrivacy.jsx";
@@ -42,7 +43,7 @@ const App = () => {
             <Route path="/webdev" element={<DiscoverWebDeveloper />} />
             <Route path="/designer" element={<DiscoverDesigner />} />
             <Route path="/portfolio" element={<Portfolio />} />
-            {/* <Route path="/rate" element={<Rate />} /> */}
+            <Route path="/rate" element={<Rate />} />
             <Route path="/devis" element={<DevisFree />} />
             <Route path="/privacy" element={<PagePrivacy />} />
             <Route path="/terms" element={<PageConditions />} />

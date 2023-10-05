@@ -126,6 +126,14 @@ const DiscoverDesigner = () => {
               alt="Picture Louisa"
               className="h-96 w-96 transition-opacity duration-500 hover:opacity-50"
             />
+            <p className="flex text-black text-xs font-extrabold">
+              📸 : Mélissa.{" "}
+              <span className="ml-1 italic">
+                {" "}
+                Londres
+              </span>
+              .
+            </p>
           </div>
         </div>
       </div>

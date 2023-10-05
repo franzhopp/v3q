@@ -1,9 +1,8 @@
 import Image from "../../../assets/logo-5.png";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { motion } from "framer-motion";
-import "../../Section/FirstSection.jsx";
 import { LuArrowDown } from "react-icons/lu";
+import "../../Section/FirstSection.jsx";
 
 const NavbarDiscoverWebDevelopper = () => {
   const [isAnimating, setIsAnimating] = useState(false);
@@ -45,7 +44,7 @@ const NavbarDiscoverWebDevelopper = () => {
   };
 
   return (
-    <div className="picture-bannier border-b pt-80 sm:pt-64 sm:pb-20 mb:min-h-650 min-h-500">
+    <div className="picture-bannier-louisa border-b pt-80 sm:pt-64 sm:pb-20 mb:min-h-650 min-h-500">
       <nav
         className={`bg-FFF6E4 border-b-4 border-C22E2E h-28 items-center transition duration-300 ease-in-out fixed w-full top-0 left-0 shadow-md z-max`}
       >
