@@ -128,11 +128,10 @@ const DiscoverDesigner = () => {
             />
             <p className="flex text-black text-xs font-extrabold">
               📸 : Mélissa.{" "}
-              <span className="ml-1 italic">
+              {/* <span className="ml-1">
                 {" "}
                 Londres
-              </span>
-              .
+              </span> */}
             </p>
           </div>
         </div>
