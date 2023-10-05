@@ -164,7 +164,7 @@ const DiscoverWebDeveloper = () => {
         </div>
       </div>
 
-      <div class="bg-devis-blur pt-10 flex flex-wrap justify-center pb-20 space-x-0 sm:space-x-10">
+      <div class="bg-devis-blur pt-20 flex flex-wrap justify-center pb-32 space-x-0 sm:space-x-10">
         <div class="p-6">
           <div className="flex flex-row space-x-10 list-none mt-20">
             <li>
@@ -220,7 +220,7 @@ const DiscoverWebDeveloper = () => {
                 O<span className="text-0C3E78">h</span>
                 <span className="text-C22E2E">s</span>ion
               </p>
-              <p className="text-center text-xs text-black">DEV</p>
+              <p className="text-center xs text-black">DEV</p>
             </div>
           </div>
         </div>

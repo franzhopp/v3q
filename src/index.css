@@ -34,6 +34,10 @@ button {
     background: #C22E2E;
 }
 
+.xs {
+    font-size: 10px;
+}
+
 .number {
     font-family: 'Aoboshi One', serif;
 }
