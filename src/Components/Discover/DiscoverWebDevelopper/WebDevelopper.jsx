@@ -4,11 +4,9 @@ import Avatar from "../../UI/Avatar/TemplateAvatar";
 import ImageLouisa from "../../../assets/picture-louisa.png";
 import { useSpring } from "react-spring";
 import { motion } from "framer-motion";
-import { MdPhotoCamera } from "react-icons/md";
 import LogoInsta from "../../../assets/instagram2.png";
 import LogoLinkedin from "../../../assets/linkedin.png";
 import LogoSnap from "../../../assets/snapchat.png";
-import ImageLogoLouisa from "../../../assets/logo-louisa.png";
 
 const DiscoverWebDeveloper = () => {
   const props = useSpring({ opacity: 1, from: { opacity: 0 } });
