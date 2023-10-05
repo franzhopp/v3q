@@ -31,12 +31,12 @@ const Button = () => {
 
   return (
     <>
-      <div className="button-design-formbounce animate-bounce-bounce flex justify-center sm:justify-end px-48 mt-60">
+      <div className="animate-bounce-bounce flex justify-center sm:justify-end px-48 mt-60">
         <NavLink
           to="/"
           href="about"
           onClick={SectionToScroll}
-          className="inline-flex items-center gap-2 border rounded-full bg-FFF6E4 px-8 py-3 text-black"
+          className="bg-FFF6E4 text-black inline-flex items-center gap-2 px-8 py-3 rounded-full"
         >
           <span className="text-3xl mr-3 font-semibold heading-responsive">
             Découvrir{" "}
