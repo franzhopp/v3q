@@ -559,7 +559,7 @@ const Navbar = () => {
       </div>
       <Button />
 
-      <p id="all" className="text-center mt-14">
+      <p id="all" className="text-center mt-12">
         <span className="text-black text-2xl font-medium sm:text-4xl mt-5 sm:mt-10 whitespace-nowrap animation-scrolling-rtl">
           DESIGN | DÉVELOPPEMENT | MARKETING DIGITAL | STRATÉGIE DE MARQUE
         </span>
