@@ -53,7 +53,7 @@ const Form = ({ label, type, value, onChange }) => {
                     <label
                       className={`mt-1 absolute left-2 transition-all duration-300 ${
                         isFocused || value
-                          ? "ml-2 mt-1 text-xs  text-0C3E78"
+                          ? "ml-2 mt-1 text-xs text-0C3E78"
                           : "ml-2 top-3 text-gray-500"
                       }`}
                       htmlFor={label}
@@ -74,7 +74,7 @@ const Form = ({ label, type, value, onChange }) => {
                     <label
                       className={`mt-1 absolute left-2 transition-all duration-300 ${
                         isFocused || value
-                          ? "ml-2 mt-1 text-xs  text-0C3E78"
+                          ? "ml-2 mt-1 text-xs text-0C3E78"
                           : "ml-2 top-3 text-gray-500"
                       }`}
                       htmlFor={label}
@@ -93,105 +93,104 @@ const Form = ({ label, type, value, onChange }) => {
                   </div>
                 </div>
                 <div className="relative">
-                    <label
-                      className={`mt-1 absolute left-2 transition-all duration-300 ${
-                        isFocused || value
-                          ? "ml-2 mt-1 text-xs  text-0C3E78"
-                          : "ml-2 top-3 text-gray-500"
-                      }`}
-                      htmlFor={label}
-                    >
-                      {"Adresse mail"}
-                    </label>
-                    <input
-                      type={type}
-                      id={label}
-                      className="rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm"
-                      value={value}
-                      onChange={onChange}
-                      onFocus={handleFocus}
-                      onBlur={handleBlur}
-                    />
-                  </div>
-                  <div className="relative">
-                    <label
-                      className={`mt-1 absolute left-2 transition-all duration-300 ${
-                        isFocused || value
-                          ? "ml-2 mt-1 text-xs  text-0C3E78"
-                          : "ml-2 top-3 text-gray-500"
-                      }`}
-                      htmlFor={label}
-                    >
-                      {"Numéro de téléphone"}
-                    </label>
-                    <input
-                      type={"tel"}
-                      id={label}
-                      className="rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm"
-                      value={value}
-                      onChange={onChange}
-                      onFocus={handleFocus}
-                      onBlur={handleBlur}
-                    />
-                  </div>
-                  <div className="relative">
-                    <label
-                      className={`mt-1 absolute left-2 transition-all duration-300 ${
-                        isFocused || value
-                          ? "ml-2 mt-1 text-xs  text-0C3E78"
-                          : "ml-2 top-3 text-gray-500"
-                      }`}
-                      htmlFor={label}
-                    >
-                      {"Le meilleur moyen de vous contacter ?"}
-                    </label>
-                    <input
-                      type={type}
-                      id={label}
-                      className="rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm"
-                      value={value}
-                      onChange={onChange}
-                      onFocus={handleFocus}
-                      onBlur={handleBlur}
-                    />
-                  </div>
-                  <div className="relative">
-                    <label
-                      className={`mt-1 absolute left-2 transition-all duration-300 ${
-                        isFocused || value
-                          ? "ml-2 mt-1 text-xs  text-0C3E78"
-                          : "ml-2 top-3 text-gray-500"
-                      }`}
-                      htmlFor={label}
-                    >
-                      {"Le meilleur moment de vous contacter ?"}
-                    </label>
-                    <input
-                      type={type}
-                      id={label}
-                      className="rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm"
-                      value={value}
-                      onChange={onChange}
-                      onFocus={handleFocus}
-                      onBlur={handleBlur}
-                    />
-                  </div>
+                  <label
+                    className={`mt-1 absolute left-2 transition-all duration-300 ${
+                      isFocused || value
+                        ? "ml-2 mt-1 text-xs text-0C3E78"
+                        : "ml-2 top-3 text-gray-500"
+                    }`}
+                    htmlFor={label}
+                  >
+                    {"Adresse mail"}
+                  </label>
+                  <input
+                    type={type}
+                    id={label}
+                    className="rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm"
+                    value={value}
+                    onChange={onChange}
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
+                  />
+                </div>
+                <div className="relative">
+                  <label
+                    className={`mt-1 absolute left-2 transition-all duration-300 ${
+                      isFocused || value
+                        ? "ml-2 mt-1 text-xs text-0C3E78"
+                        : "ml-2 top-3 text-gray-500"
+                    }`}
+                    htmlFor={label}
+                  >
+                    {"Numéro de téléphone"}
+                  </label>
+                  <input
+                    type={"tel"}
+                    id={label}
+                    className="rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm"
+                    value={value}
+                    onChange={onChange}
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
+                  />
+                </div>
+                <div className="relative">
+                  <label
+                    className={`mt-1 absolute left-2 transition-all duration-300 ${
+                      isFocused || value
+                        ? "ml-2 mt-1 text-xs text-0C3E78"
+                        : "ml-2 top-3 text-gray-500"
+                    }`}
+                    htmlFor={label}
+                  >
+                    {"Le meilleur moyen de vous contacter ?"}
+                  </label>
+                  <input
+                    type={type}
+                    id={label}
+                    className="rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm"
+                    value={value}
+                    onChange={onChange}
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
+                  />
+                </div>
+                <div className="relative">
+                  <label
+                    className={`mt-1 absolute left-2 transition-all duration-300 ${
+                      isFocused || value
+                        ? "ml-2 mt-1 text-xs text-0C3E78"
+                        : "ml-2 top-3 text-gray-500"
+                    }`}
+                    htmlFor={label}
+                  >
+                    {"Le meilleur moment de vous contacter ?"}
+                  </label>
+                  <input
+                    type={type}
+                    id={label}
+                    className="rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm"
+                    value={value}
+                    onChange={onChange}
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
+                  />
+                </div>
               </div>
-
               <div>
                 <div className="relative">
-                <label
-                      className={`mt-1 absolute left-2 transition-all duration-300 ${
-                        isFocused || value
-                          ? "ml-2 mt-1 text-xs  text-0C3E78"
-                          : "ml-2 top-3 text-gray-500"
-                      }`}
-                      htmlFor={label}
-                    >
-                      {"Message"}
-                    </label>
+                  <label
+                    className={`mt-1 absolute left-2 transition-all duration-300 ${
+                      isFocused || value
+                        ? "ml-2 mt-1 text-xs text-0C3E78"
+                        : "ml-2 top-3 text-gray-500"
+                    }`}
+                    htmlFor={label}
+                  >
+                    {"Écrivez-nous"}
+                  </label>
                   <textarea
-                     className="rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm "
+                    className="rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm "
                     rows="8"
                     type={type}
                     value={value}
@@ -201,7 +200,6 @@ const Form = ({ label, type, value, onChange }) => {
                   />
                 </div>
               </div>
-
               <div>
                 <input
                   className="outline-none input-secondary border-gray-200 mr-1"

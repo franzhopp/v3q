@@ -3,8 +3,22 @@ import TitleDevis from "../UI/Title/TitleFormDevis.jsx";
 import ImgText from "../../assets/logo-4.png";
 import ButtonSend from "../UI/Button/ButtonSend.jsx";
 import Footer from "../Footer/Footer.jsx";
+import { useState } from "react";
 
-const DevisFree = () => {
+const DevisFree = ({ label, type, value, onChange }) => {
+  const [isFocused, setIsFocused] = useState(false);
+
+  const handleFocus = () => {
+    setIsFocused(true);
+  };
+
+  const handleBlur = () => {
+    if (!value) {
+      setIsFocused(true);
+    } else {
+      setIsFocused(false);
+    }
+  };
   return (
     <section className="bg-devis-blur">
       <NavbarDevis />
@@ -101,86 +115,202 @@ const DevisFree = () => {
             <form action="" className="space-y-4">
               <div action="" class="space-y-4">
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                  <div>
+                  <div className="relative">
+                    <label
+                      className={`mt-1 absolute left-2 transition-all duration-300 ${
+                        isFocused || value
+                          ? "ml-2 mt-1 text-xs text-0C3E78"
+                          : "ml-2 top-3 text-gray-500"
+                      }`}
+                      htmlFor={label}
+                    >
+                      {"Prénom"}
+                    </label>
                     <input
-                      className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-8"
-                      placeholder="Prénom"
-                      type="name"
+                      type={type}
+                      id={label}
+                      className="rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm"
+                      value={value}
+                      onChange={onChange}
+                      onFocus={handleFocus}
+                      onBlur={handleBlur}
                     />
                   </div>
 
-                  <div>
+                  <div className="relative">
+                    <label
+                      className={`mt-1 absolute left-2 transition-all duration-300 ${
+                        isFocused || value
+                          ? "ml-2 mt-1 text-xs text-0C3E78"
+                          : "ml-2 top-3 text-gray-500"
+                      }`}
+                      htmlFor={label}
+                    >
+                      {"Nom"}
+                    </label>
                     <input
-                      className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-8"
-                      placeholder="Nom"
-                      type="name"
+                      type={type}
+                      id={label}
+                      className="rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm"
+                      value={value}
+                      onChange={onChange}
+                      onFocus={handleFocus}
+                      onBlur={handleBlur}
                     />
                   </div>
                 </div>
-                <div>
+                <div className="relative">
+                  <label
+                    className={`mt-1 absolute left-2 transition-all duration-300 ${
+                      isFocused || value
+                        ? "ml-2 mt-1 text-xs text-0C3E78"
+                        : "ml-2 top-3 text-gray-500"
+                    }`}
+                    htmlFor={label}
+                  >
+                    {"Adresse mail"}
+                  </label>
                   <input
-                    className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-8"
-                    placeholder="E-mail"
-                    type="text"
+                    type={type}
+                    id={label}
+                    className="rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm"
+                    value={value}
+                    onChange={onChange}
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
                   />
                 </div>
-                <div>
+                <div className="relative">
+                  <label
+                    className={`mt-1 absolute left-2 transition-all duration-300 ${
+                      isFocused || value
+                        ? "ml-2 mt-1 text-xs text-0C3E78"
+                        : "ml-2 top-3 text-gray-500"
+                    }`}
+                    htmlFor={label}
+                  >
+                    {"Numéro de téléphone"}
+                  </label>
                   <input
-                    className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-8"
-                    placeholder="Numéro de téléphone"
-                    type="text"
+                    type={type}
+                    id={label}
+                    className="rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm"
+                    value={value}
+                    onChange={onChange}
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
                   />
                 </div>
-                <div>
+                <div className="relative">
+                  <label
+                    className={`mt-1 absolute left-2 transition-all duration-300 ${
+                      isFocused || value
+                        ? "ml-2 mt-1 text-xs text-0C3E78"
+                        : "ml-2 top-3 text-gray-500"
+                    }`}
+                    htmlFor={label}
+                  >
+                    {"Code postal"}
+                  </label>
                   <input
-                    className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-8"
-                    placeholder="Code postal"
-                    type="text"
+                    type={type}
+                    id={label}
+                    className="rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm"
+                    value={value}
+                    onChange={onChange}
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
                   />
                 </div>
-                <div>
+                <div className="relative">
+                  <label
+                    className={`mt-1 absolute left-2 transition-all duration-300 ${
+                      isFocused || value
+                        ? "ml-2 mt-1 text-xs text-0C3E78"
+                        : "ml-2 top-3 text-gray-500"
+                    }`}
+                    htmlFor={label}
+                  >
+                    {
+                      "Quels services établissez-vous pour la réalisation de votre projet ?"
+                    }
+                  </label>
                   <input
-                    className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-8"
-                    placeholder="Quels services établissez-vous pour la réalisation de votre projet ?"
-                    type="text"
+                    type={type}
+                    id={label}
+                    className="rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm"
+                    value={value}
+                    onChange={onChange}
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
                   />
                 </div>
-                <div>
+                <div className="relative">
+                  <label
+                    className={`mt-1 absolute left-2 transition-all duration-300 ${
+                      isFocused || value
+                        ? "ml-2 mt-1 text-xs text-0C3E78"
+                        : "ml-2 top-3 text-gray-500"
+                    }`}
+                    htmlFor={label}
+                  >
+                    {"Votre budget approximatif ?"}
+                  </label>
                   <input
-                    className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-8"
-                    placeholder="Votre budget approximatif"
-                    type="text"
+                    type={type}
+                    id={label}
+                    className="rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm"
+                    value={value}
+                    onChange={onChange}
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
                   />
                 </div>
-                <div>
+                <div className="relative">
+                  <label
+                    className={`mt-1 absolute left-2 transition-all duration-300 ${
+                      isFocused || value
+                        ? "ml-2 mt-1 text-xs text-0C3E78"
+                        : "ml-2 top-3 text-gray-500"
+                    }`}
+                    htmlFor={label}
+                  >
+                    {"Disposez-vous d'une charte graphique existante ?"}
+                  </label>
                   <input
-                    className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-24"
-                    placeholder="Disposez vous d'une charte graphique existante ?"
-                    type="text"
+                    type={type}
+                    id={label}
+                    className="rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm"
+                    value={value}
+                    onChange={onChange}
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
                   />
                 </div>
               </div>
 
               <div>
-                <textarea
-                  className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mt-24"
-                  placeholder="Message"
-                  rows="8"
-                  id="message"
-                ></textarea>
-              </div>
-
-              <div>
-                <input
-                  className="outline-none input-secondary border-gray-200 mr-1"
-                  type="checkbox"
-                />
-                <span className="text-black">
-                  {" "}
-                  En cochant cette case, je certifie avoir pris connaissance et
-                  accepté les Conditions d'Utilisation et la Politique de
-                  Confidentialité.
-                </span>
+                <div className="relative">
+                  <label
+                    className={`mt-1 absolute left-2 transition-all duration-300 ${
+                      isFocused || value
+                        ? "ml-2 mt-1 text-xs text-0C3E78"
+                        : "ml-2 top-3 text-gray-500"
+                    }`}
+                    htmlFor={label}
+                  >
+                    {"Écrivez-nous"}
+                  </label>
+                  <textarea
+                    className="rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm "
+                    rows="8"
+                    type={type}
+                    value={value}
+                    onChange={onChange}
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
+                  />
+                </div>
               </div>
 
               <div>
