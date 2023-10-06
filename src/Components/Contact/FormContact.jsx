@@ -125,7 +125,7 @@ const Form = ({ label, type, value, onChange }) => {
                       {"Numéro de téléphone"}
                     </label>
                     <input
-                      type={type}
+                      type={"tel"}
                       id={label}
                       className="rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm"
                       value={value}
@@ -191,7 +191,7 @@ const Form = ({ label, type, value, onChange }) => {
                       {"Message"}
                     </label>
                   <textarea
-                     className="rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm"
+                     className="rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm "
                     rows="8"
                     type={type}
                     value={value}
@@ -207,7 +207,7 @@ const Form = ({ label, type, value, onChange }) => {
                   className="outline-none input-secondary border-gray-200 mr-1"
                   type="checkbox"
                 />
-                <span className="text-FFF6E4">
+                <span className="text-black">
                   {" "}
                   En cochant cette case, je certifie avoir pris connaissance et
                   accepté les Conditions d'Utilisation et la Politique de
@@ -220,7 +220,7 @@ const Form = ({ label, type, value, onChange }) => {
                   className="outline-none input-secondary border-gray-200 mr-1"
                   type="checkbox"
                 />
-                <span className="text-FFF6E4">
+                <span className="text-black">
                   {" "}
                   En fournissant vos informations personnelles, vous consentez à
                   ce que{" "}
