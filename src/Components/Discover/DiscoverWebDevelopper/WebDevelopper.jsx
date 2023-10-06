@@ -175,7 +175,7 @@ const DiscoverWebDeveloper = () => {
                 Créatrice d'Univers-Imaginaire, un site déployant tous mes
                 écrits. J'ai donc décidé de renforcer ma collaboration avec ma UX/UI
                 pour unir nos compétences et créer ensemble notre agence, navi
-                studio.™ Je vous invite donc à explorer les pages de notre site,
+                studio.™ Je vous invite à naviger les pages de notre site,
                 conçu avec une grande passion et un immense plaisir de vous la
                 partager.
               </p>
