@@ -1,7 +1,7 @@
 import Footer from "../../Footer/Footer";
 import NavbarDiscoverWebDevelopper from "../../Navigation/NavbarDiscover/DiscoverWebDevelopperNavbar";
 import Avatar from "../../UI/Avatar/TemplateAvatar";
-import ImageLouisa from "../../../assets/picture-louisa.png";
+import ImageLouisa from "../../../assets/picture-louisa-1.png";
 import { motion } from "framer-motion";
 import LogoInsta from "../../../assets/instagram2.png";
 import LogoLinkedin from "../../../assets/linkedin.png";
@@ -237,11 +237,6 @@ const DiscoverWebDeveloper = () => {
               </li>
             </div>
             <div data-aos="fade-in" className="flex justify-center mt-10">
-              {/* <img
-              data-aos="fade-in"
-              src={ImageLogoLouisa}
-              alt="Picture Logo Louisa"
-            /> */}
               <div className="flex flex-col mt-10 mb-10">
                 <p className="font-emblema text-black text-2xl">
                   O<span className="text-FFF6E4">h</span>
