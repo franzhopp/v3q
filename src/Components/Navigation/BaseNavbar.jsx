@@ -541,7 +541,7 @@ const Navbar = () => {
         </ul>
       </nav>
 
-      <div className="pt-64 text-center sm:mt-28 sm:pt-52">
+      <div className="pt-56 text-center sm:mt-28 sm:pt-52">
         <h1 className="text-normal text-4xl tracking-tight font-extrabold text-FFF6E4 sm:text-8xl md:text-8xl">
           <motion.span
             id="all"
@@ -559,7 +559,7 @@ const Navbar = () => {
       </div>
       <Button />
 
-      <p id="all" className="text-center mt-12">
+      <p id="all" className="text-center mt-16 pb-5">
         <span className="text-black text-2xl font-medium sm:text-4xl mt-5 sm:mt-10 whitespace-nowrap animation-scrolling-rtl">
           DESIGN | DÉVELOPPEMENT | MARKETING DIGITAL | STRATÉGIE DE MARQUE
         </span>
