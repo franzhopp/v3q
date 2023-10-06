@@ -63,7 +63,7 @@ const Footer = () => {
                 className="text-black transition hover:text-0C3E78"
                 href="/devis"
               >
-                Devis gratuit
+                Devis Gratuit
               </a>
             </li>
             <li>
@@ -105,7 +105,7 @@ const Footer = () => {
                 className="text-black transition hover:text-0C3E78"
                 href="/privacy"
               >
-                Politique de confidentialité
+                Politique de Confidentialité
               </a>
             </li>
             <li>
@@ -113,7 +113,7 @@ const Footer = () => {
                 className="text-black transition hover:text-0C3E78"
                 href="/terms"
               >
-                Condition d'utilisation
+                Condition d'Utilisation
               </a>
             </li>
             <li>
@@ -121,7 +121,7 @@ const Footer = () => {
                 className="text-black transition hover:text-0C3E78"
                 href="/mentions"
               >
-                Mentions légales
+                Mentions Légales
               </a>
             </li>
           </ul>
