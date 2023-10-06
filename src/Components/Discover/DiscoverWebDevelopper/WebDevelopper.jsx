@@ -10,14 +10,14 @@ import { useEffect } from "react";
 
 const DiscoverWebDeveloper = () => {
   useEffect(() => {
-    const numStars = 30;
+    const numStars = 20;
     const container = document.getElementById("star-container");
 
     for (let i = 0; i < numStars; i++) {
       const star = document.createElement("div");
-      star.className = "star";
-      star.style.center = `${Math.random() * 100}%`;
-      star.style.animationDuration = `${Math.random() * 2 + 1}s`;
+      star.className = 'star absolute w-1 h-1 bg-FFF6E4 rounded-full animate-pulse';
+      star.style.right = `${Math.random() * 180}%`;
+      star.style.top = `${Math.random() * 110}%`;
       container.appendChild(star);
     }
   }, []);
@@ -188,7 +188,7 @@ const DiscoverWebDeveloper = () => {
           </div>
         </div>
 
-        <div class="bg-devis-blur pt-20 flex flex-wrap justify-center pb-32 space-x-0 sm:space-x-10">
+        <div class="bg-devis-blur pt-20 flex flex-wrap justify-center pb-5 space-x-0 sm:space-x-10">
           <div class="p-6">
             <div className="flex flex-row space-x-10 list-none mt-20">
               <li>
@@ -249,7 +249,7 @@ const DiscoverWebDeveloper = () => {
             </div>
           </div>
 
-          <div className="mt-5 sm:mt-14">
+          <div className="mt-5 sm:mt-14 pb-5">
             <img
               data-aos="fade-in"
               src={ImageLouisa}
@@ -261,22 +261,21 @@ const DiscoverWebDeveloper = () => {
               <span className="ml-1"> Place des Vosges, 75004 Paris</span>.
             </p>
           </div>
-        </div>
-        <div
-          fade-aos="fade-in"
-          className="star-container relative w-full h-full"
-          id="star-container"
-        >
-          {Array.from({ length: 30 }).map((_, index) => (
-            <div
-              key={index}
-              className="star absolute w-1 h-1 bg-FFF6E4 rounded-full animate-pulse"
-              style={{
-                right: `${Math.random() * 100}%`,
-                animationDuration: `${Math.random() * 2 + 2}s`,
-              }}
-            ></div>
-          ))}
+          <div
+            fade-aos="fade-in"
+            className="star-container relative w-full h-full pt-44"
+            id="star-container"
+          >
+            {Array.from({ length: 30 }).map((_, index) => (
+              <div
+                key={index}
+                style={{
+                  right: `${Math.random() * 100}%`,
+                  animationDuration: `${Math.random() * 2 + 2}s`,
+                }}
+              ></div>
+            ))}
+          </div>
         </div>
       </div>
       <Footer />
