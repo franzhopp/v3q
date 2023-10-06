@@ -1,15 +1,8 @@
-import { useEffect } from "react";
-import ButtonSend from "../UI/Button/ButtonSend";
 import Title from "../UI/Title/TitleFormContact";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import ImgText from "../../assets/logo-4.png";
+import ButtonSend from "../UI/Button/ButtonSend";
 
 const Form = () => {
-  useEffect(() => {
-    AOS.init({
-      once: true,
-    });
-  }, []);
   return (
     <section className="bg-contact-blur pb-56">
       <div>
@@ -94,6 +87,54 @@ const Form = () => {
                   rows="8"
                   id="message"
                 ></textarea>
+              </div>
+
+              <div>
+                <input
+                  className="outline-none input-secondary border-gray-200 mr-1"
+                  type="checkbox"
+                />
+                <span className="text-black">
+                  {" "}
+                  En cochant cette case, je certifie avoir pris connaissance et
+                  accepté les Conditions d'Utilisation et la Politique de
+                  Confidentialité.
+                </span>
+              </div>
+
+              <div>
+                <input
+                  className="outline-none input-secondary border-gray-200 mr-1"
+                  type="checkbox"
+                />
+                <span className="text-black">
+                  {" "}
+                  En fournissant vos informations personnelles, vous consentez à
+                  ce que{" "}
+                  <span>
+                    <img
+                      src={ImgText}
+                      className="h-10 mr-1 inline"
+                      alt="Icône Navi Studio"
+                    />
+                  </span>
+                  collecte et traite ces données conformément à sa Politique de
+                  Confidentialité.{" "}
+                  <a
+                    href="/privacy"
+                    className="underline font-extrabold text-0C3E78"
+                  >
+                    Lire la Politique de Confidentialité
+                  </a>{" "}
+                  et{" "}
+                  <a
+                    href="/privacy"
+                    className="underline font-extrabold text-0C3E78"
+                  >
+                    Conditions d'Utilisation
+                  </a>
+                  .
+                </span>
               </div>
 
               <button
