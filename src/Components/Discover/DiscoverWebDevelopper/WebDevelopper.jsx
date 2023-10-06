@@ -16,8 +16,8 @@ const DiscoverWebDeveloper = () => {
     for (let i = 0; i < numStars; i++) {
       const star = document.createElement("div");
       star.className = 'star absolute w-1 h-1 bg-FFF6E4 rounded-full animate-pulse';
-      star.style.right = `${Math.random() * 180}%`;
-      star.style.top = `${Math.random() * 110}%`;
+      star.style.right = `${Math.random() * 100}%`;
+      star.style.top = `${Math.random() * 100}%`;
       container.appendChild(star);
     }
   }, []);
