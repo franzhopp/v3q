@@ -26,7 +26,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
         <TitleDevis />
       </div>
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mb-20 grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
+        <div className="">
           <div className="mr-10 lg:col-span-2 lg:py-12">
             <p className="text-black font-extrabold text-2xl sm:text-3xl max-w-xl ml-6 sm:ml-0">
               Le devis revêt une importance particulière, car il ne devrait être
@@ -311,6 +311,19 @@ const DevisFree = ({ label, type, value, onChange }) => {
                     onBlur={handleBlur}
                   />
                 </div>
+              </div>
+
+              <div>
+                <input
+                  className="outline-none input-secondary border-gray-200 mr-1"
+                  type="checkbox"
+                />
+                <span className="text-black">
+                  {" "}
+                  En cochant cette case, je certifie avoir pris connaissance et
+                  accepté les Conditions d'Utilisation et la Politique de
+                  Confidentialité.
+                </span>
               </div>
 
               <div>
