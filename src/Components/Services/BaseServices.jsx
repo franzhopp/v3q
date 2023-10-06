@@ -22,10 +22,10 @@ const Services = () => {
         <div className="flex justify-center">
           <div className="w-96">
             <p className="text-black text-center">
-              Vous y trouverez{" "}
-              <span className="font-extrabold">tous les services</span> que
-              notre agence propose, adaptés à{" "}
-              <span className="font-extrabold">vos besoins</span> :
+              Vous trouverez{" "}
+              <span className="font-extrabold">tous les services</span> de
+              notre agence, adaptés selon{" "}
+              <span className="font-extrabold">vos besoins</span>.
             </p>
           </div>
         </div>
@@ -51,7 +51,7 @@ const Services = () => {
                 </p>
               </div>
               <div className="flex justify-center mt-10">
-                <img src={ImgService1} alt="Icône Gears" className="" />
+                <img src={ImgService1} alt="Icône Services" className="" />
               </div>
             </div>
 
@@ -74,7 +74,7 @@ const Services = () => {
                 </p>
               </div>
               <div className="flex justify-center mt-10">
-                <img src={ImgService2} alt="Icône Gears" className="" />
+                <img src={ImgService2} alt="Icône Services" className="" />
               </div>
             </div>
 
@@ -97,7 +97,7 @@ const Services = () => {
                 </p>
               </div>
               <div className="flex justify-center mt-10">
-                <img src={ImgService3} alt="Icône Gears" className="" />
+                <img src={ImgService3} alt="Icône Services" className="" />
               </div>
             </div>
             <div
@@ -120,7 +120,7 @@ const Services = () => {
                 </p>
               </div>
               <div className="flex justify-center mt-10">
-                <img src={ImgService4} alt="Icône Gears" />
+                <img src={ImgService4} alt="Icône Services" />
               </div>
             </div>
           </div>

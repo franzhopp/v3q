@@ -54,10 +54,10 @@ const DevisFree = () => {
                     page « <span className="font-extrabold">Services</span> »{" "}
                     <a
                       href="/services"
-                      className="underline font-extrabold text-C22E2E "
+                      className="underline font-extrabold text-C22E2E"
                     >
                       {" "}
-                      en suivant ce lien
+                      en cliquant sur ce lien
                     </a>{" "}
                     avant de soumettre votre devis.
                   </li>
@@ -67,30 +67,34 @@ const DevisFree = () => {
                     moyens budgétaires pour nous aider à déterminer les tarifs
                     qui correspondent à votre service. Avant de soumettre votre
                     devis, consultez notre page «{" "}
-                    <span className="font-extrabold">Tarifs</span> »{" "}
+                    <span className="font-extrabold">Tarifications</span> »{" "}
                     <a
                       href="/tarifs"
-                      className="underline font-extrabold text-C22E2E "
+                      className="underline font-extrabold text-C22E2E"
                     >
                       {" "}
-                      en suivant ce lien.
+                      en cliquant sur ce lien
                     </a>
+                    .
                   </li>
                   <br />
                   <li data-aos="zoom-in" data-aos-duration="300">
                     <span className="font-extrabold">4</span>. Si vous possédez
-                    déjà une charte graphique, veuillez simplement répondre «
-                    oui » et nous l'envoyer à notre adresse de contact, ou
-                    contactez-nous directement.
+                    déjà une charte graphique, veuillez simplement répondre «{" "}
+                    <span className="font-extrabold">oui</span> » et nous
+                    l'envoyer à notre adresse de contact, ou contactez-nous
+                    directement.
                   </li>
                 </ul>
               </p>
-              <a
-                className="text-0C3E78 font-extrabold underline transition hover:text-C22E2E"
-                href="/"
-              >
-                Retourner à la page d'Accueil ➔
-              </a>
+              <div className="flex justify-center">
+                <a
+                  className="text-FFF6E4 font-extrabold underline transition hover:text-C22E2E"
+                  href="/"
+                >
+                  Retourner à la page d'Accueil ➔
+                </a>
+              </div>
             </div>
           </div>
 
@@ -174,8 +178,36 @@ const DevisFree = () => {
                 />
                 <span className="text-black">
                   {" "}
-                  J'ai lu et j'accepte la Politique de confidentialité et et les
-                  Conditions d'utilisation.
+                  En cochant cette case, je certifie avoir pris connaissance et
+                  accepté les Conditions d'Utilisation et la Politique de
+                  Confidentialité.
+                </span>
+              </div>
+
+              <div>
+                <input
+                  className="outline-none input-secondary border-gray-200 mr-1"
+                  type="checkbox"
+                />
+                <span className="text-black">
+                  {" "}
+                  En fournissant vos informations personnelles, vous consentez à
+                  ce que l'entreprise collecte et traite ces données
+                  conformément à sa Politique de Confidentialité.{" "}
+                  <a
+                    href="/privacy"
+                    className="underline font-extrabold text-0C3E78"
+                  >
+                    Lire la Politique de Confidentialité
+                  </a>{" "}
+                  et{" "}
+                  <a
+                    href="/privacy"
+                    className="underline font-extrabold text-0C3E78"
+                  >
+                    Conditions d'Utilisation
+                  </a>
+                  .
                 </span>
               </div>
 

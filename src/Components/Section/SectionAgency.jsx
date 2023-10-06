@@ -40,7 +40,7 @@ const SectionAgency = () => {
                   l'intuitivité
                 </span>
                 .{" "}
-                {` Notre approche repose sur la fusion de nos compétences et de notre expérience.`}
+                {` Notre vision repose sur la fusion de nos compétences et de notre expérience.`}
                 <span className="font-extrabold">{" Design, "}</span>
                 <span className="font-extrabold">Développement web</span> ou
                 <span className="font-extrabold">{" Marketing Digital "}</span>

@@ -43,7 +43,7 @@ const SectionTeam = () => {
               {`Quoi de mieux que de connaître navi studio.™ et son équipe ?`}{" "}
               <span className="font-extrabold">
                 {
-                  "Nous vous laissons parcourir entre ces lignes pour en savoir davantage"
+                  "Venez parcourir entre ces lignes pour en savoir davantage"
                 }
               </span>
               <br />
@@ -193,7 +193,7 @@ const SectionTeam = () => {
                       <p className="text-black text-left text-base mb-10 ml-10 sm:ml-0 z">
                         <span className="font-extrabold">
                           Louisa est développeuse web et exerce le métier du
-                          développement web depuis depuis 2 ans.
+                          développement web depuis 2 ans.
                         </span>{" "}
                         Résidante à Paris, elle pratique celui-ci avec beaucoup
                         de passion et plaisir.{" "}
