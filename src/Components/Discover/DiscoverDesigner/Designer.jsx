@@ -118,7 +118,14 @@ const DiscoverDesigner = () => {
                 Découvrir Web Developer ➔
               </a>
             </div>
-            <ButtonHome />
+            <div className="flex justify-center">
+              <a
+                className=" text-C22E2E font-extrabold underline transition hover:text-0C3E78"
+                href="/"
+              >
+                Retourner à la page d'Accueil ➔
+              </a>
+            </div>
           </div>
 
           <div className="mt-10 sm:mt-56">
@@ -197,7 +204,6 @@ const DiscoverDesigner = () => {
           </div>
         </div>
       </div>
-
       <Footer />
     </div>
   );

@@ -34,7 +34,7 @@ const DevisFree = () => {
                 illisibles.{" "}
               </p>
               <br />
-              <p className="text-black text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0">
+              <p className="text-black mb-5 text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0">
                 <span className="font-extrabold underline">
                   Veuillez prendre en considération ces directives essentielles
                   :
@@ -85,7 +85,12 @@ const DevisFree = () => {
                   </li>
                 </ul>
               </p>
-              <ButtonHome/>
+              <a
+                className="text-0C3E78 font-extrabold underline transition hover:text-C22E2E"
+                href="/"
+              >
+                Retourner à la page d'Accueil ➔
+              </a>
             </div>
           </div>
 
