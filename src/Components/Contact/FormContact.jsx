@@ -1,8 +1,21 @@
 import Title from "../UI/Title/TitleFormContact";
 import ImgText from "../../assets/logo-4.png";
 import ButtonSend from "../UI/Button/ButtonSend";
+import { useState } from "react";
 
-const Form = () => {
+const Form = ({ label, type, value, onChange }) => {
+  const [isFocused, setIsFocused] = useState(false);
+
+  const handleFocus = () => {
+    setIsFocused(true);
+  };
+
+  const handleBlur = () => {
+    if (!value) {
+      setIsFocused(false);
+    }
+  };
+
   return (
     <section className="bg-contact-blur pb-56">
       <div>
@@ -34,59 +47,158 @@ const Form = () => {
             <form action="" className="space-y-4">
               <div action="" class="space-y-4">
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                  <div>
+                  <div className="relative">
+                    <label
+                      className={`mt-1 absolute left-2 transition-all duration-300 ${
+                        isFocused || value
+                          ? "ml-2 text-xs top-1 text-0C3E78"
+                          : "ml-5 top-3 text-gray-500"
+                      }`}
+                      htmlFor={label}
+                    >
+                      {"Prénom"}
+                    </label>
                     <input
-                      className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
-                      placeholder="Prénom"
-                      type="name"
+                      type={type}
+                      id={label}
+                      className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-4"
+                      value={value}
+                      onChange={onChange}
+                      onFocus={handleFocus}
+                      onBlur={handleBlur}
                     />
                   </div>
 
-                  <div>
+                  <div className="relative">
+                    <label
+                      className={`mt-1 absolute left-2 transition-all duration-300 ${
+                        isFocused || value
+                          ? "ml-2 text-xs top-1 text-0C3E78"
+                          : "ml-5 top-3 text-gray-500"
+                      }`}
+                      htmlFor={label}
+                    >
+                      {"Nom"}
+                    </label>
                     <input
+                      type={type}
+                      id={label}
                       className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
-                      placeholder="Nom"
-                      type="name"
+                      value={value}
+                      onChange={onChange}
+                      onFocus={handleFocus}
+                      onBlur={handleBlur}
                     />
                   </div>
                 </div>
-                <div>
+                <div className="relative">
+                  <label
+                    className={`mt-1 absolute left-2 transition-all duration-300 ${
+                      isFocused || value
+                        ? "ml-2 text-xs top-1 text-0C3E78"
+                        : "ml-5 top-3 text-gray-500"
+                    }`}
+                    htmlFor={label}
+                  >
+                    {"Adresse mail"}
+                  </label>
                   <input
+                    type={type}
+                    id={label}
                     className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
-                    placeholder="E-mail"
-                    type="text"
+                    value={value}
+                    onChange={onChange}
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
                   />
                 </div>
-                <div>
+                <div className="relative">
+                  <label
+                    className={`mt-1 absolute left-2 transition-all duration-300 ${
+                      isFocused || value
+                        ? "ml-2 text-xs top-1 text-0C3E78"
+                        : "ml-5 top-3 text-gray-500"
+                    }`}
+                    htmlFor={label}
+                  >
+                    {"Numéro de téléphone"}
+                  </label>
                   <input
+                    type={type}
+                    id={label}
                     className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
-                    placeholder="Numéro de téléphone"
-                    type="text"
+                    value={value}
+                    onChange={onChange}
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
                   />
                 </div>
-                <div>
+                <div className="relative">
+                  <label
+                    className={`mt-1 absolute left-2 transition-all duration-300 ${
+                      isFocused || value
+                        ? "ml-2 text-xs top-1 text-0C3E78"
+                        : "ml-5 top-3 text-gray-500"
+                    }`}
+                    htmlFor={label}
+                  >
+                    {"Le meilleur moyen de vous contacter ?"}
+                  </label>
                   <input
+                    type={type}
+                    id={label}
                     className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
-                    placeholder="Le meilleur moyen de vous contacter ?"
-                    type="text"
+                    value={value}
+                    onChange={onChange}
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
                   />
                 </div>
-                <div>
+                <div className="relative">
+                  <label
+                    className={`mt-1 absolute left-2 transition-all duration-300 ${
+                      isFocused || value
+                        ? "ml-2 text-xs top-1 text-0C3E78"
+                        : "ml-5 top-3 text-gray-500"
+                    }`}
+                    htmlFor={label}
+                  >
+                    {"Le meilleur moment de vous contacter ?"}
+                  </label>
                   <input
-                    className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-4"
-                    placeholder="Le meilleur moment de vous contacter ?"
-                    type="text"
+                    type={type}
+                    id={label}
+                    className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
+                    value={value}
+                    onChange={onChange}
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
                   />
                 </div>
               </div>
 
               <div>
-                <textarea
-                  className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mt-20"
-                  placeholder="Message"
-                  rows="8"
-                  id="message"
-                ></textarea>
+                <div className="relative">
+                  <label
+                    className={`absolute left-2 transition-all duration-300 ${
+                      isFocused || value
+                        ? "ml-2 text-xs top-1 text-0C3E78"
+                        : "ml-5 top-3 text-gray-500"
+                    }`}
+                    htmlFor={label}
+                  >
+                    {"Message"}
+                  </label>
+                  <textarea
+                    className="rounded-3xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
+                    rows="8"
+                    type={type}
+                    value={value}
+                    onChange={onChange}
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
+                  />
+                </div>
               </div>
 
               <div>
