@@ -123,21 +123,18 @@ const DiscoverDesigner = () => {
             <img
               data-aos="fade-right"
               src={ImageMelissa}
-              alt="Picture Louisa"
-              className="h-96 w-96 transition-opacity duration-500 hover:opacity-50"
+              alt="Picture Mélissa"
+              className="h-80 w-80 sm:h-96 sm:w-96 transition-opacity duration-500 hover:opacity-50"
             />
             <p className="flex text-black text-xs font-extrabold">
               📸 : Mélissa.{" "}
-              {/* <span className="ml-1">
-                {" "}
-                Londres
-              </span> */}
+              <span className="ml-1"> Quai Charles de Gaulle, 69006 Lyon.</span>
             </p>
           </div>
         </div>
       </div>
       <div class="flex justify-center">
-        <p class="text-center text-black sm:text-xl md:text-2xl lg:text-3xl px-8">
+        <p class="text-center text-black font-extrabold sm:text-xl md:text-2xl lg:text-3xl px-8">
           UX/UI DESIGNER | GRAPHIC DESIGNER | ILLUSTRATOR | FASHION DESIGNER
         </p>
       </div>

@@ -35,7 +35,7 @@ button {
 }
 
 .xs {
-    font-size: 10px;
+    font-size: 8px;
 }
 
 .number {
@@ -160,14 +160,15 @@ button {
     background: url("./assets/bg-portfolio.png")
 }
 
-.animate-rotate {
-    animation: rotateAnimation 0.5s ease-in-out forwards;
-}
-
+/* BG FORM */
 .bg-contact {
     border-radius: 56px;
     background: rgba(0, 0, 0, 0.08);
     backdrop-filter: blur(6.5px);
+}
+
+.animate-rotate {
+    animation: rotateAnimation 0.5s ease-in-out forwards;
 }
 
 .animation-scrolling-rtl {
@@ -198,6 +199,7 @@ button {
     }
 }
 
+/* CARDS SERVICES */
 .bg-cards {
     background-image: url("./assets/bg-cards.png");
 }
@@ -206,6 +208,7 @@ button {
     background-image: url("./assets/bg-cards-2.png");
 }
 
+/* BANNIER */
 .picture-bannier-louisa {
     height: auto;
     display: block;
@@ -237,4 +240,3 @@ button {
     background-repeat: no-repeat;
     background-image: url("./assets/z.png");
 }
-
