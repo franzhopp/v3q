@@ -78,7 +78,7 @@ const Section = () => {
                 className="mt-2 font-extrabold text-center text-black"
               >
                 {`Votre site est votre perception.`}{" "}
-                {`Chaque site représente son histoire, son originalité, sa vision. Notre équipe en conception web développe des expériences uniques qui reflètent l'identité de votre marque. Découvrez navi studio.™ son histoire, `}
+                {`Chaque site représente son histoire, son originalité, sa vision. Notre équipe en conception web développe des expériences uniques qui reflètent l'identité de votre marque. Découvrez son histoire, `}
                 <NavLink
                   href="about"
                   onClick={SectionToScroll}
