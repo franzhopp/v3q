@@ -124,7 +124,7 @@ const DetailsServices = () => {
               className="text-black text-center text-2xl font-extrabold px-5"
             >
               Des questions ? Une demande ? N’hésitez pas à nous contacter
-              directement, notre équipe saura vous aiguiller répondre a toutes
+              directement, notre équipe saura vous aiguiller répondre à toutes
               vos questions.
             </p>
           </div>
