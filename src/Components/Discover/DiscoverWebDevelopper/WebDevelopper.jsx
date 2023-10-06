@@ -7,6 +7,7 @@ import LogoInsta from "../../../assets/instagram2.png";
 import LogoLinkedin from "../../../assets/linkedin.png";
 import LogoSnap from "../../../assets/snapchat.png";
 import { useEffect } from "react";
+import ButtonHome from "../../UI/Button/ButtonHome";
 
 const DiscoverWebDeveloper = () => {
   useEffect(() => {
@@ -15,7 +16,8 @@ const DiscoverWebDeveloper = () => {
 
     for (let i = 0; i < numStars; i++) {
       const star = document.createElement("div");
-      star.className = 'star absolute w-1 h-1 bg-FFF6E4 rounded-full animate-pulse';
+      star.className =
+        "star absolute w-1 h-1 bg-FFF6E4 rounded-full animate-pulse";
       star.style.right = `${Math.random() * 100}%`;
       star.style.top = `${Math.random() * 100}%`;
       container.appendChild(star);
@@ -150,9 +152,8 @@ const DiscoverWebDeveloper = () => {
               >
                 Pour commencer, mon voyage dans le développement web a débuté en
                 2021, alors que j'étudiais en France. Le choix de me lancer dans
-                la programmation est survenu de manière inattendue, sans
-                prévenir. Au départ, je n'avais aucune intention de me plonger
-                dans ce domaine !
+                la programmation est survenu de manière inattendue. Au départ,
+                je n'avais aucune intention de me plonger dans ce domaine !
               </p>
               <br />
               <p
@@ -162,7 +163,7 @@ const DiscoverWebDeveloper = () => {
                 Cependant, ma rencontre avec React a été un véritable coup de
                 cœur, et depuis, je consacre une grande partie de mon temps à
                 travailler avec cette technologie. Parallèlement, je nourris un
-                vif intérêt pour le design.
+                vif intérêt pour le design & le Marketing.
               </p>
               <br />
               <br />
@@ -170,12 +171,13 @@ const DiscoverWebDeveloper = () => {
                 data-aos="fade-left"
                 className="text-left text-FFF6E4 font-extrabold"
               >
-                L'écriture est une autre passion qui m'anime, et elle m'inspire.
-                Créatrice d'Univers-Imaginaire. Forte de cette inspiration, j'ai
-                décidé de renforcer ma collaboration avec ma UX/UI pour unir nos
-                compétences et créer ensemble notre agence, navi studio.™. Je
-                vous invite donc à explorer les pages de notre site, conçu avec
-                une grande passion et un immense plaisir de vous la partager.
+                L'écriture est une autre passion qui m'anime, elle m'inspire.
+                Créatrice d'Univers-Imaginaire, un site déployant tous mes
+                écrits. J'ai donc décidé de renforcer ma collaboration avec ma UX/UI
+                pour unir nos compétences et créer ensemble notre agence, navi
+                studio.™ Je vous invite donc à explorer les pages de notre site,
+                conçu avec une grande passion et un immense plaisir de vous la
+                partager.
               </p>
               <br />
               <a
@@ -185,6 +187,7 @@ const DiscoverWebDeveloper = () => {
                 Découvrir Designer ➔
               </a>
             </div>
+            <ButtonHome/>
           </div>
         </div>
 

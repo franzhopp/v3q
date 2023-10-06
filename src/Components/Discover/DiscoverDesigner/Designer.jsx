@@ -6,6 +6,7 @@ import LogoMelissa from "../../../assets/logo-melissa.png";
 import LogoInsta from "../../../assets/instagram2.png";
 import LogoLinkedin from "../../../assets/linkedin.png";
 import LogoSnap from "../../../assets/snapchat.png";
+import ButtonHome from "../../UI/Button/ButtonHome";
 
 const DiscoverDesigner = () => {
   return (
@@ -102,10 +103,10 @@ const DiscoverDesigner = () => {
                 data-aos="fade-left"
                 className="text-center text-C22E2E font-extrabold"
               >
-                Je puise mon inspiration dans tout ce qui m'entoure; des
+                Je puise mon inspiration dans tout ce qui m'entoure ; des
                 voyages, des lectures, des images, des sons. Ce projet et cette
-                collaboration me tenait à coeur, navistudio c'est un peu comme
-                un enfant né de l'amour du design et du developpement web ♥
+                collaboration me tenait à cœur, navi studio.™ c'est un peu comme
+                un enfant né de l'amour du design et du developpement web. ♥
                 <br />
               </p>
             </div>
@@ -117,6 +118,7 @@ const DiscoverDesigner = () => {
                 Découvrir Web Developer ➔
               </a>
             </div>
+            <ButtonHome />
           </div>
 
           <div className="mt-10 sm:mt-56">

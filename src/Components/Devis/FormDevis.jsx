@@ -3,6 +3,7 @@ import NavbarDevis from "../Navigation/DevisNavbar/DevisNavbar.jsx";
 import TitleDevis from "../UI/Title/TitleFormDevis.jsx";
 import ButtonSend from "../UI/Button/ButtonSend.jsx";
 import Footer from "../Footer/Footer.jsx";
+import ButtonHome from "../UI/Button/ButtonHome.jsx";
 
 const DevisFree = () => {
   return (
@@ -84,6 +85,7 @@ const DevisFree = () => {
                   </li>
                 </ul>
               </p>
+              <ButtonHome/>
             </div>
           </div>
 
