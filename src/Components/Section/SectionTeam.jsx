@@ -45,7 +45,7 @@ const SectionTeam = () => {
               <span>
                 <img
                   src={ImgText}
-                  className="h-14 mr-1 inline"
+                  className="h-12 mr-1 inline sm:h-16"
                   alt="Icône Navi Studio"
                 />
               </span>{" "}
