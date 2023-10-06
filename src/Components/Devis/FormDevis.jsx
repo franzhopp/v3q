@@ -232,7 +232,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
                     htmlFor={label}
                   >
                     {
-                      "Quels services établissez-vous pour la réalisation de votre projet ?"
+                      "Quels services établissez-vous pour votre projet ?"
                     }
                   </label>
                   <input
