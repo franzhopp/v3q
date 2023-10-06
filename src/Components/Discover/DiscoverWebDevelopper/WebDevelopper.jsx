@@ -259,9 +259,10 @@ const DiscoverWebDeveloper = () => {
               alt="Picture Louisa"
               className="h-80 w-80 sm:h-96 sm:w-96 transition-opacity duration-500 hover:opacity-50"
             />
-            <p className="flex text-black text-xs font-extrabold">
+            <p className="flex text-black text-xs">
               📸 : Louisa.{" "}
-              <span className="ml-1"> Place des Vosges, 75004 Paris</span>.
+              <span className="ml-1"> Maison de Victor Hugo, 75004 Paris</span>
+              .
             </p>
           </div>
           <div

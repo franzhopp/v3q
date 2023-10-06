@@ -135,9 +135,9 @@ const DiscoverDesigner = () => {
               alt="Picture Mélissa"
               className="h-80 w-80 sm:h-96 sm:w-96 transition-opacity duration-500 hover:opacity-50"
             />
-            <p className="flex text-black text-xs font-extrabold">
+            <p className="flex text-black text-xs">
               📸 : Mélissa.{" "}
-              <span className="ml-1"> Quai Charles de Gaulle, 69006 Lyon.</span>
+              <span className="ml-1"> Musée d'Art Contemporain, 69006 Lyon.</span>
             </p>
           </div>
         </div>
