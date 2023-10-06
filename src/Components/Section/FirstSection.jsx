@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import ImgText from "../../assets/logo-4.png";
 import ButtonContact from "../UI/Button/ButtonFormContact";
 
 const Section = () => {
@@ -55,7 +56,15 @@ const Section = () => {
                 </span>{" "}
                 {`Des projets élaborés à deux. Du design moderne à la fonctionnalité intuitive, nous créons des sites`}
                 <span className="font-extrabold">{` qui attirent les visiteurs`}</span>
-                . Venez découvrir navi studio.™ dès aujourd'hui !
+                . Venez découvrir{" "}
+                <span>
+                  <img
+                    src={ImgText}
+                    className="h-10 mr-1 inline"
+                    alt="Icône Navi Studio"
+                  />
+                </span>{" "}
+                dès aujourd'hui !
               </p>
             </div>
           </div>
@@ -68,7 +77,8 @@ const Section = () => {
                 data-aos-duration="300"
                 className="mt-2 font-extrabold text-center text-black"
               >
-                {`Votre site est votre perception. Chez navi studio.™, chaque site représente son histoire, son originalité, sa vision. Notre équipe en conception web développe des expériences uniques qui reflètent l'identité de votre marque. Découvrez navi studio.™ son histoire, `}
+                {`Votre site est votre perception.`}{" "}
+                {`Chaque site représente son histoire, son originalité, sa vision. Notre équipe en conception web développe des expériences uniques qui reflètent l'identité de votre marque. Découvrez navi studio.™ son histoire, `}
                 <NavLink
                   href="about"
                   onClick={SectionToScroll}

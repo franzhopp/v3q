@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import ImgText from "../../assets/logo-4.png";
 import ImageLondon from "../../assets/london.png";
 import ImageParis from "../../assets/paris.png";
 import { useSpring, animated } from "react-spring";
@@ -40,11 +41,16 @@ const SectionTeam = () => {
         <div className="flex justify-center">
           <div className="w-4/5 sm:w-1/2">
             <p className="px-5 text-black text-arial text-center md:text-center lg:text-center text-lg sm:text-2xl mt-10 mb-16">
-              {`Quoi de mieux que de connaître navi studio.™ et son équipe ?`}{" "}
+              Quoi de mieux que de connaître{" "}
+              <span>
+                <img
+                  src={ImgText}
+                  className="h-14 mr-1 inline"
+                  alt="Icône Navi Studio"
+                />
+              </span>{" "}
               <span className="font-extrabold">
-                {
-                  "Venez parcourir entre ces lignes pour en savoir davantage"
-                }
+                {"Venez parcourir entre ces lignes pour en savoir davantage"}
               </span>
               <br />
               <span className="text-black">

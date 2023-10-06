@@ -1,9 +1,8 @@
-import { useEffect } from "react";
 import NavbarDevis from "../Navigation/DevisNavbar/DevisNavbar.jsx";
 import TitleDevis from "../UI/Title/TitleFormDevis.jsx";
+import ImgText from "../../assets/logo-4.png";
 import ButtonSend from "../UI/Button/ButtonSend.jsx";
 import Footer from "../Footer/Footer.jsx";
-import ButtonHome from "../UI/Button/ButtonHome.jsx";
 
 const DevisFree = () => {
   return (
@@ -192,8 +191,16 @@ const DevisFree = () => {
                 <span className="text-black">
                   {" "}
                   En fournissant vos informations personnelles, vous consentez à
-                  ce que l'entreprise collecte et traite ces données
-                  conformément à sa Politique de Confidentialité.{" "}
+                  ce que{" "}
+                  <span>
+                    <img
+                      src={ImgText}
+                      className="h-10 mr-1 inline"
+                      alt="Icône Navi Studio"
+                    />
+                  </span>
+                  collecte et traite ces données conformément à sa Politique de
+                  Confidentialité.{" "}
                   <a
                     href="/privacy"
                     className="underline font-extrabold text-0C3E78"

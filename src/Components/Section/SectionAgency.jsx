@@ -1,4 +1,5 @@
 import TitleAgency from "../UI/Title/TitleAgency";
+import ImgText from "../../assets/logo-4.png";
 import SectionTeam from "./SectionTeam";
 import ButtonAgency from "../UI/Button/ButtonAgency";
 
@@ -16,7 +17,15 @@ const SectionAgency = () => {
               data-aos="fade-right"
               className="text-center font-extrabold mt-20 text-black text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
             >
-              Bienvenue chez navi studio.™ – Votre partenaire numérique.
+              Bienvenue chez{" "}
+              <span>
+                <img
+                  src={ImgText}
+                  className="h-20 mr-1 inline"
+                  alt="Icône Navi Studio"
+                />
+              </span>{" "}
+              – Votre partenaire numérique.
             </h3>
           </div>
         </div>
