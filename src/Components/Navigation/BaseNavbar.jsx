@@ -548,12 +548,12 @@ const Navbar = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="block xl:inline test-text"
+            className="block xl:inline"
           >
             Agence digitale
           </motion.span>
         </h1>
-        <span className="block xl:inline text-FFF6E4 font-extrabold test-text">
+        <span className="block xl:inline text-FFF6E4 font-extrabold">
           PARIS X LONDON
         </span>
       </div>
