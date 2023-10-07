@@ -545,7 +545,7 @@ const Navbar = () => {
         </ul>
       </nav>
 
-      <div className="bg-C22E2E pt-56 text-center sm:mt-28 sm:pt-52">
+      <div className="pt-56 text-center sm:mt-28 sm:pt-52">
         <h1 className="text-normal text-4xl tracking-tight font-extrabold text-FFF6E4 sm:text-8xl md:text-8xl">
           <motion.span
             id="all"

@@ -272,7 +272,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
                     {"À quelle date ?"}
                   </label>
                   <input
-                    type={"tel"}
+                    type={"text"}
                     id={label}
                     className="rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm"
                     value={value}
