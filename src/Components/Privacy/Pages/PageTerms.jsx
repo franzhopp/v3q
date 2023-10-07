@@ -1,10 +1,10 @@
-import Navbar from "../../Navigation/BaseNavbar";
+import PrivacyNavbar from "../../Navigation/PrivacyNavbar/PrivacyNavbar.jsx";
 import Footer from "../../Footer/Footer";
 
 const PageConditions = () => {
   return (
     <>
-      <Navbar />
+      <PrivacyNavbar />
       <div className="flex justify-center">
         <div className="w-full md:max-w-3xl p-4 font-sans-serif mt-16 mb-16">
           <h1 className="text-C22E2E mb-16 text-2xl md:text-3xl font-semibold">

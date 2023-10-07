@@ -1,12 +1,12 @@
+import PrivacyNavbar from "../../Navigation/PrivacyNavbar/PrivacyNavbar.jsx";
 import Footer from "../../Footer/Footer";
-import Navbar from "../../Navigation/BaseNavbar";
 
 const PagePrivacy = () => {
   return (
     <>
       {" "}
-      <Navbar />
-      <div className="flex justify-center font-sans-serif mb-16 mt-10">
+      <PrivacyNavbar />
+      <div className="flex justify-center font-sans-serif mb-16 mt-16">
         <div className="w-full md:max-w-3xl p-4">
           <h1 className="text-2xl md:text-3xl font-semibold mb-16 text-C22E2E">
             Politique de Confidentialité des Données

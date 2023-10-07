@@ -1,13 +1,11 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { motion } from "framer-motion";
 import { LuArrowDown } from "react-icons/lu";
-import Image from "../../assets/logo-5.png";
-import Button from "../UI/Button/BaseButton";
-import "../Section/FirstSection.jsx";
-import "../Homepage/Hompage";
+import Image from "../../../assets/logo-5.png";
+import "../../Section/FirstSection.jsx";
+import "../../Homepage/Hompage";
 
-const Navbar = () => {
+const PrivacyNavbar = () => {
   const [isAnimating, setIsAnimating] = useState(false);
   const [scrollNavbar, setScrollNavbar] = useState();
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -115,6 +113,7 @@ const Navbar = () => {
                   // onClick={() => {
                   //   window.location.href = "/services";
                   // }}
+                  onClick={SectionToScroll}
                   className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
                 >
                   Agence
@@ -379,45 +378,34 @@ const Navbar = () => {
                   showSousListsAgence ? "block" : "hidden"
                 } p-2`}
               >
-                <li className="list-decimal ml-4">
-                  <button onClick={toggleSousListsAgence}>
-                    <div className="flex items-center justify-between">
-                      <div className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold pr-2">
-                        Notre équipe
-                      </div>
-                      <LuArrowDown className="mt-1 text-C22E2E font-extrabold" />
-                    </div>
-                  </button>
-
-                  <ul
-                    className={`toggle-menu ${
-                      showSousListsAgence ? "block" : "hidden"
-                    } p-2`}
-                  >
-                    <li className="list-decimal ml-4 text-C22E2E font-extrabold">
-                      <NavLink
-                        to="/designer"
-                        // onClick={() => {
-                        //   window.location.href = "/designer";
-                        // }}
-                        className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
-                      >
-                        Designer
-                      </NavLink>
-                    </li>
-                    <li className="list-decimal ml-4 text-C22E2E font-extrabold">
-                      <NavLink
-                        to="/webdev"
-                        // onClick={() => {
-                        //   window.location.href = "/webdev";
-                        // }}
-                        className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
-                      >
-                        Web Developer
-                      </NavLink>
-                    </li>
-                  </ul>
-                </li>
+                <ul
+                  className={`toggle-menu ${
+                    showSousListsAgence ? "block" : "hidden"
+                  } p-2`}
+                >
+                  <li className="list-decimal ml-4 text-C22E2E font-extrabold">
+                    <NavLink
+                      to="/designer"
+                      // onClick={() => {
+                      //   window.location.href = "/designer";
+                      // }}
+                      className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                    >
+                      Designer
+                    </NavLink>
+                  </li>
+                  <li className="list-decimal ml-4 text-C22E2E font-extrabold">
+                    <NavLink
+                      to="/webdev"
+                      // onClick={() => {
+                      //   window.location.href = "/webdev";
+                      // }}
+                      className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                    >
+                      Web Developer
+                    </NavLink>
+                  </li>
+                </ul>
               </ul>
             </NavLink>
           </li>
@@ -554,33 +542,8 @@ const Navbar = () => {
           {openModel && <ModalSearch closeModal={setOpenModel} />} */}
         </ul>
       </nav>
-
-      <div className="pt-56 text-center sm:mt-28 sm:pt-52">
-        <h1 className="text-normal text-4xl tracking-tight font-extrabold text-FFF6E4 sm:text-8xl md:text-8xl">
-          <motion.span
-            id="all"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            className="block xl:inline"
-          >
-            Agence digitale
-          </motion.span>
-        </h1>
-        <span className="block xl:inline text-FFF6E4 font-extrabold">
-          PARIS X LONDON
-        </span>
-      </div>
-      <Button />
-
-      <p id="all" className="text-center mt-16 pb-5">
-        <span className="text-black text-2xl font-medium sm:text-4xl mt-5 sm:mt-10 whitespace-nowrap animation-scrolling-rtl">
-          DESIGN | DÉVELOPPEMENT | MARKETING DIGITAL | STRATÉGIE DE MARQUE
-        </span>
-      </p>
-      <div id="about" className="mb-40 sm:mb-0"></div>
     </div>
   );
 };
 
-export default Navbar;
+export default PrivacyNavbar;
