@@ -26,7 +26,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
         <TitleDevis />
       </div>
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="">
+        <div className="mb-20 grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
           <div className="mr-10 lg:col-span-2 lg:py-12">
             <p className="text-black font-extrabold text-2xl sm:text-3xl max-w-xl ml-6 sm:ml-0">
               Le devis revêt une importance particulière, car il ne devrait être
@@ -100,7 +100,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
                   </li>
                 </ul>
               </p>
-              <div className="flex justify-center mb-5">
+              <div className="flex justify-center">
                 <a
                   className="text-FFF6E4 font-extrabold underline transition hover:text-C22E2E"
                   href="/"
@@ -232,7 +232,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
                     htmlFor={label}
                   >
                     {
-                      "Quels services établissez-vous pour votre projet ?"
+                      "Avec quels services réalisez-vous votre projet ?"
                     }
                   </label>
                   <input
@@ -275,7 +275,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
                     }`}
                     htmlFor={label}
                   >
-                    {"Disposez-vous d'une charte graphique existante ?"}
+                    {"Avez-vous une charte graphique ?"}
                   </label>
                   <input
                     type={type}
@@ -289,41 +289,26 @@ const DevisFree = ({ label, type, value, onChange }) => {
                 </div>
               </div>
 
-              <div>
-                <div className="relative">
-                  <label
-                    className={`mt-1 absolute left-2 transition-all duration-300 ${
-                      isFocused || value
-                        ? "ml-2 mt-1 text-xs text-0C3E78"
-                        : "ml-2 top-3 text-gray-500"
-                    }`}
-                    htmlFor={label}
-                  >
-                    {"Écrivez-nous"}
-                  </label>
-                  <textarea
-                    className="rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm "
-                    rows="8"
-                    type={type}
-                    value={value}
-                    onChange={onChange}
-                    onFocus={handleFocus}
-                    onBlur={handleBlur}
-                  />
-                </div>
-              </div>
-
-              <div>
-                <input
-                  className="outline-none input-secondary border-gray-200 mr-1"
-                  type="checkbox"
+              <div className="relative">
+                <label
+                  className={`mt-1 absolute left-2 transition-all duration-300 ${
+                    isFocused || value
+                      ? "ml-2 mt-1 text-xs text-0C3E78"
+                      : "ml-2 top-3 text-gray-500"
+                  }`}
+                  htmlFor={label}
+                >
+                  {"Écrivez-nous"}
+                </label>
+                <textarea
+                  className="rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm "
+                  rows="8"
+                  type={type}
+                  value={value}
+                  onChange={onChange}
+                  onFocus={handleFocus}
+                  onBlur={handleBlur}
                 />
-                <span className="text-black">
-                  {" "}
-                  En cochant cette case, je certifie avoir pris connaissance et
-                  accepté les Conditions d'Utilisation et la Politique de
-                  Confidentialité.
-                </span>
               </div>
 
               <div>

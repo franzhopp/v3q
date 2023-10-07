@@ -23,7 +23,7 @@ const Form = ({ label, type, value, onChange }) => {
       <div>
         <Title />
       </div>
-      <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 mt-10">
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
           <div className="mr-10 lg:col-span-2 lg:py-12">
             <p className="text-black font-extrabold text-2xl sm:text-4xl max-w-xl ml-6 sm:ml-0">
