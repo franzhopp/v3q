@@ -101,7 +101,7 @@ const DetailsServices = () => {
           </div>
         </div>
       </div>
-      <div className="mb-10">
+      <div className="pb-10">
         <div className="flex justify-center mt-20">
           <svg
             className="animate-bounce-bounce"

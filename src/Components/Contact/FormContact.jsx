@@ -19,7 +19,7 @@ const Form = ({ label, type, value, onChange }) => {
   };
 
   return (
-    <section className="bg-contact-blur">
+    <section className="bg-FFF6E4 bg-contact-blur">
       <div>
         <Title />
       </div>

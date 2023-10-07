@@ -219,7 +219,7 @@ const SectionTeam = () => {
             </div>
           </div>
         </div>
-        <div id="contact" className="mb-24"></div>
+        <div id="contact" className="pb-24"></div>
       </section>
     </>
   );
