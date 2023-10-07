@@ -150,7 +150,7 @@ const PageMentions = () => {
             Crédits
           </h2>
           <p className="mb-4 text-black">
-            •<span className={keywordsStyle}> Site créé et designé par :</span>{" "}
+            •<span className={keywordsStyle}> Site designé et développé par :</span>{" "}
             NEFTI MÉLISSA, FERNANDEZ LOUISA
             <br />•<span className={keywordsStyle}> Site URL :</span>{" "}
             <NavLink

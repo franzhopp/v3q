@@ -251,7 +251,7 @@ const EthicsPage = () => {
                 <span>
                   <img
                     src={ImgText}
-                    className="h-12 mb-3 mr-1 mt-3 inline"
+                    className="h-10 sm:h-12 mb-3 mr-1 mt-3 inline"
                     alt="Icône Navi Studio"
                   />
                 </span>{" "}

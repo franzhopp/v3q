@@ -26,7 +26,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
         <TitleDevis />
       </div>
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mb-20 grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
+        <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
           <div className="mr-10 lg:col-span-2 lg:py-12">
             <p className="text-black font-extrabold text-2xl sm:text-3xl max-w-xl ml-6 sm:ml-0">
               Le devis revêt une importance particulière, car il ne devrait être
@@ -281,7 +281,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
                     onBlur={handleBlur}
                   />
                 </div>
-                <div className="relative pb-20">
+                <div className="relative pb-28">
                   <label
                     className={`mt-1 absolute left-2 transition-all duration-300 ${
                       isFocused || value
