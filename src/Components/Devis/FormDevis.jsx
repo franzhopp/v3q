@@ -100,7 +100,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
                   </li>
                 </ul>
               </p>
-              <div className="flex justify-center">
+              <div className="flex justify-center mb-5">
                 <a
                   className="text-FFF6E4 font-extrabold underline transition hover:text-C22E2E"
                   href="/"
