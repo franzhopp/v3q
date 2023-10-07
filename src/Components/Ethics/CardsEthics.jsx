@@ -1,6 +1,6 @@
 import NavbarEthics from "../Navigation/EthicsNavbar/EthicsNavbar";
 import ImgMac from "../../assets/bg-ethics-mac.png";
-import ImgText from "../../assets/logo-6.png";
+import ImgText from "../../assets/logo-8.png";
 import Footer from "../Footer/Footer";
 
 const EthicsPage = () => {
@@ -246,12 +246,12 @@ const EthicsPage = () => {
             className="text-FFF6E4 font-extrabold text-2xl sm:text-4xl mb-10 mt-20"
           >
             <div className="flex justify-center">
-              <p className="mt-4 sm:mt-3 text-2xl sm:text-4xl">
+              <p data-aos="fade-left" className="mt-4 sm:mt-3 text-2xl sm:text-4xl">
                 Faites confiance à{" "}
                 <span>
                   <img
                     src={ImgText}
-                    className="h-16 mr-1 mt-3 mb-1 inline"
+                    className="h-12 mb-3 mr-1 mt-3 inline"
                     alt="Icône Navi Studio"
                   />
                 </span>{" "}

@@ -20,7 +20,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
     }
   };
   return (
-    <section className="bg-devis-blur">
+    <section className="bg-contact-blur">
       <NavbarDevis />
       <div>
         <TitleDevis />
@@ -35,11 +35,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
               lignes.
             </p>
             <div className="mt-8">
-              <p
-                data-aos="zoom-in"
-                data-aos-duration="300"
-                className="text-black text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0"
-              >
+              <p className="text-black text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0">
                 Le devis permet de sécuriser le traitement de votre demande.
                 Prenez le temps de bien comprendre les questions qui vous sont
                 posées et veillez à fournir des réponses claires. Nous ne
@@ -54,13 +50,13 @@ const DevisFree = ({ label, type, value, onChange }) => {
                 </span>
                 <ul>
                   <br />
-                  <li data-aos="zoom-in" data-aos-duration="300">
+                  <li data-aos="fade-right" data-aos-duration="300">
                     <span className="font-extrabold">1</span>. Assurez-vous de
                     fournir des informations complètes afin que nous puissions
                     vous recontacter rapidement.
                   </li>
                   <br />
-                  <li data-aos="zoom-in" data-aos-duration="300">
+                  <li data-aos="fade-left" data-aos-duration="300">
                     <span className="font-extrabold">2</span>. Renseignez le
                     service que vous souhaitez afin que nous puissions élaborer
                     votre projet en conséquence. N'hésitez pas à consulter notre
@@ -75,7 +71,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
                     avant de soumettre votre devis.
                   </li>
                   <br />
-                  <li data-aos="zoom-in" data-aos-duration="300">
+                  <li data-aos="fade-right" data-aos-duration="300">
                     <span className="font-extrabold">3</span>. Indiquez vos
                     moyens budgétaires pour nous aider à déterminer les tarifs
                     qui correspondent à votre service. Avant de soumettre votre
@@ -91,7 +87,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
                     .
                   </li>
                   <br />
-                  <li data-aos="zoom-in" data-aos-duration="300">
+                  <li data-aos="fade-left" data-aos-duration="300">
                     <span className="font-extrabold">4</span>. Si vous possédez
                     déjà une charte graphique, veuillez simplement répondre «{" "}
                     <span className="font-extrabold">oui</span> » et nous
@@ -115,7 +111,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
             <form action="" className="space-y-4">
               <div action="" class="space-y-4">
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                  <div className="relative">
+                  <div className="relative pb-5">
                     <label
                       className={`mt-1 absolute left-2 transition-all duration-300 ${
                         isFocused || value
@@ -137,7 +133,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
                     />
                   </div>
 
-                  <div className="relative">
+                  <div className="relative pb-5">
                     <label
                       className={`mt-1 absolute left-2 transition-all duration-300 ${
                         isFocused || value
@@ -159,7 +155,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
                     />
                   </div>
                 </div>
-                <div className="relative">
+                <div className="relative pb-5">
                   <label
                     className={`mt-1 absolute left-2 transition-all duration-300 ${
                       isFocused || value
@@ -180,7 +176,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
                     onBlur={handleBlur}
                   />
                 </div>
-                <div className="relative">
+                <div className="relative pb-5">
                   <label
                     className={`mt-1 absolute left-2 transition-all duration-300 ${
                       isFocused || value
@@ -192,7 +188,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
                     {"Numéro de téléphone"}
                   </label>
                   <input
-                    type={type}
+                    type={"tel"}
                     id={label}
                     className="rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm"
                     value={value}
@@ -201,7 +197,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
                     onBlur={handleBlur}
                   />
                 </div>
-                <div className="relative">
+                <div className="relative pb-5">
                   <label
                     className={`mt-1 absolute left-2 transition-all duration-300 ${
                       isFocused || value
@@ -213,7 +209,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
                     {"Code postal"}
                   </label>
                   <input
-                    type={type}
+                    type={"tel"}
                     id={label}
                     className="rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm"
                     value={value}
@@ -222,7 +218,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
                     onBlur={handleBlur}
                   />
                 </div>
-                <div className="relative">
+                <div className="relative pb-5">
                   <label
                     className={`mt-1 absolute left-2 transition-all duration-300 ${
                       isFocused || value
@@ -231,9 +227,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
                     }`}
                     htmlFor={label}
                   >
-                    {
-                      "Avec quels services réalisez-vous votre projet ?"
-                    }
+                    {"Quels services établissez-vous ?"}
                   </label>
                   <input
                     type={type}
@@ -245,7 +239,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
                     onBlur={handleBlur}
                   />
                 </div>
-                <div className="relative">
+                <div className="relative pb-5">
                   <label
                     className={`mt-1 absolute left-2 transition-all duration-300 ${
                       isFocused || value
@@ -266,7 +260,28 @@ const DevisFree = ({ label, type, value, onChange }) => {
                     onBlur={handleBlur}
                   />
                 </div>
-                <div className="relative">
+                <div className="relative pb-5">
+                  <label
+                    className={`mt-1 absolute left-2 transition-all duration-300 ${
+                      isFocused || value
+                        ? "ml-2 mt-1 text-xs text-0C3E78"
+                        : "ml-2 top-3 text-gray-500"
+                    }`}
+                    htmlFor={label}
+                  >
+                    {"À quelle date ?"}
+                  </label>
+                  <input
+                    type={"tel"}
+                    id={label}
+                    className="rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm"
+                    value={value}
+                    onChange={onChange}
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
+                  />
+                </div>
+                <div className="relative pb-20">
                   <label
                     className={`mt-1 absolute left-2 transition-all duration-300 ${
                       isFocused || value
@@ -298,7 +313,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
                   }`}
                   htmlFor={label}
                 >
-                  {"Écrivez-nous"}
+                  {"Écrivez-nous afin d'en savoir plus"}
                 </label>
                 <textarea
                   className="rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm "
@@ -309,6 +324,18 @@ const DevisFree = ({ label, type, value, onChange }) => {
                   onFocus={handleFocus}
                   onBlur={handleBlur}
                 />
+              </div>
+              <div>
+                <input
+                  className="outline-none input-secondary border-gray-200 mr-1"
+                  type="checkbox"
+                />
+                <span className="text-black">
+                  {" "}
+                  En cochant cette case, je certifie avoir pris connaissance et
+                  accepté les Conditions d'Utilisation et la Politique de
+                  Confidentialité.
+                </span>
               </div>
 
               <div>
