@@ -34,12 +34,12 @@ const Portfolio = () => {
   };
 
   return (
-    <section className="bg-pattern-portfolio">
+    <section className="bg-FFF6E4 bg-pattern-portfolio">
       <NavbarDevis />
       <div>
         <TitlePorfolio />
       </div>
-      <div className="mb-10 mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+      <div data-aos="fade-in" className="mb-10 mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className=" flex space-x-px justify-center mt-10">
           <div className="bg-FFF6E4 p-6 h-1/2 w-96 rounded-2xl shadow-2xl mr-5 ml-5">
             <div className="flex justify-center mt-3">

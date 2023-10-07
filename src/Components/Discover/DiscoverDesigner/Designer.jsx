@@ -13,7 +13,7 @@ const DiscoverDesigner = () => {
     <div>
       <NavbarDiscoverDesigner />
       <AvatarDesigner />
-      <div class="flex justify-center mt-10 mb-20">
+      <div class="bg-FFF6E4 flex justify-center pt-10 pb-20">
         <div class="mt-5 flex flex-wrap justify-center space-x-0 sm:space-x-20">
           <div class="p-6">
             <div className="w-72">
@@ -137,18 +137,20 @@ const DiscoverDesigner = () => {
             />
             <p className="flex text-black text-xs">
               📸 : Mélissa.{" "}
-              <span className="ml-1"> Musée d'Art Contemporain, 69006 Lyon.</span>
+              <span className="ml-1">
+                {" "}
+                Musée d'Art Contemporain, 69006 Lyon.
+              </span>
             </p>
           </div>
         </div>
       </div>
-      <div class="flex justify-center">
+      <div class="bg-FFF6E4 flex justify-center">
         <p class="text-center text-black font-extrabold sm:text-xl md:text-2xl lg:text-3xl px-8">
           UX/UI DESIGNER | GRAPHIC DESIGNER | ILLUSTRATOR | FASHION DESIGNER
         </p>
       </div>
-
-      <div className="flex justify-center mt-20">
+      <div className="bg-FFF6E4 flex justify-center pt-20">
         <img
           data-aos="fade-in"
           src={LogoMelissa}
@@ -157,7 +159,7 @@ const DiscoverDesigner = () => {
         />
       </div>
 
-      <div class="pt-10 flex flex-wrap justify-center pb-20 space-x-0 sm:space-x-10">
+      <div class="bg-FFF6E4 pt-10 flex flex-wrap justify-center pb-20 space-x-0 sm:space-x-10">
         <div class="p-6">
           <div className="flex flex-row space-x-10 list-none mt-20">
             <li>

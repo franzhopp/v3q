@@ -10,7 +10,7 @@ import Footer from "../Footer/Footer";
 const Services = () => {
   return (
     <>
-      <section>
+      <section className="bg-FFF6E4">
         <NavbarServices />
         <h1
           data-aos="fade-right"
@@ -23,8 +23,8 @@ const Services = () => {
           <div className="w-96">
             <p className="text-black text-center">
               Vous trouverez{" "}
-              <span className="font-extrabold">tous les services</span> de
-              notre agence, adaptés selon{" "}
+              <span className="font-extrabold">tous les services</span> de notre
+              agence, adaptés selon{" "}
               <span className="font-extrabold">vos besoins</span>.
             </p>
           </div>
@@ -33,7 +33,7 @@ const Services = () => {
         <div class="flex justify-center mt-10">
           <div class="mt-5 flex flex-wrap justify-center space-x-0 sm:space-x-6">
             <div
-              data-aos="zoom-in"
+              data-aos="fade-right"
               data-aos-duration="300"
               class="bg-C22E2E p-6 rounded-2xl shadow-2xl mb-5"
             >
@@ -56,7 +56,7 @@ const Services = () => {
             </div>
 
             <div
-              data-aos="zoom-in"
+              data-aos="fade-left"
               data-aos-duration="300"
               class="bg-cards p-6 rounded-2xl shadow-2xl mb-5"
             >
@@ -79,7 +79,7 @@ const Services = () => {
             </div>
 
             <div
-              data-aos="zoom-in"
+              data-aos="fade-right"
               data-aos-duration="300"
               class="bg-cards-2 p-6 rounded-2xl shadow-2xl mb-5"
             >
@@ -101,7 +101,7 @@ const Services = () => {
               </div>
             </div>
             <div
-              data-aos="zoom-in"
+              data-aos="fade-left"
               data-aos-duration="300"
               class="bg-C22E2E p-6 rounded-2xl shadow-2xl mb-5"
             >

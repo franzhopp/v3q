@@ -93,7 +93,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="image-navi-studio-home h-screen sm:pb-20 mb:min-h-650 min-h-500">
+    <div className="image-navi-studio-home sm:pb-20 mb:min-h-650 min-h-500">
       <nav
         className={`bg-FFF6E4 border-b-4 border-C22E2E h-28 items-center transition duration-300 ease-in-out fixed w-full top-0 left-0 shadow-md z-max`}
       >
@@ -115,6 +115,7 @@ const Navbar = () => {
                   // onClick={() => {
                   //   window.location.href = "/services";
                   // }}
+                  onClick={SectionToScroll}
                   className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
                 >
                   Agence
@@ -578,7 +579,7 @@ const Navbar = () => {
           DESIGN | DÉVELOPPEMENT | MARKETING DIGITAL | STRATÉGIE DE MARQUE
         </span>
       </p>
-      <div id="about" className="mb-40 sm:mb-0"></div>
+      <div id="about" className="bg-FFF6E4 pb-28 sm:pb-0"></div>
     </div>
   );
 };

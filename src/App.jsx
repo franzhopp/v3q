@@ -26,7 +26,7 @@ const App = () => {
       setTimeout(() => {
         setIsLoading(false);
         localStorage.setItem("hasLoaded", "true");
-      }, 2000);
+      }, 1000);
     }
   }, []);
   return (

@@ -31,10 +31,10 @@ const Section = () => {
 
   return (
     <>
-      <section className="max-w-7xl mx-auto mt-24 px-4 sm:px-6 lg:px-8">
-        <div className="mt-8 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
+      <section className="bg-FFF6E4 pt-0 sm:pt-20">
+        <div className="flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
           {/* Step 1 */}
-          <div className="min-h-500 w-80 rounded-lg mt-5">
+          <div className="min-h-500 w-80 rounded-lg pt-5">
             <p
               data-aos="fade-left"
               className="mt-2 font-extrabold text-black text-4xl"
@@ -91,8 +91,8 @@ const Section = () => {
             </div>
           </div>
         </div>
-      </section>
       <ButtonContact />
+      </section>
     </>
   );
 };

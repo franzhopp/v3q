@@ -29,7 +29,7 @@ const DiscoverWebDeveloper = () => {
       <div>
         <NavbarDiscoverWebDevelopper />
         <Avatar />
-        <div className="flex flex-wrap justify-center">
+        <div className="bg-FFF6E4 flex flex-wrap justify-center pb-20">
           <div className="w-1/2">
             <div className="flex justify-center mt-28">
               <div className="text-center flex-col">
@@ -75,7 +75,7 @@ const DiscoverWebDeveloper = () => {
           </div>
         </div>
 
-        <div className=" bg-C22E2E flex justify-center mt-20 pb-20 px-10">
+        <div className="bg-C22E2E flex justify-center pb-20 px-10">
           <div className="w-96 sm:w-1/2">
             <div className="flex justify-start flex-col mt-10">
               <div className="flex justify-center mt-10 mb-10">
