@@ -41,15 +41,15 @@ const Section = () => {
               Confiez votre image à des professionnels
             </p>
           </div>
-          <div className="w-96 mt-5">
+          <div className="w-80 mt-5">
             <div className="p-6">
               <p
                 data-aos="zoom-in"
                 data-aos-duration="200"
-                className="mt-2 text-center text-black"
+                className="text-center text-black"
               >
                 <span className="font-extrabold">
-                  {`Imaginez que vous avez déjà vu une agence qui design et développe des sites rien que pour vous ?`}
+                  {`Avez-vous déjà vu une agence qui design et développe des sites rien que pour vous ?`}
                 </span>{" "}
                 {`Des projets élaborés à deux. Du design moderne à la fonctionnalité intuitive, nous créons des sites`}
                 <span className="font-extrabold">{` qui attirent les visiteurs`}</span>
@@ -65,15 +65,15 @@ const Section = () => {
               </p>
             </div>
           </div>
-          <div className="w-96 pt-5">
+          <div className="w-80 mt-5">
             <div className="p-6">
               <p
                 data-aos="zoom-in"
                 data-aos-duration="200"
-                className="mt-2 font-extrabold text-center text-black"
+                className="font-extrabold text-center text-black"
               >
-                {`Votre site est votre perception.`}{" "}
-                {`Chaque site représente son histoire, son originalité, sa vision. Notre équipe en conception web développe des expériences uniques qui reflètent l'identité de votre marque. Découvrez son histoire, `}
+                {`Votre site est votre vision.`}{" "}
+                {`Chaque site représente son histoire, son originalité. Notre équipe en conception web développe des expériences uniques qui reflètent l'identité de votre marque. Découvrez son histoire, `}
                 <NavLink
                   href="about"
                   onClick={SectionToScroll}

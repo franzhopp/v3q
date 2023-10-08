@@ -18,7 +18,7 @@ const SectionDuplicate = () => {
           Découvrez des offres adaptées à vos besoins
         </h3>
         <div className="mt-8 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
-          <div className="w-80 rounded-lg mt-5">
+          <div className="w-80 mt-5">
             <p
               data-aos="zoom-in"
               data-aos-duration="200"
@@ -29,8 +29,8 @@ const SectionDuplicate = () => {
                 Nous visons la performance.
               </span>{" "}
               Nos sites internet ne sont esthétiquement pas plaisants, ils sont
-              élaborés pour une identité visuelle qui contribue à votre
-              perception. Nous nous inspirons de vous et votre histoire,{" "}
+              élaborés pour une identité visuelle qui contribue à votre besoin.
+              Nous nous inspirons de vous et votre histoire,{" "}
               <span className="font-extrabold">
                 chaque histoire est différente de chaque site
               </span>
@@ -38,9 +38,7 @@ const SectionDuplicate = () => {
               <span className="font-extrabold">la solution</span>.
             </p>
           </div>
-
-          {/* Step 2 */}
-          <div className="min-h-500 w-80 rounded-lg mt-5">
+          <div className="w-80 mt-5">
             <p
               data-aos="zoom-in"
               data-aos-duration="200"
@@ -60,9 +58,7 @@ const SectionDuplicate = () => {
               <span className="font-extrabold">en ligne exceptionnelle</span>.
             </p>
           </div>
-
-          {/* Step 3 */}
-          <div className="min-h-500 w-80 rounded-lg mt-5">
+          <div className="w-80 mt-5">
             <p
               data-aos="zoom-in"
               data-aos-duration="200"
