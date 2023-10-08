@@ -61,7 +61,6 @@ label, input, textarea {
     background-image: url('./assets/bg-home.png');
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: auto; */
 }
 
 .image-navi-studio-navbar-services {
@@ -136,6 +135,14 @@ label, input, textarea {
     max-width: 100%;
     border-radius: 0px 0px 290px 0px;
     background: url("./assets/bg-portfolio.png")
+}
+
+.image-navi-studio-title-rate {
+    height: auto;
+    display: block;
+    max-width: 100%;
+    border-radius: 0px 0px 290px 0px;
+    background: url("./assets/bg-rate.png")
 }
 
 .image-navi-studio-title-contact {

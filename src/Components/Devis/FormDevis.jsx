@@ -1,4 +1,4 @@
-import NavbarDevis from "../Navigation/DevisNavbar/DevisNavbar.jsx";
+import NavbarDevis from "../Navigation/PagesNavbar/PagesNavbar.jsx";
 import TitleDevis from "../UI/Title/TitleFormDevis.jsx";
 import ImgText from "../../assets/logo-4.png";
 import ButtonSend from "../UI/Button/ButtonSend.jsx";
@@ -92,7 +92,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
                     déjà une charte graphique, veuillez simplement répondre «{" "}
                     <span className="font-extrabold">oui</span> » et nous
                     l'envoyer à notre adresse de contact, ou contactez-nous
-                    directement.
+                    directement, merci.
                   </li>
                 </ul>
               </p>
@@ -325,7 +325,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
                   onBlur={handleBlur}
                 />
               </div>
-              
+
               <div>
                 <input
                   className="outline-none input-secondary border-gray-200 mr-1"

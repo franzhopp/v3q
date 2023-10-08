@@ -261,12 +261,12 @@ const DiscoverWebDeveloper = () => {
             />
             <p className="flex text-black text-xs">
               📸 : Louisa.{" "}
-              <span className="ml-1"> Maison de Victor Hugo, 75004 Paris</span>
-              .
+              <span className="ml-1"> Maison de Victor Hugo, 75004 Paris</span>.
             </p>
           </div>
           <div
-            fade-aos="fade-in"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
             className="star-container relative w-full h-full pt-44"
             id="star-container"
           >

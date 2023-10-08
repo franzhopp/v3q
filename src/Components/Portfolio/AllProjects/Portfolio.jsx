@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import NavbarDevis from "../../Navigation/DevisNavbar/DevisNavbar";
+import NavbarPages from "../../Navigation/PagesNavbar/PagesNavbar";
 import TitlePorfolio from "../../UI/Title/TitlePorfolio";
 import Image1 from "../../../assets/projetbysarahcuisine.png";
 import ImgDefault from "../../../assets/imgdefault.svg";
@@ -35,7 +35,7 @@ const Portfolio = () => {
 
   return (
     <section className="bg-FFF6E4 bg-pattern-portfolio">
-      <NavbarDevis />
+      <NavbarPages />
       <div>
         <TitlePorfolio />
       </div>
