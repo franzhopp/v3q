@@ -71,12 +71,25 @@ const NavbarDevis = () => {
                   // onClick={() => {
                   //   window.location.href = "/services";
                   // }}
+                  onMouseEnter={handleMouseEnterSubmenu}
+                  onMouseLeave={closeSubmenuWithDelay}
                   className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
                 >
                   Agence
                 </NavLink>
                 <div className="flex justify-center">
                   <ul className="absolute hidden group-hover:block rounded-md text-left w-48 bg-FFF6E4 border border-gray-300 mt-2 py-2">
+                    <li className="text-C22E2E font-extrabold">
+                      <NavLink
+                        to="/"
+                        // onClick={() => {
+                        //   window.location.href = "/";
+                        // }}
+                        className="block text-C22E2E border-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
+                      >
+                        Accueil
+                      </NavLink>
+                    </li>
                     <button onClick={toggleSousListsTwoMenu}>
                       <div className="flex items-center justify-between">
                         <div className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold pr-2">
@@ -334,34 +347,47 @@ const NavbarDevis = () => {
                   showSousListsAgence ? "block" : "hidden"
                 } p-2`}
               >
-                <ul
-                  className={`toggle-menu ${
-                    showSousListsAgence ? "block" : "hidden"
-                  } p-2`}
-                >
-                  <li className="list-decimal ml-4 text-C22E2E font-extrabold">
-                    <NavLink
-                      to="/designer"
-                      // onClick={() => {
-                      //   window.location.href = "/designer";
-                      // }}
-                      className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
-                    >
-                      Designer
-                    </NavLink>
-                  </li>
-                  <li className="list-decimal ml-4 text-C22E2E font-extrabold">
-                    <NavLink
-                      to="/webdev"
-                      // onClick={() => {
-                      //   window.location.href = "/webdev";
-                      // }}
-                      className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
-                    >
-                      Web Developer
-                    </NavLink>
-                  </li>
-                </ul>
+                <li className="ml-4">
+                  <ul
+                    className={`toggle-menu ${
+                      showSousListsAgence ? "block" : "hidden"
+                    } p-2`}
+                  >
+                    <li className="list-decimal ml-4 text-C22E2E font-extrabold">
+                      <NavLink
+                        to="/"
+                        // onClick={() => {
+                        //   window.location.href = "/";
+                        // }}
+                        className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                      >
+                        Accueil
+                      </NavLink>
+                    </li>
+                    <li className="list-decimal ml-4 text-C22E2E font-extrabold">
+                      <NavLink
+                        to="/designer"
+                        // onClick={() => {
+                        //   window.location.href = "/designer";
+                        // }}
+                        className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                      >
+                        Designer
+                      </NavLink>
+                    </li>
+                    <li className="list-decimal ml-4 text-C22E2E font-extrabold">
+                      <NavLink
+                        to="/webdev"
+                        // onClick={() => {
+                        //   window.location.href = "/webdev";
+                        // }}
+                        className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                      >
+                        Web Developer
+                      </NavLink>
+                    </li>
+                  </ul>
+                </li>
               </ul>
             </NavLink>
           </li>

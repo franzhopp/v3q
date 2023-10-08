@@ -73,12 +73,25 @@ const NavbarServices = () => {
                   // onClick={() => {
                   //   window.location.href = "/services";
                   // }}
+                  onMouseEnter={handleMouseEnterSubmenu}
+                  onMouseLeave={closeSubmenuWithDelay}
                   className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
                 >
                   Agence
                 </NavLink>
                 <div className="flex justify-center">
                   <ul className="absolute hidden group-hover:block rounded-md text-left w-48 bg-FFF6E4 border border-gray-300 mt-2 py-2">
+                    <li className="text-C22E2E font-extrabold">
+                      <NavLink
+                        to="/"
+                        // onClick={() => {
+                        //   window.location.href = "/";
+                        // }}
+                        className="block text-C22E2E border-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
+                      >
+                        Accueil
+                      </NavLink>
+                    </li>
                     <button onClick={toggleSousListsTwoMenu}>
                       <div className="flex items-center justify-between">
                         <div className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold pr-2">
@@ -336,34 +349,47 @@ const NavbarServices = () => {
                   showSousListsAgence ? "block" : "hidden"
                 } p-2`}
               >
-                <ul
-                  className={`toggle-menu ${
-                    showSousListsAgence ? "block" : "hidden"
-                  } p-2`}
-                >
-                  <li className="list-decimal ml-4 text-C22E2E font-extrabold">
-                    <NavLink
-                      to="/designer"
-                      // onClick={() => {
-                      //   window.location.href = "/designer";
-                      // }}
-                      className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
-                    >
-                      Designer
-                    </NavLink>
-                  </li>
-                  <li className="list-decimal ml-4 text-C22E2E font-extrabold">
-                    <NavLink
-                      to="/webdev"
-                      // onClick={() => {
-                      //   window.location.href = "/webdev";
-                      // }}
-                      className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
-                    >
-                      Web Developer
-                    </NavLink>
-                  </li>
-                </ul>
+                <li className="ml-4">
+                  <ul
+                    className={`toggle-menu ${
+                      showSousListsAgence ? "block" : "hidden"
+                    } p-2`}
+                  >
+                    <li className="list-decimal ml-4 text-C22E2E font-extrabold">
+                      <NavLink
+                        to="/"
+                        // onClick={() => {
+                        //   window.location.href = "/";
+                        // }}
+                        className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                      >
+                        Accueil
+                      </NavLink>
+                    </li>
+                    <li className="list-decimal ml-4 text-C22E2E font-extrabold">
+                      <NavLink
+                        to="/designer"
+                        // onClick={() => {
+                        //   window.location.href = "/designer";
+                        // }}
+                        className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                      >
+                        Designer
+                      </NavLink>
+                    </li>
+                    <li className="list-decimal ml-4 text-C22E2E font-extrabold">
+                      <NavLink
+                        to="/webdev"
+                        // onClick={() => {
+                        //   window.location.href = "/webdev";
+                        // }}
+                        className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                      >
+                        Web Developer
+                      </NavLink>
+                    </li>
+                  </ul>
+                </li>
               </ul>
             </NavLink>
           </li>
@@ -501,7 +527,7 @@ const NavbarServices = () => {
       </nav>
 
       <div className="pt-44 px-14 py-20 text-left sm:mt-28">
-        <h1 className="text-5xl tracking-tight font-extrabold text-FFF6E4 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
+        <h1 className="font-extrabold text-FFF6E4 text-5xl tracking-tight sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
           <motion.span
             id="all"
             initial={{ opacity: 0, y: 20 }}
@@ -513,7 +539,7 @@ const NavbarServices = () => {
           </motion.span>
         </h1>
         <div className="w-full sm:w-1/2">
-          <span className="block pt-10 text-base sm:text-4xl text-FFF6E4 font-extrabold ">
+          <span className="font-extrabold text-FFF6E4 block pt-10 text-base sm:text-4xl">
             Bénéficiez d’une expertise adaptée à vos besoins & envies.
           </span>
         </div>

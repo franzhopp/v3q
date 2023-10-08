@@ -31,10 +31,7 @@ const Section = () => {
 
   return (
     <>
-      <div id="about" className="bg-FFF6E4 pt-16 sm:pt-10 text-transparent">
-        Division invisible
-      </div>
-      <section className="bg-FFF6E4">
+      <section className="bg-FFF6E4 pt-20">
         <div className="flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
           <div className="w-80 mt-5">
             <p

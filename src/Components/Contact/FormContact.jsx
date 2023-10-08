@@ -35,7 +35,7 @@ const Form = ({ label, type, value, onChange }) => {
             <div className="mt-8">
               <p
                 data-aos="zoom-in"
-                data-aos-duration="300"
+                data-aos-duration="200"
                 className="text-black text-lg sm:text-2xl w-80 sm:w-96 ml-6 sm:ml-0"
               >
                 {`Contactez-nous aujourd'hui pour discuter de

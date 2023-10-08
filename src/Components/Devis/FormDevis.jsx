@@ -50,13 +50,13 @@ const DevisFree = ({ label, type, value, onChange }) => {
                 </span>
                 <ul>
                   <br />
-                  <li data-aos="fade-right" data-aos-duration="300">
+                  <li data-aos="fade-right" data-aos-duration="200">
                     <span className="font-extrabold">1</span>. Assurez-vous de
                     fournir des informations complètes afin que nous puissions
                     vous recontacter rapidement.
                   </li>
                   <br />
-                  <li data-aos="fade-left" data-aos-duration="300">
+                  <li data-aos="fade-left" data-aos-duration="200">
                     <span className="font-extrabold">2</span>. Renseignez le
                     service que vous souhaitez afin que nous puissions élaborer
                     votre projet en conséquence. N'hésitez pas à consulter notre
@@ -71,7 +71,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
                     avant de soumettre votre devis.
                   </li>
                   <br />
-                  <li data-aos="fade-right" data-aos-duration="300">
+                  <li data-aos="fade-right" data-aos-duration="200">
                     <span className="font-extrabold">3</span>. Indiquez vos
                     moyens budgétaires pour nous aider à déterminer les tarifs
                     qui correspondent à votre service. Avant de soumettre votre
@@ -87,7 +87,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
                     .
                   </li>
                   <br />
-                  <li data-aos="fade-left" data-aos-duration="300">
+                  <li data-aos="fade-left" data-aos-duration="200">
                     <span className="font-extrabold">4</span>. Si vous possédez
                     déjà une charte graphique, veuillez simplement répondre «{" "}
                     <span className="font-extrabold">oui</span> » et nous
@@ -325,6 +325,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
                   onBlur={handleBlur}
                 />
               </div>
+              
               <div>
                 <input
                   className="outline-none input-secondary border-gray-200 mr-1"
