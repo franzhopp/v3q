@@ -31,7 +31,7 @@ const Section = () => {
 
   return (
     <>
-      <section className="bg-FFF6E4 pt-10 sm:pt-20">
+      <section className="bg-FFF6E4 pt-16 sm:pt-20">
         <div className="flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
           {/* Step 1 */}
           <div className="min-h-500 w-80 rounded-lg pt-5">
@@ -91,7 +91,7 @@ const Section = () => {
             </div>
           </div>
         </div>
-      <ButtonContact />
+        <ButtonContact />
       </section>
     </>
   );

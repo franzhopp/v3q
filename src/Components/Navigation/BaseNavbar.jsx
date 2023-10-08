@@ -573,12 +573,12 @@ const Navbar = () => {
       </div>
       <Button />
 
-      <p className="text-center mt-16 pb-5">
+      <p className="text-center mt-16">
         <span className="text-black text-2xl font-medium sm:text-4xl mt-5 sm:mt-10 whitespace-nowrap animation-scrolling-rtl">
           DESIGN | DÉVELOPPEMENT | MARKETING DIGITAL | STRATÉGIE DE MARQUE
         </span>
       </p>
-      <div id="about" className="pb-10 sm:pb-0"></div>
+      <div id="about" className="pb-16 sm:pb-0"></div>
     </div>
   );
 };

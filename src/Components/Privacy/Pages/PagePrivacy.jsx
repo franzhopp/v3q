@@ -6,7 +6,7 @@ const PagePrivacy = () => {
     <>
       {" "}
       <PrivacyNavbar />
-      <div className="flex justify-center font-sans-serif mb-16 mt-16">
+      <div className="bg-FFF6E4 flex justify-center font-sans-serif pb-16 pt-16">
         <div className="w-full md:max-w-3xl p-4">
           <h1 className="text-2xl md:text-3xl font-semibold mb-16 text-C22E2E">
             Politique de Confidentialité des Données
