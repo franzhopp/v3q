@@ -559,7 +559,6 @@ const Navbar = () => {
       <div className="pt-56 text-center sm:mt-28 sm:pt-52">
         <h1 className="text-normal text-4xl tracking-tight font-extrabold text-FFF6E4 sm:text-8xl md:text-8xl">
           <motion.span
-            id="all"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
@@ -574,12 +573,12 @@ const Navbar = () => {
       </div>
       <Button />
 
-      <p id="all" className="text-center mt-16 pb-5">
+      <p className="text-center mt-16 pb-5">
         <span className="text-black text-2xl font-medium sm:text-4xl mt-5 sm:mt-10 whitespace-nowrap animation-scrolling-rtl">
           DESIGN | DÉVELOPPEMENT | MARKETING DIGITAL | STRATÉGIE DE MARQUE
         </span>
       </p>
-      <div id="about" className="bg-FFF6E4 pb-28 sm:pb-0"></div>
+      <div id="about" className="pb-10 sm:pb-0"></div>
     </div>
   );
 };

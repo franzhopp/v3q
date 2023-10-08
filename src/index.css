@@ -5,20 +5,20 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-    cursor: crosshair;
+html, body {
+    cursor: url('./Cursor_1.svg'), default !important;
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
 }
 
 a {
-    cursor: crosshair;
+    cursor: url('./Cursor_2.svg'), pointer !important;
 }
 
 button {
-    cursor: crosshair;
+    cursor: url('./Cursor_2.svg'), pointer;
 }
+
 
 ::-webkit-scrollbar {
     width: 10px;
