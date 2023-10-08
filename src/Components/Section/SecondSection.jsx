@@ -26,7 +26,7 @@ const SectionDuplicate = () => {
             >
               <h1 className="text-4xl number font-semibold pb-5">01</h1>
               <span className="font-extrabold">
-                Nous visons la performance.
+                Nous visons l'efficacité.
               </span>{" "}
               Nos sites internet ne sont esthétiquement pas plaisants, ils sont
               élaborés pour une identité visuelle qui contribue à votre besoin.

@@ -71,10 +71,18 @@ const SectionAgency = () => {
             >
               <h1 className="text-4xl number font-semibold pb-5">01</h1>
               <span className="font-extrabold">
-                La performance rencontre la beauté.
+                Qu'est-ce que{" "}
+                <span>
+                  <img
+                    src={ImgText}
+                    className="h-10 inline"
+                    alt="Icône Navi Studio"
+                  />
+                </span>{" "}
+                ? C'est une agence qui confectionne des sites internet.
               </span>
               {
-                " Nos sites internet ne sont pas seulement esthétiquement plaisants, ils sont optimisés pour des performances exceptionnelles. Charge rapide, navigation fluide et convivialité mobile font de nos sites la solution idéale pour convertir les visiteurs en clients."
+                " Ils sont optimisés pour des performances exceptionnelles. La convivialité est au cœur de nos créations, nous trouvons la solution pour convertir les visiteurs en clients. Pour le savoir, voir la page « Portfolio » afin de connaître toutes les réalisations."
               }
             </p>
           </div>
@@ -86,10 +94,10 @@ const SectionAgency = () => {
             >
               <h1 className="text-4xl number font-semibold pb-5">02</h1>
               <span className="font-extrabold">
-                Donnez à vos clients une expérience en ligne mémorable.
+                Donnez à vos clients une expérience unique.
               </span>
               {
-                " Nos sites internet offrent une navigation intuitive, un contenu engageant et des fonctionnalités conviviales, garantissant que chaque visiteur se sent connecté à votre marque. "
+                " Nos créations offrent une navi-gation intuitive, un contenu engageant et des fonctionnalités conviviales, garantissant que chaque visiteur se sent connecté à votre marque. "
               }
               <span className="font-extrabold">
                 Créez des relations solides grâce à une présence en ligne

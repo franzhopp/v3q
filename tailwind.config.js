@@ -6,7 +6,6 @@ export default {
   ],
   theme: {
     extend: {
-
       animation: {
         'bounce-bounce': 'button-design-formbounce 4s infinite',
       },
@@ -27,6 +26,7 @@ export default {
       backgroundColor: {
         'FFF6E4': '#FFF6E4',
         '0c3e78': '#0C3E78',
+        'pink': '#E18AB0',
       },
 
       colors: {
@@ -42,6 +42,7 @@ export default {
         'aoboshi': ['Aoboshi One', 'sans-serif'],
         'arial': ['Arial'],
         'emblema': ['Emblema One', 'cursive'],
+        'inter': ['Inter', 'sans-serif'],
       },
     },
     screens: {

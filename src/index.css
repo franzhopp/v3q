@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Emblema+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -12,16 +13,20 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
-a, label {
+a,
+label {
     cursor: url('./Cursor_2.svg'), pointer !important;
 }
 
-button, label {
+button,
+label {
     cursor: url('./Cursor_2.svg'), pointer;
 }
 
 input[type="text"],
-label, input, textarea {
+label,
+input,
+textarea {
     cursor: url('./Cursor_3.svg'), text !important;
 }
 
@@ -141,8 +146,10 @@ label, input, textarea {
     height: auto;
     display: block;
     max-width: 100%;
-    border-radius: 0px 0px 290px 0px;
-    background: url("./assets/bg-rate.png")
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0px 0px 154px 0px;
+    background-image: url("./assets/Rectangle86.png")
 }
 
 .image-navi-studio-title-contact {
