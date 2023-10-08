@@ -5,20 +5,25 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
+html,
+body {
     cursor: url('./Cursor_1.svg'), default !important;
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
 }
 
-a {
+a, label {
     cursor: url('./Cursor_2.svg'), pointer !important;
 }
 
-button {
+button, label {
     cursor: url('./Cursor_2.svg'), pointer;
 }
 
+input[type="text"],
+label, input, textarea {
+    cursor: url('./Cursor_3.svg'), text !important;
+}
 
 ::-webkit-scrollbar {
     width: 10px;
