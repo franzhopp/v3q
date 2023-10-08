@@ -6,7 +6,6 @@ const ButtonSend = () => {
       <div className="flex justify-center sm:justify-end px-32 mt-5">
         <NavLink
           to="/"
-          href="about"
           className="inline-flex items-center gap-2 rounded-full bg-black px-8 py-3 text-FFF6E4"
         >
           <span className="text-3xl mr-3 font-semibold">

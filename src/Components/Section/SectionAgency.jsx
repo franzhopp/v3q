@@ -9,13 +9,12 @@ const SectionAgency = () => {
       <div>
         <TitleAgency className="mt-20" />
       </div>
-
       <div className="h-1/3">
         <div className="flex justify-center">
           <div className="w-4/5 sm:w-1/2">
             <h3
               data-aos="fade-right"
-              className="text-center font-extrabold mt-20 text-black text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
+              className="text-center font-extrabold mt-28 text-black text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
             >
               Bienvenue chez{" "}
               <span>
@@ -63,9 +62,8 @@ const SectionAgency = () => {
       <ButtonAgency />
 
       <section className="bg-0C3E78 py-24 px-4 sm:px-6 lg:px-8">
-        <div className="mt-8 mb-10 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
-          {/* Step 1 */}
-          <div className="min-h-500 w-80 rounded-lg mt-5">
+        <div className="pt-10 pb-16 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
+          <div className="w-80 mt-5">
             <p
               data-aos="zoom-in"
               data-aos-duration="300"
@@ -80,9 +78,7 @@ const SectionAgency = () => {
               }
             </p>
           </div>
-
-          {/* Step 2 */}
-          <div className="min-h-500 w-80 rounded-lg mt-5">
+          <div className="w-80 mt-5">
             <p
               data-aos="zoom-in"
               data-aos-duration="300"
@@ -101,9 +97,7 @@ const SectionAgency = () => {
               </span>
             </p>
           </div>
-
-          {/* Step 3 */}
-          <div className="min-h-500 w-80 rounded-lg mt-5">
+          <div className="w-80 mt-5">
             <p
               data-aos="zoom-in"
               data-aos-duration="300"

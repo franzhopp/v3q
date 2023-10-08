@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { motion } from "framer-motion";
 import { LuArrowDown } from "react-icons/lu";
+import TitleHome from "../UI/Title/TitleHome.jsx";
 import Image from "../../assets/logo-5.png";
-import Button from "../UI/Button/BaseButton";
 import "../Section/FirstSection.jsx";
-import "../Homepage/Hompage";
+import "../Homepage/Hompage.jsx";
 
 const Navbar = () => {
   const [isAnimating, setIsAnimating] = useState(false);
@@ -93,7 +92,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="image-navi-studio-home sm:pb-20 mb:min-h-650 min-h-500">
+    <div className="image-navi-studio-home sm:pb-14">
       <nav
         className={`bg-FFF6E4 border-b-4 border-C22E2E h-28 items-center transition duration-300 ease-in-out fixed w-full top-0 left-0 shadow-md z-max`}
       >
@@ -555,30 +554,7 @@ const Navbar = () => {
           {openModel && <ModalSearch closeModal={setOpenModel} />} */}
         </ul>
       </nav>
-
-      <div className="pt-56 text-center sm:mt-28 sm:pt-52">
-        <h1 className="text-normal text-4xl tracking-tight font-extrabold text-FFF6E4 sm:text-8xl md:text-8xl">
-          <motion.span
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            className="block xl:inline"
-          >
-            Agence digitale
-          </motion.span>
-        </h1>
-        <span className="block xl:inline text-FFF6E4 font-extrabold">
-          PARIS X LONDON
-        </span>
-      </div>
-      <Button />
-
-      <p className="text-center mt-16">
-        <span className="text-black text-2xl font-medium sm:text-4xl mt-5 sm:mt-10 whitespace-nowrap animation-scrolling-rtl">
-          DESIGN | DÉVELOPPEMENT | MARKETING DIGITAL | STRATÉGIE DE MARQUE
-        </span>
-      </p>
-      <div id="about" className="pb-16 sm:pb-0"></div>
+      <TitleHome />
     </div>
   );
 };

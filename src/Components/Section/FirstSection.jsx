@@ -31,10 +31,12 @@ const Section = () => {
 
   return (
     <>
-      <section className="bg-FFF6E4 pt-16 sm:pt-20">
+      <div id="about" className="bg-FFF6E4 pt-16 sm:pt-10 text-transparent">
+        Division invisible
+      </div>
+      <section className="bg-FFF6E4">
         <div className="flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
-          {/* Step 1 */}
-          <div className="min-h-500 w-80 rounded-lg pt-5">
+          <div className="w-80 mt-5">
             <p
               data-aos="fade-left"
               className="mt-2 font-extrabold text-black text-4xl"
@@ -42,13 +44,11 @@ const Section = () => {
               Confiez votre image à des professionnels
             </p>
           </div>
-
-          {/* Step 2 */}
-          <div className="min-h-500 w-96 rounded-lg mt-5">
+          <div className="w-96 mt-5">
             <div className="p-6">
               <p
                 data-aos="zoom-in"
-                data-aos-duration="300"
+                data-aos-duration="200"
                 className="mt-2 text-center text-black"
               >
                 <span className="font-extrabold">
@@ -68,13 +68,11 @@ const Section = () => {
               </p>
             </div>
           </div>
-
-          {/* Step 3 */}
-          <div className="min-h-500 w-96 rounded-lg mt-5">
+          <div className="w-96 pt-5">
             <div className="p-6">
               <p
                 data-aos="zoom-in"
-                data-aos-duration="300"
+                data-aos-duration="200"
                 className="mt-2 font-extrabold text-center text-black"
               >
                 {`Votre site est votre perception.`}{" "}

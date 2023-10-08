@@ -13,7 +13,6 @@ const Button = () => {
   };
 
   useEffect(() => {
-    // Gestion de l'évènement du scroll :
     const handleScroll = () => {
       if (window.scrollY > 0) {
         setScrollNavbar(true);
@@ -37,9 +36,7 @@ const Button = () => {
           onClick={SectionToScroll}
           className="bg-FFF6E4 text-black inline-flex items-center gap-2 px-8 py-3 rounded-full"
         >
-          <span className="text-3xl mr-3 font-semibold">
-            Découvrir{" "}
-          </span>
+          <span className="text-3xl mr-3 font-semibold">Découvrir </span>
 
           <svg
             className="hidden sm:block"

@@ -61,9 +61,7 @@ label, input, textarea {
     background-image: url('./assets/bg-home.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: auto;
-    display: block;
-    max-width: 100%;
+    /* height: auto; */
 }
 
 .image-navi-studio-navbar-services {

@@ -3,13 +3,12 @@ import { NavLink } from "react-router-dom";
 const ButtonDevis = () => {
   return (
     <>
-      <div className="button-design-formbounce animate-bounce-bounce flex justify-center sm:justify-end mt-10 px-10">
+      <div className="animate-bounce-bounce flex justify-center sm:justify-end mt-10 px-10">
         <NavLink
           to="/devis"
-          href="about"
           className="inline-flex items-center gap-2 rounded-full border-black border-4 bg-FFF6E4 px-8 py-3 text-black"
         >
-          <span className="text-3xl mr-3 font-semibold">Devis gratuit </span>
+          <span className="text-3xl mr-3 font-semibold">Devis gratuit</span>
           <svg
             width="44"
             height="38"
