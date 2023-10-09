@@ -97,6 +97,34 @@ const Rate = () => {
           Marketing
         </h1>
       </div>
+      {informations.map((info, index) => (
+        <div className="flex justify-center font-inter">
+          <div className="w-96 sm:w-1/2">
+            <div className={`flex ${index % 2 === 0 ? Pink : Blue}`}>
+              <div
+                key={index}
+                className="mt-10 mb-10 ml-0 mr-0 sm:ml-5 sm:mr-5"
+              >
+                <div className="flex flex-wrap justify-center space-x-0 sm:space-x-6">
+                  <div
+                    data-aos="fade-left"
+                    className="mt-5 mb-5 text-FFF6E4 text-3xl sm:text-4xl"
+                  >
+                    {info.title}
+                  </div>
+                  <div
+                    data-aos="fade-right"
+                    className="mt-5 mb-5 text-FFF6E4 text-3xl sm:text-4xl"
+                  >
+                    {info.price}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+      <div className="pb-20"></div>
       <Footer />
     </section>
   );
