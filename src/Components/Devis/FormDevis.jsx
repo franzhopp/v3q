@@ -78,7 +78,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
                     devis, consultez notre page «{" "}
                     <span className="font-extrabold">Tarifications</span> »{" "}
                     <a
-                      href="/tarifs"
+                      href="/rate"
                       className="underline font-extrabold text-C22E2E"
                     >
                       {" "}
@@ -341,7 +341,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
 
               <div>
                 <input
-                  className="outline-none input-secondary border-gray-200 mr-1"
+                  className="outline-none input-secondary border-gray-200 mr-1 mt-8"
                   type="checkbox"
                 />
                 <span className="text-black">
