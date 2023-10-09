@@ -76,6 +76,7 @@ const Rate = () => {
       ))}
       <div className="flex justify-center pt-20">
         <svg
+          className="animate-bounce-bounce"
           xmlns="http://www.w3.org/2000/svg"
           width="83"
           height="83"
