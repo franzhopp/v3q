@@ -1,13 +1,13 @@
-import Footer from "../../Footer/Footer";
+import { useEffect } from "react";
+import { motion } from "framer-motion";
 import NavbarDiscoverWebDevelopper from "../../Navigation/NavbarDiscover/DiscoverWebDevelopperNavbar";
 import Avatar from "../../UI/Avatar/TemplateAvatar";
 import ImageLouisa from "../../../assets/picture-louisa-1.png";
-import { motion } from "framer-motion";
+import ImgText from "../../../assets/logo-4.png";
 import LogoInsta from "../../../assets/instagram2.png";
 import LogoLinkedin from "../../../assets/linkedin.png";
 import LogoSnap from "../../../assets/snapchat.png";
-import { useEffect } from "react";
-import ButtonHome from "../../UI/Button/ButtonHome";
+import Footer from "../../Footer/Footer";
 
 const DiscoverWebDeveloper = () => {
   useEffect(() => {
@@ -175,9 +175,13 @@ const DiscoverWebDeveloper = () => {
                 Créatrice d'Univers-Imaginaire, un site déployant tous mes
                 écrits. J'ai donc décidé de renforcer ma collaboration avec ma
                 UX/UI pour unir nos compétences et créer ensemble notre agence,
-                navi studio.™ Je vous invite à naviger les pages de notre site,
-                conçu avec une grande passion et un immense plaisir de vous la
-                partager.
+                <img
+                  src={ImgText}
+                  className="h-10 ml-1 inline"
+                  alt="Icône Navi Studio"
+                />{" "}
+                Je vous invite à naviger les pages de notre site, conçu avec une
+                grande passion et un immense plaisir de vous la partager. ✨
               </p>
               <br />
               <a

@@ -1,12 +1,12 @@
-import Footer from "../../Footer/Footer";
 import NavbarDiscoverDesigner from "../../Navigation/NavbarDiscover/DiscoverDesignerNavbar";
 import AvatarDesigner from "../../UI/Avatar/TemplateAvatarDesigner";
+import ImgText from "../../../assets/logo-4.png";
 import ImageMelissa from "../../../assets/picture-melissa.png";
 import LogoMelissa from "../../../assets/logo-melissa.png";
 import LogoInsta from "../../../assets/instagram2.png";
 import LogoLinkedin from "../../../assets/linkedin.png";
 import LogoSnap from "../../../assets/snapchat.png";
-import ButtonHome from "../../UI/Button/ButtonHome";
+import Footer from "../../Footer/Footer";
 
 const DiscoverDesigner = () => {
   return (
@@ -105,8 +105,14 @@ const DiscoverDesigner = () => {
               >
                 Je puise mon inspiration dans tout ce qui m'entoure ; des
                 voyages, des lectures, des images, des sons. Ce projet et cette
-                collaboration me tenait à cœur, navi studio.™ c'est un peu comme
-                un enfant né de l'amour du design et du developpement web. ♥
+                collaboration me tenait à cœur,{" "}
+                <img
+                  src={ImgText}
+                  className="h-10 inline"
+                  alt="Icône Navi Studio"
+                />{" "}
+                c'est un peu comme un enfant né de l'amour du design et du
+                developpement web. ♥
                 <br />
               </p>
             </div>
