@@ -4,12 +4,12 @@ import Artwork from "../../../assets/artworkheart.png";
 const ButtonContactServices = () => {
   return (
     <>
-      <div className="animate-bounce-bounce flex justify-end sm:justify-center mt-10 px-10">
+      <div className="animate-bounce-bounce flex justify-center mt-10 px-10">
         <NavLink
           to="/"
           className="inline-flex items-center gap-2 rounded-full border-black border-4 bg-black px-8 py-3 text-FFF6E4"
         >
-          <span className="text-3xl mr-3 font-semibold">Contactez-nous </span>
+          <span className="text-3xl mr-3 font-semibold">Contactez-nous</span>
           <svg
             width="44"
             height="38"

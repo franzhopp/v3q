@@ -5,7 +5,7 @@ import ButtonServices from "../../UI/Button/ButtonServices";
 const DetailsServices = () => {
   return (
     <section>
-      <ButtonServices />
+      {/* <ButtonServices /> */}
       <div className="">
         <div className="bg-0C3E78 py-20 px-4 sm:px-6 lg:px-8">
           <h3
@@ -129,8 +129,8 @@ const DetailsServices = () => {
             </p>
           </div>
         </div>
-        <ButtonContactServices />
       </div>
+      <ButtonContactServices />
     </section>
   );
 };
