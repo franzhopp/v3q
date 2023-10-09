@@ -341,7 +341,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
 
               <div>
                 <input
-                  className="outline-none input-secondary border-gray-200 mr-1 mt-8"
+                  className="outline-none input-secondary border-gray-200 mr-1"
                   type="checkbox"
                 />
                 <span className="text-black">
