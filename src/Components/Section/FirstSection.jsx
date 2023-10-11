@@ -33,7 +33,7 @@ const Section = () => {
     <>
       <section className="bg-FFF6E4 pt-20">
         <div className="flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
-          <div className="w-80 mt-5">
+          <div className="w-80">
             <p
               data-aos="fade-left"
               className="mt-2 font-extrabold text-black text-4xl"
@@ -41,8 +41,8 @@ const Section = () => {
               Confiez votre image à des professionnels
             </p>
           </div>
-          <div className="w-80 mt-5">
-            <div className="p-6">
+          <div className="w-96 mt-10">
+            <div className="p-5">
               <p
                 data-aos="zoom-in"
                 data-aos-duration="200"
@@ -53,7 +53,7 @@ const Section = () => {
                 </span>{" "}
                 {`Notre équipe produit des sites modernes et intuitifs qui sauront attirer l'oeil`}
                 <span className="font-extrabold">{` des visiteurs`}</span> de la
-                meilleure des manières. Venez découvrir{" "}
+                meilleure des manières ! Venez découvrir{" "}
                 <span>
                   <img
                     src={ImgText}
@@ -61,12 +61,12 @@ const Section = () => {
                     alt="Icône Navi Studio"
                   />
                 </span>{" "}
-                dès aujourd'hui !
+                dès aujourd'hui.
               </p>
             </div>
           </div>
-          <div className="w-80 mt-5">
-            <div className="p-6">
+          <div className="w-96 mt-3 sm:mt-10">
+            <div className="p-5">
               <p
                 data-aos="zoom-in"
                 data-aos-duration="200"
