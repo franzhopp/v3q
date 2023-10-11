@@ -22,13 +22,14 @@ const Footer = () => {
             </div>
           </p>
 
-          <div className="flex justify-center pt-5">
+          <div className="number text-sm text-center text-black pt-5">Inscrivez-vous à la newletter</div>
+          <div className="flex justify-center pt-1">
             <input
               type="text"
-              placeholder="Inscrivez-vous à la newletter"
-              className="rounded-tl-2xl rounded-bl-2xl rounded-tr-none rounded-br-none w-72 p-2 pb-2 outline-none border-gray-200 text-sm"
+              placeholder="Votre email*"
+              className="italic rounded-tl-2xl rounded-bl-2xl rounded-tr-none rounded-br-none w-50 p-2 pb-2 outline-none border-gray-200 text-sm"
             />
-            <button className="rounded-tl-none rounded-bl-none rounded-tr-2xl rounded-br-2xl p-2  bg-FFF6E4 text-black font-extrabold transition">
+            <button className="rounded-tl-none rounded-bl-none rounded-tr-2xl rounded-br-2xl p-2 bg-FFF6E4 text-black font-extrabold transition">
               Valider
             </button>
           </div>
