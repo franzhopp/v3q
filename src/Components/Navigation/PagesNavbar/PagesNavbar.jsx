@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { LuArrowDown } from "react-icons/lu";
+import { IoIosArrowDown } from "react-icons/io";
 import Image from "../../../assets/logo-5.png";
 import ModalSearch from "../../Modal/SearchModal.jsx";
 import "../../Section/FirstSection.jsx";

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import ModalSearch from "../../Modal/SearchModal";
 import Image from "../../../assets/logo-5.png";
-import { LuArrowDown } from "react-icons/lu";
+import { IoIosArrowDown } from "react-icons/io";
 import "../../Section/FirstSection.jsx";
 import "../../Homepage/Hompage";
 
@@ -147,7 +147,7 @@ const NavbarServices = () => {
                         <div className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold pr-2">
                           Notre équipe
                         </div>
-                        <LuArrowDown className="mt-1 text-C22E2E font-extrabold" />
+                        <IoIosArrowDown className="mt-1 text-C22E2E" />
                       </div>
                     </button>
                     <ul
@@ -384,7 +384,7 @@ const NavbarServices = () => {
               <button onClick={toggleSousListsAgence}>
                 <div className="flex items-center justify-between">
                   <div className="pr-2">Agence</div>
-                  <LuArrowDown className="mt-1" />
+                  <IoIosArrowDown className="mt-1 text-C22E2E" />
                 </div>
               </button>
 
@@ -440,7 +440,7 @@ const NavbarServices = () => {
                     <button onClick={toggleSousListsFiveMenu}>
                       <div className="flex items-center justify-between">
                         <div className="pr-2">Notre équipe</div>
-                        <LuArrowDown className="mt-1" />
+                        <IoIosArrowDown className="mt-1 text-C22E2E" />
                       </div>
                     </button>
 
@@ -483,7 +483,7 @@ const NavbarServices = () => {
               <button onClick={toggleSousListsMenu}>
                 <div className="flex items-center justify-between">
                   <div className="pr-2">Services</div>
-                  <LuArrowDown className="mt-1" />
+                  <IoIosArrowDown className="mt-1 text-C22E2E" />
                 </div>
               </button>
 
@@ -554,7 +554,7 @@ const NavbarServices = () => {
               <button onClick={toggleSousListsThreeMenu}>
                 <div className="flex items-center justify-between">
                   <div className="pr-2">FR</div>
-                  <LuArrowDown className="mt-1" />
+                  <IoIosArrowDown className="mt-1 text-C22E2E" />
                 </div>
               </button>
               <ul
