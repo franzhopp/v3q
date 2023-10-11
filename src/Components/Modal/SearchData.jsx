@@ -32,6 +32,10 @@ export const data = [
     link: "/devis",
   },
   {
+    keywords: "Portfolio",
+    link: "/portfolio",
+  },
+  {
     keywords: "Contact",
     link: "/devis",
   },
@@ -54,5 +58,13 @@ export const data = [
   {
     keywords: "Mentions légales",
     link: "/mentions",
+  },
+  {
+    keywords: "Louisa",
+    link: "/webdev",
+  },
+  {
+    keywords: "Mélissa",
+    link: "/designer",
   },
 ];

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { TbArrowBadgeDownFilled } from "react-icons/tb";
+import { IoIosArrowDown } from "react-icons/io";
 import TitleHome from "../UI/Title/TitleHome.jsx";
 import Image from "../../assets/logo-5.png";
 import ModalSearch from "../Modal/SearchModal.jsx";
@@ -164,7 +164,7 @@ const Navbar = () => {
                         <div className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold pr-2">
                           Notre équipe
                         </div>
-                        <TbArrowBadgeDownFilled className="mt-1 text-C22E2E" />
+                        <IoIosArrowDown className="mt-1 text-C22E2E" />
                       </div>
                     </button>
                     <ul
@@ -402,7 +402,7 @@ const Navbar = () => {
               <button onClick={toggleSousListsAgence}>
                 <div className="flex items-center justify-between">
                   <div className="pr-2">Agence</div>
-                  <TbArrowBadgeDownFilled className="mt-1" />
+                  <IoIosArrowDown className="mt-1" />
                 </div>
               </button>
 
@@ -458,7 +458,7 @@ const Navbar = () => {
                     <button onClick={toggleSousListsFiveMenu}>
                       <div className="flex items-center justify-between">
                         <div className="pr-2">Notre équipe</div>
-                        <TbArrowBadgeDownFilled className="mt-1" />
+                        <IoIosArrowDown className="mt-1" />
                       </div>
                     </button>
 
@@ -501,7 +501,7 @@ const Navbar = () => {
               <button onClick={toggleSousListsMenu}>
                 <div className="flex items-center justify-between">
                   <div className="pr-2">Services</div>
-                  <TbArrowBadgeDownFilled className="mt-1" />
+                  <IoIosArrowDown className="mt-1" />
                 </div>
               </button>
 
@@ -573,7 +573,7 @@ const Navbar = () => {
               <button onClick={toggleSousListsThreeMenu}>
                 <div className="flex items-center justify-between">
                   <div className="pr-2">FR</div>
-                  <TbArrowBadgeDownFilled className="mt-1" />
+                  <IoIosArrowDown className="mt-1" />
                 </div>
               </button>
               <ul
