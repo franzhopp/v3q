@@ -85,7 +85,7 @@ const Portfolio = () => {
                 className="bg-black font-extrabold text-FFF6E4 hover:bg-C22E2E  px-4 py-2 rounded-full"
                 onClick={handleNext}
               >
-                <IoIosArrowForward className="text-2xl font-extrabold" />
+                <IoIosArrowForward className="text-2xl font-extrabold " />
               </button>
             </div>
             <div className="flex justify-center mt-10">
