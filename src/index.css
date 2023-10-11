@@ -18,6 +18,9 @@ label {
     cursor: url('./Cursor_2.svg'), pointer !important;
 }
 
+span,
+path,
+svg,
 button,
 label {
     cursor: url('./Cursor_2.svg'), pointer;
@@ -218,10 +221,14 @@ textarea {
 
 /* CARDS SERVICES */
 .bg-cards {
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url("./assets/bg-cards.png");
 }
 
 .bg-cards-2 {
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url("./assets/bg-cards-2.png");
 }
 

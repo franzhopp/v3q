@@ -49,11 +49,11 @@ const Section = () => {
                 className="text-center text-black"
               >
                 <span className="font-extrabold">
-                  {`Avez-vous déjà vu une agence qui design et développe des sites rien que pour vous ?`}
+                  {`Notre agence design et développe des sites qui sauront faire briller vos projets.`}
                 </span>{" "}
-                {`Des projets élaborés à deux. Du design moderne à la fonctionnalité intuitive, nous créons des sites`}
-                <span className="font-extrabold">{` qui attirent les visiteurs`}</span>
-                . Venez découvrir{" "}
+                {`Notre équipe produit des sites modernes et intuitifs qui sauront attirer l'oeil`}
+                <span className="font-extrabold">{` des visiteurs`}</span> de la
+                meilleure des manières. Venez découvrir{" "}
                 <span>
                   <img
                     src={ImgText}
@@ -72,8 +72,7 @@ const Section = () => {
                 data-aos-duration="200"
                 className="font-extrabold text-center text-black"
               >
-                {`Votre site est votre vision.`}{" "}
-                {`Chaque site représente son histoire, son originalité. Notre équipe en conception web développe des expériences uniques qui reflètent l'identité de votre marque. Découvrez son histoire, `}
+                {`Votre site est votre vision. Chaque site raconte une histoire que notre équipe restranscrit en développant des expériences uniques qui reflètent l'identité de votre marque. Découvrez son histoire,  `}
                 <NavLink
                   href="about"
                   onClick={SectionToScroll}

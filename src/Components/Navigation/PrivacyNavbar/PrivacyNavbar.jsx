@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { LuArrowDown } from "react-icons/lu";
 import Image from "../../../assets/logo-5.png";
+import ModalSearch from "../../Modal/SearchModal.jsx";
 import "../../Section/FirstSection.jsx";
 import "../../Homepage/Hompage";
 
@@ -12,9 +13,17 @@ const PrivacyNavbar = () => {
   const [showSousListsAgence, setShowSousListsAgence] = useState(false);
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
   const [showSousListsTwoMenu, setShowSousListsTwoMenu] = useState(false);
+  const [showSousListsThreeMenu, setShowSousListsThreeMenu] = useState(false);
+  const [showSousListsFiveMenu, setShowSousListsFiveMenu] = useState(false);
   const [isMouseOnSubmenu, setIsMouseOnSubmenu] = useState(false);
+  const [openModel, setOpenModel] = useState();
+  const [searchQuery, setSearchQuery] = useState();
   const [isOpen, setIsOpen] = useState(false);
 
+  const values = [
+    { id: 1, lng: "🇬🇧", link: "/hhezyezyze" },
+    { id: 2, lng: "🇫🇷", link: "/" },
+  ];
   // Toggle → HandleMouse from list items
   const toggleMenuMobile = () => {
     setToggleMenu(!toggleMenu);
@@ -22,58 +31,35 @@ const PrivacyNavbar = () => {
     document.body.style.overflowY = "hidden";
   };
 
-  // Agence → SectionToScroll → FormSection
-  const SectionToScroll = () => {
-    const contactSection = document.getElementById("about");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
-    setIsOpen(false);
-  };
-
-  // Contact → SectionToScroll → FormContact
-  const SectionToSectionContact = () => {
-    const ContactToScroll = document.getElementById("contact");
-    if (ContactToScroll) {
-      ContactToScroll.scrollIntoView({ behavior: "smooth" });
-    }
-    setIsOpen(false);
-  };
-
-  // Rotate Animation
   const handleAnimateButtonClick = () => {
     setIsAnimating(true);
     setTimeout(() => {
       setIsAnimating(false);
     }, 1000);
   };
-
-  // The Click Toggle List item Mobile
   const toggleSousListsAgence = () => {
     setShowSousListsAgence(!showSousListsAgence);
   };
-
   const toggleSousListsMenu = () => {
     setShowSousListsMenu(!showSousListsMenu);
   };
-
   const toggleSousListsTwoMenu = () => {
     setShowSousListsTwoMenu(!showSousListsTwoMenu);
   };
-
-  // Delay list from Desktop
+  const toggleSousListsThreeMenu = () => {
+    setShowSousListsThreeMenu(!showSousListsThreeMenu);
+  };
+  const toggleSousListsFiveMenu = () => {
+    setShowSousListsFiveMenu(!showSousListsFiveMenu);
+  };
   const handleMouseEnterSubmenu = () => {
     setIsMouseOnSubmenu(true);
   };
-
   const closeSubmenuWithDelay = () => {
     setTimeout(() => {
       setShowSousListsMenu(false);
-    }, 500);
+    }, 1000);
   };
-  // -----------------------
-
-  // Instructions from SectionToScroll
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -91,12 +77,12 @@ const PrivacyNavbar = () => {
   }, []);
 
   return (
-    <div className="image-navi-studio-home h-screen sm:pb-20 mb:min-h-650 min-h-500">
-         <nav
+    <div className="image-navi-studio-navbar-services h-screen sm:pb-20 mb:min-h-650 min-h-500">
+      <nav
         className={`bg-FFF6E4 border-b-4 border-C22E2E h-28 items-center transition duration-300 ease-in-out fixed w-full top-0 left-0 shadow-md z-max`}
       >
         <div className="container mt-2 mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-24 ">
+          <div className="flex items-center justify-between h-24">
             <div className="flex items-center">
               <NavLink to="/">
                 <img
@@ -106,6 +92,7 @@ const PrivacyNavbar = () => {
                 />
               </NavLink>
             </div>
+
             <div className="flex items-center">
               <li data-aos="fade-left" className="relative group list-none">
                 <NavLink
@@ -131,6 +118,28 @@ const PrivacyNavbar = () => {
                       >
                         Accueil
                       </NavLink>
+                      <li>
+                        <NavLink
+                          to="/ethics"
+                          // onClick={() => {
+                          //   window.location.href = "/ethics";
+                          // }}
+                          className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
+                        >
+                          Nos valeurs
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          to="/services"
+                          // onClick={() => {
+                          //   window.location.href = "/services";
+                          // }}
+                          className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
+                        >
+                          Qui sommes-nous ?
+                        </NavLink>
+                      </li>
                     </li>
                     <button onClick={toggleSousListsTwoMenu}>
                       <div className="flex items-center justify-between">
@@ -140,7 +149,6 @@ const PrivacyNavbar = () => {
                         <LuArrowDown className="mt-1 text-C22E2E font-extrabold" />
                       </div>
                     </button>
-
                     <ul
                       className={`toggle-menu ${
                         showSousListsTwoMenu ? "block" : "hidden"
@@ -184,34 +192,10 @@ const PrivacyNavbar = () => {
                   Services
                 </NavLink>
                 <div className="flex justify-center">
-                  <ul className="absolute hidden group-hover:block rounded-md text-left w-48 bg-FFF6E4 border border-gray-300 mt-2 py-2">
-                    <li>
-                      <NavLink
-                        to="/ethics"
-                        // onClick={() => {
-                        //   window.location.href = "/ethics";
-                        // }}
-                        onMouseEnter={handleMouseEnterSubmenu}
-                        onMouseLeave={closeSubmenuWithDelay}
-                        className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
-                      >
-                        Nos valeurs
-                      </NavLink>
-                    </li>
+                  <ul className="absolute hidden group-hover:block bg-FFF6E4 w-48 mt-2 py-2 rounded-md border border-gray-300 text-left">
                     <li>
                       <NavLink
                         to="/services"
-                        // onClick={() => {
-                        //   window.location.href = "/services";
-                        // }}
-                        className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
-                      >
-                        Qui sommes-nous ?
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/rate"
                         // onClick={() => {
                         //   window.location.href = "/rate";
                         // }}
@@ -270,14 +254,36 @@ const PrivacyNavbar = () => {
                 Contact
               </NavLink>
 
-              <NavLink className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold">
-                FR
-              </NavLink>
+              <li data-aos="fade-left" className="relative group list-none">
+                <NavLink
+                  onMouseEnter={handleMouseEnterSubmenu}
+                  onMouseLeave={closeSubmenuWithDelay}
+                  className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
+                >
+                  FR
+                </NavLink>
+                <div className="flex justify-center">
+                  <ul className="absolute hidden group-hover:block bg-FFF6E4 mt-2 py-2 w-20 rounded-md border border-gray-300 text-center">
+                    {values.map((val) => (
+                      <li
+                        key={val.id}
+                        onMouseEnter={handleMouseEnterSubmenu}
+                        onMouseLeave={closeSubmenuWithDelay}
+                      >
+                        <NavLink
+                          to={val.link}
+                          className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
+                        >
+                          {val.lng}
+                        </NavLink>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </li>
 
-              {/* <NavLink
-                to="/"
+              <div
                 data-aos="fade-left"
-                href="contact"
                 className="text-C22E2E hover:text-0C3E78 px-6 py-2 xl:text-2xl text-base font-extrabold"
               >
                 <svg
@@ -301,13 +307,13 @@ const PrivacyNavbar = () => {
                     fill="#C22E2E"
                   />
                 </svg>
-              </NavLink>
+              </div>
               {openModel && (
                 <ModalSearch
                   closeModal={setOpenModel}
                   searchQuery={setSearchQuery}
                 />
-              )} */}
+              )}
             </div>
           </div>
         </div>
@@ -326,7 +332,6 @@ const PrivacyNavbar = () => {
           >
             <img src={Image} alt="" className="h-10 w-auto sm:h-10" />
           </NavLink>
-
           <div className="-mr-2">
             <a
               onClick={toggleMenuMobile}
@@ -372,9 +377,7 @@ const PrivacyNavbar = () => {
             </a>
           </div>
         </div>
-
-        {/* Toggle List Item */}
-        <ul className={`toggle-menu ${isOpen ? "block" : "hidden"} p-2`}>
+        <ul className={`toggle-menu ${isOpen ? "block" : "hidden"} p-3`}>
           <li>
             <NavLink className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
               <button onClick={toggleSousListsAgence}>
@@ -406,29 +409,69 @@ const PrivacyNavbar = () => {
                         Accueil
                       </NavLink>
                     </li>
-                    <li className="list-decimal ml-4 text-C22E2E font-extrabold">
+                    <li className="list-decimal ml-4">
                       <NavLink
-                        to="/designer"
+                        to="/ethics"
                         // onClick={() => {
-                        //   window.location.href = "/designer";
+                        //   window.location.href = "/ethics";
                         // }}
-                        className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                        className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
-                        Designer
+                        Nos valeurs
                       </NavLink>
                     </li>
-                    <li className="list-decimal ml-4 text-C22E2E font-extrabold">
+                    <li className="list-decimal ml-4">
                       <NavLink
-                        to="/webdev"
+                        to="/services"
                         // onClick={() => {
-                        //   window.location.href = "/webdev";
+                        //   window.location.href = "/services";
                         // }}
-                        className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                        className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
-                        Web Developer
+                        Qui sommes-nous ?
                       </NavLink>
                     </li>
                   </ul>
+                </li>
+
+                <li>
+                  <NavLink className="text-C22E2E block py-2 rounded-md text-base font-extrabold">
+                    <button onClick={toggleSousListsFiveMenu}>
+                      <div className="flex items-center justify-between">
+                        <div className="pr-2">Notre équipe</div>
+                        <LuArrowDown className="mt-1" />
+                      </div>
+                    </button>
+
+                    <ul
+                      className={`toggle-menu ${
+                        showSousListsFiveMenu ? "block" : "hidden"
+                      } p-2`}
+                    >
+                      <li className="list-decimal ml-4 text-C22E2E font-extrabold">
+                        <NavLink
+                          to="/designer"
+                          // onClick={() => {
+                          //   window.location.href = "/designer";
+                          // }}
+                          className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                        >
+                          Designer
+                        </NavLink>
+                      </li>
+                      <li className="list-decimal ml-4 text-C22E2E font-extrabold">
+                        <NavLink
+                          to="/webdev"
+                          // onClick={() => {
+                          //   window.location.href = "/webdev";
+                          // }}
+                          className="block text-C22E2E rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                        >
+                          Web Developer
+                        </NavLink>
+                      </li>
+                    </ul>
+                  </NavLink>
                 </li>
               </ul>
             </NavLink>
@@ -450,30 +493,7 @@ const PrivacyNavbar = () => {
               >
                 <li className="list-decimal ml-4">
                   <NavLink
-                    to="/ethics"
-                    // onClick={() => {
-                    //   window.location.href = "/ethics";
-                    // }}
-                    className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
-                  >
-                    Nos valeurs
-                  </NavLink>
-                </li>
-                <li className="list-decimal ml-4">
-                  <NavLink
                     to="/services"
-                    // onClick={() => {
-                    //   window.location.href = "/services";
-                    // }}
-                    className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
-                  >
-                    Qui sommes-nous ?
-                  </NavLink>
-                </li>
-
-                <li className="list-decimal ml-4">
-                  <NavLink
-                    to="/rate"
                     // onClick={() => {
                     //   window.location.href = "/rate";
                     // }}
@@ -484,13 +504,13 @@ const PrivacyNavbar = () => {
                 </li>
                 <li className="list-decimal ml-4">
                   <a
-                    to="/rate"
+                    to="/"
                     // onClick={() => {
                     //   window.location.href = "/rate";
                     // }}
                     className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
-                    Tarifications
+                    Tarification
                   </a>
                 </li>
                 <li className="list-decimal ml-4">
@@ -528,19 +548,38 @@ const PrivacyNavbar = () => {
             Contact
           </NavLink>
 
-          <NavLink
-            to="/"
-            href="translate"
-            className="mb-10 text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
-          >
-            FR
-          </NavLink>
+          <li>
+            <NavLink className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
+              <button onClick={toggleSousListsThreeMenu}>
+                <div className="flex items-center justify-between">
+                  <div className="pr-2">FR</div>
+                  <LuArrowDown className="mt-1" />
+                </div>
+              </button>
+              <ul
+                className={`toggle-menu ${
+                  showSousListsThreeMenu ? "block" : "hidden"
+                } p-2`}
+              >
+                {values.map((val) => (
+                  <li
+                    key={val.id}
+                    onMouseEnter={handleMouseEnterSubmenu}
+                    onMouseLeave={closeSubmenuWithDelay}
+                  >
+                    <NavLink
+                      to={val.link}
+                      className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                    >
+                      {val.lng}
+                    </NavLink>
+                  </li>
+                ))}
+              </ul>
+            </NavLink>
+          </li>
 
-          {/* <NavLink
-            to="/"
-            href="contact"
-            className="text-C22E2E hover:text-0C3E78 px-3 py-2 text-base font-extrabold"
-          >
+          <NavLink className="text-C22E2E hover:text-0C3E78 px-3 py-2">
             <svg
               className="h-5 ml-2"
               onClick={() => {
@@ -562,8 +601,14 @@ const PrivacyNavbar = () => {
               />
             </svg>
           </NavLink>
-          {openModel && <ModalSearch closeModal={setOpenModel} />} */}
         </ul>
+        {openModel && (
+          <ModalSearch
+            closeModal={setOpenModel}
+            searchQuery={setSearchQuery}
+            className="text-black"
+          />
+        )}
       </nav>
     </div>
   );

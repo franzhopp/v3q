@@ -1,39 +1,48 @@
-// import { useState } from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { ImCross } from "react-icons/im";
+import { data } from "./SearchData.jsx";
 
 const ModalSearch = ({ closeModal, searchQuery }) => {
-  const handleSearch = (e) => {
-    searchQuery(e.target.value);
-    console.log(handleSearch);
-  };
+  const [searchQueryText, setSearchQueryText] = useState("");
+  const navigate = useNavigate();
 
-  const handleEnterPress = (e) => {
+  const handleSearch = (e) => {
     if (e.key === "Enter") {
-      const elementFound = document.getElementById("all");
-      if (elementFound) {
-        elementFound.scrollIntoView({ behavior: "smooth" });
+      const query = searchQueryText.toLowerCase();
+      searchQuery(query);
+      const matchingPage = data.find(
+        (item) => item.keywords.toLowerCase() === query
+      );
+      if (matchingPage) {
+        navigate(matchingPage.link);
+        closeModal(false);
       }
-      console.log("test");
     }
   };
 
+  const handleReset = () => {
+    setSearchQueryText("");
+  };
+
   return (
-    <>
-      <div className="bg-FFF6E4 flex space-x-2">
-      
-        <input
-          type="text"
-          placeholder="Votre recherche..."
-          onChange={handleSearch}
-          onKeyUp={handleEnterPress}
-          className="rounded-xl p-3 outline-none border border-1-C22E2E input-bordered input-primary mb-5 ml-3 mr-3 sm:mb-0 md:ml-0"
+    <div className="bg-FFF6E4 flex space-x-2">
+      <input
+        data-aos="fade-left"
+        type="text"
+        placeholder="Votre recherche..."
+        onKeyDown={handleSearch}
+        value={searchQueryText}
+        onChange={(e) => setSearchQueryText(e.target.value)}
+        className="rounded-xl p-3 outline-none border border-1-C22E2E input-bordered input-primary mb-5 ml-3 mr-3 sm:mb-0 md:ml-0"
+      />
+      <button onClick={handleReset}>
+        <ImCross
+          onClick={() => closeModal(false)}
+          className="text-C22E2E mb-4 sm:mb-0"
         />
-        <button onClick={() => closeModal(false)}>
-          <ImCross className="text-C22E2E mb-4 sm:mb-0" />
-        </button>
-        </div>
-    
-    </>
+      </button>
+    </div>
   );
 };
 

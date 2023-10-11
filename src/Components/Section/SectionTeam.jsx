@@ -42,13 +42,12 @@ const SectionTeam = () => {
           <div className="w-4/5 sm:w-1/2">
             <p className="px-5 text-black text-center text-lg md:text-center lg:text-center sm:text-2xl mt-10 mb-16">
               <span className="font-extrabold">
-                Quoi de mieux que de connaître{" "}
+                Apprenez à connaître{" "}
                 <img
                   src={ImgText}
                   className="h-12 mr-1 inline sm:h-16"
                   alt="Icône Navi Studio"
                 />
-                ?
               </span>{" "}
               <span className="font-extrabold">
                 {"Venez parcourir entre ces lignes pour en savoir davantage"}

@@ -25,16 +25,14 @@ const SectionDuplicate = () => {
               className="mt-2 text-FFF6E4 text-arial"
             >
               <h1 className="text-4xl number font-semibold pb-5">01</h1>
-              <span className="font-extrabold">
-                Nous visons l'efficacité.
-              </span>{" "}
-              Nos sites internet ne sont esthétiquement pas plaisants, ils sont
-              élaborés pour une identité visuelle qui contribue à votre besoin.
+              <span className="font-extrabold">Efficacité.</span> Nos sites
+              internet ne sont pas seulement esthétiquement plaisants, ils sont
+              élaborés et travaillés sur-mesure pour répondre à vos besoins.
               Nous nous inspirons de vous et votre histoire,{" "}
               <span className="font-extrabold">
-                chaque histoire est différente de chaque site
-              </span>
-              . Chaque navigation font de nos sites :{" "}
+                chaque histoire est différente et chaque site l'est aussi !
+              </span>{" "}
+              Cet aspect unique et pratique font de nos réalisations digitales :{" "}
               <span className="font-extrabold">la solution</span>.
             </p>
           </div>
@@ -46,16 +44,17 @@ const SectionDuplicate = () => {
             >
               <h1 className="text-4xl number font-semibold pb-5">02</h1>
               <span className="font-extrabold">
-                Nous visons une expérience en ligne mémorable.
+                Expérience utilisateur.
               </span>{" "}
-              Nos sites internet sont créés avec une navigation fluide, des
-              contenus liés à vous, une identité visuelle qui vous est propre.{" "}
+              Nos sites internet sont dotés d'une navigation fluide, de contenus
+              uniques & personnalisés.{" "}
               <span className="font-extrabold">
-                Notre approche est axée sur le fait que votre site puisse se
-                démarquer,
-              </span>{" "}
-              créer des relations solides grâce à une présence,{" "}
-              <span className="font-extrabold">en ligne exceptionnelle</span>.
+                Notre approche est axée sur la qualité de l'expérience que les
+                utilisateurs auront en naviguant à travers votre site
+              </span>
+              , ainsi cela vous permet de bâtir des relations solides et de
+              transmettre votre message avec{" "}
+              <span className="font-extrabold">efficacité</span>.
             </p>
           </div>
           <div className="w-80 mt-5">
@@ -65,14 +64,15 @@ const SectionDuplicate = () => {
               className="mt-2 text-FFF6E4 text-arial"
             >
               <h1 className="text-4xl number font-semibold pb-5">03</h1>
-              <span className="font-extrabold">Nous visons la qualité.</span> Ce
-              que nous créons, est une interface en harmonie avec la qualité de
-              votre marque.{" "}
+              <span className="font-extrabold">Qualité.</span> Nous nous
+              engageons à fournir un travail de qualité avec comme objectif : la
+              perfection. Ce que nous créons, est une interface en harmonie avec
+              votre image de votre marque.{" "}
               <span className="font-extrabold">
                 Il est essentiel que vous soyez connectés à celle-ci, car cela
-                nous permet de mieux comprendre vos besoins
-              </span>
-              . Préparez ce qui vous semble nécessaire pour votre site, pour le
+                nous permet de mieux comprendre vos besoins.
+              </span>{" "}
+              Préparez ce qui vous semble nécessaire pour votre site, pour le
               reste ?{" "}
               <span className="font-extrabold">On s'occupe de tout</span> !
             </p>

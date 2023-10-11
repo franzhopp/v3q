@@ -20,7 +20,7 @@ const SectionAgency = () => {
               <span>
                 <img
                   src={ImgText}
-                  className="h-20 mr-1 inline"
+                  className="h-20 sm:h-28 mr-1 inline"
                   alt="Icône Navi Studio"
                 />
               </span>{" "}
@@ -32,9 +32,9 @@ const SectionAgency = () => {
         <div className="flex justify-center">
           <div className="w-4/5 sm:w-1/2">
             <p className="px-5 text-black text-arial text-center text-lg sm:text-2xl mt-10">
-              {`Agence créée par`}{" "}
+              {`Cette agence a été créé par`}{" "}
               <span className="font-extrabold text-C22E2E">{"Mélissa"}</span>
-              {" et "}
+              {" & "}
               <span className="font-extrabold text-C22E2E">Louisa</span>.{" "}
               <span className="text-black">
                 {
