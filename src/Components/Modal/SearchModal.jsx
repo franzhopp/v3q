@@ -16,7 +16,7 @@ const ModalSearch = ({ closeModal, searchQuery }) => {
       );
       if (matchingPage) {
         navigate(matchingPage.link);
-        window.location.reload();
+        // window.location.reload();
         closeModal(false);
       }
     }
@@ -35,7 +35,7 @@ const ModalSearch = ({ closeModal, searchQuery }) => {
         onKeyDown={handleSearch}
         value={searchQueryText}
         onChange={(e) => setSearchQueryText(e.target.value)}
-        className="rounded-xl p-3 outline-none border border-1-C22E2E input-bordered input-primary mb-5 ml-7 mr-3 sm:mb-0 md:ml-0"
+        className="rounded-xl p-3 outline-none border border-1-C22E2E input-bordered input-primary mb-5 ml-3 mr-3 sm:mb-0 md:ml-0"
       />
       <button onClick={handleSearch}>
         <ImCross
