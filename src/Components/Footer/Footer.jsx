@@ -22,6 +22,17 @@ const Footer = () => {
             </div>
           </p>
 
+          <div className="flex justify-center pt-5">
+            <input
+              type="text"
+              placeholder="Inscrivez-vous à la newletter"
+              className="rounded-tl-2xl rounded-bl-2xl rounded-tr-none rounded-br-none w-72 p-2 pb-2 outline-none border-gray-200 text-sm"
+            />
+            <button className="rounded-tl-none rounded-bl-none rounded-tr-2xl rounded-br-2xl p-2  bg-FFF6E4 text-black font-extrabold transition">
+              Valider
+            </button>
+          </div>
+
           <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
             <li>
               <a

@@ -1,8 +1,12 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import NavbarPages from "../../Navigation/PagesNavbar/PagesNavbar";
 import TitlePorfolio from "../../UI/Title/TitlePorfolio";
 import Image1 from "../../../assets/projetbysarahcuisine.png";
+import {
+  TbArrowBadgeLeftFilled,
+  TbArrowBadgeRightFilled,
+} from "react-icons/tb";
 import ImgDefault from "../../../assets/imgdefault.svg";
 import Footer from "../../Footer/Footer";
 
@@ -75,13 +79,13 @@ const Portfolio = () => {
                 className="bg-black font-extrabold text-FFF6E4 hover:bg-C22E2E px-4 py-2 rounded-full mr-2"
                 onClick={handlePrev}
               >
-                ❮
+                <TbArrowBadgeLeftFilled className="text-2xl" />
               </button>
               <button
                 className="bg-black font-extrabold text-FFF6E4 hover:bg-C22E2E  px-4 py-2 rounded-full"
                 onClick={handleNext}
               >
-                ❯
+                <TbArrowBadgeRightFilled className="text-2xl" />
               </button>
             </div>
             <div className="flex justify-center mt-10">

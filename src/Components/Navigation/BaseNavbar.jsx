@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { LuArrowDown } from "react-icons/lu";
+import { TbArrowBadgeDownFilled } from "react-icons/tb";
 import TitleHome from "../UI/Title/TitleHome.jsx";
 import Image from "../../assets/logo-5.png";
 import ModalSearch from "../Modal/SearchModal.jsx";
@@ -164,7 +164,7 @@ const Navbar = () => {
                         <div className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold pr-2">
                           Notre équipe
                         </div>
-                        <LuArrowDown className="mt-1 text-C22E2E font-extrabold" />
+                        <TbArrowBadgeDownFilled className="mt-1 text-C22E2E" />
                       </div>
                     </button>
                     <ul
@@ -231,7 +231,7 @@ const Navbar = () => {
                         // }}
                         className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
-                        Tarifications
+                        Tarification
                       </NavLink>
                     </li>
                     <li>
@@ -402,7 +402,7 @@ const Navbar = () => {
               <button onClick={toggleSousListsAgence}>
                 <div className="flex items-center justify-between">
                   <div className="pr-2">Agence</div>
-                  <LuArrowDown className="mt-1" />
+                  <TbArrowBadgeDownFilled className="mt-1" />
                 </div>
               </button>
 
@@ -458,7 +458,7 @@ const Navbar = () => {
                     <button onClick={toggleSousListsFiveMenu}>
                       <div className="flex items-center justify-between">
                         <div className="pr-2">Notre équipe</div>
-                        <LuArrowDown className="mt-1" />
+                        <TbArrowBadgeDownFilled className="mt-1" />
                       </div>
                     </button>
 
@@ -501,7 +501,7 @@ const Navbar = () => {
               <button onClick={toggleSousListsMenu}>
                 <div className="flex items-center justify-between">
                   <div className="pr-2">Services</div>
-                  <LuArrowDown className="mt-1" />
+                  <TbArrowBadgeDownFilled className="mt-1" />
                 </div>
               </button>
 
@@ -573,7 +573,7 @@ const Navbar = () => {
               <button onClick={toggleSousListsThreeMenu}>
                 <div className="flex items-center justify-between">
                   <div className="pr-2">FR</div>
-                  <LuArrowDown className="mt-1" />
+                  <TbArrowBadgeDownFilled className="mt-1" />
                 </div>
               </button>
               <ul
@@ -600,12 +600,12 @@ const Navbar = () => {
           </li>
 
           <NavLink className="text-C22E2E hover:text-0C3E78 px-3 py-2">
-          {openModel && (
-            <ModalSearch
-              closeModal={setOpenModel}
-              searchQuery={setSearchQuery}
-            />
-          )}
+            {openModel && (
+              <ModalSearch
+                closeModal={setOpenModel}
+                searchQuery={setSearchQuery}
+              />
+            )}
             <svg
               className="h-5 ml-2"
               onClick={() => {
