@@ -1,9 +1,9 @@
+import { useEffect, useState } from "react";
 import NavbarDevis from "../Navigation/PagesNavbar/PagesNavbar.jsx";
 import TitleDevis from "../UI/Title/TitleFormDevis.jsx";
 import ImgText from "../../assets/logo-4.png";
 import ButtonSend from "../UI/Button/ButtonSend.jsx";
 import Footer from "../Footer/Footer.jsx";
-import { useState } from "react";
 
 const DevisFree = ({ label, type, value, onChange }) => {
   const [isFocused, setIsFocused] = useState(false);
@@ -19,6 +19,124 @@ const DevisFree = ({ label, type, value, onChange }) => {
       setIsFocused(false);
     }
   };
+
+  // const [formData, setFormData] = useState({
+  //   firstname: "",
+  //   lastname: "",
+  //   email: "",
+  //   tel: "",
+  //   info1: "",
+  //   info2: "",
+  //   message: "",
+  //   privacy: "",
+  //   conditions: "",
+  // });
+
+  // const [errors, setErrors] = useState({
+  //   firstname: "",
+  //   lastname: "",
+  //   email: "",
+  //   tel: "",
+  //   info1: "",
+  //   info2: "",
+  //   message: "",
+  //   privacy: "",
+  //   conditions: "",
+  // });
+
+  // const [isLoading, setIsLoading] = useState(false);
+
+  // const handleInputChange = (event) => {
+  //   const { name, value } = event.target;
+  //   setFormData((prevData) => ({
+  //     ...prevData,
+  //     [name]: value,
+  //   }));
+  // };
+
+  // const regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+  // const handleSubmit = async (event) => {
+  //   event.preventDefault();
+
+  //   const newErrors = {};
+
+  //   if (!formData.firstname) {
+  //     newErrors.firstname = "Veuillez entrer un prénom.";
+  //   }
+
+  //   if (!formData.lastname) {
+  //     newErrors.lastname = "Veuillez entrer un nom.";
+  //   }
+
+  //   if (!formData.email || !regexEmail.test(formData.email)) {
+  //     newErrors.email = "Veuillez entrer une adresse e-mail valide.";
+  //   }
+
+  //   if (!formData.tel) {
+  //     newErrors.tel = "Veuillez entrer un numéro de téléphone.";
+  //   }
+
+  //   if (!formData.info1) {
+  //     newErrors.info1 = "Veuillez entrer une information.";
+  //   }
+
+  //   if (!formData.info2) {
+  //     newErrors.info2 = "Veuillez entrer une information.";
+  //   }
+
+  //   if (!formData.message) {
+  //     newErrors.message = "Veuillez entrer un message.";
+  //   }
+
+  //   if (!formData.privacy) {
+  //     newErrors.privacy = "Veuillez accepter la politique de confidentialité.";
+  //   }
+
+  //   if (!formData.conditions) {
+  //     newErrors.conditions = "Veuillez accepter.";
+  //   }
+
+  //   if (Object.keys(newErrors).length > 0) {
+  //     setErrors(newErrors);
+  //     return;
+  //   }
+
+  //   setIsLoading(true);
+
+  //   const emailParams = {
+  //     to_name: "Mélissa & Louisa",
+  //     firstname: formData.firstname,
+  //     lastname: formData.lastname,
+  //     email: formData.email,
+  //     tel: formData.tel,
+  //     info1: formData.info1,
+  //     info2: formData.info2,
+  //     message: formData.message,
+  //     privacy: formData.privacy,
+  //     conditions: formData.conditions,
+  //   };
+
+  //   try {
+  //     const response = await emailjs.send(
+  //       "service_564zhfb6",
+  //       "template_m6iriey",
+  //       emailParams
+  //     );
+
+  //     // console.log("Email envoyé !", response.status, response.text);
+  //     setStatus("Merci ! Votre contact a bien été envoyé.");
+  //   } catch (error) {
+  //     // console.error("Erreur d'envoi d'e-mail.", error);
+  //   }
+
+  //   setIsLoading(false);
+  // };
+
+  // useEffect(() => {
+  //   emailjs.init("E-u_BQRxlwXZIR-_Y");
+  // }, []);
+
   return (
     <section className="bg-FFF6E4 bg-contact-blur">
       <NavbarDevis />
@@ -29,10 +147,8 @@ const DevisFree = ({ label, type, value, onChange }) => {
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
           <div className="mr-10 lg:col-span-2 lg:py-12">
             <p className="text-black font-extrabold text-2xl sm:text-3xl max-w-xl ml-6 sm:ml-0">
-              Le devis revêt une importance particulière, car il ne devrait être
-              envoyé que lorsque vous êtes certain de votre demande. Avant de
-              soumettre un devis, nous vous invitons à lire attentivement ces
-              lignes.
+              Avant de soumettre un devis, nous vous invitons à lire
+              attentivement ces lignes.
             </p>
             <div className="mt-8">
               <p className="text-black text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0">

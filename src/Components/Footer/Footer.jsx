@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+import emailjs from "emailjs-com";
 import Image from "../../assets/logo-4.png";
 import LogoInsta from "../../assets/instagram2.png";
 import LogoTwitter from "../../assets/twitter.png";
@@ -5,6 +7,69 @@ import LogoLinkedin from "../../assets/linkedin.png";
 import LogoSnap from "../../assets/snapchat.png";
 
 const Footer = () => {
+  const [status, setStatus] = useState("");
+
+  const [formData, setFormData] = useState({
+    email: "",
+  });
+
+  const [errors, setErrors] = useState({
+    email: "",
+  });
+
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const newErrors = {};
+
+    if (!formData.email || !regexEmail.test(formData.email)) {
+      newErrors.email = "Veuillez entrer une adresse e-mail valide.";
+    }
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return;
+    }
+
+    setIsLoading(true);
+
+    const emailParams = {
+      to_name: "Mélissa & Louisa",
+      email: formData.email,
+    };
+
+    try {
+      const response = await emailjs.send(
+        "service_564zhfb6",
+        "template_m6iriey",
+        emailParams
+      );
+
+      // console.log("Email envoyé !", response.status, response.text);
+      setStatus("Merci ! Votre contact a bien été envoyé.");
+    } catch (error) {
+      // console.error("Erreur d'envoi d'e-mail.", error);
+    }
+
+    setIsLoading(false);
+  };
+
+  useEffect(() => {
+    emailjs.init("E-u_BQRxlwXZIR-_Y");
+  }, []);
+
   return (
     <>
       <footer className="bg-C22E2E">
@@ -22,17 +87,38 @@ const Footer = () => {
             </div>
           </p>
 
-          <div className="number text-sm text-center text-black pt-5">Inscrivez-vous à la newletter</div>
-          <div className="flex justify-center pt-1">
-            <input
-              type="text"
-              placeholder="Votre email*"
-              className="italic rounded-tl-2xl rounded-bl-2xl rounded-tr-none rounded-br-none w-50 p-2 pb-2 outline-none border-gray-200 text-sm"
-            />
-            <button className="rounded-tl-none rounded-bl-none rounded-tr-2xl rounded-br-2xl p-2 bg-FFF6E4 text-black font-extrabold transition">
-              Valider
-            </button>
+          <div className="number text-sm text-center text-black pt-5">
+            Inscrivez-vous à la newletter
           </div>
+
+          <form onSubmit={handleSubmit}>
+            <div className="flex justify-center pt-1">
+              <input
+                type="text"
+                placeholder="Votre email*"
+                className={`italic rounded-tl-2xl rounded-bl-2xl rounded-tr-none rounded-br-none w-50 p-2 pb-2 outline-none border-gray-200 text-sm ${
+                  errors.email ? "border-red-700" : ""
+                }`}
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleInputChange}
+              />
+              <button
+                onSubmit={handleSubmit}
+                className="rounded-tl-none rounded-bl-none rounded-tr-2xl rounded-br-2xl p-2 bg-FFF6E4 text-black font-extrabold transition"
+              >
+                Valider
+              </button>
+            </div>
+            <div className="flex justify-center pt-1">
+              {errors.email && (
+                <p className="text-FFF6E4 text-sm">
+                  {errors.email}
+                </p>
+              )}
+            </div>
+          </form>
 
           <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
             <li>
