@@ -81,7 +81,7 @@ const Footer = () => {
           <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
             <div className="text-center text-black mt-8 font-semibold">
               &copy; Ce site web a été imaginé et mis en œuvre par{" "}
-              <span className="text-FFF6E4">Mélissa</span> et{" "}
+              <span className="text-FFF6E4">Mélissa</span> &{" "}
               <span className="text-FFF6E4">Louisa</span>. Tous droits réservés
               en vertu de la législation sur les droits d'auteur. Toute
               reproduction est interdite.
