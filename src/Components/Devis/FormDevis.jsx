@@ -216,7 +216,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
                     moyens budgétaires pour nous aider à déterminer les tarifs
                     qui correspondent à votre service. Avant de soumettre votre
                     devis, consultez notre page «{" "}
-                    <span className="font-extrabold">Tarifications</span> »{" "}
+                    <span className="font-extrabold">Tarification</span> »{" "}
                     <a
                       href="/rate"
                       className="underline font-extrabold text-C22E2E"
