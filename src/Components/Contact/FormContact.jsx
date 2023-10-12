@@ -90,11 +90,13 @@ const Form = ({ label, type, value, onChange }) => {
     }
 
     if (!formData.privacy) {
-      newErrors.privacy = "Veuillez accepter la politique de confidentialité.";
+      newErrors.privacy =
+        "Vous devez accepter la politique de Confidentialité pour continuer.";
     }
 
     if (!formData.conditions) {
-      newErrors.conditions = "Veuillez accepter.";
+      newErrors.conditions =
+        "Vous devez accepter la politique de Condition d'Utilisation.";
     }
 
     if (Object.keys(newErrors).length > 0) {
@@ -153,8 +155,7 @@ const Form = ({ label, type, value, onChange }) => {
 
             <div className="mt-8">
               <p
-                data-aos="zoom-in"
-                data-aos-duration="200"
+                data-aos="fade-left"
                 className="text-black text-lg sm:text-2xl w-80 sm:w-96 ml-6 sm:ml-0"
               >
                 {`Contactez-nous aujourd'hui pour discuter de

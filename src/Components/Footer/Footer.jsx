@@ -80,10 +80,11 @@ const Footer = () => {
 
           <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
             <div className="text-center text-black mt-8 font-semibold">
-              &copy; Designé, développé par{" "}
+              &copy; Ce site web a été imaginé et mis en œuvre par{" "}
               <span className="text-FFF6E4">Mélissa</span> et{" "}
-              <span className="text-FFF6E4">Louisa</span>.{" "}
-              {`Les droits d'auteur de ce contenu sont protégés par la loi.`}
+              <span className="text-FFF6E4">Louisa</span>. Tous droits réservés
+              en vertu de la législation sur les droits d'auteur. Toute
+              reproduction est interdite.
             </div>
           </p>
 
@@ -113,9 +114,7 @@ const Footer = () => {
             </div>
             <div className="flex justify-center pt-1">
               {errors.email && (
-                <p className="text-FFF6E4 text-sm">
-                  {errors.email}
-                </p>
+                <p className="text-FFF6E4 text-sm">{errors.email}</p>
               )}
             </div>
           </form>
@@ -133,9 +132,9 @@ const Footer = () => {
             <li>
               <a
                 className="text-black transition hover:text-0C3E78"
-                href="/services"
+                href="/ethics"
               >
-                Services
+                Nos Valeurs
               </a>
             </li>
             <li>
@@ -147,13 +146,37 @@ const Footer = () => {
               </a>
             </li>
             <li>
+              <a
+                className="text-black transition hover:text-0C3E78"
+                href="/designer"
+              >
+                Designer
+              </a>
+            </li>
+            <li>
+              <a
+                className="text-black transition hover:text-0C3E78"
+                href="/webdev"
+              >
+                Web Developer
+              </a>
+            </li>
+            <li>
+              <a
+                className="text-black transition hover:text-0C3E78"
+                href="/services"
+              >
+                Services
+              </a>
+            </li>
+            <li>
               <a className="text-black transition hover:text-0C3E78" href="/">
                 Prestations
               </a>
             </li>
             <li>
               <a className="text-black transition hover:text-0C3E78" href="/">
-                Tarifications
+                Tarification
               </a>
             </li>
             <li>
@@ -182,22 +205,7 @@ const Footer = () => {
                 🇬🇧 / <a href="/">🇫🇷</a>
               </a>
             </li>
-            <li>
-              <a
-                className="text-black transition hover:text-0C3E78"
-                href="/designer"
-              >
-                Designer
-              </a>
-            </li>
-            <li>
-              <a
-                className="text-black transition hover:text-0C3E78"
-                href="/webdev"
-              >
-                Web Developer
-              </a>
-            </li>
+
             <li>
               <a
                 className="text-black transition hover:text-0C3E78"

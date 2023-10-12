@@ -24,7 +24,7 @@ const SectionDuplicate = () => {
               data-aos-duration="200"
               className="mt-2 text-FFF6E4 text-arial"
             >
-              <h1 className="text-4xl number font-semibold pb-5">01</h1>
+              <h1 className="text-4xl number font-semibold pb-5">01.</h1>
               <span className="font-extrabold">Efficacité.</span> Nos sites
               internet ne sont pas seulement esthétiquement plaisants, ils sont
               élaborés et travaillés sur-mesure pour répondre à vos besoins.
@@ -42,7 +42,7 @@ const SectionDuplicate = () => {
               data-aos-duration="200"
               className="mt-2 text-FFF6E4 text-arial"
             >
-              <h1 className="text-4xl number font-semibold pb-5">02</h1>
+              <h1 className="text-4xl number font-semibold pb-5">02.</h1>
               <span className="font-extrabold">
                 Expérience utilisateur.
               </span>{" "}
@@ -52,8 +52,8 @@ const SectionDuplicate = () => {
                 Notre approche est axée sur la qualité de l'expérience que les
                 utilisateurs auront en naviguant à travers votre site
               </span>
-              , ainsi cela vous permet de bâtir des relations solides et de
-              transmettre votre message avec{" "}
+              , cela vous permet de bâtir des relations solides, de transmettre
+              votre message avec{" "}
               <span className="font-extrabold">efficacité</span>.
             </p>
           </div>
@@ -63,18 +63,16 @@ const SectionDuplicate = () => {
               data-aos-duration="200"
               className="mt-2 text-FFF6E4 text-arial"
             >
-              <h1 className="text-4xl number font-semibold pb-5">03</h1>
+              <h1 className="text-4xl number font-semibold pb-5">03.</h1>
               <span className="font-extrabold">Qualité.</span> Nous nous
-              engageons à fournir un travail de qualité avec comme objectif : la
-              perfection. Ce que nous créons, est une interface en harmonie avec
-              votre image de votre marque.{" "}
+              engageons à fournir un travail de qualité. Ce que nous créons, est
+              une interface en harmonie avec votre image de votre marque.{" "}
               <span className="font-extrabold">
-                Il est essentiel que vous soyez connectés à celle-ci, car cela
-                nous permet de mieux comprendre vos besoins.
+                Soyez connectés à celle-ci, car cela nous permet de mieux
+                comprendre vos besoins.
               </span>{" "}
               Préparez ce qui vous semble nécessaire pour votre site, pour le
-              reste ?{" "}
-              <span className="font-extrabold">On s'occupe de tout</span> !
+              reste ? On s'occupe de tout.
             </p>
           </div>
         </div>

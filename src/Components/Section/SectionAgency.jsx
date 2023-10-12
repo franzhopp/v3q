@@ -69,7 +69,7 @@ const SectionAgency = () => {
               data-aos-duration="300"
               className="mt-2 text-FFF6E4 text-arial"
             >
-              <h1 className="text-4xl number font-semibold pb-5">01</h1>
+              <h1 className="text-4xl number font-semibold pb-5">04.</h1>
               <span className="font-extrabold">
                 Qu'est-ce que{" "}
                 <span>
@@ -82,7 +82,7 @@ const SectionAgency = () => {
                 ? C'est une agence qui confectionne des sites internet.
               </span>
               {
-                " Ils sont optimisés pour des performances exceptionnelles. La convivialité est au cœur de nos créations, nous trouvons la solution pour convertir les visiteurs en clients. Pour le savoir, voir la page « Portfolio » afin de connaître toutes les réalisations."
+                " Ils sont optimisés pour des performances exceptionnelles. La convivialité est au cœur de nos créations, nous trouvons la solution pour convertir les visiteurs en clients. Voir la page « Portfolio » afin de connaître toutes les réalisations."
               }
             </p>
           </div>
@@ -92,7 +92,7 @@ const SectionAgency = () => {
               data-aos-duration="300"
               className="mt-2 text-FFF6E4 text-arial"
             >
-              <h1 className="text-4xl number font-semibold pb-5">02</h1>
+              <h1 className="text-4xl number font-semibold pb-5">05.</h1>
               <span className="font-extrabold">
                 Donnez à vos clients une expérience unique.
               </span>
@@ -111,7 +111,7 @@ const SectionAgency = () => {
               data-aos-duration="300"
               className="mt-2 text-FFF6E4 text-arial"
             >
-              <h1 className="text-4xl number font-semibold pb-5">03</h1>
+              <h1 className="text-4xl number font-semibold pb-5">06.</h1>
               <span className="font-extrabold">
                 {`Un site internet n'est pas seulement une dépense.`}
               </span>

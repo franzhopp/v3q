@@ -176,7 +176,7 @@ const EthicsPage = () => {
                 data-aos-duration="300"
                 className="mt-2 text-FFF6E4 text-arial"
               >
-                <h1 className="text-4xl number font-semibold pb-5">01</h1>
+                <h1 className="text-4xl number font-semibold pb-5">07.</h1>
                 <span className="font-extrabold">
                   La performance rencontre la beauté.
                 </span>
@@ -193,7 +193,7 @@ const EthicsPage = () => {
                 data-aos-duration="300"
                 className="mt-2 text-FFF6E4 text-arial"
               >
-                <h1 className="text-4xl number font-semibold pb-5">02</h1>
+                <h1 className="text-4xl number font-semibold pb-5">08.</h1>
                 <span className="font-extrabold">
                   Donnez à vos clients une expérience en ligne mémorable.
                 </span>
@@ -214,7 +214,7 @@ const EthicsPage = () => {
                 data-aos-duration="300"
                 className="mt-2 text-FFF6E4 text-arial"
               >
-                <h1 className="text-4xl number font-semibold pb-5">03</h1>
+                <h1 className="text-4xl number font-semibold pb-5">09.</h1>
                 <span className="font-extrabold">
                   {`Un site internet n'est pas seulement une dépense.`}
                 </span>

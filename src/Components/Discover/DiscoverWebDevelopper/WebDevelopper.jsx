@@ -150,7 +150,7 @@ const DiscoverWebDeveloper = () => {
                 data-aos="fade-left"
                 className="text-left text-FFF6E4 font-extrabold"
               >
-                Pour commencer, mon voyage dans le développement web a débuté en
+                Pour commencer, mon voyage dans le Développement web a débuté en
                 2021, alors que j'étudiais en France. Le choix de me lancer dans
                 la programmation est survenu de manière inattendue. Au départ,
                 je n'avais aucune intention de me plonger dans ce domaine !
@@ -163,7 +163,7 @@ const DiscoverWebDeveloper = () => {
                 Cependant, ma rencontre avec React a été un véritable coup de
                 cœur, et depuis, je consacre une grande partie de mon temps à
                 travailler avec cette technologie. Parallèlement, je nourris un
-                vif intérêt pour le design & le Marketing.
+                vif intérêt pour le Design & le Marketing.
               </p>
               <br />
               <br />
@@ -171,7 +171,7 @@ const DiscoverWebDeveloper = () => {
                 data-aos="fade-left"
                 className="text-left text-FFF6E4 font-extrabold"
               >
-                L'écriture est une autre passion qui m'anime, elle m'inspire.
+                L'Écriture est une autre passion qui m'anime, elle m'inspire.
                 Créatrice d'Univers-Imaginaire, un site déployant tous mes
                 écrits. J'ai donc décidé de renforcer ma collaboration avec ma
                 UX/UI pour unir nos compétences et créer ensemble notre agence,
