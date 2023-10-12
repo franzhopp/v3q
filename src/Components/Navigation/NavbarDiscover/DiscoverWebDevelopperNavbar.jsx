@@ -488,7 +488,7 @@ const NavbarDiscoverWebDevelopper = () => {
                 </li>
                 <li className="list-decimal ml-4">
                   <a
-                    to="/"
+                    to="/rate"
                     // onClick={() => {
                     //   window.location.href = "/rate";
                     // }}
