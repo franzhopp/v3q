@@ -19,7 +19,7 @@ const TitleHome = () => {
       <BaseButton />
 
       <div>
-        <p className="text-center pt-20">
+        <p className="text-center pt-24">
           <span className="whitespace-nowrap animation-scrolling-rtl text-black text-2xl sm:text-4xl">
             DESIGN | DÉVELOPPEMENT | MARKETING DIGITAL | STRATÉGIE DE MARQUE
           </span>
