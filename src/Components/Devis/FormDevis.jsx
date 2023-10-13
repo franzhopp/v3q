@@ -114,8 +114,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
     }
 
     if (!formData.conditions) {
-      newErrors.conditions =
-        "Vous devez accepter la condition d'utilisation.";
+      newErrors.conditions = "Vous devez accepter la condition d'utilisation.";
     }
 
     if (Object.keys(newErrors).length > 0) {

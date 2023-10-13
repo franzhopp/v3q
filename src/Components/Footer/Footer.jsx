@@ -8,16 +8,12 @@ import LogoSnap from "../../assets/snapchat.png";
 
 const Footer = () => {
   const [status, setStatus] = useState("");
-
   const [formData, setFormData] = useState({
     email: "",
   });
-
   const [errors, setErrors] = useState({
     email: "",
   });
-
-  const [isLoading, setIsLoading] = useState(false);
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -58,7 +54,7 @@ const Footer = () => {
       );
 
       // console.log("Email envoyé !", response.status, response.text);
-      setStatus("Merci ! Votre contact a bien été envoyé.");
+      setStatus("Merci, vous êtes inscrit à la newletter.");
     } catch (error) {
       // console.error("Erreur d'envoi d'e-mail.", error);
     }
@@ -75,7 +71,7 @@ const Footer = () => {
       <footer className="bg-C22E2E">
         <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="flex justify-center">
-            <img src={Image} alt="" className="h-auto mx-auto max-w-xs" />
+            <img src={Image} alt="Icône Navi Studio" className="h-auto mx-auto max-w-xs" />
           </div>
 
           <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
@@ -87,11 +83,9 @@ const Footer = () => {
               reproduction est interdite.
             </div>
           </p>
-
           <div className="number text-sm text-center text-black pt-5">
             Inscrivez-vous à la newletter
           </div>
-
           <form onSubmit={handleSubmit}>
             <div className="flex justify-center pt-1">
               <input
@@ -116,6 +110,9 @@ const Footer = () => {
               {errors.email && (
                 <p className="text-FFF6E4 text-sm">{errors.email}</p>
               )}
+            </div>
+            <div className="text-center text-sm text-FFF6E4">
+              {status && <p>{status}</p>}
             </div>
           </form>
 

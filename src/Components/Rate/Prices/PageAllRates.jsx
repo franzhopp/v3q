@@ -6,7 +6,7 @@ const Rate = () => {
   const Pink = "bg-pink";
   const Blue = "bg-0c3e78";
 
-  const informations = [
+  const InformationsSitesWeb = [
     {
       title: "Site vitrine",
       price: "à partir de 650€*",
@@ -33,6 +33,17 @@ const Rate = () => {
     },
   ];
 
+  const InformationsMarketing = [
+    {
+      title: "Startégie de marque",
+      price: "à partir de 250€*",
+    },
+    {
+      title: "Réseaux sociaux & SEO",
+      price: "à partir de 150€*",
+    },
+  ];
+
   return (
     <section className="bg-FFF6E4">
       <NavbarPages />
@@ -47,7 +58,7 @@ const Rate = () => {
           Sites Web
         </h1>
       </div>
-      {informations.map((info, index) => (
+      {InformationsSitesWeb.map((info, index) => (
         <div className="flex justify-center font-inter">
           <div className="rounded-lg w-96 sm:w-1/2 px-5">
             <div className={`flex ${index % 2 === 0 ? Pink : Blue}`}>
@@ -55,7 +66,7 @@ const Rate = () => {
                 key={index}
                 className="mt-10 mb-10 ml-0 mr-0 sm:ml-5 sm:mr-5"
               >
-                <div className="flex flex-wrap justify-center space-x-0 sm:space-x-6">
+                <div className="flex flex-wrap justify-center text-center space-x-0 sm:space-x-6">
                   <div
                     data-aos="fade-left"
                     className="mt-5 mb-5 text-FFF6E4 text-3xl sm:text-4xl"
@@ -97,7 +108,7 @@ const Rate = () => {
           Marketing
         </h1>
       </div>
-      {informations.map((info, index) => (
+      {InformationsMarketing.map((info, index) => (
         <div className="flex justify-center font-inter">
           <div className="w-96 sm:w-1/2 px-5 rounded-lg">
             <div className={`flex ${index % 2 === 0 ? Pink : Blue}`}>
@@ -105,7 +116,7 @@ const Rate = () => {
                 key={index}
                 className="mt-10 mb-10 ml-0 mr-0 sm:ml-5 sm:mr-5"
               >
-                <div className="flex flex-wrap justify-center space-x-0 sm:space-x-6">
+                <div className="flex flex-wrap  justify-center text-center space-x-0 sm:space-x-6">
                   <div
                     data-aos="fade-left"
                     className="mt-5 mb-5 text-FFF6E4 text-3xl sm:text-4xl"
