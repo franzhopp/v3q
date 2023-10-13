@@ -100,6 +100,7 @@ const Footer = () => {
                 onChange={handleInputChange}
               />
               <button
+                type="submit"
                 onSubmit={handleSubmit}
                 className="rounded-tl-none rounded-bl-none rounded-tr-2xl rounded-br-2xl p-2 bg-FFF6E4 text-black font-extrabold transition"
               >
