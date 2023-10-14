@@ -60,7 +60,7 @@ const Rate = () => {
       </div>
       {InformationsSitesWeb.map((info, index) => (
         <div className="flex justify-center font-inter">
-          <div className="rounded-lg w-96 sm:w-1/2 px-5">
+          <div className="w-96 sm:w-1/2 px-5">
             <div className={`flex ${index % 2 === 0 ? Pink : Blue}`}>
               <div
                 key={index}
@@ -110,7 +110,7 @@ const Rate = () => {
       </div>
       {InformationsMarketing.map((info, index) => (
         <div className="flex justify-center font-inter">
-          <div className="w-96 sm:w-1/2 px-5 rounded-lg">
+          <div className="w-96 sm:w-1/2 px-5">
             <div className={`flex ${index % 2 === 0 ? Pink : Blue}`}>
               <div
                 key={index}

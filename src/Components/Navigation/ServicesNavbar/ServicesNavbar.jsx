@@ -504,7 +504,7 @@ const NavbarServices = () => {
                   </NavLink>
                 </li>
                 <li className="list-decimal ml-4">
-                  <a
+                  <NavLink
                     to="/rate"
                     // onClick={() => {
                     //   window.location.href = "/rate";
@@ -512,7 +512,7 @@ const NavbarServices = () => {
                     className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Tarification
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="list-decimal ml-4">
                   <NavLink
@@ -619,7 +619,6 @@ const NavbarServices = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="block"
           >
             Découvrez nos talents
           </motion.span>
