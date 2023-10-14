@@ -177,7 +177,7 @@ const DiscoverWebDeveloper = () => {
                 UX/UI pour unir nos compétences et créer ensemble notre agence,
                 <img
                   src={ImgText}
-                  className="h-10 ml-1 inline"
+                  className="h-6 ml-1 inline"
                   alt="Icône Navi Studio"
                 />{" "}
                 Je vous invite à naviger les pages de notre site, conçu avec une

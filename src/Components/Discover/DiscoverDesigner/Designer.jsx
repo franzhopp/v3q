@@ -108,7 +108,7 @@ const DiscoverDesigner = () => {
                 collaboration me tenait à cœur,{" "}
                 <img
                   src={ImgText}
-                  className="h-10 inline"
+                  className="h-6 inline"
                   alt="Icône Navi Studio"
                 />{" "}
                 c'est un peu comme un enfant né de l'amour du design et du
