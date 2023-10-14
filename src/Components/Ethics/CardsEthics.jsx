@@ -12,7 +12,7 @@ const EthicsPage = () => {
           <div class="mt-5 flex flex-wrap justify-center space-x-0 sm:space-x-6">
             <div class="p-6 rounded-lg shadow-md">
               <h2
-                data-aos="fade-down-left"
+                data-aos="fade-left"
                 class="text-7xl number text-E18AB0 font-bold mb-2"
               >
                 01
@@ -21,7 +21,11 @@ const EthicsPage = () => {
                 Engagement & Confiance
               </p>
               <div className="w-72">
-                <p className="text-black">
+                <p
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                  className="text-black"
+                >
                   Nous prenons soin de nos collaborateurs et de notre
                   entreprise,
                   <span className="font-extrabold">
@@ -53,7 +57,11 @@ const EthicsPage = () => {
               </p>
 
               <div className="w-72">
-                <p className="text-black">
+                <p
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                  className="text-black"
+                >
                   Nous nous consacrons entièrement au succès et au développement
                   à long terme de nos clients et collaborateurs,{" "}
                   <span className="font-extrabold">
@@ -67,14 +75,18 @@ const EthicsPage = () => {
 
             <div class="p-6 rounded-lg shadow-md">
               <h2
-                data-aos="fade-down-right"
+                data-aos="fade-left"
                 class="text-7xl number text-E18AB0 font-bold mb-2"
               >
                 03
               </h2>
               <p className="text-black text-xl font-extrabold mb-5">Passion</p>
               <div className="w-72">
-                <p className="text-black">
+                <p
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                  className="text-black"
+                >
                   Nous aimons ce que nous faisons et ce que nous représentons.
                   Nous nous consacrons entièrement{" "}
                   <span className="font-extrabold">
@@ -99,7 +111,7 @@ const EthicsPage = () => {
         <div className="flex justify-center">
           <div className="text-center mt-20">
             <h1
-              data-aos="fade-left"
+              data-aos="fade-right"
               className="text-black font-extrabold text-2xl sm:text-4xl mb-10"
             >
               Environnement de travail
@@ -107,8 +119,8 @@ const EthicsPage = () => {
             <div className="flex justify-center">
               <div className="w-full sm:w-1/3 sm:px-0 px-10">
                 <p
-                  data-aos="zoom-in"
-                  data-aos-duration="300"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
                   className="text-black text-center"
                 >
                   Notre environnement de travail est{" "}
@@ -126,8 +138,8 @@ const EthicsPage = () => {
                 </p>
                 <div className="text-transparent">Division invisible</div>
                 <p
-                  data-aos="zoom-in"
-                  data-aos-duration="300"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
                   className="text-black text-center"
                 >
                   En somme, notre environnement de travail est bien plus qu'un
@@ -172,8 +184,8 @@ const EthicsPage = () => {
             {/* Step 1 */}
             <div className="min-h-500 w-80 rounded-lg mt-5">
               <p
-                data-aos="zoom-in"
-                data-aos-duration="300"
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
                 className="mt-2 text-FFF6E4 text-arial"
               >
                 <h1 className="text-4xl number font-semibold pb-5">07.</h1>
@@ -189,8 +201,8 @@ const EthicsPage = () => {
             {/* Step 2 */}
             <div className="min-h-500 w-80 rounded-lg mt-5">
               <p
-                data-aos="zoom-in"
-                data-aos-duration="300"
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
                 className="mt-2 text-FFF6E4 text-arial"
               >
                 <h1 className="text-4xl number font-semibold pb-5">08.</h1>
@@ -207,11 +219,10 @@ const EthicsPage = () => {
               </p>
             </div>
 
-            {/* Step 3 */}
             <div className="min-h-500 w-80 rounded-lg mt-5">
               <p
-                data-aos="zoom-in"
-                data-aos-duration="300"
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
                 className="mt-2 text-FFF6E4 text-arial"
               >
                 <h1 className="text-4xl number font-semibold pb-5">09.</h1>
@@ -271,8 +282,8 @@ const EthicsPage = () => {
             <div className="flex justify-center">
               <div className="w-full sm:w-1/3 sm:px-0 px-10">
                 <p
-                  data-aos="zoom-in"
-                  data-aos-duration="300"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
                   className="text-FFF6E4 text-center"
                 >
                   Notre environnement de travail est{" "}
@@ -290,8 +301,8 @@ const EthicsPage = () => {
                 </p>
                 <div className="text-transparent">Division invisible</div>
                 <p
-                  data-aos="zoom-in"
-                  data-aos-duration="300"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
                   className="text-FFF6E4 text-center"
                 >
                   En somme, notre environnement de travail est bien plus qu'un

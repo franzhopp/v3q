@@ -169,12 +169,19 @@ const DevisFree = ({ label, type, value, onChange }) => {
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
           <div className="mr-10 lg:col-span-2 lg:py-12">
-            <p className="text-black font-extrabold text-2xl sm:text-3xl max-w-xl ml-6 sm:ml-0">
+            <p
+              data-aos="fade-right"
+              className="text-black font-extrabold text-2xl sm:text-3xl max-w-xl ml-6 sm:ml-0"
+            >
               Avant de soumettre un devis, nous vous invitons à lire
               attentivement ces lignes.
             </p>
             <div className="mt-8">
-              <p className="text-black text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0">
+              <p
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+                className="text-black text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0"
+              >
                 Le devis permet de sécuriser le traitement de votre demande.
                 Prenez le temps de bien comprendre les questions qui vous sont
                 posées et veillez à fournir des réponses claires. Nous ne
@@ -182,20 +189,31 @@ const DevisFree = ({ label, type, value, onChange }) => {
                 illisibles.{" "}
               </p>
               <br />
-              <p className="text-black mb-5 text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0">
+              <p
+                data-aos="fade-left"
+                className="text-black mb-5 text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0"
+              >
                 <span className="font-extrabold underline">
                   Veuillez prendre en considération ces directives essentielles
                   :
                 </span>
                 <ul>
                   <br />
-                  <li data-aos="fade-right" data-aos-duration="200">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="200"
+                  >
                     <span className="font-extrabold">1</span>. Assurez-vous de
                     fournir des informations complètes afin que nous puissions
                     vous recontacter rapidement.
                   </li>
                   <br />
-                  <li data-aos="fade-left" data-aos-duration="200">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="200"
+                  >
                     <span className="font-extrabold">2</span>. Renseignez le
                     service que vous souhaitez afin que nous puissions élaborer
                     votre projet en conséquence. N'hésitez pas à consulter notre
@@ -210,7 +228,11 @@ const DevisFree = ({ label, type, value, onChange }) => {
                     avant de soumettre votre devis.
                   </li>
                   <br />
-                  <li data-aos="fade-right" data-aos-duration="200">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="200"
+                  >
                     <span className="font-extrabold">3</span>. Indiquez vos
                     moyens budgétaires pour nous aider à déterminer les tarifs
                     qui correspondent à votre service. Avant de soumettre votre
@@ -226,7 +248,11 @@ const DevisFree = ({ label, type, value, onChange }) => {
                     .
                   </li>
                   <br />
-                  <li data-aos="fade-left" data-aos-duration="200">
+                  <li
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="200"
+                  >
                     <span className="font-extrabold">4</span>. Si vous possédez
                     déjà une charte graphique, veuillez simplement répondre «{" "}
                     <span className="font-extrabold">oui</span> » et nous

@@ -170,7 +170,7 @@ const DiscoverDesigner = () => {
           <div className="flex flex-row space-x-10 list-none mt-20">
             <li>
               <a
-                href="https://www.instagram.com/navistudio.fr/"
+                href="https://www.instagram.com/navistudio.uk/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className=""

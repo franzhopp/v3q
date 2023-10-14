@@ -147,7 +147,10 @@ const Form = ({ label, type, value, onChange }) => {
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
           <div className="mr-10 lg:col-span-2 lg:py-12">
-            <p className="text-black font-extrabold text-2xl sm:text-4xl max-w-xl ml-6 sm:ml-0">
+            <p
+              data-aos="fade-left"
+              className="text-black font-extrabold text-2xl sm:text-4xl max-w-xl ml-6 sm:ml-0"
+            >
               Si vous recherchez une agence digitale qui peut donner vie à votre
               projet numérique, qui excelle dans le design et le développement
               web, ne cherchez pas plus loin.
@@ -155,7 +158,8 @@ const Form = ({ label, type, value, onChange }) => {
 
             <div className="mt-8">
               <p
-                data-aos="fade-left"
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
                 className="text-black text-lg sm:text-2xl w-80 sm:w-96 ml-6 sm:ml-0"
               >
                 {`Contactez-nous aujourd'hui pour discuter de

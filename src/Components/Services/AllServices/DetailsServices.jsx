@@ -10,15 +10,15 @@ const DetailsServices = () => {
         <div className="bg-0C3E78 py-20 px-4 sm:px-6 lg:px-8">
           <h3
             className="text-center mt-10 font-extrabold text-3xl text-FFF6E4 px-5"
-            data-aos="fade-right"
+            data-aos="fade-left"
           >
             Des offres adaptées à vos besoins
           </h3>
           <div className="mt-8 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
             <div className="min-h-500 w-80 rounded-lg mt-5">
               <p
-                data-aos="zoom-in"
-                data-aos-duration="300"
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
                 className="mt-2 text-FFF6E4 px-5"
               >
                 Nous mettons notre expertise à votre service, grâce à notre
@@ -30,8 +30,8 @@ const DetailsServices = () => {
             {/* Step 2 */}
             <div className="min-h-500 w-80 mt-5">
               <p
-                data-aos="zoom-in"
-                data-aos-duration="300"
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
                 className="mt-2 text-FFF6E4 px-5"
               >
                 Vous disposez d’un suivi de production complet, notre équipe
@@ -43,8 +43,8 @@ const DetailsServices = () => {
             {/* Step 3 */}
             <div className="min-h-500 w-80 mt-5">
               <p
-                data-aos="zoom-in"
-                data-aos-duration="300"
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
                 className="mt-2 text-FFF6E4 px-5"
               >
                 Obtenez un devis gratuit dès maintenant et commencez votre
@@ -71,8 +71,8 @@ const DetailsServices = () => {
               </p>
               <div className="w-60">
                 <p
-                  data-aos="zoom-in"
-                  data-aos-duration="300"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
                   className="text-base mb-10 text-FFF6E4"
                 >
                   Bénéficiez d’une analyse complète de votre marque et d’une
@@ -87,8 +87,8 @@ const DetailsServices = () => {
               </p>
               <div className="w-60">
                 <p
-                  data-aos="zoom-in"
-                  data-aos-duration="300"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
                   className="text-base text-FFF6E4"
                 >
                   Du SEO en passant par le Social Media Marketing profitez de
@@ -120,7 +120,8 @@ const DetailsServices = () => {
         <div className="flex justify-center">
           <div className="w-96 sm:w-1/2 mt-10">
             <p
-              data-aos="fade-left"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
               className="text-black text-center text-2xl font-extrabold px-5"
             >
               Des questions ? Une demande ? N’hésitez pas à nous contacter

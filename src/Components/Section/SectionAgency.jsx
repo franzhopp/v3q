@@ -31,7 +31,11 @@ const SectionAgency = () => {
 
         <div className="flex justify-center">
           <div className="w-4/5 sm:w-1/2">
-            <p className="px-5 text-black text-arial text-center text-lg sm:text-2xl mt-10">
+            <p
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              className="px-5 text-black text-arial text-center text-lg sm:text-2xl mt-10"
+            >
               {`Cette agence a été créé par`}{" "}
               <span className="font-extrabold text-C22E2E">{"Mélissa"}</span>
               {" & "}
@@ -65,8 +69,8 @@ const SectionAgency = () => {
         <div className="pt-10 pb-16 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
           <div className="w-80 mt-5">
             <p
-              data-aos="zoom-in"
-              data-aos-duration="300"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
               className="mt-2 text-FFF6E4 text-arial"
             >
               <h1 className="text-4xl number font-semibold pb-5">04.</h1>
@@ -88,8 +92,8 @@ const SectionAgency = () => {
           </div>
           <div className="w-80 mt-5">
             <p
-              data-aos="zoom-in"
-              data-aos-duration="300"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
               className="mt-2 text-FFF6E4 text-arial"
             >
               <h1 className="text-4xl number font-semibold pb-5">05.</h1>
@@ -107,8 +111,8 @@ const SectionAgency = () => {
           </div>
           <div className="w-80 mt-5">
             <p
-              data-aos="zoom-in"
-              data-aos-duration="300"
+              data-aos="fade-up"
+             data-aos-anchor-placement="top-bottom"
               className="mt-2 text-FFF6E4 text-arial"
             >
               <h1 className="text-4xl number font-semibold pb-5">06.</h1>

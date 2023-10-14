@@ -40,7 +40,11 @@ const SectionTeam = () => {
 
         <div className="flex justify-center">
           <div className="w-4/5 sm:w-1/2">
-            <p className="px-5 text-black text-center text-lg md:text-center lg:text-center sm:text-2xl mt-10 mb-16">
+            <p
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              className="px-5 text-black text-center text-lg md:text-center lg:text-center sm:text-2xl mt-10 mb-16"
+            >
               <span className="font-extrabold">
                 Apprenez à connaître{" "}
                 <img

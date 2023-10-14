@@ -21,7 +21,11 @@ const Services = () => {
 
         <div className="flex justify-center">
           <div className="w-96">
-            <p className="text-black text-center">
+            <p
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              className="text-black text-center"
+            >
               Dans cette page, vous trouverez{" "}
               <span className="font-extrabold">tous les services</span> de notre
               agence adaptés selon{" "}
@@ -33,7 +37,7 @@ const Services = () => {
         <div class="flex justify-center mt-10">
           <div class="mt-5 flex flex-wrap justify-center space-x-0 sm:space-x-6">
             <div
-              data-aos="fade-right"
+              data-aos="fade-left"
               data-aos-duration="300"
               class="bg-C22E2E p-6 rounded-2xl shadow-2xl mb-5"
             >
@@ -56,7 +60,7 @@ const Services = () => {
             </div>
 
             <div
-              data-aos="fade-left"
+              data-aos="fade-right"
               data-aos-duration="300"
               class="bg-cards p-6 rounded-2xl shadow-2xl mb-5"
             >
@@ -79,7 +83,7 @@ const Services = () => {
             </div>
 
             <div
-              data-aos="fade-right"
+              data-aos="fade-left"
               data-aos-duration="300"
               class="bg-cards-2 p-6 rounded-2xl shadow-2xl mb-5"
             >
@@ -101,8 +105,7 @@ const Services = () => {
               </div>
             </div>
             <div
-              data-aos="fade-left"
-              data-aos-duration="300"
+              data-aos="fade-right"
               class="bg-C22E2E p-6 rounded-2xl shadow-2xl mb-5"
             >
               <p className="text-FFF6E4 text-center text-xl font-extrabold mb-5">
@@ -169,7 +172,8 @@ const Services = () => {
         <div className="flex justify-center pt-10 pb-10">
           <div className="w-96 sm:w-1/3 px-5">
             <p
-              data-aos="fade-left"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
               className="text-black text-center text-2xl font-extrabold"
             >
               Ou besoin de modifications sur votre site web ? Nous pouvons le

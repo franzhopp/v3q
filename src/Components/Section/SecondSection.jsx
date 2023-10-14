@@ -20,8 +20,8 @@ const SectionDuplicate = () => {
         <div className="mt-8 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
           <div className="w-80 mt-5">
             <p
-              data-aos="zoom-in"
-              data-aos-duration="200"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
               className="mt-2 text-FFF6E4 text-arial"
             >
               <h1 className="text-4xl number font-semibold pb-5">01.</h1>
@@ -38,8 +38,8 @@ const SectionDuplicate = () => {
           </div>
           <div className="w-80 mt-5">
             <p
-              data-aos="zoom-in"
-              data-aos-duration="200"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
               className="mt-2 text-FFF6E4 text-arial"
             >
               <h1 className="text-4xl number font-semibold pb-5">02.</h1>
@@ -59,8 +59,8 @@ const SectionDuplicate = () => {
           </div>
           <div className="w-80 mt-5">
             <p
-              data-aos="zoom-in"
-              data-aos-duration="200"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
               className="mt-2 text-FFF6E4 text-arial"
             >
               <h1 className="text-4xl number font-semibold pb-5">03.</h1>
