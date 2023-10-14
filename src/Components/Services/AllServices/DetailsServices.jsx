@@ -7,9 +7,9 @@ const DetailsServices = () => {
     <section>
       {/* <ButtonServices /> */}
       <div className="">
-        <div className="bg-0C3E78 py-20 px-4 sm:px-6 lg:px-8">
+        <div className="bg-0C3E78 pt-20 pb-20 px-4 sm:px-6 lg:px-8">
           <h3
-            className="text-center mt-10 font-extrabold text-3xl text-FFF6E4 px-5"
+            className="text-center font-extrabold text-3xl text-FFF6E4 px-5"
             data-aos="fade-left"
           >
             Des offres adaptées à vos besoins
