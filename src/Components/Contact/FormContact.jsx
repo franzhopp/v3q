@@ -4,7 +4,7 @@ import emailjs from "emailjs-com";
 import ButtonSend from "../UI/Button/ButtonSend";
 import { useEffect, useState } from "react";
 
-const Form = ({ label, type, value, onChange }) => {
+const Form = ({ label, type, value }) => {
   const [isFocused, setIsFocused] = useState(false);
   const [status, setStatus] = useState("");
 
@@ -413,7 +413,7 @@ const Form = ({ label, type, value, onChange }) => {
                   <span>
                     <img
                       src={ImgText}
-                      className="h-10 mr-1 inline"
+                      className="h-6 mr-1 inline"
                       alt="Icône Navi Studio"
                     />
                   </span>

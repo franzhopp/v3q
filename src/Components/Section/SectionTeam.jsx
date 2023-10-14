@@ -43,13 +43,13 @@ const SectionTeam = () => {
             <p
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"
-              className="px-5 text-black text-center text-lg md:text-center lg:text-center sm:text-2xl mt-10 mb-16"
+              className="px-5 text-black text-center text-lg md:text-center lg:text-center sm:text-2xl mt-10 mb-20"
             >
               <span className="font-extrabold">
                 Apprenez à connaître{" "}
                 <img
                   src={ImgText}
-                  className="h-12 mr-1 inline sm:h-16"
+                  className="h-6 mr-1 inline sm:h-9"
                   alt="Icône Navi Studio"
                 />
               </span>{" "}

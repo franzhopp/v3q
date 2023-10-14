@@ -39,8 +39,6 @@ const Footer = () => {
       return;
     }
 
-    setIsLoading(true);
-
     const emailParams = {
       to_name: "Mélissa & Louisa",
       email: formData.email,

@@ -20,7 +20,7 @@ const SectionAgency = () => {
               <span>
                 <img
                   src={ImgText}
-                  className="h-20 sm:h-28 mr-1 inline"
+                  className="h-12 sm:h-16 mr-1 inline"
                   alt="Icône Navi Studio"
                 />
               </span>{" "}
@@ -79,7 +79,7 @@ const SectionAgency = () => {
                 <span>
                   <img
                     src={ImgText}
-                    className="h-10 inline"
+                    className="h-6 inline"
                     alt="Icône Navi Studio"
                   />
                 </span>{" "}
@@ -112,7 +112,7 @@ const SectionAgency = () => {
           <div className="w-80 mt-5">
             <p
               data-aos="fade-up"
-             data-aos-anchor-placement="top-bottom"
+              data-aos-anchor-placement="top-bottom"
               className="mt-2 text-FFF6E4 text-arial"
             >
               <h1 className="text-4xl number font-semibold pb-5">06.</h1>

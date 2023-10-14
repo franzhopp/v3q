@@ -603,7 +603,7 @@ const DevisFree = ({ label, type, value, onChange }) => {
                   <span>
                     <img
                       src={ImgText}
-                      className="h-10 mr-1 inline"
+                      className="h-6 mr-1 inline"
                       alt="Icône Navi Studio"
                     />
                   </span>
