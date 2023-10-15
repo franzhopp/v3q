@@ -1,6 +1,5 @@
 import NavbarServices from "../Navigation/ServicesNavbar/ServicesNavbar";
 import DetailsServices from "./AllServices/DetailsServices";
-import Gears from "../../assets/gears-star.png";
 import ImgService1 from "../../assets/home1.png";
 import ImgService2 from "../../assets/home2.png";
 import ImgService3 from "../../assets/home3.png";
@@ -181,6 +180,14 @@ const Services = () => {
             </p>
           </div>
         </div>
+          <div className="flex justify-center pb-10">
+            <a
+              className="text-black font-extrabold underline transition hover:text-0C3E78"
+              href="/rate"
+            >
+              Découvrir Tarification ➔
+            </a>
+          </div>
         <DetailsServices />
       </section>
       <Footer />

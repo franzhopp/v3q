@@ -173,8 +173,9 @@ const DiscoverWebDeveloper = () => {
               >
                 L'Écriture est une autre passion qui m'anime, elle m'inspire.
                 Créatrice d'Univers-Imaginaire, un site déployant tous mes
-                écrits. J'ai donc décidé de renforcer ma collaboration avec ma
-                UX/UI pour unir nos compétences et créer ensemble notre agence,
+                écrits, cette idée de création m'a donc donné la motivation
+                de renforcer ma collaboration avec ma UX/UI Designer pour unir nos
+                compétences et créer ensemble notre agence,
                 <img
                   src={ImgText}
                   className="h-6 ml-1 inline"

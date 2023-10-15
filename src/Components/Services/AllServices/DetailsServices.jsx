@@ -1,59 +1,51 @@
 import ButtonContactServices from "../../UI/Button/ButtonContactServices";
 import ButtonDevis from "../../UI/Button/ButtonFormDevis";
-import ButtonServices from "../../UI/Button/ButtonServices";
 
 const DetailsServices = () => {
   return (
     <section>
-      {/* <ButtonServices /> */}
-      <div className="">
-        <div className="bg-0C3E78 pt-20 pb-20 px-4 sm:px-6 lg:px-8">
-          <h3
-            className="text-center font-extrabold text-3xl text-FFF6E4 px-5"
-            data-aos="fade-left"
-          >
-            Des offres adaptées à vos besoins
-          </h3>
-          <div className="mt-8 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
-            <div className="min-h-500 w-80 rounded-lg mt-5">
-              <p
-                data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom"
-                className="mt-2 text-FFF6E4 px-5"
-              >
-                Nous mettons notre expertise à votre service, grâce à notre
-                diagnostic personnalisé. Découvrez des solutions sur mesure
-                adaptées à votre business & situation.
-              </p>
-            </div>
-
-            {/* Step 2 */}
-            <div className="min-h-500 w-80 mt-5">
-              <p
-                data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom"
-                className="mt-2 text-FFF6E4 px-5"
-              >
-                Vous disposez d’un suivi de production complet, notre équipe
-                reste disponible et à votre écoute 24/7. Nous travaillons main
-                dans la main avec nos clients.
-              </p>
-            </div>
-
-            {/* Step 3 */}
-            <div className="min-h-500 w-80 mt-5">
-              <p
-                data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom"
-                className="mt-2 text-FFF6E4 px-5"
-              >
-                Obtenez un devis gratuit dès maintenant et commencez votre
-                aventure dans le monde du digital à nos côtés !
-              </p>
-            </div>
+      <div className="bg-0C3E78 pt-20 pb-20 px-4 sm:px-6 lg:px-8">
+        <h3
+          className="text-center font-extrabold text-3xl text-FFF6E4 px-5"
+          data-aos="fade-left"
+        >
+          Des offres adaptées à vos besoins
+        </h3>
+        <div className="mt-8 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
+          <div className="min-h-500 w-80 rounded-lg mt-5">
+            <p
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              className="mt-2 text-FFF6E4 px-5"
+            >
+              Nous mettons notre expertise à votre service, grâce à notre
+              diagnostic personnalisé. Découvrez des solutions sur mesure
+              adaptées à votre business & situation.
+            </p>
           </div>
-          <ButtonDevis />
+          <div className="min-h-500 w-80 mt-5">
+            <p
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              className="mt-2 text-FFF6E4 px-5"
+            >
+              Vous disposez d’un suivi de production complet, notre équipe reste
+              disponible et à votre écoute 24/7. Nous travaillons main dans la
+              main avec nos clients.
+            </p>
+          </div>
+          <div className="min-h-500 w-80 mt-5">
+            <p
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              className="mt-2 text-FFF6E4 px-5"
+            >
+              Obtenez un devis gratuit dès maintenant et commencez votre
+              aventure dans le monde du digital à nos côtés !
+            </p>
+          </div>
         </div>
+        <ButtonDevis />
       </div>
       <div className="image-navi-studio-marketing-services pr-0 sm:pr-10 md:pr-20 lg:pr-32 xl:pr-96">
         <div

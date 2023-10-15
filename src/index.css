@@ -8,14 +8,14 @@
 
 html,
 body {
-    cursor: url('./Cursor_1.svg'), default !important;
+    cursor: url('./Cursor/Cursor_1.svg'), default !important;
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
 }
 
 a,
 label {
-    cursor: url('./Cursor_2.svg'), pointer !important;
+    cursor: url('./Cursor/Cursor_2.svg'), pointer !important;
 }
 
 span,
@@ -23,14 +23,14 @@ path,
 svg,
 button,
 label {
-    cursor: url('./Cursor_2.svg'), pointer;
+    cursor: url('./Cursor/Cursor_2.svg'), pointer;
 }
 
 input[type="text"],
 label,
 input,
 textarea {
-    cursor: url('./Cursor_3.svg'), text !important;
+    cursor: url('./Cursor/Cursor_3.svg'), text !important;
 }
 
 ::-webkit-scrollbar {
@@ -72,7 +72,7 @@ textarea {
 }
 
 .image-navi-studio-navbar-services {
-    background-image: url('./assets/bg-contact-blur.png');
+    background-image: url('./assets/bg-home-services.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
@@ -104,6 +104,12 @@ textarea {
 /* Blur */
 .bg-contact-blur {
     background-image: url('./assets/bg-contact-blur.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-services-blur {
+    background-image: url('./assets/bg-home-blur.png');
     background-repeat: no-repeat;
     background-size: cover;
 }

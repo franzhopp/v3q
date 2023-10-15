@@ -58,6 +58,20 @@ const Rate = () => {
           Sites Web
         </h1>
       </div>
+      <div className="flex justify-center pb-10">
+        <div className="w-96">
+          <p
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            className=" text-C22E2E text-center"
+          >
+            Vous trouverez{" "}
+            <span className="font-extrabold">toutes les tarifications de prix des services</span> de notre
+            agence, sachez que les prix peuvent varier en fonction de{" "}
+            <span className="font-extrabold">vos besoins</span>. 
+          </p>
+        </div>
+      </div>
       {InformationsSitesWeb.map((info, index) => (
         <div className="flex justify-center font-inter">
           <div className="w-96 sm:w-1/2 px-5">
