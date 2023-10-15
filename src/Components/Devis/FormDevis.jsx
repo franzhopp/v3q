@@ -159,7 +159,7 @@ const DevisFree = ({ label, type, value }) => {
       );
 
       // console.log("Email envoyé !", response.status, response.text);
-      setStatus("Votre contact est envoyé. Merci !");
+      setStatus("Votre devis est envoyé. Merci !");
     } catch (error) {
       // console.error("Erreur d'envoi d'e-mail.", error);
       setStatus("Une erreur s'est produite.");
