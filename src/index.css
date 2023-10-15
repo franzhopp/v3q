@@ -22,7 +22,9 @@ span,
 path,
 svg,
 button,
-label {
+label,
+img,
+li {
     cursor: url('./Cursor/Cursor_2.svg'), pointer;
 }
 

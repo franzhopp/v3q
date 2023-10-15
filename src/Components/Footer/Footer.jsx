@@ -69,7 +69,11 @@ const Footer = () => {
       <footer className="bg-C22E2E">
         <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="flex justify-center">
-            <img src={Image} alt="Icône Navi Studio" className="h-auto mx-auto max-w-xs" />
+            <img
+              src={Image}
+              alt="Icône Navi Studio"
+              className="h-auto mx-auto max-w-xs"
+            />
           </div>
 
           <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
@@ -228,7 +232,12 @@ const Footer = () => {
             </li>
           </ul>
 
-          <ul className="mt-12 flex justify-center gap-6 md:gap-8">
+          <div className="flex justify-center pt-10">
+            <div className="text-black font-extrabold underline">
+              Retrouvez-nous sur :
+            </div>
+          </div>
+          <ul className="mt-5 flex justify-center gap-6 md:gap-8">
             <li>
               <a href="" rel="noreferrer" target="_blank">
                 <img

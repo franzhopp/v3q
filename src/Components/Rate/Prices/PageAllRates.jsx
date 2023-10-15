@@ -66,9 +66,11 @@ const Rate = () => {
             className=" text-C22E2E text-center"
           >
             Vous trouverez{" "}
-            <span className="font-extrabold">toutes les tarifications de prix des services</span> de notre
-            agence, sachez que les prix peuvent varier en fonction de{" "}
-            <span className="font-extrabold">vos besoins</span>. 
+            <span className="font-extrabold">
+              toutes les tarifications de prix des services
+            </span>{" "}
+            de notre agence, sachez que les prix peuvent varier en fonction de{" "}
+            <span className="font-extrabold">vos besoins</span>.
           </p>
         </div>
       </div>
@@ -149,6 +151,15 @@ const Rate = () => {
           </div>
         </div>
       ))}
+      <div className="flex justify-center pt-2">
+        <div className="w-96 sm:w-full">
+          <p className="text-center text-C22E2E">
+            *tarifs variables suivant les fonctionnalités désirées, pour plus
+            d'informations demandez{" "}
+            <span className="font-extrabold">un devis gratuit</span>.
+          </p>
+        </div>
+      </div>
       <div className="pb-20"></div>
       <Footer />
     </section>
