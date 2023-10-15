@@ -46,11 +46,21 @@ const Form = ({ label, type, value }) => {
 
   const [isLoading, setIsLoading] = useState(false);
 
+  // text
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
+    }));
+  };
+
+  // checkbox
+  const handleCheckboxChange = (event) => {
+    const { name, checked } = event.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: checked,
     }));
   };
 
@@ -127,9 +137,10 @@ const Form = ({ label, type, value }) => {
       );
 
       // console.log("Email envoyé !", response.status, response.text);
-      setStatus("Merci ! Votre contact a bien été envoyé.");
+      setStatus("Votre contact est envoyé. Merci !");
     } catch (error) {
       // console.error("Erreur d'envoi d'e-mail.", error);
+      setStatus("Une erreur s'est produite.");
     }
 
     setIsLoading(false);
@@ -153,7 +164,12 @@ const Form = ({ label, type, value }) => {
             >
               Si vous recherchez une agence digitale qui peut donner vie à votre
               projet numérique, qui excelle dans le design et le développement
-              web, ne cherchez pas plus loin.
+              web, ne cherchez pas plus loin. Choisissez
+              <img
+                src={ImgText}
+                className="h-8 sm:h-12 ml-1 inline"
+                alt="Icône navi studio."
+              />
             </p>
 
             <div className="mt-8">
@@ -385,7 +401,9 @@ const Form = ({ label, type, value }) => {
                 <input
                   className="outline-none input-secondary border-gray-200 mr-1"
                   type="checkbox"
-                  value={formData.privacy}
+                  name="privacy"
+                  checked={formData.privacy}
+                  onChange={handleCheckboxChange}
                 />
                 <span className="text-black">
                   {" "}
@@ -404,7 +422,9 @@ const Form = ({ label, type, value }) => {
                 <input
                   className="outline-none input-secondary border-gray-200 mr-1"
                   type="checkbox"
-                  value={formData.conditions}
+                  name="conditions"
+                  checked={formData.conditions}
+                  onChange={handleCheckboxChange}
                 />
                 <span className="text-black">
                   {" "}
@@ -441,14 +461,25 @@ const Form = ({ label, type, value }) => {
                 )}
               </div>
 
-              <button
-                type="submit"
-                onClick={handleSubmit}
-                className="inline-block w-full px-5 sm:w-auto"
-              >
-                <ButtonSend />
-              </button>
+              <div className="flex justify-center pt-5">
+                <button type="submit" onClick={handleSubmit}>
+                  {isLoading ? (
+                    <div
+                      className="animate-spin inline-block w-6 h-6 mt-2 border-[3px] border-current border-t-transparent text-white rounded-full"
+                      role="status"
+                      aria-label="loading"
+                    >
+                      <span className="sr-only">Loading...</span>
+                    </div>
+                  ) : (
+                    <ButtonSend />
+                  )}
+                </button>
+              </div>
             </form>
+            <div className="text-00E189 text-center font-extrabold pt-5">
+              {status && <p>{status}</p>}
+            </div>
           </div>
         </div>
       </div>

@@ -6,7 +6,8 @@ import ImgText from "../../assets/logo-4.png";
 import ButtonSend from "../UI/Button/ButtonSend.jsx";
 import Footer from "../Footer/Footer.jsx";
 
-const DevisFree = ({ label, type, value, onChange }) => {
+const DevisFree = ({ label, type, value }) => {
+  const [status, setStatus] = useState("");
   const [isFocused, setIsFocused] = useState(false);
 
   const handleFocus = () => {
@@ -53,11 +54,21 @@ const DevisFree = ({ label, type, value, onChange }) => {
 
   const [isLoading, setIsLoading] = useState(false);
 
+  // text
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
+    }));
+  };
+
+  // checkbox
+  const handleCheckboxChange = (event) => {
+    const { name, checked } = event.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: checked,
     }));
   };
 
@@ -148,9 +159,10 @@ const DevisFree = ({ label, type, value, onChange }) => {
       );
 
       // console.log("Email envoyé !", response.status, response.text);
-      setStatus("Merci ! Votre contact a bien été envoyé.");
+      setStatus("Votre contact est envoyé. Merci !");
     } catch (error) {
       // console.error("Erreur d'envoi d'e-mail.", error);
+      setStatus("Une erreur s'est produite.");
     }
 
     setIsLoading(false);
@@ -575,7 +587,9 @@ const DevisFree = ({ label, type, value, onChange }) => {
                 <input
                   className="outline-none input-secondary border-gray-200 mr-1"
                   type="checkbox"
-                  value={formData.privacy}
+                  name="privacy"
+                  checked={formData.privacy}
+                  onChange={handleCheckboxChange}
                 />
                 <span className="text-black">
                   {" "}
@@ -594,7 +608,9 @@ const DevisFree = ({ label, type, value, onChange }) => {
                 <input
                   className="outline-none input-secondary border-gray-200 mr-1"
                   type="checkbox"
-                  value={formData.conditions}
+                  name="conditions"
+                  checked={formData.conditions}
+                  onChange={handleCheckboxChange}
                 />
                 <span className="text-black">
                   {" "}
@@ -631,14 +647,25 @@ const DevisFree = ({ label, type, value, onChange }) => {
                 )}
               </div>
 
-              <button
-                type="submit"
-                onClick={handleSubmit}
-                className="inline-block w-full px-5 sm:w-auto"
-              >
-                <ButtonSend />
-              </button>
+              <div className="flex justify-center pt-5">
+                <button type="submit" onClick={handleSubmit}>
+                  {isLoading ? (
+                    <div
+                      className="animate-spin inline-block w-6 h-6 mt-2 border-[3px] border-current border-t-transparent text-white rounded-full"
+                      role="status"
+                      aria-label="loading"
+                    >
+                      <span className="sr-only">Loading...</span>
+                    </div>
+                  ) : (
+                    <ButtonSend />
+                  )}
+                </button>
+              </div>
             </form>
+            <div className="text-00E189 text-center font-extrabold pt-5">
+              {status && <p>{status}</p>}
+            </div>
           </div>
         </div>
       </div>

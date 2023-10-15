@@ -3,13 +3,9 @@ import { NavLink } from "react-router-dom";
 const ButtonSend = () => {
   return (
     <>
-      <div className="flex justify-center sm:justify-end px-32 mt-5">
-        <NavLink
-          className="inline-flex items-center gap-2 rounded-full bg-black px-8 py-3 text-FFF6E4"
-        >
-          <span className="text-3xl mr-3 font-semibold">
-            Envoyer{" "}
-          </span>
+      <div className="flex justify-center">
+        <NavLink className="inline-flex items-center gap-2 rounded-full bg-black px-8 py-3 text-FFF6E4">
+          <span className="text-3xl mr-3 font-semibold">Envoyer </span>
           <svg
             width="44"
             height="38"
