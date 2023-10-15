@@ -388,7 +388,7 @@ const NavbarDiscoverWebDevelopper = () => {
                         // onClick={() => {
                         //   window.location.href = "/";
                         // }}
-                        className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                        className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
                         Accueil
                       </NavLink>
@@ -438,7 +438,7 @@ const NavbarDiscoverWebDevelopper = () => {
                           // onClick={() => {
                           //   window.location.href = "/designer";
                           // }}
-                          className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                          className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                         >
                           Designer
                         </NavLink>
@@ -449,7 +449,7 @@ const NavbarDiscoverWebDevelopper = () => {
                           // onClick={() => {
                           //   window.location.href = "/webdev";
                           // }}
-                          className="block text-C22E2E rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                          className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                         >
                           Web Developer
                         </NavLink>
@@ -553,7 +553,7 @@ const NavbarDiscoverWebDevelopper = () => {
                   >
                     <NavLink
                       to={val.link}
-                      className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                      className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       {val.lng}
                     </NavLink>
@@ -564,6 +564,12 @@ const NavbarDiscoverWebDevelopper = () => {
           </li>
 
           <NavLink className="text-C22E2E hover:text-0C3E78 px-3 py-2">
+            {openModel && (
+              <ModalSearch
+                closeModal={setOpenModel}
+                searchQuery={setSearchQuery}
+              />
+            )}
             <svg
               className="h-5 ml-2"
               onClick={() => {
@@ -586,13 +592,6 @@ const NavbarDiscoverWebDevelopper = () => {
             </svg>
           </NavLink>
         </ul>
-        {openModel && (
-          <ModalSearch
-            closeModal={setOpenModel}
-            searchQuery={setSearchQuery}
-            className="text-black"
-          />
-        )}
       </nav>
     </div>
   );

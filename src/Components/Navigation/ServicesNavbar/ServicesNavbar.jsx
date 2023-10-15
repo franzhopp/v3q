@@ -5,7 +5,7 @@ import ModalSearch from "../../Modal/SearchModal";
 import Image from "../../../assets/logo-5.png";
 import { IoIosArrowDown } from "react-icons/io";
 import "../../Section/FirstSection.jsx";
-import "../../Homepage/Hompage";
+import "../../Homepage/Homepage";
 
 const NavbarServices = () => {
   const [isAnimating, setIsAnimating] = useState(false);
@@ -405,7 +405,7 @@ const NavbarServices = () => {
                         // onClick={() => {
                         //   window.location.href = "/";
                         // }}
-                        className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                        className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
                         Accueil
                       </NavLink>
@@ -455,7 +455,7 @@ const NavbarServices = () => {
                           // onClick={() => {
                           //   window.location.href = "/designer";
                           // }}
-                          className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                          className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                         >
                           Designer
                         </NavLink>
@@ -539,7 +539,7 @@ const NavbarServices = () => {
             Portfolio
           </NavLink>
 
-          <NavLink
+          <NavLinkrounded-md
             to="/"
             // onClick={() => {
             //   window.location.href = "/";
@@ -547,7 +547,7 @@ const NavbarServices = () => {
             className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             Contact
-          </NavLink>
+          </NavLinkrounded-md>
 
           <li>
             <NavLink className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
@@ -570,7 +570,7 @@ const NavbarServices = () => {
                   >
                     <NavLink
                       to={val.link}
-                      className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                      className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       {val.lng}
                     </NavLink>
@@ -581,6 +581,12 @@ const NavbarServices = () => {
           </li>
 
           <NavLink className="text-C22E2E hover:text-0C3E78 px-3 py-2">
+            {openModel && (
+              <ModalSearch
+                closeModal={setOpenModel}
+                searchQuery={setSearchQuery}
+              />
+            )}
             <svg
               className="h-5 ml-2"
               onClick={() => {
@@ -603,13 +609,6 @@ const NavbarServices = () => {
             </svg>
           </NavLink>
         </ul>
-        {openModel && (
-          <ModalSearch
-            closeModal={setOpenModel}
-            searchQuery={setSearchQuery}
-            className="text-black"
-          />
-        )}
       </nav>
 
       <div className="pt-44 px-14 py-20 text-left sm:mt-28">

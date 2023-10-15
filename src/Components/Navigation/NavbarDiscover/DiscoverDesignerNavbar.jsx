@@ -302,8 +302,6 @@ const NavbarDiscoverDesigner = () => {
           </div>
         </div>
       </nav>
-
-      {/* Navigation Mobile */}
       <nav
         className={`fixed w-full top-0 left-0 shadow-md md:hidden bg-FFF6E4 z-max`}
       >
@@ -388,7 +386,7 @@ const NavbarDiscoverDesigner = () => {
                         // onClick={() => {
                         //   window.location.href = "/";
                         // }}
-                        className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                        className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
                         Accueil
                       </NavLink>
@@ -438,7 +436,7 @@ const NavbarDiscoverDesigner = () => {
                           // onClick={() => {
                           //   window.location.href = "/designer";
                           // }}
-                          className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                          className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                         >
                           Designer
                         </NavLink>
@@ -449,7 +447,7 @@ const NavbarDiscoverDesigner = () => {
                           // onClick={() => {
                           //   window.location.href = "/webdev";
                           // }}
-                          className="block text-C22E2E rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                          className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                         >
                           Web Developer
                         </NavLink>
@@ -503,7 +501,7 @@ const NavbarDiscoverDesigner = () => {
                     // onClick={() => {
                     //   window.location.href = "/devis";
                     // }}
-                    className="block text-C22E2E  hover:text-0C3E78 px-4 py-2 font-extrabold"
+                    className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Devis gratuit
                   </NavLink>
@@ -553,7 +551,7 @@ const NavbarDiscoverDesigner = () => {
                   >
                     <NavLink
                       to={val.link}
-                      className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                      className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       {val.lng}
                     </NavLink>
@@ -564,6 +562,12 @@ const NavbarDiscoverDesigner = () => {
           </li>
 
           <NavLink className="text-C22E2E hover:text-0C3E78 px-3 py-2">
+            {openModel && (
+              <ModalSearch
+                closeModal={setOpenModel}
+                searchQuery={setSearchQuery}
+              />
+            )}
             <svg
               className="h-5 ml-2"
               onClick={() => {
@@ -586,13 +590,6 @@ const NavbarDiscoverDesigner = () => {
             </svg>
           </NavLink>
         </ul>
-        {openModel && (
-          <ModalSearch
-            closeModal={setOpenModel}
-            searchQuery={setSearchQuery}
-            className="text-black"
-          />
-        )}
       </nav>
     </div>
   );

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Homepage from "./Components/Homepage/Hompage.jsx";
+import Homepage from "./Components/Homepage/Homepage.jsx";
 import Section from "./Components/Section/FirstSection.jsx";
 import EthicsPage from "./Components/Ethics/CardsEthics.jsx";
 import Services from "./Components/Services/BaseServices.jsx";
