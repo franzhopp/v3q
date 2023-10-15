@@ -539,7 +539,7 @@ const NavbarServices = () => {
             Portfolio
           </NavLink>
 
-          <NavLinkrounded-md
+          <NavLink
             to="/"
             // onClick={() => {
             //   window.location.href = "/";
@@ -547,7 +547,7 @@ const NavbarServices = () => {
             className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             Contact
-          </NavLinkrounded-md>
+          </NavLink>
 
           <li>
             <NavLink className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
