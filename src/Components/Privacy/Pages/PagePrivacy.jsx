@@ -1,4 +1,5 @@
 import PrivacyNavbar from "../../Navigation/PrivacyNavbar/PrivacyNavbar.jsx";
+import ImgText from "../../../assets/logo-4.png";
 import Footer from "../../Footer/Footer";
 
 const PagePrivacy = () => {
@@ -6,16 +7,20 @@ const PagePrivacy = () => {
     <>
       {" "}
       <PrivacyNavbar />
-      <div className="bg-FFF6E4 flex justify-center font-sans-serif pb-16 pt-16">
+      <div className="bg-FFF6E4 flex justify-center font-sans-serif pb-16 pt-40 sm:pt-20">
         <div className="w-full md:max-w-3xl p-4">
           <h1 className="text-2xl md:text-3xl font-semibold mb-16 text-C22E2E">
             Politique de Confidentialité des Données
           </h1>
 
           <p className="text-black text-justify mb-4">
-            • Chez{" "}
-            <span className="text-C22E2E font-extrabold">navi studio.™</span>,
-            nous accordons une grande importance à la protection de vos
+            • Chez
+            <img
+              src={ImgText}
+              className="h-6 ml-1 inline"
+              alt="Icône navi studio."
+            />
+            , nous accordons une grande importance à la protection de vos
             informations personnelles. Cette politique de confidentialité
             explique comment nous collectons, utilisons, et protégeons vos
             données.

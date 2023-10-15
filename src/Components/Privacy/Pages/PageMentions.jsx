@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import PrivacyNavbar from "../../Navigation/PrivacyNavbar/PrivacyNavbar.jsx";
+import ImgText from "../../../assets/logo-4.png";
 import Footer from "../../Footer/Footer";
 
 const PageMentions = () => {
@@ -9,21 +10,22 @@ const PageMentions = () => {
     <>
       <PrivacyNavbar />
       <div className="bg-FFF6E4 flex justify-center">
-        <div className="w-full md:max-w-3xl p-4 font-sans-serif pt-16 pb-16">
+        <div className="w-full md:max-w-3xl p-4 font-sans-serif pt-40 sm:pt-20 pb-16">
           <h1 className="text-C22E2E mb-16 text-2xl md:text-3xl font-semibold">
             Mentions légales
           </h1>
 
-          <h2 className="text-C22E2E text-xl md:text-2xl font-semibold mb-2">
+          <h2 className="text-C22E2E underline text-xl md:text-2xl font-semibold mb-2">
             Identité
           </h2>
           <p className="text-black mb-4">
-            •<span className={keywordsStyle}> Nom du site web :</span> navi
-            studio.™
-            <br />•<span className={keywordsStyle}>
-              {" "}
-              Adresse du site :
-            </span>{" "}
+            •<span className={keywordsStyle}> Nom du site web :</span>
+            <img
+              src={ImgText}
+              className="h-6 ml-1 inline"
+              alt="Icône navi studio."
+            />
+            <br />•<span className={keywordsStyle}> Adresse du site :</span>{" "}
             <NavLink
               to="http://navistudio.io/"
               target="_blank"
@@ -34,21 +36,27 @@ const PageMentions = () => {
             </NavLink>
             .
             <br />•<span className={keywordsStyle}> Propriétaire :</span>{" "}
-            FERNANDEZ LOUISA, NEFTI MÉLISSA – Navi.studio.info@gmail.com
+            FERNANDEZ Louisa, NEFTI Mélissa.
             <br />•<span className={keywordsStyle}> Activité :</span>{" "}
             Entrepreneur individuel
+            <br />•<span className={keywordsStyle}> Adresse mail :</span>{" "}
+            Navi.studio.info@gmail.com
             <br />•
             <span className={keywordsStyle}>
               {" "}
               Responsable de publication :
             </span>{" "}
-            FERNANDEZ LOUISA, NEFTI MÉLISSA – LONDRES, ANGLETERRE, PARIS,
-            ÎLE-DE-FRANCE
-            <br />• <span className={keywordsStyle}>Hébergement :</span> IONOS
+            FERNANDEZ Louisa, NEFTI Mélissa.
+            <br />•<span className={keywordsStyle}> Lieux :</span> Paris,
+            Île-de-France / London, United Kingdom.
+            <br />• <span className={keywordsStyle}>
+              Hébergement du site :
+            </span>{" "}
+            IONOS
             <br />
           </p>
 
-          <h2 className="text-C22E2E text-xl md:text-2xl font-semibold mb-2">
+          <h2 className="text-C22E2E underline text-xl md:text-2xl font-semibold mb-2">
             Conditions d’utilisation
           </h2>
           <p className="text-black text-justify mb-4">
@@ -57,7 +65,7 @@ const PageMentions = () => {
             modifiées à tout moment.
           </p>
 
-          <h2 className="text-C22E2E text-xl md:text-2xl font-semibold mb-2">
+          <h2 className="text-C22E2E underline text-xl md:text-2xl font-semibold mb-2">
             Informations
           </h2>
           <p className="text-black text-justify mb-4">
@@ -66,7 +74,7 @@ const PageMentions = () => {
             l'accès au site.
           </p>
 
-          <h2 className="text-C22E2E text-xl md:text-2xl font-semibold mb-2">
+          <h2 className="text-C22E2E underline text-xl md:text-2xl font-semibold mb-2">
             Interactivité
           </h2>
           <p className="text-black text-justify mb-4">
@@ -75,7 +83,7 @@ const PageMentions = () => {
             législation en vigueur.
           </p>
 
-          <h2 className="text-C22E2E text-xl md:text-2xl font-semibold mb-2">
+          <h2 className="text-C22E2E underline text-xl md:text-2xl font-semibold mb-2">
             Propriété intellectuelle
           </h2>
           <p className="text-black text-justify">
@@ -83,7 +91,7 @@ const PageMentions = () => {
             auteurs. Toute utilisation non autorisée est interdite.
           </p>
 
-          <h2 className="text-C22E2E text-xl md:text-2xl font-semibold mb-2">
+          <h2 className="text-C22E2E underline text-xl md:text-2xl font-semibold mb-2 mt-2">
             Liens
           </h2>
           <p className="text-black text-justify">
@@ -91,7 +99,7 @@ const PageMentions = () => {
             conditions.
           </p>
 
-          <h2 className="text-C22E2E text-xl md:text-2xl font-semibold mb-2">
+          <h2 className="text-C22E2E underline text-xl md:text-2xl font-semibold mb-2 mt-2">
             Politique de confidentialité des données
           </h2>
           <p className="text-black text-justify">
@@ -99,7 +107,7 @@ const PageMentions = () => {
             à ses données personnelles.
           </p>
 
-          <h2 className="text-C22E2E text-xl md:text-2xl font-semibold mb-2">
+          <h2 className="text-C22E2E underline text-xl md:text-2xl font-semibold mb-2 mt-2">
             Objet du traitement
           </h2>
           <p className="text-black text-justify">
@@ -108,7 +116,7 @@ const PageMentions = () => {
             partenaires.
           </p>
 
-          <h2 className="text-C22E2E text-xl md:text-2xl font-semibold mb-2">
+          <h2 className="text-C22E2E underline text-xl md:text-2xl font-semibold mb-2 mt-2">
             Bases légales
           </h2>
           <p className="text-black text-justify">
@@ -116,7 +124,7 @@ const PageMentions = () => {
             légitime, le consentement, et l'obligation légale.
           </p>
 
-          <h2 className="text-C22E2E text-xl md:text-2xl font-semibold mb-2">
+          <h2 className="text-C22E2E underline text-xl md:text-2xl font-semibold mb-2 mt-2">
             Destinataires des données
           </h2>
           <p className="text-black text-justify">
@@ -125,14 +133,14 @@ const PageMentions = () => {
             des partenaires commerciaux.
           </p>
 
-          <h2 className="text-C22E2E text-xl md:text-2xl font-semibold mb-2">
+          <h2 className="text-C22E2E underline text-xl md:text-2xl font-semibold mb-2 mt-2">
             Durée de conservation des données
           </h2>
           <p className="text-black text-justify">
             • Les données sont conservées selon les besoins légaux.
           </p>
 
-          <h2 className="text-C22E2E text-xl md:text-2xl font-semibold mb-2">
+          <h2 className="text-C22E2E underline text-xl md:text-2xl font-semibold mb-2 mt-2">
             Droits de l'utilisateur
           </h2>
           <p className="text-black text-justify">
@@ -140,13 +148,13 @@ const PageMentions = () => {
             contactant l'entreprise.
           </p>
 
-          <h2 className="text-C22E2E text-xl md:text-2xl font-semibold mb-2">
+          <h2 className="text-C22E2E underline text-xl md:text-2xl font-semibold mb-2 mt-2">
             Consentement
           </h2>
           <p className="text-black text-justify">
             • Un consentement explicite est requis pour certaines autorisations.
           </p>
-          <h2 className="text-C22E2E text-xl md:text-2xl font-semibold mt-16 mb-2">
+          <h2 className="text-C22E2E underline text-xl md:text-2xl font-semibold mt-16 mb-2">
             Crédits
           </h2>
           <p className="mb-4 text-black">
@@ -155,7 +163,7 @@ const PageMentions = () => {
               {" "}
               Site designé et développé par :
             </span>{" "}
-            NEFTI MÉLISSA, FERNANDEZ LOUISA
+            NEFTI Mélissa, FERNANDEZ Louisa.
             <br />•<span className={keywordsStyle}> Site URL :</span>{" "}
             <NavLink
               to="http://navistudio.io/defaultsite"
@@ -165,30 +173,45 @@ const PageMentions = () => {
             >
               http://navistudio.io/
             </NavLink>
-            , navi studio.™
+            ,
+            <img
+              src={ImgText}
+              className="h-6 ml-1 inline"
+              alt="Icône navi studio."
+            />
             <br />•<span className={keywordsStyle}> Hébergeur :</span> IONOS
-            <br />•<span className={keywordsStyle}> Logo :</span> NEFTI MÉLISSA
+            <br />•<span className={keywordsStyle}> Logo :</span> NEFTI Mélissa.
             <br />•<span className={keywordsStyle}> Photographies : </span>
-            PEXELS
+            Pexels.
             <br />•<span className={keywordsStyle}> Vidéos :</span> NEFTI
-            MÉLISSA, FERNANDEZ LOUISA
+            Mélissa, FERNANDEZ Louisa.
             <br />•
             <span className={keywordsStyle}> Contenu des rubriques :</span>{" "}
-            NEFTI MÉLISSA, FERNANDEZ LOUISA
+            NEFTI Mélissa, FERNANDEZ Louisa.
+            <br />•<span className={keywordsStyle}>
+              {" "}
+              Contenu des textes :
+            </span>{" "}
+            NEFTI Mélissa, FERNANDEZ Louisa.
+            <br />•<span className={keywordsStyle}>
+              {" "}
+              Contenu des liens :
+            </span>{" "}
+            NEFTI Mélissa, FERNANDEZ Louisa.
             <br />•
             <span className={keywordsStyle}> Montages des visuels :</span> NEFTI
-            MÉLISSA, FERNANDEZ LOUISA
+            Mélissa, FERNANDEZ Louisa.
             <br />•<span className={keywordsStyle}>
               {" "}
               Montages des vidéos :
             </span>{" "}
-            NEFTI MÉLISSA, FERNANDEZ LOUISA
+            NEFTI Mélissa, FERNANDEZ Louisa.
             <br />•
             <span className={keywordsStyle}>
               {" "}
               Icônes utilisées pour les visuels :
             </span>{" "}
-            Photoshop, Illustrator, Figma, Procreate
+            Photoshop, Illustrator, Figma, Procreate.
             <br />•<span className={keywordsStyle}>
               {" "}
               Éditeur de code :
@@ -199,10 +222,9 @@ const PageMentions = () => {
               {" "}
               Technologies utilisées :
             </span>{" "}
-            React, Tailwind CSS, HTML/CSS, JS, EmailJS, Postman, PNPM, AOS,
-            Motion, Notion, React Icons, Hyper UI, Daisy UI etc...
+            React, Tailwind CSS.
             <br />
-            <div className="mt-16">
+            <div className="mt-16 font-extrabold text-C22E2E">
               Modèle de formule de collecte de données à caractère personnel
               pour la conception de la rubrique "MENTIONS LÉGALES" : Site du
               CNIL - Version 2019 /{" "}

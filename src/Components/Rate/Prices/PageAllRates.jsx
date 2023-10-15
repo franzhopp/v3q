@@ -160,6 +160,14 @@ const Rate = () => {
           </p>
         </div>
       </div>
+      <div className="flex justify-center pt-3">
+        <a
+          className=" text-C22E2E font-extrabold underline transition hover:text-0C3E78"
+          href="/devis"
+        >
+          Découvrir Devis Gratuit ➔
+        </a>
+      </div>
       <div className="pb-20"></div>
       <Footer />
     </section>

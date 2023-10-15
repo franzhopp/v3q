@@ -6,7 +6,7 @@ const PageConditions = () => {
     <>
       <PrivacyNavbar />
       <div className="bg-FFF6E4 flex justify-center">
-        <div className="w-full md:max-w-3xl p-4 font-sans-serif pt-16 pb-16">
+        <div className="w-full md:max-w-3xl p-4 font-sans-serif pt-40 sm:pt-20 pb-16">
           <h1 className="text-C22E2E mb-16 text-2xl md:text-3xl font-semibold">
             Conditions d'Utilisation
           </h1>
