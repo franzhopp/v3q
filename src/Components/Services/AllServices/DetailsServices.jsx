@@ -1,10 +1,12 @@
 import ButtonContactServices from "../../UI/Button/ButtonContactServices";
 import ButtonDevis from "../../UI/Button/ButtonFormDevis";
+import ButtonServices from "../../UI/Button/ButtonServices";
 
 const DetailsServices = () => {
   return (
     <section>
-      <div className="bg-0C3E78 pt-20 pb-20 px-4 sm:px-6 lg:px-8">
+      <ButtonServices />  
+      <div className="bg-0C3E78 pt-28 pb-28 px-4 sm:px-6 lg:px-8">
         <h3
           className="text-center font-extrabold text-3xl text-FFF6E4 px-5"
           data-aos="fade-left"

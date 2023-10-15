@@ -1,11 +1,8 @@
 import { NavLink } from "react-router-dom";
+import { useSpring, animated } from "react-spring";
 import ImgText from "../../assets/logo-4.png";
 import ImageLondon from "../../assets/london.png";
 import ImageParis from "../../assets/paris.png";
-import { useSpring, animated } from "react-spring";
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const SectionTeam = () => {
   const props = useSpring({
@@ -18,11 +15,6 @@ const SectionTeam = () => {
     },
     config: { duration: 1000 },
   });
-  useEffect(() => {
-    AOS.init({
-      once: true,
-    });
-  }, []);
 
   return (
     <>

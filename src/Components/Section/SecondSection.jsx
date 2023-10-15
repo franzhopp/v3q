@@ -1,13 +1,4 @@
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-
-const SectionDuplicate = () => {
-  useEffect(() => {
-    AOS.init({
-      once: true,
-    });
-  }, []);
+const SecondSection = () => {
   return (
     <section className="bg-C22E2E h-1/2">
       <div className="pt-32 pb-32 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -81,4 +72,4 @@ const SectionDuplicate = () => {
   );
 };
 
-export default SectionDuplicate;
+export default SecondSection;

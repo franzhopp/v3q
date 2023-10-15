@@ -127,28 +127,6 @@ const Services = () => {
             </div>
           </div>
         </div>
-
-        {/* 
-        <div className="h-96 w-56 rounded-2xl shadow-2xl bg-C22E2E">
-          <div className="flex justify-center">
-            <div className="">
-              <div className="text-2xl font-extrabold text-FFF6E4 mt-10 mb-5">
-                Site vitrine
-              </div>
-              <div className="w-32 mb-10">
-                <p className="text-FFF6E4 text-center text-sm">
-                  {" "}
-                  Un site vitrine qui{" "}
-                  <span className="font-extrabold">vous ressemble</span>.
-                  Impressionnez vos visiteurs{" "}
-                  <span className="font-extrabold">dès la première visite</span>
-                  .
-                </p>
-                </div>
-                </div>
-                </div>
-              </div> */}
-
         <div className="flex justify-center mt-10">
           <svg
             className="animate-bounce-bounce h-14 w-14"
@@ -180,14 +158,14 @@ const Services = () => {
             </p>
           </div>
         </div>
-          <div className="flex justify-center pb-10">
-            <a
-              className="text-black font-extrabold underline transition hover:text-0C3E78"
-              href="/rate"
-            >
-              Découvrir Tarification ➔
-            </a>
-          </div>
+        <div className="flex justify-center">
+          <a
+            className="text-black font-extrabold underline transition hover:text-0C3E78"
+            href="/rate"
+          >
+            Découvrir Tarification ➔
+          </a>
+        </div>
         <DetailsServices />
       </section>
       <Footer />

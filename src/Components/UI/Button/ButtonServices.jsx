@@ -27,7 +27,7 @@ const ButtonServices = () => {
   };
   return (
     <>
-      <div className="flex justify-center sm:justify-end relative right-20 top-20 sm:right-96">
+      <div className="flex justify-center sm:justify-end h-auto relative right-20 top-20 sm:right-96">
         <svg
           onClick={SectionToSectionContactServices}
           width="200"
