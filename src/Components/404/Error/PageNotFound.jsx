@@ -72,7 +72,7 @@ const PageNotFound = () => {
             </defs>
           </svg>
         </div>
-        <div className="text-center pb-32">
+        <div className="text-center pb-36">
           <h1 className="text-C22E2E text-9xl font-extrabold">404</h1>
           <p className="font-extrabold tracking-tight text-C22E2E text-2xl sm:text-4xl">
             Oups, mauvais chemin...
