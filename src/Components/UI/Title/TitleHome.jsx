@@ -4,7 +4,7 @@ import ButtonDiscover from "../Button/ButtonDiscover";
 const TitleHome = () => {
   return (
     <>
-      <div className="flex flex-col justify-center items-center h-my-screen pt-0 sm:pt-32">
+      <div className="flex flex-col justify-center items-center h-my-screen pt-0 sm:pt-20">
         <h1 className="font-extrabold tracking-tight text-FFF6E4 text-4xl sm:text-8xl md:text-8xl">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
@@ -20,10 +20,8 @@ const TitleHome = () => {
           </span>
         </div>
       </div>
-      <div className="pt-20">
-        <div className="h-44">
-          <ButtonDiscover />
-        </div>
+      <div className="pt-10 pb-24">
+        <ButtonDiscover />
       </div>
       <div className="h-20">
         <p className="mt-10">

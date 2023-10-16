@@ -30,7 +30,7 @@ const Button = () => {
 
   return (
     <>
-      <div className="flex justify-center sm:justify-end px-0 sm:px-10">
+      <div className="flex justify-center sm:justify-end px-0 sm:px-28">
         <NavLink
           onClick={SectionToScroll}
           className="bg-FFF6E4 text-black inline-flex items-center gap-2 px-8 py-3 rounded-full"
