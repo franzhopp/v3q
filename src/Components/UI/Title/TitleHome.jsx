@@ -20,9 +20,7 @@ const TitleHome = () => {
           </div>
         </div>
       </div>
-      <div className="h-auto mb-20">
-        <ButtonDiscover />
-      </div>
+      <ButtonDiscover />
       <div className="h-20">
         <p className="mt-10">
           <span className="whitespace-nowrap animation-scrolling-rtl text-black text-2xl sm:text-4xl">
