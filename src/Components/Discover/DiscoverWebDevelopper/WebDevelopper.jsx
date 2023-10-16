@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import NavbarDiscoverWebDevelopper from "../../Navigation/NavbarDiscover/DiscoverWebDevelopperNavbar";
-import Avatar from "../../UI/Avatar/TemplateAvatar";
+import Avatar from "../../UI/Avatar/TemplateAvatarWebDeveloper";
 import ImageLouisa from "../../../assets/picture-louisa-1.png";
 import ImgText from "../../../assets/logo-4.png";
 import LogoInsta from "../../../assets/instagram2.png";
