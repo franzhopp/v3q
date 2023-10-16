@@ -15,7 +15,10 @@ const TitleHome = () => {
           </motion.span>
         </h1>
         <div className="flex justify-center">
-          <span data-aos="fade-right" className="font-extrabold text-FFF6E4">
+          <span
+            data-aos="fade-right"
+            className="font-extrabold text-sm text-C22E2E"
+          >
             PARIS X LONDON
           </span>
         </div>
@@ -23,8 +26,8 @@ const TitleHome = () => {
       <div className="pt-10 pb-24">
         <ButtonDiscover />
       </div>
-      <div className="h-20">
-        <p className="mt-10">
+      <div className="h-28">
+        <p className="mt-20">
           <span className="whitespace-nowrap animation-scrolling-rtl text-black text-2xl sm:text-4xl">
             DESIGN | DÉVELOPPEMENT | MARKETING DIGITAL | STRATÉGIE DE MARQUE
           </span>
