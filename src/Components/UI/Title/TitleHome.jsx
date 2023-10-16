@@ -20,7 +20,7 @@ const TitleHome = () => {
           </span>
         </div>
       </div>
-      <div className="">
+      <div className="pt-20">
         <div className="h-44">
           <ButtonDiscover />
         </div>
