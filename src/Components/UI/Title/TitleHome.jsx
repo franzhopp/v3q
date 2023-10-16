@@ -22,7 +22,7 @@ const TitleHome = () => {
       </div>
 
       <ButtonDiscover />
-      <p className="pt-14 pb-10">
+      <p className="pt-14 pb-14">
         <span className="whitespace-nowrap animation-scrolling-rtl text-black text-2xl sm:text-4xl">
           DESIGN | DÉVELOPPEMENT | MARKETING DIGITAL | STRATÉGIE DE MARQUE
         </span>
