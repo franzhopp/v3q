@@ -205,6 +205,16 @@ textarea {
     animation: rotateAnimation 0.5s ease-in-out forwards;
 }
 
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .animation-scrolling-rtl {
     display: inline-block;
     padding-right: 2em;
@@ -223,15 +233,6 @@ textarea {
     }
 }
 
-@keyframes rotateAnimation {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
 
 /* CARDS SERVICES */
 .bg-cards {
