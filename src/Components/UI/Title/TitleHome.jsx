@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import BaseButton from "../../UI/Button/BaseButton";
+import ButtonDiscover from "../Button/ButtonDiscover";
 
 const TitleHome = () => {
   return (
     <>
-      <div className="flex flex-col justify-center items-center pt-56 sm:mt-28 sm:pt-52">
+      <div className="flex flex-col justify-center items-center h-my-screen">
         <h1 className="font-extrabold tracking-tight text-FFF6E4 text-4xl sm:text-8xl md:text-8xl">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
@@ -16,10 +16,11 @@ const TitleHome = () => {
         </h1>
         <span className="font-extrabold text-FFF6E4">PARIS X LONDON</span>
       </div>
-      <BaseButton />
 
-      <div>
-        <p className="text-center pt-24">
+      <ButtonDiscover />
+
+      <div className="h-20">
+        <p className="mt-10">
           <span className="whitespace-nowrap animation-scrolling-rtl text-black text-2xl sm:text-4xl">
             DESIGN | DÉVELOPPEMENT | MARKETING DIGITAL | STRATÉGIE DE MARQUE
           </span>

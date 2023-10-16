@@ -14,7 +14,7 @@ const Portfolio = () => {
       title: "By Sarah Cuisine",
       url: "https://by-sarah-cuisine.netlify.app/",
       content:
-        "Nous sommes heureux de vous annoncer que le site By Sarah Cuisine a été créé par la société navi studio.™ Développé et designé par Louisa, ce projet a été riche en développement car il permet à Sarah de promouvoir sa marque influente en tant que traiteur. Nous te souhaitons toute la réussite ainsi que de belles choses avec ce site, nous espérons que ta marque de fabrique puisse davantage s'accroître dans les meilleures années à venir, encore et plus fort ! ✨",
+        "Nous sommes heureux de vous annoncer que le site By Sarah Cuisine a été créé par la société navi studio.™ Développé et designé par Louisa, ce projet a été riche en développement car il permet à Sarah de promouvoir sa marque influente en tant que traiteur. Nous te souhaitons toute la réussite ainsi que de belles choses avec ce site, nous espérons que ta marque de fabrique puisse davantage s'accroître dans les années à venir, encore et plus fort ! ✨",
     },
     {
       image: ImgDefault,

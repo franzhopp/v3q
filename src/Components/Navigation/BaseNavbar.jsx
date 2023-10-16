@@ -93,8 +93,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="image-navi-studio-home sm:pb-14">
-      {/* Navigation Desktop */}
+    <div className="image-navi-studio-home">  
       <nav
         className={`bg-FFF6E4 border-b-4 border-C22E2E h-28 items-center transition duration-300 ease-in-out fixed w-full top-0 left-0 shadow-md z-max`}
       >

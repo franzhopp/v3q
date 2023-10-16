@@ -112,7 +112,7 @@ const DiscoverDesigner = () => {
                   alt="Icône Navi Studio"
                 />{" "}
                 c'est un peu comme un enfant né de l'amour du design et du
-                developpement web. ♥
+                développement web. ♥
                 <br />
               </p>
             </div>

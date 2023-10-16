@@ -6,6 +6,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .h-my-screen {
+        height: 80dvh;
+    }
+}
+
 html,
 body {
     cursor: url('./Cursor/Cursor_1.svg'), default !important;
