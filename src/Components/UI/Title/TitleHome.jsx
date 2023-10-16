@@ -20,7 +20,7 @@ const TitleHome = () => {
           </div>
         </div>
       </div>
-      <div className="h-auto mb-10">
+      <div className="h-auto mb-20">
         <ButtonDiscover />
       </div>
       <div className="h-20">
