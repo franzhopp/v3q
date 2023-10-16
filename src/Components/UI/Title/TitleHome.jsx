@@ -26,7 +26,7 @@ const TitleHome = () => {
         </div>
       </div>
       <div className="h-20">
-        <p className="mt-10">
+        <p className="mt-8">
           <span className="whitespace-nowrap animation-scrolling-rtl text-black text-2xl sm:text-4xl">
             DESIGN | DÉVELOPPEMENT | MARKETING DIGITAL | STRATÉGIE DE MARQUE
           </span>
