@@ -6,7 +6,7 @@ import ModalSearch from "../../Modal/SearchModal.jsx";
 import "../../Section/FirstSection.jsx";
 import "../../Homepage/Homepage";
 
-const PrivacyNavbar = () => {
+const PagesNavbar = () => {
   const [isAnimating, setIsAnimating] = useState(false);
   const [scrollNavbar, setScrollNavbar] = useState();
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -24,6 +24,7 @@ const PrivacyNavbar = () => {
     { id: 1, lng: "🇬🇧", link: "/hhezyezyze" },
     { id: 2, lng: "🇫🇷", link: "/" },
   ];
+  
   // Toggle → HandleMouse from list items
   const toggleMenuMobile = () => {
     setToggleMenu(!toggleMenu);
@@ -613,4 +614,4 @@ const PrivacyNavbar = () => {
   );
 };
 
-export default PrivacyNavbar;
+export default PagesNavbar;

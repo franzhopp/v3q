@@ -12,6 +12,7 @@ import DevisFree from "./Components/Devis/FormDevis.jsx";
 import PagePrivacy from "./Components/Privacy/Pages/PagePrivacy.jsx";
 import PageConditions from "./Components/Privacy/Pages/PageTerms.jsx";
 import PageMentions from "./Components/Privacy/Pages/PageMentions.jsx";
+import PageNotFound from "./Components/404/Error/PageNotFound.jsx";
 import Loader from "./loading.jsx";
 
 const App = () => {
@@ -48,6 +49,7 @@ const App = () => {
             <Route path="/privacy" element={<PagePrivacy />} />
             <Route path="/terms" element={<PageConditions />} />
             <Route path="/mentions" element={<PageMentions />} />
+            <Route path="*" element={<PageNotFound />} />
           </Routes>
         </Router>
       )}
