@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import NavbarDiscoverDesigner from "../../Navigation/NavbarDiscover/DiscoverDesignerNavbar";
 import AvatarDesigner from "../../UI/Avatar/TemplateAvatarDesigner";
 import ImgText from "../../../assets/logo-4.png";
@@ -117,20 +118,20 @@ const DiscoverDesigner = () => {
               </p>
             </div>
             <div className="flex justify-center">
-              <a
+              <NavLink
+                to="/webdev"
                 className="mt-7 text-C22E2E text-center font-extrabold underline transition hover:text-0C3E78"
-                href="/webdev"
               >
                 Découvrir Web Developer ➔
-              </a>
+              </NavLink>
             </div>
             <div className="flex justify-center">
-              <a
+              <NavLink
+                to="/"
                 className=" text-C22E2E font-extrabold underline transition hover:text-0C3E78"
-                href="/"
               >
                 Retourner à la page d'Accueil ➔
-              </a>
+              </NavLink>
             </div>
           </div>
 

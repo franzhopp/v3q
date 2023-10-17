@@ -8,6 +8,7 @@ import LogoInsta from "../../../assets/instagram2.png";
 import LogoLinkedin from "../../../assets/linkedin.png";
 import LogoSnap from "../../../assets/snapchat.png";
 import Footer from "../../Footer/Footer";
+import { NavLink } from "react-router-dom";
 
 const DiscoverWebDeveloper = () => {
   useEffect(() => {
@@ -185,19 +186,19 @@ const DiscoverWebDeveloper = () => {
                 grande passion et un immense plaisir de vous la partager. ✨
               </p>
               <br />
-              <a
+              <NavLink
+                to="/designer"
                 className="text-FFF6E4 font-extrabold underline transition hover:text-0C3E78"
-                href="/designer"
               >
                 Découvrir Designer ➔
-              </a>
+              </NavLink>
             </div>
-            <a
+            <NavLink
+              to="/"
               className="text-FFF6E4 font-extrabold underline transition hover:text-0C3E78"
-              href="/"
             >
               Retourner à la page d'Accueil ➔
-            </a>
+            </NavLink>
           </div>
         </div>
 
@@ -205,11 +206,10 @@ const DiscoverWebDeveloper = () => {
           <div class="p-6">
             <div className="flex flex-row space-x-10 list-none mt-20">
               <li>
-                <a
-                  href="https://www.instagram.com/navistudio.fr/"
+                <NavLink
+                  to="https://www.instagram.com/navistudio.fr/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className=""
                 >
                   {" "}
                   <img
@@ -217,33 +217,31 @@ const DiscoverWebDeveloper = () => {
                     alt="Icône Instagram"
                     className="flex-shrink-0 h-20 w-20"
                   />
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="" rel="noreferrer" target="_blank">
+                <NavLink to="" rel="noreferrer" target="_blank">
                   {" "}
                   <img
                     src={LogoLinkedin}
                     alt="Icône Linkedin"
                     className="flex-shrink-0 h-20 w-20"
                   />
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="">
-                  <a
-                    href="https://t.snapchat.com/BYKwKD2r"
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    {" "}
-                    <img
-                      src={LogoSnap}
-                      alt="Icône Snapchat"
-                      className="flex-shrink-0 h-20 w-20"
-                    />
-                  </a>
-                </a>
+                <NavLink
+                  to="https://t.snapchat.com/BYKwKD2r"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  {" "}
+                  <img
+                    src={LogoSnap}
+                    alt="Icône Snapchat"
+                    className="flex-shrink-0 h-20 w-20"
+                  />
+                </NavLink>
               </li>
             </div>
             <div data-aos="fade-in" className="flex justify-center mt-10">
