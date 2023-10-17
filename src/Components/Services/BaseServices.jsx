@@ -5,6 +5,7 @@ import ImgService2 from "../../assets/home2.png";
 import ImgService3 from "../../assets/home3.png";
 import ImgService4 from "../../assets/home4.png";
 import Footer from "../Footer/Footer";
+import { NavLink } from "react-router-dom";
 
 const Services = () => {
   return (
@@ -159,12 +160,12 @@ const Services = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <a
+          <NavLink
+            to="/rate"
             className="text-black font-extrabold underline transition hover:text-0C3E78"
-            href="/rate"
           >
             Découvrir Tarification ➔
-          </a>
+          </NavLink>
         </div>
         <DetailsServices />
       </section>

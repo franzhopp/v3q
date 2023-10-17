@@ -5,6 +5,7 @@ import TitleDevis from "../UI/Title/TitleFormDevis.jsx";
 import ImgText from "../../assets/logo-4.png";
 import ButtonSend from "../UI/Button/ButtonSend.jsx";
 import Footer from "../Footer/Footer.jsx";
+import { NavLink } from "react-router-dom";
 
 const DevisFree = ({ label, type, value }) => {
   const [status, setStatus] = useState("");
@@ -632,19 +633,23 @@ const DevisFree = ({ label, type, value }) => {
                   </span>
                   collecte et traite ces données conformément à sa Politique de
                   Confidentialité.{" "}
-                  <a
-                    href="/privacy"
+                  <NavLink
+                    to="/privacy"
+                    rel="noreferrer"
+                    target="_blank"
                     className="underline font-extrabold text-0C3E78"
                   >
                     Lire la Politique de Confidentialité
-                  </a>{" "}
+                  </NavLink>{" "}
                   et{" "}
-                  <a
-                    href="/privacy"
+                  <NavLink
+                    to="/terms"
+                    rel="noreferrer"
+                    target="_blank"
                     className="underline font-extrabold text-0C3E78"
                   >
                     Conditions d'Utilisation
-                  </a>
+                  </NavLink>
                   .
                 </span>
                 {errors.conditions && (

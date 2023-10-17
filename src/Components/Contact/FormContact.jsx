@@ -3,6 +3,7 @@ import ImgText from "../../assets/logo-4.png";
 import emailjs from "emailjs-com";
 import ButtonSend from "../UI/Button/ButtonSend";
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Form = ({ label, type, value }) => {
   const [isFocused, setIsFocused] = useState(false);
@@ -443,19 +444,23 @@ const Form = ({ label, type, value }) => {
                   </span>
                   collecte et traite ces données conformément à sa Politique de
                   Confidentialité.{" "}
-                  <a
-                    href="/privacy"
+                  <NavLink
+                    to="/privacy"
+                    rel="noreferrer"
+                    target="_blank"
                     className="underline font-extrabold text-0C3E78"
                   >
                     Lire la Politique de Confidentialité
-                  </a>{" "}
+                  </NavLink>{" "}
                   et{" "}
-                  <a
-                    href="/privacy"
+                  <NavLink
+                    to="/terms"
+                    rel="noreferrer"
+                    target="_blank"
                     className="underline font-extrabold text-0C3E78"
                   >
                     Conditions d'Utilisation
-                  </a>
+                  </NavLink>
                   .
                 </span>
                 {errors.conditions && (
