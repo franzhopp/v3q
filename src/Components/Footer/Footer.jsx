@@ -5,6 +5,7 @@ import LogoInsta from "../../assets/instagram2.png";
 import LogoTwitter from "../../assets/twitter.png";
 import LogoLinkedin from "../../assets/linkedin.png";
 import LogoSnap from "../../assets/snapchat.png";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   const [status, setStatus] = useState("");
@@ -121,84 +122,92 @@ const Footer = () => {
 
           <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
             <li>
-              <a
-                id="about"
+              <NavLink
+                to="/"
                 className="text-black transition hover:text-0C3E78"
-                href="/"
               >
                 Agence
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a
+              <NavLink
+                to="/ethics"
                 className="text-black transition hover:text-0C3E78"
-                href="/ethics"
               >
                 Nos Valeurs
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a
+              <NavLink
+                to="/services"
                 className="text-black transition hover:text-0C3E78"
-                href="/services"
               >
                 Qui sommes-nous ?
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a
+              <NavLink
+                to="/designer"
                 className="text-black transition hover:text-0C3E78"
-                href="/designer"
               >
                 Designer
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a
+              <NavLink
+                to="/webdev"
                 className="text-black transition hover:text-0C3E78"
-                href="/webdev"
               >
                 Web Developer
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a
+              <NavLink
+                to="/services"
                 className="text-black transition hover:text-0C3E78"
-                href="/services"
               >
                 Services
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a className="text-black transition hover:text-0C3E78" href="/">
-                Prestations
-              </a>
-            </li>
-            <li>
-              <a className="text-black transition hover:text-0C3E78" href="/">
-                Tarification
-              </a>
-            </li>
-            <li>
-              <a
+              <NavLink
+                to="/services"
                 className="text-black transition hover:text-0C3E78"
-                href="/devis"
+              >
+                Prestations
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/rate"
+                className="text-black transition hover:text-0C3E78"
+              >
+                Tarification
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/devis"
+                className="text-black transition hover:text-0C3E78"
               >
                 Devis Gratuit
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a
+              <NavLink
+                to="/portfolio"
                 className="text-black transition hover:text-0C3E78"
-                href="/portfolio"
               >
                 Portfolio
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="/" className="text-black transition hover:text-0C3E78">
+              <NavLink
+                to="/"
+                className="text-black transition hover:text-0C3E78"
+              >
                 Contact
-              </a>
+              </NavLink>
             </li>
             <li>
               <a className="text-black transition hover:text-0C3E78" href="/">
@@ -207,28 +216,28 @@ const Footer = () => {
             </li>
 
             <li>
-              <a
+              <NavLink
+                to="/privacy"
                 className="text-black transition hover:text-0C3E78"
-                href="/privacy"
               >
                 Politique de Confidentialité
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a
+              <NavLink
+                to="/terms"
                 className="text-black transition hover:text-0C3E78"
-                href="/terms"
               >
                 Condition d'Utilisation
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a
+              <NavLink
+                to="/mentions"
                 className="text-black transition hover:text-0C3E78"
-                href="/mentions"
               >
                 Mentions Légales
-              </a>
+              </NavLink>
             </li>
           </ul>
 
