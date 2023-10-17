@@ -5,7 +5,7 @@ const TitleHome = () => {
   return (
     <>
       <div className="flex flex-col justify-center items-center h-my-screen">
-        <h1 className="font-extrabold tracking-tight text-FFF6E4 text-4xl sm:text-8xl md:text-8xl">
+        <h1 className="font-extrabold tracking-tight text-FFF6E4 text-4xl sm:text-8xl md:text-8xl mt-10">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
