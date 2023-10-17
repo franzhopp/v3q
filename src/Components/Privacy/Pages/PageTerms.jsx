@@ -5,14 +5,14 @@ const PageConditions = () => {
   return (
     <>
       <PrivacyNavbar />
-      <div className="bg-FFF6E4 flex justify-center">
-        <div className="w-full md:max-w-3xl p-4 font-sans-serif pt-40 sm:pt-20 pb-16">
-          <h1 className="text-C22E2E mb-16 text-2xl md:text-3xl font-semibold">
+      <div className="bg-FFF6E4 flex justify-center pt-40 sm:pt-20 pb-16">
+        <div className="w-full md:max-w-3xl p-4">
+          <h1 className="text-C22E2E text-center font-inter mb-16 text-2xl md:text-3xl font-semibold">
             Conditions d'Utilisation
           </h1>
-
+          
           <p className="text-black text-justify mb-4">
-            • L'utilisation de ce site implique l'acceptation sans réserve des
+            L'utilisation de ce site implique l'acceptation sans réserve des
             conditions générales d'utilisation énoncées ci-dessous. Ces
             conditions peuvent être modifiées ou complétées à tout moment.
           </p>
