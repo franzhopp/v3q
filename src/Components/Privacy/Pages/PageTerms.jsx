@@ -118,7 +118,7 @@ const PageConditions = () => {
           </h2>
           <p className="text-black text-justify mb-4">
             • Ces conditions d'utilisation sont régies par les lois en vigueur
-            en France et au Royaume-Uni. Tout litige découlant de l'utilisation
+            en France / United Kingdom. Tout litige découlant de l'utilisation
             de ce site sera soumis à la compétence exclusive des tribunaux de
             nos villes.
           </p>
