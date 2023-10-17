@@ -25,7 +25,7 @@ const PageMentions = () => {
               className="h-6 ml-1 inline"
               alt="Icône navi studio."
             />
-            <br />•<span className={keywordsStyle}> Adresse du site :</span>{" "}
+            <br />•<span className={keywordsStyle}> Site URL :</span>{" "}
             <NavLink
               to="http://navistudio.io/"
               target="_blank"
@@ -222,7 +222,7 @@ const PageMentions = () => {
               {" "}
               Technologies utilisées :
             </span>{" "}
-            React, Tailwind CSS.
+            React, Tailwind CSS, AOS... etc.
             <br />
             <div className="text-justify font-inter mt-16 font-extrabold text-C22E2E">
               Modèle de formule de collecte de données à caractère personnel

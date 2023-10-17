@@ -13,8 +13,8 @@ const PagePrivacy = () => {
             Politique de Confidentialité des Données
           </h1>
 
-          <p className="text-black text-justify mb-4">
-            • Chez
+          <p className="text-black font-extrabold italic text-justify mb-10">
+            Chez
             <img
               src={ImgText}
               className="h-6 ml-1 inline"
@@ -75,6 +75,58 @@ const PagePrivacy = () => {
             confidentialité, veuillez nous contacter. Votre confiance est
             précieuse, et nous nous engageons à respecter les réglementations en
             vigueur pour protéger vos données personnelles.
+          </p>
+
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-C22E2E">
+            Sécurité et Confidentialité
+          </h2>
+          <p className="text-black text-justify mb-4">
+            • La sécurité de vos données est notre priorité. Nous prenons des
+            mesures techniques et organisationnelles pour protéger vos
+            informations personnelles contre les accès non autorisés, la perte,
+            la divulgation, la modification ou la destruction. Nous nous
+            engageons à respecter les réglementations en vigueur pour protéger
+            vos données personnelles.
+          </p>
+
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-C22E2E">
+            Droits des Utilisateurs
+          </h2>
+          <p className="text-black text-justify mb-4">
+            • Vous avez le droit d'accéder à vos données personnelles, de les
+            rectifier, de les supprimer ou de limiter leur traitement. Vous avez
+            également le droit de vous opposer au traitement de vos données à
+            des fins de marketing direct. Pour exercer vos droits ou pour toute
+            question concernant la protection de la vie privée, veuillez nous
+            contacter.
+          </p>
+
+          <p className="text-black text-justify mb-4">
+            • Vous pouvez également déposer une plainte auprès de l'autorité de
+            protection des données compétente si vous estimez que le traitement
+            de vos données personnelles viole les lois en vigueur.
+          </p>
+
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-C22E2E">
+            Modifications de la Politique de Confidentialité
+          </h2>
+          <p className="text-black text-justify mb-4">
+            • Nous nous réservons le droit de modifier cette politique de
+            confidentialité à tout moment. Toute modification sera publiée sur
+            notre site web et vous sera notifiée si nécessaire.
+          </p>
+
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-C22E2E">
+            Contact
+          </h2>
+          <p className="text-black text-justify mb-4">
+            • Pour toute question ou préoccupation concernant notre politique de
+            confidentialité des données, veuillez nous contacter à l'adresse
+            <span className="font-extrabold font-inter">
+              {" "}
+              Navi.studio.info@gmail.com
+            </span>
+            .
           </p>
         </div>
       </div>

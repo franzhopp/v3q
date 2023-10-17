@@ -10,8 +10,8 @@ const PageConditions = () => {
           <h1 className="text-C22E2E text-center font-inter mb-16 text-2xl md:text-3xl font-semibold">
             Conditions d'Utilisation
           </h1>
-          
-          <p className="text-black text-justify mb-4">
+
+          <p className="text-black font-extrabold text-justify mb-10 italic">
             L'utilisation de ce site implique l'acceptation sans réserve des
             conditions générales d'utilisation énoncées ci-dessous. Ces
             conditions peuvent être modifiées ou complétées à tout moment.
@@ -67,6 +67,69 @@ const PageConditions = () => {
             éviter toute confusion avec le site source et respecter les lois en
             vigueur. Le propriétaire se réserve le droit de demander la
             suppression de liens ne respectant pas ces règles.
+          </p>
+
+          <h2 className="text-C22E2E font-sans-recursive text-xl md:text-2xl font-semibold mb-2">
+            Responsabilité
+          </h2>
+          <p className="text-black text-justify mb-4">
+            • Le propriétaire du site ne peut être tenu responsable de tout
+            préjudice, perte ou dommage, qu'il soit direct ou indirect,
+            résultant de l'utilisation de ce site ou de son contenu. Les
+            informations fournies sont à titre informatif seulement et ne
+            constituent pas des conseils juridiques, médicaux ou professionnels.
+          </p>
+          <h2 className="text-C22E2E font-sans-recursive text-xl md:text-2xl font-semibold mb-2">
+            Sécurité
+          </h2>
+          <p className="text-black text-justify mb-4">
+            • Le propriétaire du site s'engage à prendre des mesures
+            raisonnables pour protéger la sécurité et la confidentialité des
+            données des utilisateurs. Cependant, il ne peut garantir la sécurité
+            absolue des informations transmises par les utilisateurs via
+            Internet.
+          </p>
+
+          <h2 className="text-C22E2E font-sans-recursive text-xl md:text-2xl font-semibold mb-2">
+            Modifications des Conditions
+          </h2>
+          <p className="text-black text-justify mb-4">
+            • Le propriétaire se réserve le droit de modifier ces conditions
+            d'utilisation à tout moment. Les utilisateurs sont encouragés à
+            consulter régulièrement les conditions pour rester informés des
+            mises à jour.
+          </p>
+
+          <h2 className="text-C22E2E font-sans-recursive text-xl md:text-2xl font-semibold mb-2">
+            Contact
+          </h2>
+          <p className="text-black text-justify mb-4">
+            • Pour toute question ou préoccupation concernant ces conditions
+            d'utilisation, veuillez nous contacter à l'adresse{" "}
+            <span className="font-extrabold font-inter">
+              {" "}
+              Navi.studio.info@gmail.com
+            </span>
+            .
+          </p>
+
+          <h2 className="text-C22E2E font-sans-recursive text-xl md:text-2xl font-semibold mb-2">
+            Droit applicable et juridiction
+          </h2>
+          <p className="text-black text-justify mb-4">
+            • Ces conditions d'utilisation sont régies par les lois en vigueur
+            en France et au Royaume-Uni. Tout litige découlant de l'utilisation
+            de ce site sera soumis à la compétence exclusive des tribunaux de
+            nos villes.
+          </p>
+          <h2 className="text-C22E2E font-sans-recursive text-xl md:text-2xl font-semibold mb-2">
+            Dispositions finales
+          </h2>
+          <p className="text-black text-justify mb-4">
+            • Ces conditions d'utilisation constituent l'accord complet entre
+            l'utilisateur et le propriétaire du site. Elles remplacent toutes
+            les communications antérieures, qu'elles soient écrites ou orales,
+            en ce qui concerne l'utilisation du site.
           </p>
         </div>
       </div>
