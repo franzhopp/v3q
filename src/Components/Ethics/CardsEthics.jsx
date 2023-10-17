@@ -2,6 +2,7 @@ import NavbarEthics from "../Navigation/EthicsNavbar/EthicsNavbar";
 import ImgMac from "../../assets/bg-ethics-mac.png";
 import ImgText from "../../assets/logo-8.png";
 import Footer from "../Footer/Footer";
+import { NavLink } from "react-router-dom";
 
 const EthicsPage = () => {
   return (
@@ -321,6 +322,14 @@ const EthicsPage = () => {
                   </span>
                   .
                 </p>
+                <div className="mt-10">
+                  <NavLink
+                    to="/"
+                    className="text-FFF6E4 font-extrabold underline transition hover:text-E18AB0"
+                  >
+                    Retourner à la page d'Accueil ➔
+                  </NavLink>
+                </div>
               </div>
             </div>
           </div>

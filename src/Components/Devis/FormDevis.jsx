@@ -167,7 +167,7 @@ const DevisFree = ({ label, type, value }) => {
       );
 
       // console.log("Email envoyé !", response.status, response.text);
-      setStatus("Votre devis est envoyé. Merci !");
+      setStatus("Votre devis est enregistré. Merci !");
     } catch (error) {
       // console.error("Erreur d'envoi d'e-mail.", error);
       setStatus("Une erreur s'est produite.");
@@ -282,12 +282,13 @@ const DevisFree = ({ label, type, value }) => {
                 </ul>
               </p>
               <div className="flex justify-center">
-                <a
+                <NavLink
+                  to="/"
+                  onClick={SectionToScroll}
                   className="text-FFF6E4 font-extrabold underline transition hover:text-C22E2E"
-                  href="/"
                 >
                   Retourner à la page d'Accueil ➔
-                </a>
+                </NavLink>
               </div>
             </div>
           </div>

@@ -1,9 +1,10 @@
+import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import Title from "../UI/Title/TitleFormContact";
 import ImgText from "../../assets/logo-4.png";
 import emailjs from "emailjs-com";
 import ButtonSend from "../UI/Button/ButtonSend";
-import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import "../Navigation/BaseNavbar.jsx";
 
 const Form = ({ label, type, value }) => {
   const [isFocused, setIsFocused] = useState(false);
@@ -142,7 +143,7 @@ const Form = ({ label, type, value }) => {
       );
 
       // console.log("Email envoyé !", response.status, response.text);
-      setStatus("Votre contact est envoyé. Merci !");
+      setStatus("Votre contact est enregistré. Merci !");
     } catch (error) {
       // console.error("Erreur d'envoi d'e-mail.", error);
       setStatus("Une erreur s'est produite.");

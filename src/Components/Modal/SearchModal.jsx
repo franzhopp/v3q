@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ImCross } from "react-icons/im";
 import { data } from "./SearchData.jsx";
@@ -24,10 +24,6 @@ const ModalSearch = ({ closeModal, searchQuery }) => {
   const handleReset = () => {
     setSearchQueryText("");
   };
-
-  // useEffect(() => {
-  //   handleSearch();
-  // }, []);
 
   return (
     <div className="bg-FFF6E4 flex space-x-2">

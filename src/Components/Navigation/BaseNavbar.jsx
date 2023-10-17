@@ -419,9 +419,6 @@ const Navbar = () => {
                       <li className="list-decimal ml-4 text-C22E2E font-extrabold">
                         <NavLink
                           to="/designer"
-                          // onClick={() => {
-                          //   window.location.href = "/designer";
-                          // }}
                           className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                         >
                           Designer
@@ -559,6 +556,7 @@ const Navbar = () => {
             </svg>
           </NavLink>
         </ul>
+        <div id="home"></div>
       </nav>
       <TitleHome />
     </div>

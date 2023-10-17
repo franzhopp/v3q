@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import Footer from "../../Footer/Footer";
 import NavbarPages from "../../Navigation/PagesNavbar/PagesNavbar";
 import TitleRate from "../../UI/Title/TitleRate";
@@ -161,12 +162,12 @@ const Rate = () => {
         </div>
       </div>
       <div className="flex justify-center pt-3">
-        <a
+        <NavLink
+          to="/devis"
           className=" text-C22E2E font-extrabold underline transition hover:text-0C3E78"
-          href="/devis"
         >
           Découvrir Devis Gratuit ➔
-        </a>
+        </NavLink>
       </div>
       <div className="pb-20"></div>
       <Footer />
