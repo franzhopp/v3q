@@ -98,14 +98,14 @@ const SectionAgency = () => {
             >
               <h1 className="text-4xl number font-semibold pb-5">05.</h1>
               <span className="font-extrabold">
-                Donnez à vos clients une expérience unique.
+                Donnez vie à vos projets pour une expérience unique.
               </span>
               {
-                " Nos créations offrent une navi-gation intuitive, un contenu engageant et des fonctionnalités conviviales, garantissant que chaque visiteur se sent connecté à votre marque. "
+                " Nos créations offrent une navigation intuitive, un contenu engageant et des fonctionnalités, garantissant que chaque visiteur se sent connecté à votre marque. "
               }
               <span className="font-extrabold">
-                Créez des relations solides grâce à une présence en ligne
-                exceptionnelle.
+                Votre site est la représentation de votre marque et de votre
+                production.
               </span>
             </p>
           </div>
@@ -117,9 +117,9 @@ const SectionAgency = () => {
             >
               <h1 className="text-4xl number font-semibold pb-5">06.</h1>
               <span className="font-extrabold">
-                {`Un site internet n'est pas seulement une dépense.`}
+                {`Votre site internet n'est pas seulement une dépense.`}
               </span>
-              {` Avec notre approche axée sur la conversion, nous créons des sites qui génèrent un retour sur investissement tangible. Obtenez plus de prospects, plus de ventes et plus de croissance grâce à notre expertise. Ceci n'est qu'un exemple de texte, car notre site est perpétuellement.`}
+              {` Il a un lien sur la conversion, nous créons des sites qui génèrent un retour. Obtenez plus de visites, plus de ventes et plus de croissance grâce à nos services. Vous ne serez pas déçus de choisir ceux-ci pour le déploiment de votre projet. Rendez-vous sur la page « Prestations ». `}
               {/* <span className="font-extrabold">
                       Corem ipsum dolor sit amet
                     </span> */}
