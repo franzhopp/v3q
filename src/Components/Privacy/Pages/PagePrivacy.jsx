@@ -26,7 +26,7 @@ const PagePrivacy = () => {
             données.
           </p>
 
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-C22E2E">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-C22E2E font-inter">
             Collecte des Données
           </h2>
           <p className="text-black text-justify mb-4">
@@ -36,7 +36,7 @@ const PagePrivacy = () => {
             pour vous fournir nos services.
           </p>
 
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-C22E2E">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-C22E2E font-inter">
             Finalités et Bases Légales
           </h2>
           <p className="text-black text-justify mb-4">
@@ -47,7 +47,7 @@ const PagePrivacy = () => {
             nos intérêts légitimes, ou votre consentement, le cas échéant.
           </p>
 
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-C22E2E">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-C22E2E font-inter">
             Destinataires des Données
           </h2>
           <p className="text-black text-justify mb-4">
@@ -57,7 +57,7 @@ const PagePrivacy = () => {
             des offres spéciales.
           </p>
 
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-C22E2E">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-C22E2E font-inter">
             Durée de Conservation
           </h2>
           <p className="text-black text-justify mb-4">
@@ -77,7 +77,7 @@ const PagePrivacy = () => {
             vigueur pour protéger vos données personnelles.
           </p>
 
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-C22E2E">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-C22E2E font-inter">
             Sécurité et Confidentialité
           </h2>
           <p className="text-black text-justify mb-4">
@@ -89,7 +89,7 @@ const PagePrivacy = () => {
             vos données personnelles.
           </p>
 
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-C22E2E">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-C22E2E font-inter">
             Droits des Utilisateurs
           </h2>
           <p className="text-black text-justify mb-4">
@@ -107,7 +107,7 @@ const PagePrivacy = () => {
             de vos données personnelles viole les lois en vigueur.
           </p>
 
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-C22E2E">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-C22E2E font-inter">
             Modifications de la Politique de Confidentialité
           </h2>
           <p className="text-black text-justify mb-4">
@@ -116,7 +116,7 @@ const PagePrivacy = () => {
             notre site web et vous sera notifiée si nécessaire.
           </p>
 
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-C22E2E">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-C22E2E font-inter">
             Contact
           </h2>
           <p className="text-black text-justify mb-4">

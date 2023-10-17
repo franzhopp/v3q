@@ -15,7 +15,7 @@ const PageMentions = () => {
             Mentions légales
           </h1>
 
-          <h2 className="text-C22E2E underline text-xl md:text-2xl font-semibold mb-2">
+          <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mb-2">
             Identité
           </h2>
           <p className="text-black mb-4">
@@ -36,7 +36,7 @@ const PageMentions = () => {
             </NavLink>
             .
             <br />•<span className={keywordsStyle}> Propriétaire :</span>{" "}
-            FERNANDEZ Louisa, NEFTI Mélissa.
+            Fernandez Louisa, Nefti Mélissa.
             <br />•<span className={keywordsStyle}> Activité :</span>{" "}
             Entrepreneur individuel
             <br />•<span className={keywordsStyle}> Adresse mail :</span>{" "}
@@ -46,7 +46,7 @@ const PageMentions = () => {
               {" "}
               Responsable de publication :
             </span>{" "}
-            FERNANDEZ Louisa, NEFTI Mélissa.
+            Fernandez Louisa, Nefti Mélissa.
             <br />•<span className={keywordsStyle}> Lieux :</span> Paris,
             Île-de-France / London, United Kingdom.
             <br />• <span className={keywordsStyle}>
@@ -56,7 +56,7 @@ const PageMentions = () => {
             <br />
           </p>
 
-          <h2 className="text-C22E2E underline text-xl md:text-2xl font-semibold mb-2">
+          <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mb-2">
             Conditions d’utilisation
           </h2>
           <p className="text-black text-justify mb-4">
@@ -65,7 +65,7 @@ const PageMentions = () => {
             modifiées à tout moment.
           </p>
 
-          <h2 className="text-C22E2E underline text-xl md:text-2xl font-semibold mb-2">
+          <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mb-2">
             Informations
           </h2>
           <p className="text-black text-justify mb-4">
@@ -74,7 +74,7 @@ const PageMentions = () => {
             l'accès au site.
           </p>
 
-          <h2 className="text-C22E2E underline text-xl md:text-2xl font-semibold mb-2">
+          <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mb-2">
             Interactivité
           </h2>
           <p className="text-black text-justify mb-4">
@@ -83,7 +83,7 @@ const PageMentions = () => {
             législation en vigueur.
           </p>
 
-          <h2 className="text-C22E2E underline text-xl md:text-2xl font-semibold mb-2">
+          <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mb-2">
             Propriété intellectuelle
           </h2>
           <p className="text-black text-justify">
@@ -91,7 +91,7 @@ const PageMentions = () => {
             auteurs. Toute utilisation non autorisée est interdite.
           </p>
 
-          <h2 className="text-C22E2E underline text-xl md:text-2xl font-semibold mb-2 mt-2">
+          <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mb-2 mt-2">
             Liens
           </h2>
           <p className="text-black text-justify">
@@ -99,7 +99,7 @@ const PageMentions = () => {
             conditions.
           </p>
 
-          <h2 className="text-C22E2E underline text-xl md:text-2xl font-semibold mb-2 mt-2">
+          <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mb-2 mt-2">
             Politique de confidentialité des données
           </h2>
           <p className="text-black text-justify">
@@ -107,7 +107,7 @@ const PageMentions = () => {
             à ses données personnelles.
           </p>
 
-          <h2 className="text-C22E2E underline text-xl md:text-2xl font-semibold mb-2 mt-2">
+          <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mb-2 mt-2">
             Objet du traitement
           </h2>
           <p className="text-black text-justify">
@@ -116,7 +116,7 @@ const PageMentions = () => {
             partenaires.
           </p>
 
-          <h2 className="text-C22E2E underline text-xl md:text-2xl font-semibold mb-2 mt-2">
+          <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mb-2 mt-2">
             Bases légales
           </h2>
           <p className="text-black text-justify">
@@ -124,7 +124,7 @@ const PageMentions = () => {
             légitime, le consentement, et l'obligation légale.
           </p>
 
-          <h2 className="text-C22E2E underline text-xl md:text-2xl font-semibold mb-2 mt-2">
+          <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mb-2 mt-2">
             Destinataires des données
           </h2>
           <p className="text-black text-justify">
@@ -133,14 +133,14 @@ const PageMentions = () => {
             des partenaires commerciaux.
           </p>
 
-          <h2 className="text-C22E2E underline text-xl md:text-2xl font-semibold mb-2 mt-2">
+          <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mb-2 mt-2">
             Durée de conservation des données
           </h2>
           <p className="text-black text-justify">
             • Les données sont conservées selon les besoins légaux.
           </p>
 
-          <h2 className="text-C22E2E underline text-xl md:text-2xl font-semibold mb-2 mt-2">
+          <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mb-2 mt-2">
             Droits de l'utilisateur
           </h2>
           <p className="text-black text-justify">
@@ -148,13 +148,13 @@ const PageMentions = () => {
             contactant l'entreprise.
           </p>
 
-          <h2 className="text-C22E2E underline text-xl md:text-2xl font-semibold mb-2 mt-2">
+          <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mb-2 mt-2">
             Consentement
           </h2>
           <p className="text-black text-justify">
             • Un consentement explicite est requis pour certaines autorisations.
           </p>
-          <h2 className="text-C22E2E underline text-xl md:text-2xl font-semibold mt-16 mb-2">
+          <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mt-16 mb-2">
             Crédits
           </h2>
           <p className="mb-4 text-black">
@@ -163,7 +163,7 @@ const PageMentions = () => {
               {" "}
               Site imaginé et mis en œuvre par :
             </span>{" "}
-            NEFTI Mélissa, FERNANDEZ Louisa.
+            Nefti Mélissa, Fernandez Louisa.
             <br />•<span className={keywordsStyle}> Site URL :</span>{" "}
             <NavLink
               to="http://navistudio.io/defaultsite"
@@ -180,32 +180,32 @@ const PageMentions = () => {
               alt="Icône navi studio."
             />
             <br />•<span className={keywordsStyle}> Hébergeur :</span> IONOS
-            <br />•<span className={keywordsStyle}> Logo :</span> NEFTI Mélissa.
+            <br />•<span className={keywordsStyle}> Logo :</span> Nefti Mélissa.
             <br />•<span className={keywordsStyle}> Photographies : </span>
             Pexels.
-            <br />•<span className={keywordsStyle}> Vidéos :</span> NEFTI
-            Mélissa, FERNANDEZ Louisa.
+            <br />•<span className={keywordsStyle}> Vidéos :</span> Nefti
+            Mélissa, Fernandez Louisa.
             <br />•
             <span className={keywordsStyle}> Contenu des rubriques :</span>{" "}
-            NEFTI Mélissa, FERNANDEZ Louisa.
+            Nefti Mélissa, Fernandez Louisa.
             <br />•<span className={keywordsStyle}>
               {" "}
               Contenu des textes :
             </span>{" "}
-            NEFTI Mélissa, FERNANDEZ Louisa.
+            Nefti Mélissa, Fernandez Louisa.
             <br />•<span className={keywordsStyle}>
               {" "}
               Contenu des liens :
             </span>{" "}
-            NEFTI Mélissa, FERNANDEZ Louisa.
+            Nefti Mélissa, Fernandez Louisa.
             <br />•
-            <span className={keywordsStyle}> Montages des visuels :</span> NEFTI
-            Mélissa, FERNANDEZ Louisa.
+            <span className={keywordsStyle}> Montages des visuels :</span> Nefti
+            Mélissa, Fernandez Louisa.
             <br />•<span className={keywordsStyle}>
               {" "}
               Montages des vidéos :
             </span>{" "}
-            NEFTI Mélissa, FERNANDEZ Louisa.
+            Nefti Mélissa, Fernandez Louisa.
             <br />•
             <span className={keywordsStyle}>
               {" "}
