@@ -75,7 +75,7 @@ const Portfolio = () => {
                 {cards[currentIndex].content}
                 <div className="flex justify-center pt-5 pb-5">
                   <NavLink
-                    to="/rate"
+                    to="/"
                     className="text-black font-extrabold underline transition hover:text-0C3E78"
                   >
                     Retourner à la page d'Accueil ➔

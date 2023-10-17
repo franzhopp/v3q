@@ -284,7 +284,6 @@ const DevisFree = ({ label, type, value }) => {
               <div className="flex justify-center">
                 <NavLink
                   to="/"
-                  onClick={SectionToScroll}
                   className="text-FFF6E4 font-extrabold underline transition hover:text-C22E2E"
                 >
                   Retourner à la page d'Accueil ➔
