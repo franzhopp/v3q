@@ -6,7 +6,7 @@ const PageNotFound = () => {
   return (
     <section className="bg-FFF6E4">
       <PagesNavbar />
-      <div className="flex justify-start pt-32 sm:pt-14 pl-4">
+      <div className="flex justify-start pt-32 sm:pt-14 pl-6">
         <a
           className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
           href="/"
@@ -47,7 +47,7 @@ const PageNotFound = () => {
         </a>
       </div>
       <div className="pt-32  pb-48 px-4 place-content-center">
-        <div className=" animate-bounce-bounce flex justify-center pb-10">
+        <div className="animate-bounce-bounce flex justify-center pb-10">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="150"
@@ -72,14 +72,17 @@ const PageNotFound = () => {
             </defs>
           </svg>
         </div>
-        <div className="text-center pb-36">
+        <div className="text-center pb-28">
           <h1 className="text-C22E2E text-9xl font-extrabold">404</h1>
           <p className="font-extrabold tracking-tight text-C22E2E text-2xl sm:text-4xl">
             Oups, mauvais chemin...
           </p>
           <div className="flex justify-center pt-1">
-
-          <img src={ImgText} className="h-9 sm:h-10" alt="Icône Navi Studio" />
+            <img
+              src={ImgText}
+              className="h-9 sm:h-10"
+              alt="Icône Navi Studio"
+            />
           </div>
         </div>
       </div>

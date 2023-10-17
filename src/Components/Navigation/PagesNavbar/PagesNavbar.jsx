@@ -24,7 +24,7 @@ const PagesNavbar = () => {
     { id: 1, lng: "🇬🇧", link: "/hhezyezyze" },
     { id: 2, lng: "🇫🇷", link: "/" },
   ];
-  
+
   // Toggle → HandleMouse from list items
   const toggleMenuMobile = () => {
     setToggleMenu(!toggleMenu);
@@ -98,9 +98,6 @@ const PagesNavbar = () => {
               <li data-aos="fade-left" className="relative group list-none">
                 <NavLink
                   to="/"
-                  // onClick={() => {
-                  //   window.location.href = "/services";
-                  // }}
                   onMouseEnter={handleMouseEnterSubmenu}
                   onMouseLeave={closeSubmenuWithDelay}
                   className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
@@ -112,9 +109,6 @@ const PagesNavbar = () => {
                     <li className="text-C22E2E font-extrabold">
                       <NavLink
                         to="/"
-                        // onClick={() => {
-                        //   window.location.href = "/";
-                        // }}
                         className="block text-C22E2E border-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
                         Accueil
@@ -122,9 +116,6 @@ const PagesNavbar = () => {
                       <li>
                         <NavLink
                           to="/ethics"
-                          // onClick={() => {
-                          //   window.location.href = "/ethics";
-                          // }}
                           className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                         >
                           Nos valeurs
@@ -133,9 +124,6 @@ const PagesNavbar = () => {
                       <li>
                         <NavLink
                           to="/services"
-                          // onClick={() => {
-                          //   window.location.href = "/services";
-                          // }}
                           className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                         >
                           Qui sommes-nous ?
@@ -158,9 +146,6 @@ const PagesNavbar = () => {
                       <li className="list-decimal ml-4 text-C22E2E font-extrabold">
                         <NavLink
                           to="/designer"
-                          // onClick={() => {
-                          //   window.location.href = "/discover";
-                          // }}
                           className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
                         >
                           Designer
@@ -169,9 +154,6 @@ const PagesNavbar = () => {
                       <li className="list-decimal ml-4 text-C22E2E font-extrabold">
                         <NavLink
                           to="/webdev"
-                          // onClick={() => {
-                          //   window.location.href = "/discover";
-                          // }}
                           className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
                         >
                           Web Developer
@@ -185,9 +167,6 @@ const PagesNavbar = () => {
               <li data-aos="fade-left" className="relative group list-none">
                 <NavLink
                   to="/services"
-                  // onClick={() => {
-                  //   window.location.href = "/services";
-                  // }}
                   className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
                 >
                   Services
@@ -197,9 +176,6 @@ const PagesNavbar = () => {
                     <li>
                       <NavLink
                         to="/services"
-                        // onClick={() => {
-                        //   window.location.href = "/rate";
-                        // }}
                         className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
                         Prestations
@@ -209,9 +185,6 @@ const PagesNavbar = () => {
                     <li>
                       <NavLink
                         to="/rate"
-                        // onClick={() => {
-                        //   window.location.href = "/rate";
-                        // }}
                         className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
                         Tarification
@@ -220,9 +193,6 @@ const PagesNavbar = () => {
                     <li>
                       <NavLink
                         to="/devis"
-                        // onClick={() => {
-                        //   window.location.href = "/devis";
-                        // }}
                         className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
                         Devis gratuit
@@ -234,9 +204,6 @@ const PagesNavbar = () => {
 
               <NavLink
                 to="/portfolio"
-                // onClick={() => {
-                //   window.location.href = "/portfolio";
-                // }}
                 data-aos="fade-left"
                 href="about"
                 className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
@@ -246,9 +213,6 @@ const PagesNavbar = () => {
 
               <NavLink
                 to="/"
-                // onClick={() => {
-                //   window.location.href = "/";
-                // }}
                 data-aos="fade-left"
                 className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
               >
@@ -319,18 +283,11 @@ const PagesNavbar = () => {
           </div>
         </div>
       </nav>
-
-      {/* Navigation Mobile */}
       <nav
         className={`fixed w-full top-0 left-0 shadow-md md:hidden bg-FFF6E4 z-max`}
       >
         <div className="px-5 h-28 flex items-center justify-between">
-          <NavLink
-            to="/"
-            // onClick={() => {
-            //   window.location.href = "/";
-            // }}
-          >
+          <NavLink to="/">
             <img src={Image} alt="" className="h-10 w-auto sm:h-10" />
           </NavLink>
           <div className="-mr-2">
@@ -402,9 +359,6 @@ const PagesNavbar = () => {
                     <li className="list-decimal ml-4 text-C22E2E font-extrabold">
                       <NavLink
                         to="/"
-                        // onClick={() => {
-                        //   window.location.href = "/";
-                        // }}
                         className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
                         Accueil
@@ -413,9 +367,6 @@ const PagesNavbar = () => {
                     <li className="list-decimal ml-4">
                       <NavLink
                         to="/ethics"
-                        // onClick={() => {
-                        //   window.location.href = "/ethics";
-                        // }}
                         className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
                         Nos valeurs
@@ -424,9 +375,6 @@ const PagesNavbar = () => {
                     <li className="list-decimal ml-4">
                       <NavLink
                         to="/services"
-                        // onClick={() => {
-                        //   window.location.href = "/services";
-                        // }}
                         className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
                         Qui sommes-nous ?
@@ -452,9 +400,6 @@ const PagesNavbar = () => {
                       <li className="list-decimal ml-4 text-C22E2E font-extrabold">
                         <NavLink
                           to="/designer"
-                          // onClick={() => {
-                          //   window.location.href = "/designer";
-                          // }}
                           className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                         >
                           Designer
@@ -463,10 +408,7 @@ const PagesNavbar = () => {
                       <li className="list-decimal ml-4 text-C22E2E font-extrabold">
                         <NavLink
                           to="/webdev"
-                          // onClick={() => {
-                          //   window.location.href = "/webdev";
-                          // }}
-                          className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
+                          className="block text-C22E2E rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
                         >
                           Web Developer
                         </NavLink>
@@ -495,9 +437,6 @@ const PagesNavbar = () => {
                 <li className="list-decimal ml-4">
                   <NavLink
                     to="/services"
-                    // onClick={() => {
-                    //   window.location.href = "/rate";
-                    // }}
                     className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Prestations
@@ -506,9 +445,6 @@ const PagesNavbar = () => {
                 <li className="list-decimal ml-4">
                   <NavLink
                     to="/rate"
-                    // onClick={() => {
-                    //   window.location.href = "/rate";
-                    // }}
                     className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Tarification
@@ -517,9 +453,6 @@ const PagesNavbar = () => {
                 <li className="list-decimal ml-4">
                   <NavLink
                     to="/devis"
-                    // onClick={() => {
-                    //   window.location.href = "/devis";
-                    // }}
                     className="block text-C22E2E  hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     Devis gratuit
@@ -531,9 +464,6 @@ const PagesNavbar = () => {
 
           <NavLink
             to="/portfolio"
-            // onClick={() => {
-            //   window.location.href = "/portfolio";
-            // }}
             className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             Portfolio
@@ -541,9 +471,6 @@ const PagesNavbar = () => {
 
           <NavLink
             to="/"
-            // onClick={() => {
-            //   window.location.href = "/";
-            // }}
             className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             Contact

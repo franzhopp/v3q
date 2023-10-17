@@ -8,8 +8,24 @@ export const data = [
     link: "/ethics",
   },
   {
+    keywords: "Valeurs",
+    link: "/ethics",
+  },
+  {
+    keywords: "Valeur",
+    link: "/ethics",
+  },
+  {
     keywords: "Services",
     link: "/services",
+  },
+  {
+    keywords: "Prestations",
+    link: "/services",
+  },
+  {
+    keywords: "Tarification",
+    link: "/rate",
   },
   {
     keywords: "Designer",
@@ -37,7 +53,7 @@ export const data = [
   },
   {
     keywords: "Contact",
-    link: "/devis",
+    link: "/",
   },
   {
     keywords: "Paris",
@@ -66,5 +82,9 @@ export const data = [
   {
     keywords: "Mélissa",
     link: "/designer",
+  },
+  {
+    keywords: "FR",
+    link: "/",
   },
 ];

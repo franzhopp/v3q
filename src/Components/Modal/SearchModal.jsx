@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ImCross } from "react-icons/im";
 import { data } from "./SearchData.jsx";
@@ -16,15 +16,18 @@ const ModalSearch = ({ closeModal, searchQuery }) => {
       );
       if (matchingPage) {
         navigate(matchingPage.link);
-        // window.location.reload();
+        window.scrollTo(0, 0);
         closeModal(false);
       }
     }
   };
-
   const handleReset = () => {
     setSearchQueryText("");
   };
+
+  // useEffect(() => {
+  //   handleSearch();
+  // }, []);
 
   return (
     <div className="bg-FFF6E4 flex space-x-2">

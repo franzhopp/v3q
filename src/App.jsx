@@ -14,6 +14,7 @@ import PageConditions from "./Components/Privacy/Pages/PageTerms.jsx";
 import PageMentions from "./Components/Privacy/Pages/PageMentions.jsx";
 import PageNotFound from "./Components/404/Error/PageNotFound.jsx";
 import Loader from "./loading.jsx";
+import ScrollToTop from "./ScrollToTop.jsx";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -36,6 +37,7 @@ const App = () => {
         <Loader />
       ) : (
         <Router>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/" element={<Section />} />
