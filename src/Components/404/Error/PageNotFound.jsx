@@ -6,7 +6,7 @@ const PageNotFound = () => {
   return (
     <section className="bg-FFF6E4">
       <PagesNavbar />
-      <div className="flex justify-start pt-32 sm:pt-14 pl-5">
+      <div className="flex justify-start pt-32 sm:pt-14 pl-4">
         <a
           className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
           href="/"
@@ -46,7 +46,7 @@ const PageNotFound = () => {
           </svg>
         </a>
       </div>
-      <div className="pt-32 pb-32 px-4 place-content-center">
+      <div className="pt-32  pb-48 px-4 place-content-center">
         <div className=" animate-bounce-bounce flex justify-center pb-10">
           <svg
             xmlns="http://www.w3.org/2000/svg"
