@@ -5,7 +5,7 @@ const TitleHome = () => {
   return (
     <>
       <div className="">
-        <div className="flex flex-col justify-center items-center h-my-screen pt-60 pb-80">
+        <div className="flex flex-col justify-center items-center h-my-screen pt-60 pb-52">
           <h1 className="font-extrabold tracking-tight text-FFF6E4 text-4xl sm:text-8xl md:text-8xl">
             <motion.span
               initial={{ opacity: 0, y: 20 }}
@@ -24,10 +24,10 @@ const TitleHome = () => {
             </span>
           </div>
         </div>
-        <div className="flex justify-center sm:justify-end px-0 sm:px-20 pt-10">
+        <div className="flex justify-center sm:justify-end px-0 sm:px-20">
           <ButtonDiscover />
         </div>
-        <p className="pt-10 pb-10">
+        <p className="pt-10 pb-5">
           <span className="whitespace-nowrap animation-scrolling-rtl text-black text-2xl sm:text-4xl">
             DESIGN | DÉVELOPPEMENT | MARKETING DIGITAL | STRATÉGIE DE MARQUE
           </span>
