@@ -5,6 +5,8 @@ import Image from "../../../assets/logo-5.png";
 import ModalSearch from "../../Modal/SearchModal.jsx";
 import "../../Section/FirstSection.jsx";
 import "../../Homepage/Homepage";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const PagesNavbar = () => {
   const [isAnimating, setIsAnimating] = useState(false);
@@ -21,10 +23,9 @@ const PagesNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const values = [
-    { id: 1, lng: "🇬🇧", link: "/hhezyezyze" },
-    { id: 2, lng: "🇫🇷", link: "/" },
+    { id: 1, lng: "ENG 🇬🇧", link: "/hhezyezyze" },
+    { id: 2, lng: "FR 🇫🇷", link: "/" },
   ];
-
   // Toggle → HandleMouse from list items
   const toggleMenuMobile = () => {
     setToggleMenu(!toggleMenu);
@@ -62,6 +63,8 @@ const PagesNavbar = () => {
     }, 1000);
   };
   useEffect(() => {
+    AOS.init();
+    AOS.refresh();
     const handleScroll = () => {
       if (window.scrollY > 0) {
         setScrollNavbar(true);
@@ -75,8 +78,12 @@ const PagesNavbar = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
-
+  }, [
+    showSousListsAgence,
+    showSousListsFiveMenu,
+    showSousListsMenu,
+    showSousListsThreeMenu,
+  ]);
   return (
     <div className="image-navi-studio-navbar-services h-screen sm:pb-20 mb:min-h-650 min-h-500">
       <nav
@@ -352,6 +359,7 @@ const PagesNavbar = () => {
               >
                 <li className="ml-4">
                   <ul
+                    data-aos="fade-left"
                     className={`toggle-menu ${
                       showSousListsAgence ? "block" : "hidden"
                     } p-2`}
@@ -393,6 +401,7 @@ const PagesNavbar = () => {
                     </button>
 
                     <ul
+                      data-aos="fade-left"
                       className={`toggle-menu ${
                         showSousListsFiveMenu ? "block" : "hidden"
                       } p-2`}
@@ -430,6 +439,7 @@ const PagesNavbar = () => {
               </button>
 
               <ul
+                data-aos="fade-left"
                 className={`toggle-menu ${
                   showSousListsMenu ? "block" : "hidden"
                 } p-2`}
@@ -485,6 +495,7 @@ const PagesNavbar = () => {
                 </div>
               </button>
               <ul
+                data-aos="fade-left"
                 className={`toggle-menu ${
                   showSousListsThreeMenu ? "block" : "hidden"
                 } p-2`}

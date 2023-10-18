@@ -4,6 +4,8 @@ import { NavLink } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
 import ModalSearch from "../../Modal/SearchModal";
 import "../../Section/FirstSection.jsx";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const NavbarDiscoverWebDevelopper = () => {
   const [isAnimating, setIsAnimating] = useState(false);
@@ -20,8 +22,8 @@ const NavbarDiscoverWebDevelopper = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const values = [
-    { id: 1, lng: "🇬🇧", link: "/hhezyezyze" },
-    { id: 2, lng: "🇫🇷", link: "/" },
+    { id: 1, lng: "ENG 🇬🇧", link: "/hhezyezyze" },
+    { id: 2, lng: "FR 🇫🇷", link: "/" },
   ];
   // Toggle → HandleMouse from list items
   const toggleMenuMobile = () => {
@@ -59,9 +61,30 @@ const NavbarDiscoverWebDevelopper = () => {
       setShowSousListsMenu(false);
     }, 1000);
   };
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrollNavbar(true);
+      } else {
+        setScrollNavbar(false);
+      }
+    };
 
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [
+    showSousListsAgence,
+    showSousListsFiveMenu,
+    showSousListsMenu,
+    showSousListsThreeMenu,
+  ]);
   return (
-    <div className="picture-bannier-louisa pt-80 sm:pt-64 sm:pb-20 mb:min-h-650 min-h-500">
+    <div className="image-navi-studio-navbar-services h-screen sm:pb-20 mb:min-h-650 min-h-500">
       <nav
         className={`bg-FFF6E4 border-b-4 border-C22E2E h-28 items-center transition duration-300 ease-in-out fixed w-full top-0 left-0 shadow-md z-max`}
       >
@@ -335,6 +358,7 @@ const NavbarDiscoverWebDevelopper = () => {
               >
                 <li className="ml-4">
                   <ul
+                    data-aos="fade-left"
                     className={`toggle-menu ${
                       showSousListsAgence ? "block" : "hidden"
                     } p-2`}
@@ -376,6 +400,7 @@ const NavbarDiscoverWebDevelopper = () => {
                     </button>
 
                     <ul
+                      data-aos="fade-left"
                       className={`toggle-menu ${
                         showSousListsFiveMenu ? "block" : "hidden"
                       } p-2`}
@@ -413,6 +438,7 @@ const NavbarDiscoverWebDevelopper = () => {
               </button>
 
               <ul
+                data-aos="fade-left"
                 className={`toggle-menu ${
                   showSousListsMenu ? "block" : "hidden"
                 } p-2`}
@@ -468,6 +494,7 @@ const NavbarDiscoverWebDevelopper = () => {
                 </div>
               </button>
               <ul
+                data-aos="fade-left"
                 className={`toggle-menu ${
                   showSousListsThreeMenu ? "block" : "hidden"
                 } p-2`}

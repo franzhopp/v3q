@@ -311,6 +311,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      
       <nav
         className={`fixed w-full top-0 left-0 shadow-md md:hidden bg-FFF6E4 z-max`}
       >
