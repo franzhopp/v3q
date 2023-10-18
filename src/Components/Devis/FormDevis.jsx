@@ -219,21 +219,13 @@ const DevisFree = ({ label, type, value }) => {
                 </span>
                 <ul>
                   <br />
-                  <li
-                    data-aos="fade-up"
-                    data-aos-anchor-placement="top-bottom"
-                    data-aos-duration="200"
-                  >
+                  <li>
                     <span className="font-extrabold">1</span>. Assurez-vous de
                     fournir des informations complètes afin que nous puissions
                     vous recontacter rapidement.
                   </li>
                   <br />
-                  <li
-                    data-aos="fade-up"
-                    data-aos-anchor-placement="top-bottom"
-                    data-aos-duration="200"
-                  >
+                  <li>
                     <span className="font-extrabold">2</span>. Renseignez le
                     service que vous souhaitez afin que nous puissions élaborer
                     votre projet en conséquence. N'hésitez pas à consulter notre
@@ -248,11 +240,7 @@ const DevisFree = ({ label, type, value }) => {
                     avant de soumettre votre devis.
                   </li>
                   <br />
-                  <li
-                    data-aos="fade-up"
-                    data-aos-anchor-placement="top-bottom"
-                    data-aos-duration="200"
-                  >
+                  <li>
                     <span className="font-extrabold">3</span>. Indiquez vos
                     moyens budgétaires pour nous aider à déterminer les tarifs
                     qui correspondent à votre service. Avant de soumettre votre
@@ -268,11 +256,7 @@ const DevisFree = ({ label, type, value }) => {
                     .
                   </li>
                   <br />
-                  <li
-                    data-aos="fade-up"
-                    data-aos-anchor-placement="top-bottom"
-                    data-aos-duration="200"
-                  >
+                  <li>
                     <span className="font-extrabold">4</span>. Si vous possédez
                     déjà une charte graphique, veuillez simplement répondre «{" "}
                     <span className="font-extrabold">oui</span> » et nous
