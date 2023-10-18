@@ -6,6 +6,8 @@ import Image from "../../assets/logo-5.png";
 import ModalSearch from "../Modal/SearchModal.jsx";
 import "../Section/FirstSection.jsx";
 import "../Homepage/Homepage.jsx";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Navbar = () => {
   const [isAnimating, setIsAnimating] = useState(false);
@@ -79,6 +81,8 @@ const Navbar = () => {
     }, 1000);
   };
   useEffect(() => {
+    AOS.init();
+    AOS.refresh();
     const handleScroll = () => {
       if (window.scrollY > 0) {
         setScrollNavbar(true);
@@ -92,7 +96,12 @@ const Navbar = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [
+    showSousListsAgence,
+    showSousListsFiveMenu,
+    showSousListsMenu,
+    showSousListsThreeMenu,
+  ]);
 
   return (
     <div className="image-navi-studio-home">
@@ -365,6 +374,7 @@ const Navbar = () => {
               </button>
 
               <ul
+                data-aos="fade-left"
                 className={`toggle-menu ${
                   showSousListsAgence ? "block" : "hidden"
                 } p-2`}
@@ -412,6 +422,7 @@ const Navbar = () => {
                     </button>
 
                     <ul
+                      data-aos="fade-left"
                       className={`toggle-menu ${
                         showSousListsFiveMenu ? "block" : "hidden"
                       } p-2`}
@@ -449,6 +460,7 @@ const Navbar = () => {
               </button>
 
               <ul
+                data-aos="fade-left"
                 className={`toggle-menu ${
                   showSousListsMenu ? "block" : "hidden"
                 } p-2`}
@@ -505,6 +517,7 @@ const Navbar = () => {
                 </div>
               </button>
               <ul
+                data-aos="fade-left"
                 className={`toggle-menu ${
                   showSousListsThreeMenu ? "block" : "hidden"
                 } p-2`}
