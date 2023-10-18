@@ -24,8 +24,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const values = [
-    { id: 1, title: "EN", lng: "🇬🇧", link: "/hhezyezyze" },
-    { id: 2, title: "FR", lng: "🇫🇷", link: "/" },
+    { id: 1, title: "EN", lng: "ENG 🇬🇧", link: "/hhezyezyze" },
+    { id: 2, title: "FR", lng: "FR 🇫🇷", link: "/" },
   ];
 
   // Toggle → HandleMouse from list items
