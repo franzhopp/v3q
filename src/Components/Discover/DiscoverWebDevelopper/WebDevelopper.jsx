@@ -180,7 +180,7 @@ const DiscoverWebDeveloper = () => {
                 <img
                   src={ImgText}
                   className="h-6 ml-1 inline"
-                  alt="Icône Navi Studio"
+                  alt="Icône navi studio."
                 />{" "}
                 Je vous invite à naviger les pages de notre site, conçu avec une
                 grande passion et un immense plaisir de vous la partager. ✨

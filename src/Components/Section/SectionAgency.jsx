@@ -48,7 +48,7 @@ const SectionAgency = () => {
                 <img
                   src={ImgText}
                   className="h-12 sm:h-16 mr-1 inline"
-                  alt="Icône Navi Studio"
+                  alt="Icône navi studio."
                 />
               </span>{" "}
               – Votre partenaire{" "}
@@ -116,7 +116,7 @@ const SectionAgency = () => {
                   <img
                     src={ImgText}
                     className="h-6 inline"
-                    alt="Icône Navi Studio"
+                    alt="Icône navi studio."
                   />
                 </span>{" "}
                 ? C'est une agence qui confectionne des sites internet.

@@ -612,7 +612,7 @@ const DevisFree = ({ label, type, value }) => {
                     <img
                       src={ImgText}
                       className="h-6 mr-1 inline"
-                      alt="Icône Navi Studio"
+                      alt="Icône navi studio."
                     />
                   </span>
                   collecte et traite ces données conformément à sa Politique de

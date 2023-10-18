@@ -18,7 +18,7 @@ const PagePrivacy = () => {
             <img
               src={ImgText}
               className="h-6 ml-1 inline"
-              alt="Icône navi studio."
+              alt="Icône navi studio.."
             />
             , nous accordons une grande importance à la protection de vos
             informations personnelles. Cette politique de confidentialité

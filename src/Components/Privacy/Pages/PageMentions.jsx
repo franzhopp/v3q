@@ -23,7 +23,7 @@ const PageMentions = () => {
             <img
               src={ImgText}
               className="h-6 ml-1 inline"
-              alt="Icône navi studio."
+              alt="Icône navi studio.."
             />
             <br />•<span className={keywordsStyle}> Site URL :</span>{" "}
             <NavLink
@@ -177,7 +177,7 @@ const PageMentions = () => {
             <img
               src={ImgText}
               className="h-6 ml-1 inline"
-              alt="Icône navi studio."
+              alt="Icône navi studio.."
             />
             <br />•<span className={keywordsStyle}> Hébergeur :</span> IONOS
             <br />•<span className={keywordsStyle}> Logo :</span> Nefti Mélissa.

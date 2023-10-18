@@ -81,7 +81,7 @@ const PageNotFound = () => {
             <img
               src={ImgText}
               className="h-9 sm:h-10"
-              alt="Icône Navi Studio"
+              alt="Icône navi studio."
             />
           </div>
         </div>

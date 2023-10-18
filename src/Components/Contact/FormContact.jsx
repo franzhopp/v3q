@@ -174,7 +174,7 @@ const Form = ({ label, type, value }) => {
               <img
                 src={ImgText}
                 className="h-8 sm:h-12 ml-1 inline"
-                alt="Icône navi studio."
+                alt="Icône navi studio.."
               />
             </p>
 
@@ -440,7 +440,7 @@ const Form = ({ label, type, value }) => {
                     <img
                       src={ImgText}
                       className="h-6 mr-1 inline"
-                      alt="Icône Navi Studio"
+                      alt="Icône navi studio."
                     />
                   </span>
                   collecte et traite ces données conformément à sa Politique de

@@ -37,7 +37,7 @@ const SectionTeam = () => {
       <div className="flex justify-center">
         <div className="w-4/5 sm:w-1/2">
           <h3 className="text-center font-extrabold mt-20 text-C22E2E text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
-            <span className=" text-C22E2E">
+            <span className="text-black">
               {letters.map((letter, index) => (
                 <span
                   key={index}
@@ -64,7 +64,7 @@ const SectionTeam = () => {
               <img
                 src={ImgText}
                 className="h-6 mr-1 inline sm:h-9"
-                alt="Icône Navi Studio"
+                alt="Icône navi studio."
               />
             </span>
             <span className="font-extrabold">

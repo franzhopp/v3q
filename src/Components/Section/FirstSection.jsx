@@ -58,7 +58,7 @@ const Section = () => {
                   <img
                     src={ImgText}
                     className="h-6 mr-1 inline"
-                    alt="Icône Navi Studio"
+                    alt="Icône navi studio."
                   />
                 </span>{" "}
                 dès aujourd'hui.

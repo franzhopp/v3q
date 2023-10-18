@@ -72,7 +72,7 @@ const Footer = () => {
           <div className="flex justify-center">
             <img
               src={Image}
-              alt="Icône Navi Studio"
+              alt="Icône navi studio."
               className="h-auto mx-auto max-w-xs"
             />
           </div>

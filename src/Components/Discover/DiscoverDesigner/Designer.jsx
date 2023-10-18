@@ -110,7 +110,7 @@ const DiscoverDesigner = () => {
                 <img
                   src={ImgText}
                   className="h-6 inline"
-                  alt="Icône Navi Studio"
+                  alt="Icône navi studio."
                 />{" "}
                 c'est un peu comme un enfant né de l'amour du design et du
                 développement web. ♥
