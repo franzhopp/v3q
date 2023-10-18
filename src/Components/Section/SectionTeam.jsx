@@ -15,7 +15,6 @@ const SectionTeam = () => {
     },
     config: { duration: 1000 },
   });
-
   const text = "Notre équipe";
   const letters = text.split("");
   const animationConfig = [

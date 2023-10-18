@@ -41,7 +41,7 @@ const Section = () => {
               Confiez votre image à des professionnels
             </p>
           </div>
-          <div className="w-80 mt-10">
+          <div className="w-96 mt-10">
             <div className="p-5">
               <p
                 data-aos="fade-up"
@@ -65,14 +65,14 @@ const Section = () => {
               </p>
             </div>
           </div>
-          <div className="w-80 mt-3 sm:mt-10">
+          <div className="w-96 mt-3 sm:mt-10">
             <div className="p-5">
               <p
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
-                className="font-extrabold text-center text-black"
+                className="font-extrabold text-center sm:text-right  text-black"
               >
-                {`Votre site est votre vision. Chaque site raconte une histoire que notre équipe restranscrit en développant des expériences uniques qui reflètent l'identité de votre marque. Découvrez son histoire,  `}
+                {`Votre site est votre vision. Chaque site raconte une histoire que notre équipe restranscrit en développant des expériences uniques qui reflètent l'identité de votre marque. Découvrez notre agence, `}
                 <NavLink
                   href="about"
                   onClick={SectionToScroll}

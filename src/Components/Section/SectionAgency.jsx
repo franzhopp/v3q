@@ -54,7 +54,6 @@ const SectionAgency = () => {
             </h3>
           </div>
         </div>
-
         <div className="flex justify-center">
           <div className="w-4/5 sm:w-1/2">
             <p
@@ -88,9 +87,7 @@ const SectionAgency = () => {
           </div>
         </div>
       </div>
-
       <ButtonAgency />
-
       <section className="bg-0C3E78 py-24 px-4 sm:px-6 lg:px-8">
         <div className="pt-10 pb-16 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
           <div className="w-80 mt-5">
@@ -146,9 +143,6 @@ const SectionAgency = () => {
                 {`Votre site internet n'est pas seulement une dépense.`}
               </span>
               {` Il a un lien sur la conversion, nous créons des sites qui génèrent un retour. Obtenez plus de visites, plus de ventes et plus de croissance grâce à nos services. Vous ne serez pas déçus de choisir ceux-ci pour le déploiment de votre projet. Rendez-vous sur la page « Prestations ». `}
-              {/* <span className="font-extrabold">
-                      Corem ipsum dolor sit amet
-                    </span> */}
             </p>
           </div>
         </div>

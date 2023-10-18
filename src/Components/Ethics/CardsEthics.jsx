@@ -14,9 +14,9 @@ const EthicsPage = () => {
             <div class="p-6 rounded-lg shadow-md">
               <h2
                 data-aos="fade-left"
-                class="text-7xl number text-E18AB0 font-bold mb-2"
+                class="text-8xl number text-E18AB0 font-bold mb-2"
               >
-                01
+                01.
               </h2>
               <p className="text-black text-xl font-extrabold mb-5">
                 Engagement & Confiance
@@ -49,9 +49,9 @@ const EthicsPage = () => {
             <div class="p-6 rounded-lg shadow-md">
               <h2
                 data-aos="fade-right"
-                class="text-7xl number text-E18AB0 font-bold mb-2"
+                class="text-8xl number text-E18AB0 font-bold mb-2"
               >
-                02
+                02.
               </h2>
               <p className="text-black text-xl font-extrabold mb-5">
                 Satisfaction client
@@ -77,9 +77,9 @@ const EthicsPage = () => {
             <div class="p-6 rounded-lg shadow-md">
               <h2
                 data-aos="fade-left"
-                class="text-7xl number text-E18AB0 font-bold mb-2"
+                class="text-8xl number text-E18AB0 font-bold mb-2"
               >
-                03
+                03.
               </h2>
               <p className="text-black text-xl font-extrabold mb-5">Passion</p>
               <div className="w-72">
@@ -231,9 +231,6 @@ const EthicsPage = () => {
                   {`Un site internet n'est pas seulement une dépense.`}
                 </span>
                 {` Avec notre approche axée sur la conversion, nous créons des sites qui génèrent un retour sur investissement tangible. Obtenez plus de prospects, plus de ventes et plus de croissance grâce à notre expertise. Ceci n'est qu'un exemple de texte, car notre site est perpétuellement.`}
-                {/* <span className="font-extrabold">
-                      Corem ipsum dolor sit amet
-                    </span> */}
               </p>
             </div>
           </div>
@@ -263,21 +260,18 @@ const EthicsPage = () => {
               <div className="flex justify-center">
                 <p
                   data-aos="fade-left"
-                  className="mt-4 sm:mt-3 text-2xl sm:text-4xl"
+                  className="mt-4 sm:mt-3 text-3xl sm:text-4xl"
                 >
                   Faites confiance à{" "}
                   <span>
                     <img
                       src={ImgText}
-                      className="h-16 sm:h-24 mb-3 mr-1 mt-3 inline"
+                      className="h-20 sm:h-24 mb-3 mr-1 mt-3 inline"
                       alt="Icône Navi Studio"
                     />
                   </span>{" "}
                   🙏{" "}
                 </p>
-                <span className="sm:px-0 px-1">
-                  {/* <img src={ImgLogo} alt="" className="h-20 w-full" /> */}
-                </span>
               </div>
             </h1>
             <div className="flex justify-center">
