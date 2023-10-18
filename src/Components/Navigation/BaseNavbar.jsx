@@ -374,13 +374,13 @@ const Navbar = () => {
               </button>
 
               <ul
-                data-aos="fade-left"
                 className={`toggle-menu ${
                   showSousListsAgence ? "block" : "hidden"
                 } p-2`}
               >
                 <li className="ml-4">
                   <ul
+                    data-aos="fade-left"
                     className={`toggle-menu ${
                       showSousListsAgence ? "block" : "hidden"
                     } p-2`}
