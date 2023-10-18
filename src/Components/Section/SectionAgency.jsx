@@ -4,6 +4,22 @@ import SectionTeam from "./SectionTeam";
 import ButtonAgency from "../UI/Button/ButtonAgency";
 
 const SectionAgency = () => {
+  const text = "numérique";
+  const letters = text.split("");
+  const animationConfig = [
+    { dataAos: "fade-left", dataAosDelay: 100 },
+    { dataAos: "fade-left", dataAosDelay: 200 },
+    { dataAos: "fade-left", dataAosDelay: 300 },
+    { dataAos: "fade-left", dataAosDelay: 400 },
+    { dataAos: "fade-left", dataAosDelay: 500 },
+    { dataAos: "fade-right", dataAosDelay: 100 },
+    { dataAos: "fade-right", dataAosDelay: 200 },
+    { dataAos: "fade-right", dataAosDelay: 300 },
+    { dataAos: "fade-right", dataAosDelay: 400 },
+    { dataAos: "fade-right", dataAosDelay: 500 },
+    { dataAos: "fade-right", dataAosDelay: 500 },
+    { dataAos: "fade-left", dataAosDelay: 600 },
+  ];
   return (
     <section className="bg-FFF6E4 h-1/2">
       <div>
@@ -24,7 +40,17 @@ const SectionAgency = () => {
                   alt="Icône Navi Studio"
                 />
               </span>{" "}
-              – Votre partenaire numérique.
+              – Votre partenaire{" "}
+              {letters.map((letter, index) => (
+                <span
+                  key={index}
+                  data-aos={animationConfig[index].dataAos}
+                  data-aos-delay={animationConfig[index].dataAosDelay}
+                >
+                  {letter}
+                </span>
+              ))}
+              .
             </h3>
           </div>
         </div>
