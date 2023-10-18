@@ -24,8 +24,8 @@ const NavbarServices = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const values = [
-    { id: 1, lng: "ENG 🇬🇧", link: "/hhezyezyze" },
-    { id: 2, lng: "FR 🇫🇷", link: "/" },
+    { id: 1, lng: "ENG", link: "/hhezyezyze" },
+    { id: 2, lng: "FR", link: "/" },
   ];
   // Toggle → HandleMouse from list items
   const toggleMenuMobile = () => {
@@ -236,7 +236,7 @@ const NavbarServices = () => {
                   FR
                 </NavLink>
                 <div className="flex justify-center">
-                  <ul className="absolute hidden group-hover:block bg-FFF6E4 mt-2 py-2 w-20 rounded-md border border-gray-300 text-center">
+                  <ul className="absolute hidden group-hover:block bg-FFF6E4 mt-2 py-2 w-24 rounded-md border border-gray-300 text-left">
                     {values.map((val) => (
                       <li
                         key={val.id}

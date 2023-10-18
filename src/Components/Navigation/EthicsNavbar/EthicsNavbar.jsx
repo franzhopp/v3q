@@ -1,5 +1,5 @@
 import Image from "../../../assets/logo-5.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import { IoIosArrowDown } from "react-icons/io";
@@ -23,8 +23,8 @@ const NavbarEthics = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const values = [
-    { id: 1, lng: "ENG 🇬🇧", link: "/hhezyezyze" },
-    { id: 2, lng: "FR 🇫🇷", link: "/" },
+    { id: 1, lng: "ENG", link: "/hhezyezyze" },
+    { id: 2, lng: "FR", link: "/" },
   ];
   // Toggle → HandleMouse from list items
   const toggleMenuMobile = () => {
@@ -85,7 +85,7 @@ const NavbarEthics = () => {
     showSousListsThreeMenu,
   ]);
   return (
-    <div className="image-navi-studio-navbar-services h-screen sm:pb-20 mb:min-h-650 min-h-500">
+    <div className="image-navi-studio-navbar-ethics h-screen sm:pb-20 mb:min-h-650 min-h-500">
       <nav
         className={`bg-FFF6E4 border-b-4 border-C22E2E h-28 items-center transition duration-300 ease-in-out fixed w-full top-0 left-0 shadow-md z-max`}
       >
@@ -235,7 +235,7 @@ const NavbarEthics = () => {
                   FR
                 </NavLink>
                 <div className="flex justify-center">
-                  <ul className="absolute hidden group-hover:block bg-FFF6E4 mt-2 py-2 w-20 rounded-md border border-gray-300 text-center">
+                  <ul className="absolute hidden group-hover:block bg-FFF6E4 mt-2 py-2 w-24 rounded-md border border-gray-300 text-left">
                     {values.map((val) => (
                       <li
                         key={val.id}

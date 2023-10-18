@@ -165,7 +165,6 @@ const Form = ({ label, type, value }) => {
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
           <div className="mr-10 lg:col-span-2 lg:py-12">
             <p
-              data-aos="fade-left"
               className="text-black font-extrabold text-2xl sm:text-4xl max-w-xl ml-6 sm:ml-0"
             >
               Si vous recherchez une agence digitale qui peut donner vie à votre

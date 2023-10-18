@@ -197,16 +197,14 @@ const DevisFree = ({ label, type, value }) => {
               attentivement ces lignes.
             </p>
             <div className="mt-8">
-              <p
-                data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom"
-                className="text-black text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0"
-              >
-                Le devis permet de sécuriser le traitement de votre demande.
-                Prenez le temps de bien comprendre les questions qui vous sont
-                posées et veillez à fournir des réponses claires. Nous ne
-                pourrons pas traiter un devis si les informations fournies sont
-                illisibles.{" "}
+              <p className="text-black text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0">
+                <span>
+                  Le devis permet de sécuriser le traitement de votre demande.
+                  Prenez le temps de bien comprendre les questions qui vous sont
+                  posées et veillez à fournir des réponses claires. Nous ne
+                  pourrons pas traiter un devis si les informations fournies
+                  sont illisibles.{" "}
+                </span>
               </p>
               <br />
               <p
@@ -217,6 +215,9 @@ const DevisFree = ({ label, type, value }) => {
                   Veuillez prendre en considération ces directives essentielles
                   :
                 </span>
+              </p>
+
+              <p className="text-black mb-5 text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0">
                 <ul>
                   <br />
                   <li>
