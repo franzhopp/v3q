@@ -1,9 +1,20 @@
+import { useSpring, animated } from "react-spring";
 import TitleAgency from "../UI/Title/TitleAgency";
 import ImgText from "../../assets/logo-4.png";
 import SectionTeam from "./SectionTeam";
 import ButtonAgency from "../UI/Button/ButtonAgency";
 
 const SectionAgency = () => {
+  const props = useSpring({
+    from: { color: "#C22E2E" },
+    to: async (next) => {
+      while (true) {
+        await next({ color: "#0C3E78" });
+        await next({ color: "#C22E2E" });
+      }
+    },
+    config: { duration: 1000 },
+  });
   const text = "numérique";
   const letters = text.split("");
   const animationConfig = [
@@ -41,15 +52,17 @@ const SectionAgency = () => {
                 />
               </span>{" "}
               – Votre partenaire{" "}
-              {letters.map((letter, index) => (
-                <span
-                  key={index}
-                  data-aos={animationConfig[index].dataAos}
-                  data-aos-delay={animationConfig[index].dataAosDelay}
-                >
-                  {letter}
-                </span>
-              ))}
+              <animated.span style={props}>
+                {letters.map((letter, index) => (
+                  <span
+                    key={index}
+                    data-aos={animationConfig[index].dataAos}
+                    data-aos-delay={animationConfig[index].dataAosDelay}
+                  >
+                    {letter}
+                  </span>
+                ))}
+              </animated.span>
               .
             </h3>
           </div>
