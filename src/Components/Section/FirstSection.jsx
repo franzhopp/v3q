@@ -36,12 +36,12 @@ const Section = () => {
           <div className="w-80">
             <p
               data-aos="fade-left"
-              className="mt-2 font-extrabold text-black text-4xl"
+              className="mt-2 font-extrabold text-black text-4xl sm:text-left text-center"
             >
               Confiez votre image à des professionnels
             </p>
           </div>
-          <div className="w-96 mt-10">
+          <div className="w-80 mt-10">
             <div className="p-5">
               <p
                 data-aos="fade-up"
@@ -65,7 +65,7 @@ const Section = () => {
               </p>
             </div>
           </div>
-          <div className="w-96 mt-3 sm:mt-10">
+          <div className="w-80 mt-3 sm:mt-10">
             <div className="p-5">
               <p
                 data-aos="fade-up"

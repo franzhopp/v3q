@@ -18,12 +18,12 @@ const SectionTeam = () => {
 
   return (
     <>
-      <section className="bg-FFF6E4 pt-14">
+      <section className="bg-FFF6E4 pt-10">
         <div className="flex justify-center">
           <div className="w-4/5 sm:w-1/2">
             <h3
               data-aos="fade-left"
-              className="text-center font-extrabold mt-20 text-black text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
+              className="text-center font-extrabold mt-20 text-C22E2E text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
             >
               Notre équipe
             </h3>
@@ -44,14 +44,16 @@ const SectionTeam = () => {
                   className="h-6 mr-1 inline sm:h-9"
                   alt="Icône Navi Studio"
                 />
-              </span>{" "}
+              </span>
               <span className="font-extrabold">
-                {"Venez parcourir entre ces lignes pour en savoir davantage"}
+                {
+                  "Parcourez ces lignes pour en savoir davantage sur les parcours des concepteurs"
+                }
+                {", "}
               </span>
+              et leur passion pour leur métier. Derrière chaque site se cache
+              une histoire unique. Ne ratez aucune d'entre elles !
               <br />
-              <span className="text-black">
-                {"concernant les concepteurs de ce site et son expérience."}
-              </span>
             </p>
           </div>
         </div>
@@ -93,7 +95,9 @@ const SectionTeam = () => {
                     créativité et rigueur.{" "}
                     <span className="font-extrabold">
                       Venez connaître son histoire en cliquant sur «{" "}
-                      <span className="text-C22E2E underline"> Découvrir</span>{" "}
+                      <span className="text-C22E2E underline">
+                        <NavLink to="/designer">Découvrir</NavLink>
+                      </span>{" "}
                       ».
                     </span>
                   </p>
@@ -192,8 +196,7 @@ const SectionTeam = () => {
                       <span className="font-extrabold">
                         Venez connaître son histoire en cliquant sur «{" "}
                         <span className="text-C22E2E underline">
-                          {" "}
-                          Découvrir
+                          <NavLink to="/webdev">Découvrir</NavLink>
                         </span>{" "}
                         ».
                       </span>

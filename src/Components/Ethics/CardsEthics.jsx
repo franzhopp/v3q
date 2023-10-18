@@ -1,6 +1,6 @@
 import NavbarEthics from "../Navigation/EthicsNavbar/EthicsNavbar";
 import ImgMac from "../../assets/bg-ethics-mac.png";
-import ImgText from "../../assets/logo-8.png";
+import ImgText from "../../assets/logo-5.png";
 import Footer from "../Footer/Footer";
 import { NavLink } from "react-router-dom";
 
@@ -269,7 +269,7 @@ const EthicsPage = () => {
                   <span>
                     <img
                       src={ImgText}
-                      className="h-10 sm:h-12 mb-3 mr-1 mt-3 inline"
+                      className="h-16 sm:h-24 mb-3 mr-1 mt-3 inline"
                       alt="Icône Navi Studio"
                     />
                   </span>{" "}
