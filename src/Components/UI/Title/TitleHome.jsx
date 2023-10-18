@@ -17,7 +17,7 @@ const TitleHome = () => {
         <div className="flex justify-center">
           <span
             data-aos="fade-right"
-            className="font-extrabold text-FFF6E4 text-sm"
+            className="text-FFF6E4 text-base font-extrabold "
           >
             PARIS X LONDON
           </span>
