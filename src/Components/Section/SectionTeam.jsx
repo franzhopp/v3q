@@ -36,7 +36,7 @@ const SectionTeam = () => {
     <section className="bg-FFF6E4 pt-5">
       <div className="flex justify-center">
         <div className="w-4/5 sm:w-1/2">
-          <h3 className="text-center font-extrabold mt-20 text-C22E2E text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+          <h3 className="text-center font-extrabold mt-14 text-C22E2E text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
             <span className="text-black font-inter">
               {letters.map((letter, index) => (
                 <span
@@ -75,7 +75,7 @@ const SectionTeam = () => {
             </span>
             {". "}
             Derrière chaque site se cache une histoire unique. Ne ratez aucune
-            d'entre elles !
+            d'entre elles.
             <br />
           </p>
         </div>
@@ -83,7 +83,7 @@ const SectionTeam = () => {
 
       <div className="flex justify-center">
         <div className="flex flex-col justify-center">
-          <div className="flex flex-col space-x-3 mb-20 sm:flex-row">
+          <div className="flex flex-col space-x-3 mb-5 sm:flex-row">
             <div className="mb-10 sm:mb-0">
               <div className="w-auto h-auto">
                 <img
@@ -196,7 +196,7 @@ const SectionTeam = () => {
                 </div>
 
                 <div className="w-72">
-                  <p className="text-black text-left text-base mb-10 ml-10 sm:ml-0 z">
+                  <p className="text-black text-left text-base ml-10 sm:ml-0 z">
                     <span className="font-extrabold">
                       Louisa est développeuse web et exerce le métier du
                       développement web depuis 2 ans.
@@ -214,10 +214,10 @@ const SectionTeam = () => {
                 </div>
               </div>
             </div>
+      <div id="contact" className="pb-10"></div>
           </div>
         </div>
       </div>
-      <div id="contact" className="pb-24"></div>
     </section>
   );
 };
