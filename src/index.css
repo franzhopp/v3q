@@ -14,9 +14,9 @@
 
 html,
 body {
-    cursor: url('./Cursor/Cursor_1.svg'), default !important;
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
+    cursor: url('./Cursor/Cursor_1.svg'), default !important;
 }
 
 a,
@@ -36,7 +36,6 @@ li {
 
 input[type="text"],
 label,
-input,
 textarea {
     cursor: url('./Cursor/Cursor_3.svg'), text !important;
 }

@@ -153,7 +153,7 @@ const DiscoverDesigner = () => {
         </div>
       </div>
       <div class="bg-FFF6E4 flex justify-center">
-        <p class="text-center text-black font-extrabold sm:text-xl md:text-2xl lg:text-3xl px-8">
+        <p class="text-center text-black sm:text-xl md:text-2xl lg:text-3xl px-8">
           UX/UI DESIGNER | GRAPHIC DESIGNER | ILLUSTRATOR | FASHION DESIGNER
         </p>
       </div>

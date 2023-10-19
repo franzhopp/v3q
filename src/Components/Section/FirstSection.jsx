@@ -53,7 +53,7 @@ const Section = () => {
                 </span>{" "}
                 {`Notre équipe produit des sites modernes et intuitifs qui sauront attirer l'oeil`}
                 <span className="font-extrabold">{` des visiteurs`}</span> de la
-                meilleure des manières ! Venez découvrir{" "}
+                meilleure des manières ! Venez découvrir
                 <span>
                   <img
                     src={ImgText}
