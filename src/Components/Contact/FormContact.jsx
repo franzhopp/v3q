@@ -14,6 +14,10 @@ const Form = ({ label, type, value }) => {
     setIsFocused(true);
   };
 
+  const offFocusClick = () => {
+    setIsFocused(false);
+  };
+
   const handleBlur = () => {
     if (!value) {
       setIsFocused(true);
@@ -197,6 +201,7 @@ const Form = ({ label, type, value }) => {
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <div className="relative pb-5">
                     <label
+                      onClick={offFocusClick}
                       className={`mt-1 absolute left-2 transition-all duration-300 ${
                         isFocused || value
                           ? "ml-2 mt-1 text-xs text-0C3E78"
