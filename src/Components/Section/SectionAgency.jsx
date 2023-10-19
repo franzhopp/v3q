@@ -74,7 +74,7 @@ const SectionAgency = () => {
               data-aos-anchor-placement="top-bottom"
               className="px-5 text-black text-arial text-center text-lg sm:text-2xl mt-10"
             >
-              {`Cette agence a été créé par`}{" "}
+              {`Cette agence a été créée par`}{" "}
               <span className="font-extrabold text-C22E2E">{"Mélissa"}</span>
               {" & "}
               <span className="font-extrabold text-C22E2E">Louisa</span>.{" "}

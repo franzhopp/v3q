@@ -41,7 +41,7 @@ const Section = () => {
               Confiez votre image à des professionnels
             </p>
           </div>
-          <div className="w-96 mt-10">
+          <div className="w-80 mt-10">
             <div className="p-5">
               <p
                 data-aos="fade-up"
@@ -52,8 +52,7 @@ const Section = () => {
                   {`Notre agence design et développe des sites qui sauront faire briller vos projets.`}
                 </span>{" "}
                 {`Notre équipe produit des sites modernes et intuitifs qui sauront attirer l'oeil`}
-                <span className="font-extrabold">{` des visiteurs`}</span> de la
-                meilleure des manières ! Venez découvrir
+                <span className="font-extrabold">{` des visiteurs`}</span>. Venez découvrir
                 <span>
                   <img
                     src={ImgText}
@@ -65,7 +64,7 @@ const Section = () => {
               </p>
             </div>
           </div>
-          <div className="w-96 mt-3 sm:mt-10">
+          <div className="w-80 mt-3 sm:mt-10">
             <div className="p-5">
               <p
                 data-aos="fade-up"
@@ -78,7 +77,7 @@ const Section = () => {
                   onClick={SectionToScroll}
                   className="font-extrabold underline text-C22E2E"
                 >
-                  en cliquant sur ce lien
+                  #♡
                 </NavLink>
                 .
               </p>
