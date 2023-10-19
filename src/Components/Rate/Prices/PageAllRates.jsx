@@ -211,12 +211,18 @@ const Rate = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-center pt-3">
+      <div className="flex flex-col text-center justify-center pt-3">
         <NavLink
           to="/devis"
-          className=" text-C22E2E font-extrabold underline transition hover:text-0C3E78"
+          className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
         >
           Découvrir Devis Gratuit ➔
+        </NavLink>
+        <NavLink
+          to="/"
+          className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
+        >
+          Retourner à la page d'Accueil ➔
         </NavLink>
       </div>
       <div className="pb-20"></div>
