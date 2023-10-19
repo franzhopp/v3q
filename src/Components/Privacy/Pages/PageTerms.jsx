@@ -1,6 +1,6 @@
+import { NavLink } from "react-router-dom";
 import PrivacyNavbar from "../../Navigation/PrivacyNavbar/PrivacyNavbar.jsx";
 import Footer from "../../Footer/Footer";
-import { NavLink } from "react-router-dom";
 
 const PageConditions = () => {
   return (
