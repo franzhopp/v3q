@@ -52,14 +52,15 @@ const Section = () => {
                   {`Notre agence design et développe des sites qui sauront faire briller vos projets.`}
                 </span>{" "}
                 {`Notre équipe produit des sites modernes et intuitifs qui sauront attirer l'oeil`}
-                <span className="font-extrabold">{` des visiteurs`}</span>. Venez découvrir
+                <span className="font-extrabold">{` des visiteurs`}</span>.
+                Venez découvrir
                 <span>
                   <img
                     src={ImgText}
                     className="h-6 mr-1 inline"
                     alt="Icône navi studio."
                   />
-                </span>{" "}
+                </span>
                 dès aujourd'hui.
               </p>
             </div>
