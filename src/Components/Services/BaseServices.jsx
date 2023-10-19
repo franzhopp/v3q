@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import NavbarServices from "../Navigation/ServicesNavbar/ServicesNavbar";
 import DetailsServices from "./AllServices/DetailsServices";
 import ImgService1 from "../../assets/home1.png";
@@ -5,9 +6,24 @@ import ImgService2 from "../../assets/home2.png";
 import ImgService3 from "../../assets/home3.png";
 import ImgService4 from "../../assets/home4.png";
 import Footer from "../Footer/Footer";
-import { NavLink } from "react-router-dom";
 
 const Services = () => {
+  const text = "Websites";
+  const letters = text.split("");
+  const animationConfig = [
+    { dataAos: "fade-left", dataAosDelay: 100 },
+    { dataAos: "fade-left", dataAosDelay: 200 },
+    { dataAos: "fade-left", dataAosDelay: 300 },
+    { dataAos: "fade-left", dataAosDelay: 400 },
+    { dataAos: "fade-left", dataAosDelay: 500 },
+    { dataAos: "fade-right", dataAosDelay: 100 },
+    { dataAos: "fade-right", dataAosDelay: 200 },
+    { dataAos: "fade-right", dataAosDelay: 300 },
+    { dataAos: "fade-right", dataAosDelay: 400 },
+    { dataAos: "fade-right", dataAosDelay: 500 },
+    { dataAos: "fade-right", dataAosDelay: 500 },
+    { dataAos: "fade-left", dataAosDelay: 600 },
+  ];
   return (
     <>
       <section className="bg-FFF6E4">
@@ -16,7 +32,15 @@ const Services = () => {
           data-aos="fade-right"
           className="text-C22E2E font-inter text-center text-4xl mt-20 mb-10 font-extrabold sm:text-5xl md:text-6xl"
         >
-          Websites
+          {letters.map((letter, index) => (
+            <span
+              key={index}
+              data-aos={animationConfig[index].dataAos}
+              data-aos-delay={animationConfig[index].dataAosDelay}
+            >
+              {letter}
+            </span>
+          ))}
         </h1>
 
         <div className="flex justify-center">

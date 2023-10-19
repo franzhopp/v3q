@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 import ButtonContactServices from "../../UI/Button/ButtonContactServices";
 import ButtonDevis from "../../UI/Button/ButtonFormDevis";
-import ButtonServices from "../../UI/Button/ButtonServices";
 
 const DetailsServices = () => {
   return (
@@ -139,7 +138,7 @@ const DetailsServices = () => {
           Retourner à la page d'Accueil ➔
         </NavLink>
         <div className="mt-5">
-          <span className="text-black font-extrabold font-inter">OU</span>
+          <span className="text-black font-extrabold font-inter italic">OU</span>
         </div>
       </div>
       <ButtonContactServices />
