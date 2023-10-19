@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import ButtonContactServices from "../../UI/Button/ButtonContactServices";
 import ButtonDevis from "../../UI/Button/ButtonFormDevis";
 import ButtonServices from "../../UI/Button/ButtonServices";
@@ -5,7 +6,7 @@ import ButtonServices from "../../UI/Button/ButtonServices";
 const DetailsServices = () => {
   return (
     <section>
-      <ButtonServices />  
+      {/* <ButtonServices /> */}
       <div className="bg-0C3E78 pt-28 pb-28 px-4 sm:px-6 lg:px-8">
         <h3
           className="text-center font-extrabold text-3xl text-FFF6E4 px-5"
@@ -98,7 +99,6 @@ const DetailsServices = () => {
       <div className="pb-10">
         <div className="flex justify-center mt-20">
           <svg
-            className="animate-bounce-bounce"
             width="108"
             height="181"
             viewBox="0 0 108 181"
@@ -123,6 +123,23 @@ const DetailsServices = () => {
               vos questions.
             </p>
           </div>
+        </div>
+      </div>
+      <div className="flex flex-col text-center justify-center">
+        <NavLink
+          to="/rate"
+          className="text-black font-extrabold underline transition hover:text-0C3E78"
+        >
+          Découvrir Tarification ➔
+        </NavLink>
+        <NavLink
+          to="/"
+          className="text-black font-extrabold underline transition hover:text-0C3E78"
+        >
+          Retourner à la page d'Accueil ➔
+        </NavLink>
+        <div className="mt-5">
+          <span className="text-black font-extrabold font-inter">OU</span>
         </div>
       </div>
       <ButtonContactServices />

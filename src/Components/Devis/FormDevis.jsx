@@ -170,7 +170,7 @@ const DevisFree = ({ label, type, value }) => {
       setStatus("Votre devis est enregistré. Merci !");
       setTimeout(() => {
         window.location.reload();
-      }, 2000);
+      }, 1000);
     } catch (error) {
       // console.error("Erreur d'envoi d'e-mail.", error);
       setStatus("Une erreur s'est produite.");
@@ -269,7 +269,19 @@ const DevisFree = ({ label, type, value }) => {
                   </li>
                 </ul>
               </p>
-              <div className="flex justify-center">
+              <div className="flex flex-col text-center justify-center">
+                <NavLink
+                  to="/services"
+                  className="text-FFF6E4 font-extrabold underline transition hover:text-C22E2E"
+                >
+                  Découvrir Prestations ➔
+                </NavLink>
+                <NavLink
+                  to="/rate"
+                  className="text-FFF6E4 font-extrabold underline transition hover:text-C22E2E"
+                >
+                  Découvrir Tarification ➔
+                </NavLink>
                 <NavLink
                   to="/"
                   className="text-FFF6E4 font-extrabold underline transition hover:text-C22E2E"

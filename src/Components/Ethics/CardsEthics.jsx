@@ -316,7 +316,13 @@ const EthicsPage = () => {
                   </span>
                   .
                 </p>
-                <div className="mt-10">
+                <div className="flex flex-col mt-10">
+                  <NavLink
+                    to="/services"
+                    className="text-FFF6E4 font-extrabold underline transition hover:text-E18AB0"
+                  >
+                    Découvrir Prestations ➔
+                  </NavLink>
                   <NavLink
                     to="/"
                     className="text-FFF6E4 font-extrabold underline transition hover:text-E18AB0"

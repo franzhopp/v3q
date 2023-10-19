@@ -146,7 +146,7 @@ const Form = ({ label, type, value }) => {
       setStatus("Votre contact est enregistré. Merci !");
       setTimeout(() => {
         window.location.reload();
-      }, 2000);
+      }, 1000);
     } catch (error) {
       // console.error("Erreur d'envoi d'e-mail.", error);
       setStatus("Une erreur s'est produite.");

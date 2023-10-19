@@ -14,7 +14,7 @@ const Services = () => {
         <NavbarServices />
         <h1
           data-aos="fade-right"
-          className="text-C22E2E text-center text-4xl mt-20 mb-10 font-extrabold sm:text-5xl md:text-6xl"
+          className="text-C22E2E font-inter text-center text-4xl mt-20 mb-10 font-extrabold sm:text-5xl md:text-6xl"
         >
           Websites
         </h1>
@@ -128,7 +128,7 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center mt-10">
+        <div className="flex justify-center mt-16">
           <svg
             className="animate-bounce-bounce h-14 w-14"
             width="192"
@@ -147,7 +147,7 @@ const Services = () => {
             />
           </svg>
         </div>
-        <div className="flex justify-center pt-10 pb-10">
+        <div className="flex justify-center pt-10 pb-16">
           <div className="w-96 sm:w-1/3 px-5">
             <p
               data-aos="fade-up"
@@ -158,14 +158,6 @@ const Services = () => {
               faire rapidement !
             </p>
           </div>
-        </div>
-        <div className="flex justify-center">
-          <NavLink
-            to="/rate"
-            className="text-black font-extrabold underline transition hover:text-0C3E78"
-          >
-            Découvrir Tarification ➔
-          </NavLink>
         </div>
         <DetailsServices />
       </section>
