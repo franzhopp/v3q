@@ -4,8 +4,13 @@ import { useLocation } from "react-router-dom";
 export default function ScrollToTop() {
   const { pathname } = useLocation();
 
+  const scrollToTop = (e) => {
+    e.preventDefault();
+    window.scrollTo(0, 0);
+  };
+
   useEffect(() => {
-    window.scrollTo(500, 0);
+    scrollToTop();
   }, [pathname]);
 
   return null;
