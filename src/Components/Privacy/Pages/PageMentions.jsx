@@ -11,7 +11,7 @@ const PageMentions = () => {
       <PrivacyNavbar />
       <div className="bg-FFF6E4 flex justify-center pt-40 sm:pt-20 pb-16">
         <div className="w-full md:max-w-3xl p-4">
-          <h1 className="text-C22E2E tracking-widest text-center font-inter mb-16 text-2xl md:text-3xl font-semibold">
+          <h1 className="text-C22E2E text-center font-inter mb-16 text-2xl md:text-3xl font-semibold">
             Mentions légales
           </h1>
 
@@ -242,12 +242,16 @@ const PageMentions = () => {
           <div className="flex flex-col text-center justify-center pt-10">
             <NavLink
               to="/privacy"
+              rel="noreferrer"
+              target="_blank"
               className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
             >
               Politique de Confidentialité ➔
             </NavLink>
             <NavLink
               to="/terms"
+              rel="noreferrer"
+              target="_blank"
               className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
             >
               Conditions d'Utilisation ➔

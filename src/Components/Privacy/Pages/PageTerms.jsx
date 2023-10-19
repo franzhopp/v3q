@@ -8,7 +8,7 @@ const PageConditions = () => {
       <PrivacyNavbar />
       <div className="bg-FFF6E4 flex justify-center pt-40 sm:pt-20">
         <div className="w-full md:max-w-3xl p-4">
-          <h1 className="text-C22E2E tracking-widest text-center font-inter mb-16 text-2xl md:text-3xl font-semibold">
+          <h1 className="text-C22E2E text-center font-inter mb-16 text-2xl md:text-3xl font-semibold">
             Conditions d'Utilisation
           </h1>
           <p className="text-black font-extrabold text-justify mb-10 italic">
@@ -128,12 +128,16 @@ const PageConditions = () => {
       <div className="bg-FFF6E4 flex flex-col text-center justify-center pt-5 pb-10">
         <NavLink
           to="/privacy"
+          rel="noreferrer"
+          target="_blank"
           className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
         >
           Politique de Confidentialité ➔
         </NavLink>
         <NavLink
           to="/mentions"
+          rel="noreferrer"
+          target="_blank"
           className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
         >
           Mentions Légales ➔
