@@ -1,11 +1,12 @@
 import PrivacyNavbar from "../../Navigation/PrivacyNavbar/PrivacyNavbar.jsx";
 import Footer from "../../Footer/Footer";
+import { NavLink } from "react-router-dom";
 
 const PageConditions = () => {
   return (
     <>
       <PrivacyNavbar />
-      <div className="bg-FFF6E4 flex justify-center pt-40 sm:pt-20 pb-16">
+      <div className="bg-FFF6E4 flex justify-center pt-40 sm:pt-20">
         <div className="w-full md:max-w-3xl p-4">
           <h1 className="text-C22E2E text-center font-inter mb-16 text-2xl md:text-3xl font-semibold">
             Conditions d'Utilisation
@@ -15,7 +16,7 @@ const PageConditions = () => {
             conditions générales d'utilisation énoncées ci-dessous. Ces
             conditions peuvent être modifiées ou complétées à tout moment.
           </p>
-         
+
           <h2 className="text-C22E2E font-inter text-2xl md:text-3xl font-semibold mb-2">
             Informations
           </h2>
@@ -123,6 +124,20 @@ const PageConditions = () => {
             en ce qui concerne l'utilisation du site.
           </p>
         </div>
+      </div>
+      <div className="bg-FFF6E4 flex flex-col text-center justify-center pt-5 pb-10">
+        <NavLink
+          to="/privacy"
+          className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
+        >
+          Politique de Confidentialité ➔
+        </NavLink>
+        <NavLink
+          to="/mentions"
+          className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
+        >
+          Mentions Légales ➔
+        </NavLink>
       </div>
       <Footer />
     </>

@@ -1,13 +1,14 @@
 import PrivacyNavbar from "../../Navigation/PrivacyNavbar/PrivacyNavbar.jsx";
 import ImgText from "../../../assets/logo-4.png";
 import Footer from "../../Footer/Footer";
+import { NavLink } from "react-router-dom";
 
 const PagePrivacy = () => {
   return (
     <>
       {" "}
       <PrivacyNavbar />
-      <div className="bg-FFF6E4 flex justify-center pb-16 pt-40 sm:pt-20">
+      <div className="bg-FFF6E4 flex justify-center pt-40 sm:pt-20">
         <div className="w-full md:max-w-3xl p-4">
           <h1 className="text-2xl text-center font-inter md:text-3xl font-semibold mb-16 text-C22E2E">
             Politique de Confidentialité des Données
@@ -129,6 +130,20 @@ const PagePrivacy = () => {
             .
           </p>
         </div>
+      </div>
+      <div className="bg-FFF6E4 flex flex-col text-center justify-center pt-5 pb-10">
+        <NavLink
+          to="/terms"
+          className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
+        >
+          Conditions d'Utilisation ➔
+        </NavLink>
+        <NavLink
+          to="/mentions"
+          className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
+        >
+          Mentions Légales ➔
+        </NavLink>
       </div>
       <Footer />
     </>
