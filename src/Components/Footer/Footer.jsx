@@ -218,6 +218,8 @@ const Footer = () => {
             <li>
               <NavLink
                 to="/privacy"
+                rel="noreferrer"
+                target="_blank"
                 className="text-black transition hover:text-0C3E78"
               >
                 Politique de Confidentialité
@@ -226,6 +228,8 @@ const Footer = () => {
             <li>
               <NavLink
                 to="/terms"
+                rel="noreferrer"
+                target="_blank"
                 className="text-black transition hover:text-0C3E78"
               >
                 Condition d'Utilisation
@@ -234,6 +238,8 @@ const Footer = () => {
             <li>
               <NavLink
                 to="/mentions"
+                rel="noreferrer"
+                target="_blank"
                 className="text-black transition hover:text-0C3E78"
               >
                 Mentions Légales

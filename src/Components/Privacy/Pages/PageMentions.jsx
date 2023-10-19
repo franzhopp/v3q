@@ -11,7 +11,7 @@ const PageMentions = () => {
       <PrivacyNavbar />
       <div className="bg-FFF6E4 flex justify-center pt-40 sm:pt-20 pb-16">
         <div className="w-full md:max-w-3xl p-4">
-          <h1 className="text-C22E2E text-center font-inter mb-16 text-2xl md:text-3xl font-semibold">
+          <h1 className="text-C22E2E tracking-widest text-center font-inter mb-16 text-2xl md:text-3xl font-semibold">
             Mentions légales
           </h1>
 
@@ -19,13 +19,13 @@ const PageMentions = () => {
             Identité
           </h2>
           <p className="text-black mb-4">
-            •<span className={keywordsStyle}> Nom du site web :</span>
+            ›<span className={keywordsStyle}> Nom du site web :</span>
             <img
               src={ImgText}
               className="h-6 ml-1 inline"
               alt="Icône navi studio.."
             />
-            <br />•<span className={keywordsStyle}> Site URL :</span>{" "}
+            <br />›<span className={keywordsStyle}> Site URL :</span>{" "}
             <NavLink
               to="http://navistudio.io/"
               target="_blank"
@@ -35,24 +35,24 @@ const PageMentions = () => {
               http://navistudio.io/
             </NavLink>
             .
-            <br />•<span className={keywordsStyle}> Propriétaire :</span>{" "}
+            <br />›<span className={keywordsStyle}> Propriétaire :</span>{" "}
             Fernandez Louisa, Nefti Mélissa.
-            <br />•<span className={keywordsStyle}> Activité :</span>{" "}
-            Entrepreneur individuel
-            <br />•<span className={keywordsStyle}> Adresse mail :</span>{" "}
+            <br />›<span className={keywordsStyle}> Activité :</span>{" "}
+            Entrepreneur individuel.
+            <br />›<span className={keywordsStyle}> Adresse mail :</span>{" "}
             Navi.studio.info@gmail.com
-            <br />•
+            <br />›
             <span className={keywordsStyle}>
               {" "}
               Responsable de publication :
             </span>{" "}
             Fernandez Louisa, Nefti Mélissa.
-            <br />•<span className={keywordsStyle}> Lieux :</span> Paris,
+            <br />›<span className={keywordsStyle}> Les lieux :</span> Paris,
             Île-de-France / London, United Kingdom.
-            <br />• <span className={keywordsStyle}>
+            <br />› <span className={keywordsStyle}>
               Hébergement du site :
             </span>{" "}
-            IONOS
+            IONOS.
             <br />
           </p>
 
@@ -60,7 +60,7 @@ const PageMentions = () => {
             Conditions d’utilisation
           </h2>
           <p className="text-black text-justify mb-4">
-            • L’utilisation du site implique l’acceptation des conditions
+            › L’utilisation du site implique l’acceptation des conditions
             d’utilisation décrites ci-dessous. Ces conditions peuvent être
             modifiées à tout moment.
           </p>
@@ -69,7 +69,7 @@ const PageMentions = () => {
             Informations
           </h2>
           <p className="text-black text-justify mb-4">
-            • Les informations du site sont indicatives et non exhaustives. Le
+            › Les informations du site sont indicatives et non exhaustives. Le
             propriétaire du site n'est pas responsable des dommages résultant de
             l'accès au site.
           </p>
@@ -78,7 +78,7 @@ const PageMentions = () => {
             Interactivité
           </h2>
           <p className="text-black text-justify mb-4">
-            • Les utilisateurs peuvent déposer du contenu sur le site, mais ce
+            › Les utilisateurs peuvent déposer du contenu sur le site, mais ce
             contenu doit respecter la charte déontologique du site et la
             législation en vigueur.
           </p>
@@ -87,7 +87,7 @@ const PageMentions = () => {
             Propriété intellectuelle
           </h2>
           <p className="text-black text-justify">
-            • Tous les éléments du site sont la propriété exclusive de leurs
+            › Tous les éléments du site sont la propriété exclusive de leurs
             auteurs. Toute utilisation non autorisée est interdite.
           </p>
 
@@ -95,7 +95,7 @@ const PageMentions = () => {
             Liens
           </h2>
           <p className="text-black text-justify">
-            • Le propriétaire autorise les liens vers le site sous certaines
+            › Le propriétaire autorise les liens vers le site sous certaines
             conditions.
           </p>
 
@@ -103,7 +103,7 @@ const PageMentions = () => {
             Politique de confidentialité des données
           </h2>
           <p className="text-black text-justify">
-            • Tout utilisateur a droit d'accès, de rectification et d'opposition
+            › Tout utilisateur a droit d'accès, de rectification et d'opposition
             à ses données personnelles.
           </p>
 
@@ -111,7 +111,7 @@ const PageMentions = () => {
             Objet du traitement
           </h2>
           <p className="text-black text-justify">
-            • L'entreprise navi studio. traite les données pour gérer les
+            › L'entreprise navi studio. traite les données pour gérer les
             commandes, le marketing, et la transmission de données aux
             partenaires.
           </p>
@@ -120,7 +120,7 @@ const PageMentions = () => {
             Bases légales
           </h2>
           <p className="text-black text-justify">
-            • Le traitement est basé sur l'exécution de contrats, l'intérêt
+            › Le traitement est basé sur l'exécution de contrats, l'intérêt
             légitime, le consentement, et l'obligation légale.
           </p>
 
@@ -128,7 +128,7 @@ const PageMentions = () => {
             Destinataires des données
           </h2>
           <p className="text-black text-justify">
-            • Les données sont destinées à l'entreprise et à ses sous-traitants
+            › Les données sont destinées à l'entreprise et à ses sous-traitants
             de livraison. Les adresses électroniques peuvent être transmises à
             des partenaires commerciaux.
           </p>
@@ -137,14 +137,14 @@ const PageMentions = () => {
             Durée de conservation des données
           </h2>
           <p className="text-black text-justify">
-            • Les données sont conservées selon les besoins légaux.
+            › Les données sont conservées selon les besoins légaux.
           </p>
 
           <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mb-2 mt-2">
             Droits de l'utilisateur
           </h2>
           <p className="text-black text-justify">
-            • L'utilisateur peut exercer ses droits sur ses données en
+            › L'utilisateur peut exercer ses droits sur ses données en
             contactant l'entreprise.
           </p>
 
@@ -152,19 +152,19 @@ const PageMentions = () => {
             Consentement
           </h2>
           <p className="text-black text-justify">
-            • Un consentement explicite est requis pour certaines autorisations.
+            › Un consentement explicite est requis pour certaines autorisations.
           </p>
           <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mt-16 mb-2">
             Crédits
           </h2>
           <p className="mb-4 text-black">
-            •
+            ›
             <span className={keywordsStyle}>
               {" "}
               Site imaginé et mis en œuvre par :
             </span>{" "}
             Nefti Mélissa, Fernandez Louisa.
-            <br />•<span className={keywordsStyle}> Site URL :</span>{" "}
+            <br />›<span className={keywordsStyle}> Site URL :</span>{" "}
             <NavLink
               to="http://navistudio.io/defaultsite"
               target="_blank"
@@ -179,45 +179,45 @@ const PageMentions = () => {
               className="h-6 ml-1 inline"
               alt="Icône navi studio.."
             />
-            <br />•<span className={keywordsStyle}> Hébergeur :</span> IONOS
-            <br />•<span className={keywordsStyle}> Logo :</span> Nefti Mélissa.
-            <br />•<span className={keywordsStyle}> Photographies : </span>
+            <br />›<span className={keywordsStyle}> Hébergeur :</span> IONOS.
+            <br />›<span className={keywordsStyle}> Logo :</span> Nefti Mélissa.
+            <br />›<span className={keywordsStyle}> Photographies : </span>
             Pexels.
-            <br />•<span className={keywordsStyle}> Vidéos :</span> Nefti
+            <br />›<span className={keywordsStyle}> Vidéos :</span> Nefti
             Mélissa, Fernandez Louisa.
-            <br />•
+            <br />›
             <span className={keywordsStyle}> Contenu des rubriques :</span>{" "}
             Nefti Mélissa, Fernandez Louisa.
-            <br />•<span className={keywordsStyle}>
+            <br />›<span className={keywordsStyle}>
               {" "}
               Contenu des textes :
             </span>{" "}
             Nefti Mélissa, Fernandez Louisa.
-            <br />•<span className={keywordsStyle}>
+            <br />›<span className={keywordsStyle}>
               {" "}
               Contenu des liens :
             </span>{" "}
             Nefti Mélissa, Fernandez Louisa.
-            <br />•
+            <br />›
             <span className={keywordsStyle}> Montages des visuels :</span> Nefti
             Mélissa, Fernandez Louisa.
-            <br />•<span className={keywordsStyle}>
+            <br />›<span className={keywordsStyle}>
               {" "}
               Montages des vidéos :
             </span>{" "}
             Nefti Mélissa, Fernandez Louisa.
-            <br />•
+            <br />›
             <span className={keywordsStyle}>
               {" "}
               Icônes utilisées pour les visuels :
             </span>{" "}
             Photoshop, Illustrator, Figma, Procreate.
-            <br />•<span className={keywordsStyle}>
+            <br />›<span className={keywordsStyle}>
               {" "}
               Éditeur de code :
             </span>{" "}
             PhpStorm (JetBrains).
-            <br />•
+            <br />›
             <span className={keywordsStyle}>
               {" "}
               Technologies utilisées :
@@ -236,6 +236,7 @@ const PageMentions = () => {
               >
                 https://www.cnil.fr/professionnel
               </NavLink>
+              .
             </div>
           </p>
           <div className="flex flex-col text-center justify-center pt-10">
