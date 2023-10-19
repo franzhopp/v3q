@@ -215,7 +215,7 @@ const Form = ({ label, type, value }) => {
                   <div className="relative pb-5">
                     <label
                       onClick={offFocusClick}
-                      className={`mt-1 absolute left-2 transition-all duration-300 ${
+                      className={`mt-1 absolute left-2 transition-all duration-100 ${
                         isFocused || value
                           ? "ml-2 mt-1 text-xs text-0C3E78"
                           : "ml-2 top-3 text-gray-500"
@@ -244,7 +244,8 @@ const Form = ({ label, type, value }) => {
                   </div>
                   <div className="relative pb-5">
                     <label
-                      className={`mt-1 absolute left-2 transition-all duration-300 ${
+                      onClick={offFocusClick}
+                      className={`mt-1 absolute left-2 transition-all duration-100 ${
                         isFocused || value
                           ? "ml-2 mt-1 text-xs text-0C3E78"
                           : "ml-2 top-3 text-gray-500"
@@ -274,7 +275,8 @@ const Form = ({ label, type, value }) => {
                 </div>
                 <div className="relative pb-5">
                   <label
-                    className={`mt-1 absolute left-2 transition-all duration-300 ${
+                    onClick={offFocusClick}
+                    className={`mt-1 absolute left-2 transition-all duration-100 ${
                       isFocused || value
                         ? "ml-2 mt-1 text-xs text-0C3E78"
                         : "ml-2 top-3 text-gray-500"
@@ -303,7 +305,8 @@ const Form = ({ label, type, value }) => {
                 </div>
                 <div className="relative pb-5">
                   <label
-                    className={`mt-1 absolute left-2 transition-all duration-300 ${
+                    onClick={offFocusClick}
+                    className={`mt-1 absolute left-2 transition-all duration-100 ${
                       isFocused || value
                         ? "ml-2 mt-1 text-xs text-0C3E78"
                         : "ml-2 top-3 text-gray-500"
@@ -332,7 +335,8 @@ const Form = ({ label, type, value }) => {
                 </div>
                 <div className="relative pb-5">
                   <label
-                    className={`mt-1 absolute left-2 transition-all duration-300 ${
+                    onClick={offFocusClick}
+                    className={`mt-1 absolute left-2 transition-all duration-100 ${
                       isFocused || value
                         ? "ml-2 mt-1 text-xs text-0C3E78"
                         : "ml-2 top-3 text-gray-500"
@@ -362,7 +366,8 @@ const Form = ({ label, type, value }) => {
 
                 <div className="relative pb-20">
                   <label
-                    className={`mt-1 absolute left-2 transition-all duration-300 ${
+                    onClick={offFocusClick}
+                    className={`mt-1 absolute left-2 transition-all duration-100 ${
                       isFocused || value
                         ? "ml-2 mt-1 text-xs text-0C3E78"
                         : "ml-2 top-3 text-gray-500"
@@ -392,7 +397,8 @@ const Form = ({ label, type, value }) => {
 
                 <div className="relative">
                   <label
-                    className={`mt-1 absolute left-2 transition-all duration-300 ${
+                    onClick={offFocusClick}
+                    className={`mt-1 absolute left-2 transition-all duration-100 ${
                       isFocused || value
                         ? "ml-2 mt-1 text-xs text-0C3E78"
                         : "ml-2 top-3 text-gray-500"

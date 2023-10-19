@@ -112,7 +112,7 @@ const Footer = () => {
             </div>
             <div className="flex justify-center pt-1">
               {errors.email && (
-                <p className="text-FFF6E4 text-sm input-error">{errors.email}</p>
+                <p className="text-FFF6E4 text-sm">{errors.email}</p>
               )}
             </div>
             <div className="text-center text-sm text-FFF6E4">
