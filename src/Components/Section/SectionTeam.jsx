@@ -128,7 +128,7 @@ const SectionTeam = () => {
             <div className="flex justify-center items-center h-24 w-96 mt-0 sm:mt-32">
               <NavLink
                 to="/designer"
-                className="animate-bounce-bounce inline-flex items-center gap-2 border rounded-full mr-6 bg-black px-8 py-3 text-FFF6E4"
+                className="animate-bounce-bounce inline-flex items-center gap-2 rounded-full mr-6 mb-10 bg-black px-8 py-3 text-FFF6E4"
               >
                 <span className="text-3xl mr-3 font-semibold">Découvrir </span>
                 <svg
@@ -152,7 +152,7 @@ const SectionTeam = () => {
               <div className="flex justify-center items-center h-24 w-96 mt-0 sm:mt-32">
                 <NavLink
                   to="/webdev"
-                  className="animate-bounce-bounce inline-flex items-center gap-2 border rounded-full mr-2 sm:mr-0 bg-black px-8 py-3 text-FFF6E4"
+                  className="animate-bounce-bounce inline-flex items-center gap-2 rounded-full mr-2 sm:mr-0 bg-black px-8 py-3 text-FFF6E4"
                 >
                   <svg
                     width="44"
@@ -214,7 +214,7 @@ const SectionTeam = () => {
                 </div>
               </div>
             </div>
-      <div id="contact" className="pb-10"></div>
+            <div id="contact" className="pb-10"></div>
           </div>
         </div>
       </div>
