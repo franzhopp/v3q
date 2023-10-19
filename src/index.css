@@ -269,14 +269,14 @@ textarea {
     width: 248px;
     height: 230px;
     background-repeat: no-repeat;
-    background-image: url("./assets/P.png");
+    background-image: url("./assets/bg-sun-r.svg");
 }
 
 .z {
     width: 248px;
     height: 230px;
     background-repeat: no-repeat;
-    background-image: url("./assets/z.png");
+    background-image: url("./assets/bg-sun-v.svg");
 }
 
 .input-error {
