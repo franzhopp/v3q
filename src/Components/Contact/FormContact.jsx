@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Title from "../UI/Title/TitleFormContact";
 import ImgText from "../../assets/logo-4.png";
 import emailjs from "emailjs-com";
@@ -24,6 +25,10 @@ const Form = ({ label, type, value }) => {
     } else {
       setIsFocused(false);
     }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
   };
 
   const [formData, setFormData] = useState({
@@ -192,6 +197,14 @@ const Form = ({ label, type, value }) => {
           votre projet et découvrir comment nous pouvons vous aider à briller
           sur le web. Votre succès numérique est notre mission.`}
               </p>
+            </div>
+            <div className="flex justify-center mt-5">
+              <Link
+                onClick={scrollToTop}
+                className="text-FFF6E4 text-center font-extrabold underline transition hover:text-C22E2E"
+              >
+                Remonter à la page d'Accueil ➔
+              </Link>
             </div>
           </div>
 
