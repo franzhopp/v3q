@@ -33,7 +33,7 @@ const SectionTeam = () => {
   ];
 
   return (
-    <section className="bg-FFF6E4 pt-5">
+    <section className="bg-FFF6E4 pt-14">
       <div className="flex justify-center">
         <div className="w-4/5 sm:w-1/2">
           <h3 className="text-center font-extrabold mt-14 text-C22E2E text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
@@ -214,7 +214,7 @@ const SectionTeam = () => {
                 </div>
               </div>
             </div>
-            <div id="contact" className="pb-10"></div>
+            <div id="contact" className="pb-16"></div>
           </div>
         </div>
       </div>
