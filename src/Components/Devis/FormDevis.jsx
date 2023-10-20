@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
 import NavbarDevis from "../Navigation/PagesNavbar/PagesNavbar.jsx";
@@ -5,7 +6,6 @@ import TitleDevis from "../UI/Title/TitleFormDevis.jsx";
 import ImgText from "../../assets/logo-4.png";
 import ButtonSend from "../UI/Button/ButtonSend.jsx";
 import Footer from "../Footer/Footer.jsx";
-import { NavLink } from "react-router-dom";
 
 const DevisFree = ({ label, type, value }) => {
   const [status, setStatus] = useState("");
@@ -58,8 +58,6 @@ const DevisFree = ({ label, type, value }) => {
   });
 
   const [isLoading, setIsLoading] = useState(false);
-
-  // text
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevData) => ({
@@ -67,8 +65,6 @@ const DevisFree = ({ label, type, value }) => {
       [name]: value,
     }));
   };
-
-  // checkbox
   const handleCheckboxChange = (event) => {
     const { name, checked } = event.target;
     setFormData((prevData) => ({
@@ -76,10 +72,8 @@ const DevisFree = ({ label, type, value }) => {
       [name]: checked,
     }));
   };
-
   const regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
   const regexNumber = /^\d+$/;
-
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -162,24 +156,19 @@ const DevisFree = ({ label, type, value }) => {
       privacy: formData.privacy,
       conditions: formData.conditions,
     };
-
     try {
       const response = await emailjs.send(
         "service_564zhfb6",
         "template_m6iriey",
         emailParams
       );
-
-      // console.log("Email envoyé !", response.status, response.text);
       setStatus("Votre devis est enregistré. Merci !");
       setTimeout(() => {
         window.location.reload();
       }, 1000);
     } catch (error) {
-      // console.error("Erreur d'envoi d'e-mail.", error);
       setStatus("Une erreur s'est produite.");
     }
-
     setIsLoading(false);
   };
 
@@ -190,15 +179,13 @@ const DevisFree = ({ label, type, value }) => {
   return (
     <section className="bg-FFF6E4 bg-contact-blur">
       <NavbarDevis />
-      <div>
-        <TitleDevis />
-      </div>
+      <TitleDevis />
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
           <div className="mr-10 lg:col-span-2 lg:py-12">
             <p
               data-aos="fade-right"
-              className="text-black font-extrabold text-2xl sm:text-3xl max-w-xl ml-6 sm:ml-0"
+              className="text-black text-2xl sm:text-3xl font-extrabold max-w-xl ml-6 sm:ml-0"
             >
               Avant de soumettre un devis, nous vous invitons à lire
               attentivement ces lignes.
@@ -303,10 +290,10 @@ const DevisFree = ({ label, type, value }) => {
                   <div className="relative pb-5">
                     <label
                       onClick={offFocusClick}
-                      className={`mt-1 absolute left-2 transition-all duration-100 ${
+                      className={`mt-1 absolute left-2 transition-all duration-200 ${
                         isFocused || value
                           ? "ml-2 mt-1 text-xs text-0C3E78"
-                          : "ml-2 top-3 text-gray-500"
+                          : "ml-2 top-3 text-gray-700"
                       }`}
                       htmlFor={label}
                     >
@@ -334,10 +321,10 @@ const DevisFree = ({ label, type, value }) => {
                   <div className="relative pb-5">
                     <label
                       onClick={offFocusClick}
-                      className={`mt-1 absolute left-2 transition-all duration-100 ${
+                      className={`mt-1 absolute left-2 transition-all duration-200 ${
                         isFocused || value
                           ? "ml-2 mt-1 text-xs text-0C3E78"
-                          : "ml-2 top-3 text-gray-500"
+                          : "ml-2 top-3 text-gray-700"
                       }`}
                       htmlFor={label}
                     >
@@ -365,10 +352,10 @@ const DevisFree = ({ label, type, value }) => {
                 <div className="relative pb-5">
                   <label
                     onClick={offFocusClick}
-                    className={`mt-1 absolute left-2 transition-all duration-100 ${
+                    className={`mt-1 absolute left-2 transition-all duration-200 ${
                       isFocused || value
                         ? "ml-2 mt-1 text-xs text-0C3E78"
-                        : "ml-2 top-3 text-gray-500"
+                        : "ml-2 top-3 text-gray-700"
                     }`}
                     htmlFor={label}
                   >
@@ -395,10 +382,10 @@ const DevisFree = ({ label, type, value }) => {
                 <div className="relative pb-5">
                   <label
                     onClick={offFocusClick}
-                    className={`mt-1 absolute left-2 transition-all duration-100 ${
+                    className={`mt-1 absolute left-2 transition-all duration-200 ${
                       isFocused || value
                         ? "ml-2 mt-1 text-xs text-0C3E78"
-                        : "ml-2 top-3 text-gray-500"
+                        : "ml-2 top-3 text-gray-700"
                     }`}
                     htmlFor={label}
                   >
@@ -425,10 +412,10 @@ const DevisFree = ({ label, type, value }) => {
                 <div className="relative pb-5">
                   <label
                     onClick={offFocusClick}
-                    className={`mt-1 absolute left-2 transition-all duration-100 ${
+                    className={`mt-1 absolute left-2 transition-all duration-200 ${
                       isFocused || value
                         ? "ml-2 mt-1 text-xs text-0C3E78"
-                        : "ml-2 top-3 text-gray-500"
+                        : "ml-2 top-3 text-gray-700"
                     }`}
                     htmlFor={label}
                   >
@@ -455,10 +442,10 @@ const DevisFree = ({ label, type, value }) => {
                 <div className="relative pb-5">
                   <label
                     onClick={offFocusClick}
-                    className={`mt-1 absolute left-2 transition-all duration-100 ${
+                    className={`mt-1 absolute left-2 transition-all duration-200 ${
                       isFocused || value
                         ? "ml-2 mt-1 text-xs text-0C3E78"
-                        : "ml-2 top-3 text-gray-500"
+                        : "ml-2 top-3 text-gray-700"
                     }`}
                     htmlFor={label}
                   >
@@ -485,10 +472,10 @@ const DevisFree = ({ label, type, value }) => {
                 <div className="relative pb-5">
                   <label
                     onClick={offFocusClick}
-                    className={`mt-1 absolute left-2 transition-all duration-100 ${
+                    className={`mt-1 absolute left-2 transition-all duration-200 ${
                       isFocused || value
                         ? "ml-2 mt-1 text-xs text-0C3E78"
-                        : "ml-2 top-3 text-gray-500"
+                        : "ml-2 top-3 text-gray-700"
                     }`}
                     htmlFor={label}
                   >
@@ -515,10 +502,10 @@ const DevisFree = ({ label, type, value }) => {
                 <div className="relative pb-5">
                   <label
                     onClick={offFocusClick}
-                    className={`mt-1 absolute left-2 transition-all duration-100 ${
+                    className={`mt-1 absolute left-2 transition-all duration-200 ${
                       isFocused || value
                         ? "ml-2 mt-1 text-xs text-0C3E78"
-                        : "ml-2 top-3 text-gray-500"
+                        : "ml-2 top-3 text-gray-700"
                     }`}
                     htmlFor={label}
                   >
@@ -545,10 +532,10 @@ const DevisFree = ({ label, type, value }) => {
                 <div className="relative pb-28">
                   <label
                     onClick={offFocusClick}
-                    className={`mt-1 absolute left-2 transition-all duration-100 ${
+                    className={`mt-1 absolute left-2 transition-all duration-200 ${
                       isFocused || value
                         ? "ml-2 mt-1 text-xs text-0C3E78"
-                        : "ml-2 top-3 text-gray-500"
+                        : "ml-2 top-3 text-gray-700"
                     }`}
                     htmlFor={label}
                   >
@@ -577,10 +564,10 @@ const DevisFree = ({ label, type, value }) => {
               <div className="relative">
                 <label
                   onClick={offFocusClick}
-                  className={`mt-1 absolute left-2 transition-all duration-100 ${
+                  className={`mt-1 absolute left-2 transition-all duration-200 ${
                     isFocused || value
                       ? "ml-2 mt-1 text-xs text-0C3E78"
-                      : "ml-2 top-3 text-gray-500"
+                      : "ml-2 top-3 text-gray-700"
                   }`}
                   htmlFor={label}
                 >

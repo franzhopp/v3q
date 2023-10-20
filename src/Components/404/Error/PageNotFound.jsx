@@ -46,7 +46,7 @@ const PageNotFound = () => {
           </svg>
         </a>
       </div>
-      <div className="pt-32 pb-40 px-4 place-content-center">
+      <div className="place-content-center pt-32 pb-40 px-4">
         <div className="animate-bounce-bounce flex justify-center pb-10">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +74,7 @@ const PageNotFound = () => {
         </div>
         <div className="text-center pb-28">
           <h1 className="text-C22E2E text-9xl font-extrabold">404</h1>
-          <p className="font-extrabold tracking-tight text-C22E2E text-2xl sm:text-4xl">
+          <p className="text-C22E2E text-2xl sm:text-4xl font-extrabold tracking-tight ">
             Oups, mauvais chemin...
           </p>
           <div className="flex justify-center pt-1">

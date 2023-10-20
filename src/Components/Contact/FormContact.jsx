@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 import Title from "../UI/Title/TitleFormContact";
 import ImgText from "../../assets/logo-4.png";
 import emailjs from "emailjs-com";
@@ -56,8 +56,6 @@ const Form = ({ label, type, value }) => {
   });
 
   const [isLoading, setIsLoading] = useState(false);
-
-  // text
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevData) => ({
@@ -65,8 +63,6 @@ const Form = ({ label, type, value }) => {
       [name]: value,
     }));
   };
-
-  // checkbox
   const handleCheckboxChange = (event) => {
     const { name, checked } = event.target;
     setFormData((prevData) => ({
@@ -74,10 +70,8 @@ const Form = ({ label, type, value }) => {
       [name]: checked,
     }));
   };
-
   const regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
   const regexNumber = /^\d+$/;
-
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -150,17 +144,13 @@ const Form = ({ label, type, value }) => {
         "template_m6iriey",
         emailParams
       );
-
-      // console.log("Email envoyé !", response.status, response.text);
       setStatus("Votre contact est enregistré. Merci !");
       setTimeout(() => {
         window.location.reload();
       }, 1000);
     } catch (error) {
-      // console.error("Erreur d'envoi d'e-mail.", error);
       setStatus("Une erreur s'est produite.");
     }
-
     setIsLoading(false);
   };
 
@@ -170,13 +160,11 @@ const Form = ({ label, type, value }) => {
 
   return (
     <section className="bg-FFF6E4 bg-contact-blur">
-      <div>
-        <Title />
-      </div>
+      <Title />
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
           <div className="mr-10 lg:col-span-2 lg:py-12">
-            <p className="text-black font-extrabold text-2xl sm:text-4xl max-w-xl ml-6 sm:ml-0">
+            <p className="text-black text-2xl font-extrabold sm:text-4xl max-w-xl ml-6 sm:ml-0">
               Si vous recherchez une agence digitale qui peut donner vie à votre
               projet numérique, qui excelle dans le design et le développement
               web, ne cherchez pas plus loin. Choisissez
@@ -215,10 +203,10 @@ const Form = ({ label, type, value }) => {
                   <div className="relative pb-5">
                     <label
                       onClick={offFocusClick}
-                      className={`mt-1 absolute left-2 transition-all duration-100 ${
+                      className={`mt-1 absolute left-2 transition-all duration-200 ${
                         isFocused || value
                           ? "ml-2 mt-1 text-xs text-0C3E78"
-                          : "ml-2 top-3 text-gray-500"
+                          : "ml-2 top-3 text-gray-700"
                       }`}
                       htmlFor={label}
                     >
@@ -245,10 +233,10 @@ const Form = ({ label, type, value }) => {
                   <div className="relative pb-5">
                     <label
                       onClick={offFocusClick}
-                      className={`mt-1 absolute left-2 transition-all duration-100 ${
+                      className={`mt-1 absolute left-2 transition-all duration-200 ${
                         isFocused || value
                           ? "ml-2 mt-1 text-xs text-0C3E78"
-                          : "ml-2 top-3 text-gray-500"
+                          : "ml-2 top-3 text-gray-700"
                       }`}
                       htmlFor={label}
                     >
@@ -276,10 +264,10 @@ const Form = ({ label, type, value }) => {
                 <div className="relative pb-5">
                   <label
                     onClick={offFocusClick}
-                    className={`mt-1 absolute left-2 transition-all duration-100 ${
+                    className={`mt-1 absolute left-2 transition-all duration-200 ${
                       isFocused || value
                         ? "ml-2 mt-1 text-xs text-0C3E78"
-                        : "ml-2 top-3 text-gray-500"
+                        : "ml-2 top-3 text-gray-700"
                     }`}
                     htmlFor={label}
                   >
@@ -306,10 +294,10 @@ const Form = ({ label, type, value }) => {
                 <div className="relative pb-5">
                   <label
                     onClick={offFocusClick}
-                    className={`mt-1 absolute left-2 transition-all duration-100 ${
+                    className={`mt-1 absolute left-2 transition-all duration-200 ${
                       isFocused || value
                         ? "ml-2 mt-1 text-xs text-0C3E78"
-                        : "ml-2 top-3 text-gray-500"
+                        : "ml-2 top-3 text-gray-700"
                     }`}
                     htmlFor={label}
                   >
@@ -336,10 +324,10 @@ const Form = ({ label, type, value }) => {
                 <div className="relative pb-5">
                   <label
                     onClick={offFocusClick}
-                    className={`mt-1 absolute left-2 transition-all duration-100 ${
+                    className={`mt-1 absolute left-2 transition-all duration-200 ${
                       isFocused || value
                         ? "ml-2 mt-1 text-xs text-0C3E78"
-                        : "ml-2 top-3 text-gray-500"
+                        : "ml-2 top-3 text-gray-700"
                     }`}
                     htmlFor={label}
                   >
@@ -367,10 +355,10 @@ const Form = ({ label, type, value }) => {
                 <div className="relative pb-20">
                   <label
                     onClick={offFocusClick}
-                    className={`mt-1 absolute left-2 transition-all duration-100 ${
+                    className={`mt-1 absolute left-2 transition-all duration-200 ${
                       isFocused || value
                         ? "ml-2 mt-1 text-xs text-0C3E78"
-                        : "ml-2 top-3 text-gray-500"
+                        : "ml-2 top-3 text-gray-700"
                     }`}
                     htmlFor={label}
                   >
@@ -398,10 +386,10 @@ const Form = ({ label, type, value }) => {
                 <div className="relative">
                   <label
                     onClick={offFocusClick}
-                    className={`mt-1 absolute left-2 transition-all duration-100 ${
+                    className={`mt-1 absolute left-2 transition-all duration-200 ${
                       isFocused || value
                         ? "ml-2 mt-1 text-xs text-0C3E78"
-                        : "ml-2 top-3 text-gray-500"
+                        : "ml-2 top-3 text-gray-700"
                     }`}
                     htmlFor={label}
                   >
@@ -426,7 +414,6 @@ const Form = ({ label, type, value }) => {
                   )}
                 </div>
               </div>
-
               <div>
                 <input
                   className="outline-none input-secondary border-gray-200 mr-1"
@@ -494,7 +481,6 @@ const Form = ({ label, type, value }) => {
                   </p>
                 )}
               </div>
-
               <div className="flex justify-center pt-5">
                 <button type="submit" onClick={handleSubmit}>
                   {isLoading ? (
@@ -512,7 +498,7 @@ const Form = ({ label, type, value }) => {
               </div>
             </form>
             <div className="text-00E189 text-center font-extrabold pt-5">
-              {status && <p>{status}</p>}
+              {status && <p>{status ? "text-00E189" : "text-EF0039"}</p>}
             </div>
           </div>
         </div>

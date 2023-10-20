@@ -11,7 +11,7 @@ import Footer from "../../Footer/Footer";
 
 const DiscoverDesigner = () => {
   return (
-    <div>
+    <section>
       <NavbarDiscoverDesigner />
       <AvatarDesigner />
       <div class="bg-FFF6E4 flex justify-center pt-10 pb-20">
@@ -21,7 +21,7 @@ const DiscoverDesigner = () => {
               <div className="flex justify-center mt-10 mb-10">
                 {" "}
                 <svg
-                  className="button-design-formbounce animate-bounce-bounce"
+                  className="animate-bounce-bounce"
                   width="95"
                   height="64"
                   viewBox="0 0 95 64"
@@ -214,7 +214,7 @@ const DiscoverDesigner = () => {
         </div>
       </div>
       <Footer />
-    </div>
+    </section>
   );
 };
 
