@@ -15,9 +15,9 @@ const Form = ({ label, type, value }) => {
     setIsFocused(true);
   };
 
-  const offFocusClick = () => {
-    setIsFocused(false);
-  };
+  // const offFocusClick = () => {
+  //   setIsFocused(false);
+  // };
 
   const handleBlur = () => {
     if (!value) {
@@ -202,7 +202,7 @@ const Form = ({ label, type, value }) => {
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <div className="relative pb-5">
                     <label
-                      onClick={offFocusClick}
+                      // onClick={offFocusClick}
                       className={`mt-1 absolute left-2 transition-all duration-200 ${
                         isFocused || value
                           ? "ml-2 mt-1 text-xs text-0C3E78"
@@ -232,7 +232,7 @@ const Form = ({ label, type, value }) => {
                   </div>
                   <div className="relative pb-5">
                     <label
-                      onClick={offFocusClick}
+                      // onClick={offFocusClick}
                       className={`mt-1 absolute left-2 transition-all duration-200 ${
                         isFocused || value
                           ? "ml-2 mt-1 text-xs text-0C3E78"
@@ -263,7 +263,7 @@ const Form = ({ label, type, value }) => {
                 </div>
                 <div className="relative pb-5">
                   <label
-                    onClick={offFocusClick}
+                    // onClick={offFocusClick}
                     className={`mt-1 absolute left-2 transition-all duration-200 ${
                       isFocused || value
                         ? "ml-2 mt-1 text-xs text-0C3E78"
@@ -293,7 +293,7 @@ const Form = ({ label, type, value }) => {
                 </div>
                 <div className="relative pb-5">
                   <label
-                    onClick={offFocusClick}
+                    // onClick={offFocusClick}
                     className={`mt-1 absolute left-2 transition-all duration-200 ${
                       isFocused || value
                         ? "ml-2 mt-1 text-xs text-0C3E78"
@@ -323,7 +323,7 @@ const Form = ({ label, type, value }) => {
                 </div>
                 <div className="relative pb-5">
                   <label
-                    onClick={offFocusClick}
+                    // onClick={offFocusClick}
                     className={`mt-1 absolute left-2 transition-all duration-200 ${
                       isFocused || value
                         ? "ml-2 mt-1 text-xs text-0C3E78"
@@ -354,7 +354,7 @@ const Form = ({ label, type, value }) => {
 
                 <div className="relative pb-20">
                   <label
-                    onClick={offFocusClick}
+                    // onClick={offFocusClick}
                     className={`mt-1 absolute left-2 transition-all duration-200 ${
                       isFocused || value
                         ? "ml-2 mt-1 text-xs text-0C3E78"
@@ -385,7 +385,7 @@ const Form = ({ label, type, value }) => {
 
                 <div className="relative">
                   <label
-                    onClick={offFocusClick}
+                    // onClick={offFocusClick}
                     className={`mt-1 absolute left-2 transition-all duration-200 ${
                       isFocused || value
                         ? "ml-2 mt-1 text-xs text-0C3E78"

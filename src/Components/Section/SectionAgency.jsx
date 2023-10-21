@@ -94,7 +94,7 @@ const SectionAgency = () => {
                 <span className="font-extrabold">{" Design, "}</span>
                 <span className="font-extrabold">Développement web</span> ou
                 <span className="font-extrabold">{" Marketing Digital "}</span>
-                {"sont notre puissant art."}
+                {"sont notre art."}
               </span>
             </p>
           </div>

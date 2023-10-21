@@ -11,9 +11,9 @@ const DevisFree = ({ label, type, value }) => {
   const [status, setStatus] = useState("");
   const [isFocused, setIsFocused] = useState(false);
 
-  const handleFocus = () => {
-    setIsFocused(true);
-  };
+  // const handleFocus = () => {
+  //   setIsFocused(true);
+  // };
 
   const offFocusClick = () => {
     setIsFocused(false);
@@ -289,7 +289,7 @@ const DevisFree = ({ label, type, value }) => {
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <div className="relative pb-5">
                     <label
-                      onClick={offFocusClick}
+                      // onClick={offFocusClick}
                       className={`mt-1 absolute left-2 transition-all duration-200 ${
                         isFocused || value
                           ? "ml-2 mt-1 text-xs text-0C3E78"
@@ -320,7 +320,7 @@ const DevisFree = ({ label, type, value }) => {
 
                   <div className="relative pb-5">
                     <label
-                      onClick={offFocusClick}
+                      // onClick={offFocusClick}
                       className={`mt-1 absolute left-2 transition-all duration-200 ${
                         isFocused || value
                           ? "ml-2 mt-1 text-xs text-0C3E78"
@@ -351,7 +351,7 @@ const DevisFree = ({ label, type, value }) => {
                 </div>
                 <div className="relative pb-5">
                   <label
-                    onClick={offFocusClick}
+                    // onClick={offFocusClick}
                     className={`mt-1 absolute left-2 transition-all duration-200 ${
                       isFocused || value
                         ? "ml-2 mt-1 text-xs text-0C3E78"
@@ -381,7 +381,7 @@ const DevisFree = ({ label, type, value }) => {
                 </div>
                 <div className="relative pb-5">
                   <label
-                    onClick={offFocusClick}
+                    // onClick={offFocusClick}
                     className={`mt-1 absolute left-2 transition-all duration-200 ${
                       isFocused || value
                         ? "ml-2 mt-1 text-xs text-0C3E78"
@@ -411,7 +411,7 @@ const DevisFree = ({ label, type, value }) => {
                 </div>
                 <div className="relative pb-5">
                   <label
-                    onClick={offFocusClick}
+                    // onClick={offFocusClick}
                     className={`mt-1 absolute left-2 transition-all duration-200 ${
                       isFocused || value
                         ? "ml-2 mt-1 text-xs text-0C3E78"
@@ -441,7 +441,7 @@ const DevisFree = ({ label, type, value }) => {
                 </div>
                 <div className="relative pb-5">
                   <label
-                    onClick={offFocusClick}
+                    // onClick={offFocusClick}
                     className={`mt-1 absolute left-2 transition-all duration-200 ${
                       isFocused || value
                         ? "ml-2 mt-1 text-xs text-0C3E78"
@@ -471,7 +471,7 @@ const DevisFree = ({ label, type, value }) => {
                 </div>
                 <div className="relative pb-5">
                   <label
-                    onClick={offFocusClick}
+                    // onClick={offFocusClick}
                     className={`mt-1 absolute left-2 transition-all duration-200 ${
                       isFocused || value
                         ? "ml-2 mt-1 text-xs text-0C3E78"
@@ -501,7 +501,7 @@ const DevisFree = ({ label, type, value }) => {
                 </div>
                 <div className="relative pb-5">
                   <label
-                    onClick={offFocusClick}
+                    // onClick={offFocusClick}
                     className={`mt-1 absolute left-2 transition-all duration-200 ${
                       isFocused || value
                         ? "ml-2 mt-1 text-xs text-0C3E78"
@@ -531,7 +531,7 @@ const DevisFree = ({ label, type, value }) => {
                 </div>
                 <div className="relative pb-28">
                   <label
-                    onClick={offFocusClick}
+                    // onClick={offFocusClick}
                     className={`mt-1 absolute left-2 transition-all duration-200 ${
                       isFocused || value
                         ? "ml-2 mt-1 text-xs text-0C3E78"
@@ -563,7 +563,7 @@ const DevisFree = ({ label, type, value }) => {
 
               <div className="relative">
                 <label
-                  onClick={offFocusClick}
+                  // onClick={offFocusClick}
                   className={`mt-1 absolute left-2 transition-all duration-200 ${
                     isFocused || value
                       ? "ml-2 mt-1 text-xs text-0C3E78"
