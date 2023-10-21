@@ -15,6 +15,7 @@ import PageMentions from "./Components/Privacy/Pages/PageMentions.jsx";
 import PageNotFound from "./Components/404/Error/PageNotFound.jsx";
 import Loader from "./loading.jsx";
 import ScrollToTop from "./ScrollToTop.jsx";
+import ThemeProvider from "./context/ThemeProvider.jsx";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -36,24 +37,26 @@ const App = () => {
       {isLoading ? (
         <Loader />
       ) : (
-        <Router>
-          <ScrollToTop />
-          <Routes>
-            <Route path="/" element={<Homepage />} />
-            <Route path="/" element={<Section />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/ethics" element={<EthicsPage />} />
-            <Route path="/webdev" element={<DiscoverWebDeveloper />} />
-            <Route path="/designer" element={<DiscoverDesigner />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/rate" element={<Rate />} />
-            <Route path="/devis" element={<DevisFree />} />
-            <Route path="/privacy" element={<PagePrivacy />} />
-            <Route path="/terms" element={<PageConditions />} />
-            <Route path="/mentions" element={<PageMentions />} />
-            <Route path="*" element={<PageNotFound />} />
-          </Routes>
-        </Router>
+        <ThemeProvider>
+          <Router>
+            <ScrollToTop />
+            <Routes>
+              <Route path="/" element={<Homepage />} />
+              <Route path="/" element={<Section />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/ethics" element={<EthicsPage />} />
+              <Route path="/webdev" element={<DiscoverWebDeveloper />} />
+              <Route path="/designer" element={<DiscoverDesigner />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/rate" element={<Rate />} />
+              <Route path="/devis" element={<DevisFree />} />
+              <Route path="/privacy" element={<PagePrivacy />} />
+              <Route path="/terms" element={<PageConditions />} />
+              <Route path="/mentions" element={<PageMentions />} />
+              <Route path="*" element={<PageNotFound />} />
+            </Routes>
+          </Router>
+        </ThemeProvider>
       )}
     </>
   );

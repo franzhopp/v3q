@@ -8,6 +8,7 @@ import "../Section/FirstSection.jsx";
 import "../Homepage/Homepage.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
+// import DarkLightThemes from "../../hook/useTheme.jsx";
 
 const Navbar = () => {
   const [isAnimating, setIsAnimating] = useState(false);
@@ -308,6 +309,7 @@ const Navbar = () => {
                 />
               )}
             </div>
+            {/* <DarkLightThemes/> */}
           </div>
         </div>
       </nav>
