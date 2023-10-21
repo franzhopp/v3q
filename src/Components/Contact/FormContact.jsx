@@ -498,7 +498,7 @@ const Form = ({ label, type, value }) => {
               </div>
             </form>
             <div className="text-00E189 text-center font-extrabold pt-5">
-              {status && <p>{status ? "text-00E189" : "text-EF0039"}</p>}
+              {status && <p>{status}</p>}
             </div>
           </div>
         </div>
