@@ -131,7 +131,7 @@ const EthicsPage = () => {
                 </span>
                 .
               </p>
-              <div className="text-transparent">Division invisible</div>
+              <div className="text-transparent mb-6"></div>
               <p
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
@@ -181,11 +181,9 @@ const EthicsPage = () => {
               className="mt-2 text-FFF6E4 text-arial"
             >
               <h1 className="text-4xl number font-semibold pb-5">07.</h1>
-              <span className="font-extrabold">
-                La performance rencontre la beauté.
-              </span>
+              <span className="font-extrabold">Évolution perpétuelle.</span>
               {
-                " Nos sites internet ne sont pas seulement esthétiquement plaisants, ils sont optimisés pour des performances exceptionnelles. Charge rapide, navigation fluide et convivialité mobile font de nos sites la solution idéale pour convertir les visiteurs en clients."
+                " L'industrie du design et du développement web est en constante évolution. Nous restons constamment à l'affût des dernières tendances, technologies et meilleures pratiques pour assurer que nos projets sont à la pointe de l'innovation. Nos réalisations sont revues."
               }
             </p>
           </div>
@@ -196,16 +194,14 @@ const EthicsPage = () => {
               className="mt-2 text-FFF6E4 text-arial"
             >
               <h1 className="text-4xl number font-semibold pb-5">08.</h1>
-              <span className="font-extrabold">
-                Donnez à vos clients une expérience en ligne mémorable.
-              </span>
+              <span className="font-extrabold">Collaboration dynamique.</span>
               {
-                " Nos sites internet offrent une navigation intuitive, un contenu engageant et des fonctionnalités conviviales, garantissant que chaque visiteur se sent connecté à votre marque. "
+                " La collaboration est le moteur de notre succès. Nous croyons en l'importance de travailler main dans la main, tant en interne qu'avec nos clients. Nous encourageons l'échange constant d'expertise pour réaliser "
               }
               <span className="font-extrabold">
-                Créez des relations solides grâce à une présence en ligne
-                exceptionnelle.
+                des projets web extraordinaires
               </span>
+              .
             </p>
           </div>
 
@@ -217,9 +213,9 @@ const EthicsPage = () => {
             >
               <h1 className="text-4xl number font-semibold pb-5">09.</h1>
               <span className="font-extrabold">
-                {`Un site internet n'est pas seulement une dépense.`}
+                {`Créativité inépuisable.`}
               </span>
-              {` Avec notre approche axée sur la conversion, nous créons des sites qui génèrent un retour sur investissement tangible. Obtenez plus de prospects, plus de ventes et plus de croissance grâce à notre expertise. Ceci n'est qu'un exemple de texte, car notre site est perpétuellement.`}
+              {` Nous croyons en la puissance de la créativité. Elle est le carburant qui alimente notre studio. Chaque projet est une opportunité d'explorer de nouvelles idées, de repousser les limites du design et du développement web, et de créer des expériences mémorables.`}
             </p>
           </div>
         </div>
@@ -270,38 +266,37 @@ const EthicsPage = () => {
                 data-aos-anchor-placement="top-bottom"
                 className="text-FFF6E4 text-center"
               >
-                Notre environnement de travail est{" "}
+                Nous sommes bien plus qu'un simple studio créatif.{" "}
                 <span className="font-extrabold">
-                  une fusion créative où le design et le développement web se
-                  rencontrent
-                </span>
-                . C'est un espace vibrant et inspirant où l'innovation prend
-                vie, où les écrans brillent de projets en constante évolution,
-                et où{" "}
+                  Nous sommes dévoués à faire de vos projets : une réussite.
+                </span>{" "}
+                Évolution perpétuelle, collaboration dynamique, créativité
+                inépuisable sont la clé de nos secrets.{" "}
                 <span className="font-extrabold">
-                  la collaboration est le moteur de notre succès
+                  Nous sommes votre source d'inspiration
                 </span>
                 .
               </p>
-              <div className="text-transparent">Division invisible</div>
+              <div className="text-transparent mb-6"></div>
               <p
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
                 className="text-FFF6E4 text-center"
               >
-                En somme, notre environnement de travail est bien plus qu'un
-                lieu physique où nous accomplissons nos tâches. C'est un lieu où
-                l'innovation,{" "}
+                Nous comprenons que chaque projet est unique, c'est pourquoi
+                nous nous engageons à apporter une approche sur mesure à chaque
+                collaboration.{" "}
                 <span className="font-extrabold">
-                  la passion et la collaboration se rencontrent pour donner vie
-                  à des projets web extraordinaires
+                  Notre équipe dévouée travaille avec passion pour donner vie à
+                  vos idées, en veillant à ce que chaque détail soit
+                  parfaitement exécuté
                 </span>
-                . Chez nous, chaque journée est une nouvelle opportunité de
-                repousser les limites du design et du développement web, de
-                créer{" "}
+                . Votre réussite est notre plus grande fierté. Nous croyons en
+                la puissance de la créativité et de la collaboration pour créer
+                des expériences uniques et mémorables.{" "}
                 <span className="font-extrabold">
-                  des expériences mémorables pour nos clients et de se réaliser
-                  professionnellement
+                  Faites-nous confiance pour faire de votre vision une réalité.
+                  Ensemble, nous pouvons atteindre de nouveaux sommets
                 </span>
                 .
               </p>

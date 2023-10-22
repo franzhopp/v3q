@@ -19,6 +19,11 @@ body {
     cursor: url('./Cursor/Cursor_1.svg'), default !important;
 }
 
+select {
+    outline: none;
+    background-color: #FFF6E4;
+}
+
 a,
 label {
     cursor: url('./Cursor/Cursor_2.svg'), pointer !important;

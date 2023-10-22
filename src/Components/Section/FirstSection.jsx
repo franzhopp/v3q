@@ -36,7 +36,7 @@ const Section = () => {
           <div className="w-80">
             <p
               data-aos="fade-left"
-              className="mt-2 font-extrabold text-black text-4xl sm:text-left text-center"
+              className="mt-10 font-extrabold text-black text-4xl sm:text-left text-center"
             >
               Confiez votre image à des professionnels
             </p>
