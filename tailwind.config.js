@@ -45,7 +45,7 @@ export default {
         'arial': ['Arial'],
         'emblema': ['Emblema One', 'cursive'],
         'inter': ['Inter', 'sans-serif'],
-        'gexo': ['Gexo Sans Bold', 'sans-serif'],
+        'gexo': ['Gexo Sans Bold', 'sans'],
       },
     },
     screens: {
