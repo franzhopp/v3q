@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { NavLink } from "react-router-dom";
 import NavbarPages from "../../Navigation/PagesNavbar/PagesNavbar";
 import TitlePorfolio from "../../UI/Title/TitlePorfolio";
 import Image1 from "../../../assets/projetbysarahcuisine.png";
@@ -99,7 +99,7 @@ const Portfolio = () => {
             </div>
             <div className="flex justify-center mt-10">
               <svg
-                className="animate-bounce-bounce "
+                className="animate-formbounce "
                 width="95"
                 height="64"
                 viewBox="0 0 95 64"
@@ -148,7 +148,7 @@ const Portfolio = () => {
             </div>
           </div>
           <svg
-            className="animate-bounce-bounce h-14 w-14 sm:flex hidden"
+            className="animate-formbounce h-14 w-14 sm:flex hidden"
             width="192"
             height="193"
             viewBox="0 0 192 193"

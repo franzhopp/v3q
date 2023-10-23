@@ -8,6 +8,8 @@ import "../Section/FirstSection.jsx";
 import "../Homepage/Homepage.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useLanguage } from "../../context/LanguageProvider.jsx";
+import translations from "./translate.jsx";
 // import DarkLightThemes from "../../hook/useTheme.jsx";
 
 const Navbar = () => {
@@ -24,6 +26,12 @@ const Navbar = () => {
   const [searchQuery, setSearchQuery] = useState();
   const [isOpen, setIsOpen] = useState(false);
 
+  const { language, changeLanguage } = useLanguage();
+
+  const changeLanguageHandler = (newLanguage) => {
+    changeLanguage(newLanguage);
+  };
+
   // const values = [
   //   { id: 1, title: "EN", lng: "ENG", link: "/hhezyezyze" },
   //   { id: 2, title: "FR", lng: "FR", link: "/" },
@@ -35,7 +43,6 @@ const Navbar = () => {
     setIsOpen(!isOpen);
     document.body.style.overflowY = "hidden";
   };
-
   // Agence → SectionToScroll → FormSection
   const SectionToScroll = () => {
     const contactSection = document.getElementById("team");
@@ -130,7 +137,8 @@ const Navbar = () => {
                   onMouseLeave={closeSubmenuWithDelay}
                   className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
                 >
-                  Agence
+                  {translations[language].navAgence}
+                  {translations[language].navAgency}
                 </NavLink>
                 <div className="flex justify-center">
                   <ul className="absolute hidden group-hover:block rounded-md text-left w-48 bg-FFF6E4 border border-gray-300 mt-2 py-2">
@@ -197,7 +205,8 @@ const Navbar = () => {
                   to="/services"
                   className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
                 >
-                  Services
+                  {translations[language].navServices}
+                  {translations[language].navServicesEn}
                 </NavLink>
                 <div className="flex justify-center">
                   <ul className="absolute hidden group-hover:block bg-FFF6E4 w-48 mt-2 py-2 rounded-md border border-gray-300 text-left">
@@ -255,31 +264,13 @@ const Navbar = () => {
                   className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
                 >
                   <select
-                  // value={language}
-                  // onChange={(e) => changeLanguageHandler(e.target.value)}
+                    value={language}
+                    onChange={(e) => changeLanguageHandler(e.target.value)}
                   >
                     <option value="fr">FR</option>
                     <option value="en">EN</option>
                   </select>
                 </NavLink>
-                {/* <div className="flex justify-center">
-                  <ul className="absolute hidden group-hover:block bg-FFF6E4 mt-2 py-2 w-24 rounded-md border border-gray-300 text-left">
-                    {values.map((val) => (
-                      <li
-                        key={val.id}
-                        onMouseEnter={handleMouseEnterSubmenu}
-                        onMouseLeave={closeSubmenuWithDelay}
-                      >
-                        <NavLink
-                          to={val.link}
-                          className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
-                        >
-                          {val.lng}
-                        </NavLink>
-                      </li>
-                    ))}
-                  </ul>
-                </div> */}
               </li>
 
               <div
@@ -377,7 +368,11 @@ const Navbar = () => {
             <NavLink className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
               <button onClick={toggleSousListsAgence}>
                 <div className="flex items-center justify-between">
-                  <div className="pr-2">Agence</div>
+                  <div className="pr-2">
+                    {" "}
+                    {translations[language].navAgence}
+                    {translations[language].navAgency}
+                  </div>
                   <IoIosArrowDown className="mt-1" />
                 </div>
               </button>
@@ -463,7 +458,11 @@ const Navbar = () => {
             <NavLink className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
               <button onClick={toggleSousListsMenu}>
                 <div className="flex items-center justify-between">
-                  <div className="pr-2">Services</div>
+                  <div className="pr-2">
+                    {" "}
+                    {translations[language].navServices}
+                    {translations[language].navServicesEn}
+                  </div>
                   <IoIosArrowDown className="mt-1" />
                 </div>
               </button>
@@ -519,26 +518,13 @@ const Navbar = () => {
 
           <li>
             <NavLink className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
-              <button onClick={toggleSousListsThreeMenu}>
-                <div className="flex items-center justify-between">
-                  <div className="pr-2">Traduction</div>
-                  <IoIosArrowDown className="mt-1" />
-                </div>
-              </button>
-              <ul
-                data-aos="fade-left"
-                className={`toggle-menu ${
-                  showSousListsThreeMenu ? "block" : "hidden"
-                } p-2`}
+              <select
+                value={language}
+                onChange={(e) => changeLanguageHandler(e.target.value)}
               >
-                <select
-                // value={language}
-                // onChange={(e) => changeLanguageHandler(e.target.value)}
-                >
-                  <option value="fr">FR</option>
-                  <option value="en">EN</option>
-                </select>
-              </ul>
+                <option value="fr">FR</option>
+                <option value="en">EN</option>
+              </select>
             </NavLink>
           </li>
 

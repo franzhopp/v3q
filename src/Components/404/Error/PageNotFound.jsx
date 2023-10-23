@@ -47,7 +47,7 @@ const PageNotFound = () => {
         </a>
       </div>
       <div className="place-content-center pt-32 pb-40 px-4">
-        <div className="animate-bounce-bounce flex justify-center pb-10">
+        <div className="animate-formbounce flex justify-center pb-10">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="150"

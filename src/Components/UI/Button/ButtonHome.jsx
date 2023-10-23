@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const ButtonHome = () => {
   return (
     <>
-      <div className="animate-bounce-bounce flex justify-start mt-10">
+      <div className="animate-formbounce flex justify-start mt-10">
         <NavLink
           to="/"
           // onClick={() => {

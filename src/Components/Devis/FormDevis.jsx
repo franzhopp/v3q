@@ -11,9 +11,9 @@ const DevisFree = ({ label, type, value }) => {
   const [status, setStatus] = useState("");
   const [isFocused, setIsFocused] = useState(false);
 
-  // const handleFocus = () => {
-  //   setIsFocused(true);
-  // };
+  const handleFocus = () => {
+    setIsFocused(true);
+  };
 
   const offFocusClick = () => {
     setIsFocused(false);

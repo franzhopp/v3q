@@ -153,7 +153,7 @@ const Services = () => {
         </div>
         <div className="flex justify-center mt-16">
           <svg
-            className="animate-bounce-bounce h-14 w-14"
+            className="animate-formbounce h-14 w-14"
             width="192"
             height="193"
             viewBox="0 0 192 193"

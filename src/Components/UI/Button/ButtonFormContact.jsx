@@ -29,7 +29,7 @@ const ButtonContact = () => {
   }, []);
 
   return (
-    <div className="animate-bounce-bounce flex justify-center sm:justify-end relative right-20 top-20 sm:right-96">
+    <div className="animate-formbounce flex justify-center sm:justify-end relative right-20 top-20 sm:right-96">
       <NavLink to="/" onClick={SectionToScrollContact}>
         <svg
           width="86"

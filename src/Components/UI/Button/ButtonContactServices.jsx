@@ -4,7 +4,7 @@ import Artwork from "../../../assets/artworkheart.png";
 const ButtonContactServices = () => {
   return (
     <>
-      <div className="animate-bounce-bounce flex justify-center mt-5 px-10">
+      <div className="animate-formbounce flex justify-center mt-5 px-10">
         <NavLink
           to="/"
           className="inline-flex items-center gap-2 rounded-full border-black border-4 bg-black px-8 py-3 text-FFF6E4"

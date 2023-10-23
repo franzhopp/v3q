@@ -159,7 +159,7 @@ const EthicsPage = () => {
       </div>
       <div className="flex justify-center mt-28 mb-20">
         <svg
-          className="animate-bounce-bounce animate-bounce-bounce"
+          className="animate-formbounce animate-formbounce"
           xmlns="http://www.w3.org/2000/svg"
           width="51"
           height="51"
@@ -224,7 +224,7 @@ const EthicsPage = () => {
       <div className="bg-ethics-blur pt-28 pb-20">
         <div className="flex justify-center">
           <svg
-            className="animate-bounce-bounce"
+            className="animate-formbounce"
             xmlns="http://www.w3.org/2000/svg"
             width="51"
             height="51"
@@ -319,7 +319,7 @@ const EthicsPage = () => {
         </div>
         <div className="flex justify-center mt-28 pb-28">
           <svg
-            className="animate-bounce-bounce"
+            className="animate-formbounce"
             xmlns="http://www.w3.org/2000/svg"
             width="51"
             height="51"

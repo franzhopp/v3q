@@ -22,10 +22,6 @@ const NavbarEthics = () => {
   const [searchQuery, setSearchQuery] = useState();
   const [isOpen, setIsOpen] = useState(false);
 
-  const values = [
-    { id: 1, lng: "ENG", link: "/hhezyezyze" },
-    { id: 2, lng: "FR", link: "/" },
-  ];
   // Toggle → HandleMouse from list items
   const toggleMenuMobile = () => {
     setToggleMenu(!toggleMenu);
@@ -227,31 +223,12 @@ const NavbarEthics = () => {
               </NavLink>
 
               <li data-aos="fade-left" className="relative group list-none">
-                <NavLink
-                  onMouseEnter={handleMouseEnterSubmenu}
-                  onMouseLeave={closeSubmenuWithDelay}
-                  className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
-                >
-                  FR
+                <NavLink className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold">
+                  <select>
+                    <option value="fr">FR</option>
+                    <option value="en">EN</option>
+                  </select>
                 </NavLink>
-                <div className="flex justify-center">
-                  <ul className="absolute hidden group-hover:block bg-FFF6E4 mt-2 py-2 w-24 rounded-md border border-gray-300 text-left">
-                    {values.map((val) => (
-                      <li
-                        key={val.id}
-                        onMouseEnter={handleMouseEnterSubmenu}
-                        onMouseLeave={closeSubmenuWithDelay}
-                      >
-                        <NavLink
-                          to={val.link}
-                          className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
-                        >
-                          {val.lng}
-                        </NavLink>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
               </li>
 
               <div
@@ -488,33 +465,10 @@ const NavbarEthics = () => {
 
           <li>
             <NavLink className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
-              <button onClick={toggleSousListsThreeMenu}>
-                <div className="flex items-center justify-between">
-                  <div className="pr-2">FR</div>
-                  <IoIosArrowDown className="mt-1 text-C22E2E" />
-                </div>
-              </button>
-              <ul
-                data-aos="fade-left"
-                className={`toggle-menu ${
-                  showSousListsThreeMenu ? "block" : "hidden"
-                } p-2`}
-              >
-                {values.map((val) => (
-                  <li
-                    key={val.id}
-                    onMouseEnter={handleMouseEnterSubmenu}
-                    onMouseLeave={closeSubmenuWithDelay}
-                  >
-                    <NavLink
-                      to={val.link}
-                      className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
-                    >
-                      {val.lng}
-                    </NavLink>
-                  </li>
-                ))}
-              </ul>
+              <select>
+                <option value="fr">FR</option>
+                <option value="en">EN</option>
+              </select>
             </NavLink>
           </li>
 
