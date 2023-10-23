@@ -25,18 +25,15 @@ select {
 }
 
 a,
-label {
-    cursor: url('./Cursor/Cursor_2.svg'), pointer !important;
-}
-
 span,
 path,
 svg,
 button,
 label,
+select,
 img,
 li {
-    cursor: url('./Cursor/Cursor_2.svg'), pointer;
+    cursor: url('./Cursor/Cursor_2.svg'), pointer !important;
 }
 
 input[type="text"],
