@@ -1,4 +1,7 @@
+import { useEffect } from "react";
 import Logo from "./assets/logo-bit.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Loader = () => {
   const text = "navi";
@@ -25,6 +28,13 @@ const Loader = () => {
   const text3 = ".";
   const letters3 = text3.split("");
   const animationConfig3 = [{ dataAos: "fade-left", dataAosDelay: 100 }];
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+    });
+  }, []);
 
   return (
     <>

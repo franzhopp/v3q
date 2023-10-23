@@ -30,7 +30,7 @@ const App = () => {
       setTimeout(() => {
         setIsLoading(false);
         localStorage.setItem("hasLoaded", "true");
-      }, 3000);
+      }, 2000);
     }
   }, []);
   return (
@@ -43,7 +43,6 @@ const App = () => {
             <Router>
               <ScrollToTop />
               <Routes>
-              {/* <Route path="/loading" element={<Loader />} /> */}
                 <Route path="/" element={<Homepage />} />
                 <Route path="/" element={<Section />} />
                 <Route path="/services" element={<Services />} />
