@@ -11,10 +11,9 @@ const Portfolio = () => {
   const cards = [
     {
       image: Image1,
-      title: "By Sarah Cuisine",
+      title: "Titre à venir",
       url: "",
-      content:
-        "Nous sommes heureux de vous annoncer que le site By Sarah Cuisine a été créé par la société navi studio.™ Développé et designé par Louisa, ce projet a été riche en développement car il permet à Sarah de promouvoir sa marque influente en tant que traiteur. Nous te souhaitons toute la réussite ainsi que de belles choses avec ce site, nous espérons que ta marque de fabrique puisse davantage s'accroître dans les années à venir, encore et plus fort ! ✨",
+      content: "La présentation du projet est en cours d'écriture...",
     },
     {
       image: ImgDefault,
@@ -24,6 +23,7 @@ const Portfolio = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
   };
@@ -51,7 +51,9 @@ const Portfolio = () => {
               <img
                 src={cards[currentIndex].image}
                 alt={cards[currentIndex].title}
-                className="w-auto h-44 object-cover rounded-2xl transition"
+                className={`w-auto h-44 object-cover rounded-2xl transition ${
+                  currentIndex === 0 ? "blur-lg" : ""
+                }`}
               />
             </div>
             <p className="mt-6 text-black text-xl font-extrabold ">
