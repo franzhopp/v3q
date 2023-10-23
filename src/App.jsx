@@ -24,10 +24,8 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    AOS.init({
-      once: true,
-    });
-
+    AOS.init();
+    AOS.refresh();
     const hasLoaded = localStorage.getItem("hasLoaded");
 
     if (hasLoaded) {
