@@ -39,6 +39,7 @@ export default {
         'EF0039': '#EF0039',
       },
       fontFamily: {
+        sans: [],
         'sans': ['Helvetica', 'sans-serif'],
         'aoboshi': ['Aoboshi One', 'sans-serif'],
         'arial': ['Arial'],
