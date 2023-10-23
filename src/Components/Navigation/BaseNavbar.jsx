@@ -32,11 +32,6 @@ const Navbar = () => {
     changeLanguage(newLanguage);
   };
 
-  // const values = [
-  //   { id: 1, title: "EN", lng: "ENG", link: "/hhezyezyze" },
-  //   { id: 2, title: "FR", lng: "FR", link: "/" },
-  // ];
-
   // Toggle → HandleMouse from list items
   const toggleMenuMobile = () => {
     setToggleMenu(!toggleMenu);

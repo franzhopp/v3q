@@ -21,10 +21,6 @@ const NavbarDiscoverWebDevelopper = () => {
   const [searchQuery, setSearchQuery] = useState();
   const [isOpen, setIsOpen] = useState(false);
 
-  const values = [
-    { id: 1, lng: "ENG", link: "/hhezyezyze" },
-    { id: 2, lng: "FR", link: "/" },
-  ];
   // Toggle → HandleMouse from list items
   const toggleMenuMobile = () => {
     setToggleMenu(!toggleMenu);
