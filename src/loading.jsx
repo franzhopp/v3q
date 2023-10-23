@@ -1,5 +1,4 @@
 import Logo from "./assets/logo-bit.png";
-import "aos/dist/aos.css";
 
 const Loader = () => {
   const text = "navi";
@@ -32,7 +31,7 @@ const Loader = () => {
       <div className="bg-C22E2E flex flex-col justify-center items-center pt-80">
         <img src={Logo} className="animate-pulse h-14 w-14" />
         <div className="flex justify-center mt-10 font-gexo text-FFF6E4">
-          <div className="mr-1">
+          <div data-aos="fade-right" className="mr-1">
             {letters.map((letter, index) => (
               <span
                 key={index}
@@ -43,7 +42,7 @@ const Loader = () => {
               </span>
             ))}
           </div>
-          <div className="flex">
+          <div data-aos="fade-up" data-aos-duration="600" className="flex">
             {letters2.map((letter, index) => (
               <span
                 key={index}
@@ -54,7 +53,7 @@ const Loader = () => {
               </span>
             ))}
           </div>
-          <div className="flex animate-bounce ml-1">
+          <div data-aos="fade-right" className="flex animate-bounce ml-1">
             {letters3.map((letter, index) => (
               <span
                 key={index}
