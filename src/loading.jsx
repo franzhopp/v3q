@@ -1,6 +1,4 @@
-import { useEffect } from "react";
 import Logo from "./assets/logo-bit.png";
-import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Loader = () => {
@@ -29,19 +27,12 @@ const Loader = () => {
   const letters3 = text3.split("");
   const animationConfig3 = [{ dataAos: "fade-left", dataAosDelay: 100 }];
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
-    });
-  }, []);
-
   return (
     <>
       <div className="bg-C22E2E flex flex-col justify-center items-center pt-80">
         <img src={Logo} className="animate-pulse h-14 w-14" />
         <div className="flex justify-center mt-10 font-gexo text-FFF6E4">
-          <div data-aos="fade-right" className="mr-1">
+          <div className="mr-1">
             {letters.map((letter, index) => (
               <span
                 key={index}
@@ -52,7 +43,7 @@ const Loader = () => {
               </span>
             ))}
           </div>
-          <div data-aos="fade-up" data-aos-duration="600" className="flex">
+          <div className="flex">
             {letters2.map((letter, index) => (
               <span
                 key={index}
@@ -63,7 +54,7 @@ const Loader = () => {
               </span>
             ))}
           </div>
-          <div data-aos="fade-right" className="flex animate-bounce ml-1">
+          <div className="flex animate-bounce ml-1">
             {letters3.map((letter, index) => (
               <span
                 key={index}
