@@ -15,7 +15,6 @@ const Footer = () => {
   const [errors, setErrors] = useState({
     email: "",
   });
-
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevData) => ({
@@ -25,7 +24,6 @@ const Footer = () => {
   };
 
   const regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -202,7 +200,7 @@ const Footer = () => {
           </li>
           <li>
             <a className="text-black transition hover:text-0C3E78" href="/">
-              🇬🇧 / <a href="/">🇫🇷</a>
+              <a href="/">🇬🇧</a> / <a href="/">🇫🇷</a>
             </a>
           </li>
 
@@ -280,19 +278,17 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href="">
-              <a
-                href="https://t.snapchat.com/BYKwKD2r"
-                rel="noreferrer"
-                target="_blank"
-              >
-                {" "}
-                <img
-                  src={LogoSnap}
-                  alt="Icône Snapchat"
-                  className="flex-shrink-0 h-10 w-10"
-                />
-              </a>
+            <a
+              href="https://t.snapchat.com/BYKwKD2r"
+              rel="noreferrer"
+              target="_blank"
+            >
+              {" "}
+              <img
+                src={LogoSnap}
+                alt="Icône Snapchat"
+                className="flex-shrink-0 h-10 w-10"
+              />
             </a>
           </li>
         </ul>
