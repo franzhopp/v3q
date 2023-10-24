@@ -42,7 +42,7 @@ const Loader = () => {
               </span>
             ))}
           </div>
-          <div data-aos="fade-up" data-aos-duration="600" className="flex">
+          <div data-aos="fade-left" className="flex">
             {letters2.map((letter, index) => (
               <span
                 key={index}
