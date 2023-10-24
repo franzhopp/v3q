@@ -40,8 +40,8 @@ const App = () => {
       ) : (
         <LanguageProvider>
           <ThemeProvider>
-            <ScrollToTop />
             <Router>
+              <ScrollToTop />
               <Routes>
                 <Route path="/" element={<Homepage />} />
                 <Route path="/" element={<Section />} />
