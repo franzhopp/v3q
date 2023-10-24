@@ -17,15 +17,11 @@ import Loader from "./loading.jsx";
 import ScrollToTop from "./ScrollToTop.jsx";
 import ThemeProvider from "./context/ThemeProvider.jsx";
 import LanguageProvider from "./context/LanguageProvider.jsx";
-import "aos/dist/aos.css";
-import AOS from "aos";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    AOS.init();
-    AOS.refresh();
     const hasLoaded = localStorage.getItem("hasLoaded");
 
     if (hasLoaded) {
