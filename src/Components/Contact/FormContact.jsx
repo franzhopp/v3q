@@ -1,3 +1,5 @@
+// // import translations from "./translate.jsx";
+// import { useLanguage } from "../../context/LanguageProvider.jsx";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";

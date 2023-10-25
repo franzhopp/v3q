@@ -1,8 +1,17 @@
+// import translations from "./translate.jsx";
+// import { useLanguage } from "../../context/LanguageProvider.jsx";
 import PagesNavbar from "../../Navigation/PagesNavbar/PagesNavbar";
 import ImgText from "../../../assets/logo-5.png";
 import Footer from "../../Footer/Footer";
 
 const PageNotFound = () => {
+
+  const { language, changeLanguage } = useLanguage();
+
+  const changeLanguageHandler = (newLanguage) => {
+    changeLanguage(newLanguage);
+  };
+
   return (
     <section className="bg-FFF6E4">
       <PagesNavbar />

@@ -1,8 +1,11 @@
+import translations from "../translate.jsx";
+import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../../Section/FirstSection.jsx";
 
 const Button = () => {
+  const { language } = useLanguage();
   const [scrollNavbar, setScrollNavbar] = useState();
 
   const SectionToScroll = () => {
@@ -34,7 +37,10 @@ const Button = () => {
         onClick={SectionToScroll}
         className="bg-FFF6E4 text-black inline-flex items-center gap-2 px-8 py-3 rounded-full"
       >
-        <span className="text-3xl mr-3 font-semibold">Découvrir </span>
+        <span className="text-3xl mr-3 font-semibold">
+          {translations[language].btnDiscoverFr}
+          {translations[language].btnDiscoverEn}{" "}
+        </span>
 
         <svg
           className="hidden sm:block"

@@ -1,3 +1,5 @@
+import translations from "../translate.jsx";
+import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
@@ -21,6 +23,12 @@ const PagesNavbar = () => {
   const [openModel, setOpenModel] = useState();
   const [searchQuery, setSearchQuery] = useState();
   const [isOpen, setIsOpen] = useState(false);
+
+  const { language, changeLanguage } = useLanguage();
+
+  const changeLanguageHandler = (newLanguage) => {
+    changeLanguage(newLanguage);
+  };
 
   // Toggle → HandleMouse from list items
   const toggleMenuMobile = () => {

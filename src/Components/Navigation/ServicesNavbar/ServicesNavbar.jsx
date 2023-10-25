@@ -1,3 +1,5 @@
+import translations from "../translate.jsx";
+import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -22,6 +24,7 @@ const NavbarServices = () => {
   const [openModel, setOpenModel] = useState();
   const [searchQuery, setSearchQuery] = useState();
   const [isOpen, setIsOpen] = useState(false);
+  const { language } = useLanguage();
 
   // Toggle → HandleMouse from list items
   const toggleMenuMobile = () => {

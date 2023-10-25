@@ -1,3 +1,5 @@
+import translations from "../translate.jsx";
+import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import Image from "../../../assets/logo-5.png";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
@@ -20,6 +22,12 @@ const NavbarDiscoverWebDevelopper = () => {
   const [openModel, setOpenModel] = useState();
   const [searchQuery, setSearchQuery] = useState();
   const [isOpen, setIsOpen] = useState(false);
+
+  const { language, changeLanguage } = useLanguage();
+
+  const changeLanguageHandler = (newLanguage) => {
+    changeLanguage(newLanguage);
+  };
 
   // Toggle → HandleMouse from list items
   const toggleMenuMobile = () => {

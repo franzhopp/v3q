@@ -1,3 +1,5 @@
+import translations from "./translate.jsx";
+import { useLanguage } from "../../context/LanguageProvider.jsx";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
@@ -8,8 +10,6 @@ import "../Section/FirstSection.jsx";
 import "../Homepage/Homepage.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useLanguage } from "../../context/LanguageProvider.jsx";
-import translations from "./translate.jsx";
 // import DarkLightThemes from "../../hook/useTheme.jsx";
 
 const Navbar = () => {
