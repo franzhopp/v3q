@@ -180,7 +180,7 @@ const DiscoverDesigner = () => {
                 <img
                   src={LogoInsta}
                   alt="Icône Instagram"
-                  className="flex-shrink-0 h-20 w-20"
+                  className="flex-shrink-0 h-20 w-20 transition-transform transform hover:scale-105"
                 />
               </a>
             </li>
@@ -190,7 +190,7 @@ const DiscoverDesigner = () => {
                 <img
                   src={LogoLinkedin}
                   alt="Icône Linkedin"
-                  className="flex-shrink-0 h-20 w-20"
+                  className="flex-shrink-0 h-20 w-20 transition-transform transform hover:scale-105"
                 />
               </a>
             </li>
@@ -205,7 +205,7 @@ const DiscoverDesigner = () => {
                   <img
                     src={LogoSnap}
                     alt="Icône Snapchat"
-                    className="flex-shrink-0 h-20 w-20"
+                    className="flex-shrink-0 h-20 w-20 transition-transform transform hover:scale-105"
                   />
                 </a>
               </a>

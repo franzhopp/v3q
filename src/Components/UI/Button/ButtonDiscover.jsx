@@ -35,7 +35,7 @@ const Button = () => {
     <>
       <NavLink
         onClick={SectionToScroll}
-        className="bg-FFF6E4 text-black inline-flex items-center gap-2 px-8 py-3 rounded-full"
+        className="bg-FFF6E4 text-black inline-flex items-center gap-2 px-8 py-3 rounded-full transition-transform transform hover:scale-105"
       >
         <span className="text-3xl mr-3 font-semibold">
           {translations[language].btnDiscoverFr}
