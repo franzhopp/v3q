@@ -57,11 +57,11 @@ const PageMentions = () => {
           </p>
 
           <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mb-2">
-            Conditions d’utilisation
+            Conditions d'utilisation
           </h2>
           <p className="text-black text-justify mb-4">
-            › L’utilisation du site implique l’acceptation des conditions
-            d’utilisation décrites ci-dessous. Ces conditions peuvent être
+            › L'utilisation du site implique l'acceptation des conditions
+            d'utilisation décrites ci-dessous. Ces conditions peuvent être
             modifiées à tout moment.
           </p>
 

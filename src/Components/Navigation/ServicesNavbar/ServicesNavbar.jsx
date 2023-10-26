@@ -525,7 +525,7 @@ const NavbarServices = () => {
         </h1>
         <div className="w-full sm:w-1/2">
           <span className="font-extrabold text-FFF6E4 block pt-10 text-base sm:text-4xl">
-            Bénéficiez d’une expertise adaptée à vos besoins & envies.
+            Bénéficiez d'une expertise adaptée à vos besoins & envies.
           </span>
         </div>
       </div>

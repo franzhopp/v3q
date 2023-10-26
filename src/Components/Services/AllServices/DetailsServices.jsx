@@ -32,7 +32,7 @@ const DetailsServices = () => {
               data-aos-anchor-placement="top-bottom"
               className="mt-2 text-FFF6E4 px-5"
             >
-              Vous disposez d’un suivi de production complet, notre équipe reste
+              Vous disposez d'un suivi de production complet, notre équipe reste
               disponible et à votre écoute 24/7. Nous travaillons main dans la
               main avec nos clients.
             </p>
@@ -70,10 +70,10 @@ const DetailsServices = () => {
                   data-aos-anchor-placement="top-bottom"
                   className="text-base mb-10 text-FFF6E4"
                 >
-                  <span className="absolute h-full w-1 bg-FFF6E4 -left-14 -top-1 hidden sm:block"></span>
-                  Bénéficiez d’une analyse complète de votre marque et d’une
-                  stratégie digitale adaptée au marché actuel. Profitez d’un
-                  Benchmark complet et d’une analyse secteur.
+                  <span className="absolute h-full w-1 bg-pattern-portfolio -left-14 -top-1 hidden sm:block"></span>
+                  Bénéficiez d'une analyse complète de votre marque et d'une
+                  stratégie digitale adaptée au marché actuel. Profitez d'un
+                  Benchmark complet et d'une analyse secteur.
                 </p>
               </div>
             </div>
@@ -120,7 +120,7 @@ const DetailsServices = () => {
               data-aos-anchor-placement="top-bottom"
               className="text-black text-center text-2xl font-extrabold px-5"
             >
-              Des questions ? Une demande ? N’hésitez pas à nous contacter
+              Des questions ? Une demande ? N'hésitez pas à nous contacter
               directement, notre équipe saura vous aiguiller répondre à toutes
               vos questions.
             </p>

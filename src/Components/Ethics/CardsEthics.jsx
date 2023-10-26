@@ -38,7 +38,7 @@ const EthicsPage = () => {
                 faire de notre entreprise un endroit où il fait bon travailler.
                 <span className="font-extrabold">
                   {" "}
-                  L’éthique est au coeur de notre travail et est notre priorité.
+                  L'éthique est au coeur de notre travail et est notre priorité.
                 </span>
               </p>
             </div>
