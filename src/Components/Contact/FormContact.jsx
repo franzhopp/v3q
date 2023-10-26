@@ -28,7 +28,11 @@ const Form = ({ label, type, value }) => {
   };
 
   const scrollToTop = () => {
-    window.scrollTo(0, 0);
+    window.scrollTo({
+      top: 0,
+      left: 100,
+      behavior: "smooth",
+    });
   };
 
   const [formData, setFormData] = useState({
