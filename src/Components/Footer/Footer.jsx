@@ -224,7 +224,7 @@ const Footer = () => {
               target="_blank"
               className="text-black transition hover:text-0C3E78"
             >
-              Condition d'Utilisation
+              Conditions d'Utilisation
             </NavLink>
           </li>
           <li>

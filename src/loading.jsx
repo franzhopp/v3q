@@ -1,4 +1,4 @@
-import Logo from "./assets/logo-bit.png";
+import Logo from "./assets/logo-3.png";
 import TitleLogo from "./assets/logo-loading.png";
 
 const Loader = () => {
