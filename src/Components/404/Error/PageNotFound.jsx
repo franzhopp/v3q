@@ -5,13 +5,7 @@ import ImgText from "../../../assets/logo-5.png";
 import Footer from "../../Footer/Footer";
 
 const PageNotFound = () => {
-
-  const { language, changeLanguage } = useLanguage();
-
-  const changeLanguageHandler = (newLanguage) => {
-    changeLanguage(newLanguage);
-  };
-
+  // const { language } = useLanguage();
   return (
     <section className="bg-FFF6E4">
       <PagesNavbar />
