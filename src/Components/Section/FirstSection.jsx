@@ -35,7 +35,7 @@ const Section = () => {
           <span className="absolute h-72 w-1 bg-C22E2E -left-14 bottom-0 hidden sm:block"></span>
           <p
             data-aos="fade-left"
-            className="mt-10 font-extrabold text-black text-4xl sm:text-left text-center relative z-10"
+            className="mt-10 font-extrabold text-black text-4xl sm:text-left text-center relative"
           >
             Confiez votre image à des professionnels
           </p>
