@@ -1,4 +1,5 @@
 import Logo from "./assets/logo-bit.png";
+import TitleLogo from "./assets/logo-loading.png";
 
 const Loader = () => {
   // const text = "navi";
@@ -29,6 +30,9 @@ const Loader = () => {
   return (
     <div className="bg-C22E2E flex flex-col justify-center items-center pt-80">
       <img src={Logo} className="animate-pulse h-14 w-14" />
+      <div className="flex justify-center mt-10">
+        <img src={TitleLogo} className="h-16 w-16" />
+      </div>
       {/* <div className="flex justify-center mt-10 font-gexo text-FFF6E4">
           <div data-aos="fade-right" className="mr-1">
             {letters.map((letter, index) => (
