@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ImCross } from "react-icons/im";
 import { data } from "./SearchData.jsx";
+// import translations from "../translate.jsx";
+// import { useLanguage } from "../../../context/LanguageProvider.jsx";
 
 const ModalSearch = ({ closeModal, searchQuery }) => {
   const [searchQueryText, setSearchQueryText] = useState("");
   const navigate = useNavigate();
+  const { language } = useLanguage();
 
   const handleSearch = (e) => {
     if (e.key === "Enter") {
@@ -30,7 +33,7 @@ const ModalSearch = ({ closeModal, searchQuery }) => {
       <input
         data-aos="fade-left"
         type="text"
-        placeholder="Search..."
+        placeholder={translations[language].placeholder}
         onKeyDown={handleSearch}
         value={searchQueryText}
         onChange={(e) => setSearchQueryText(e.target.value)}

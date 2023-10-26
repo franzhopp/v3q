@@ -23,12 +23,7 @@ const NavbarEthics = () => {
   const [openModel, setOpenModel] = useState();
   const [searchQuery, setSearchQuery] = useState();
   const [isOpen, setIsOpen] = useState(false);
-
-  const { language, changeLanguage } = useLanguage();
-
-  const changeLanguageHandler = (newLanguage) => {
-    changeLanguage(newLanguage);
-  };
+  const { language } = useLanguage();
 
   // Toggle → HandleMouse from list items
   const toggleMenuMobile = () => {
