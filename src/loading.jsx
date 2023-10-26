@@ -31,7 +31,7 @@ const Loader = () => {
     <div className="bg-C22E2E flex flex-col justify-center items-center h-screen">
       <img src={Logo} className="h-14 w-14" />
       <div className="flex justify-center mt-5">
-        <img src={TitleLogo} className="h-3 animate-bounce" />
+        <img src={TitleLogo} className="h-3 animate-formbounce" />
       </div>
       {/* <div className="flex justify-center mt-10 font-gexo text-FFF6E4">
           <div data-aos="fade-right" className="mr-1">
