@@ -30,7 +30,7 @@ const App = () => {
       setTimeout(() => {
         setIsLoading(false);
         localStorage.setItem("hasLoaded", "true");
-      }, 3000);
+      }, 2000);
     }
   }, []);
   return (
