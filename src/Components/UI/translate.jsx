@@ -16,7 +16,7 @@ const translations = {
     navContactEn: "Contact",
     titleHomeEn: "Digital agency",
     scrollingTextEn:
-      "WEB DESIGN | WEB DEV | DIGITAL MARKETING  | BRAND STRATEGY",
+      "WEB DESIGN | WEB DEVELOPMENT | DIGITAL MARKETING  | BRAND STRATEGY",
     btnDiscoverEn: "Discover",
   },
 };
