@@ -28,6 +28,7 @@ const Home = () => {
           isOpen={isCookieModalOpen}
           onRequestClose={handleRequestClose}
           onAccept={handleAcceptCookies}
+          className="absolute"
         />
       )}
       <Footer />

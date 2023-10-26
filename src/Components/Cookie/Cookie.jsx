@@ -7,13 +7,13 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
       isOpen={isOpen}
       onRequestClose={onRequestClose}
       contentLabel="Cookie Modal"
-      className="bg-FFF6E4 shadow-md rounded-2xl fixed bottom-14 left-10 right-10 p-10 outline-none border-none"
+      className="bg-FFF6E4 rounded-2xl fixed bottom-16 left-10 right-10 p-10 outline-none border-none shadow-none"
     >
       <div className="text-left">
-        <h2 className="text-C22E2E text-2xl font-inter font-extrabold mb-2">
+        <h2 className="text-C22E2E text-xl font-inter font-extrabold mb-2">
           Politique de cookies
         </h2>
-        <p className="text-black text-justify">
+        <p className="text-black">
           Ce site utilise des cookies pour améliorer son fonctionnement et votre
           expérience. Vous pouvez les accepter ou les gérer selon vos
           préférences, ou continuer votre navigation sans les accepter. Bon

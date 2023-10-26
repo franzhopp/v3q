@@ -23,7 +23,6 @@ const Homepage = () => {
         isOpen={isCookieModalOpen}
         onRequestClose={() => setCookieModalOpen(false)}
         onAccept={handleAcceptCookie}
-        className="absolute"
       />
     </div>
   );
