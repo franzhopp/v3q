@@ -165,7 +165,6 @@ const DevisFree = ({ label, type, value }) => {
       setStatus("Votre devis est enregistré. Merci !");
       setTimeout(() => {
         window.location.reload();
-        window.scrollTo(0, 0);
       }, 1000);
     } catch (error) {
       setStatus("Une erreur s'est produite.");
