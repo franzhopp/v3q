@@ -52,11 +52,6 @@ const Footer = () => {
       setStatus("Merci, vous êtes inscrit à la newletter.");
       setTimeout(() => {
         window.location.reload();
-        window.scrollTo({
-          top: 100,
-          left: 100,
-          behavior: "smooth",
-        });
       }, 1000);
     } catch (error) {
       setStatus("Une erreur s'est produite.");
