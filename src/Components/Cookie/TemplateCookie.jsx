@@ -23,7 +23,7 @@ const Homepage = () => {
         isOpen={isCookieModalOpen}
         onRequestClose={() => setCookieModalOpen(false)}
         onAccept={handleAcceptCookie}
-        className="fixed fixed-media sm:fixed"
+        className="absolute"
       />
     </div>
   );
