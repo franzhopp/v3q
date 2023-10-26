@@ -305,16 +305,16 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-
       <nav
         className={`fixed w-full top-0 left-0 shadow-md md:hidden bg-FFF6E4 z-max`}
       >
         <div className="px-5 h-28 flex items-center justify-between">
-          <NavLink to="/">
+          <NavLink to="/" data-aos="fade-left">
             <img src={Image} alt="" className="h-10 w-auto sm:h-10" />
           </NavLink>
-          <div className="-mr-2">
-            <a
+          <div>
+            <div
+              data-aos="fade-left"
               onClick={toggleMenuMobile}
               className="icon-toggle bg-C22E2E cursor-pointer rounded-md p-2 inline-flex items-center justify-center ring-1 ring-white ring-opacity-20"
             >
@@ -355,7 +355,7 @@ const Navbar = () => {
                   strokeLinecap="round"
                 />
               </svg>
-            </a>
+            </div>
           </div>
         </div>
         <ul className={`toggle-menu ${isOpen ? "block" : "hidden"} p-3`}>
