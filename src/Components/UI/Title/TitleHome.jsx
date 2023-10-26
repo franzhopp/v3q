@@ -23,7 +23,7 @@ const TitleHome = () => {
             data-aos="fade-right"
             className="text-FFF6E4 text-base font-extrabold "
           >
-            PARIS X LONDON
+            LONDON X PARIS
           </span>
         </div>
       </div>
