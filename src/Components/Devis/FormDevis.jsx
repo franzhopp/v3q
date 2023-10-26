@@ -15,9 +15,9 @@ const DevisFree = ({ label, type, value }) => {
     setIsFocused(true);
   };
 
-  const offFocusClick = () => {
-    setIsFocused(false);
-  };
+  // const offFocusClick = () => {
+  //   setIsFocused(false);
+  // };
 
   const handleBlur = () => {
     if (!value) {
@@ -165,6 +165,7 @@ const DevisFree = ({ label, type, value }) => {
       setStatus("Votre devis est enregistré. Merci !");
       setTimeout(() => {
         window.location.reload();
+        window.scrollTo(0, 0);
       }, 1000);
     } catch (error) {
       setStatus("Une erreur s'est produite.");
@@ -260,7 +261,7 @@ const DevisFree = ({ label, type, value }) => {
                   </li>
                 </ul>
               </p>
-              <div className="flex flex-col text-center justify-center">
+              <div className="flex flex-col text-left mx-6">
                 <NavLink
                   to="/services"
                   className="text-FFF6E4 font-extrabold underline transition hover:text-C22E2E"
@@ -359,7 +360,7 @@ const DevisFree = ({ label, type, value }) => {
                     }`}
                     htmlFor={label}
                   >
-                    {"Adresse mail"}
+                    {"E-mail"}
                   </label>
                   <input
                     type={type}
@@ -641,8 +642,17 @@ const DevisFree = ({ label, type, value }) => {
                     className="underline font-extrabold text-0C3E78"
                   >
                     Lire la Politique de Confidentialité
-                  </NavLink>{" "}
-                  et{" "}
+                  </NavLink>
+                  , les{" "}
+                  <NavLink
+                    to="/mentions"
+                    rel="noreferrer"
+                    target="_blank"
+                    className="underline font-extrabold text-0C3E78"
+                  >
+                    Mentions Légales
+                  </NavLink>
+                  , et les{" "}
                   <NavLink
                     to="/terms"
                     rel="noreferrer"

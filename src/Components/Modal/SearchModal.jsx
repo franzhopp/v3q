@@ -8,7 +8,7 @@ import { data } from "./SearchData.jsx";
 const ModalSearch = ({ closeModal, searchQuery }) => {
   const [searchQueryText, setSearchQueryText] = useState("");
   const navigate = useNavigate();
-  const { language } = useLanguage();
+  // const { language } = useLanguage();
 
   const handleSearch = (e) => {
     if (e.key === "Enter") {
@@ -33,7 +33,7 @@ const ModalSearch = ({ closeModal, searchQuery }) => {
       <input
         data-aos="fade-left"
         type="text"
-        placeholder={translations[language].placeholder}
+        placeholder="Search..."
         onKeyDown={handleSearch}
         value={searchQueryText}
         onChange={(e) => setSearchQueryText(e.target.value)}

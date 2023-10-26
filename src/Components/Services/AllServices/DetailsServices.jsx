@@ -20,6 +20,7 @@ const DetailsServices = () => {
               data-aos-anchor-placement="top-bottom"
               className="mt-2 text-FFF6E4 px-5"
             >
+              <span className="absolute h-full w-1 bg-FFF6E4 -left-14 -top-1 hidden sm:block"></span>
               Nous mettons notre expertise à votre service, grâce à notre
               diagnostic personnalisé. Découvrez des solutions sur mesure
               adaptées à votre business & situation.
@@ -69,6 +70,7 @@ const DetailsServices = () => {
                   data-aos-anchor-placement="top-bottom"
                   className="text-base mb-10 text-FFF6E4"
                 >
+                  <span className="absolute h-full w-1 bg-FFF6E4 -left-14 -top-1 hidden sm:block"></span>
                   Bénéficiez d’une analyse complète de votre marque et d’une
                   stratégie digitale adaptée au marché actuel. Profitez d’un
                   Benchmark complet et d’une analyse secteur.
@@ -98,6 +100,7 @@ const DetailsServices = () => {
       <div className="pb-10">
         <div className="flex justify-center mt-20">
           <svg
+            className="animate-formbounce"
             width="108"
             height="181"
             viewBox="0 0 108 181"
@@ -138,7 +141,9 @@ const DetailsServices = () => {
           Retourner à la page d'Accueil ➔
         </NavLink>
         <div className="mt-5">
-          <span className="text-black font-extrabold font-inter italic">OU</span>
+          <span className="text-black font-extrabold font-inter italic">
+            OU
+          </span>
         </div>
       </div>
       <ButtonContactServices />

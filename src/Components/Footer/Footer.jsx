@@ -50,6 +50,10 @@ const Footer = () => {
         emailParams
       );
       setStatus("Merci, vous êtes inscrit à la newletter.");
+      setTimeout(() => {
+        window.location.reload();
+        window.scrollTo(0, 0);
+      }, 1000);
     } catch (error) {
       setStatus("Une erreur s'est produite.");
     }
@@ -88,7 +92,7 @@ const Footer = () => {
           <div className="flex justify-center pt-1">
             <input
               type="text"
-              placeholder="Votre email*"
+              placeholder="E-mail*"
               className={`italic rounded-tl-2xl rounded-bl-2xl rounded-tr-none rounded-br-none w-50 p-2 pb-2 outline-none border-gray-200 text-sm ${
                 errors.email ? "border-red-700" : ""
               }`}

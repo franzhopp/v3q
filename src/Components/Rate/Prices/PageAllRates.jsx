@@ -108,6 +108,7 @@ const Rate = () => {
             data-aos-anchor-placement="top-bottom"
             className=" text-C22E2E text-center"
           >
+            <span className="absolute h-60 w-1 bg-C22E2E -left-96 bottom-3 hidden sm:block"></span>
             Vous trouverez{" "}
             <span className="font-extrabold">
               toutes les tarifications de prix des services

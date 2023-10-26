@@ -17,6 +17,7 @@ const EthicsPage = () => {
             >
               01.
             </h2>
+
             <p className="text-black text-xl font-extrabold mb-5">
               Engagement & Confiance
             </p>
@@ -26,6 +27,7 @@ const EthicsPage = () => {
                 data-aos-anchor-placement="top-bottom"
                 className="text-black"
               >
+                <span className="absolute h-72 w-1 bg-E18AB0 -left-20 bottom-10 hidden sm:block"></span>
                 Nous prenons soin de nos collaborateurs et de notre entreprise,
                 <span className="font-extrabold">
                   {" "}
@@ -91,6 +93,7 @@ const EthicsPage = () => {
                 </span>
                 Nous déployons tous les efforts nécessaires pour améliorer nos
                 performances.
+                <span className="absolute h-72 w-1 bg-E18AB0 -right-20 bottom-10 hidden sm:block"></span>
               </p>
             </div>
           </div>
@@ -137,6 +140,7 @@ const EthicsPage = () => {
                 data-aos-anchor-placement="top-bottom"
                 className="text-black text-center"
               >
+                {/* <span className="absolute h-72 w-1 bg-C22E2E -left-20 bottom-10 hidden sm:block"></span> */}
                 En somme, notre environnement de travail est bien plus qu'un
                 lieu physique où nous accomplissons nos tâches. C'est un lieu où
                 l'innovation,{" "}
@@ -152,6 +156,7 @@ const EthicsPage = () => {
                   professionnellement
                 </span>
                 .
+                {/* <span className="absolute h-72 w-1 bg-C22E2E -right-20 bottom-10 hidden sm:block"></span> */}
               </p>
             </div>
           </div>
@@ -180,6 +185,7 @@ const EthicsPage = () => {
               data-aos-anchor-placement="top-bottom"
               className="mt-2 text-FFF6E4 text-arial"
             >
+              <span className="absolute h-full w-1 bg-FFF6E4 -left-14 -top-1 hidden sm:block"></span>
               <h1 className="text-4xl number font-semibold pb-5">07.</h1>
               <span className="font-extrabold">Évolution perpétuelle.</span>
               {
@@ -211,6 +217,7 @@ const EthicsPage = () => {
               data-aos-anchor-placement="top-bottom"
               className="mt-2 text-FFF6E4 text-arial"
             >
+              <span className="absolute h-full w-1 bg-FFF6E4 -right-14 -top-1 hidden sm:block"></span>
               <h1 className="text-4xl number font-semibold pb-5">09.</h1>
               <span className="font-extrabold">
                 {`Créativité inépuisable.`}

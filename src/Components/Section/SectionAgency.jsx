@@ -43,6 +43,7 @@ const SectionAgency = () => {
               data-aos="fade-right"
               className="text-center font-extrabold mt-28 text-black text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
             >
+              <span className="absolute h-96 w-1 bg-0C3E78 -left-32 -top-28 hidden sm:block"></span>
               Bienvenue chez{" "}
               <span>
                 <img
@@ -109,6 +110,7 @@ const SectionAgency = () => {
               data-aos-anchor-placement="top-bottom"
               className="mt-2 text-FFF6E4 text-arial"
             >
+              <span className="absolute h-full w-1 bg-FFF6E4 -left-14 -top-1 hidden sm:block"></span>
               <h1 className="text-4xl number font-semibold pb-5">04.</h1>
               <span className="font-extrabold">
                 Qu'est-ce que{" "}
@@ -151,6 +153,7 @@ const SectionAgency = () => {
               data-aos-anchor-placement="top-bottom"
               className="mt-2 text-FFF6E4 text-arial"
             >
+              <span className="absolute h-full w-1 bg-FFF6E4 -right-14 -top-1 hidden sm:block"></span>
               <h1 className="text-4xl number font-semibold pb-5">06.</h1>
               <span className="font-extrabold">
                 {`Votre site internet n'est pas seulement une dépense.`}

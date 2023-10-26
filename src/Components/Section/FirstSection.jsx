@@ -11,7 +11,7 @@ const Section = () => {
       contactSection.scrollIntoView({ behavior: "smooth" });
     }
   };
-  
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {

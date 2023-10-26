@@ -49,6 +49,7 @@ const Services = () => {
               data-aos-anchor-placement="top-bottom"
               className="text-black text-center"
             >
+              <span className="absolute h-56 w-1 bg-C22E2E -left-96 bottom-1 hidden sm:block"></span>
               Dans cette page, vous trouverez{" "}
               <span className="font-extrabold">tous les services</span> de notre
               agence adaptés selon{" "}

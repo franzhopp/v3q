@@ -1,5 +1,3 @@
-// // import translations from "./translate.jsx";
-// import { useLanguage } from "../../context/LanguageProvider.jsx";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -149,6 +147,7 @@ const Form = ({ label, type, value }) => {
       setStatus("Votre contact est enregistré. Merci !");
       setTimeout(() => {
         window.location.reload();
+        window.scrollTo(0, 0);
       }, 1000);
     } catch (error) {
       setStatus("Une erreur s'est produite.");
@@ -273,7 +272,7 @@ const Form = ({ label, type, value }) => {
                     }`}
                     htmlFor={label}
                   >
-                    {"Adresse mail"}
+                    {"E-mail"}
                   </label>
                   <input
                     type={type}
@@ -436,7 +435,6 @@ const Form = ({ label, type, value }) => {
                   </p>
                 )}
               </div>
-
               <div>
                 <input
                   className="outline-none input-secondary border-gray-200 mr-1"
@@ -465,8 +463,17 @@ const Form = ({ label, type, value }) => {
                     className="underline font-extrabold text-0C3E78"
                   >
                     Lire la Politique de Confidentialité
-                  </NavLink>{" "}
-                  et{" "}
+                  </NavLink>
+                  , les{" "}
+                  <NavLink
+                    to="/mentions"
+                    rel="noreferrer"
+                    target="_blank"
+                    className="underline font-extrabold text-0C3E78"
+                  >
+                    Mentions Légales
+                  </NavLink>
+                  , et les{" "}
                   <NavLink
                     to="/terms"
                     rel="noreferrer"
