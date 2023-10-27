@@ -185,9 +185,9 @@ const Form = ({ label, type, value }) => {
                 data-aos-anchor-placement="top-bottom"
                 className="text-black text-lg sm:text-2xl w-80 sm:w-96 ml-6 sm:ml-0"
               >
-                <span className="absolute h-64 w-1 bg-C22E2E -left-6 bottom-2 hidden sm:block"></span>
-                <span className="absolute h-72 w-1 bg-0C3E78 -left-10 bottom-2 hidden sm:block"></span>
-                <span className="absolute h-80 w-1 bg-FFF6E4 -left-14 bottom-2 hidden sm:block"></span>
+                <span className="absolute h-72 w-1 bg-C22E2E -left-7 bottom-20 hidden sm:block"></span>
+                {/* <span className="absolute h-64 w-1 bg-C22E2E -left-6 bottom-2 hidden sm:block"></span> */}
+                {/* <span className="absolute h-80 w-1 bg-FFF6E4 -left-14 bottom-2 hidden sm:block"></span> */}
                 {`Contactez-nous aujourd'hui pour discuter de
           votre projet et découvrir comment nous pouvons vous aider à briller
           sur le web. Votre succès numérique est notre mission.`}

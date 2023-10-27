@@ -185,7 +185,7 @@ const SectionTeam = () => {
                 <div className="text-black text-left mb-5 ml-10 sm:ml-0">
                   <p data-aos="fade-left" className="text-4xl font-extrabold">
                     Louisa Fernandez
-                    <span className="absolute h-96 w-1 bg-C22E2E -right-20 bottom-0 hidden sm:block"></span>
+                    <span className="absolute h-screen w-1 bg-0C3E78 -right-20 -bottom-1 hidden sm:block"></span>
                   </p>
                   <p className="text-4xl font-extrabold">Web Developper</p>
                   <animated.h1
