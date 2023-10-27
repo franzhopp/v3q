@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Loader from "./loading.jsx";
 import ScrollToTop from "./ScrollToTop.jsx";
+import CookieModal from "./Components/Cookie/Cookie.jsx";
 import ThemeProvider from "./context/ThemeProvider.jsx";
 import LanguageProvider from "./context/LanguageProvider.jsx";
 import Homepage from "./Components/Homepage/Homepage.jsx";
@@ -19,6 +20,21 @@ import PageMentions from "./Components/Privacy/Pages/PageMentions.jsx";
 import PageNotFound from "./Components/404/Error/PageNotFound.jsx";
 
 const App = () => {
+  const [isCookieModalOpen, setIsCookieModalOpen] = useState(true);
+
+  const handleAcceptCookies = () => {
+    localStorage.setItem("cookieAccepted", "true");
+    setIsCookieModalOpen(false);
+  };
+  const handleRequestClose = () => {
+    const hasAcceptedCookies = localStorage.getItem("cookieAccepted");
+    if (!hasAcceptedCookies) {
+      setIsCookieModalOpen(true);
+    } else {
+      setIsCookieModalOpen(false);
+    }
+  };
+
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -40,6 +56,13 @@ const App = () => {
       ) : (
         <LanguageProvider>
           <ThemeProvider>
+            {isCookieModalOpen && (
+              <CookieModal
+                isOpen={isCookieModalOpen}
+                onRequestClose={handleRequestClose}
+                onAccept={handleAcceptCookies}
+              />
+            )}
             <Router>
               <ScrollToTop />
               <Routes>
