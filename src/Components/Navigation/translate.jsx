@@ -9,7 +9,7 @@ const translations = {
     navSousValuesFr: "Nos valeurs",
     navSousAboutUsFr: "Qui sommes-nous ?",
     navSousTeamFr: "Notre équipe",
-    // Sous liste Services 
+    // Sous liste Services
     navSousServicesFr: "Prestations",
     navSousPricingFr: "Tarification",
     navSousFreeFr: "Devis gratuit",
@@ -24,7 +24,7 @@ const translations = {
     navSousValuesEn: "Our Values",
     navSousAboutUsEn: "About Us",
     navSousTeamEn: "The Team",
-    // Sous liste Services 
+    // Sous liste Services
     navSousServicesEn: "Services",
     navSousPricingEn: "Pricing",
     navSousFreeEn: "Free Quote",
