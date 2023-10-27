@@ -36,7 +36,7 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
             />
           </span>
         </p>
-        <div className="flex flex-col my-5">
+        <div className="flex flex-col my-3">
           <li className="list-none">
             <div className="text-C22E2E block px-1 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
               <select
