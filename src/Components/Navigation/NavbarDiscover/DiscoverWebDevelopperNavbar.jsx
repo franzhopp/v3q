@@ -499,7 +499,7 @@ const NavbarDiscoverWebDevelopper = () => {
           </NavLink>
 
           <li>
-            <NavLink className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
+            <NavLink className="text-C22E2E block px-2 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
               <select
                 value={language}
                 onChange={(e) => changeLanguageHandler(e.target.value)}
