@@ -95,4 +95,84 @@ export const data = [
     keywords: "EN",
     link: "/",
   },
+  {
+    keywords: "Agency",
+    link: "/",
+  },
+  {
+    keywords: "Ethics",
+    link: "/ethics",
+  },
+  {
+    keywords: "Ethic",
+    link: "/ethics",
+  },
+  {
+    keywords: "Services",
+    link: "/services",
+  },
+  {
+    keywords: "Pricing",
+    link: "/rate",
+  },
+  {
+    keywords: "Designer",
+    link: "/designer",
+  },
+  {
+    keywords: "Web Developer",
+    link: "/devweb",
+  },
+  {
+    keywords: "Pricing",
+    link: "/rate",
+  },
+  {
+    keywords: "Quote",
+    link: "/devis",
+  },
+  {
+    keywords: "Portfolio",
+    link: "/portfolio",
+  },
+  {
+    keywords: "Contact",
+    link: "/",
+  },
+  {
+    keywords: "Paris",
+    link: "/webdev",
+  },
+  {
+    keywords: "London",
+    link: "/designer",
+  },
+  {
+    keywords: "Legal",
+    link: "/privacy",
+  },
+  {
+    keywords: "Privacy",
+    link: "/privacy",
+  },
+  {
+    keywords: "Terms of use",
+    link: "/terms",
+  },
+  {
+    keywords: "Legal",
+    link: "/mentions",
+  },
+  {
+    keywords: "Louisa",
+    link: "/webdev",
+  },
+  {
+    keywords: "Mélissa",
+    link: "/designer",
+  },
+  {
+    keywords: "EN",
+    link: "/",
+  },
 ];
