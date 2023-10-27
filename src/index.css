@@ -9,7 +9,8 @@
 
 .ttt {
     position: fixed;
-    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    perspective: 1000;
 }
 
 

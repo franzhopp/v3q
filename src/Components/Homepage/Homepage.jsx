@@ -26,7 +26,6 @@ const Home = () => {
       <Form />
       {isCookieModalOpen && (
         <CookieModal
-        
           isOpen={isCookieModalOpen}
           onRequestClose={handleRequestClose}
           onAccept={handleAcceptCookies}
