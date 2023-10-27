@@ -4,18 +4,18 @@ import SecondSection from "../Section/SecondSection.jsx";
 import SectionAgency from "../Section/SectionAgency.jsx";
 import Form from "../Contact/FormContact.jsx";
 import Footer from "../Footer/Footer.jsx";
-import CookieModal from "../Cookie/Cookie.jsx";
+// import CookieModal from "../Cookie/Cookie.jsx";
 import { useState } from "react";
 
 const Home = () => {
-  const [isCookieModalOpen, setIsCookieModalOpen] = useState(true);
-  const handleAcceptCookies = () => {
-    setIsCookieModalOpen(false);
-  };
+  // const [isCookieModalOpen, setIsCookieModalOpen] = useState(true);
+  // const handleAcceptCookies = () => {
+  //   setIsCookieModalOpen(false);
+  // };
 
-  const handleRequestClose = () => {
-    setIsCookieModalOpen(false);
-  };
+  // const handleRequestClose = () => {
+  //   setIsCookieModalOpen(false);
+  // };
 
   return (
     <>
@@ -24,14 +24,14 @@ const Home = () => {
       <SecondSection />
       <SectionAgency />
       <Form />
-      {isCookieModalOpen && (
+      {/* {isCookieModalOpen && (
         <CookieModal
           isOpen={isCookieModalOpen}
           onRequestClose={handleRequestClose}
           onAccept={handleAcceptCookies}
        
         />
-      )}
+      )} */}
       <Footer />
     </>
   );

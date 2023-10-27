@@ -18,7 +18,6 @@ html,
 body {
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
-    padding-bottom: env(safe-area-inset-bottom);
     cursor: url('./Cursor/Cursor_1.svg'), default !important;
 }
 
@@ -319,18 +318,3 @@ textarea {
         transform: rotate(0);
     }
 }
-
-    .cookie-bar {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: #333;
-        /* Background color of the cookie bar */
-        color: #fff;
-        /* Text color */
-        padding: 10px;
-        text-align: center;
-        z-index: 999;
-        /* Ensure it's on top of other content */
-    }
