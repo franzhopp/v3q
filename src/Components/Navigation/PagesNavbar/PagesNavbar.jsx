@@ -113,7 +113,8 @@ const PagesNavbar = () => {
                   onMouseLeave={closeSubmenuWithDelay}
                   className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
                 >
-                  Agence
+                  {translations[language].navAgence}
+                  {translations[language].navAgency}
                 </NavLink>
                 <div className="flex justify-center">
                   <ul className="absolute hidden group-hover:block rounded-md text-left w-48 bg-FFF6E4 border border-gray-300 mt-2 py-2">
@@ -122,14 +123,16 @@ const PagesNavbar = () => {
                         to="/"
                         className="block text-C22E2E border-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
-                        Accueil
+                        {translations[language].navSousHomeFr}
+                        {translations[language].navSousHomeEn}
                       </NavLink>
                       <li>
                         <NavLink
                           to="/ethics"
                           className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                         >
-                          Nos valeurs
+                          {translations[language].navSousValuesFr}
+                          {translations[language].navSousValuesEn}
                         </NavLink>
                       </li>
                       <li>
@@ -137,14 +140,16 @@ const PagesNavbar = () => {
                           to="/services"
                           className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                         >
-                          Qui sommes-nous ?
+                          {translations[language].navSousAboutUsFr}
+                          {translations[language].navSousAboutUsEn}
                         </NavLink>
                       </li>
                     </li>
                     <button onClick={toggleSousListsTwoMenu}>
                       <div className="flex items-center justify-between">
                         <div className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold pr-2">
-                          Notre équipe
+                          {translations[language].navSousTeamFr}
+                          {translations[language].navSousTeamEn}
                         </div>
                         <IoIosArrowDown className="mt-1 text-C22E2E" />
                       </div>
@@ -180,7 +185,8 @@ const PagesNavbar = () => {
                   to="/services"
                   className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
                 >
-                  Services
+                  {translations[language].navServices}
+                  {translations[language].navServicesEn}
                 </NavLink>
                 <div className="flex justify-center">
                   <ul className="absolute hidden group-hover:block bg-FFF6E4 w-48 mt-2 py-2 rounded-md border border-gray-300 text-left">
@@ -189,7 +195,8 @@ const PagesNavbar = () => {
                         to="/services"
                         className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
-                        Prestations
+                        {translations[language].navSousServicesFr}
+                        {translations[language].navSousServicesEn}
                       </NavLink>
                     </li>
 
@@ -198,7 +205,8 @@ const PagesNavbar = () => {
                         to="/rate"
                         className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
-                        Tarification
+                        {translations[language].navSousPricingFr}
+                        {translations[language].navSousPricingEn}
                       </NavLink>
                     </li>
                     <li>
@@ -206,7 +214,8 @@ const PagesNavbar = () => {
                         to="/devis"
                         className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
-                        Devis gratuit
+                        {translations[language].navSousFreeFr}
+                        {translations[language].navSousFreeEn}
                       </NavLink>
                     </li>
                   </ul>
@@ -232,7 +241,10 @@ const PagesNavbar = () => {
 
               <li data-aos="fade-left" className="relative group list-none">
                 <NavLink className="text-C22E2E hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold">
-                  <select>
+                  <select
+                    value={language}
+                    onChange={(e) => changeLanguageHandler(e.target.value)}
+                  >
                     <option value="fr">FR</option>
                     <option value="en">EN</option>
                   </select>
@@ -333,7 +345,10 @@ const PagesNavbar = () => {
             <NavLink className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
               <button onClick={toggleSousListsAgence}>
                 <div className="flex items-center justify-between">
-                  <div className="pr-2">Agence</div>
+                  <div className="pr-2">
+                    {translations[language].navAgence}
+                    {translations[language].navAgency}
+                  </div>
                   <IoIosArrowDown className="mt-1 text-C22E2E" />
                 </div>
               </button>
@@ -355,7 +370,8 @@ const PagesNavbar = () => {
                         to="/"
                         className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
-                        Accueil
+                        {translations[language].navSousHomeFr}
+                        {translations[language].navSousHomeEn}
                       </NavLink>
                     </li>
                     <li className="list-decimal ml-4">
@@ -363,7 +379,8 @@ const PagesNavbar = () => {
                         to="/ethics"
                         className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
-                        Nos valeurs
+                        {translations[language].navSousValuesFr}
+                        {translations[language].navSousValuesEn}
                       </NavLink>
                     </li>
                     <li className="list-decimal ml-4">
@@ -371,7 +388,8 @@ const PagesNavbar = () => {
                         to="/services"
                         className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
-                        Qui sommes-nous ?
+                        {translations[language].navSousAboutUsFr}
+                        {translations[language].navSousAboutUsEn}
                       </NavLink>
                     </li>
                   </ul>
@@ -381,7 +399,10 @@ const PagesNavbar = () => {
                   <NavLink className="text-C22E2E block py-2 rounded-md text-base font-extrabold">
                     <button onClick={toggleSousListsFiveMenu}>
                       <div className="flex items-center justify-between">
-                        <div className="pr-2">Notre équipe</div>
+                        <div className="pr-2">
+                          {translations[language].navSousTeamFr}
+                          {translations[language].navSousTeamEn}
+                        </div>
                         <IoIosArrowDown className="mt-1 text-C22E2E" />
                       </div>
                     </button>
@@ -419,7 +440,10 @@ const PagesNavbar = () => {
             <NavLink className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
               <button onClick={toggleSousListsMenu}>
                 <div className="flex items-center justify-between">
-                  <div className="pr-2">Services</div>
+                  <div className="pr-2">
+                    {translations[language].navServices}
+                    {translations[language].navServicesEn}
+                  </div>
                   <IoIosArrowDown className="mt-1 text-C22E2E" />
                 </div>
               </button>
@@ -435,7 +459,8 @@ const PagesNavbar = () => {
                     to="/services"
                     className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
-                    Prestations
+                    {translations[language].navSousServicesFr}
+                    {translations[language].navSousServicesEn}
                   </NavLink>
                 </li>
                 <li className="list-decimal ml-4">
@@ -443,7 +468,8 @@ const PagesNavbar = () => {
                     to="/rate"
                     className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
-                    Tarification
+                    {translations[language].navSousPricingFr}
+                    {translations[language].navSousPricingEn}
                   </NavLink>
                 </li>
                 <li className="list-decimal ml-4">
@@ -451,7 +477,8 @@ const PagesNavbar = () => {
                     to="/devis"
                     className="block text-C22E2E  hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
-                    Devis gratuit
+                    {translations[language].navSousFreeFr}
+                    {translations[language].navSousFreeEn}
                   </NavLink>
                 </li>
               </ul>
@@ -474,7 +501,10 @@ const PagesNavbar = () => {
 
           <li>
             <NavLink className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
-              <select>
+              <select
+                value={language}
+                onChange={(e) => changeLanguageHandler(e.target.value)}
+              >
                 <option value="fr">FR</option>
                 <option value="en">EN</option>
               </select>

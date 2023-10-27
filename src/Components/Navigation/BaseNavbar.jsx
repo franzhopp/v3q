@@ -142,14 +142,16 @@ const Navbar = () => {
                         to="/"
                         className="block text-C22E2E border-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
-                        Accueil
+                        {translations[language].navSousHomeFr}
+                        {translations[language].navSousHomeEn}
                       </NavLink>
                       <li>
                         <NavLink
                           to="/ethics"
                           className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                         >
-                          Nos valeurs
+                          {translations[language].navSousValuesFr}
+                          {translations[language].navSousValuesEn}
                         </NavLink>
                       </li>
                       <li>
@@ -157,14 +159,16 @@ const Navbar = () => {
                           to="/services"
                           className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                         >
-                          Qui sommes-nous ?
+                          {translations[language].navSousAboutUsFr}
+                          {translations[language].navSousAboutUsEn}
                         </NavLink>
                       </li>
                     </li>
                     <button onClick={toggleSousListsTwoMenu}>
                       <div className="flex items-center justify-between">
                         <div className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold pr-2">
-                          Notre équipe
+                          {translations[language].navSousTeamFr}
+                          {translations[language].navSousTeamEn}
                         </div>
                         <IoIosArrowDown className="mt-1 text-C22E2E" />
                       </div>
@@ -210,7 +214,8 @@ const Navbar = () => {
                         to="/services"
                         className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
-                        Prestations
+                        {translations[language].navSousServicesFr}
+                        {translations[language].navSousServicesEn}
                       </NavLink>
                     </li>
 
@@ -219,7 +224,8 @@ const Navbar = () => {
                         to="/rate"
                         className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
-                        Tarification
+                        {translations[language].navSousPricingFr}
+                        {translations[language].navSousPricingEn}
                       </NavLink>
                     </li>
                     <li>
@@ -227,7 +233,8 @@ const Navbar = () => {
                         to="/devis"
                         className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
-                        Devis gratuit
+                        {translations[language].navSousFreeFr}
+                        {translations[language].navSousFreeEn}
                       </NavLink>
                     </li>
                   </ul>
@@ -364,7 +371,6 @@ const Navbar = () => {
               <button onClick={toggleSousListsAgence}>
                 <div className="flex items-center justify-between">
                   <div className="pr-2">
-                    {" "}
                     {translations[language].navAgence}
                     {translations[language].navAgency}
                   </div>
@@ -389,7 +395,8 @@ const Navbar = () => {
                         to="/"
                         className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
-                        Accueil
+                        {translations[language].navSousHomeFr}
+                        {translations[language].navSousHomeEn}
                       </NavLink>
                     </li>
                     <li className="list-decimal ml-4">
@@ -397,7 +404,8 @@ const Navbar = () => {
                         to="/ethics"
                         className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
-                        Nos valeurs
+                        {translations[language].navSousValuesFr}
+                        {translations[language].navSousValuesEn}
                       </NavLink>
                     </li>
                     <li className="list-decimal ml-4">
@@ -405,7 +413,8 @@ const Navbar = () => {
                         to="/services"
                         className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
-                        Qui sommes-nous ?
+                        {translations[language].navSousAboutUsFr}
+                        {translations[language].navSousAboutUsEn}
                       </NavLink>
                     </li>
                   </ul>
@@ -415,7 +424,10 @@ const Navbar = () => {
                   <NavLink className="text-C22E2E block py-2 rounded-md text-base font-extrabold">
                     <button onClick={toggleSousListsFiveMenu}>
                       <div className="flex items-center justify-between">
-                        <div className="pr-2">Notre équipe</div>
+                        <div className="pr-2">
+                          {translations[language].navSousTeamFr}
+                          {translations[language].navSousTeamEn}
+                        </div>
                         <IoIosArrowDown className="mt-1" />
                       </div>
                     </button>
@@ -454,7 +466,6 @@ const Navbar = () => {
               <button onClick={toggleSousListsMenu}>
                 <div className="flex items-center justify-between">
                   <div className="pr-2">
-                    {" "}
                     {translations[language].navServices}
                     {translations[language].navServicesEn}
                   </div>
@@ -473,7 +484,8 @@ const Navbar = () => {
                     to="/services"
                     className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
-                    Prestations
+                    {translations[language].navSousServicesFr}
+                    {translations[language].navSousServicesEn}
                   </NavLink>
                 </li>
                 <li className="list-decimal ml-4">
@@ -481,7 +493,8 @@ const Navbar = () => {
                     to="/rate"
                     className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
-                    Tarification
+                    {translations[language].navSousPricingFr}
+                    {translations[language].navSousPricingEn}
                   </NavLink>
                 </li>
                 <li className="list-decimal ml-4">
@@ -489,7 +502,8 @@ const Navbar = () => {
                     to="/devis"
                     className="block text-C22E2E  hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
-                    Devis gratuit
+                    {translations[language].navSousFreeFr}
+                    {translations[language].navSousFreeEn}
                   </NavLink>
                 </li>
               </ul>

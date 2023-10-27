@@ -1,5 +1,9 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Loader from "./loading.jsx";
+import ScrollToTop from "./ScrollToTop.jsx";
+import ThemeProvider from "./context/ThemeProvider.jsx";
+import LanguageProvider from "./context/LanguageProvider.jsx";
 import Homepage from "./Components/Homepage/Homepage.jsx";
 import Section from "./Components/Section/FirstSection.jsx";
 import EthicsPage from "./Components/Ethics/CardsEthics.jsx";
@@ -13,10 +17,6 @@ import PagePrivacy from "./Components/Privacy/Pages/PagePrivacy.jsx";
 import PageConditions from "./Components/Privacy/Pages/PageTerms.jsx";
 import PageMentions from "./Components/Privacy/Pages/PageMentions.jsx";
 import PageNotFound from "./Components/404/Error/PageNotFound.jsx";
-import Loader from "./loading.jsx";
-import ScrollToTop from "./ScrollToTop.jsx";
-import ThemeProvider from "./context/ThemeProvider.jsx";
-import LanguageProvider from "./context/LanguageProvider.jsx";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);

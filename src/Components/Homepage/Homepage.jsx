@@ -1,11 +1,11 @@
+// import { useState } from "react";
+// import CookieModal from "../Cookie/Cookie.jsx";
 import Header from "../Navigation/BaseNavbar.jsx";
 import FirstSection from "../Section/FirstSection.jsx";
 import SecondSection from "../Section/SecondSection.jsx";
 import SectionAgency from "../Section/SectionAgency.jsx";
 import Form from "../Contact/FormContact.jsx";
 import Footer from "../Footer/Footer.jsx";
-// import CookieModal from "../Cookie/Cookie.jsx";
-import { useState } from "react";
 
 const Home = () => {
   // const [isCookieModalOpen, setIsCookieModalOpen] = useState(true);
