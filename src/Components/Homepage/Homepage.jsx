@@ -17,6 +17,16 @@ const Home = () => {
     setIsCookieModalOpen(false);
   };
 
+  useEffect(() => {
+    const hasAccept = localStorage.getItem("hasAccept");
+
+    if (hasAccept) {
+      setIsCookieModalOpen(false);
+    } else {
+      setIsCookieModalOpen(false);
+    }
+  }, []);
+
   return (
     <>
       <Header />
