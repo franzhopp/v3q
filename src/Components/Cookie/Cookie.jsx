@@ -7,7 +7,7 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
       isOpen={isOpen}
       onRequestClose={onRequestClose}
       contentLabel="Cookie Modal"
-      className="bg-FFF6E4 rounded-tr-2xl rounded-tl-2xl ttt bottom-0 left-0 right-0 p-10 outline-none border-none shadow-none"
+      className="bg-FFF6E4 static rounded-tr-2xl rounded-tl-2xl bottom-0 left-0 right-0 p-10 outline-none border-none shadow-none"
     >
       <div className="text-left">
         <h2 className="text-C22E2E text-xl font-inter font-extrabold mb-2">
@@ -16,7 +16,7 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
         <p className="text-black">
           Ce site utilise des cookies pour améliorer son fonctionnement et votre
           expérience. Vous pouvez les accepter ou les gérer selon vos
-          préférences, tttt ou continuer votre navigation sans les accepter. Bon
+          préférences, ou continuer sss votre navigation sans les accepter. Bon
           visionnage ! L'équipe{" "}
           <span>
             <img

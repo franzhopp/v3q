@@ -7,16 +7,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.ttt {
-    position: fixed;
-    transform: translateZ(0);
-    perspective: 1000;
-}
-
 
 @layer utilities {
     .h-my-screen {
-        height: 80vh;
+        height: 80dvh;
     }
 }
 
