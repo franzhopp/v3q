@@ -64,6 +64,10 @@ export const data = [
     link: "/designer",
   },
   {
+    keywords: "Legalité",
+    link: "/privacy",
+  },
+  {
     keywords: "Politique de Confidentialité",
     link: "/privacy",
   },
@@ -85,6 +89,10 @@ export const data = [
   },
   {
     keywords: "FR",
+    link: "/",
+  },
+  {
+    keywords: "EN",
     link: "/",
   },
 ];

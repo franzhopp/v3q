@@ -8,7 +8,7 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
         isOpen={isOpen}
         onRequestClose={onRequestClose}
         contentLabel="Cookie Modal"
-        className="fixed bg-FFF6E4 shadow-md rounded-tr-2xl rounded-tl-2xl top-0 left-0 right-0 p-10 outline-none border-none"
+        className="fixed bg-FFF6E4 shadow-md rounded-tr-2xl rounded-tl-2xl bottom-0 left-0 right-0 p-10 outline-none border-none"
       >
         <div
           data-aos="fade-up"
