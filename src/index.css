@@ -18,6 +18,7 @@ html,
 body {
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
+    padding-bottom: env(safe-area-inset-bottom);
     cursor: url('./Cursor/Cursor_1.svg'), default !important;
 }
 

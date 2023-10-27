@@ -7,7 +7,16 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
       isOpen={isOpen}
       onRequestClose={onRequestClose}
       contentLabel="Cookie Modal"
-      className="bg-FFF6E4 static rounded-tr-2xl rounded-tl-2xl bottom-0 left-0 right-0 p-10 outline-none border-none shadow-none"
+      style={{
+        position: 'fixed',
+        bottom: '0',
+        left: '0',
+        right: '0',
+        padding: '10px',
+        backgroundColor: 'rgba(255, 246, 228, 0.9)', // Fond légèrement transparent
+        zIndex: '9999', // Assure que le modal est au-dessus de tout
+      }}
+      className="fixed rounded-tr-2xl rounded-tl-2xl bottom-0 left-0 right-0 p-10 outline-none border-none shadow-none"
     >
       <div className="text-left">
         <h2 className="text-C22E2E text-xl font-inter font-extrabold mb-2">
