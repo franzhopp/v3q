@@ -16,7 +16,7 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
         <p className="text-black">
           Ce site utilise des cookies pour améliorer son fonctionnement et votre
           expérience. Vous pouvez les accepter ou les gérer selon vos
-          préférences, ou continuer votre navigation sans les accepter. Bon
+          préférences, tttt ou continuer votre navigation sans les accepter. Bon
           visionnage ! L'équipe{" "}
           <span>
             <img
