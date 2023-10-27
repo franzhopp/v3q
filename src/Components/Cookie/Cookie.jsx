@@ -7,7 +7,7 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
       isOpen={isOpen}
       onRequestClose={onRequestClose}
       contentLabel="Cookie Modal"
-      className="bg-FFF6E4 rounded-2xl fixed bottom-16 left-10 right-10 p-10 outline-none border-none shadow-none"
+      className="bg-FFF6E4 rounded-tr-2xl rounded-tl-2xl ttt bottom-0 left-0 right-0 p-10 outline-none border-none shadow-none"
     >
       <div className="text-left">
         <h2 className="text-C22E2E text-xl font-inter font-extrabold mb-2">

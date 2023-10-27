@@ -7,11 +7,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@media not all and (min-resolution:.001dpcm) {
-    .fixed-media {
-        position: fixed !important;
-    }
+.ttt {
+    position: fixed;
+    -webkit-transform: translateZ(0);
 }
+
 
 @layer utilities {
     .h-my-screen {
