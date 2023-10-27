@@ -21,7 +21,7 @@ import PageNotFound from "./Components/404/Error/PageNotFound.jsx";
 
 const App = () => {
   const [isCookieModalOpen, setIsCookieModalOpen] = useState(true);
-
+  
   const handleAcceptCookies = () => {
     localStorage.setItem("cookieAccepted", "true");
     setIsCookieModalOpen(false);

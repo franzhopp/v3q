@@ -1,7 +1,14 @@
+import translations from "./translate.jsx";
+import { useLanguage } from "../../context/LanguageProvider.jsx";
 import Modal from "react-modal";
 import ImgText from "../../assets/logo-4.png";
 
 const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
+  const { language, changeLanguage } = useLanguage();
+
+  const changeLanguageHandler = (newLanguage) => {
+    changeLanguage(newLanguage);
+  };
   return (
     <Modal
       isOpen={isOpen}
@@ -30,6 +37,17 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
           </span>
         </p>
         <div className="flex flex-col">
+          <li>
+            <div className="text-C22E2E block px-2 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
+              <select
+                value={language}
+                onChange={(e) => changeLanguageHandler(e.target.value)}
+              >
+                <option value="fr">FR</option>
+                <option value="en">EN</option>
+              </select>
+            </div>
+          </li>
           <div className="w-52 pt-5">
             <button
               onClick={onAccept}
