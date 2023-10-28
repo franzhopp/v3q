@@ -102,7 +102,7 @@ const SectionAgency = () => {
         </div>
       </div>
       <ButtonAgency />
-      <section className="bg-0C3E78 py-24 px-4 sm:px-6 lg:px-8">
+      <section className="bg-0C3E78 border-t border-b border-gray-400 py-24 px-4 sm:px-6 lg:px-8">
         <div className="pt-10 pb-16 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
           <div className="w-80 mt-5">
             <p
