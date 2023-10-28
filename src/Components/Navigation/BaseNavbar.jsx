@@ -317,7 +317,7 @@ const Navbar = () => {
       >
         <div className="px-5 h-28 flex items-center justify-between">
           <NavLink to="/" data-aos="fade-left">
-            <img src={Image} alt="" className="h-10 w-auto sm:h-10" />
+            <img src={Image} alt="" className="h-10 w-auto" />
           </NavLink>
           <div>
             <div

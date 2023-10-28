@@ -1,7 +1,7 @@
 import translations from "./translate.jsx";
 import { useLanguage } from "../../context/LanguageProvider.jsx";
 import Modal from "react-modal";
-import ImgText from "../../assets/logo-4.png";
+import ImgText from "../../assets/logo-5.png";
 
 const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
   const { language, changeLanguage } = useLanguage();
@@ -36,7 +36,7 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
             <span>
               <img
                 src={ImgText}
-                className="h-6 mr-1 inline"
+                className="h-10 w-auto mr-1 inline"
                 alt="Icône navi studio."
               />
             </span>

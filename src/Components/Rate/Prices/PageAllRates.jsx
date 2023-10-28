@@ -113,7 +113,7 @@ const Rate = () => {
             <span className="font-extrabold">
               toutes les tarifications de prix des services
             </span>{" "}
-            de notre agence, sachez que les prix peuvent varier en fonction de{" "}
+            de notre agence, les prix peuvent varier en fonction de{" "}
             <span className="font-extrabold">vos besoins</span>.
           </p>
         </div>

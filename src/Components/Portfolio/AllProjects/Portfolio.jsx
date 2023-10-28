@@ -3,18 +3,11 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { NavLink } from "react-router-dom";
 import NavbarPages from "../../Navigation/PagesNavbar/PagesNavbar";
 import TitlePorfolio from "../../UI/Title/TitlePorfolio";
-import Image1 from "../../../assets/projetbysarahcuisine.png";
 import ImgDefault from "../../../assets/imgdefault.svg";
 import Footer from "../../Footer/Footer";
 
 const Portfolio = () => {
   const cards = [
-    {
-      image: Image1,
-      title: "Titre à venir",
-      url: "",
-      content: "La présentation du projet est en cours d'écriture...",
-    },
     {
       image: ImgDefault,
       title: "Prochain projet",
@@ -51,9 +44,7 @@ const Portfolio = () => {
               <img
                 src={cards[currentIndex].image}
                 alt={cards[currentIndex].title}
-                className={`w-auto h-44 object-cover rounded-2xl transition ${
-                  currentIndex === 0 ? "blur-lg" : ""
-                }`}
+                className={`w-auto h-44 object-cover rounded-2xl animate-formbounce`}
               />
             </div>
             <p className="mt-6 text-black text-xl font-extrabold ">
@@ -101,7 +92,7 @@ const Portfolio = () => {
             </div>
             <div className="flex justify-center mt-10">
               <svg
-                className="animate-formbounce "
+                className=""
                 width="95"
                 height="64"
                 viewBox="0 0 95 64"
@@ -150,7 +141,7 @@ const Portfolio = () => {
             </div>
           </div>
           <svg
-            className="animate-formbounce h-14 w-14 sm:flex hidden"
+            className="h-14 w-14 sm:flex hidden"
             width="192"
             height="193"
             viewBox="0 0 192 193"
