@@ -58,7 +58,7 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
               {translations[language].btnCookieAcceptEn}
             </button>
           </div>
-          <div className="w-52 pt-5">
+          <div className="w-52 pt-2">
             <button
               onClick={onRequestClose}
               className="text-C22E2E font-inter font-sans-serif mt-3 underline"
