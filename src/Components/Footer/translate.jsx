@@ -25,6 +25,15 @@ const translations = {
     sans les accepter. Bon visionnage ! L'équipe ",
     btnCookieAcceptFr: "Accepter",
     btnCookieDisableFr: "Continuer sans accepter",
+    // First Section
+    titleSectionFr: "Confiez votre image à des professionnels",
+    textBoldOneFr:
+      "Notre agence design et développe des sites qui sauront faire briller vos projets.",
+    textWithoutBoldOneFr:
+      "Notre équipe produit des sites modernes et intuitifs qui sauront attirer l'oeil des visiteurs. Venez découvrir",
+    textWithoutWordBoldFsFr: "dès aujourd'hui.",
+    textWithoutBoldFsFr:
+      "Votre site est votre vision. Chaque site raconte une histoire que notre équipe restranscrit en développant des expériences uniques qui reflètent l'identité de votre marque. Découvrez notre agence,",
   },
   en: {
     // Navbar + Footer
@@ -50,6 +59,13 @@ const translations = {
       "This website uses cookies to improve its functions and your experience. You may allow or disable cookies. Enjoy your visit ! The Team",
     btnCookieAcceptEn: "Allow",
     btnCookieDisableEn: "Disable",
+    // First Section
+    titleSectionEn: "Let professionals take care of your image",
+    textBoldOneEn: "We're here to make your project out-stand.",
+    textWithoutBoldOneFr:
+      "Our team creates modern, intuitive and eye-catching websites. Come get to know",
+    textWithoutBoldFsFr:
+      "Your project is your vision. Every website tells a different story that our team turns into reality by developing unique experiences that will tale your story,",
   },
 };
 

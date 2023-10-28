@@ -27,6 +27,13 @@ const translations = {
     btnCookieDisableFr: "Continuer sans accepter",
     // First Section
     titleSectionFr: "Confiez votre image à des professionnels",
+    textBoldOneFr:
+      "Notre agence design et développe des sites qui sauront faire briller vos projets.",
+    textWithoutBoldOneFr:
+      "Notre équipe produit des sites modernes et intuitifs qui sauront attirer l'oeil des visiteurs. Venez découvrir",
+    textWithoutWordBoldFsFr: "dès aujourd'hui.",
+    textWithoutBoldFsFr:
+      "Votre site est votre vision. Chaque site raconte une histoire que notre équipe restranscrit en développant des expériences uniques qui reflètent l'identité de votre marque. Découvrez notre agence,",
   },
   en: {
     // Navbar + Footer
@@ -54,6 +61,11 @@ const translations = {
     btnCookieDisableEn: "Disable",
     // First Section
     titleSectionEn: "Let professionals take care of your image",
+    textBoldOneEn: "We're here to make your project out-stand.",
+    textWithoutBoldOneFr:
+      "Our team creates modern, intuitive and eye-catching websites. Come get to know",
+    textWithoutBoldFsFr:
+      "Your project is your vision. Every website tells a different story that our team turns into reality by developing unique experiences that will tale your story,",
   },
 };
 
