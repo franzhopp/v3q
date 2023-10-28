@@ -43,7 +43,7 @@ const translations = {
     cookieDescEn:
       "This website uses cookies to improve its functions and your experience. You may allow or disable cookies. Enjoy your visit ! The Team",
     btnCookieAcceptEn: "Allow",
-    btnCookieDisableEn: "Disable",
+    btnCookieDisableEn: "Disable Cookie",
   },
 };
 
