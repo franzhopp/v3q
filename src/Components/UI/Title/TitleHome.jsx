@@ -7,7 +7,7 @@ const TitleHome = () => {
   const { language } = useLanguage();
   return (
     <>
-      <div className="flex flex-col justify-center items-center h-my-screen">
+      <div className="flex justify-center sm:justify-start items-center px-0 sm:px-32 h-my-screen">
         <h1 className="font-extrabold tracking-tight text-FFF6E4 text-4xl sm:text-8xl md:text-8xl">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
@@ -17,17 +17,17 @@ const TitleHome = () => {
             {translations[language].titleHomeFr}
             {translations[language].titleHomeEn}
           </motion.span>
+          <div className="flex justify-center">
+            <span
+              data-aos="fade-right"
+              className="text-FFF6E4 text-base font-extrabold"
+            >
+              PARIS X LONDON
+            </span>
+          </div>
         </h1>
-        <div className="flex justify-center">
-          <span
-            data-aos="fade-right"
-            className="text-FFF6E4 text-base font-extrabold"
-          >
-            PARIS X LONDON
-          </span>
-        </div>
       </div>
-      <div className="flex justify-center sm:justify-end px-0 sm:px-20 pb-14">
+      <div className="flex justify-center sm:justify-end px-0 sm:px-20 pb-7">
         <ButtonDiscover />
       </div>
       <p className="pb-5">
