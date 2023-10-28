@@ -55,8 +55,8 @@ const App = () => {
             {isCookieModalOpen && (
               <CookieModal
                 isOpen={isCookieModalOpen}
-                onRequestClose={() => setCookieModalOpen(false)}
                 onAccept={handleAcceptCookie}
+                onRequestClose={() => setCookieModalOpen(false)}
               />
             )}
             <Router>

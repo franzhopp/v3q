@@ -49,21 +49,23 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
               </select>
             </div>
           </li>
-          <div className="w-52 pt-5">
-            <button
-              onClick={onAccept}
-              className=" bg-C22E2E hover:bg-0C3E78  text-FFF6E4 font-extrabold font-sans-serif py-2 px-4 rounded-full"
-            >
-              {translations[language].btnCookieAcceptFr}
-              {translations[language].btnCookieAcceptEn}
-            </button>
-            <button
-              onClick={onRequestClose}
-              className="text-C22E2E font-inter font-sans-serif mt-3 underline"
-            >
-              {translations[language].btnCookieDisableFr}
-              {translations[language].btnCookieDisableEn}
-            </button>
+          <div className="flex flex-col">
+            <div className="w-52 pt-5">
+              <button
+                onClick={onAccept}
+                className=" bg-C22E2E hover:bg-0C3E78  text-FFF6E4 font-extrabold font-sans-serif py-2 px-4 rounded-full"
+              >
+                {translations[language].btnCookieAcceptFr}
+                {translations[language].btnCookieAcceptEn}
+              </button>
+              <button
+                onClick={onRequestClose}
+                className="text-C22E2E font-inter font-sans-serif mt-3 underline"
+              >
+                {translations[language].btnCookieDisableFr}
+                {translations[language].btnCookieDisableEn}
+              </button>
+            </div>
           </div>
         </div>
       </div>
