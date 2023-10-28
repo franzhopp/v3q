@@ -96,15 +96,15 @@ export const data = [
     link: "/",
   },
   {
+    keywords: "ENG",
+    link: "/",
+  },
+  {
     keywords: "Agency",
     link: "/",
   },
   {
-    keywords: "Ethics",
-    link: "/ethics",
-  },
-  {
-    keywords: "Ethic",
+    keywords: "Our Values",
     link: "/ethics",
   },
   {
@@ -112,19 +112,7 @@ export const data = [
     link: "/services",
   },
   {
-    keywords: "Pricing",
-    link: "/rate",
-  },
-  {
-    keywords: "Designer",
-    link: "/designer",
-  },
-  {
-    keywords: "Web Developer",
-    link: "/devweb",
-  },
-  {
-    keywords: "Pricing",
+    keywords: "Rates",
     link: "/rate",
   },
   {
@@ -148,31 +136,31 @@ export const data = [
     link: "/designer",
   },
   {
-    keywords: "Legal",
-    link: "/privacy",
-  },
-  {
     keywords: "Privacy",
     link: "/privacy",
   },
   {
-    keywords: "Terms of use",
+    keywords: "Terms Of Use",
     link: "/terms",
   },
   {
-    keywords: "Legal",
+    keywords: "Legal Notice",
     link: "/mentions",
-  },
-  {
-    keywords: "Louisa",
-    link: "/webdev",
   },
   {
     keywords: "Mélissa",
     link: "/designer",
   },
   {
+    keywords: "Louisa",
+    link: "/webdev",
+  },
+  {
     keywords: "EN",
+    link: "/",
+  },
+  {
+    keywords: "ENG",
     link: "/",
   },
 ];

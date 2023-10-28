@@ -1,3 +1,5 @@
+import translations from "./translate.jsx";
+import { useLanguage } from "../../context/LanguageProvider.jsx";
 import { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
 import Image from "../../assets/logo-4.png";
@@ -8,6 +10,7 @@ import LogoSnap from "../../assets/snapchat.png";
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {
+  const { language } = useLanguage();
   const [status, setStatus] = useState("");
   const [formData, setFormData] = useState({
     email: "",
@@ -121,7 +124,8 @@ const Footer = () => {
         <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
           <li>
             <NavLink to="/" className="text-black transition hover:text-0C3E78">
-              Agence
+              {translations[language].navAgence}
+              {translations[language].navAgency}
             </NavLink>
           </li>
           <li>
@@ -129,7 +133,8 @@ const Footer = () => {
               to="/ethics"
               className="text-black transition hover:text-0C3E78"
             >
-              Nos Valeurs
+              {translations[language].navSousValuesFr}
+              {translations[language].navSousValuesEn}
             </NavLink>
           </li>
           <li>
@@ -137,7 +142,8 @@ const Footer = () => {
               to="/services"
               className="text-black transition hover:text-0C3E78"
             >
-              Qui sommes-nous ?
+              {translations[language].navSousAboutUsFr}
+              {translations[language].navSousAboutUsEn}
             </NavLink>
           </li>
           <li>
@@ -161,7 +167,8 @@ const Footer = () => {
               to="/services"
               className="text-black transition hover:text-0C3E78"
             >
-              Services
+              {translations[language].navServices}
+              {translations[language].navServicesEn}
             </NavLink>
           </li>
           <li>
@@ -169,7 +176,8 @@ const Footer = () => {
               to="/services"
               className="text-black transition hover:text-0C3E78"
             >
-              Prestations
+              {translations[language].navSousServicesFr}
+              {translations[language].navSousServicesEn}
             </NavLink>
           </li>
           <li>
@@ -177,7 +185,8 @@ const Footer = () => {
               to="/rate"
               className="text-black transition hover:text-0C3E78"
             >
-              Tarification
+              {translations[language].navSousPricingFr}
+              {translations[language].navSousPricingEn}
             </NavLink>
           </li>
           <li>
@@ -185,7 +194,8 @@ const Footer = () => {
               to="/devis"
               className="text-black transition hover:text-0C3E78"
             >
-              Devis Gratuit
+              {translations[language].navSousFreeFr}
+              {translations[language].navSousFreeEn}
             </NavLink>
           </li>
           <li>
@@ -214,7 +224,8 @@ const Footer = () => {
               target="_blank"
               className="text-black transition hover:text-0C3E78"
             >
-              Politique de Confidentialité
+              {translations[language].footerPrivacyFr}
+              {translations[language].footerPrivacyEn}
             </NavLink>
           </li>
           <li>
@@ -224,7 +235,8 @@ const Footer = () => {
               target="_blank"
               className="text-black transition hover:text-0C3E78"
             >
-              Conditions d'Utilisation
+              {translations[language].footerTermsFr}
+              {translations[language].footerTermsEn}
             </NavLink>
           </li>
           <li>
@@ -234,7 +246,8 @@ const Footer = () => {
               target="_blank"
               className="text-black transition hover:text-0C3E78"
             >
-              Mentions Légales
+              {translations[language].footerMentionsFr}
+              {translations[language].footerMentionsEn}
             </NavLink>
           </li>
         </ul>

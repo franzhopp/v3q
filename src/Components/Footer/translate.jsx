@@ -5,6 +5,9 @@ const translations = {
     navServices: "Services",
     navPortfolio: "Portfolio",
     navContact: "Contact",
+    footerPrivacyFr: "Politique de Confidentialité",
+    footerTermsFr: "Conditions d'Utilisation",
+    footerMentionsFr: "Mentions Légales",
     // Sous liste Agence
     navSousHomeFr: "Accueil",
     navSousValuesFr: "Nos valeurs",
@@ -29,6 +32,9 @@ const translations = {
     navServicesEn: "Services",
     navPortfolioEn: "Portfolio",
     navContactEn: "Contact",
+    footerPrivacyEn: "Privacy",
+    footerTermsEn: "Terms Of Use",
+    footerMentionsEn: "Legal Notice",
     // Sous liste Agency
     navSousHomeEn: "Home",
     navSousValuesEn: "Our Values",

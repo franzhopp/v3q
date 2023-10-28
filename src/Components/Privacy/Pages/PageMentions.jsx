@@ -188,6 +188,8 @@ const PageMentions = () => {
             <br />›<span className={keywordsStyle}> Logo :</span> Nefti Mélissa.
             <br />›<span className={keywordsStyle}> Photographies : </span>
             Pexels.
+            <br />›<span className={keywordsStyle}> Traductrice :</span> Nefti
+            Mélissa.
             <br />›<span className={keywordsStyle}> Vidéos :</span> Nefti
             Mélissa, Fernandez Louisa.
             <br />›

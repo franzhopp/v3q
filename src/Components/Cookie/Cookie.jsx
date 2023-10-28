@@ -9,6 +9,7 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
   const changeLanguageHandler = (newLanguage) => {
     changeLanguage(newLanguage);
   };
+
   return (
     <Modal
       isOpen={isOpen}
@@ -22,12 +23,12 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
         className="text-left"
       >
         <h2 className="text-C22E2E text-xl font-inter font-extrabold mb-2">
-          Politique de cookies
+          {translations[language].cookieTitleFr}
+          {translations[language].cookieTitleEn}
         </h2>
         <p className="text-black">
-          Ce site utilise des cookies pour améliorer son fonctionnement et votre
-          expérience. Vous pouvez les accepter ou continuer votre navigation
-          sans les accepter. Bon visionnage ! L'équipe{" "}
+          {translations[language].cookieDescFr}
+          {translations[language].cookieDescEn}{" "}
           <span>
             <img
               src={ImgText}
@@ -53,13 +54,15 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
               onClick={onAccept}
               className=" bg-C22E2E hover:bg-0C3E78  text-FFF6E4 font-extrabold font-sans-serif py-2 px-4 rounded-full"
             >
-              Accepter
+              {translations[language].btnCookieAcceptFr}
+              {translations[language].btnCookieAcceptEn}
             </button>
             <button
               onClick={onRequestClose}
               className="text-C22E2E font-inter font-sans-serif mt-3 underline"
             >
-              Continuer sans accepter
+              {translations[language].btnCookieDisableFr}
+              {translations[language].btnCookieDisableEn}
             </button>
           </div>
         </div>

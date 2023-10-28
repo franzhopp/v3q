@@ -14,10 +14,10 @@ const translations = {
     navServicesEn: "Services",
     navPortfolioEn: "Portfolio",
     navContactEn: "Contact",
-    titleHomeEn: "Digital agency",
+    titleHomeEn: "Digital Agency",
     scrollingTextEn:
-      "WEB DESIGN | WEB DEVELOPMENT | DIGITAL MARKETING  | BRAND STRATEGY",
-    btnDiscoverEn: "Discover",
+      "DESIGN | WEB DEVELOPMENT | DIGITAL MARKETING | BRAND STRATEGY",
+    btnDiscoverEn: "About Us",
   },
 };
 

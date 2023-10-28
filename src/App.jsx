@@ -20,17 +20,18 @@ import PageMentions from "./Components/Privacy/Pages/PageMentions.jsx";
 import PageNotFound from "./Components/404/Error/PageNotFound.jsx";
 
 const App = () => {
-  const [isCookieModalOpen, setIsCookieModalOpen] = useState(true);
-
-  const handleAcceptCookies = () => {
-    setIsCookieModalOpen(false);
-  };
-
-  const handleRequestClose = () => {
-    setIsCookieModalOpen(false);
+  const [isCookieModalOpen, setCookieModalOpen] = useState(false);
+  useEffect(() => {
+    const hasAcceptedCookie = localStorage.getItem("accept_cookie");
+    if (!hasAcceptedCookie) {
+      setCookieModalOpen(true);
+    }
+  }, []);
+  const handleAcceptCookie = () => {
+    localStorage.setItem("accept_cookie", "true", { expires: 365 });
+    setCookieModalOpen(false);
   };
   const [isLoading, setIsLoading] = useState(true);
-
   useEffect(() => {
     const hasLoaded = localStorage.getItem("hasLoaded");
 
@@ -43,8 +44,9 @@ const App = () => {
       }, 1000);
     }
   }, []);
+
   return (
-    <>
+    <main>
       {isLoading ? (
         <Loader />
       ) : (
@@ -53,10 +55,8 @@ const App = () => {
             {isCookieModalOpen && (
               <CookieModal
                 isOpen={isCookieModalOpen}
-                onRequestClose={handleRequestClose}
-                onAccept={handleAcceptCookies}
-                data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom"
+                onRequestClose={() => setCookieModalOpen(false)}
+                onAccept={handleAcceptCookie}
               />
             )}
             <Router>
@@ -80,7 +80,7 @@ const App = () => {
           </ThemeProvider>
         </LanguageProvider>
       )}
-    </>
+    </main>
   );
 };
 
