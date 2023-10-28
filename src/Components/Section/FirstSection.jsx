@@ -53,11 +53,11 @@ const Section = () => {
               className="text-center text-black"
             >
               <span className="font-extrabold">
-                {`Notre agence design et développe des sites qui sauront faire briller vos projets.`}
+                {translations[language].textBoldOneFr}
+                {translations[language].textBoldOneEn}
               </span>{" "}
-              {`Notre équipe produit des sites modernes et intuitifs qui sauront attirer l'oeil`}
-              <span className="font-extrabold">{` des visiteurs`}</span>. Venez
-              découvrir
+              {translations[language].textWithoutBoldOneFr}
+              {translations[language].textWithoutBoldOneEn}
               <span>
                 <img
                   src={ImgText}
@@ -65,7 +65,7 @@ const Section = () => {
                   alt="Icône navi studio."
                 />
               </span>
-              dès aujourd'hui.
+              {translations[language].textWithoutWordBoldFsFr}
             </p>
           </div>
         </div>
@@ -76,7 +76,8 @@ const Section = () => {
               data-aos-anchor-placement="top-bottom"
               className="font-extrabold text-center sm:text-right  text-black"
             >
-              {`Votre site est votre vision. Chaque site raconte une histoire que notre équipe restranscrit en développant des expériences uniques qui reflètent l'identité de votre marque. Découvrez notre agence, `}
+              {translations[language].textWithoutBoldFsFr}
+              {translations[language].textWithoutBoldFsEn}{" "}
               <NavLink
                 href="about"
                 onClick={SectionToScroll}
