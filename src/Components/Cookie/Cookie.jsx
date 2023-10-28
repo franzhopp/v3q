@@ -17,8 +17,8 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
       contentLabel="Cookie Modal"
       className="fixed bg-FFF6E4 shadow-md rounded-tr-2xl rounded-tl-2xl bottom-0 left-0 right-0 p-10 outline-none border-none"
     >
-      <div className="flex justify-center py-2">
-        <span className="w-16 h-2 rounded-full bg-gray-400"></span>
+      <div className="flex justify-center pb-5">
+        <span className="w-14 h-1 rounded-full bg-gray-600"></span>
       </div>
       <div
         data-aos="fade-up"
