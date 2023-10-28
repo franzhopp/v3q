@@ -1,9 +1,13 @@
+import translations from "./translate.jsx";
+import { useLanguage } from "../../context/LanguageProvider.jsx";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import ImgText from "../../assets/logo-4.png";
 import ButtonContact from "../UI/Button/ButtonFormContact";
 
 const Section = () => {
+  const { language } = useLanguage();
+
   const [scrollNavbar, setScrollNavbar] = useState();
   const SectionToScroll = () => {
     const contactSection = document.getElementById("team");
@@ -37,7 +41,8 @@ const Section = () => {
             data-aos="fade-left"
             className="mt-10 font-extrabold text-black text-4xl sm:text-left text-center relative"
           >
-            Confiez votre image à des professionnels
+            {translations[language].titleSectionFr}
+            {translations[language].titleSectionEn}
           </p>
         </div>
         <div className="w-80 mt-10">
