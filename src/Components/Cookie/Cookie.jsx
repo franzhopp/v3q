@@ -36,7 +36,7 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
             <span>
               <img
                 src={ImgText}
-                className="h-10 w-auto mr-1 inline"
+                className="h-10 w-auto mr-2 inline"
                 alt="Icône navi studio."
               />
             </span>
