@@ -41,7 +41,7 @@ const translations = {
     // Cookie
     cookieTitleEn: "Cookie Policy",
     cookieDescEn:
-      "This website uses cookies to improve its functions and your experience. You may allow or disable cookies. Enjoy your visit ! The Team",
+      "This website uses cookies to improve its functions and your experience. You may allow or disable cookies. Enjoy your visit ! Team",
     btnCookieAcceptEn: "Allow",
     btnCookieDisableEn: "Disable Cookie",
   },
