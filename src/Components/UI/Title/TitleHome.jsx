@@ -27,10 +27,10 @@ const TitleHome = () => {
           </span>
         </div>
       </div>
-      <div className="flex justify-center sm:justify-end px-0 sm:px-20">
+      <div className="flex justify-center sm:justify-end px-0 sm:px-20 pb-10 sm:pb-0">
         <ButtonDiscover />
       </div>
-      <p className="pt-16 pb-16">
+      <p className="pt-16 pb-12">
         <span className="whitespace-nowrap animation-scrolling-rtl text-black text-2xl sm:text-4xl">
           {translations[language].scrollingTextFr}
           {translations[language].scrollingTextEn}
