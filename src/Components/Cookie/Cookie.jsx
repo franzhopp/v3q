@@ -17,15 +17,15 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
       contentLabel="Cookie Modal"
       className="fixed bg-FFF6E4 shadow-md rounded-tr-2xl rounded-tl-2xl bottom-0 left-0 right-0 p-10 outline-none border-none"
     >
+      <div className="flex justify-center">
+        <span className="w-44 rounded-full border-t border-gray-400"></span>
+      </div>
       <div
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
         className="text-left"
       >
         <h2 className="text-C22E2E text-xl font-inter font-extrabold mb-2">
-          <div className="flex justify-center py-2">
-            <span className="w-1 rounded-full border-t border-gray-400"></span>
-          </div>
           {translations[language].cookieTitleFr}
           {translations[language].cookieTitleEn}
         </h2>
