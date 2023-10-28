@@ -64,7 +64,7 @@ const Section = () => {
                   className="h-6 mr-1 inline"
                   alt="Icône navi studio."
                 />
-              </span>
+              </span>{" "}
               {translations[language].textWithoutWordBoldFsFr}
             </p>
           </div>

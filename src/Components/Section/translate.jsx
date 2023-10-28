@@ -34,6 +34,8 @@ const translations = {
     textWithoutWordBoldFsFr: "dès aujourd'hui.",
     textWithoutBoldFsFr:
       "Votre site est votre vision. Chaque site raconte une histoire que notre équipe restranscrit en développant des expériences uniques qui reflètent l'identité de votre marque. Découvrez notre agence,",
+    // Second Section :
+    titleSecondSectionFr: "Découvrez des offres adaptées à vos besoins",
   },
   en: {
     // Navbar + Footer
@@ -62,10 +64,11 @@ const translations = {
     // First Section
     titleSectionEn: "Let professionals take care of your image",
     textBoldOneEn: "We're here to make your project out-stand.",
-    textWithoutBoldOneFr:
+    textWithoutBoldOneEn:
       "Our team creates modern, intuitive and eye-catching websites. Come get to know",
-    textWithoutBoldFsFr:
+    textWithoutBoldFsEn:
       "Your project is your vision. Every website tells a different story that our team turns into reality by developing unique experiences that will tale your story,",
+    titleSecondSectionEn: "Offers tailored to your needs",
   },
 };
 

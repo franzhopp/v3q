@@ -1,4 +1,9 @@
+import translations from "./translate.jsx";
+import { useLanguage } from "../../context/LanguageProvider.jsx";
+
 const SecondSection = () => {
+  const { language } = useLanguage();
+
   return (
     <section className="bg-C22E2E h-1/2">
       <div className="pt-32 pb-32 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -6,7 +11,8 @@ const SecondSection = () => {
           className="text-left ml-5 sm:ml-10 font-extrabold text-3xl text-FFF6E4"
           data-aos="fade-right"
         >
-          Découvrez des offres adaptées à vos besoins
+          {translations[language].titleSecondSectionFr}
+          {translations[language].titleSecondSectionEn}
         </h3>
         <div className="mt-8 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
           <div className="w-80 mt-5">
