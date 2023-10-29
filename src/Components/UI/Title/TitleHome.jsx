@@ -7,7 +7,7 @@ const TitleHome = () => {
   const { language } = useLanguage();
   return (
     <>
-      <div className="flex justify-center sm:justify-start items-center px-0 sm:px-32 h-my-screen">
+      <div className="flex justify-center sm:justify-start items-center px-0 sm:px-32 h-screen">
         <h1 className="font-extrabold tracking-tight text-FFF6E4 text-4xl sm:text-8xl md:text-8xl">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
@@ -27,7 +27,7 @@ const TitleHome = () => {
           </div>
         </h1>
       </div>
-      <div className="flex justify-center sm:justify-end px-0 sm:px-20 pb-7">
+      <div className="flex justify-center sm:justify-end px-0 sm:px-20 pb-14">
         <ButtonDiscover />
       </div>
       <p className="pb-5">

@@ -46,7 +46,7 @@ const App = () => {
   }, []);
 
   return (
-    <main>
+    <main className="fadeIn">
       {isLoading ? (
         <Loader />
       ) : (

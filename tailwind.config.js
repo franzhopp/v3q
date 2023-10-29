@@ -6,9 +6,6 @@ export default {
   ],
   theme: {
     extend: {
-      height: {
-        screen: ['100vh /* fallback for Opera, IE and etc. */', '100dvh'],
-      },
       animation: {
         'formbounce': 'button-design-formbounce 4s infinite',
       },
@@ -51,7 +48,6 @@ export default {
     screens: {
       'sm': '640px',
       'md': '768px',
-      'test': '812px',
       'lg': '1024px',
       'xl': '1247px',
       '2xl': '1536px',

@@ -8,9 +8,28 @@
 @tailwind utilities;
 
 
-@layer utilities {
+/* @layer utilities {
     .h-my-screen {
-        height: 84dvh;
+        height: 84vh;
+    }
+} */
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        /* Commencez avec une opacité de 0 */
+    }
+
+    to {
+        opacity: 1;
+        /* Atteignez une opacité de 1 (complètement visible) */
     }
 }
 
