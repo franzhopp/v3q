@@ -7,32 +7,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-/* @layer utilities {
-    .h-my-screen {
-        height: 84vh;
-    }
-} */
-
-.fadeIn {
-    animation-name: fadeIn;
-    animation-duration: 1s;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        /* Commencez avec une opacité de 0 */
-    }
-
-    to {
-        opacity: 1;
-        /* Atteignez une opacité de 1 (complètement visible) */
-    }
-}
-
 html,
 body {
     overflow-x: hidden;
@@ -100,6 +74,22 @@ textarea {
     background-image: url('./assets/bg-home.png');
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .image-navi-studio-navbar-services {
@@ -133,11 +123,6 @@ textarea {
 }
 
 /* Blur */
-/* .bg-contact-blur {
-    background-image: url('./assets/bg-contact-blur.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
 
 .bg-contact-blur {
     background-image: url('./assets/bg-contact-blur.png');
