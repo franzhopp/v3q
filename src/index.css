@@ -10,7 +10,7 @@
 
 @layer utilities {
     .h-my-screen {
-        height: 84vh;
+        height: 84dvh;
     }
 }
 
