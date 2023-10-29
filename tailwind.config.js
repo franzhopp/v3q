@@ -51,6 +51,7 @@ export default {
     screens: {
       'sm': '640px',
       'md': '768px',
+      'test': '812px',
       'lg': '1024px',
       'xl': '1247px',
       '2xl': '1536px',

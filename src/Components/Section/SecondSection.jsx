@@ -23,15 +23,17 @@ const SecondSection = () => {
             >
               <span className="absolute h-full w-1 bg-FFF6E4 -left-14 -top-1 hidden sm:block"></span>
               <h1 className="text-4xl number font-semibold pb-5">01.</h1>
-              <span className="font-extrabold">Efficacité.</span> Nos sites
-              internet ne sont pas seulement esthétiquement plaisants, ils sont
-              élaborés et travaillés sur-mesure pour répondre à vos besoins.
-              Nous nous inspirons de vous et votre histoire,{" "}
               <span className="font-extrabold">
-                chaque histoire est différente et chaque site l'est aussi !
+                {translations[language].wordBoldSecondSectionFr}
+                {translations[language].wordBoldSecondSectionEn}
               </span>{" "}
-              Cet aspect unique et pratique font de nos réalisations digitales :{" "}
-              <span className="font-extrabold">la solution</span>.
+              {translations[language].textSecondSectionWithoutBoldFr}
+              {translations[language].textSecondSectionWithoutBoldEn}{" "}
+              <span className="font-extrabold">
+                {translations[language].wordSecondSectionBold2Fr}
+                {translations[language].wordSecondSectionBold2En}
+              </span>
+              .
             </p>
           </div>
           <div className="w-80 mt-5">
@@ -42,17 +44,16 @@ const SecondSection = () => {
             >
               <h1 className="text-4xl number font-semibold pb-5">02.</h1>
               <span className="font-extrabold">
-                Expérience utilisateur.
+                {translations[language].wordBoldSecondSection2Fr}
+                {translations[language].wordBoldSecondSection2En}
               </span>{" "}
-              Nos sites internet sont dotés d'une navigation fluide, de contenus
-              uniques & personnalisés.{" "}
+              {translations[language].textSecondSectionWithoutBold2Fr}
+              {translations[language].textSecondSectionWithoutBold2En}{" "}
               <span className="font-extrabold">
-                Notre approche est axée sur la qualité de l'expérience que les
-                utilisateurs auront en naviguant à travers votre site
+                {translations[language].wordSecondSectionBold3Fr}
+                {translations[language].wordSecondSectionBold3En}
               </span>
-              , cela vous permet de bâtir des relations solides, de transmettre
-              votre message avec{" "}
-              <span className="font-extrabold">efficacité</span>.
+              .
             </p>
           </div>
           <div className="w-80 mt-5">
@@ -63,15 +64,12 @@ const SecondSection = () => {
             >
               <span className="absolute h-full w-1 bg-FFF6E4 -right-14 -top-1 hidden sm:block"></span>
               <h1 className="text-4xl number font-semibold pb-5">03.</h1>
-              <span className="font-extrabold">Qualité.</span> Nous nous
-              engageons à fournir un travail de qualité. Ce que nous créons, est
-              une interface en harmonie avec votre image de votre marque.{" "}
               <span className="font-extrabold">
-                Soyez connectés à celle-ci, car cela nous permet de mieux
-                comprendre vos besoins.
+                {translations[language].wordBoldSecondSection3Fr}
+                {translations[language].wordBoldSecondSection3En}
               </span>{" "}
-              Préparez ce qui vous semble nécessaire pour votre site, pour le
-              reste ? On s'occupe de tout.
+              {translations[language].textSecondSectionWithoutBold3Fr}
+              {translations[language].textSecondSectionWithoutBold3En}{" "}
             </p>
           </div>
         </div>

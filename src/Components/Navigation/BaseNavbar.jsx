@@ -281,7 +281,7 @@ const Navbar = () => {
               >
                 <svg
                   data-aos="fade-left"
-                  className="h-7 xl:flex hidden"
+                  className="h-5 xl:h-7"
                   onClick={() => {
                     setOpenModel(true);
                   }}

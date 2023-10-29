@@ -1,10 +1,14 @@
 import { useSpring, animated } from "react-spring";
+import translations from "./translate.jsx";
+import { useLanguage } from "../../context/LanguageProvider.jsx";
 import TitleAgency from "../UI/Title/TitleAgency";
 import ImgText from "../../assets/logo-4.png";
 import SectionTeam from "./SectionTeam";
 import ButtonAgency from "../UI/Button/ButtonAgency";
 
 const SectionAgency = () => {
+  const { language } = useLanguage();
+
   const props = useSpring({
     from: { color: "#C22E2E" },
     to: async (next) => {
@@ -15,27 +19,9 @@ const SectionAgency = () => {
     },
     config: { duration: 1000 },
   });
-  const text = "numérique";
-  const letters = text.split("");
-  const animationConfig = [
-    { dataAos: "fade-left", dataAosDelay: 100 },
-    { dataAos: "fade-left", dataAosDelay: 200 },
-    { dataAos: "fade-left", dataAosDelay: 300 },
-    { dataAos: "fade-left", dataAosDelay: 400 },
-    { dataAos: "fade-left", dataAosDelay: 500 },
-    { dataAos: "fade-right", dataAosDelay: 100 },
-    { dataAos: "fade-right", dataAosDelay: 200 },
-    { dataAos: "fade-right", dataAosDelay: 300 },
-    { dataAos: "fade-right", dataAosDelay: 400 },
-    { dataAos: "fade-right", dataAosDelay: 500 },
-    { dataAos: "fade-right", dataAosDelay: 500 },
-    { dataAos: "fade-left", dataAosDelay: 600 },
-  ];
   return (
     <section className="bg-FFF6E4 h-1/2">
-      <div>
-        <TitleAgency className="mt-20" />
-      </div>
+      <TitleAgency className="mt-20" />
       <div className="h-1/3">
         <div className="flex justify-center">
           <div className="w-4/5 sm:w-1/2">
@@ -44,7 +30,8 @@ const SectionAgency = () => {
               className="text-center font-extrabold mt-28 text-black text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
             >
               <span className="absolute h-96 w-1 bg-0C3E78 -left-32 -top-28 hidden sm:block"></span>
-              Bienvenue chez{" "}
+              {translations[language].welcomeAgencyFr}
+              {translations[language].welcomeAgencyEn}{" "}
               <span>
                 <img
                   src={ImgText}
@@ -52,20 +39,19 @@ const SectionAgency = () => {
                   alt="Icône navi studio."
                 />
               </span>{" "}
-              – Votre partenaire{" "}
+              – {translations[language].sloganAgencyFr}
+              {translations[language].sloganAgencyEn}{" "}
               <animated.span style={props}>
-                {letters.map((letter, index) => (
-                  <span
-                    key={index}
-                    data-aos={animationConfig[index].dataAos}
-                    data-aos-delay={animationConfig[index].dataAosDelay}
-                  >
-                    {letter}
-                  </span>
-                ))}
+                {translations[language].wordAgencyFr}
+                {translations[language].wordAgencyEn}
               </animated.span>
               .
             </h3>
+            {/* This agency has been created by Louisa & Melissa. We decided to
+            collaborate on this project to offer your the most exceptional and
+            unique experiences. It all started with the vision we share : keep
+            pushing the limits of creativity and intuitivity. We decided to
+            merge our experience and savoir-faire to turn it into Art. */}
           </div>
         </div>
         <div className="flex justify-center">
@@ -75,27 +61,27 @@ const SectionAgency = () => {
               data-aos-anchor-placement="top-bottom"
               className="px-5 text-black text-arial text-center text-lg sm:text-2xl mt-10"
             >
-              {`Cette agence a été créée par`}{" "}
+              {translations[language].textAgency1Fr}
+              {translations[language].textAgency1En}{" "}
               <span className="font-extrabold text-C22E2E">{"Mélissa"}</span>
               {" & "}
               <span className="font-extrabold text-C22E2E">Louisa</span>.{" "}
               <span className="text-black">
-                {
-                  "Nous avons décidé de collaborer pour créer des expériences exceptionnelles. Notre "
-                }
-                <span className="font-extrabold">{"Voyage"}</span> a débuté avec
-                une vision commune :
+                {translations[language].textAgency2Fr}
+                {translations[language].textAgency2En}
                 <span className="font-extrabold">
                   {" "}
-                  celle de repousser les limites de la créativité et
-                  l'intuitivité
+                  {translations[language].textAgency3Fr}
+                  {translations[language].textAgency3En}
+                </span>{" "}
+                :
+                <span className="font-extrabold">
+                  {" "}
+                  {translations[language].textAgencyBold4Fr}
+                  {translations[language].textAgencyBold4En}
                 </span>
-                .{" "}
-                {` Notre vision repose sur la fusion de nos compétences et de notre expérience.`}
-                <span className="font-extrabold">{" Design, "}</span>
-                <span className="font-extrabold">Développement web</span> ou
-                <span className="font-extrabold">{" Marketing Digital "}</span>
-                {"sont notre art."}
+                . {translations[language].textAgency5Fr}
+                {translations[language].textAgency5En}.
               </span>
             </p>
           </div>
