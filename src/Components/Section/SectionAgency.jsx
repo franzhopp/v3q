@@ -47,11 +47,6 @@ const SectionAgency = () => {
               </animated.span>
               .
             </h3>
-            {/* This agency has been created by Louisa & Melissa. We decided to
-            collaborate on this project to offer your the most exceptional and
-            unique experiences. It all started with the vision we share : keep
-            pushing the limits of creativity and intuitivity. We decided to
-            merge our experience and savoir-faire to turn it into Art. */}
           </div>
         </div>
         <div className="flex justify-center">
