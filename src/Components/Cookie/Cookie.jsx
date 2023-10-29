@@ -1,7 +1,6 @@
 import translations from "./translate.jsx";
 import { useLanguage } from "../../context/LanguageProvider.jsx";
 import Modal from "react-modal";
-import ImgText from "../../assets/logo-8.png";
 
 const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
   const { language, changeLanguage } = useLanguage();
@@ -32,14 +31,7 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
           </h2>
           <p className="text-black">
             {translations[language].cookieDescFr}
-            {translations[language].cookieDescEn}{" "}
-            <span>
-              <img
-                src={ImgText}
-                className="h-6 w-auto inline"
-                alt="Icône navi studio."
-              />
-            </span>
+            {translations[language].cookieDescEn}
           </p>
           <div className="flex flex-col my-3">
             <li className="list-none">
