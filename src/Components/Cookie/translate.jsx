@@ -27,7 +27,7 @@ const translations = {
     cookieDescFr:
       "Ce site utilise des cookies pour améliorer son fonctionnement et votre \
     expérience. Vous pouvez les accepter ou continuer votre navigation \
-    sans les accepter. Bon visionnage !",
+    sans les accepter. L'équipe vous souhaite un bon visionnage !",
     btnCookieAcceptFr: "Accepter",
     btnCookieDisableFr: "Continuer sans accepter",
     // First Section

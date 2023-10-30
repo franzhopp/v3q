@@ -37,6 +37,8 @@ const DiscoverWebDeveloper = () => {
                 data-aos="fade-left"
                 className="text-black text-6xl font-extrabold sm:text-7xl"
               >
+                {/* <span className="absolute h-44 w-1 bg-C22E2E -right-80 top-24 hidden sm:block"></span> */}
+                {/* <span className="absolute h-96 w-1 bg-C22E2E -right-80 top-0 hidden sm:block"></span> */}
                 Ohsion
               </p>
               <motion.span
