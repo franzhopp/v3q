@@ -89,12 +89,12 @@ const SectionTeam = () => {
         </div>
       </div>
 
-      <div className="flex justify-center">
-        <div className="w-4/5 sm:w-1/2">
+      <div className="flex justify-center mb-16">
+        <div className="w-4/5 sm:w-1/2 rounded-lg shadow-md">
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className="px-5 text-black text-center text-lg md:text-center lg:text-center sm:text-2xl mt-10 mb-20"
+            className="px-5 text-black text-center text-lg md:text-center lg:text-center sm:text-2xl mt-10 mb-5"
           >
             <span className="font-extrabold">
               Apprenez à connaître{" "}
