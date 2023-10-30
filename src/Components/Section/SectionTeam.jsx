@@ -15,7 +15,7 @@ const SectionTeam = () => {
     },
     config: { duration: 1000 },
   });
-  const text = "Notre équipe";
+  const text = "Team";
   const letters = text.split("");
   const animationConfig = [
     { dataAos: "fade-left", dataAosDelay: 100 },
@@ -31,12 +31,49 @@ const SectionTeam = () => {
     { dataAos: "fade-right", dataAosDelay: 500 },
     { dataAos: "fade-left", dataAosDelay: 600 },
   ];
+  const text1 = "Designer";
+  const letters1 = text1.split("");
+  const animationConfig1 = [
+    { dataAos: "fade-left", dataAosDelay: 100 },
+    { dataAos: "fade-left", dataAosDelay: 200 },
+    { dataAos: "fade-left", dataAosDelay: 300 },
+    { dataAos: "fade-left", dataAosDelay: 400 },
+    { dataAos: "fade-left", dataAosDelay: 500 },
+    { dataAos: "fade-right", dataAosDelay: 100 },
+    { dataAos: "fade-right", dataAosDelay: 200 },
+    { dataAos: "fade-right", dataAosDelay: 300 },
+    { dataAos: "fade-right", dataAosDelay: 400 },
+    { dataAos: "fade-right", dataAosDelay: 500 },
+    { dataAos: "fade-right", dataAosDelay: 500 },
+    { dataAos: "fade-left", dataAosDelay: 600 },
+  ];
+  const text2 = "Web Developper";
+  const letters2 = text2.split("");
+  const animationConfig2 = [
+    { dataAos: "fade-left", dataAosDelay: 100 },
+    { dataAos: "fade-left", dataAosDelay: 200 },
+    { dataAos: "fade-left", dataAosDelay: 300 },
+    { dataAos: "fade-left", dataAosDelay: 400 },
+    { dataAos: "fade-left", dataAosDelay: 500 },
+    { dataAos: "fade-right", dataAosDelay: 100 },
+    { dataAos: "fade-right", dataAosDelay: 200 },
+    { dataAos: "fade-right", dataAosDelay: 300 },
+    { dataAos: "fade-right", dataAosDelay: 400 },
+    { dataAos: "fade-right", dataAosDelay: 500 },
+    { dataAos: "fade-right", dataAosDelay: 500 },
+    { dataAos: "fade-left", dataAosDelay: 600 },
+    { dataAos: "fade-left", dataAosDelay: 700 },
+    { dataAos: "fade-left", dataAosDelay: 800 },
+  ];
 
   return (
     <section className="bg-FFF6E4 pt-14">
       <div className="flex justify-center">
         <div className="w-4/5 sm:w-1/2">
-          <h3 className="text-center font-extrabold mt-14 text-C22E2E text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+          <h3
+            data-aos="fade-right"
+            className="text-center font-extrabold mt-14 text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
+          >
             <span className="text-black font-inter">
               {letters.map((letter, index) => (
                 <span
@@ -98,7 +135,18 @@ const SectionTeam = () => {
                 <p data-aos="fade-right" className="text-4xl font-extrabold">
                   Mélissa Nefti
                 </p>
-                <p className="text-4xl font-extrabold">Designer</p>
+                <p className="text-4xl font-extrabold">
+                  {" "}
+                  {letters1.map((letter, index) => (
+                    <span
+                      key={index}
+                      data-aos={animationConfig1[index].dataAos}
+                      data-aos-delay={animationConfig1[index].dataAosDelay}
+                    >
+                      {letter}
+                    </span>
+                  ))}
+                </p>
                 <animated.h1
                   style={props}
                   className="text-4xl font-extrabold tracking-wide"
@@ -187,7 +235,18 @@ const SectionTeam = () => {
                     Louisa Fernandez
                     {/* <span className="absolute h-screen w-1 bg-0C3E78 -right-20 -bottom-1 hidden sm:block"></span> */}
                   </p>
-                  <p className="text-4xl font-extrabold">Web Developper</p>
+                  <p className="text-4xl font-extrabold">
+                    {" "}
+                    {letters2.map((letter, index) => (
+                      <span
+                        key={index}
+                        data-aos={animationConfig2[index].dataAos}
+                        data-aos-delay={animationConfig2[index].dataAosDelay}
+                      >
+                        {letter}
+                      </span>
+                    ))}
+                  </p>
                   <animated.h1
                     style={props}
                     className="text-4xl font-extrabold tracking-wide"
