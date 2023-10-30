@@ -68,7 +68,7 @@ const SectionTeam = () => {
 
   return (
     <section className="bg-FFF6E4 pt-14">
-      <div className="flex justify-center mb-12">
+      <div className="flex justify-center mb-8">
         <div className="w-4/5 sm:w-1/2">
           <h3
             data-aos="fade-right"
