@@ -38,7 +38,7 @@ const PageMentions = () => {
             <br />›<span className={keywordsStyle}> Propriétaire :</span>{" "}
             Fernandez Louisa, Nefti Mélissa.
             <br />›<span className={keywordsStyle}> Activité :</span>{" "}
-            Entrepreneur individuel.
+            Entrepreneur en freelance.
             <br />›<span className={keywordsStyle}> E-mail :</span>{" "}
             Navi.studio.info@gmail.com
             <br />›

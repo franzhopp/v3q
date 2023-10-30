@@ -5,6 +5,8 @@ const translations = {
     navServices: "Services",
     navPortfolio: "Portfolio",
     navContact: "Contact",
+    // Page 404
+    pageNotFoundFr: "Oups, mauvais chemin...",
     // Homepage
     titleHomeFr: "Agence digitale",
     scrollingTextFr:
@@ -27,7 +29,7 @@ const translations = {
     cookieDescFr:
       "Ce site utilise des cookies pour améliorer son fonctionnement et votre \
     expérience. Vous pouvez les accepter ou continuer votre navigation \
-    sans les accepter. L'équipe vous souhaite un bon visionnage !",
+    sans les accepter. Bon visionnage ! L'équipe ",
     btnCookieAcceptFr: "Accepter",
     btnCookieDisableFr: "Continuer sans accepter",
     // First Section
@@ -73,6 +75,8 @@ const translations = {
     navServicesEn: "Services",
     navPortfolioEn: "Portfolio",
     navContactEn: "Contact",
+    // Page 404
+    pageNotFoundEn: "Oops, wrong way...",
     // Homepage
     titleHomeEn: "Digital Agency",
     scrollingTextEn:
@@ -93,7 +97,7 @@ const translations = {
     // Cookie
     cookieTitleEn: "Cookie Policy",
     cookieDescEn:
-      "This website uses cookies to improve its functions and your experience. You may allow or disable cookies. Our team hope you'll enjoy your visit !",
+      "This website uses cookies to improve its functions and your experience. You may allow or disable cookies. Enjoy your visit ! The Team",
     btnCookieAcceptEn: "Allow",
     btnCookieDisableEn: "Disable",
     // First Section

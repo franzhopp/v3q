@@ -1,11 +1,11 @@
-// import translations from "./translate.jsx";
-// import { useLanguage } from "../../context/LanguageProvider.jsx";
+import translations from "./translate.jsx";
+import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import PagesNavbar from "../../Navigation/PagesNavbar/PagesNavbar";
 import ImgText from "../../../assets/logo-5.png";
 import Footer from "../../Footer/Footer";
 
 const PageNotFound = () => {
-  // const { language } = useLanguage();
+  const { language } = useLanguage();
   return (
     <section className="bg-FFF6E4">
       <PagesNavbar />
@@ -78,7 +78,8 @@ const PageNotFound = () => {
         <div className="text-center pb-28">
           <h1 className="text-C22E2E text-9xl font-extrabold">404</h1>
           <p className="text-C22E2E text-2xl sm:text-4xl font-extrabold tracking-tight ">
-            Oups, mauvais chemin...
+            {translations[language].pageNotFoundFr}
+            {translations[language].pageNotFoundEn}
           </p>
           <div className="flex justify-center pt-1">
             <img
