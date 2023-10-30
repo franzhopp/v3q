@@ -15,7 +15,7 @@ const SectionTeam = () => {
     },
     config: { duration: 1000 },
   });
-  const text = "Team #♡";
+  const text = "Team #navi♡";
   const letters = text.split("");
   const animationConfig = [
     { dataAos: "fade-left", dataAosDelay: 100 },
@@ -74,19 +74,17 @@ const SectionTeam = () => {
             data-aos="fade-right"
             className="text-center font-extrabold mt-14 text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
           >
-            <animated.h1 style={props} className="font-extrabold tracking-wide">
-              <span className="font-inter">
-                {letters.map((letter, index) => (
-                  <span
-                    key={index}
-                    data-aos={animationConfig[index].dataAos}
-                    data-aos-delay={animationConfig[index].dataAosDelay}
-                  >
-                    {letter}
-                  </span>
-                ))}
-              </span>
-            </animated.h1>
+            <span className="font-inter">
+              {letters.map((letter, index) => (
+                <span
+                  key={index}
+                  data-aos={animationConfig[index].dataAos}
+                  data-aos-delay={animationConfig[index].dataAosDelay}
+                >
+                  {letter}
+                </span>
+              ))}
+            </span>
           </h3>
         </div>
       </div>
