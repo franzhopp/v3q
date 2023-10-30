@@ -74,7 +74,7 @@ const SectionTeam = () => {
             data-aos="fade-right"
             className="text-center font-extrabold mt-14 text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
           >
-            <span className="font-inter">
+            <span className="text-C22E2E font-inter">
               {letters.map((letter, index) => (
                 <span
                   key={index}
