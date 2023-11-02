@@ -5,6 +5,12 @@ const translations = {
     navServices: "Services",
     navPortfolio: "Portfolio",
     navContact: "Contact",
+    // Copyright
+    copyFr:
+      "Ce site web a été imaginé et mis en œuvre par Mélissa & Louisa. Tous droits réservés en vertu de la législation sur les droits d'auteur. Toute reproduction est interdite.",
+    sendFooterFr: "Valider",
+    newletterEn: "Inscrivez-vous à la newletter !",
+    findFr: "Retrouvez-nous :",
     // Homepage
     titleHomeFr: "Agence digitale",
     scrollingTextFr:
@@ -73,6 +79,12 @@ const translations = {
     navServicesEn: "Services",
     navPortfolioEn: "Portfolio",
     navContactEn: "Contact",
+    // Copyright :
+    copyEn:
+      "This website was designed and developed by Mélissa & Louisa. All rights reserved according to the legislation about copyrights. Any full or partial reproduction is prohibited.",
+    newletterEn: "Subscribe to our newsletter!",
+    sendFooterFr: "Send",
+    findEn: "Find us on :",
     // Homepage
     titleHomeEn: "Digital Agency",
     scrollingTextEn:
