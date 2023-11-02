@@ -157,10 +157,7 @@ const SectionTeam = () => {
 
               <div className="w-72">
                 <p className="text-black text-left text-base mb-10 ml-10 sm:ml-0 p">
-                  <span className="font-extrabold">
-                    Mélissa est designer et exerce le métier UX/UI Designer
-                    depuis 5 ans.
-                  </span>{" "}
+                  <span className="font-extrabold">Mélissa est designer.</span>{" "}
                   Résidante à Londres, elle pratique celui-ci avec beaucoup de
                   créativité et rigueur.{" "}
                   <span className="font-extrabold">
@@ -258,8 +255,7 @@ const SectionTeam = () => {
                 <div className="w-72">
                   <p className="text-black text-left text-base ml-10 sm:ml-0 z">
                     <span className="font-extrabold">
-                      Louisa est développeuse web et exerce le métier du
-                      développement web depuis 2 ans.
+                      Louisa est développeuse web.
                     </span>{" "}
                     Résidante à Paris, elle pratique celui-ci avec beaucoup de
                     passion et plaisir.{" "}
