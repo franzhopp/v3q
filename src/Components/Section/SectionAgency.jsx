@@ -8,7 +8,6 @@ import ButtonAgency from "../UI/Button/ButtonAgency";
 
 const SectionAgency = () => {
   const { language } = useLanguage();
-
   const props = useSpring({
     from: { color: "#C22E2E" },
     to: async (next) => {

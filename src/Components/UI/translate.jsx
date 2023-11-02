@@ -5,6 +5,12 @@ const translations = {
     navServices: "Services",
     navPortfolio: "Portfolio",
     navContact: "Contact",
+    // Copyright
+    copyFr:
+      "Ce site web a été imaginé et mis en œuvre par Mélissa & Louisa. Tous droits réservés en vertu de la législation sur les droits d'auteur. Toute reproduction est interdite.",
+    sendFooterFr: "Valider",
+    newletterEn: "Inscrivez-vous à la newletter !",
+    findFr: "Retrouvez-nous :",
     // Homepage
     titleHomeFr: "Agence digitale",
     scrollingTextFr:
@@ -53,7 +59,26 @@ const translations = {
     textSecondSectionWithoutBold3Fr:
       " Nous nous engageons à fournir un travail de qualité. Ce que nous créons, est une interface en harmonie avec votre image de votre marque. Soyez connectés à celle-ci, car cela nous permet de mieux comprendre vos besoins. Préparez ce qui vous semble nécessaire pour votre site, pour le reste ? On s'occupe de tout.",
     // Title Agency
-    titleAgencyFr: "Notre Agence",
+    titleAgencyFr: "Notre Agency",
+    // Section Agency
+    welcomeAgencyFr: "Bienvenue chez",
+    sloganAgencyFr: "Votre partenaire",
+    wordAgencyFr: "numérique",
+    textAgency1Fr: "Cette agence a été créée par",
+    textAgency2Fr:
+      "Nous avons décidé de collaborer pour créer des expériences exceptionnelles.",
+    textAgency3Fr: "Notre Voyage a débuté avec une vision commune",
+    textAgencyBold4Fr:
+      "celle de repousser les limites de la créativité et l'intuitivité",
+    textAgency5Fr:
+      "Notre vision repose sur la fusion de nos compétences et de notre expérience. Design, Développement web, Marketing Digital sont notre art",
+    // Section Team :
+    textSectionTeamBold1Fr: "Apprenez à connaître",
+    textSectionTeamBold2Fr:
+      "Parcourez ces lignes pour en savoir davantage sur les parcours des concepteurs & leur passion pour leur métier.",
+    textSectionTeamWithoutBold1Fr:
+      "Derrière chaque site se cache une histoire unique. Ne ratez aucune d'entre elles.",
+    btnMoreFr: "Découvrir",
   },
   en: {
     // Navbar + Footer
@@ -61,6 +86,12 @@ const translations = {
     navServicesEn: "Services",
     navPortfolioEn: "Portfolio",
     navContactEn: "Contact",
+    // Copyright :
+    copyEn:
+      "This website was designed and developed by Mélissa & Louisa. All rights reserved according to the legislation about copyrights. Any full or partial reproduction is prohibited.",
+    newletterEn: "Subscribe to our newsletter!",
+    sendFooterFr: "Send",
+    findEn: "Find us on :",
     // Homepage
     titleHomeEn: "Digital Agency",
     scrollingTextEn:
@@ -106,6 +137,24 @@ const translations = {
       " We provide a quality service. The interfaces we build are the reflection of your brand image. So just gather all the informations about your future project and relax, we take care of the rest !",
     // Title Agency
     titleAgencyEn: "Our Agency",
+    // Section Agency
+    welcomeAgencyEn: "Welcome at",
+    sloganAgencyEn: "Your digital",
+    wordAgencyEn: "companion",
+    textAgency1En: "This agency has been created by",
+    textAgency2En:
+      "We decided to collaborate on this project to offer your the most exceptional and unique experiences.",
+    textAgency3Fr: "It all started with the vision we share",
+    textAgencyBold4Fr: "keep pushing the limits of creativity and intuitivity",
+    textAgency5Fr:
+      "We decided to merge our experience and savoir-faire to turn it into Art",
+    // Section Team :
+    textSectionTeamBold1En: "Get to know",
+    textSectionTeamBold2En:
+      "Have a look at those short presentations to know more about the founders' background & their passions.",
+    textSectionTeamWithoutBold1En:
+      "Behind every website there is a story, don't miss out on it.",
+    btnMoreEn: "More",
   },
 };
 

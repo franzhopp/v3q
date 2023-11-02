@@ -5,6 +5,8 @@ const translations = {
     navServices: "Services",
     navPortfolio: "Portfolio",
     navContact: "Contact",
+    // Page 404
+    pageNotFoundFr: "Oups, mauvais chemin...",
     // Copyright
     copyFr:
       "Ce site web a été imaginé et mis en œuvre par Mélissa & Louisa. Tous droits réservés en vertu de la législation sur les droits d'auteur. Toute reproduction est interdite.",
@@ -53,11 +55,11 @@ const translations = {
     wordSecondSectionBold2Fr: "la solution",
     wordBoldSecondSection2Fr: "Expérience utilisateur.",
     textSecondSectionWithoutBold2Fr:
-      " Nos sites internet sont dotés d'une navigation fluide, de contenus uniques & personnalisés. Notre approche est axée sur la qualité de l'expérience que les utilisateurs auront en naviguant à travers votre site, cela vous permet de bâtir des relations solides, de transmettre votre message avec",
+      "Nos sites internet sont dotés d'une navigation fluide, de contenus uniques & personnalisés. Notre approche est axée sur la qualité de l'expérience que les utilisateurs auront en naviguant à travers votre site, cela vous permet de bâtir des relations solides, de transmettre votre message avec",
     wordSecondSectionBold3Fr: "efficacité",
     wordBoldSecondSection3Fr: "Qualité.",
     textSecondSectionWithoutBold3Fr:
-      " Nous nous engageons à fournir un travail de qualité. Ce que nous créons, est une interface en harmonie avec votre image de votre marque. Soyez connectés à celle-ci, car cela nous permet de mieux comprendre vos besoins. Préparez ce qui vous semble nécessaire pour votre site, pour le reste ? On s'occupe de tout.",
+      "Nous nous engageons à fournir un travail de qualité. Ce que nous créons, est une interface en harmonie avec votre image de votre marque. Soyez connectés à celle-ci, car cela nous permet de mieux comprendre vos besoins. Préparez ce qui vous semble nécessaire pour votre site, pour le reste ? On s'occupe de tout.",
     // Title Agency
     titleAgencyFr: "Notre Agency",
     // Section Agency
@@ -72,6 +74,13 @@ const translations = {
       "celle de repousser les limites de la créativité et l'intuitivité",
     textAgency5Fr:
       "Notre vision repose sur la fusion de nos compétences et de notre expérience. Design, Développement web, Marketing Digital sont notre art",
+    // Section Team :
+    textSectionTeamBold1Fr: "Apprenez à connaître",
+    textSectionTeamBold2Fr:
+      "Parcourez ces lignes pour en savoir davantage sur les parcours des concepteurs & leur passion pour leur métier.",
+    textSectionTeamWithoutBold1Fr:
+      "Derrière chaque site se cache une histoire unique. Ne ratez aucune d'entre elles.",
+    btnMoreFr: "Découvrir",
   },
   en: {
     // Navbar + Footer
@@ -79,6 +88,8 @@ const translations = {
     navServicesEn: "Services",
     navPortfolioEn: "Portfolio",
     navContactEn: "Contact",
+    // Page 404
+    pageNotFoundEn: "Oops, wrong way...",
     // Copyright :
     copyEn:
       "This website was designed and developed by Mélissa & Louisa. All rights reserved according to the legislation about copyrights. Any full or partial reproduction is prohibited.",
@@ -141,6 +152,13 @@ const translations = {
     textAgencyBold4Fr: "keep pushing the limits of creativity and intuitivity",
     textAgency5Fr:
       "We decided to merge our experience and savoir-faire to turn it into Art",
+    // Section Team :
+    textSectionTeamBold1En: "Get to know",
+    textSectionTeamBold2En:
+      "Have a look at those short presentations to know more about the founders' background & their passions.",
+    textSectionTeamWithoutBold1En:
+      "Behind every website there is a story, don't miss out on it.",
+    btnMoreEn: "More",
   },
 };
 

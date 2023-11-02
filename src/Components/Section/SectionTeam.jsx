@@ -1,10 +1,13 @@
 import { NavLink } from "react-router-dom";
 import { useSpring, animated } from "react-spring";
+import translations from "./translate.jsx";
+import { useLanguage } from "../../context/LanguageProvider.jsx";
 import ImgText from "../../assets/logo-4.png";
 import ImageLondon from "../../assets/london.png";
 import ImageParis from "../../assets/paris.png";
 
 const SectionTeam = () => {
+  const { language } = useLanguage();
   const props = useSpring({
     from: { color: "#C22E2E" },
     to: async (next) => {
@@ -97,7 +100,8 @@ const SectionTeam = () => {
             className="px-5 text-black text-center text-lg md:text-center lg:text-center sm:text-2xl mt-10 mb-5"
           >
             <span className="font-extrabold">
-              Apprenez à connaître{" "}
+              {translations[language].textSectionTeamBold1Fr}
+              {translations[language].textSectionTeamBold1En}{" "}
               <img
                 src={ImgText}
                 className="h-6 mr-1 inline sm:h-9"
@@ -105,15 +109,11 @@ const SectionTeam = () => {
               />
             </span>
             <span className="font-extrabold">
-              {
-                "Parcourez ces lignes pour en savoir davantage sur les parcours des concepteurs"
-              }{" "}
-              & leur passion pour leur métier
+              {translations[language].textSectionTeamBold2Fr}
+              {translations[language].textSectionTeamBold2En}{" "}
             </span>
-            {". "}
-            Derrière chaque site se cache une histoire unique. Ne ratez aucune
-            d'entre elles.
-            <br />
+            {translations[language].textSectionTeamWithoutBold1Fr}
+            {translations[language].textSectionTeamWithoutBold1En} <br />
           </p>
         </div>
       </div>
@@ -163,7 +163,7 @@ const SectionTeam = () => {
                   <span className="font-extrabold">
                     Venez connaître son histoire en cliquant sur «{" "}
                     <span className="text-C22E2E underline">
-                      <NavLink to="/designer">Découvrir</NavLink>
+                      <NavLink to="/designer">Designer</NavLink>
                     </span>{" "}
                     ».
                   </span>
@@ -175,7 +175,10 @@ const SectionTeam = () => {
                 to="/designer"
                 className="animate-formbounce inline-flex items-center gap-2 rounded-full mr-6 mb-10 bg-black px-8 py-3 text-FFF6E4"
               >
-                <span className="text-3xl mr-3 font-semibold">Découvrir </span>
+                <span className="text-3xl mr-3 font-semibold">
+                  {translations[language].btnMoreFr}
+                  {translations[language].btnMoreEn}{" "}
+                </span>
                 <svg
                   width="44"
                   height="38"
@@ -212,7 +215,8 @@ const SectionTeam = () => {
                     />
                   </svg>
                   <span className="text-3xl ml-3 font-semibold">
-                    Découvrir{" "}
+                    {translations[language].btnMoreFr}
+                    {translations[language].btnMoreEn}{" "}
                   </span>
                 </NavLink>
               </div>
@@ -262,7 +266,7 @@ const SectionTeam = () => {
                     <span className="font-extrabold">
                       Venez connaître son histoire en cliquant sur «{" "}
                       <span className="text-C22E2E underline">
-                        <NavLink to="/webdev">Découvrir</NavLink>
+                        <NavLink to="/webdev">Web Developer</NavLink>
                       </span>{" "}
                       ».
                     </span>
