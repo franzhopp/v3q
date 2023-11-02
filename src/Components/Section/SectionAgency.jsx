@@ -21,68 +21,70 @@ const SectionAgency = () => {
   });
   return (
     <section className="bg-FFF6E4 h-1/2">
-      <TitleAgency className="mt-20" />
-      <div className="h-1/3">
-        <div className="flex justify-center">
-          <div className="w-4/5 sm:w-1/2">
-            <h3
-              data-aos="fade-right"
-              className="text-center font-extrabold mt-28 text-black text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
-            >
-              <span className="absolute h-96 w-1 bg-0C3E78 -left-32 -top-28 hidden sm:block"></span>
-              {translations[language].welcomeAgencyFr}
-              {translations[language].welcomeAgencyEn}{" "}
-              <span>
-                <img
-                  src={ImgText}
-                  className="h-12 sm:h-16 mr-1 inline"
-                  alt="Icône navi studio."
-                />
-              </span>{" "}
-              – {translations[language].sloganAgencyFr}
-              {translations[language].sloganAgencyEn}{" "}
-              <animated.span style={props}>
-                {translations[language].wordAgencyFr}
-                {translations[language].wordAgencyEn}
-              </animated.span>
-              .
-            </h3>
-          </div>
-        </div>
-        <div className="flex justify-center">
-          <div className="w-4/5 sm:w-1/2">
-            <p
-              data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom"
-              className="px-5 text-black text-arial text-center text-lg sm:text-2xl mt-10"
-            >
-              {translations[language].textAgency1Fr}
-              {translations[language].textAgency1En}{" "}
-              <span className="font-extrabold text-C22E2E">{"Mélissa"}</span>
-              {" & "}
-              <span className="font-extrabold text-C22E2E">Louisa</span>.{" "}
-              <span className="text-black">
-                {translations[language].textAgency2Fr}
-                {translations[language].textAgency2En}
-                <span className="font-extrabold">
-                  {" "}
-                  {translations[language].textAgency3Fr}
-                  {translations[language].textAgency3En}
+      <section className="border-pink-l-r border-pink-r-r">
+        <TitleAgency className="mt-20" />
+        <div className="h-1/3">
+          <div className="flex justify-center">
+            <div className="w-4/5 sm:w-1/2">
+              <h3
+                data-aos="fade-right"
+                className="text-center font-extrabold mt-28 text-black text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
+              >
+                {/* <span className="absolute h-96 w-1 bg-0C3E78 -left-32 -top-28 hidden sm:block"></span> */}
+                {translations[language].welcomeAgencyFr}
+                {translations[language].welcomeAgencyEn}{" "}
+                <span>
+                  <img
+                    src={ImgText}
+                    className="h-12 sm:h-16 mr-1 inline"
+                    alt="Icône navi studio."
+                  />
                 </span>{" "}
-                :
-                <span className="font-extrabold">
-                  {" "}
-                  {translations[language].textAgencyBold4Fr}
-                  {translations[language].textAgencyBold4En}
+                – {translations[language].sloganAgencyFr}
+                {translations[language].sloganAgencyEn}{" "}
+                <animated.span style={props}>
+                  {translations[language].wordAgencyFr}
+                  {translations[language].wordAgencyEn}
+                </animated.span>
+                .
+              </h3>
+            </div>
+          </div>
+          <div className="flex justify-center">
+            <div className="w-4/5 sm:w-1/2">
+              <p
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+                className="px-5 text-black text-arial text-center text-lg sm:text-2xl mt-10"
+              >
+                {translations[language].textAgency1Fr}
+                {translations[language].textAgency1En}{" "}
+                <span className="font-extrabold text-C22E2E">{"Mélissa"}</span>
+                {" & "}
+                <span className="font-extrabold text-C22E2E">Louisa</span>.{" "}
+                <span className="text-black">
+                  {translations[language].textAgency2Fr}
+                  {translations[language].textAgency2En}
+                  <span className="font-extrabold">
+                    {" "}
+                    {translations[language].textAgency3Fr}
+                    {translations[language].textAgency3En}
+                  </span>{" "}
+                  :
+                  <span className="font-extrabold">
+                    {" "}
+                    {translations[language].textAgencyBold4Fr}
+                    {translations[language].textAgencyBold4En}
+                  </span>
+                  . {translations[language].textAgency5Fr}
+                  {translations[language].textAgency5En}.
                 </span>
-                . {translations[language].textAgency5Fr}
-                {translations[language].textAgency5En}.
-              </span>
-            </p>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
       <ButtonAgency />
+      </section>
       <section className="bg-0C3E78 border-t border-b border-gray-400 py-24 px-4 sm:px-6 lg:px-8 border-red-l-b border-red-r-b">
         <div className="pt-10 pb-16 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
           <div className="w-80 mt-5">
