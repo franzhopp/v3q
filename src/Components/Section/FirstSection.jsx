@@ -33,7 +33,7 @@ const Section = () => {
   }, []);
 
   return (
-    <section className="bg-FFF6E4 pt-24 relative border-red-l border-red-r">
+    <section className="bg-FFF6E4 pt-24 relative border-b border-gray-400">
       <div className="flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
         <div className="w-80 relative">
           {/* <span className="absolute h-96 w-1 bg-C22E2E -left-14 top-0 hidden sm:block"></span> */}

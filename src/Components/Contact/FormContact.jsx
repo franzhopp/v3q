@@ -1,3 +1,5 @@
+import translations from "./translate.jsx";
+import { useLanguage } from "../../context/LanguageProvider.jsx";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -10,15 +12,13 @@ import "../Navigation/BaseNavbar.jsx";
 const Form = ({ label, type, value }) => {
   const [isFocused, setIsFocused] = useState(false);
   const [status, setStatus] = useState("");
-
+  const { language } = useLanguage();
   const handleFocus = () => {
     setIsFocused(true);
   };
-
   // const offFocusClick = () => {
   //   setIsFocused(false);
   // };
-
   const handleBlur = () => {
     if (!value) {
       setIsFocused(true);
@@ -169,9 +169,8 @@ const Form = ({ label, type, value }) => {
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
           <div className="mr-10 lg:col-span-2 lg:py-12">
             <p className="text-black text-2xl font-extrabold sm:text-4xl max-w-xl ml-6 sm:ml-0">
-              Si vous recherchez une agence digitale qui peut donner vie à votre
-              projet numérique, qui excelle dans le design et le développement
-              web, ne cherchez pas plus loin. Choisissez
+              {translations[language].describeContactFr}
+              {translations[language].describeContactEn}
               <img
                 src={ImgText}
                 className="h-8 sm:h-12 ml-1 inline"
@@ -187,9 +186,8 @@ const Form = ({ label, type, value }) => {
               >
                 <span className="absolute h-72 w-1 bg-C22E2E -left-7 bottom-20 hidden sm:block"></span>
                 <span className="absolute h-64 w-1 bg-C22E2E -left-10 bottom-2 hidden sm:block"></span>
-                {`Contactez-nous aujourd'hui pour discuter de
-          votre projet et découvrir comment nous pouvons vous aider à briller
-          sur le web. Votre succès numérique est notre mission.`}
+                {translations[language].textContactFr}
+                {translations[language].textContactEn}
               </p>
             </div>
             <div className="flex justify-center mt-5">
@@ -197,7 +195,8 @@ const Form = ({ label, type, value }) => {
                 onClick={scrollToTop}
                 className="text-FFF6E4 text-center font-extrabold underline transition hover:text-C22E2E"
               >
-                Remonter à la page d'Accueil ➔
+                {translations[language].linkTopContactFr}
+                {translations[language].linkTopContactEn}
               </Link>
             </div>
           </div>

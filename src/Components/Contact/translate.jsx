@@ -113,6 +113,11 @@ const translations = {
       "Venez connaître son histoire en cliquant sur",
     btnMoreFr: "Découvrir",
     titleContactFr: "Contactez-nous",
+    describeContactFr:
+      "Si vous recherchez une agence digitale qui peut donner vie à votre projet numérique, qui excelle dans le design et le développement web, ne cherchez pas plus loin. Choisissez",
+    textContactFr:
+      "Contactez-nous aujourd'hui pour discuter de votre projet et découvrir comment nous pouvons vous aider à briller sur le web. Votre succès numérique est notre mission.",
+    linkTopContactFr: "Remonter à la page d'Accueil ➔",
   },
   en: {
     // Navbar + Footer
@@ -222,6 +227,11 @@ const translations = {
     textSectionTeamBioBold2LouisaEn: "Get to know her full story in the",
     btnMoreEn: "More",
     titleContactEn: "Contact Us",
+    describeContactEn:
+      "If you're looking for a digital agency to bring life to your projects and help them grow, you're at the right place! No need to search any longer, we got you. Choose",
+    textContactEn:
+      "Get in touch with us today to discuss your project and find out how we can help you stand out on the web. Your success is our mission.",
+    linkTopContactEn: "Go up to home page ➔",
   },
 };
 

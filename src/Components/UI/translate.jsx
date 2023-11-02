@@ -5,6 +5,8 @@ const translations = {
     navServices: "Services",
     navPortfolio: "Portfolio",
     navContact: "Contact",
+    // Page 404
+    pageNotFoundFr: "Oups, mauvais chemin...",
     // Copyright
     copyFr:
       "Ce site web a été imaginé et mis en œuvre par Mélissa & Louisa. Tous droits réservés en vertu de la législation sur les droits d'auteur. Toute reproduction est interdite.",
@@ -72,13 +74,45 @@ const translations = {
       "celle de repousser les limites de la créativité et l'intuitivité",
     textAgency5Fr:
       "Notre vision repose sur la fusion de nos compétences et de notre expérience. Design, Développement web, Marketing Digital sont notre art",
+    // 1
+    textSectionAgencyBold1Fr: "Qu'est-ce que",
+    textSectionAgencyBold2Fr:
+      "C'est une agence qui confectionne des sites internet.",
+    textSectionAgencyWithoutBold2Fr:
+      "Ils sont optimisés pour des performances exceptionnelles. La convivialité est au cœur de nos créations, nous trouvons la solution pour convertir les visiteurs en clients. Voir la page « Portfolio » afin de connaître toutes les réalisations.",
+    // 2
+    textSectionAgencyBold3Fr:
+      "Donnez vie à vos projets pour une expérience unique.",
+    textSectionAgencyBold4Fr:
+      "Nos créations offrent une navigation intuitive, un contenu engageant et des fonctionnalités, garantissant que chaque visiteur se sent connecté à votre marque.",
+    textSectionAgencyBold5Fr:
+      "Votre site est la représentation de votre marque et de votre \
+      production.",
+    // 3
+    textSectionAgencyBold6Fr:
+      "Votre site internet n'est pas seulement une dépense.",
+    textSectionAgencyBold7Fr:
+      "Il a un lien sur la conversion, nous créons des sites qui génèrent un retour. Obtenez plus de visites, plus de ventes et plus de croissance grâce à nos services. Vous ne serez pas déçus de choisir ceux-ci pour le déploiment de votre projet. Rendez-vous sur la page « Prestations ».",
     // Section Team :
     textSectionTeamBold1Fr: "Apprenez à connaître",
     textSectionTeamBold2Fr:
       "Parcourez ces lignes pour en savoir davantage sur les parcours des concepteurs & leur passion pour leur métier.",
     textSectionTeamWithoutBold1Fr:
       "Derrière chaque site se cache une histoire unique. Ne ratez aucune d'entre elles.",
+    textSectionTeamBioBold1MelissaFr: "Mélissa est designer.",
+    textSectionTeamBioWithoutBold1MelissaFr:
+      "Résidante à Londres, elle pratique celui-ci avec beaucoup de \
+    créativité et rigueur.",
+    textSectionTeamBioBold2MelissaFr:
+      "Venez connaître son histoire en cliquant sur",
+    textSectionTeamBioBold1LouisaFr: "Louisa est développeuse web.",
+    textSectionTeamBioWithoutBold1LouisaFr:
+      " Résidante à Paris, elle pratique celui-ci avec beaucoup de \
+      passion et plaisir.",
+    textSectionTeamBioBold2LouisaFr:
+      "Venez connaître son histoire en cliquant sur",
     btnMoreFr: "Découvrir",
+    titleContactFr: "Contactez-nous",
   },
   en: {
     // Navbar + Footer
@@ -86,6 +120,8 @@ const translations = {
     navServicesEn: "Services",
     navPortfolioEn: "Portfolio",
     navContactEn: "Contact",
+    // Page 404
+    pageNotFoundEn: "Oops, wrong way...",
     // Copyright :
     copyEn:
       "This website was designed and developed by Mélissa & Louisa. All rights reserved according to the legislation about copyrights. Any full or partial reproduction is prohibited.",
@@ -130,7 +166,7 @@ const translations = {
     wordSecondSectionBold2En: "the solution",
     wordBoldSecondSection2En: "User Experience.",
     textSecondSectionWithoutBold2En:
-      " You will be able to enjoy fully optimized navigation and unique & personalized content on every one of our websites. The quality of the user's experience is our priority , build strong connections with your customers & gain great exposure for your",
+      " You will be able to enjoy fully optimized navigation and unique & personalized content on every one of our websites. The quality of the user's experience is our priority, build strong connections with your customers & gain great exposure for your",
     wordSecondSectionBold3En: "business",
     wordBoldSecondSection3En: "Quality.",
     textSecondSectionWithoutBold3En:
@@ -148,13 +184,44 @@ const translations = {
     textAgencyBold4Fr: "keep pushing the limits of creativity and intuitivity",
     textAgency5Fr:
       "We decided to merge our experience and savoir-faire to turn it into Art",
+    // 1
+    textSectionAgencyBold1En: "What is",
+    textSectionAgencyBold2En:
+      "We are a digital agency who provides website creation & digital marketing services.",
+    textSectionAgencyWithoutBold2En:
+      "All our creations are fully optimized to give the best experience & performance to its users. \
+      We make your dreams our mission. Don't wait any longer, we are the solution to your needs. \
+      Check out the « Portfolio » section and take a look at our latest projects. \
+      ",
+    // 2
+    textSectionAgencyBold3En:
+      "Give life to your projects and enjoy a unique experience.",
+    textSectionAgencyBold4En:
+      "Our creations are all provided with a intuitive navigation, a unique and engaging content, and smart functionalities that will guarantee a good user experience.",
+    textSectionAgencyBold5En:
+      "Your website is the face of your brand and we give a particular attention to details.",
+    // 3
+    textSectionAgencyBold6En: "You website is not only an expense.",
+    textSectionAgencyBold7En:
+      "It will bring more visibility to your brand, which will results in more conversions. Thanks to our services you can now gain more visits, sales, and growth! Let us be the change you need. Check out « Rates » page for more informations. ",
     // Section Team :
     textSectionTeamBold1En: "Get to know",
     textSectionTeamBold2En:
       "Have a look at those short presentations to know more about the founders' background & their passions.",
     textSectionTeamWithoutBold1En:
       "Behind every website there is a story, don't miss out on it.",
+    textSectionTeamBioBold1MelissaEn:
+      "Mélissa has been working as a UX/UI Designer.",
+    textSectionTeamBioWithoutBold1MelissaEn:
+      "Based in London, she's on a constant grind and is all about creativity and passion.",
+    textSectionTeamBioBold2MelissaEn: "Come get to know her full story in the",
+    textSectionTeamBioBold1LouisaFr:
+      "Louisa is a web developer, she's been growing within this industry.",
+    textSectionTeamBioWithoutBold1LouisaEn:
+      "Based in Paris, she is fully committed and passionate about what she does.",
+    textSectionTeamBioBold2LouisaEn: "Get to know her full story in the",
     btnMoreEn: "More",
+    titleContactEn: "Contact Us",
   },
 };
 

@@ -157,15 +157,28 @@ const SectionTeam = () => {
 
               <div className="w-72">
                 <p className="text-black text-left text-base mb-10 ml-10 sm:ml-0 p">
-                  <span className="font-extrabold">Mélissa est designer.</span>{" "}
-                  Résidante à Londres, elle pratique celui-ci avec beaucoup de
-                  créativité et rigueur.{" "}
                   <span className="font-extrabold">
-                    Venez connaître son histoire en cliquant sur «{" "}
+                    {" "}
+                    {translations[language].textSectionTeamBioBold1MelissaFr}
+                    {translations[language].textSectionTeamBioBold1MelissaEn}
+                  </span>{" "}
+                  {
+                    translations[language]
+                      .textSectionTeamBioWithoutBold1MelissaFr
+                  }
+                  {
+                    translations[language]
+                      .textSectionTeamBioWithoutBold1MelissaEn
+                  }{" "}
+                  <span className="font-extrabold">
+                    {translations[language].textSectionTeamBioBold2MelissaFr}
+                    {
+                      translations[language].textSectionTeamBioBold2MelissaEn
+                    } «{" "}
                     <span className="text-C22E2E underline">
                       <NavLink to="/designer">Designer</NavLink>
                     </span>{" "}
-                    ».
+                    » section.
                   </span>
                 </p>
               </div>
@@ -257,18 +270,29 @@ const SectionTeam = () => {
                 </div>
 
                 <div className="w-72">
-                  <p className="text-black text-left text-base ml-10 sm:ml-0 z">
+                  <p className="text-black text-left text-base mb-10 ml-10 sm:ml-0 p">
                     <span className="font-extrabold">
-                      Louisa est développeuse web.
+                      {" "}
+                      {translations[language].textSectionTeamBioBold1LouisaFr}
+                      {translations[language].textSectionTeamBioBold1LouisaEn}
                     </span>{" "}
-                    Résidante à Paris, elle pratique celui-ci avec beaucoup de
-                    passion et plaisir.{" "}
+                    {
+                      translations[language]
+                        .textSectionTeamBioWithoutBold1LouisaFr
+                    }
+                    {
+                      translations[language]
+                        .textSectionTeamBioWithoutBold1LouisaEn
+                    }{" "}
                     <span className="font-extrabold">
-                      Venez connaître son histoire en cliquant sur «{" "}
+                      {translations[language].textSectionTeamBioBold2LouisaFr}
+                      {
+                        translations[language].textSectionTeamBioBold2LouisaEn
+                      } «{" "}
                       <span className="text-C22E2E underline">
                         <NavLink to="/webdev">Web Developer</NavLink>
                       </span>{" "}
-                      ».
+                      » section.
                     </span>
                   </p>
                 </div>

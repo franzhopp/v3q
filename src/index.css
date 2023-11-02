@@ -71,7 +71,7 @@ textarea {
 }
 
 .image-navi-studio-home {
-    background-image: url('./assets/bg-home.png');
+    background-image: url('./assets/bg-home-1.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -305,28 +305,4 @@ textarea {
     100% {
         transform: rotate(0);
     }
-}
-
-.border-red-l {
-    border-left: 3px solid #C22E2E;
-}
-
-.border-red-r {
-    border-right: 3px solid #C22E2E;
-}
-
-.border-red-l-b {
-    border-left: 3px solid #FFF6E4;
-}
-
-.border-red-r-b {
-    border-right: 3px solid #FFF6E4;
-}
-
-.border-pink-l-r {
-    border-left: 3px solid #E18AB0;
-}
-
-.border-pink-r-r {
-    border-right: 3px solid #E18AB0;
 }

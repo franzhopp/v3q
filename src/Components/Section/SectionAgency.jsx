@@ -20,7 +20,7 @@ const SectionAgency = () => {
   });
   return (
     <section className="bg-FFF6E4 h-1/2">
-      <section className="border-pink-l-r border-pink-r-r">
+      <section className="">
         <TitleAgency className="mt-20" />
         <div className="h-1/3">
           <div className="flex justify-center">
@@ -82,9 +82,9 @@ const SectionAgency = () => {
             </div>
           </div>
         </div>
-      <ButtonAgency />
+        <ButtonAgency />
       </section>
-      <section className="bg-0C3E78 py-24 px-4 sm:px-6 lg:px-8 border-red-l-b border-red-r-b">
+      <section className="bg-0C3E78 py-24 px-4 sm:px-6 lg:px-8 border-b border-t border-gray-400">
         <div className="pt-10 pb-16 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
           <div className="w-80 mt-5">
             <p
@@ -95,7 +95,8 @@ const SectionAgency = () => {
               <span className="absolute h-full w-1 bg-FFF6E4 -left-14 -top-1 hidden sm:block"></span>
               <h1 className="text-4xl number font-semibold pb-5">04.</h1>
               <span className="font-extrabold">
-                Qu'est-ce que{" "}
+                {translations[language].textSectionAgencyBold1Fr}
+                {translations[language].textSectionAgencyBold1En}{" "}
                 <span>
                   <img
                     src={ImgText}
@@ -103,11 +104,11 @@ const SectionAgency = () => {
                     alt="Icône navi studio."
                   />
                 </span>{" "}
-                ? C'est une agence qui confectionne des sites internet.
+                ? {translations[language].textSectionAgencyBold2Fr}
+                {translations[language].textSectionAgencyBold2En}{" "}
               </span>
-              {
-                " Ils sont optimisés pour des performances exceptionnelles. La convivialité est au cœur de nos créations, nous trouvons la solution pour convertir les visiteurs en clients. Voir la page « Portfolio » afin de connaître toutes les réalisations."
-              }
+              {translations[language].textSectionAgencyWithoutBold2Fr}
+              {translations[language].textSectionAgencyWithoutBold2En}
             </p>
           </div>
           <div className="w-80 mt-5">
@@ -118,16 +119,16 @@ const SectionAgency = () => {
             >
               <h1 className="text-4xl number font-semibold pb-5">05.</h1>
               <span className="font-extrabold">
-                Donnez vie à vos projets pour une expérience unique.
+                {translations[language].textSectionAgencyBold3Fr}
+                {translations[language].textSectionAgencyBold3En}{" "}
               </span>
-              {
-                " Nos créations offrent une navigation intuitive, un contenu engageant et des fonctionnalités, garantissant que chaque visiteur se sent connecté à votre marque. "
-              }
+              {translations[language].textSectionAgencyBold4Fr}
+              {translations[language].textSectionAgencyBold4En}{" "}
               <span className="font-extrabold">
-                Votre site est la représentation de votre marque et de votre
-                production.
+                {translations[language].textSectionAgencyBold5Fr}
+                {translations[language].textSectionAgencyBold5En}
               </span>
-            </p>
+            </p>{" "}
           </div>
           <div className="w-80 mt-5">
             <p
@@ -138,9 +139,11 @@ const SectionAgency = () => {
               <span className="absolute h-full w-1 bg-FFF6E4 -right-14 -top-1 hidden sm:block"></span>
               <h1 className="text-4xl number font-semibold pb-5">06.</h1>
               <span className="font-extrabold">
-                {`Votre site internet n'est pas seulement une dépense.`}
+                {translations[language].textSectionAgencyBold6Fr}
+                {translations[language].textSectionAgencyBold6En}
               </span>
-              {` Il a un lien sur la conversion, nous créons des sites qui génèrent un retour. Obtenez plus de visites, plus de ventes et plus de croissance grâce à nos services. Vous ne serez pas déçus de choisir ceux-ci pour le déploiment de votre projet. Rendez-vous sur la page « Prestations ». `}
+              {translations[language].textSectionAgencyBold7Fr}
+              {translations[language].textSectionAgencyBold7En}
             </p>
           </div>
         </div>
