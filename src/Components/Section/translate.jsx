@@ -53,7 +53,7 @@ const translations = {
     textSecondSectionWithoutBold3Fr:
       " Nous nous engageons à fournir un travail de qualité. Ce que nous créons, est une interface en harmonie avec votre image de votre marque. Soyez connectés à celle-ci, car cela nous permet de mieux comprendre vos besoins. Préparez ce qui vous semble nécessaire pour votre site, pour le reste ? On s'occupe de tout.",
     // Title Agency
-    titleAgencyFr: "Notre Agency",
+    titleAgencyFr: "Notre Agence",
     // Section Agency
     welcomeAgencyFr: "Bienvenue chez",
     sloganAgencyFr: "Votre partenaire",

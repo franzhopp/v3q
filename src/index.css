@@ -309,5 +309,18 @@ textarea {
 
 
 
+.border-red-l {
+    border-left: 4px solid #C22E2E;
+}
 
+.border-red-r {
+    border-right: 4px solid #C22E2E;
+}
 
+.border-red-l-b {
+    border-left: 4px solid #FFF6E4;
+}
+
+.border-red-r-b {
+    border-right: 4px solid #FFF6E4;
+}
