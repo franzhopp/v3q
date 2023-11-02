@@ -113,6 +113,29 @@ const translations = {
       "Venez connaître son histoire en cliquant sur",
     btnMoreFr: "Découvrir",
     titleContactFr: "Contactez-nous",
+    describeContactFr:
+      "Si vous recherchez une agence digitale qui peut donner vie à votre projet numérique, qui excelle dans le design et le développement web, ne cherchez pas plus loin. Choisissez",
+    textContactFr:
+      "Contactez-nous aujourd'hui pour discuter de votre projet et découvrir comment nous pouvons vous aider à briller sur le web. Votre succès numérique est notre mission.",
+    linkTopContactFr: "Remonter à la page d'Accueil ➔",
+    // Form
+    nameFr: "Prénom",
+    surnameFr: "Nom",
+    phoneFr: "Numéro de téléphone",
+    info1Fr: "Le meilleur moyen de vous contacter ?",
+    info2Fr: "Le meilleur moment de vous contacter ?",
+    messageFr: "Écrivez-nous",
+    // Conditions
+    conditions1Fr:
+      "En cochant cette case, je certifie avoir pris connaissance et accepté les Conditions d'Utilisation et la Politique de Confidentialité.",
+    conditions2Fr:
+      "En fournissant vos informations personnelles, vous consentez à ce que",
+    conditions3Fr:
+      "collecte et traite ces données conformément à sa Politique de Confidentialité.",
+    linkConditions1Fr: "Lire la Politique de Confidentialité",
+    linkConditions2Fr: "Mentions Légales",
+    linkConditions3Fr: "Conditions d'Utilisation",
+    btnSendFr: "Envoyer",
   },
   en: {
     // Navbar + Footer
@@ -222,6 +245,29 @@ const translations = {
     textSectionTeamBioBold2LouisaEn: "Get to know her full story in the",
     btnMoreEn: "More",
     titleContactEn: "Contact Us",
+    describeContactEn:
+      "If you're looking for a digital agency to bring life to your projects and help them grow, you're at the right place! No need to search any longer, we got you. Choose",
+    textContactEn:
+      "Get in touch with us today to discuss your project and find out how we can help you stand out on the web. Your success is our mission.",
+    linkTopContactEn: "Go up to home page ➔",
+    // Form
+    nameEn: "Name",
+    surnameEn: "Surname",
+    phoneEn: "Phone number",
+    info1En: "What's the best way to contact you?",
+    info2En: "The best moment to contact you?",
+    messageEn: "Type in here",
+    // Conditions
+    conditions1En:
+      "By ticking this box, I acknowledge and accept the Terms of Use and the Privacy Policy.",
+    conditions2En:
+      "By sharing your personal informations you're agreeing to let",
+    conditions3En: "collect and use this data according to its privacy policy.",
+    conditions4En: "Read the",
+    linkConditions1En: "Privacy Policy",
+    linkConditions2En: "Legal Mentions",
+    linkConditions3En: "Terms of Use",
+    btnSendEn: "Send",
   },
 };
 

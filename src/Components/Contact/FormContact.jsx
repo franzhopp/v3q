@@ -16,9 +16,6 @@ const Form = ({ label, type, value }) => {
   const handleFocus = () => {
     setIsFocused(true);
   };
-  // const offFocusClick = () => {
-  //   setIsFocused(false);
-  // };
   const handleBlur = () => {
     if (!value) {
       setIsFocused(true);
@@ -26,7 +23,6 @@ const Form = ({ label, type, value }) => {
       setIsFocused(false);
     }
   };
-
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -34,7 +30,6 @@ const Form = ({ label, type, value }) => {
       behavior: "smooth",
     });
   };
-
   const [formData, setFormData] = useState({
     firstname: "",
     lastname: "",
@@ -46,7 +41,6 @@ const Form = ({ label, type, value }) => {
     privacy: "",
     conditions: "",
   });
-
   const [errors, setErrors] = useState({
     firstname: "",
     lastname: "",
@@ -58,7 +52,6 @@ const Form = ({ label, type, value }) => {
     privacy: "",
     conditions: "",
   });
-
   const [isLoading, setIsLoading] = useState(false);
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -207,7 +200,6 @@ const Form = ({ label, type, value }) => {
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <div className="relative pb-5">
                     <label
-                      // onClick={offFocusClick}
                       className={`mt-1 absolute left-2 transition-all duration-200 ${
                         isFocused || value
                           ? "ml-2 mt-1 text-xs text-0C3E78"
@@ -215,7 +207,8 @@ const Form = ({ label, type, value }) => {
                       }`}
                       htmlFor={label}
                     >
-                      {"Prénom"}
+                      {translations[language].nameFr}
+                      {translations[language].nameEn}
                     </label>
                     <input
                       type={type}
@@ -245,7 +238,8 @@ const Form = ({ label, type, value }) => {
                       }`}
                       htmlFor={label}
                     >
-                      {"Nom"}
+                      {translations[language].surnameFr}
+                      {translations[language].surnameEn}
                     </label>
                     <input
                       type={type}
@@ -306,7 +300,8 @@ const Form = ({ label, type, value }) => {
                     }`}
                     htmlFor={label}
                   >
-                    {"Numéro de téléphone"}
+                    {translations[language].phoneFr}
+                    {translations[language].phoneEn}
                   </label>
                   <input
                     type={"tel"}
@@ -336,7 +331,8 @@ const Form = ({ label, type, value }) => {
                     }`}
                     htmlFor={label}
                   >
-                    {"Le meilleur moyen de vous contacter ?"}
+                    {translations[language].info1Fr}
+                    {translations[language].info1En}
                   </label>
                   <input
                     type={"text"}
@@ -367,7 +363,8 @@ const Form = ({ label, type, value }) => {
                     }`}
                     htmlFor={label}
                   >
-                    {"Le meilleur moment de vous contacter ?"}
+                    {translations[language].info2Fr}
+                    {translations[language].info2En}
                   </label>
                   <input
                     type={"text"}
@@ -381,6 +378,7 @@ const Form = ({ label, type, value }) => {
                     onFocus={handleFocus}
                     onBlur={handleBlur}
                   />
+
                   {errors.info2 && (
                     <p className="text-left font-sans-serif text-red-700">
                       {errors.info2}
@@ -390,7 +388,6 @@ const Form = ({ label, type, value }) => {
 
                 <div className="relative">
                   <label
-                    // onClick={offFocusClick}
                     className={`mt-1 absolute left-2 transition-all duration-200 ${
                       isFocused || value
                         ? "ml-2 mt-1 text-xs text-0C3E78"
@@ -398,7 +395,8 @@ const Form = ({ label, type, value }) => {
                     }`}
                     htmlFor={label}
                   >
-                    {"Écrivez-nous"}
+                    {translations[language].messageFr}
+                    {translations[language].messageEn}
                   </label>
                   <textarea
                     className={`rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm ${
@@ -429,9 +427,8 @@ const Form = ({ label, type, value }) => {
                 />
                 <span className="text-black">
                   {" "}
-                  En cochant cette case, je certifie avoir pris connaissance et
-                  accepté les Conditions d'Utilisation et la Politique de
-                  Confidentialité.
+                  {translations[language].conditions1Fr}
+                  {translations[language].conditions1En}
                 </span>
                 {errors.privacy && (
                   <p className="text-left font-sans-serif text-red-700">
@@ -449,8 +446,8 @@ const Form = ({ label, type, value }) => {
                 />
                 <span className="text-black">
                   {" "}
-                  En fournissant vos informations personnelles, vous consentez à
-                  ce que{" "}
+                  {translations[language].conditions2Fr}
+                  {translations[language].conditions2En}{" "}
                   <span>
                     <img
                       src={ImgText}
@@ -458,33 +455,36 @@ const Form = ({ label, type, value }) => {
                       alt="Icône navi studio."
                     />
                   </span>
-                  collecte et traite ces données conformément à sa Politique de
-                  Confidentialité.{" "}
+                  {translations[language].conditions3Fr}
+                  {translations[language].conditions3En}{" "}
                   <NavLink
                     to="/privacy"
                     rel="noreferrer"
                     target="_blank"
                     className="underline font-extrabold text-0C3E78"
                   >
-                    Lire la Politique de Confidentialité
+                    {translations[language].linkConditions1Fr}
+                    {translations[language].linkConditions1En}
                   </NavLink>
-                  , les{" "}
+                  ,{" "}
                   <NavLink
                     to="/mentions"
                     rel="noreferrer"
                     target="_blank"
                     className="underline font-extrabold text-0C3E78"
                   >
-                    Mentions Légales
+                    {translations[language].linkConditions2Fr}
+                    {translations[language].linkConditions2En}
                   </NavLink>
-                  , et les{" "}
+                  , &{" "}
                   <NavLink
                     to="/terms"
                     rel="noreferrer"
                     target="_blank"
                     className="underline font-extrabold text-0C3E78"
                   >
-                    Conditions d'Utilisation
+                    {translations[language].linkConditions3Fr}
+                    {translations[language].linkConditions3En}
                   </NavLink>
                   .
                 </span>
