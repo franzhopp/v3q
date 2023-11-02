@@ -80,15 +80,13 @@ const Footer = () => {
 
         <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
           <div className="text-center text-black mt-8 font-semibold">
-            &copy; Ce site web a été imaginé et mis en œuvre par{" "}
-            <span className="text-FFF6E4">Mélissa</span> &{" "}
-            <span className="text-FFF6E4">Louisa</span>. Tous droits réservés en
-            vertu de la législation sur les droits d'auteur. Toute reproduction
-            est interdite.
+            &copy; {translations[language].copyFr}
+            {translations[language].copyEn}
           </div>
         </p>
         <div className="number text-sm text-center text-black pt-5">
-          Inscrivez-vous à la newletter
+          {translations[language].newletterFr}
+          {translations[language].newletterEn}
         </div>
         <form onSubmit={handleSubmit}>
           <div className="flex justify-center pt-1">
@@ -108,7 +106,8 @@ const Footer = () => {
               onSubmit={handleSubmit}
               className="rounded-tl-none rounded-bl-none rounded-tr-2xl rounded-br-2xl p-2 bg-FFF6E4 text-black font-extrabold transition"
             >
-              Valider
+              {translations[language].sendFooterFr}
+              {translations[language].sendFooterEn}
             </button>
           </div>
           <div className="flex justify-center pt-1">
@@ -254,7 +253,8 @@ const Footer = () => {
 
         <div className="flex justify-center pt-10">
           <div className="text-black font-extrabold underline">
-            Retrouvez-nous sur :
+            {translations[language].findFr}
+            {translations[language].findEn}
           </div>
         </div>
         <ul className="mt-5 flex justify-center gap-6 md:gap-8">
