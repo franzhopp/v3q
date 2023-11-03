@@ -43,8 +43,12 @@ const Rate = () => {
 
   const InformationsSitesWeb = [
     {
-      title: "Site vitrine ou maquette",
+      title: "Site vitrine",
       price: "à partir de 650€*",
+    },
+    {
+      title: "Maquette",
+      price: "à partir de 200€*",
     },
     {
       title: "Landing page",
