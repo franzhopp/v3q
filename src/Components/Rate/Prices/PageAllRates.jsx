@@ -43,7 +43,7 @@ const Rate = () => {
 
   const InformationsSitesWeb = [
     {
-      title: "Site vitrine",
+      title: "Site vitrine ou maquette",
       price: "à partir de 650€*",
     },
     {
@@ -108,12 +108,12 @@ const Rate = () => {
             data-aos-anchor-placement="top-bottom"
             className=" text-C22E2E text-center"
           >
-            <span className="absolute h-60 w-1 bg-C22E2E -left-96 bottom-3 hidden sm:block"></span>
+            <span className="absolute h-56 w-1 bg-C22E2E -left-96 bottom-1 hidden sm:block"></span>
             Dans cette page, vous trouverez{" "}
             <span className="font-extrabold">
               toutes les tarifications des services
             </span>
-            , merci de bien vouloir lire les spécificités notées.
+            .
           </p>
         </div>
       </div>

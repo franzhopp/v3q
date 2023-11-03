@@ -8,8 +8,9 @@ const translations = {
     // Page 404
     pageNotFoundFr: "Oups, mauvais chemin...",
     // Copyright
-    copyFr:
-      "Ce site web a été imaginé et mis en œuvre par Mélissa & Louisa. Tous droits réservés en vertu de la législation sur les droits d'auteur. Toute reproduction est interdite.",
+    copy1Fr: "Ce site web a été imaginé et mis en œuvre par",
+    copy2Fr:
+      "Tous droits réservés en vertu de la législation sur les droits d'auteur. Toute reproduction est interdite.",
     sendFooterFr: "Valider",
     newletterEn: "Inscrivez-vous à la newletter !",
     findFr: "Retrouvez-nous :",
@@ -61,7 +62,7 @@ const translations = {
     textSecondSectionWithoutBold3Fr:
       " Nous nous engageons à fournir un travail de qualité. Ce que nous créons, est une interface en harmonie avec votre image de votre marque. Soyez connectés à celle-ci, car cela nous permet de mieux comprendre vos besoins. Préparez ce qui vous semble nécessaire pour votre site, pour le reste ? On s'occupe de tout.",
     // Title Agency
-    titleAgencyFr: "Notre Agency",
+    titleAgencyFr: "Notre Agence",
     // Section Agency
     welcomeAgencyFr: "Bienvenue chez",
     sloganAgencyFr: "Votre partenaire",
@@ -146,8 +147,9 @@ const translations = {
     // Page 404
     pageNotFoundEn: "Oops, wrong way...",
     // Copyright :
-    copyEn:
-      "This website was designed and developed by Mélissa & Louisa. All rights reserved according to the legislation about copyrights. Any full or partial reproduction is prohibited.",
+    copy1En: "This website was designed and developed by",
+    copy2En:
+      "All rights reserved according to the legislation about copyrights. Any full or partial reproduction is prohibited.",
     newletterEn: "Subscribe to our newsletter!",
     sendFooterFr: "Send",
     findEn: "Find us on :",

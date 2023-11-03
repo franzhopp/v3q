@@ -77,11 +77,14 @@ const Footer = () => {
             className="h-auto mx-auto max-w-xs"
           />
         </div>
-
         <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
           <div className="text-center text-black mt-8 font-semibold">
-            &copy; {translations[language].copyFr}
-            {translations[language].copyEn}
+            &copy; {translations[language].copy1Fr}
+            {translations[language].copy1En}{" "}
+            <span className="text-FFF6E4 ">Mélissa</span> &{" "}
+            <span className="text-FFF6E4 ">Louisa</span>.{" "}
+            {translations[language].copy2Fr}
+            {translations[language].copy2En}
           </div>
         </p>
         <div className="number text-sm text-center text-black pt-5">
@@ -119,7 +122,6 @@ const Footer = () => {
             {status && <p>{status}</p>}
           </div>
         </form>
-
         <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
           <li>
             <NavLink to="/" className="text-black transition hover:text-0C3E78">
@@ -250,7 +252,6 @@ const Footer = () => {
             </NavLink>
           </li>
         </ul>
-
         <div className="flex justify-center pt-10">
           <div className="text-black font-extrabold underline">
             {translations[language].findFr}
