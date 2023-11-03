@@ -40,8 +40,8 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
                   value={language}
                   onChange={(e) => changeLanguageHandler(e.target.value)}
                 >
-                  <option value="fr">FR</option>
-                  <option value="en">EN</option>
+                  <option value="fr">🇫🇷</option>
+                  <option value="en">🇬🇧</option>
                 </select>
               </div>
             </li>

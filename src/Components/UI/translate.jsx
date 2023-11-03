@@ -133,8 +133,8 @@ const translations = {
     conditions3Fr:
       "collecte et traite ces données conformément à sa Politique de Confidentialité.",
     linkConditions1Fr: "Lire la Politique de Confidentialité",
-    linkConditions2Fr: "Mentions Légales",
-    linkConditions3Fr: "Conditions d'Utilisation",
+    linkConditions2Fr: "les Mentions Légales",
+    linkConditions3Fr: "les Conditions d'Utilisation",
     btnSendFr: "Envoyer",
   },
   en: {
