@@ -33,7 +33,7 @@ const ModalSearch = ({ closeModal, searchQuery }) => {
       <input
         data-aos="fade-left"
         type="text"
-        placeholder="Search..."
+        placeholder="Search"
         onKeyDown={handleSearch}
         value={searchQueryText}
         onChange={(e) => setSearchQueryText(e.target.value)}
