@@ -112,9 +112,8 @@ const Rate = () => {
             Dans cette page, vous trouverez{" "}
             <span className="font-extrabold">
               toutes les tarifications des services
-            </span>{" "}
-            , merci de bien vouloir lire{" "}
-            <span className="font-extrabold">les spécificités notées</span>.
+            </span>
+            , merci de bien vouloir lire les spécificités notées.
           </p>
         </div>
       </div>
