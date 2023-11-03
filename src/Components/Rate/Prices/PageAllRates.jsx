@@ -111,10 +111,10 @@ const Rate = () => {
             <span className="absolute h-60 w-1 bg-C22E2E -left-96 bottom-3 hidden sm:block"></span>
             Dans cette page, vous trouverez{" "}
             <span className="font-extrabold">
-              toutes les tarifications de prix des services
+              toutes les tarifications des services
             </span>{" "}
-            de notre agence, merci de bien vouloir lire les spécificités.{" "}
-            <span className="font-extrabold">notées</span>.
+            , merci de bien vouloir lire{" "}
+            <span className="font-extrabold">les spécificités notées</span>.
           </p>
         </div>
       </div>
@@ -214,16 +214,16 @@ const Rate = () => {
       </div>
       <div className="flex flex-col text-center justify-center pt-3">
         <NavLink
-          to="/devis"
-          className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
-        >
-          Découvrir Devis Gratuit ➔
-        </NavLink>
-        <NavLink
           to="/services"
           className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
         >
           Découvrir Prestations ➔
+        </NavLink>
+        <NavLink
+          to="/devis"
+          className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
+        >
+          Découvrir Devis Gratuit ➔
         </NavLink>
         <NavLink
           to="/"
