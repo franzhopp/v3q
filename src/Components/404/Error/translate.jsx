@@ -35,7 +35,7 @@ const translations = {
     cookieDescFr:
       "Ce site utilise des cookies pour améliorer son fonctionnement et votre \
     expérience. Vous pouvez les accepter ou continuer votre navigation \
-    sans les accepter. Bon visionnage ! L'équipe ",
+    sans les accepter. L'équipe vous souhaite un bon visionnage !",
     btnCookieAcceptFr: "Accepter",
     btnCookieDisableFr: "Continuer sans accepter",
     // First Section
@@ -116,7 +116,7 @@ const translations = {
     // Cookie
     cookieTitleEn: "Cookie Policy",
     cookieDescEn:
-      "This website uses cookies to improve its functions and your experience. You may allow or disable cookies. Enjoy your visit ! The Team",
+      "This website uses cookies to improve its functions and your experience. You may allow or disable cookies. Our team hope you'll enjoy your visit !",
     btnCookieAcceptEn: "Allow",
     btnCookieDisableEn: "Disable",
     // First Section
