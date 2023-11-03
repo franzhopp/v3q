@@ -109,12 +109,12 @@ const Rate = () => {
             className=" text-C22E2E text-center"
           >
             <span className="absolute h-60 w-1 bg-C22E2E -left-96 bottom-3 hidden sm:block"></span>
-            Vous trouverez{" "}
+            Dans cette page, vous trouverez{" "}
             <span className="font-extrabold">
               toutes les tarifications de prix des services
             </span>{" "}
-            de notre agence, les prix peuvent varier en fonction de{" "}
-            <span className="font-extrabold">vos besoins</span>.
+            de notre agence, merci de bien vouloir lire les spécificités.{" "}
+            <span className="font-extrabold">notées</span>.
           </p>
         </div>
       </div>
@@ -218,6 +218,12 @@ const Rate = () => {
           className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
         >
           Découvrir Devis Gratuit ➔
+        </NavLink>
+        <NavLink
+          to="/services"
+          className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
+        >
+          Découvrir Prestations ➔
         </NavLink>
         <NavLink
           to="/"
