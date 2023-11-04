@@ -178,7 +178,7 @@ const SectionTeam = () => {
                     <span className="text-C22E2E underline">
                       <NavLink to="/designer">Designer</NavLink>
                     </span>{" "}
-                    » section.
+                    ».
                   </span>
                 </p>
               </div>
@@ -292,7 +292,7 @@ const SectionTeam = () => {
                       <span className="text-C22E2E underline">
                         <NavLink to="/webdev">Web Developer</NavLink>
                       </span>{" "}
-                      » section.
+                      ».
                     </span>
                   </p>
                 </div>

@@ -140,7 +140,7 @@ const SectionAgency = () => {
               <h1 className="text-4xl number font-semibold pb-5">06.</h1>
               <span className="font-extrabold">
                 {translations[language].textSectionAgencyBold6Fr}
-                {translations[language].textSectionAgencyBold6En}
+                {translations[language].textSectionAgencyBold6En}{" "}
               </span>
               {translations[language].textSectionAgencyBold7Fr}
               {translations[language].textSectionAgencyBold7En}

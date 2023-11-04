@@ -7,6 +7,19 @@
 @tailwind components;
 @tailwind utilities;
 
+.testtt {
+    animation: testa 2s infinite;
+}
+
+@keyframes testa {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+
 html,
 body {
     overflow-x: hidden;
