@@ -39,6 +39,11 @@ textarea {
     cursor: url('./Cursor/Cursor_3.svg'), text !important;
 }
 
+.test {
+    border-image: url('./assets/pattern-portfolio.png') 10;
+    border-width: 0 0 0 10px;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -307,4 +312,3 @@ textarea {
         transform: rotate(0);
     }
 }
-

@@ -27,7 +27,7 @@ const Services = () => {
     <>
       <section className="bg-FFF6E4">
         <NavbarServices />
-        <div className="border-l-4 border-C22E2E">
+        <div className="test">
           <h1
             data-aos="fade-right"
             className="text-C22E2E font-inter text-center text-4xl mt-20 mb-10 font-extrabold sm:text-5xl md:text-6xl"
