@@ -40,9 +40,10 @@ textarea {
 }
 
 .test {
-    border-image: url('./assets/pattern-portfolio.png') 10;
+    border-image: linear-gradient(#FFF6E4, #C22E2E) 5;
     border-width: 0 0 0 10px;
 }
+
 
 ::-webkit-scrollbar {
     width: 10px;

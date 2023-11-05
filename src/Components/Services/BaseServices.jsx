@@ -5,6 +5,8 @@ import ImgService2 from "../../assets/home2.png";
 import ImgService3 from "../../assets/home3.png";
 import ImgService4 from "../../assets/home4.png";
 import Footer from "../Footer/Footer";
+import ButtonServices from "../UI/Button/ButtonServices";
+import ButtonDevis from "../UI/Button/ButtonFormDevis";
 
 const Services = () => {
   const text = "Websites";
@@ -198,6 +200,51 @@ const Services = () => {
               </p>
             </div>
           </div>
+          <ButtonServices />
+        </div>
+        <div className="bg-0C3E78 pt-28 pb-28 px-4 sm:px-6 lg:px-8">
+          <h3
+            className="text-center font-extrabold text-3xl text-FFF6E4 px-5"
+            data-aos="fade-left"
+          >
+            Des offres adaptées à vos besoins
+          </h3>
+          <div className="mt-8 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
+            <div className="min-h-500 w-80 rounded-lg mt-5">
+              <p
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+                className="mt-2 text-FFF6E4 px-5"
+              >
+                <span className="absolute h-full w-1 bg-FFF6E4 -left-14 -top-1 hidden sm:block"></span>
+                Nous mettons notre expertise à votre service, grâce à notre
+                diagnostic personnalisé. Découvrez des solutions sur mesure
+                adaptées à votre business & situation.
+              </p>
+            </div>
+            <div className="min-h-500 w-80 mt-5">
+              <p
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+                className="mt-2 text-FFF6E4 px-5"
+              >
+                Vous disposez d'un suivi de production complet, notre équipe
+                reste disponible et à votre écoute 24/7. Nous travaillons main
+                dans la main avec nos clients.
+              </p>
+            </div>
+            <div className="min-h-500 w-80 mt-5">
+              <p
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+                className="mt-2 text-FFF6E4 px-5"
+              >
+                Obtenez un devis gratuit dès maintenant et commencez votre
+                aventure dans le monde du digital à nos côtés !
+              </p>
+            </div>
+          </div>
+          <ButtonDevis />
         </div>
         <DetailsServices />
       </section>
