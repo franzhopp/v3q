@@ -150,13 +150,13 @@ const Services = () => {
                     .
                   </p>
                 </div>
-                <div className="flex justify-center mt-10">
+                <div className="flex justify-center pt-16">
                   <img src={ImgService4} alt="Icône Services" />
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex justify-center mt-16">
+          <div className="flex justify-center pt-16">
             <svg
               className="animate-formbounce"
               width="100"
@@ -188,7 +188,7 @@ const Services = () => {
               </g>
             </svg>
           </div>
-          <div className="flex justify-center pt-10">
+          <div className="flex justify-center pt-10 pb-16">
             <div className="w-96 sm:w-1/3 px-5">
               <p
                 data-aos="fade-up"
@@ -200,7 +200,7 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <ButtonServices />
+          {/* <ButtonServices /> */}
         </div>
         <div className="bg-0C3E78 pt-28 pb-28 px-4 sm:px-6 lg:px-8">
           <h3
