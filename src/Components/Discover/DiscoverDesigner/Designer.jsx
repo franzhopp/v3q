@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import ModalImage from "react-modal-image";
 import NavbarDiscoverDesigner from "../../Navigation/NavbarDiscover/DiscoverDesignerNavbar";
 import AvatarDesigner from "../../UI/Avatar/TemplateAvatarDesigner";
 import ImgText from "../../../assets/logo-4.png";
@@ -136,10 +137,9 @@ const DiscoverDesigner = () => {
           </div>
 
           <div className="mt-10 sm:mt-56">
-            <img
-              data-aos="fade-right"
-              src={ImageMelissa}
-              alt="Picture Mélissa"
+            <ModalImage
+              small={ImageMelissa}
+              large={ImageMelissa}
               className="h-80 w-80 sm:h-96 sm:w-96 transition-opacity duration-500 hover:opacity-50"
             />
             <p className="flex text-black text-xs">
@@ -155,13 +155,13 @@ const DiscoverDesigner = () => {
       <div class="bg-FFF6E4 flex justify-center">
         <p class="text-center text-black sm:text-xl md:text-2xl lg:text-3xl px-8">
           UX/UI DESIGNER | GRAPHIC DESIGNER | ILLUSTRATOR | FASHION DESIGNER
-        </p>
+        </p>{" "}
       </div>
       <div className="bg-FFF6E4 flex justify-center pt-20">
         <img
           data-aos="fade-in"
           src={LogoMelissa}
-          alt="Picture Louisa"
+          alt="Picture Mélissa"
           className="h-80 w-80 transition-opacity duration-500 hover:opacity-50"
         />
       </div>

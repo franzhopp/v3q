@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import ModalImage, { Lightbox } from "react-modal-image";
+import ModalImage from "react-modal-image";
 import NavbarDiscoverWebDevelopper from "../../Navigation/NavbarDiscover/DiscoverWebDevelopperNavbar";
 import Avatar from "../../UI/Avatar/TemplateAvatarWebDeveloper";
 import ImageLouisa from "../../../assets/picture-louisa-1.png";
@@ -12,16 +12,6 @@ import LogoSnap from "../../../assets/snapchat.png";
 import Footer from "../../Footer/Footer";
 
 const DiscoverWebDeveloper = () => {
-  const [isLightboxOpen, setLightboxOpen] = useState(false);
-
-  const openLightbox = () => {
-    setLightboxOpen(true);
-  };
-
-  const closeLightbox = () => {
-    setLightboxOpen(false);
-  };
-
   useEffect(() => {
     const numStars = 20;
     const container = document.getElementById("star-container");
@@ -255,19 +245,11 @@ const DiscoverWebDeveloper = () => {
           </div>
         </div>
         <div className="mt-5 sm:mt-14 pb-5">
-          {/* <img
-            data-aos="fade-in"
-            onClick={openLightbox}
-            src={ImageLouisa}
-            alt="Picture Louisa"
+          <ModalImage
+            small={ImageLouisa}
+            large={ImageLouisa}
             className="h-80 w-80 sm:h-96 sm:w-96 transition-opacity duration-500 hover:opacity-50"
-          /> */}
-            <ModalImage
-              small={ImageLouisa}
-              large={ImageLouisa}
-              className="h-80 w-80 sm:h-96 sm:w-96 transition-opacity duration-500 hover:opacity-50"
-            />
-        
+          />
           <p className="flex text-black text-xs">
             📸 : Louisa.{" "}
             <span className="ml-1"> Maison de Victor Hugo, 75004 Paris</span>.

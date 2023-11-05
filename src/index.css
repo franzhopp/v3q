@@ -316,4 +316,9 @@ textarea {
 .__react_modal_image__header {
     padding-top: 15px;
     padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, -0.3) !important;
+}
+
+.__react_modal_image__icon_menu {
+    margin-right: 10px;
 }
