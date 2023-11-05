@@ -61,10 +61,10 @@ const Rate = () => {
       details: ["5 pages — À partir de 300€", "10 pages — À partir de 650€"],
     },
     {
-      title: "Maquette",
+      title: "Maquette graphique",
       price: "à partir de 250€*",
       details: [
-        "2 pages de maquette graphique — À partir de 200€",
+        "2 pages — À partir de 200€",
         "5 pages avec logo — À partir de 450€",
       ],
     },
@@ -166,7 +166,7 @@ const Rate = () => {
                     {info.price}
                   </div>
                 </div>
-                <div className="text-FFF6E4">
+                <div className="text-FFF6E4 text-center sm:text-left">
                   <button onClick={() => toggleSubList(info.title)}>
                     <div className="flex">
                       Voir plus <IoIosArrowDown className="mt-1  ml-1" />
