@@ -27,12 +27,12 @@ const Services = () => {
   ];
   return (
     <>
+      <NavbarServices />
       <section className="bg-FFF6E4">
-        <NavbarServices />
         <div className="test">
           <h1
             data-aos="fade-right"
-            className="text-C22E2E font-inter text-center text-4xl mt-20 mb-10 font-extrabold sm:text-5xl md:text-6xl"
+            className="text-C22E2E font-inter text-center text-4xl pt-20 pb-10 font-extrabold sm:text-5xl md:text-6xl"
           >
             {letters.map((letter, index) => (
               <span
