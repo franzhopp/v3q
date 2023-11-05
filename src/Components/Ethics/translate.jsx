@@ -138,6 +138,7 @@ const translations = {
     linkConditions3Fr: "les Conditions d'Utilisation",
     btnSendFr: "Envoyer",
     // Ethics
+    titleNavEthicsFr: "Entre les fondations d'une agence et les valeurs qui sont nées.",
     title1EthicsFr: "Engagement & Confiance",
     describe1EthicsFr:
       "Nous prenons soin de nos collaborateurs et de notre entreprise,",
@@ -281,6 +282,7 @@ const translations = {
     linkConditions3En: "Terms of Use",
     btnSendEn: "Send",
     // Ethics
+    titleNavEthicsEn: "Greet the values who's been defining our company since its foundation.",
     title1EthicsFr: "Trust & Commitment",
     describe1EthicsEn:
       "We give a particular attention to our collaborators & their company,",

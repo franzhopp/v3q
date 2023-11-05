@@ -167,7 +167,7 @@ const Rate = () => {
                   <div className="text-FFF6E4 text-center sm:text-left">
                     <button onClick={() => toggleSubList(info.title)}>
                       <div className="flex">
-                        Voir plus <IoIosArrowDown className="mt-1  ml-1" />
+                        En savoir plus <IoIosArrowDown className="mt-1  ml-1" />
                       </div>
                     </button>
                     {openStates[info.title] && (
@@ -245,7 +245,7 @@ const Rate = () => {
                   <div className="text-FFF6E4 text-center sm:text-left">
                     <button onClick={() => toggleSubList(info.title)}>
                       <div className="flex">
-                        Voir plus <IoIosArrowDown className="mt-1  ml-1" />
+                        En savoir plus <IoIosArrowDown className="mt-1  ml-1" />
                       </div>
                     </button>
                     {openStates[info.title] && (
