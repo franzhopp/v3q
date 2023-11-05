@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { Lightbox } from "react-modal-image";
 import NavbarDiscoverWebDevelopper from "../../Navigation/NavbarDiscover/DiscoverWebDevelopperNavbar";
 import Avatar from "../../UI/Avatar/TemplateAvatarWebDeveloper";
 import ImageLouisa from "../../../assets/picture-louisa-1.png";
@@ -11,6 +12,16 @@ import LogoSnap from "../../../assets/snapchat.png";
 import Footer from "../../Footer/Footer";
 
 const DiscoverWebDeveloper = () => {
+  const [isLightboxOpen, setLightboxOpen] = useState(false);
+
+  const openLightbox = () => {
+    setLightboxOpen(true);
+  };
+
+  const closeLightbox = () => {
+    setLightboxOpen(false);
+  };
+
   useEffect(() => {
     const numStars = 20;
     const container = document.getElementById("star-container");
@@ -247,6 +258,7 @@ const DiscoverWebDeveloper = () => {
         <div className="mt-5 sm:mt-14 pb-5">
           <img
             data-aos="fade-in"
+            onClick={openLightbox}
             src={ImageLouisa}
             alt="Picture Louisa"
             className="h-80 w-80 sm:h-96 sm:w-96 transition-opacity duration-500 hover:opacity-50"
@@ -255,6 +267,15 @@ const DiscoverWebDeveloper = () => {
             📸 : Louisa.{" "}
             <span className="ml-1"> Maison de Victor Hugo, 75004 Paris</span>.
           </p>
+
+          {isLightboxOpen && (
+            <Lightbox
+              medium={ImageLouisa}
+              large={ImageLouisa}
+              alt="Just a hero but not heroes"
+              onClose={closeLightbox}
+            />
+          )}
         </div>
         <div
           data-aos="fade-up"

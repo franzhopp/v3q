@@ -53,6 +53,9 @@ dependencies:
   react-modal:
     specifier: ^3.16.1
     version: 3.16.1(react-dom@18.2.0)(react@18.2.0)
+  react-modal-image:
+    specifier: ^2.6.0
+    version: 2.6.0
   react-router-dom:
     specifier: ^6.15.0
     version: 6.15.0(react-dom@18.2.0)(react@18.2.0)
@@ -3049,8 +3052,7 @@ packages:
       shebang-command: 2.0.0
       which: 2.0.2
 
-  /css-selector-tokeni {translations[language].navAgence}
-                  {translations[language].navAgency}@0.8.0:
+  /css-selector-tokenizer@0.8.0:
     resolution: {integrity: sha512-Jd6Ig3/pe62/qe5SBPTN8h8LeUg/pT4lLgtavPf7updwwHpvFzxvOQBHYj2LZDMjUnBzgvIUSjRcf6oT5HzHFg==}
     dependencies:
       cssesc: 3.0.0
@@ -3070,8 +3072,7 @@ packages:
     engines: {node: '>=16.9.0'}
     dependencies:
       colord: 2.9.3
-      css-selector-tokeni {translations[language].navAgence}
-                  {translations[language].navAgency}: 0.8.0
+      css-selector-tokenizer: 0.8.0
       postcss: 8.4.28
       postcss-js: 4.0.1(postcss@8.4.28)
       tailwindcss: 3.3.3
@@ -3259,8 +3260,7 @@ packages:
       internal-slot: 1.0.5
       is-array-buffer: 3.0.2
       is-callable: 1.2.7
-      is-negative- {translations[language].navAgence}
-                  {translations[language].navAgency}o: 2.0.2
+      is-negative-zero: 2.0.2
       is-regex: 1.1.4
       is-shared-array-buffer: 1.0.2
       is-string: 1.0.7
@@ -3639,8 +3639,7 @@ packages:
     dev: true
 
   /flatted@3.2.7:
-    resolution: {integrity: sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsb {translations[language].navAgence}
-                  {translations[language].navAgency}TONyUB5pefh5TtjQ==}
+    resolution: {integrity: sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==}
     dev: true
 
   /flow-enums-runtime@0.0.5:
@@ -4056,8 +4055,7 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
-  /is-negative- {translations[language].navAgence}
-                  {translations[language].navAgency}o@2.0.2:
+  /is-negative-zero@2.0.2:
     resolution: {integrity: sha512-dqJvarLawXsFbNDeJW7zAz8ItJ9cd28YufuuFzh0G8pNHjJMnY08Dv7sYX2uF5UpQOwieAeOExEYAWWfu7ZZUA==}
     engines: {node: '>= 0.4'}
     dev: true
@@ -5483,6 +5481,10 @@ packages:
     resolution: {integrity: sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==}
     dev: false
 
+  /react-modal-image@2.6.0:
+    resolution: {integrity: sha512-NNc1xPKzFAn0VsNMdJ8NXt6c54aL/z0fcoYmw9qn4SBUONdGl+8LOQ0sTfo0wtdzcjLiby/ncloHcAL+UI+wIA==}
+    dev: false
+
   /react-modal@3.16.1(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-VStHgI3BVcGo7OXczvnJN7yT2TWHJPDXZWyI/a0ssFNhGZWsPmB8cF0z33ewDXq4VfYMO1vXgiv/g8Nj9NDyWg==}
     engines: {node: '>=8'}
@@ -6336,8 +6338,7 @@ packages:
     dev: false
 
   /typed-array-buffer@1.0.0:
-    resolution: {integrity: sha512-Y8KTSIglk9O {translations[language].navAgence}
-                  {translations[language].navAgency}8zywiIHG/kmQ7KWyjseXs1CbSo8vC42w7hg2HgYTxSWwP0+is7bWDc1H+Fo026CpHFwm8tkw==}
+    resolution: {integrity: sha512-Y8KTSIglk9OZEr8zywiIHG/kmQ7KWyjseXs1CbSo8vC42w7hg2HgYTxSWwP0+is7bWDc1H+Fo026CpHFwm8tkw==}
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
