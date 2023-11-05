@@ -241,17 +241,20 @@ const Rate = () => {
                     {info.price}
                   </div>
                 </div>
-                <div className="text-FFF6E4">
+                <div className="text-FFF6E4 text-center sm:text-left">
                   <button onClick={() => toggleSubList(info.title)}>
                     <div className="flex">
                       Voir plus <IoIosArrowDown className="mt-1  ml-1" />
                     </div>
                   </button>
                   {openStates[info.title] && (
-                    <ul className="mt-2">
+                    <ul data-aos="fade-left" className="mt-2 font-arial">
                       {info.details.map((detail, detailIndex) => (
                         <li key={detailIndex}>{detail}</li>
                       ))}
+                      <a href="/devis" className="font-inter underline">
+                        Demander un devis gratuit
+                      </a>
                     </ul>
                   )}
                 </div>
@@ -270,24 +273,24 @@ const Rate = () => {
         </div>
       </div>
       <div className="flex flex-col text-center justify-center pt-3">
-        <NavLink
-          to="/services"
+        <a
+          href="/services"
           className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
         >
           Découvrir Prestations ➔
-        </NavLink>
-        <NavLink
-          to="/devis"
+        </a>
+        <a
+          href="/devis"
           className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
         >
           Découvrir Devis Gratuit ➔
-        </NavLink>
-        <NavLink
-          to="/"
+        </a>
+        <a
+          href="/"
           className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
         >
           Retourner à la page d'Accueil ➔
-        </NavLink>
+        </a>
       </div>
       <div className="pb-20"></div>
       <Footer />
