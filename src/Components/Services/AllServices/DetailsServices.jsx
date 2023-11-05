@@ -53,7 +53,7 @@ const DetailsServices = () => {
           </div>
         </div>
       </div>
-      <div className="test">
+      <div>
         <div className="pb-10">
           <div className="flex justify-center pt-20">
             <svg
