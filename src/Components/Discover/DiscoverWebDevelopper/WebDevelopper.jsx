@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Lightbox } from "react-modal-image";
+import ModalImage, { Lightbox } from "react-modal-image";
 import NavbarDiscoverWebDevelopper from "../../Navigation/NavbarDiscover/DiscoverWebDevelopperNavbar";
 import Avatar from "../../UI/Avatar/TemplateAvatarWebDeveloper";
 import ImageLouisa from "../../../assets/picture-louisa-1.png";
@@ -254,29 +254,25 @@ const DiscoverWebDeveloper = () => {
             </div>
           </div>
         </div>
-
         <div className="mt-5 sm:mt-14 pb-5">
-          <img
+          {/* <img
             data-aos="fade-in"
             onClick={openLightbox}
             src={ImageLouisa}
             alt="Picture Louisa"
             className="h-80 w-80 sm:h-96 sm:w-96 transition-opacity duration-500 hover:opacity-50"
-          />
+          /> */}
+            <ModalImage
+              small={ImageLouisa}
+              large={ImageLouisa}
+              className="h-80 w-80 sm:h-96 sm:w-96 transition-opacity duration-500 hover:opacity-50"
+            />
+        
           <p className="flex text-black text-xs">
             📸 : Louisa.{" "}
             <span className="ml-1"> Maison de Victor Hugo, 75004 Paris</span>.
           </p>
-
-          {isLightboxOpen && (
-            <Lightbox
-              medium={ImageLouisa}
-              large={ImageLouisa}
-              alt="Just a hero but not heroes"
-              onClose={closeLightbox}
-            />
-          )}
-        </div>
+        </div>{" "}
         <div
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
