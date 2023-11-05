@@ -64,7 +64,7 @@ const Rate = () => {
       title: "Maquette graphique",
       price: "à partir de 250€*",
       details: [
-        "2 pages — À partir de 200€",
+        "2 pages — À partir de 250€",
         "5 pages avec logo — À partir de 450€",
       ],
     },
@@ -135,7 +135,7 @@ const Rate = () => {
             data-aos-anchor-placement="top-bottom"
             className=" text-C22E2E text-center"
           >
-            <span className="absolute h-56 w-1 bg-C22E2E -left-96 bottom-1 hidden sm:block"></span>
+            {/* <span className="absolute h-56 w-1 bg-C22E2E -left-96 bottom-1 hidden sm:block"></span> */}
             Dans cette page, vous trouverez{" "}
             <span className="font-extrabold">
               toutes les tarifications des services
