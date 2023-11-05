@@ -200,7 +200,7 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className="flex justify-center sm:justify-end relative right-20 top-20 sm:right-96">
+          <div className="flex justify-center sm:justify-end relative right-24 top-20 sm:right-96">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="86"
