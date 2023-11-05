@@ -36,14 +36,15 @@ const EthicsPage = () => {
                 {translations[language].describe1EthicsEn}
                 <span className="font-extrabold">
                   {" "}
-                  en nous assurant de les faire grandir et de les développer sur
-                  le long terme.
+                  {translations[language].describe1BoldEthicsFr}
+                  {translations[language].describe1BoldEthicsEn}
                 </span>{" "}
-                Nous nous consacrons à la réussite de nos collaborateurs et à
-                faire de notre entreprise un endroit où il fait bon travailler.
+                {translations[language].describeWithoutBold1Fr}
+                {translations[language].describeWithoutBold1En}
                 <span className="font-extrabold">
                   {" "}
-                  L'éthique est au coeur de notre travail et est notre priorité.
+                  {translations[language].describe1Bold1Fr}
+                  {translations[language].describe1Bold1En}
                 </span>
               </p>
             </div>
@@ -57,7 +58,8 @@ const EthicsPage = () => {
               02.
             </h2>
             <p className="text-black text-xl font-extrabold mb-5">
-              Satisfaction client
+              {translations[language].title2EthicsFr}
+              {translations[language].title2EthicsEn}
             </p>
 
             <div className="w-72">
@@ -66,13 +68,14 @@ const EthicsPage = () => {
                 data-aos-anchor-placement="top-bottom"
                 className="text-black"
               >
-                Nous nous consacrons entièrement au succès et au développement à
-                long terme de nos clients et collaborateurs,{" "}
+                {translations[language].describe2EthicsFr}
+                {translations[language].describe2EthicsEn}{" "}
                 <span className="font-extrabold">
-                  afin de leur fournir des résultats mesurables et de qualité
+                  {translations[language].describe2BoldEthicsFr}
+                  {translations[language].describe2BoldEthicsEn}
                 </span>
-                . Satisfaire nos clients et dépasser leurs attentes, est notre
-                premier objectif.
+                {translations[language].describeWithoutBold2Fr}
+                {translations[language].describeWithoutBold2En}
               </p>
             </div>
           </div>
@@ -91,13 +94,16 @@ const EthicsPage = () => {
                 data-aos-anchor-placement="top-bottom"
                 className="text-black"
               >
-                Nous aimons ce que nous faisons et ce que nous représentons.
-                Nous nous consacrons entièrement{" "}
+                {translations[language].describe3EthicsFr}
+                {translations[language].describe3EthicsEn}{" "}
                 <span className="font-extrabold">
-                  au succès de nos clients et de nos collaborateurs.{" "}
+                  {translations[language].describe3BoldEthicsFr}
+                  {translations[language].describe3BoldEthicsEn}{" "}
                 </span>
-                Nous déployons tous les efforts nécessaires pour améliorer nos
-                performances.
+                {translations[language].describe3Bold1Fr}
+                {translations[language].describe3Bold1En}
+                {translations[language].describeWithoutBold3Fr}
+                {translations[language].describeWithoutBold3En}
                 <span className="absolute h-72 w-1 bg-E18AB0 -right-20 bottom-10 hidden sm:block"></span>
               </p>
             </div>

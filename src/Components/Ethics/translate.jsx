@@ -138,7 +138,9 @@ const translations = {
     linkConditions3Fr: "les Conditions d'Utilisation",
     btnSendFr: "Envoyer",
     // Ethics
-    titleNavEthicsFr: "Entre les fondations d'une agence et les valeurs qui sont nées.",
+    titleNavEthicsFr:
+      "Entre les fondations d'une agence et les valeurs qui sont nées.",
+    // 1
     title1EthicsFr: "Engagement & Confiance",
     describe1EthicsFr:
       "Nous prenons soin de nos collaborateurs et de notre entreprise,",
@@ -148,6 +150,22 @@ const translations = {
       "Nous nous consacrons à la réussite de nos collaborateurs et à faire de notre entreprise un endroit où il fait bon travailler.",
     describe1Bold1Fr:
       "L'éthique est au coeur de notre travail et est notre priorité.",
+    // 2
+    title2EthicsFr: "Satisfaction client",
+    describe2EthicsFr:
+      "Nous nous consacrons entièrement au succès et au développement à long terme de nos clients et collaborateurs",
+    describe2BoldEthicsFr:
+      "afin de leur fournir des résultats mesurables et de qualité.",
+    describeWithoutBold2Fr:
+      " Satisfaire nos clients et dépasser leurs attentes, est notre premier objectif.",
+    // 3
+    title3EthicsFr: "Passion",
+    describe3EthicsFr:
+      "Nous aimons ce que nous faisons et ce que nous représentons. Nous nous consacrons entièrement",
+    describe3BoldEthicsFr: "au succès de nos clients et de nos collaborateurs.",
+    describeWithoutBold3Fr:
+      "Nous déployons tous les efforts nécessaires pour améliorer nos performances.",
+    titleWorkEthicsFr: "Environnement de travail",
   },
   en: {
     // Navbar + Footer
@@ -282,7 +300,8 @@ const translations = {
     linkConditions3En: "Terms of Use",
     btnSendEn: "Send",
     // Ethics
-    titleNavEthicsEn: "Greet the values who's been defining our company since its foundation.",
+    titleNavEthicsEn:
+      "Greet the values who's been defining our company since its foundation.",
     title1EthicsFr: "Trust & Commitment",
     describe1EthicsEn:
       "We give a particular attention to our collaborators & their company,",
@@ -292,6 +311,19 @@ const translations = {
       "We dedicate ourselves to our collaborator's success & we are always insuring that our company is a great and fun place to work at!",
     describe1Bold1En:
       "Ethics are the key to a good quality work and we make sure it's a priority.",
+    // 2
+    title2EthicsEn: "Customer's satisfaction",
+    describe2EthicsEn:
+      "We dedicate ourselves fully to our customer's success & growth, we provide quality results that are built to last.",
+    describe2BoldEthicsEn: "Our customer's satisfaction is our priority,",
+    describeWithoutBold2En: "our job is to exceed your expectations.",
+    // 3
+    title3EthicsEn: "Passion",
+    describe3EthicsEn: "We love what we do and what we represent.",
+    describe3BoldEthicsEn:
+      "What drives us is our passion and we use that as a way to get better and better with time,",
+    describeWithoutBold3En:
+      "passion and hard work is our definition of success.",
   },
 };
 

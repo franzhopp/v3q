@@ -554,8 +554,9 @@ const NavbarEthics = () => {
           </motion.span>
         </h1>
         <div className="w-full sm:w-1/2">
-          <span className="block pt-10 text-base sm:text-4xl text-FFF6E4 font-extrabold ">
-            Entre les fondations d'une agence et les valeurs qui sont nées.
+          <span className="block pt-10 text-base sm:text-4xl text-FFF6E4 font-extrabold">
+            {translations[language].titleNavEthicsFr}
+            {translations[language].titleNavEthicsEn}
           </span>
         </div>
       </div>

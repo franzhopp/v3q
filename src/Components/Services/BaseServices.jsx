@@ -150,7 +150,7 @@ const Services = () => {
                     .
                   </p>
                 </div>
-                <div className="flex justify-center pt-16">
+                <div className="flex justify-center mt-10">
                   <img src={ImgService4} alt="Icône Services" />
                 </div>
               </div>
