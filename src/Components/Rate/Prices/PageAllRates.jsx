@@ -2,8 +2,21 @@ import { NavLink } from "react-router-dom";
 import Footer from "../../Footer/Footer";
 import NavbarPages from "../../Navigation/PagesNavbar/PagesNavbar";
 import TitleRate from "../../UI/Title/TitleRate";
+import { useEffect, useState } from "react";
+import { IoIosArrowDown } from "react-icons/io";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Rate = () => {
+  const [openStates, setOpenStates] = useState({});
+
+  const toggleSubList = (category) => {
+    setOpenStates((prevOpenStates) => ({
+      ...prevOpenStates,
+      [category]: !prevOpenStates[category],
+    }));
+  };
+
   const text = "Sites Web";
   const letters = text.split("");
   const animationConfig = [
@@ -45,10 +58,15 @@ const Rate = () => {
     {
       title: "Site vitrine",
       price: "à partir de 650€*",
+      details: ["5 pages — À partir de 300€", "10 pages — À partir de 650€"],
     },
     {
       title: "Maquette",
-      price: "à partir de 200€*",
+      price: "à partir de 250€*",
+      details: [
+        "2 pages de maquette graphique — À partir de 200€",
+        "5 pages avec logo — À partir de 450€",
+      ],
     },
     {
       title: "Landing page",
@@ -82,6 +100,11 @@ const Rate = () => {
       price: "à partir de 150€*",
     },
   ];
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, [openStates]);
 
   return (
     <section className="bg-FFF6E4">
@@ -143,6 +166,23 @@ const Rate = () => {
                     {info.price}
                   </div>
                 </div>
+                <div className="text-FFF6E4">
+                  <button onClick={() => toggleSubList(info.title)}>
+                    <div className="flex">
+                      Voir plus <IoIosArrowDown className="mt-1  ml-1" />
+                    </div>
+                  </button>
+                  {openStates[info.title] && (
+                    <ul data-aos="fade-left" className="mt-2 font-arial">
+                      {info.details.map((detail, detailIndex) => (
+                        <li key={detailIndex}>{detail}</li>
+                      ))}
+                      <a href="/devis" className="font-inter underline">
+                        Demander un devis gratuit
+                      </a>
+                    </ul>
+                  )}
+                </div>
               </div>
             </div>
           </div>
@@ -200,6 +240,20 @@ const Rate = () => {
                   >
                     {info.price}
                   </div>
+                </div>
+                <div className="text-FFF6E4">
+                  <button onClick={() => toggleSubList(info.title)}>
+                    <div className="flex">
+                      Voir plus <IoIosArrowDown className="mt-1  ml-1" />
+                    </div>
+                  </button>
+                  {openStates[info.title] && (
+                    <ul className="mt-2">
+                      {info.details.map((detail, detailIndex) => (
+                        <li key={detailIndex}>{detail}</li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               </div>
             </div>
