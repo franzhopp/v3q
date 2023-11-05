@@ -70,7 +70,7 @@ const SectionTeam = () => {
   ];
 
   return (
-    <section className="bg-FFF6E4 pt-14 border-red-l border-red-r">
+    <section className="bg-FFF6E4 pt-14 test">
       <div className="flex justify-center mb-6">
         <div className="w-4/5 sm:w-1/2">
           <h3
