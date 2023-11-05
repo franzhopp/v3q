@@ -188,7 +188,7 @@ const Services = () => {
               </g>
             </svg>
           </div>
-          <div className="flex justify-center pt-10 pb-16">
+          <div className="flex justify-center pt-16 pb-16">
             <div className="w-96 sm:w-1/3 px-5">
               <p
                 data-aos="fade-up"
