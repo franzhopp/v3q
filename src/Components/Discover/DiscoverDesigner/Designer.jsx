@@ -136,7 +136,7 @@ const DiscoverDesigner = () => {
             </div>
           </div>
 
-          <div className="mt-10 sm:mt-56">
+          <div data-aos="fade-in" className="mt-10 sm:mt-56">
             <ModalImage
               small={ImageMelissa}
               large={ImageMelissa}

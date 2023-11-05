@@ -244,7 +244,7 @@ const DiscoverWebDeveloper = () => {
             </div>
           </div>
         </div>
-        <div className="mt-5 sm:mt-14 pb-5">
+        <div data-aos="fade-in" className="mt-5 sm:mt-14 pb-5">
           <ModalImage
             small={ImageLouisa}
             large={ImageLouisa}
