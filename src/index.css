@@ -44,6 +44,11 @@ textarea {
     border-width: 0 0 0 10px;
 }
 
+.test2 {
+    border-image: linear-gradient(#FFF6E4, #E18AB0) 5;
+    border-width: 0 0 0 10px;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;

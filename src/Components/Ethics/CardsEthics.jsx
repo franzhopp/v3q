@@ -1,3 +1,5 @@
+import translations from "./translate.jsx";
+import { useLanguage } from "../../context/LanguageProvider.jsx";
 import { NavLink } from "react-router-dom";
 import NavbarEthics from "../Navigation/EthicsNavbar/EthicsNavbar";
 import ImgMac from "../../assets/bg-ethics-mac.png";
@@ -5,6 +7,7 @@ import ImgText from "../../assets/logo-5.png";
 import Footer from "../Footer/Footer";
 
 const EthicsPage = () => {
+  const { language } = useLanguage();
   return (
     <section className="bg-FFF6E4">
       <NavbarEthics />
@@ -19,7 +22,8 @@ const EthicsPage = () => {
             </h2>
 
             <p className="text-black text-xl font-extrabold mb-5">
-              Engagement & Confiance
+              {translations[language].title1EthicsFr}
+              {translations[language].title1EthicsEn}
             </p>
             <div className="w-72">
               <p
@@ -28,7 +32,8 @@ const EthicsPage = () => {
                 className="text-black"
               >
                 <span className="absolute h-72 w-1 bg-E18AB0 -left-20 bottom-10 hidden sm:block"></span>
-                Nous prenons soin de nos collaborateurs et de notre entreprise,
+                {translations[language].describe1EthicsFr}
+                {translations[language].describe1EthicsEn}
                 <span className="font-extrabold">
                   {" "}
                   en nous assurant de les faire grandir et de les développer sur
