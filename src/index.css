@@ -42,21 +42,7 @@ textarea {
 .test {
     border-image: linear-gradient(#FFF6E4, #C22E2E) 5;
     border-width: 0 0 0 10px;
-    animation: gradientAnimation 4s infinite linear;
 }
-
-@keyframes gradientAnimation {
-  0% {
-    border-image-source: linear-gradient(#FFF6E4, #C22E2E) ;
-  }
-  50% {
-    border-image-source: linear-gradient(#C22E2E, #FFF6E4) ;
-  }
-  100% {
-    border-image-source: linear-gradient(#FFF6E4, #C22E2E) ;
-  }
-}
-
 
 ::-webkit-scrollbar {
     width: 10px;
