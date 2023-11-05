@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import ModalImage from "react-modal-image";
 import NavbarDiscoverWebDevelopper from "../../Navigation/NavbarDiscover/DiscoverWebDevelopperNavbar";
@@ -10,9 +10,12 @@ import LogoInsta from "../../../assets/instagram2.png";
 import LogoLinkedin from "../../../assets/linkedin.png";
 import LogoSnap from "../../../assets/snapchat.png";
 import Footer from "../../Footer/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const DiscoverWebDeveloper = () => {
   useEffect(() => {
+    AOS.init();
     const numStars = 20;
     const container = document.getElementById("star-container");
 
@@ -194,7 +197,7 @@ const DiscoverWebDeveloper = () => {
 
       <div class="bg-devis-blur pt-20 flex flex-wrap justify-center pb-5 space-x-0 sm:space-x-10">
         <div class="p-6">
-          <div className="flex flex-row space-x-10 list-none mt-20">
+          <div data-aos="fade-in" className="flex flex-row space-x-10 list-none mt-20">
             <li>
               <NavLink
                 to="https://www.instagram.com/navistudio.fr/"
@@ -244,7 +247,7 @@ const DiscoverWebDeveloper = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-in" className="mt-5 sm:mt-14 pb-5">
+        <div className="mt-5 sm:mt-14 pb-5">
           <ModalImage
             small={ImageLouisa}
             large={ImageLouisa}
