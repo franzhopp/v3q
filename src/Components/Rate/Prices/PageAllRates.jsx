@@ -177,7 +177,7 @@ const Rate = () => {
                       {info.details.map((detail, detailIndex) => (
                         <li key={detailIndex}>{detail}</li>
                       ))}
-                      <a href="/devis" className="font-inter underline">
+                      <a href="/devis" className="mt-3 font-inter underline">
                         Demander un devis gratuit
                       </a>
                     </ul>
@@ -252,7 +252,7 @@ const Rate = () => {
                       {info.details.map((detail, detailIndex) => (
                         <li key={detailIndex}>{detail}</li>
                       ))}
-                      <a href="/devis" className="font-inter underline">
+                      <a href="/devis" className="mt-3 font-inter underline">
                         Demander un devis gratuit
                       </a>
                     </ul>
