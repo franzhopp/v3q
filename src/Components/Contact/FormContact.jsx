@@ -183,7 +183,7 @@ const Form = ({ label, type, value }) => {
                 {translations[language].textContactEn}
               </p>
             </div>
-            <div className="flex justify-center mt-10">
+            <div className="flex justify-start sm:justify-center mt-10 w-80 sm:w-96 ml-6 sm:ml-0">
               <Link onClick={scrollToTop}>
                 <svg
                   className="shadow-2xl rounded-full"
@@ -209,7 +209,6 @@ const Form = ({ label, type, value }) => {
               </Link>
             </div>
           </div>
-
           <div className="bg-contact p-8 shadow-lg lg:col-span-3 lg:p-12">
             <form onSubmit={handleSubmit} className="space-y-4">
               <div action="" class="space-y-4">

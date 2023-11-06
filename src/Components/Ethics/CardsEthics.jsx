@@ -11,6 +11,8 @@ const EthicsPage = () => {
   return (
     <section className="bg-FFF6E4">
       <NavbarEthics />
+      <div className="test3">
+
       <div class="flex justify-center mt-10">
         <div class="mt-5 flex flex-wrap justify-center space-x-0 sm:space-x-6">
           <div class="p-6 rounded-lg shadow-md">
@@ -170,7 +172,7 @@ const EthicsPage = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-28 mb-20">
+      <div className="flex justify-center pt-28 pb-20">
         <svg
           className="animate-formbounce animate-formbounce"
           xmlns="http://www.w3.org/2000/svg"
@@ -184,6 +186,7 @@ const EthicsPage = () => {
             fill="#E18AB0"
           />
         </svg>
+      </div>
       </div>
       <section className="bg-E18AB0 py-24 px-4 sm:px-6 lg:px-8">
         <div className="mt-8 mb-10 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
