@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import ModalImage from "react-modal-image";
 import NavbarDiscoverWebDevelopper from "../../Navigation/NavbarDiscover/DiscoverWebDevelopperNavbar";
@@ -10,12 +10,11 @@ import LogoInsta from "../../../assets/instagram2.png";
 import LogoLinkedin from "../../../assets/linkedin.png";
 import LogoSnap from "../../../assets/snapchat.png";
 import Footer from "../../Footer/Footer";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const DiscoverWebDeveloper = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
   useEffect(() => {
-    AOS.init();
     const numStars = 20;
     const container = document.getElementById("star-container");
 
@@ -27,7 +26,20 @@ const DiscoverWebDeveloper = () => {
       star.style.top = `${Math.random() * 100}%`;
       container.appendChild(star);
     }
-  }, []);
+    const checkVisibility = () => {
+      const element = document.querySelector(".bb");
+      if (element) {
+        const elementTop = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        setIsVisible(elementTop < windowHeight);
+      }
+    };
+    window.addEventListener("scroll", checkVisibility);
+    checkVisibility();
+    return () => {
+      window.removeEventListener("scroll", checkVisibility);
+    };
+  }, [isVisible]);
 
   return (
     <section>
@@ -41,8 +53,6 @@ const DiscoverWebDeveloper = () => {
                 data-aos="fade-left"
                 className="text-black text-6xl font-extrabold sm:text-7xl"
               >
-                {/* <span className="absolute h-44 w-1 bg-C22E2E -right-80 top-24 hidden sm:block"></span> */}
-                {/* <span className="absolute h-96 w-1 bg-C22E2E -right-80 top-0 hidden sm:block"></span> */}
                 Ohsion
               </p>
               <motion.span
@@ -197,7 +207,10 @@ const DiscoverWebDeveloper = () => {
 
       <div class="bg-devis-blur pt-20 flex flex-wrap justify-center pb-5 space-x-0 sm:space-x-10">
         <div class="p-6">
-          <div data-aos="fade-in" className="flex flex-row space-x-10 list-none mt-20">
+          <div
+            data-aos="fade-in"
+            className="flex flex-row space-x-10 list-none mt-20"
+          >
             <li>
               <NavLink
                 to="https://www.instagram.com/navistudio.fr/"
@@ -247,11 +260,13 @@ const DiscoverWebDeveloper = () => {
             </div>
           </div>
         </div>
-        <div className="mt-5 sm:mt-14 pb-5">
+        <div className={`mt-5 sm:mt-14 pb-5`}>
           <ModalImage
             small={ImageLouisa}
             large={ImageLouisa}
-            className="h-80 w-80 sm:h-96 sm:w-96 transition-opacity duration-500 hover:opacity-50"
+            className={`bb h-80 w-80 sm:h-96 sm:w-96 ${
+              isVisible ? "fadee-in" : ""
+            }`}
           />
           <p className="flex text-black text-xs">
             📸 : Louisa.{" "}
