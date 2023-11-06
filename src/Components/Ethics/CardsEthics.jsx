@@ -1,195 +1,210 @@
-import translations from "./translate.jsx";
 import { useLanguage } from "../../context/LanguageProvider.jsx";
 import { NavLink } from "react-router-dom";
+import { useSpring, animated } from "react-spring";
+import translations from "./translate.jsx";
 import NavbarEthics from "../Navigation/EthicsNavbar/EthicsNavbar";
 import ImgMac from "../../assets/bg-ethics-mac.png";
 import ImgText from "../../assets/logo-5.png";
 import Footer from "../Footer/Footer";
+import ButtonServices from "../UI/Button/ButtonServices.jsx";
 
 const EthicsPage = () => {
   const { language } = useLanguage();
+  const props = useSpring({
+    from: { color: "#FFF6E4" },
+    to: async (next) => {
+      while (true) {
+        await next({ color: "#4457BE" });
+        await next({ color: "#E18AB0" });
+      }
+    },
+    config: { duration: 1000 },
+  });
   return (
     <section className="bg-FFF6E4">
       <NavbarEthics />
       <div className="test3">
-
-      <div class="flex justify-center mt-10">
-        <div class="mt-5 flex flex-wrap justify-center space-x-0 sm:space-x-6">
-          <div class="p-6 rounded-lg shadow-md">
-            <h2
-              data-aos="fade-left"
-              class="text-8xl number text-E18AB0 font-bold mb-2"
-            >
-              01.
-            </h2>
-
-            <p className="text-black text-xl font-extrabold mb-5">
-              {translations[language].title1EthicsFr}
-              {translations[language].title1EthicsEn}
-            </p>
-            <div className="w-72">
-              <p
-                data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom"
-                className="text-black"
+        <div class="flex justify-center mt-10">
+          <div class="mt-5 flex flex-wrap justify-center space-x-0 sm:space-x-6">
+            <div class="p-6 rounded-lg shadow-md">
+              <h2
+                data-aos="fade-left"
+                class="text-8xl number text-E18AB0 font-bold mb-2"
               >
-                <span className="absolute h-72 w-1 bg-E18AB0 -left-20 bottom-10 hidden sm:block"></span>
-                {translations[language].describe1EthicsFr}
-                {translations[language].describe1EthicsEn}
-                <span className="font-extrabold">
-                  {" "}
-                  {translations[language].describe1BoldEthicsFr}
-                  {translations[language].describe1BoldEthicsEn}
-                </span>{" "}
-                {translations[language].describeWithoutBold1Fr}
-                {translations[language].describeWithoutBold1En}
-                <span className="font-extrabold">
-                  {" "}
-                  {translations[language].describe1Bold1Fr}
-                  {translations[language].describe1Bold1En}
-                </span>
+                01.
+              </h2>
+
+              <p className="text-black text-xl font-inter font-extrabold mb-5">
+                {translations[language].title1EthicsFr}
+                {translations[language].title1EthicsEn}
               </p>
+              <div className="w-72">
+                <p
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                  className="text-black"
+                >
+                  <span className="absolute h-72 w-1 bg-E18AB0 -left-20 bottom-10 hidden sm:block"></span>
+                  {translations[language].describe1EthicsFr}
+                  {translations[language].describe1EthicsEn}
+                  <span className="font-extrabold">
+                    {" "}
+                    {translations[language].describe1BoldEthicsFr}
+                    {translations[language].describe1BoldEthicsEn}
+                  </span>{" "}
+                  {translations[language].describeWithoutBold1Fr}
+                  {translations[language].describeWithoutBold1En}
+                  <span className="font-extrabold">
+                    {" "}
+                    {translations[language].describe1Bold1Fr}
+                    {translations[language].describe1Bold1En}
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            <div class="p-6 rounded-lg shadow-md">
+              <h2
+                data-aos="fade-right"
+                class="text-8xl number text-E18AB0 font-bold mb-2"
+              >
+                02.
+              </h2>
+              <p className="text-black text-xl font-inter font-extrabold mb-5">
+                {translations[language].title2EthicsFr}
+                {translations[language].title2EthicsEn}
+              </p>
+
+              <div className="w-72">
+                <p
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                  className="text-black"
+                >
+                  {translations[language].describe2EthicsFr}
+                  {translations[language].describe2EthicsEn}{" "}
+                  <span className="font-extrabold">
+                    {translations[language].describe2BoldEthicsFr}
+                    {translations[language].describe2BoldEthicsEn}{" "}
+                  </span>
+                  {translations[language].describeWithoutBold2Fr}
+                  {translations[language].describeWithoutBold2En}
+                </p>
+              </div>
+            </div>
+
+            <div class="p-6 rounded-lg shadow-md">
+              <h2
+                data-aos="fade-left"
+                class="text-8xl number text-E18AB0 font-bold mb-2"
+              >
+                03.
+              </h2>
+              <p className="text-black text-xl font-inter font-extrabold mb-5">
+                Passion
+              </p>
+              <div className="w-72">
+                <p
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                  className="text-black"
+                >
+                  {translations[language].describe3EthicsFr}
+                  {translations[language].describe3EthicsEn}{" "}
+                  <span className="font-extrabold">
+                    {translations[language].describe3BoldEthicsFr}
+                    {translations[language].describe3BoldEthicsEn}{" "}
+                  </span>
+                  {translations[language].describe3Bold1Fr}
+                  {translations[language].describe3Bold1En}
+                  {translations[language].describeWithoutBold3Fr}
+                  {translations[language].describeWithoutBold3En}
+                  <span className="absolute h-72 w-1 bg-E18AB0 -right-20 bottom-10 hidden sm:block"></span>
+                </p>
+              </div>
             </div>
           </div>
-
-          <div class="p-6 rounded-lg shadow-md">
-            <h2
+        </div>
+        <div className="flex justify-center">
+          <div className="mt-20">
+            <div className="px-10">
+              <img src={ImgMac} alt="Image Ethics" className="rounded-lg" />
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-center">
+          <div className="text-center mt-20">
+            <animated.h1
+              style={props}
               data-aos="fade-right"
-              class="text-8xl number text-E18AB0 font-bold mb-2"
+              className="text-black font-extrabold font-inter text-2xl sm:text-4xl mb-10"
             >
-              02.
-            </h2>
-            <p className="text-black text-xl font-extrabold mb-5">
-              {translations[language].title2EthicsFr}
-              {translations[language].title2EthicsEn}
-            </p>
-
-            <div className="w-72">
-              <p
-                data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom"
-                className="text-black"
-              >
-                {translations[language].describe2EthicsFr}
-                {translations[language].describe2EthicsEn}{" "}
-                <span className="font-extrabold">
-                  {translations[language].describe2BoldEthicsFr}
-                  {translations[language].describe2BoldEthicsEn}{" "}
-                </span>
-                {translations[language].describeWithoutBold2Fr}
-                {translations[language].describeWithoutBold2En}
-              </p>
-            </div>
-          </div>
-
-          <div class="p-6 rounded-lg shadow-md">
-            <h2
-              data-aos="fade-left"
-              class="text-8xl number text-E18AB0 font-bold mb-2"
-            >
-              03.
-            </h2>
-            <p className="text-black text-xl font-extrabold mb-5">Passion</p>
-            <div className="w-72">
-              <p
-                data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom"
-                className="text-black"
-              >
-                {translations[language].describe3EthicsFr}
-                {translations[language].describe3EthicsEn}{" "}
-                <span className="font-extrabold">
-                  {translations[language].describe3BoldEthicsFr}
-                  {translations[language].describe3BoldEthicsEn}{" "}
-                </span>
-                {translations[language].describe3Bold1Fr}
-                {translations[language].describe3Bold1En}
-                {translations[language].describeWithoutBold3Fr}
-                {translations[language].describeWithoutBold3En}
-                <span className="absolute h-72 w-1 bg-E18AB0 -right-20 bottom-10 hidden sm:block"></span>
-              </p>
+              {" "}
+              {translations[language].titleWorkEthicsFr}
+              {translations[language].titleWorkEthicsEn}
+            </animated.h1>
+            <div className="flex justify-center px-5">
+              <div className="rounded-lg shadow-md w-full sm:w-1/3 sm:px-0 px-10">
+                <p
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                  className="text-black text-center p-5 mt-10"
+                >
+                  {translations[language].describe4EthicsWorkFr}
+                  {translations[language].describe4EthicsWorkEn}{" "}
+                  <span className="font-extrabold">
+                    {translations[language].describe4BoldEthicsWorkFr}
+                    {translations[language].describe4BoldEthicsWorkEn}{" "}
+                  </span>
+                  {translations[language].describeWithoutBold4Fr}
+                  {translations[language].describeWithoutBold4En}{" "}
+                  <span className="font-extrabold">
+                    {translations[language].describe4Bold4Fr}
+                    {translations[language].describe4Bold4En}
+                  </span>
+                </p>
+                <div className="text-transparent mb-6"></div>
+                <p
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                  className="text-black text-center p-5 mb-10"
+                >
+                  {translations[language].describe5EthicsWorkFr}
+                  {translations[language].describe5EthicsWorkEn}{" "}
+                  <span className="font-extrabold">
+                    {translations[language].describe5BoldEthicsWorkFr}
+                    {translations[language].describe5BoldEthicsWorkEn}{" "}
+                  </span>
+                  {translations[language].describeWithoutBold5Fr}
+                  {translations[language].describeWithoutBold5En}{" "}
+                  <span className="font-extrabold">
+                    {translations[language].describe5Bold5Fr}
+                    {translations[language].describe5Bold5En}
+                  </span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="flex justify-center">
-        <div className="mt-20">
-          <div className="px-10">
-            <img src={ImgMac} alt="Image Ethics" className="rounded-lg" />
-          </div>
-        </div>
-      </div>
-      <div className="flex justify-center">
-        <div className="text-center mt-20">
-          <h1
-            data-aos="fade-right"
-            className="text-black font-extrabold text-2xl sm:text-4xl mb-10"
+        <div className="flex justify-center pt-28 pb-5">
+          <svg
+            className="animate-formbounce"
+            xmlns="http://www.w3.org/2000/svg"
+            width="51"
+            height="51"
+            viewBox="0 0 51 51"
+            fill="none"
           >
-            {" "}
-            {translations[language].titleWorkEthicsFr}
-            {translations[language].titleWorkEthicsEn}
-          </h1>
-          <div className="flex justify-center">
-            <div className="w-full sm:w-1/3 sm:px-0 px-10">
-              <p
-                data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom"
-                className="text-black text-center"
-              >
-                {translations[language].describe4EthicsWorkFr}
-                {translations[language].describe4EthicsWorkEn}{" "}
-                <span className="font-extrabold">
-                  {translations[language].describe4BoldEthicsWorkFr}
-                  {translations[language].describe4BoldEthicsWorkEn}{" "}
-                </span>
-                {translations[language].describeWithoutBold4Fr}
-                {translations[language].describeWithoutBold4En}{" "}
-                <span className="font-extrabold">
-                  {translations[language].describe4Bold4Fr}
-                  {translations[language].describe4Bold4En}
-                </span>
-              </p>
-              <div className="text-transparent mb-6"></div>
-              <p
-                data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom"
-                className="text-black text-center"
-              >
-                {translations[language].describe5EthicsWorkFr}
-                {translations[language].describe5EthicsWorkEn}{" "}
-                <span className="font-extrabold">
-                  {translations[language].describe5BoldEthicsWorkFr}
-                  {translations[language].describe5BoldEthicsWorkEn}{" "}
-                </span>
-                {translations[language].describeWithoutBold5Fr}
-                {translations[language].describeWithoutBold5En}{" "}
-                <span className="font-extrabold">
-                  {translations[language].describe5Bold5Fr}
-                  {translations[language].describe5Bold5En}
-                </span>
-              </p>
-            </div>
-          </div>
+            <path
+              d="M25.5 0L32.1716 18.8284L51 25.5L32.1716 32.1716L25.5 51L18.8284 32.1716L0 25.5L18.8284 18.8284L25.5 0Z"
+              fill="#E18AB0"
+            />
+          </svg>
         </div>
-      </div>
-      <div className="flex justify-center pt-28 pb-20">
-        <svg
-          className="animate-formbounce animate-formbounce"
-          xmlns="http://www.w3.org/2000/svg"
-          width="51"
-          height="51"
-          viewBox="0 0 51 51"
-          fill="none"
-        >
-          <path
-            d="M25.5 0L32.1716 18.8284L51 25.5L32.1716 32.1716L25.5 51L18.8284 32.1716L0 25.5L18.8284 18.8284L25.5 0Z"
-            fill="#E18AB0"
-          />
-        </svg>
-      </div>
+        <ButtonServices />
       </div>
       <section className="bg-E18AB0 py-24 px-4 sm:px-6 lg:px-8">
-        <div className="mt-8 mb-10 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
+        <div className="pt-8 pb-10 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
           <div className="min-h-500 w-80 rounded-lg mt-5">
             <p
               data-aos="fade-up"
@@ -265,7 +280,7 @@ const EthicsPage = () => {
             <div className="flex justify-center">
               <p
                 data-aos="fade-left"
-                className="px-10 mt-4 sm:mt-3 text-3xl sm:text-4xl"
+                className="px-10 font-inter mt-4 sm:mt-3 text-3xl sm:text-4xl"
               >
                 {translations[language].titleTrust1Fr}
                 {translations[language].titleTrust1En}{" "}
