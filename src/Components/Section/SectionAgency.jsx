@@ -147,6 +147,20 @@ const SectionAgency = () => {
             </p>
           </div>
         </div>
+        <div className="flex flex-col justify-center mt-6">
+          <a
+            href="/ethics"
+            className=" text-FFF6E4 text-center font-extrabold underline transition hover:text-C22E2E"
+          >
+            Découvrir Portfolio ➔
+          </a>
+          <a
+            href="/ethics"
+            className=" text-FFF6E4 text-center font-extrabold underline transition hover:text-C22E2E"
+          >
+            Découvrir Prestations ➔
+          </a>
+        </div>
       </section>
       <SectionTeam />
     </section>

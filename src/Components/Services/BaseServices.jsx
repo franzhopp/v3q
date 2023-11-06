@@ -202,6 +202,14 @@ const Services = () => {
               </p>
             </div>
           </div>
+          <div className="flex justify-center mt-3">
+            <a
+              href="/ethics"
+              className="text-black font-extrabold underline transition hover:text-0C3E78"
+            >
+              Découvrir Nos Valeurs ➔
+            </a>
+          </div>
           <ButtonServices />
         </div>
         <div className="bg-0C3E78 pt-28 pb-28 px-4 sm:px-6 lg:px-8">

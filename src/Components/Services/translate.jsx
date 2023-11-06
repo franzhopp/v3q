@@ -12,6 +12,7 @@ const translations = {
     linkServicesFr: "Découvrir Prestations ➔",
     linkRateFr: "Découvrir Tarification ➔",
     linkDesignerFr: "Découvrir Designer ➔",
+    linkValuesFr: "Découvrir Nos Valeurs ➔",
     linkWebDevFr: "Découvrir Web Developer ➔",
     // Copyright
     copy1Fr: "Ce site web a été imaginé et mis en œuvre par",
@@ -224,9 +225,10 @@ const translations = {
     // Page 404
     pageNotFoundEn: "Oops, looks like you got lost...",
     // Links
-    linkHomeEn: "Go back to home page ➔",
-    linkServicesEn: "Find out about services ➔",
+    linkHomeEn: "Go back to Home page ➔",
+    linkServicesEn: "Find out about Services ➔",
     linkRateEn: "Check out Rates ➔",
+    linkValuesFr: "Check out Our Values ➔",
     linkDesignerEn: "Check out Designer ➔",
     linkWebDevEn: "Check out Web Developer ➔",
     // Copyright :
