@@ -554,12 +554,14 @@ const NavbarServices = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
-            Découvrez nos talents
+            {translations[language].titleServicesFr}
+            {translations[language].titleServicesEn}
           </motion.span>
         </h1>
         <div className="w-full sm:w-1/2">
           <span className="font-extrabold text-FFF6E4 block pt-10 text-base sm:text-4xl">
-            Bénéficiez d'une expertise adaptée à vos besoins & envies.
+            {translations[language].titleServices1Fr}
+            {translations[language].titleServices1En}
           </span>
         </div>
       </div>
