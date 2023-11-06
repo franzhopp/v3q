@@ -133,7 +133,7 @@ const EthicsPage = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <div className="text-center mt-20">
+          <div className="text-center mt-10">
             <animated.h1
               style={props}
               data-aos="fade-right"
@@ -143,8 +143,8 @@ const EthicsPage = () => {
               {translations[language].titleWorkEthicsFr}
               {translations[language].titleWorkEthicsEn}
             </animated.h1>
-            <div className="flex justify-center px-5">
-              <div className="rounded-lg shadow-md w-full sm:w-1/3 sm:px-0 px-10">
+            <div className="flex justify-center px-3">
+              <div className="rounded-lg shadow-md w-full sm:w-1/3 sm:px-0 px-3">
                 <p
                   data-aos="fade-up"
                   data-aos-anchor-placement="top-bottom"
@@ -186,7 +186,7 @@ const EthicsPage = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center pt-28 pb-5">
+        <div className="flex justify-center pt-5 pb-5">
           <svg
             className="animate-formbounce"
             xmlns="http://www.w3.org/2000/svg"
