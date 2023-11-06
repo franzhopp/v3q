@@ -124,6 +124,9 @@ const Rate = () => {
                 {letter}
               </span>
             ))}
+            <div className="flex justify-center">
+              <span className="absolute w-32 h-1  bg-C22E2E"></span>
+            </div>
           </h1>
         </div>
         <div className="flex justify-center pb-10">
@@ -218,6 +221,9 @@ const Rate = () => {
                 {letter}
               </span>
             ))}
+            <div className="flex justify-center">
+              <span className="absolute w-32 h-1  bg-C22E2E"></span>
+            </div>
           </h1>
         </div>
         {InformationsMarketing.map((info, index) => (

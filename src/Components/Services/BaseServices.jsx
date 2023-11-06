@@ -43,8 +43,10 @@ const Services = () => {
                 {letter}
               </span>
             ))}
+            <div className="flex justify-center">
+              <span className="absolute w-32 h-1  bg-C22E2E"></span>
+            </div>
           </h1>
-
           <div className="flex justify-center">
             <div className="w-96">
               <p
@@ -209,6 +211,9 @@ const Services = () => {
           >
             Des offres adaptées à vos besoins
           </h3>
+          <div className="flex justify-center">
+            <span className="absolute w-24 h-1 bg-FFF6E4"></span>
+          </div>
           <div className="mt-8 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
             <div className="min-h-500 w-80 rounded-lg mt-5">
               <p

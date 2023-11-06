@@ -83,7 +83,7 @@ const Form = ({ label, type, value }) => {
     }
 
     if (!formData.email || !regexEmail.test(formData.email)) {
-      newErrors.email = "Veuillez entrer une adresse e-mail valide.";
+      newErrors.email = "Veuillez entrer une adresse E-mail* valide.";
     }
 
     if (!formData.tel) {
@@ -182,6 +182,9 @@ const Form = ({ label, type, value }) => {
                 {translations[language].textContactFr}
                 {translations[language].textContactEn}
               </p>
+              <div className="flex justify-center sm:justify-end">
+                <span className="absolute w-24 h-1 bg-C22E2E"></span>
+              </div>
             </div>
             <div className="flex justify-start sm:justify-center mt-10 w-80 sm:w-96 ml-6 sm:ml-0">
               <Link onClick={scrollToTop}>
@@ -285,7 +288,7 @@ const Form = ({ label, type, value }) => {
                     }`}
                     htmlFor={label}
                   >
-                    {"E-mail"}
+                    {"E-mail*"}
                   </label>
                   <input
                     type={type}

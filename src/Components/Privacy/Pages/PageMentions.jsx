@@ -39,7 +39,7 @@ const PageMentions = () => {
             Fernandez Louisa, Nefti Mélissa.
             <br />›<span className={keywordsStyle}> Activité :</span>{" "}
             Entrepreneur en freelance.
-            <br />›<span className={keywordsStyle}> E-mail :</span>{" "}
+            <br />›<span className={keywordsStyle}> E-mail* :</span>{" "}
             Navi.studio.info@gmail.com
             <br />›
             <span className={keywordsStyle}>

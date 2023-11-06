@@ -88,7 +88,7 @@ const DevisFree = ({ label, type, value }) => {
     }
 
     if (!formData.email || !regexEmail.test(formData.email)) {
-      newErrors.email = "Veuillez entrer une adresse e-mail valide.";
+      newErrors.email = "Veuillez entrer une adresse E-mail* valide.";
     }
 
     if (!formData.tel) {
@@ -189,6 +189,9 @@ const DevisFree = ({ label, type, value }) => {
             >
               Avant de soumettre un devis, nous vous invitons à lire
               attentivement ces lignes.
+              <div className="flex justify-start">
+                <span className="absolute w-32 h-1 bg-C22E2E"></span>
+              </div>
             </p>
             <div className="mt-8">
               <p
@@ -363,7 +366,7 @@ const DevisFree = ({ label, type, value }) => {
                     }`}
                     htmlFor={label}
                   >
-                    {"E-mail"}
+                    {"E-mail*"}
                   </label>
                   <input
                     type={type}

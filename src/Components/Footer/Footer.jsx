@@ -33,7 +33,7 @@ const Footer = () => {
     const newErrors = {};
 
     if (!formData.email || !regexEmail.test(formData.email)) {
-      newErrors.email = "Veuillez entrer une adresse e-mail valide.";
+      newErrors.email = "Veuillez entrer une adresse E-mail* valide.";
     }
 
     if (Object.keys(newErrors).length > 0) {

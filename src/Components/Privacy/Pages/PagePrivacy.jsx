@@ -54,7 +54,7 @@ const PagePrivacy = () => {
           <p className="text-black text-justify mb-4">
             › Vos informations sont accessibles uniquement à notre entreprise et
             à nos partenaires de livraison. Si vous le souhaitez, nous pouvons
-            partager votre adresse e-mail avec nos partenaires commerciaux pour
+            partager votre adresse E-mail* avec nos partenaires commerciaux pour
             des offres spéciales.
           </p>
 

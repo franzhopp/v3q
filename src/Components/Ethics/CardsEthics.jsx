@@ -34,17 +34,18 @@ const EthicsPage = () => {
                 01.
               </h2>
 
-              <p className="text-black text-xl font-inter font-extrabold mb-5">
+              <p className="text-black text-xl font-inter font-extrabold">
                 {translations[language].title1EthicsFr}
                 {translations[language].title1EthicsEn}
               </p>
-              <div className="w-72">
+              <span className="absolute w-48 h-1 bg-E18AB0"></span>
+              <div className="w-72 mt-5">
                 <p
                   data-aos="fade-up"
                   data-aos-anchor-placement="top-bottom"
                   className="text-black"
                 >
-                  <span className="absolute h-72 w-1 bg-E18AB0 -left-20 bottom-10 hidden sm:block"></span>
+                  {/* <span className="absolute h-72 w-1 bg-E18AB0 -left-20 bottom-10 hidden sm:block"></span> */}
                   {translations[language].describe1EthicsFr}
                   {translations[language].describe1EthicsEn}
                   <span className="font-extrabold">
@@ -70,12 +71,12 @@ const EthicsPage = () => {
               >
                 02.
               </h2>
-              <p className="text-black text-xl font-inter font-extrabold mb-5">
+              <p className="text-black text-xl font-inter font-extrabold">
                 {translations[language].title2EthicsFr}
                 {translations[language].title2EthicsEn}
               </p>
-
-              <div className="w-72">
+              <span className="absolute w-48 h-1 bg-E18AB0"></span>
+              <div className="w-72 mt-5">
                 <p
                   data-aos="fade-up"
                   data-aos-anchor-placement="top-bottom"
@@ -100,10 +101,11 @@ const EthicsPage = () => {
               >
                 03.
               </h2>
-              <p className="text-black text-xl font-inter font-extrabold mb-5">
+              <p className="text-black text-xl font-inter font-extrabold">
                 Passion
               </p>
-              <div className="w-72">
+              <span className="absolute w-24 h-1 bg-E18AB0"></span>
+              <div className="w-72 mt-5">
                 <p
                   data-aos="fade-up"
                   data-aos-anchor-placement="top-bottom"
@@ -137,13 +139,14 @@ const EthicsPage = () => {
             <animated.h1
               style={props}
               data-aos="fade-right"
-              className="text-black font-extrabold font-inter text-2xl sm:text-4xl mb-6"
+              className="text-black font-extrabold font-inter text-2xl sm:text-4xl"
             >
               {" "}
               {translations[language].titleWorkEthicsFr}
               {translations[language].titleWorkEthicsEn}
             </animated.h1>
-            <div className="flex justify-center px-3">
+            <span className="absolute w-48 h-1 bg-E18AB0"></span>
+            <div className="flex justify-center px-3 pt-6">
               <div className="rounded-lg shadow-md w-full sm:w-1/3 sm:px-0 px-3">
                 <p
                   data-aos="fade-up"
@@ -308,6 +311,9 @@ const EthicsPage = () => {
                 </span>{" "}
                 {translations[language].titleTrust2En} 🙏{" "}
               </p>
+            </div>
+            <div className="flex justify-center">
+              <span className="absolute w-48 h-1 bg-E18AB0"></span>
             </div>
           </h1>
           <div className="flex justify-center">
