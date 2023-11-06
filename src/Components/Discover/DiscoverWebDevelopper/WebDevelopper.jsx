@@ -178,14 +178,14 @@ const DiscoverWebDeveloper = () => {
               to="/designer"
               className="text-FFF6E4 font-extrabold underline transition hover:text-0C3E78"
             >
-              Découvrir Designer ➔
+              › Découvrir Designer ➔
             </NavLink>
           </div>
           <NavLink
             to="/"
             className="text-FFF6E4 font-extrabold underline transition hover:text-0C3E78"
           >
-            Retourner à la page d'Accueil ➔
+            › Retourner à la page d'Accueil ➔
           </NavLink>
         </div>
       </div>

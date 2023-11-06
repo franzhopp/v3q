@@ -284,19 +284,19 @@ const Rate = () => {
             href="/services"
             className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
           >
-            Découvrir Prestations ➔
+            › Découvrir Prestations ➔
           </a>
           <a
             href="/devis"
             className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
           >
-            Découvrir Devis Gratuit ➔
+            › Découvrir Devis Gratuit ➔
           </a>
           <a
             href="/"
             className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
           >
-            Retourner à la page d'Accueil ➔
+            › Retourner à la page d'Accueil ➔
           </a>
         </div>
       </div>

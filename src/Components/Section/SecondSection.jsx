@@ -80,7 +80,7 @@ const SecondSection = () => {
               href="/ethics"
               className="text-FFF6E4 font-extrabold underline transition hover:text-0C3E78"
             >
-              Découvrir Nos Valeurs ➔
+              › Découvrir Nos Valeurs ➔
             </a>
           </div>
         </div>

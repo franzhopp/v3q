@@ -8,12 +8,13 @@ const translations = {
     // Page 404
     pageNotFoundFr: "Oups, mauvais chemin...",
     // Links
-    linkHomeFr: "Retourner à la page d'Accueil ➔",
-    linkServicesFr: "Découvrir Prestations ➔",
-    linkRateFr: "Découvrir Tarification ➔",
-    linkDesignerFr: "Découvrir Designer ➔",
-    linkValuesFr: "Découvrir Nos Valeurs ➔",
-    linkWebDevFr: "Découvrir Web Developer ➔",
+    linkHomeFr: "› Retourner à la page d'Accueil ➔",
+    linkServicesFr: "› Découvrir Prestations ➔",
+    linkRateFr: "› Découvrir Tarification ➔",
+    linkDesignerFr: "› Découvrir Designer ➔",
+    linkPortfolioFr: "› Découvrir Portfolio ➔",
+    linkValuesFr: "› Découvrir Nos Valeurs ➔",
+    linkWebDevFr: "› Découvrir Web Developer ➔",
     // Copyright
     copy1Fr: "Ce site web a été imaginé et mis en œuvre par",
     copy2Fr:
@@ -225,12 +226,13 @@ const translations = {
     // Page 404
     pageNotFoundEn: "Oops, looks like you got lost...",
     // Links
-    linkHomeEn: "Go back to Home page ➔",
-    linkServicesEn: "Find out about Services ➔",
-    linkRateEn: "Check out Rates ➔",
-    linkValuesFr: "Check out Our Values ➔",
-    linkDesignerEn: "Check out Designer ➔",
-    linkWebDevEn: "Check out Web Developer ➔",
+    linkHomeEn: "› Go back to Home page ➔",
+    linkServicesEn: "› Find out about Services ➔",
+    linkRateEn: "› Check out Rates ➔",
+    linkValuesFr: "› Check out Our Values ➔",
+    linkPortfolioFr: "› Check out Portfolio ➔",
+    linkDesignerEn: "› Check out Designer ➔",
+    linkWebDevEn: "› Check out Web Developer ➔",
     // Copyright :
     copy1En: "This website was designed and developed by",
     copy2En:

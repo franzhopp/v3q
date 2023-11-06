@@ -272,19 +272,19 @@ const DevisFree = ({ label, type, value }) => {
                   to="/services"
                   className="text-FFF6E4 font-extrabold underline transition hover:text-C22E2E"
                 >
-                  Découvrir Prestations ➔
+                  › Découvrir Prestations ➔
                 </NavLink>
                 <NavLink
                   to="/rate"
                   className="text-FFF6E4 font-extrabold underline transition hover:text-C22E2E"
                 >
-                  Découvrir Tarification ➔
+                  › Découvrir Tarification ➔
                 </NavLink>
                 <NavLink
                   to="/"
                   className="text-FFF6E4 font-extrabold underline transition hover:text-C22E2E"
                 >
-                  Retourner à la page d'Accueil ➔
+                  › Retourner à la page d'Accueil ➔
                 </NavLink>
               </div>
             </div>

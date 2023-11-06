@@ -85,7 +85,7 @@ const SectionAgency = () => {
         <ButtonAgency />
       </section>
       <section className="bg-0C3E78 py-24 px-4 sm:px-6 lg:px-8 border-b border-t border-gray-400">
-        <div className="pt-10 pb-16 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
+        <div className="pt-3 pb-16 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
           <div className="w-80 mt-5">
             <p
               data-aos="fade-up"
@@ -152,13 +152,13 @@ const SectionAgency = () => {
             href="/ethics"
             className=" text-FFF6E4 text-center font-extrabold underline transition hover:text-C22E2E"
           >
-            Découvrir Portfolio ➔
+            › Découvrir Portfolio ➔
           </a>
           <a
             href="/ethics"
             className=" text-FFF6E4 text-center font-extrabold underline transition hover:text-C22E2E"
           >
-            Découvrir Prestations ➔
+            › Découvrir Prestations ➔
           </a>
         </div>
       </section>

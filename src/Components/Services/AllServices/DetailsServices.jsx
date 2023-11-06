@@ -90,13 +90,13 @@ const DetailsServices = () => {
             to="/rate"
             className="text-black font-extrabold underline transition hover:text-0C3E78"
           >
-            Découvrir Tarification ➔
+            › Découvrir Tarification ➔
           </NavLink>
           <NavLink
             to="/"
             className="text-black font-extrabold underline transition hover:text-0C3E78"
           >
-            Retourner à la page d'Accueil ➔
+            › Retourner à la page d'Accueil ➔
           </NavLink>
           <div className="mt-5">
             <span className="text-black font-extrabold font-inter italic">

@@ -8,12 +8,12 @@ const translations = {
     // Page 404
     pageNotFoundFr: "Oups, mauvais chemin...",
     // Links
-    linkHomeFr: "Retourner à la page d'Accueil ➔",
-    linkServicesFr: "Découvrir Prestations ➔",
-    linkRateFr: "Découvrir Tarification ➔",
-    linkDesignerFr: "Découvrir Designer ➔",
-    linkValuesFr: "Découvrir Nos Valeurs ➔",
-    linkWebDevFr: "Découvrir Web Developer ➔",
+    linkHomeFr: "› Retourner à la page d'Accueil ➔",
+    linkServicesFr: "› Découvrir Prestations ➔",
+    linkRateFr: "› Découvrir Tarification ➔",
+    linkDesignerFr: "› Découvrir Designer ➔",
+    linkValuesFr: "› Découvrir Nos Valeurs ➔",
+    linkWebDevFr: "› Découvrir Web Developer ➔",
     // Copyright
     copy1Fr: "Ce site web a été imaginé et mis en œuvre par",
     copy2Fr:

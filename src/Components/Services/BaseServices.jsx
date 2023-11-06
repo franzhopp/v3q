@@ -207,7 +207,7 @@ const Services = () => {
               href="/ethics"
               className="text-black font-extrabold underline transition hover:text-0C3E78"
             >
-              Découvrir Nos Valeurs ➔
+              › Découvrir Nos Valeurs ➔
             </a>
           </div>
           <ButtonServices />

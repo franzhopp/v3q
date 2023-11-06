@@ -59,7 +59,7 @@ const Portfolio = () => {
                   rel="noreferrer"
                   target="_blank"
                 >
-                  Lien vers le site ➔
+                  › Lien vers le site ➔
                 </NavLink>
               </div>
             </p>
@@ -71,7 +71,7 @@ const Portfolio = () => {
                     to="/"
                     className="text-black font-extrabold underline transition hover:text-0C3E78"
                   >
-                    Retourner à la page d'Accueil ➔
+                    › Retourner à la page d'Accueil ➔
                   </NavLink>
                 </div>
               </p>

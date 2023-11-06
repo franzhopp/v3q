@@ -123,7 +123,7 @@ const DiscoverDesigner = () => {
                 to="/webdev"
                 className="mt-7 text-C22E2E text-center font-extrabold underline transition hover:text-0C3E78"
               >
-                Découvrir Web Developer ➔
+                › Découvrir Web Developer ➔
               </NavLink>
             </div>
             <div className="flex justify-center">
@@ -131,7 +131,7 @@ const DiscoverDesigner = () => {
                 to="/"
                 className=" text-C22E2E font-extrabold underline transition hover:text-0C3E78"
               >
-                Retourner à la page d'Accueil ➔
+                › Retourner à la page d'Accueil ➔
               </NavLink>
             </div>
           </div>
