@@ -190,7 +190,7 @@ const DevisFree = ({ label, type, value }) => {
               Avant de soumettre un devis, nous vous invitons à lire
               attentivement ces lignes.
               <div className="flex justify-start">
-                <span className="absolute w-32 h-1 bg-C22E2E"></span>
+                <span className="absolute w-16 h-1 bg-C22E2E"></span>
               </div>
             </p>
             <div className="mt-8">

@@ -10,9 +10,9 @@ const DetailsServices = () => {
           className="text-center text-FFF6E4 text-4xl sm:text-5xl font-extrabold pt-10"
         >
           Marketing digital
-        <div className="flex justify-center">
-          <span className="absolute w-32 h-1 bg-FFF6E4"></span>
-        </div>
+          <div className="flex justify-center">
+            <span className="absolute w-32 h-1 bg-FFF6E4"></span>
+          </div>
         </div>
         <div className="mt-10 sm:mt-20">
           <div className="flex flex-wrap justify-center">

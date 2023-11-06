@@ -312,9 +312,6 @@ const EthicsPage = () => {
                 {translations[language].titleTrust2En} 🙏{" "}
               </p>
             </div>
-            <div className="flex justify-center">
-              <span className="absolute w-48 h-1 bg-E18AB0"></span>
-            </div>
           </h1>
           <div className="flex justify-center">
             <div className="w-full sm:w-1/3 sm:px-0 px-10">
