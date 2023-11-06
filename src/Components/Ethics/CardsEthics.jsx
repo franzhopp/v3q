@@ -133,7 +133,7 @@ const EthicsPage = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <div className="text-center mt-10">
+          <div className="text-center mt-20">
             <animated.h1
               style={props}
               data-aos="fade-right"
@@ -186,7 +186,7 @@ const EthicsPage = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center pt-5 pb-5">
+        <div className="flex justify-center pt-10">
           <svg
             className="animate-formbounce"
             xmlns="http://www.w3.org/2000/svg"
