@@ -36,10 +36,10 @@ const DiscoverWebDeveloper = () => {
     };
     window.addEventListener("scroll", checkVisibility);
     checkVisibility();
-    return () => {
-      window.removeEventListener("scroll", checkVisibility);
-    };
-  }, [isVisible]);
+    // return () => {
+    //   window.removeEventListener("scroll", checkVisibility);
+    // };
+  }, []);
 
   return (
     <section>
