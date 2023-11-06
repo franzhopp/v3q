@@ -137,7 +137,7 @@ const EthicsPage = () => {
             <animated.h1
               style={props}
               data-aos="fade-right"
-              className="text-black font-extrabold font-inter text-2xl sm:text-4xl mb-10"
+              className="text-black font-extrabold font-inter text-2xl sm:text-4xl mb-6"
             >
               {" "}
               {translations[language].titleWorkEthicsFr}
@@ -186,7 +186,7 @@ const EthicsPage = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center pt-10">
+        <div className="flex justify-center pt-16">
           <svg
             className="animate-formbounce"
             xmlns="http://www.w3.org/2000/svg"
