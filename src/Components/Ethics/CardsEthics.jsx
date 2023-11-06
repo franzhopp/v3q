@@ -317,39 +317,37 @@ const EthicsPage = () => {
                 data-aos-anchor-placement="top-bottom"
                 className="text-FFF6E4 text-center"
               >
-                Nous sommes bien plus qu'un simple studio créatif.{" "}
+                {translations[language].describe6EthicsWorkFr}
+                {translations[language].describe6EthicsWorkEn}{" "}
                 <span className="font-extrabold">
-                  Nous sommes dévoués à faire de vos projets : une réussite.
-                </span>{" "}
-                Évolution perpétuelle, collaboration dynamique, créativité
-                inépuisable sont la clé de nos secrets.{" "}
-                <span className="font-extrabold">
-                  Nous sommes votre source d'inspiration
+                  {translations[language].describe6BoldEthicsWorkFr}
+                  {translations[language].describe6BoldEthicsWorkEn}{" "}
                 </span>
-                .
+                {translations[language].describeWithoutBold6Fr}
+                {translations[language].describeWithoutBold6En}{" "}
+                <span className="font-extrabold">
+                  {translations[language].describe6Bold6Fr}
+                  {translations[language].describe6Bold6En}
+                </span>
               </p>
               <div className="text-transparent mb-6"></div>
               <p
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
-                className="text-FFF6E4 text-center"
+                className=" text-FFF6E4 text-center mb-10"
               >
-                Nous comprenons que chaque projet est unique, c'est pourquoi
-                nous nous engageons à apporter une approche sur-mesure à chaque
-                collaboration.{" "}
+                {translations[language].describe7EthicsWorkFr}
+                {translations[language].describe7EthicsWorkEn}{" "}
                 <span className="font-extrabold">
-                  Notre équipe dévouée travaille avec passion pour donner vie à
-                  vos idées, en veillant à ce que chaque détail soit
-                  parfaitement exécuté
+                  {translations[language].describe7BoldEthicsWorkFr}
+                  {translations[language].describe7BoldEthicsWorkEn}{" "}
                 </span>
-                . Votre réussite est notre plus grande fierté. Nous croyons en
-                la puissance de la créativité et de la collaboration pour créer
-                des expériences uniques et mémorables.{" "}
+                {translations[language].describeWithoutBold7Fr}
+                {translations[language].describeWithoutBold7En}{" "}
                 <span className="font-extrabold">
-                  Faites-nous confiance pour faire de votre vision une réalité.
-                  Ensemble, nous pouvons atteindre de nouveaux sommets
+                  {translations[language].describe7Bold7Fr}
+                  {translations[language].describe7Bold7En}
                 </span>
-                .
               </p>
               <div className="flex flex-col mt-10">
                 <NavLink
