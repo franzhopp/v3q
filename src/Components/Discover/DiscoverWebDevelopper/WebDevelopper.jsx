@@ -12,8 +12,7 @@ import LogoSnap from "../../../assets/snapchat.png";
 import Footer from "../../Footer/Footer";
 
 const DiscoverWebDeveloper = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
+  // const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
     const numStars = 20;
     const container = document.getElementById("star-container");
@@ -26,21 +25,7 @@ const DiscoverWebDeveloper = () => {
       star.style.top = `${Math.random() * 100}%`;
       container.appendChild(star);
     }
-    const checkVisibility = () => {
-      const element = document.querySelector(".bb");
-      if (element) {
-        const elementTop = element.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-        setIsVisible(elementTop < windowHeight);
-      }
-    };
-    window.addEventListener("scroll", checkVisibility);
-    checkVisibility();
-    // return () => {
-    //   window.removeEventListener("scroll", checkVisibility);
-    // };
   }, []);
-
   return (
     <section>
       <NavbarDiscoverWebDevelopper />
@@ -264,9 +249,7 @@ const DiscoverWebDeveloper = () => {
           <ModalImage
             small={ImageLouisa}
             large={ImageLouisa}
-            className={`bb h-80 w-80 sm:h-96 sm:w-96 ${
-              isVisible ? "fadee-in" : ""
-            }`}
+            className={`h-80 w-80 sm:h-96 sm:w-96 fade-in`}
           />
           <p className="flex text-black text-xs">
             📸 : Louisa.{" "}

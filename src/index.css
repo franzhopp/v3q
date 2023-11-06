@@ -328,8 +328,9 @@ textarea {
     background-color: rgba(0, 0, 0, -0.3) !important;
 }
 
-.fadee-in {
+.fade-in {
     opacity: 0;
+    backdrop-filter: blur(10px);
     animation: fade-in-animation 1s ease-in forwards;
 }
 
