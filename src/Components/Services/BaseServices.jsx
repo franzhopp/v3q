@@ -218,7 +218,7 @@ const Services = () => {
               >
                 <span className="absolute h-full w-1 bg-FFF6E4 -left-14 -top-1 hidden sm:block"></span>
                 Nous mettons notre expertise à votre service, grâce à notre
-                diagnostic personnalisé. Découvrez des solutions sur mesure
+                diagnostic personnalisé. Découvrez des solutions sur-mesure
                 adaptées à votre business & situation.
               </p>
             </div>

@@ -72,7 +72,7 @@ const EthicsPage = () => {
                 {translations[language].describe2EthicsEn}{" "}
                 <span className="font-extrabold">
                   {translations[language].describe2BoldEthicsFr}
-                  {translations[language].describe2BoldEthicsEn}
+                  {translations[language].describe2BoldEthicsEn}{" "}
                 </span>
                 {translations[language].describeWithoutBold2Fr}
                 {translations[language].describeWithoutBold2En}
@@ -123,7 +123,9 @@ const EthicsPage = () => {
             data-aos="fade-right"
             className="text-black font-extrabold text-2xl sm:text-4xl mb-10"
           >
-            Environnement de travail
+            {" "}
+            {translations[language].titleWorkEthicsFr}
+            {translations[language].titleWorkEthicsEn}
           </h1>
           <div className="flex justify-center">
             <div className="w-full sm:w-1/3 sm:px-0 px-10">
@@ -132,18 +134,18 @@ const EthicsPage = () => {
                 data-aos-anchor-placement="top-bottom"
                 className="text-black text-center"
               >
-                Notre environnement de travail est{" "}
+                {translations[language].describe4EthicsWorkFr}
+                {translations[language].describe4EthicsWorkEn}{" "}
                 <span className="font-extrabold">
-                  une fusion créative où le design et le développement web se
-                  rencontrent
+                  {translations[language].describe4BoldEthicsWorkFr}
+                  {translations[language].describe4BoldEthicsWorkEn}{" "}
                 </span>
-                . C'est un espace vibrant et inspirant où l'innovation prend
-                vie, où les écrans brillent de projets en constante évolution,
-                et où{" "}
+                {translations[language].describeWithoutBold4Fr}
+                {translations[language].describeWithoutBold4En}{" "}
                 <span className="font-extrabold">
-                  la collaboration est le moteur de notre succès
+                  {translations[language].describe4Bold4Fr}
+                  {translations[language].describe4Bold4En}
                 </span>
-                .
               </p>
               <div className="text-transparent mb-6"></div>
               <p
@@ -151,23 +153,18 @@ const EthicsPage = () => {
                 data-aos-anchor-placement="top-bottom"
                 className="text-black text-center"
               >
-                {/* <span className="absolute h-72 w-1 bg-C22E2E -left-20 bottom-10 hidden sm:block"></span> */}
-                En somme, notre environnement de travail est bien plus qu'un
-                lieu physique où nous accomplissons nos tâches. C'est un lieu où
-                l'innovation,{" "}
+                {translations[language].describe5EthicsWorkFr}
+                {translations[language].describe5EthicsWorkEn}{" "}
                 <span className="font-extrabold">
-                  la passion et la collaboration se rencontrent pour donner vie
-                  à des projets web extraordinaires
+                  {translations[language].describe5BoldEthicsWorkFr}
+                  {translations[language].describe5BoldEthicsWorkEn}{" "}
                 </span>
-                . Chez nous, chaque journée est une nouvelle opportunité de
-                repousser les limites du design et du développement web, de
-                créer{" "}
+                {translations[language].describeWithoutBold5Fr}
+                {translations[language].describeWithoutBold5En}{" "}
                 <span className="font-extrabold">
-                  des expériences mémorables pour nos clients et de se réaliser
-                  professionnellement
+                  {translations[language].describe5Bold5Fr}
+                  {translations[language].describe5Bold5En}
                 </span>
-                .
-                {/* <span className="absolute h-72 w-1 bg-C22E2E -right-20 bottom-10 hidden sm:block"></span> */}
               </p>
             </div>
           </div>
@@ -198,10 +195,12 @@ const EthicsPage = () => {
             >
               <span className="absolute h-full w-1 bg-FFF6E4 -left-14 -top-1 hidden sm:block"></span>
               <h1 className="text-4xl number font-semibold pb-5">07.</h1>
-              <span className="font-extrabold">Évolution perpétuelle.</span>
-              {
-                " L'industrie du design et du développement web est en constante évolution. Nous restons constamment à l'affût des dernières tendances, technologies et meilleures pratiques pour assurer que nos projets sont à la pointe de l'innovation. Nos réalisations sont revues."
-              }
+              <span className="font-extrabold">
+                {translations[language].titleDetailsEthics1Fr}
+                {translations[language].titleDetailsEthics1En}{" "}
+              </span>
+              {translations[language].describeDetailsEthics1Fr}
+              {translations[language].describeDetailsEthics1En}
             </p>
           </div>
           <div className="min-h-500 w-80 rounded-lg mt-5">
@@ -211,14 +210,12 @@ const EthicsPage = () => {
               className="mt-2 text-FFF6E4 text-arial"
             >
               <h1 className="text-4xl number font-semibold pb-5">08.</h1>
-              <span className="font-extrabold">Collaboration dynamique.</span>
-              {
-                " La collaboration est le moteur de notre succès. Nous croyons en l'importance de travailler main dans la main, tant en interne qu'avec nos clients. Nous encourageons l'échange constant d'expertise pour réaliser "
-              }
               <span className="font-extrabold">
-                des projets web extraordinaires
+                {translations[language].titleDetailsEthics2Fr}
+                {translations[language].titleDetailsEthics2En}{" "}
               </span>
-              .
+              {translations[language].describeDetailsEthics2Fr}
+              {translations[language].describeDetailsEthics2En}
             </p>
           </div>
 
@@ -231,9 +228,11 @@ const EthicsPage = () => {
               <span className="absolute h-full w-1 bg-FFF6E4 -right-14 -top-1 hidden sm:block"></span>
               <h1 className="text-4xl number font-semibold pb-5">09.</h1>
               <span className="font-extrabold">
-                {`Créativité inépuisable.`}
+                {translations[language].titleDetailsEthics3Fr}
+                {translations[language].titleDetailsEthics3En}{" "}
               </span>
-              {` Nous croyons en la puissance de la créativité. Elle est le carburant qui alimente notre studio. Chaque projet est une opportunité d'explorer de nouvelles idées, de repousser les limites du design et du développement web, et de créer des expériences mémorables.`}
+              {translations[language].describeDetailsEthics3Fr}
+              {translations[language].describeDetailsEthics3En}
             </p>
           </div>
         </div>
@@ -263,9 +262,10 @@ const EthicsPage = () => {
             <div className="flex justify-center">
               <p
                 data-aos="fade-left"
-                className="mt-4 sm:mt-3 text-3xl sm:text-4xl"
+                className="px-10 mt-4 sm:mt-3 text-3xl sm:text-4xl"
               >
-                Faites confiance à{" "}
+                {translations[language].titleTrust1Fr}
+                {translations[language].titleTrust1En}{" "}
                 <span>
                   <img
                     src={ImgText}
@@ -273,7 +273,7 @@ const EthicsPage = () => {
                     alt="Icône navi studio."
                   />
                 </span>{" "}
-                🙏{" "}
+                {translations[language].titleTrust2En} 🙏{" "}
               </p>
             </div>
           </h1>
@@ -302,7 +302,7 @@ const EthicsPage = () => {
                 className="text-FFF6E4 text-center"
               >
                 Nous comprenons que chaque projet est unique, c'est pourquoi
-                nous nous engageons à apporter une approche sur mesure à chaque
+                nous nous engageons à apporter une approche sur-mesure à chaque
                 collaboration.{" "}
                 <span className="font-extrabold">
                   Notre équipe dévouée travaille avec passion pour donner vie à
@@ -323,13 +323,22 @@ const EthicsPage = () => {
                   to="/services"
                   className="text-FFF6E4 font-extrabold underline transition hover:text-E18AB0"
                 >
-                  Découvrir Prestations ➔
+                  {translations[language].linkServicesFr}
+                  {translations[language].linkServicesEn}
+                </NavLink>
+                <NavLink
+                  to="/rate"
+                  className="text-FFF6E4 font-extrabold underline transition hover:text-E18AB0"
+                >
+                  {translations[language].linkRateFr}
+                  {translations[language].linkRateEn}
                 </NavLink>
                 <NavLink
                   to="/"
                   className="text-FFF6E4 font-extrabold underline transition hover:text-E18AB0"
                 >
-                  Retourner à la page d'Accueil ➔
+                  {translations[language].linkHomeFr}
+                  {translations[language].linkHomeEn}
                 </NavLink>
               </div>
             </div>

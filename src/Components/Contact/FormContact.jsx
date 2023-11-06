@@ -184,10 +184,7 @@ const Form = ({ label, type, value }) => {
               </p>
             </div>
             <div className="flex justify-center mt-10">
-              <Link
-                onClick={scrollToTop}
-                className="text-FFF6E4 text-center font-extrabold underline transition hover:text-C22E2E"
-              >
+              <Link onClick={scrollToTop}>
                 <svg
                   className="shadow-2xl rounded-full"
                   xmlns="http://www.w3.org/2000/svg"

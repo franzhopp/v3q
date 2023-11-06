@@ -7,6 +7,12 @@ const translations = {
     navContact: "Contact",
     // Page 404
     pageNotFoundFr: "Oups, mauvais chemin...",
+    // Links
+    linkHomeFr: "Retourner à la page d'Accueil ➔",
+    linkServicesFr: "Découvrir Prestations ➔",
+    linkRateFr: "Découvrir Tarification ➔",
+    linkDesignerFr: "Découvrir Designer ➔",
+    linkWebDevFr: "Découvrir Web Developer ➔",
     // Copyright
     copy1Fr: "Ce site web a été imaginé et mis en œuvre par",
     copy2Fr:
@@ -165,7 +171,34 @@ const translations = {
     describe3BoldEthicsFr: "au succès de nos clients et de nos collaborateurs.",
     describeWithoutBold3Fr:
       "Nous déployons tous les efforts nécessaires pour améliorer nos performances.",
+    // Work 1
     titleWorkEthicsFr: "Environnement de travail",
+    describe4EthicsWorkFr: "Notre environnement de travail est",
+    describe4BoldEthicsWorkFr:
+      "une fusion créative où le design et le développement web se rencontrent.",
+    describeWithoutBold4Fr:
+      "C'est un espace vibrant et inspirant où l'innovation prend vie, où les écrans brillent de projets en constante évolution, et où",
+    describe4Bold4Fr: "la collaboration est le moteur de notre succès.",
+    // 2
+    describe5EthicsWorkEn:
+      "En somme, notre environnement de travail est bien plus qu'un lieu physique où nous accomplissons nos tâches. C'est un lieu où l'innovation,",
+    describe5BoldEthicsWorkEn:
+      "la passion et la collaboration se rencontrent pour donner vie à des projets web extraordinaires.",
+    describeWithoutBold5En:
+      "Chez nous, chaque journée est une nouvelle opportunité de repousser les limites du design et du développement web, de créer",
+    describe5Bold5En:
+      "des expériences mémorables pour nos clients et de se réaliser professionnellement.",
+    //
+    titleDetailsEthics1En: "Évolution perpétuelle.",
+    describeDetailsEthics1En:
+      " L'industrie du design et du développement web est en constante évolution. Nous restons constamment à l'affût des dernières tendances, technologies et meilleures pratiques pour assurer que nos projets sont à la pointe de l'innovation. Nos réalisations sont revues.",
+    titleDetailsEthics2En: "Collaboration dynamique.",
+    describeDetailsEthics2En:
+      "La collaboration est le moteur de notre succès. Nous croyons en l'importance de travailler main dans la main, tant en interne qu'avec nos clients. Nous encourageons l'échange constant d'expertise pour réaliser des projets web extraordinaires.",
+    titleDetailsEthics3En: "Créativité inépuisable.",
+    describeDetailsEthics3En:
+      "Nous croyons en la puissance de la créativité. Elle est le carburant qui alimente notre studio. Chaque projet est une opportunité d'explorer de nouvelles idées, de repousser les limites du design et du développement web, et de créer des expériences mémorables.",
+    titleTrust1Fr: "Faites confiance à",
   },
   en: {
     // Navbar + Footer
@@ -174,7 +207,13 @@ const translations = {
     navPortfolioEn: "Portfolio",
     navContactEn: "Contact",
     // Page 404
-    pageNotFoundEn: "Oops, wrong way...",
+    pageNotFoundEn: "Oops, looks like you got lost...",
+    // Links
+    linkHomeEn: "Go back to home page ➔",
+    linkServicesEn: "Find out about services ➔",
+    linkRateEn: "Check out Rates ➔",
+    linkDesignerEn: "Check out Designer ➔",
+    linkWebDevEn: "Check out Web Developer ➔",
     // Copyright :
     copy1En: "This website was designed and developed by",
     copy2En:
@@ -324,6 +363,33 @@ const translations = {
       "What drives us is our passion and we use that as a way to get better and better with time,",
     describeWithoutBold3En:
       "passion and hard work is our definition of success.",
+    // Work
+    titleWorkEthicsEn: "Work environment",
+    describe4EthicsWorkEn: "Our work environment is a creative",
+    describe4BoldEthicsWorkEn: "fusion between design & web development.",
+    describeWithoutBold4En:
+      "It's an inspirational space where innovation takes place, where screens are filled by brilliant projects in perpetual growth, and where",
+    describe4Bold4En: "the collaboration is the motor of our success.",
+    describe5EthicsWorkEn:
+      "In other words, our work environment is way more than just a physical place where we get work done, it's a place where innovation,",
+    describe5BoldEthicsWorkEn:
+      "passion and collaboration meet to give life to exciting projects and opportunities.",
+    describeWithoutBold5En:
+      "Every day is a new challenge where we give 100% of ourselves to accomplish our mission :",
+    describe5Bold5En:
+      "Creating unique experiences for our customers and grow within this exciting fast-pace world of web adventures !",
+    //
+    titleDetailsEthics1En: "Constant evolution.",
+    describeDetailsEthics1En:
+      "The web design and development industry is constantly evolving. We are constantly on the lookout for the latest trends, technologies and ways to improve to ensure that our projects are at the forefront of innovation.",
+    titleDetailsEthics2En: "Team work makes dream work.",
+    describeDetailsEthics2En:
+      "Collaboration is the key to our success. We believe in working hand by hand, both internally and with our clients. We promote the constant exchange of expertise in order to provide for you the most iconic projects ever !",
+    titleDetailsEthics3En: "Endless creativity. ",
+    describeDetailsEthics3En:
+      "We believe in the power of creativity, it's the face of our company. Every project is an opportunity to explore new ideas, push the limits of digital world further, and create memorable experiences !",
+    titleTrust1En: "Trust",
+    titleTrust2En: "for your projects.",
   },
 };
 

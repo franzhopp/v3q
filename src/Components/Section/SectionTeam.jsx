@@ -270,7 +270,7 @@ const SectionTeam = () => {
                 </div>
 
                 <div className="w-72">
-                  <p className="text-black text-left text-base mb-10 ml-10 sm:ml-0 p">
+                  <p className="text-black text-left text-base mb-10 ml-10 sm:ml-0 z">
                     <span className="font-extrabold">
                       {" "}
                       {translations[language].textSectionTeamBioBold1LouisaFr}
