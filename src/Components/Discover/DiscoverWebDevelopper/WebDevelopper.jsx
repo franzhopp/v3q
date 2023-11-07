@@ -251,9 +251,13 @@ const DiscoverWebDeveloper = () => {
             large={ImageLouisa}
             className={`h-80 w-80 sm:h-96 sm:w-96 fade-in`}
           />
-          <p className="flex text-black text-xs">
+          <p data-right="fade-right" className="flex text-black text-xs">
             📸 : Louisa.{" "}
-            <span className="ml-1"> Maison de Victor Hugo, 75004 Paris</span>.
+            <span data-right="fade-right" className="ml-1">
+              {" "}
+              Maison de Victor Hugo, 75004 Paris
+            </span>
+            .
           </p>
         </div>{" "}
         <div

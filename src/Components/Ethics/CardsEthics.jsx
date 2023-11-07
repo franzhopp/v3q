@@ -20,6 +20,17 @@ const EthicsPage = () => {
     },
     config: { duration: 1000 },
   });
+
+  const props2 = useSpring({
+    from: { color: "#FFF6E4" },
+    to: async (next) => {
+      while (true) {
+        await next({ color: "#FFF6E4" });
+        await next({ color: "#E18AB0" });
+      }
+    },
+    config: { duration: 1000 },
+  });
   return (
     <section className="bg-FFF6E4">
       <NavbarEthics />
@@ -102,9 +113,9 @@ const EthicsPage = () => {
                 03.
               </h2>
               <p className="text-black text-xl font-inter font-extrabold">
-                Passion
+                Passion & Motivation
               </p>
-              <span className="absolute w-24 h-1 bg-E18AB0"></span>
+              <span className="absolute w-48 h-1 bg-E18AB0"></span>
               <div className="w-72 mt-5">
                 <p
                   data-aos="fade-up"
@@ -296,7 +307,8 @@ const EthicsPage = () => {
             className="text-FFF6E4 font-extrabold text-2xl sm:text-4xl mb-10 mt-20"
           >
             <div className="flex justify-center">
-              <p
+              <animated.h1
+                style={props2}
                 data-aos="fade-left"
                 className="px-10 font-inter mt-4 sm:mt-3 text-3xl sm:text-4xl"
               >
@@ -305,14 +317,15 @@ const EthicsPage = () => {
                 <span>
                   <img
                     src={ImgText}
-                    className="h-20 sm:h-24 mb-3 mr-1 mt-3 inline"
+                    className="h-20 sm:h-24 mb-4 mr-1 mt-3 inline"
                     alt="Icône navi studio."
                   />
                 </span>{" "}
                 {translations[language].titleTrust2En} 🙏{" "}
-              </p>
+              </animated.h1>
             </div>
           </h1>
+
           <div className="flex justify-center">
             <div className="w-full sm:w-1/3 sm:px-0 px-10">
               <p

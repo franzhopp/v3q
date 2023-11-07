@@ -47,6 +47,9 @@ const SectionAgency = () => {
                 </animated.span>
                 .
               </h3>
+              <div className="flex justify-center">
+                <span className="absolute w-28 h-1 bg-0C3E78"></span>
+              </div>
             </div>
           </div>
           <div className="flex justify-center">
@@ -149,14 +152,14 @@ const SectionAgency = () => {
         </div>
         <div className="flex flex-col justify-center mt-6">
           <a
-            href="/ethics"
-            className=" text-FFF6E4 text-center font-extrabold underline transition hover:text-C22E2E"
+            href="/portfolio"
+            className="text-FFF6E4 text-center font-extrabold underline transition hover:text-C22E2E"
           >
             › Découvrir Portfolio ➔
           </a>
           <a
-            href="/ethics"
-            className=" text-FFF6E4 text-center font-extrabold underline transition hover:text-C22E2E"
+            href="/services"
+            className="text-FFF6E4 text-center font-extrabold underline transition hover:text-C22E2E"
           >
             › Découvrir Prestations ➔
           </a>

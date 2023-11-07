@@ -182,8 +182,8 @@ const Form = ({ label, type, value }) => {
                 {translations[language].textContactFr}
                 {translations[language].textContactEn}
               </p>
-              <div className="flex justify-center sm:justify-end">
-                <span className="absolute w-36 h-1 bg-C22E2E"></span>
+              <div className="flex justify-center">
+                <span className="absolute w-28 h-1 bg-C22E2E"></span>
               </div>
             </div>
             <div className="flex justify-start sm:justify-center mt-10 w-80 sm:w-96 ml-6 sm:ml-0">

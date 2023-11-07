@@ -14,7 +14,7 @@ const SecondSection = () => {
           {translations[language].titleSecondSectionFr}
           {translations[language].titleSecondSectionEn}
           <div className="flex justify-start">
-            <span className="absolute w-80 h-1 bg-FFF6E4"></span>
+            <span className="absolute w-28 h-1 bg-FFF6E4"></span>
           </div>
         </h3>
         <div className="mt-8 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
