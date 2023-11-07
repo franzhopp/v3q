@@ -184,7 +184,7 @@ const DevisFree = ({ label, type, value }) => {
               {translations[language].titleInfoFreeFr}
               {translations[language].titleInfoFreeEn}
               <div className="flex justify-start">
-                <span className="absolute w-16 h-1 bg-C22E2E"></span>
+                <span className="absolute w-20 h-1 bg-C22E2E"></span>
               </div>
             </p>
             <div className="mt-8">
