@@ -1,3 +1,5 @@
+import translations from "./translate.jsx";
+import { useLanguage } from "../../context/LanguageProvider.jsx";
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
@@ -10,15 +12,13 @@ import Footer from "../Footer/Footer.jsx";
 const DevisFree = ({ label, type, value }) => {
   const [status, setStatus] = useState("");
   const [isFocused, setIsFocused] = useState(false);
-
+  const { language } = useLanguage();
   const handleFocus = () => {
     setIsFocused(true);
   };
-
   // const offFocusClick = () => {
   //   setIsFocused(false);
   // };
-
   const handleBlur = () => {
     if (!value) {
       setIsFocused(true);
@@ -26,7 +26,6 @@ const DevisFree = ({ label, type, value }) => {
       setIsFocused(false);
     }
   };
-
   const [formData, setFormData] = useState({
     firstname: "",
     lastname: "",
@@ -56,7 +55,6 @@ const DevisFree = ({ label, type, value }) => {
     privacy: "",
     conditions: "",
   });
-
   const [isLoading, setIsLoading] = useState(false);
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -138,9 +136,7 @@ const DevisFree = ({ label, type, value }) => {
       setErrors(newErrors);
       return;
     }
-
     setIsLoading(true);
-
     const emailParams = {
       to_name: "Mélissa & Louisa",
       firstname: formData.firstname,
@@ -171,11 +167,9 @@ const DevisFree = ({ label, type, value }) => {
     }
     setIsLoading(false);
   };
-
   useEffect(() => {
     emailjs.init("E-u_BQRxlwXZIR-_Y");
   }, []);
-
   return (
     <section className="bg-FFF6E4 bg-contact-blur">
       <NavbarDevis />
@@ -187,8 +181,8 @@ const DevisFree = ({ label, type, value }) => {
               data-aos="fade-right"
               className="text-black text-2xl sm:text-3xl font-extrabold max-w-xl ml-6 sm:ml-0"
             >
-              Avant de soumettre un devis, nous vous invitons à lire
-              attentivement ces lignes.
+              {translations[language].titleInfoFreeFr}
+              {translations[language].titleInfoFreeEn}
               <div className="flex justify-start">
                 <span className="absolute w-16 h-1 bg-C22E2E"></span>
               </div>
@@ -200,11 +194,8 @@ const DevisFree = ({ label, type, value }) => {
                 className="text-black text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0"
               >
                 <span>
-                  Le devis permet de sécuriser le traitement de votre demande.
-                  Prenez le temps de bien comprendre les questions qui vous sont
-                  posées et veillez à fournir des réponses claires. Nous ne
-                  pourrons pas traiter un devis si les informations fournies
-                  sont illisibles.{" "}
+                  {translations[language].describeInfoFree1Fr}
+                  {translations[language].describeInfoFree1En}{" "}
                 </span>
               </p>
               <br />
@@ -213,8 +204,8 @@ const DevisFree = ({ label, type, value }) => {
                 className="text-black mb-5 text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0"
               >
                 <span className="font-extrabold underline">
-                  Veuillez prendre en considération ces directives essentielles
-                  :
+                  {translations[language].describleInfoFree2Fr}
+                  {translations[language].describleInfoFree2En}
                 </span>
               </p>
 
@@ -222,48 +213,46 @@ const DevisFree = ({ label, type, value }) => {
                 <ul>
                   <br />
                   <li data-aos="fade-right">
-                    <span className="font-extrabold">1</span>. Assurez-vous de
-                    fournir des informations complètes afin que nous puissions
-                    vous recontacter rapidement.
+                    <span className="font-extrabold">1</span>.
+                    {translations[language].bloc1FreeFr}
+                    {translations[language].bloc1FreeEn}
                   </li>
                   <br />
                   <li data-aos="fade-left">
-                    <span className="font-extrabold">2</span>. Renseignez le
-                    service que vous souhaitez afin que nous puissions élaborer
-                    votre projet en conséquence. N'hésitez pas à consulter notre
-                    page « <span className="font-extrabold">Services</span> »{" "}
+                    <span className="font-extrabold">2</span>.{" "}
+                    {translations[language].bloc2FreeFr}
+                    {translations[language].bloc2FreeEn}{" "}
                     <a
                       href="/services"
                       className="underline font-extrabold text-C22E2E"
                     >
                       {" "}
-                      en cliquant sur ce lien
+                      {translations[language].linkBlocFreeFr}
+                      {translations[language].linkBlocFreeEn}
                     </a>{" "}
-                    avant de soumettre votre devis.
+                    {translations[language].bloc2dFreeFr}
+                    {translations[language].bloc2dFreeEn}
                   </li>
                   <br />
                   <li data-aos="fade-right">
-                    <span className="font-extrabold">3</span>. Indiquez vos
-                    moyens budgétaires pour nous aider à déterminer les tarifs
-                    qui correspondent à votre service. Avant de soumettre votre
-                    devis, consultez notre page «{" "}
-                    <span className="font-extrabold">Tarification</span> »{" "}
+                    <span className="font-extrabold">3</span>.{" "}
+                    {translations[language].bloc3FreeFr}
+                    {translations[language].bloc3FreeEn}{" "}
                     <a
                       href="/rate"
                       className="underline font-extrabold text-C22E2E"
                     >
                       {" "}
-                      en cliquant sur ce lien
+                      {translations[language].linkBlocFreeFr}
+                      {translations[language].linkBlocFreeEn}
                     </a>
                     .
                   </li>
                   <br />
                   <li data-aos="fade-left">
-                    <span className="font-extrabold">4</span>. Si vous possédez
-                    déjà une charte graphique, veuillez simplement répondre «{" "}
-                    <span className="font-extrabold">oui</span> » et nous
-                    l'envoyer à notre adresse de contact, ou contactez-nous
-                    directement, merci.
+                    <span className="font-extrabold">4</span>.{" "}
+                    {translations[language].bloc4FreeFr}
+                    {translations[language].bloc4FreeEn}
                   </li>
                 </ul>
               </p>
@@ -272,19 +261,22 @@ const DevisFree = ({ label, type, value }) => {
                   to="/services"
                   className="text-FFF6E4 font-extrabold underline transition hover:text-C22E2E"
                 >
-                  › Découvrir Prestations ➔
+                  {translations[language].linkServicesFr}
+                  {translations[language].linkServicesEn}
                 </NavLink>
                 <NavLink
                   to="/rate"
                   className="text-FFF6E4 font-extrabold underline transition hover:text-C22E2E"
                 >
-                  › Découvrir Tarification ➔
+                  {translations[language].linkRateFr}
+                  {translations[language].linkRateEn}
                 </NavLink>
                 <NavLink
                   to="/"
                   className="text-FFF6E4 font-extrabold underline transition hover:text-C22E2E"
                 >
-                  › Retourner à la page d'Accueil ➔
+                  {translations[language].linkHomeFr}
+                  {translations[language].linkHomeEn}
                 </NavLink>
               </div>
             </div>
@@ -304,7 +296,8 @@ const DevisFree = ({ label, type, value }) => {
                       }`}
                       htmlFor={label}
                     >
-                      {"Prénom"}
+                      {translations[language].nameFr}
+                      {translations[language].nameEn}
                     </label>
                     <input
                       type={type}
@@ -335,7 +328,8 @@ const DevisFree = ({ label, type, value }) => {
                       }`}
                       htmlFor={label}
                     >
-                      {"Nom"}
+                      {translations[language].surnameFr}
+                      {translations[language].surnameEn}
                     </label>
                     <input
                       type={type}
@@ -396,7 +390,8 @@ const DevisFree = ({ label, type, value }) => {
                     }`}
                     htmlFor={label}
                   >
-                    {"Numéro de téléphone"}
+                    {translations[language].phoneFr}
+                    {translations[language].phoneEn}
                   </label>
                   <input
                     type={"tel"}
@@ -609,9 +604,8 @@ const DevisFree = ({ label, type, value }) => {
                 />
                 <span className="text-black">
                   {" "}
-                  En cochant cette case, je certifie avoir pris connaissance et
-                  accepté les Conditions d'Utilisation et la Politique de
-                  Confidentialité.
+                  {translations[language].conditions1Fr}
+                  {translations[language].conditions1En}
                 </span>
                 {errors.privacy && (
                   <p className="text-left font-sans-serif text-red-700">
@@ -619,7 +613,6 @@ const DevisFree = ({ label, type, value }) => {
                   </p>
                 )}
               </div>
-
               <div>
                 <input
                   className="outline-none input-secondary border-gray-200 mr-1"
@@ -630,8 +623,8 @@ const DevisFree = ({ label, type, value }) => {
                 />
                 <span className="text-black">
                   {" "}
-                  En fournissant vos informations personnelles, vous consentez à
-                  ce que{" "}
+                  {translations[language].conditions2Fr}
+                  {translations[language].conditions2En}{" "}
                   <span>
                     <img
                       src={ImgText}
@@ -639,33 +632,36 @@ const DevisFree = ({ label, type, value }) => {
                       alt="Icône navi studio."
                     />
                   </span>
-                  collecte et traite ces données conformément à sa Politique de
-                  Confidentialité.{" "}
+                  {translations[language].conditions3Fr}
+                  {translations[language].conditions3En}{" "}
                   <NavLink
                     to="/privacy"
                     rel="noreferrer"
                     target="_blank"
                     className="underline font-extrabold text-0C3E78"
                   >
-                    Lire la Politique de Confidentialité
+                    {translations[language].linkConditions1Fr}
+                    {translations[language].linkConditions1En}
                   </NavLink>
-                  , les{" "}
+                  ,{" "}
                   <NavLink
                     to="/mentions"
                     rel="noreferrer"
                     target="_blank"
                     className="underline font-extrabold text-0C3E78"
                   >
-                    Mentions Légales
+                    {translations[language].linkConditions2Fr}
+                    {translations[language].linkConditions2En}
                   </NavLink>
-                  , et les{" "}
+                  , &{" "}
                   <NavLink
                     to="/terms"
                     rel="noreferrer"
                     target="_blank"
                     className="underline font-extrabold text-0C3E78"
                   >
-                    Conditions d'Utilisation
+                    {translations[language].linkConditions3Fr}
+                    {translations[language].linkConditions3En}
                   </NavLink>
                   .
                 </span>

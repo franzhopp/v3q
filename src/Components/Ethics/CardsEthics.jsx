@@ -6,8 +6,10 @@ import NavbarEthics from "../Navigation/EthicsNavbar/EthicsNavbar";
 import ImgMac from "../../assets/bg-ethics-mac.png";
 import ImgText from "../../assets/logo-5.png";
 import Footer from "../Footer/Footer";
+import { useEffect, useState } from "react";
 
 const EthicsPage = () => {
+  const [scrollSection, setScrollSection] = useState();
   const { language } = useLanguage();
   const props = useSpring({
     from: { color: "#FFF6E4" },
@@ -20,6 +22,13 @@ const EthicsPage = () => {
     config: { duration: 1000 },
   });
 
+  const ScrollToSectionEthics = () => {
+    const sectionToScrollEthics = document.getElementById("ethics");
+    if (sectionToScrollEthics) {
+      sectionToScrollEthics.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const props2 = useSpring({
     from: { color: "#FFF6E4" },
     to: async (next) => {
@@ -30,6 +39,20 @@ const EthicsPage = () => {
     },
     config: { duration: 1000 },
   });
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrollSection(true);
+      } else {
+        setScrollSection(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <section className="bg-FFF6E4">
       <NavbarEthics />
@@ -216,7 +239,7 @@ const EthicsPage = () => {
         </div>
         <div className="flex justify-center sm:justify-end relative right-24 top-20 sm:right-96">
           <svg
-            // onClick={SectionToSectionContactServices}
+            onClick={ScrollToSectionEthics}
             xmlns="http://www.w3.org/2000/svg"
             width="86"
             height="137"
@@ -282,6 +305,7 @@ const EthicsPage = () => {
             </p>
           </div>
         </div>
+        <div id="ethics"></div>
       </section>
 
       <div className="bg-ethics-blur pt-28 pb-20">
