@@ -75,7 +75,7 @@ const SectionTeam = () => {
         <div className="w-4/5 sm:w-1/2">
           <svg
             data-aos="fade-left"
-            className="relative top-16 left-0 sm:left-28 -rotate-12"
+            className="relative top-5 sm:top-16 left-0 sm:left-28 -rotate-12"
             fill="#C22E2E"
             version="1.1"
             id="Capa_1"
