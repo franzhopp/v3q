@@ -7,6 +7,14 @@ const translations = {
     navContact: "Contact",
     // Page 404
     pageNotFoundFr: "Oups, mauvais chemin...",
+    // Links
+    linkHomeFr: "› Retourner à la page d'Accueil ➔",
+    linkServicesFr: "› Découvrir Prestations ➔",
+    linkRateFr: "› Découvrir Tarification ➔",
+    linkDesignerFr: "› Découvrir Designer ➔",
+    linkPortfolioFr: "› Découvrir Portfolio ➔",
+    linkValuesFr: "› Découvrir Nos Valeurs ➔",
+    linkWebDevFr: "› Découvrir Web Developer ➔",
     // Copyright
     copy1Fr: "Ce site web a été imaginé et mis en œuvre par",
     copy2Fr:
@@ -35,8 +43,8 @@ const translations = {
     cookieTitleFr: "Politique de cookies",
     cookieDescFr:
       "Ce site utilise des cookies pour améliorer son fonctionnement et votre \
-    expérience. Vous pouvez les accepter ou continuer votre navigation \
-    sans les accepter. L'équipe vous souhaite un bon visionnage !",
+      expérience. Vous pouvez les accepter ou continuer votre navigation \
+      sans les accepter. L'équipe vous souhaite un bon visionnage !",
     btnCookieAcceptFr: "Accepter",
     btnCookieDisableFr: "Continuer sans accepter",
     // First Section
@@ -88,7 +96,7 @@ const translations = {
       "Nos créations offrent une navigation intuitive, un contenu engageant et des fonctionnalités, garantissant que chaque visiteur se sent connecté à votre marque.",
     textSectionAgencyBold5Fr:
       "Votre site est la représentation de votre marque et de votre \
-      production.",
+        production.",
     // 3
     textSectionAgencyBold6Fr:
       "Votre site internet n'est pas seulement une dépense.",
@@ -103,13 +111,13 @@ const translations = {
     textSectionTeamBioBold1MelissaFr: "Mélissa est designer.",
     textSectionTeamBioWithoutBold1MelissaFr:
       "Résidante à Londres, elle pratique celui-ci avec beaucoup de \
-    créativité et rigueur.",
+      créativité et rigueur.",
     textSectionTeamBioBold2MelissaFr:
       "Venez connaître son histoire en cliquant sur",
     textSectionTeamBioBold1LouisaFr: "Louisa est développeuse web.",
     textSectionTeamBioWithoutBold1LouisaFr:
       " Résidante à Paris, elle pratique celui-ci avec beaucoup de \
-      passion et plaisir.",
+        passion et plaisir.",
     textSectionTeamBioBold2LouisaFr:
       "Venez connaître son histoire en cliquant sur",
     btnMoreFr: "Découvrir",
@@ -137,6 +145,98 @@ const translations = {
     linkConditions2Fr: "les Mentions Légales",
     linkConditions3Fr: "les Conditions d'Utilisation",
     btnSendFr: "Envoyer",
+    // Ethics
+    titleNavEthicsFr:
+      "Entre les fondations d'une agence et les valeurs qui sont nées.",
+    // 1
+    title1EthicsFr: "Engagement & Confiance",
+    describe1EthicsFr:
+      "Nous prenons soin de nos collaborateurs et de notre entreprise,",
+    describe1BoldEthicsFr:
+      "en nous assurant de les faire grandir et de les développer sur le long terme.",
+    describeWithoutBold1Fr:
+      "Nous nous consacrons à la réussite de nos collaborateurs et à faire de notre entreprise un endroit où il fait bon travailler.",
+    describe1Bold1Fr:
+      "L'éthique est au coeur de notre travail et est notre priorité.",
+    // 2
+    title2EthicsFr: "Satisfaction client",
+    describe2EthicsFr:
+      "Nous nous consacrons entièrement au succès et au développement à long terme de nos clients et collaborateurs",
+    describe2BoldEthicsFr:
+      "afin de leur fournir des résultats mesurables et de qualité.",
+    describeWithoutBold2Fr:
+      " Satisfaire nos clients et dépasser leurs attentes, est notre premier objectif.",
+    // 3
+    title3EthicsFr: "Passion",
+    describe3EthicsFr:
+      "Nous aimons ce que nous faisons et ce que nous représentons. Nous nous consacrons entièrement",
+    describe3BoldEthicsFr: "au succès de nos clients et de nos collaborateurs.",
+    describeWithoutBold3Fr:
+      "Nous déployons tous les efforts nécessaires pour améliorer nos performances.",
+    // Work 1
+    titleWorkEthicsFr: "Environnement de travail",
+    describe4EthicsWorkFr: "Notre environnement de travail est",
+    describe4BoldEthicsWorkFr:
+      "une fusion créative où le design et le développement web se rencontrent.",
+    describeWithoutBold4Fr:
+      "C'est un espace vibrant et inspirant où l'innovation prend vie, où les écrans brillent de projets en constante évolution, et où",
+    describe4Bold4Fr: "la collaboration est le moteur de notre succès.",
+    // 2
+    describe5EthicsWorkEn:
+      "En somme, notre environnement de travail est bien plus qu'un lieu physique où nous accomplissons nos tâches. C'est un lieu où l'innovation,",
+    describe5BoldEthicsWorkEn:
+      "la passion et la collaboration se rencontrent pour donner vie à des projets web extraordinaires.",
+    describeWithoutBold5En:
+      "Chez nous, chaque journée est une nouvelle opportunité de repousser les limites du design et du développement web, de créer",
+    describe5Bold5En:
+      "des expériences mémorables pour nos clients et de se réaliser professionnellement.",
+    //
+    titleDetailsEthics1En: "Évolution perpétuelle.",
+    describeDetailsEthics1En:
+      " L'industrie du design et du développement web est en constante évolution. Nous restons constamment à l'affût des dernières tendances, technologies et meilleures pratiques pour assurer que nos projets sont à la pointe de l'innovation. Nos réalisations sont revues.",
+    titleDetailsEthics2En: "Collaboration dynamique.",
+    describeDetailsEthics2En:
+      "La collaboration est le moteur de notre succès. Nous croyons en l'importance de travailler main dans la main, tant en interne qu'avec nos clients. Nous encourageons l'échange constant d'expertise pour réaliser des projets web extraordinaires.",
+    titleDetailsEthics3En: "Créativité inépuisable.",
+    describeDetailsEthics3En:
+      "Nous croyons en la puissance de la créativité. Elle est le carburant qui alimente notre studio. Chaque projet est une opportunité d'explorer de nouvelles idées, de repousser les limites du design et du développement web, et de créer des expériences mémorables.",
+    titleTrust1Fr: "Faites confiance à",
+    //
+    describe6EthicsWorkFr: "Nous sommes bien plus qu'un simple studio créatif.",
+    describe6BoldEthicsWorkFr:
+      "Nous sommes dévoués à faire de vos projets : une réussite.",
+    describeWithoutBold6Fr:
+      "Évolution perpétuelle, collaboration dynamique, créativité inépuisable sont la clé de nos secrets.",
+    describe6Bold6Fr: "Nous sommes votre source d'inspiration !",
+    describe7EthicsWorkFr:
+      "Nous comprenons que chaque projet est unique, c'est pourquoi nous nous engageons à apporter une approche sur-mesure à chaque collaboration.",
+    describe7BoldEthicsWorkFr:
+      "Notre équipe dévouée travaille avec passion pour donner vie à vos idées, en veillant à ce que chaque détail soit parfaitement exécuté.",
+    describeWithoutBold7Fr:
+      "Votre réussite est notre plus grande fierté. Nous croyons en la puissance de la créativité et de la collaboration pour créer des expériences uniques et mémorables.",
+    describe7Bold7Fr:
+      "Faites-nous confiance pour faire de votre vision une réalité. Ensemble, nous pouvons atteindre de nouveaux sommets.",
+    titleServicesFr: "Découvrez nos talents",
+    titleServices1Fr:
+      "Bénéficiez d'une expertise adaptée à vos besoins & envies.",
+    textServices1Fr:
+      "Ou besoin de modifications sur votre site web ? Nous pouvons le faire rapidement !",
+    titleServices3Fr: "Des offres adaptées à vos besoins",
+    bloc1ServicesFr:
+      "Nous mettons notre expertise à votre service, grâce à notre diagnostic personnalisé. Découvrez des solutions sur-mesure adaptées à votre business & situation.",
+    bloc2ServicesFr:
+      "Vous disposez d'un suivi de production complet, notre équipe reste disponible et à votre écoute 24/7. Nous travaillons main dans la main avec nos clients.",
+    bloc3ServicesFr:
+      "Obtenez un devis gratuit dès maintenant et commencez votre aventure dans le monde du digital à nos côtés !",
+    titleServicesMarketingFr: "Marketing digital",
+    subTitleMarketing1Fr: "Stratégie de marque",
+    describeMarketing1Fr:
+      "Bénéficiez d'une analyse complète de votre marque et d'une stratégie digitale adaptée au marché actuel. Profitez d'un Benchmark complet et d'une analyse secteur.",
+    subTitleMarketing2Fr: "Social Media & Référencement",
+    describeMarketing2Fr:
+      "Du SEO en passant par le Social Media Marketing profitez de nos services complémentaires. Boostez votre présence en ligne & générez des conversions.",
+    questionServicesFr:
+      "Des questions ? Une demande ? N'hésitez pas à nous contacter directement, notre équipe saura vous aiguiller répondre à toutes vos questions.",
   },
   en: {
     // Navbar + Footer
@@ -145,7 +245,15 @@ const translations = {
     navPortfolioEn: "Portfolio",
     navContactEn: "Contact",
     // Page 404
-    pageNotFoundEn: "Oops, wrong way...",
+    pageNotFoundEn: "Oops, looks like you got lost...",
+    // Links
+    linkHomeEn: "› Go back to Home page ➔",
+    linkServicesEn: "› Find out about Services ➔",
+    linkRateEn: "› Check out Rates ➔",
+    linkValuesFr: "› Check out Our Values ➔",
+    linkPortfolioFr: "› Check out Portfolio ➔",
+    linkDesignerEn: "› Check out Designer ➔",
+    linkWebDevEn: "› Check out Web Developer ➔",
     // Copyright :
     copy1En: "This website was designed and developed by",
     copy2En:
@@ -215,9 +323,9 @@ const translations = {
       "We are a digital agency who provides website creation & digital marketing services.",
     textSectionAgencyWithoutBold2En:
       "All our creations are fully optimized to give the best experience & performance to its users. \
-      We make your dreams our mission. Don't wait any longer, we are the solution to your needs. \
-      Check out the « Portfolio » section and take a look at our latest projects. \
-      ",
+        We make your dreams our mission. Don't wait any longer, we are the solution to your needs. \
+        Check out the « Portfolio » section and take a look at our latest projects. \
+        ",
     // 2
     textSectionAgencyBold3En:
       "Give life to your projects and enjoy a unique experience.",
@@ -270,6 +378,100 @@ const translations = {
     linkConditions2En: "Legal Mentions",
     linkConditions3En: "Terms of Use",
     btnSendEn: "Send",
+    // Ethics
+    titleNavEthicsEn:
+      "Greet the values who's been defining our company since its foundation.",
+    title1EthicsFr: "Trust & Commitment",
+    describe1EthicsEn:
+      "We give a particular attention to our collaborators & their company,",
+    describe1BoldEthicsEn:
+      "by making sure we are here to help them grow on the long term.",
+    describeWithoutBold1En:
+      "We dedicate ourselves to our collaborator's success & we are always insuring that our company is a great and fun place to work at!",
+    describe1Bold1En:
+      "Ethics are the key to a good quality work and we make sure it's a priority.",
+    // 2
+    title2EthicsEn: "Customer's satisfaction",
+    describe2EthicsEn:
+      "We dedicate ourselves fully to our customer's success & growth, we provide quality results that are built to last.",
+    describe2BoldEthicsEn: "Our customer's satisfaction is our priority,",
+    describeWithoutBold2En: "our job is to exceed your expectations.",
+    // 3
+    title3EthicsEn: "Passion",
+    describe3EthicsEn: "We love what we do and what we represent.",
+    describe3BoldEthicsEn:
+      "What drives us is our passion and we use that as a way to get better and better with time,",
+    describeWithoutBold3En:
+      "passion and hard work is our definition of success.",
+    // Work
+    titleWorkEthicsEn: "Work environment",
+    describe4EthicsWorkEn: "Our work environment is a creative",
+    describe4BoldEthicsWorkEn: "fusion between design & web development.",
+    describeWithoutBold4En:
+      "It's an inspirational space where innovation takes place, where screens are filled by brilliant projects in perpetual growth, and where",
+    describe4Bold4En: "the collaboration is the motor of our success.",
+    describe5EthicsWorkEn:
+      "In other words, our work environment is way more than just a physical place where we get work done, it's a place where innovation,",
+    describe5BoldEthicsWorkEn:
+      "passion and collaboration meet to give life to exciting projects and opportunities.",
+    describeWithoutBold5En:
+      "Every day is a new challenge where we give 100% of ourselves to accomplish our mission :",
+    describe5Bold5En:
+      "Creating unique experiences for our customers and grow within this exciting fast-pace world of web adventures !",
+    //
+    titleDetailsEthics1En: "Constant evolution.",
+    describeDetailsEthics1En:
+      "The web design and development industry is constantly evolving. We are constantly on the lookout for the latest trends, technologies and ways to improve to ensure that our projects are at the forefront of innovation.",
+    titleDetailsEthics2En: "Team work makes dream work.",
+    describeDetailsEthics2En:
+      "Collaboration is the key to our success. We believe in working hand by hand, both internally and with our clients. We promote the constant exchange of expertise in order to provide for you the most iconic projects ever !",
+    titleDetailsEthics3En: "Endless creativity. ",
+    describeDetailsEthics3En:
+      "We believe in the power of creativity, it's the face of our company. Every project is an opportunity to explore new ideas, push the limits of digital world further, and create memorable experiences !",
+    titleTrust1En: "Trust",
+    titleTrust2En: "for your projects.",
+    //
+    describe6EthicsWorkEn: "We are way more than just a digital agency.",
+    describe6BoldEthicsWorkEn:
+      "We are dedicated to turn your projects into success stories.",
+    describeWithoutBold6En:
+      "Exponential growth, active collaboration, endless creativity are our secret weapons.",
+    describe6Bold6En: "You are our main source of inspiration !",
+    describe7EthicsWorkEn:
+      "We understand that every project is unique, that is why we are 100% committed into providing a tailored approach to our customers.",
+    describe7BoldEthicsWorkEn:
+      "Our team is dedicated and works with passion to bring your ideas to life, ensuring that every detail is perfectly executed.",
+    describeWithoutBold7En:
+      "Your success is our pride. We believe in the power of creativity and team work to create unique and memorable experiences.",
+    describe7Bold7En: "Rely on us, together we can achieve anything.",
+    titleServicesEn: "Find out about our talents",
+    titleServices1En:
+      "Benefit from an expertise tailored to your needs & desires.",
+    describeServices1En: "In this page you will find",
+    describeServicesBold1En: "all the services",
+    describeServices2En: "that we provide.",
+    title1ServicesEn: "Showcase site",
+    title2ServicesEn: "E-commerce site",
+    title3ServicesEn: "Redesign",
+    //
+    textServices1En:
+      "Or simply need changes to your website? We can do it quickly!",
+    titleServices3En: "Offers tailored to your needs",
+    bloc1ServicesEn:
+      "With our personalized diagnosis, discover tailor-made solutions adapted to your business & situation.",
+    bloc2ServicesEn:
+      "You have a complete production follow-up, our team remains available and at your disposal 24/7. We work hand by hand with our customers.",
+    bloc3ServicesEn:
+      "Get a free quote now and start your digital adventure with us!",
+    titleServicesMarketingEn: "Digital Marketing",
+    subTitleMarketing1En: "Brand strategy",
+    describeMarketing1En:
+      "Enjoy an in-depth analysis of your brand and a digital strategy that is tailored to the current market, along with a benchmark and sector analysis.",
+    subTitleMarketing2En: "Social Media & Referencing",
+    describeMarketing2En:
+      "From SEO to Social Media Marketing, enjoy our complementary services. Boost your online presence & generate conversions.",
+    questionServicesEn:
+      "Questions? A request? Do not hesitate to contact us directly, our team will guide you to answer all your questions.",
   },
 };
 

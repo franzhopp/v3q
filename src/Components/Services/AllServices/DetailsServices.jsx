@@ -1,7 +1,10 @@
+import translations from "../translate.jsx";
+import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import { NavLink } from "react-router-dom";
 import ButtonContactServices from "../../UI/Button/ButtonContactServices";
 
 const DetailsServices = () => {
+  const { language } = useLanguage();
   return (
     <section>
       <div className="image-navi-studio-marketing-services pr-0 sm:pr-10 md:pr-20 lg:pr-32 xl:pr-96">
@@ -9,7 +12,8 @@ const DetailsServices = () => {
           data-aos="fade-right"
           className="text-center text-FFF6E4 text-4xl sm:text-5xl font-extrabold pt-10"
         >
-          Marketing digital
+          {translations[language].titleServicesMarketingFr}
+          {translations[language].titleServicesMarketingEn}
           <div className="flex justify-center">
             <span className="absolute w-32 h-1 bg-FFF6E4"></span>
           </div>
@@ -19,7 +23,10 @@ const DetailsServices = () => {
             {/* Texts */}
             <div className="font-extrabold text-FFF6E4 text-left mr-20">
               <p className="text-2xl mb-10 font-extrabold text-FFF6E4">
-                <div className="w-44">Stratégie de marque</div>
+                <div className="w-44">
+                  {translations[language].subTitleMarketing1Fr}
+                  {translations[language].subTitleMarketing1En}
+                </div>
               </p>
               <div className="w-60">
                 <p
@@ -27,16 +34,18 @@ const DetailsServices = () => {
                   data-aos-anchor-placement="top-bottom"
                   className="text-base mb-10 text-FFF6E4"
                 >
-                  <span className="absolute h-full w-1 bg-pattern-portfolio -left-14 -top-1 hidden sm:block"></span>
-                  Bénéficiez d'une analyse complète de votre marque et d'une
-                  stratégie digitale adaptée au marché actuel. Profitez d'un
-                  Benchmark complet et d'une analyse secteur.
+                  <span className="absolute h-full w-1 bg-FFF6E4 -left-14 -top-1 hidden sm:block"></span>
+                  {translations[language].describeMarketing1Fr}
+                  {translations[language].describeMarketing1En}
                 </p>
               </div>
             </div>
             <div className="font-extrabold text-FFF6E4 text-left mr-20">
               <p className="text-2xl mb-10 font-extrabold text-FFF6E4">
-                <div className="w-44">Social Media & Référencement</div>
+                <div className="w-44">
+                  {translations[language].subTitleMarketing2Fr}
+                  {translations[language].subTitleMarketing2En}
+                </div>
               </p>
               <div className="w-60">
                 <p
@@ -44,9 +53,8 @@ const DetailsServices = () => {
                   data-aos-anchor-placement="top-bottom"
                   className="text-base text-FFF6E4"
                 >
-                  Du SEO en passant par le Social Media Marketing profitez de
-                  nos services complémentaires. Boostez votre présence en ligne
-                  & générez des conversions.
+                  {translations[language].describeMarketing2Fr}
+                  {translations[language].describeMarketing2En}
                 </p>
               </div>
               <div id="contact-services"></div>
@@ -78,9 +86,8 @@ const DetailsServices = () => {
                 data-aos-anchor-placement="top-bottom"
                 className="text-black text-center text-2xl font-extrabold px-5"
               >
-                Des questions ? Une demande ? N'hésitez pas à nous contacter
-                directement, notre équipe saura vous aiguiller répondre à toutes
-                vos questions.
+                {translations[language].questionServicesFr}
+                {translations[language].questionServicesEn}
               </p>
             </div>
           </div>
@@ -90,13 +97,15 @@ const DetailsServices = () => {
             to="/rate"
             className="text-black font-extrabold underline transition hover:text-0C3E78"
           >
-            › Découvrir Tarification ➔
+            {translations[language].linkRateFr}
+            {translations[language].linkRateEn}
           </NavLink>
           <NavLink
             to="/"
             className="text-black font-extrabold underline transition hover:text-0C3E78"
           >
-            › Retourner à la page d'Accueil ➔
+            {translations[language].linkHomeFr}
+            {translations[language].linkHomeEn}
           </NavLink>
           <div className="mt-5">
             <span className="text-black font-extrabold font-inter italic">

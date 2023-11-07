@@ -1,3 +1,5 @@
+import translations from "../translate.jsx";
+import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import { NavLink } from "react-router-dom";
 import ModalImage from "react-modal-image";
 import NavbarDiscoverDesigner from "../../Navigation/NavbarDiscover/DiscoverDesignerNavbar";
@@ -11,6 +13,7 @@ import LogoSnap from "../../../assets/snapchat.png";
 import Footer from "../../Footer/Footer";
 
 const DiscoverDesigner = () => {
+  const { language } = useLanguage();
   return (
     <section>
       <NavbarDiscoverDesigner />
@@ -83,13 +86,8 @@ const DiscoverDesigner = () => {
                 data-aos="fade-left"
                 className="text-center text-C22E2E font-extrabold"
               >
-                Je vous souhaite la bienvenue sur la page « Designer ». Jeune
-                passionnée de design et d'art j'ai commencé mon voyage dans le
-                monde du digital en 2015, j'ai exploré l'univers du graphisme,
-                du design web, et de l'illustration. J'ai étudié en France le
-                Design Graphique & le Marketing, à la fin de cela j'ai commencé
-                ma carrière au Royaume-Uni en tant que UX/UI Designer puis,
-                Product Designer.
+                {translations[language].describeDesignerFr}
+                {translations[language].describeDesignerEn}
                 <br />
               </p>
               <br />
@@ -97,24 +95,23 @@ const DiscoverDesigner = () => {
                 data-aos="fade-left"
                 className="text-center text-C22E2E font-extrabold"
               >
-                Aujourd'hui je vis de ma passion et je m'épanouis à travers mon
-                art, mes créations & mes designs.
+                {translations[language].describeDesigner2Fr}
+                {translations[language].describeDesigner2En}
                 <br />
               </p>
               <p
                 data-aos="fade-left"
                 className="text-center text-C22E2E font-extrabold"
               >
-                Je puise mon inspiration dans tout ce qui m'entoure ; des
-                voyages, des lectures, des images, des sons. Ce projet et cette
-                collaboration me tenait à cœur,{" "}
+                {translations[language].describeDesigner3Fr}
+                {translations[language].describeDesigner3En}{" "}
                 <img
                   src={ImgText}
                   className="h-6 inline"
                   alt="Icône navi studio."
                 />{" "}
-                c'est un peu comme un enfant né de l'amour du design et du
-                développement web. ♥
+                {translations[language].describeDesigner4Fr}
+                {translations[language].describeDesigner4En}
                 <br />
               </p>
             </div>
@@ -123,7 +120,8 @@ const DiscoverDesigner = () => {
                 to="/webdev"
                 className="mt-7 text-C22E2E text-center font-extrabold underline transition hover:text-0C3E78"
               >
-                › Découvrir Web Developer ➔
+                {translations[language].linkWebDevFr}
+                {translations[language].linkWebDevEn}
               </NavLink>
             </div>
             <div className="flex justify-center">
@@ -131,7 +129,8 @@ const DiscoverDesigner = () => {
                 to="/"
                 className=" text-C22E2E font-extrabold underline transition hover:text-0C3E78"
               >
-                › Retourner à la page d'Accueil ➔
+                {translations[language].linkHomeFr}
+                {translations[language].linkHomeEn}
               </NavLink>
             </div>
           </div>
@@ -143,11 +142,8 @@ const DiscoverDesigner = () => {
               className="h-80 w-80 sm:h-96 sm:w-96 transition-opacity duration-500 hover:opacity-50"
             />
             <p className="flex text-black text-xs">
-              📸 : Mélissa.{" "}
-              <span className="ml-1">
-                {" "}
-                Musée d'Art Contemporain, 69006 Lyon.
-              </span>
+              {translations[language].city1Fr}
+              {translations[language].city1En}
             </p>
           </div>
         </div>

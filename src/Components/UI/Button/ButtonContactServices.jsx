@@ -1,7 +1,10 @@
+import translations from "../translate.jsx";
+import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import { NavLink } from "react-router-dom";
 import Artwork from "../../../assets/artworkheart.png";
 
 const ButtonContactServices = () => {
+  const { language } = useLanguage();
   return (
     <>
       <div className="animate-formbounce flex justify-center mt-5 px-10">
@@ -9,7 +12,10 @@ const ButtonContactServices = () => {
           to="/"
           className="inline-flex items-center gap-2 rounded-full border-black border-4 bg-black px-8 py-3 text-FFF6E4"
         >
-          <span className="text-3xl mr-3 font-semibold">Contactez-nous</span>
+          <span className="text-3xl mr-3 font-semibold">
+            {translations[language].titleContactFr}
+            {translations[language].titleContactEn}
+          </span>
           <svg
             width="44"
             height="38"

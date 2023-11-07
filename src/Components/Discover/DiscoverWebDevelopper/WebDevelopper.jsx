@@ -1,5 +1,7 @@
+import translations from "../translate.jsx";
+import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import { NavLink } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import ModalImage from "react-modal-image";
 import NavbarDiscoverWebDevelopper from "../../Navigation/NavbarDiscover/DiscoverWebDevelopperNavbar";
@@ -12,7 +14,7 @@ import LogoSnap from "../../../assets/snapchat.png";
 import Footer from "../../Footer/Footer";
 
 const DiscoverWebDeveloper = () => {
-  // const [isVisible, setIsVisible] = useState(false);
+  const { language } = useLanguage();
   useEffect(() => {
     const numStars = 20;
     const container = document.getElementById("star-container");
@@ -131,28 +133,24 @@ const DiscoverWebDeveloper = () => {
               data-aos="fade-right"
               className="text-left text-FFF6E4 font-extrabold"
             >
-              Je vous souhaite la bienvenue sur la page « Web Developer ». Je
-              vous invite à parcourir ces lignes pour mieux me connaître.
+              {translations[language].describeDevFr}
+              {translations[language].describeDevEn}
             </p>
             <br />
             <p
               data-aos="fade-left"
               className="text-left text-FFF6E4 font-extrabold"
             >
-              Pour commencer, mon voyage dans le Développement web a débuté en
-              2021, alors que j'étudiais en France. Le choix de me lancer dans
-              la programmation est survenu de manière inattendue. Au départ, je
-              n'avais aucune intention de me plonger dans ce domaine !
+              {translations[language].describeDev2Fr}
+              {translations[language].describeDev2En}
             </p>
             <br />
             <p
               data-aos="fade-right"
               className="text-left text-FFF6E4 font-extrabold"
             >
-              Cependant, ma rencontre avec React a été un véritable coup de
-              cœur, et depuis, je consacre une grande partie de mon temps à
-              travailler avec cette technologie. Parallèlement, je nourris un
-              vif intérêt pour le Design & le Marketing.
+              {translations[language].describeDev3Fr}
+              {translations[language].describeDev3En}
             </p>
             <br />
             <br />
@@ -160,32 +158,31 @@ const DiscoverWebDeveloper = () => {
               data-aos="fade-left"
               className="text-left text-FFF6E4 font-extrabold"
             >
-              L'Écriture est une autre passion qui m'anime, elle m'inspire.
-              Créatrice d'Univers-Imaginaire, un site déployant tous mes écrits,
-              cette idée de création m'a donc donné la motivation de renforcer
-              ma collaboration avec ma UX/UI Designer pour unir nos compétences
-              et créer ensemble notre agence,
+              {translations[language].describeDev4Fr}
+              {translations[language].describeDev4En}
               <img
                 src={ImgText}
                 className="h-6 ml-1 inline"
                 alt="Icône navi studio."
               />{" "}
-              Je vous invite à naviger les pages de notre site, conçu avec une
-              grande passion et un immense plaisir de vous la partager. ✨
+              {translations[language].describeDev5Fr}
+              {translations[language].describeDev5En}
             </p>
             <br />
             <NavLink
               to="/designer"
               className="text-FFF6E4 font-extrabold underline transition hover:text-0C3E78"
             >
-              › Découvrir Designer ➔
+              {translations[language].linkDesignerFr}
+              {translations[language].linkDesignerEn}
             </NavLink>
           </div>
           <NavLink
             to="/"
             className="text-FFF6E4 font-extrabold underline transition hover:text-0C3E78"
           >
-            › Retourner à la page d'Accueil ➔
+            {translations[language].linkHomeFr}
+            {translations[language].linkHomeEn}
           </NavLink>
         </div>
       </div>
@@ -252,12 +249,8 @@ const DiscoverWebDeveloper = () => {
             className={`h-80 w-80 sm:h-96 sm:w-96 fade-in`}
           />
           <p data-right="fade-right" className="flex text-black text-xs">
-            📸 : Louisa.{" "}
-            <span data-right="fade-right" className="ml-1">
-              {" "}
-              Maison de Victor Hugo, 75004 Paris
-            </span>
-            .
+            {translations[language].city2Fr}
+            {translations[language].city2En}
           </p>
         </div>{" "}
         <div

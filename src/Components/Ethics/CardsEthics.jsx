@@ -1,12 +1,11 @@
+import translations from "./translate.jsx";
 import { useLanguage } from "../../context/LanguageProvider.jsx";
 import { NavLink } from "react-router-dom";
 import { useSpring, animated } from "react-spring";
-import translations from "./translate.jsx";
 import NavbarEthics from "../Navigation/EthicsNavbar/EthicsNavbar";
 import ImgMac from "../../assets/bg-ethics-mac.png";
 import ImgText from "../../assets/logo-5.png";
 import Footer from "../Footer/Footer";
-import ButtonServices from "../UI/Button/ButtonServices.jsx";
 
 const EthicsPage = () => {
   const { language } = useLanguage();

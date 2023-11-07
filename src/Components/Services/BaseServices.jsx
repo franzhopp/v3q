@@ -1,3 +1,5 @@
+import translations from "./translate.jsx";
+import { useLanguage } from "../../context/LanguageProvider.jsx";
 import NavbarServices from "../Navigation/ServicesNavbar/ServicesNavbar";
 import DetailsServices from "./AllServices/DetailsServices";
 import ImgService1 from "../../assets/home1.png";
@@ -9,6 +11,7 @@ import ButtonServices from "../UI/Button/ButtonServices";
 import ButtonDevis from "../UI/Button/ButtonFormDevis";
 
 const Services = () => {
+  const { language } = useLanguage();
   const text = "Websites";
   const letters = text.split("");
   const animationConfig = [
@@ -197,8 +200,8 @@ const Services = () => {
                 data-aos-anchor-placement="top-bottom"
                 className="text-black text-center text-2xl font-extrabold"
               >
-                Ou besoin de modifications sur votre site web ? Nous pouvons le
-                faire rapidement !
+                {translations[language].textServices1Fr}
+                {translations[language].textServices1En}
               </p>
             </div>
           </div>
@@ -207,7 +210,8 @@ const Services = () => {
               href="/ethics"
               className="text-black font-extrabold underline transition hover:text-0C3E78"
             >
-              › Découvrir Nos Valeurs ➔
+              {translations[language].linkValuesFr}
+              {translations[language].linkValuesEn}
             </a>
           </div>
           <ButtonServices />
@@ -217,7 +221,8 @@ const Services = () => {
             className="text-center font-extrabold text-3xl text-FFF6E4 px-5"
             data-aos="fade-left"
           >
-            Des offres adaptées à vos besoins
+            {translations[language].titleServices3Fr}
+            {translations[language].titleServices3En}
           </h3>
           <div className="flex justify-center">
             <span className="absolute w-32 h-1 bg-FFF6E4"></span>
@@ -230,9 +235,8 @@ const Services = () => {
                 className="mt-2 text-FFF6E4 px-5"
               >
                 <span className="absolute h-full w-1 bg-FFF6E4 -left-14 -top-1 hidden sm:block"></span>
-                Nous mettons notre expertise à votre service, grâce à notre
-                diagnostic personnalisé. Découvrez des solutions sur-mesure
-                adaptées à votre business & situation.
+                {translations[language].bloc1ServicesFr}
+                {translations[language].bloc1ServicesEn}
               </p>
             </div>
             <div className="min-h-500 w-80 mt-5">
@@ -241,9 +245,8 @@ const Services = () => {
                 data-aos-anchor-placement="top-bottom"
                 className="mt-2 text-FFF6E4 px-5"
               >
-                Vous disposez d'un suivi de production complet, notre équipe
-                reste disponible et à votre écoute 24/7. Nous travaillons main
-                dans la main avec nos clients.
+                {translations[language].bloc2ServicesFr}
+                {translations[language].bloc2ServicesEn}
               </p>
             </div>
             <div className="min-h-500 w-80 mt-5">
@@ -252,8 +255,8 @@ const Services = () => {
                 data-aos-anchor-placement="top-bottom"
                 className="mt-2 text-FFF6E4 px-5"
               >
-                Obtenez un devis gratuit dès maintenant et commencez votre
-                aventure dans le monde du digital à nos côtés !
+                {translations[language].bloc3ServicesFr}
+                {translations[language].bloc3ServicesEn}
               </p>
             </div>
           </div>
