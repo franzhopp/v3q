@@ -18,6 +18,7 @@ import PagePrivacy from "./Components/Privacy/Pages/PagePrivacy.jsx";
 import PageConditions from "./Components/Privacy/Pages/PageTerms.jsx";
 import PageMentions from "./Components/Privacy/Pages/PageMentions.jsx";
 import PageNotFound from "./Components/404/Error/PageNotFound.jsx";
+import RateUk from "./Components/Rate/Prices/PageAllRatesUk.jsx";
 
 const App = () => {
   const [isCookieModalOpen, setCookieModalOpen] = useState(false);
@@ -71,6 +72,7 @@ const App = () => {
                 <Route path="/designer" element={<DiscoverDesigner />} />
                 <Route path="/portfolio" element={<Portfolio />} />
                 <Route path="/rate" element={<Rate />} />
+                <Route path="/rateuk" element={<RateUk />} />
                 <Route path="/devis" element={<DevisFree />} />
                 <Route path="/privacy" element={<PagePrivacy />} />
                 <Route path="/terms" element={<PageConditions />} />

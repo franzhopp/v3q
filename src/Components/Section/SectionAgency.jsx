@@ -29,7 +29,6 @@ const SectionAgency = () => {
                 data-aos="fade-right"
                 className="text-center font-extrabold mt-28 text-black text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
               >
-                {/* <span className="absolute h-96 w-1 bg-0C3E78 -left-32 -top-28 hidden sm:block"></span> */}
                 {translations[language].welcomeAgencyFr}
                 {translations[language].welcomeAgencyEn}{" "}
                 <span>
