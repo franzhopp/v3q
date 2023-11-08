@@ -75,7 +75,6 @@ const DiscoverWebDeveloper = () => {
           </div>
         </div>
       </div>
-
       <div className="bg-C22E2E flex justify-center pb-20 px-10">
         <div className="w-96 sm:w-1/2">
           <div className="flex justify-start flex-col mt-10">

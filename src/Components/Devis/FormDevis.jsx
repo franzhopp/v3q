@@ -421,7 +421,8 @@ const DevisFree = ({ label, type, value }) => {
                     }`}
                     htmlFor={label}
                   >
-                    {"Code postal"}
+                    {translations[language].info1DevisFr}
+                    {translations[language].info1DevisEn}
                   </label>
                   <input
                     type={"tel"}
@@ -451,7 +452,8 @@ const DevisFree = ({ label, type, value }) => {
                     }`}
                     htmlFor={label}
                   >
-                    {"Quels services établissez-vous ?"}
+                    {translations[language].info2DevisFr}
+                    {translations[language].info2DevisEn}
                   </label>
                   <input
                     type={"text"}
@@ -481,7 +483,8 @@ const DevisFree = ({ label, type, value }) => {
                     }`}
                     htmlFor={label}
                   >
-                    {"Votre budget approximatif ?"}
+                    {translations[language].info3DevisFr}
+                    {translations[language].info3DevisEn}
                   </label>
                   <input
                     type={"text"}
@@ -511,7 +514,8 @@ const DevisFree = ({ label, type, value }) => {
                     }`}
                     htmlFor={label}
                   >
-                    {"À quelle date ?"}
+                    {translations[language].info4DevisFr}
+                    {translations[language].info4DevisEn}
                   </label>
                   <input
                     type={"text"}
@@ -541,7 +545,8 @@ const DevisFree = ({ label, type, value }) => {
                     }`}
                     htmlFor={label}
                   >
-                    {"Avez-vous une charte graphique ?"}
+                    {translations[language].info5DevisFr}
+                    {translations[language].info5DevisEn}
                   </label>
                   <input
                     type={"text"}
@@ -573,7 +578,8 @@ const DevisFree = ({ label, type, value }) => {
                   }`}
                   htmlFor={label}
                 >
-                  {"Écrivez-nous afin d'en savoir plus"}
+                  {translations[language].info6DevisFr}
+                  {translations[language].info6DevisEn}
                 </label>
                 <textarea
                   className={`rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm ${

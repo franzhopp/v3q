@@ -15,6 +15,9 @@ const translations = {
     linkPortfolioFr: "› Découvrir Portfolio ➔",
     linkValuesFr: "› Découvrir Nos Valeurs ➔",
     linkWebDevFr: "› Découvrir Web Developer ➔",
+    // City
+    city1Fr: "📸 : Mélissa. Musée d'Art Contemporain, 69006 Lyon.",
+    city2Fr: "📸 : Louisa. Maison de Victor Hugo, 75004 Paris.",
     // Copyright
     copy1Fr: "Ce site web a été imaginé et mis en œuvre par",
     copy2Fr:
@@ -43,8 +46,8 @@ const translations = {
     cookieTitleFr: "Politique de cookies",
     cookieDescFr:
       "Ce site utilise des cookies pour améliorer son fonctionnement et votre \
-    expérience. Vous pouvez les accepter ou continuer votre navigation \
-    sans les accepter. L'équipe vous souhaite un bon visionnage !",
+      expérience. Vous pouvez les accepter ou continuer votre navigation \
+      sans les accepter. L'équipe vous souhaite un bon visionnage !",
     btnCookieAcceptFr: "Accepter",
     btnCookieDisableFr: "Continuer sans accepter",
     // First Section
@@ -96,7 +99,7 @@ const translations = {
       "Nos créations offrent une navigation intuitive, un contenu engageant et des fonctionnalités, garantissant que chaque visiteur se sent connecté à votre marque.",
     textSectionAgencyBold5Fr:
       "Votre site est la représentation de votre marque et de votre \
-      production.",
+        production.",
     // 3
     textSectionAgencyBold6Fr:
       "Votre site internet n'est pas seulement une dépense.",
@@ -111,13 +114,13 @@ const translations = {
     textSectionTeamBioBold1MelissaFr: "Mélissa est designer.",
     textSectionTeamBioWithoutBold1MelissaFr:
       "Résidante à Londres, elle pratique celui-ci avec beaucoup de \
-    créativité et rigueur.",
+      créativité et rigueur.",
     textSectionTeamBioBold2MelissaFr:
       "Venez connaître son histoire en cliquant sur",
     textSectionTeamBioBold1LouisaFr: "Louisa est développeuse web.",
     textSectionTeamBioWithoutBold1LouisaFr:
       " Résidante à Paris, elle pratique celui-ci avec beaucoup de \
-      passion et plaisir.",
+        passion et plaisir.",
     textSectionTeamBioBold2LouisaFr:
       "Venez connaître son histoire en cliquant sur",
     btnMoreFr: "Découvrir",
@@ -216,6 +219,86 @@ const translations = {
       "Votre réussite est notre plus grande fierté. Nous croyons en la puissance de la créativité et de la collaboration pour créer des expériences uniques et mémorables.",
     describe7Bold7Fr:
       "Faites-nous confiance pour faire de votre vision une réalité. Ensemble, nous pouvons atteindre de nouveaux sommets.",
+    titleServicesFr: "Découvrez nos talents",
+    titleServices1Fr:
+      "Bénéficiez d'une expertise adaptée à vos besoins & envies.",
+    describeServices1Fr: "Dans cette page, vous trouverez",
+    describeServicesBold1Fr: "tous les services",
+    describeServices2Fr: "adaptés à vos besoins.",
+    title1ServicesFr: "Site vitrine",
+    title2ServicesFr: "Site e-commerce",
+    title3ServicesFr: "Refonte",
+    blocd1ServicesFr: "Un site vitrine qui",
+    blocd1BoldServicesFr: "vous ressemble.",
+    blocd3ServicesFr: "Impressionnez vos visiteurs dès la première visite.",
+    bloc4ServicesFr: "Construction d'un site e-commerce puissant",
+    bloc5BoldServicesFr: "et performant pour plus de ventes.",
+    bloc6ServicesFr: "Nous créons des landing pages impactantes avec une",
+    bloc6BoldServicesFr: "expérience utilisateur optimisée.",
+    bloc7BoldServicesFr: "Vous avez déjà un site internet ?",
+    bloc7ServicesFr: "Nous pouvons l'améliorer ou le refaire entièrement.",
+    textServices1Fr:
+      "Ou besoin de modifications sur votre site web ? Nous pouvons le faire rapidement !",
+    titleServices3Fr: "Des offres adaptées à vos besoins",
+    bloc1ServicesFr:
+      "Nous mettons notre expertise à votre service, grâce à notre diagnostic personnalisé. Découvrez des solutions sur-mesure adaptées à votre business & situation.",
+    bloc2ServicesFr:
+      "Vous disposez d'un suivi de production complet, notre équipe reste disponible et à votre écoute 24/7. Nous travaillons main dans la main avec nos clients.",
+    bloc3ServicesFr:
+      "Obtenez un devis gratuit dès maintenant et commencez votre aventure dans le monde du digital à nos côtés !",
+    titleServicesMarketingFr: "Marketing digital",
+    subTitleMarketing1Fr: "Stratégie de marque",
+    describeMarketing1Fr:
+      "Bénéficiez d'une analyse complète de votre marque et d'une stratégie digitale adaptée au marché actuel. Profitez d'un Benchmark complet et d'une analyse secteur.",
+    subTitleMarketing2Fr: "Social Media & Référencement",
+    describeMarketing2Fr:
+      "Du SEO en passant par le Social Media Marketing profitez de nos services complémentaires. Boostez votre présence en ligne & générez des conversions.",
+    questionServicesFr:
+      "Des questions ? Une demande ? N'hésitez pas à nous contacter directement, notre équipe saura vous aiguiller répondre à toutes vos questions.",
+    // DESIGNER
+    describeDesignerFr:
+      "Je vous souhaite la bienvenue sur la page « Designer ». Jeune passionnée de design et d'art j'ai commencé mon voyage dans le monde du digital en 2015, j'ai exploré l'univers du graphisme, du design web, et de l'illustration. J'ai étudié en France le Design Graphique & le Marketing, à la fin de cela j'ai commencé ma carrière au Royaume-Uni en tant que UX/UI Designer puis, Product Designer.",
+    describeDesigner2Fr:
+      "Aujourd'hui je vis de ma passion et je m'épanouis à travers mon art, mes créations & mes designs.",
+    describeDesigner3Fr:
+      "Je puise mon inspiration dans tout ce qui m'entoure ; des voyages, des lectures, des images, des sons. Ce projet et cette collaboration me tenait à cœur,",
+    describeDesigner4Fr:
+      "c'est un peu comme un enfant né de l'amour du design et du développement web. ♥",
+    // DEV
+    describeDevFr:
+      "Je vous souhaite la bienvenue sur la page « Web Developer ». Je vous invite à parcourir ces lignes pour mieux me connaître.",
+    describeDev2Fr:
+      "Pour commencer, mon voyage dans le Développement web a débuté en 2021, alors que j'étudiais en France. Le choix de me lancer dans la programmation est survenu de manière inattendue. Au départ, je n'avais aucune intention de me plonger dans ce domaine. ",
+    describeDev3Fr:
+      "Cependant, ma rencontre avec React a été un véritable coup de cœur, et depuis, je consacre une grande partie de mon temps à travailler avec cette technologie. Parallèlement, je nourris un vif intérêt pour le Design & le Marketing.",
+    describeDev4Fr:
+      "L'Écriture est une autre passion qui m'anime, elle m'inspire. Créatrice d'Univers-Imaginaire, un site déployant tous mes écrits, cette idée de création m'a donc donné la motivation de renforcer ma collaboration avec ma UX/UI Designer pour unir nos compétences et créer ensemble notre agence,",
+    describeDev5Fr:
+      " Je vous invite à naviger les pages de notre site, conçu avec une grande passion et un immense plaisir de vous la partager. ✨",
+    // DEVIS
+    titleInfoFreeFr:
+      "Avant de soumettre un devis, nous vous invitons à lire attentivement ces lignes.",
+    describeInfoFree1Fr:
+      "Le devis permet de sécuriser le traitement de votre demande. Prenez le temps de bien comprendre les questions qui vous sont posées et veillez à fournir des réponses claires. Nous ne pourrons pas traiter un devis si les informations fournies sont illisibles.",
+    describleInfoFree2Fr:
+      "Veuillez prendre en considération ces directives essentielles :",
+    bloc1FreeFr:
+      "Assurez-vous de fournir des informations complètes afin que nous puissions vous recontacter rapidement.",
+    bloc2FreeFr:
+      "Renseignez le service que vous souhaitez afin que nous puissions élaborer votre projet en conséquence. N'hésitez pas à consulter notre page « Services »",
+    linkBlocFreeFr: "en cliquant sur ce lien",
+    bloc2dFreeFr: "avant de soumettre votre devis.",
+    bloc3FreeFr:
+      "Indiquez vos moyens budgétaires pour nous aider à déterminer les tarifs qui correspondent à votre service. Avant de soumettre votre devis, consultez notre page « Tarification »",
+    bloc4FreeFr:
+      "Si vous possédez déjà une charte graphique, veuillez simplement répondre « oui » et nous l'envoyer à notre adresse de contact, ou contactez-nous directement, merci.",
+    // DEVIS SUITE
+    info1DevisFr: "Code postal",
+    info2DevisFr: "Quels services établissez-vous ?",
+    info3DevisFr: "Votre budget approximatif ?",
+    info4DevisFr: "À quelle date ?",
+    info5DevisFr: "Avez-vous une charte graphique ?",
+    info6DevisFr: "Écrivez-nous afin d'en savoir plus",
   },
   en: {
     // Navbar + Footer
@@ -233,6 +316,9 @@ const translations = {
     linkPortfolioFr: "› Check out Portfolio ➔",
     linkDesignerEn: "› Check out Designer ➔",
     linkWebDevEn: "› Check out Web Developer ➔",
+    // City
+    city1Fr: "📸 : Mélissa. Museum of Contemporary Art, 69006 Lyon.",
+    city2Fr: "📸 : Louisa. The House of Victor Hugo, 75004 Paris.",
     // Copyright :
     copy1En: "This website was designed and developed by",
     copy2En:
@@ -302,9 +388,9 @@ const translations = {
       "We are a digital agency who provides website creation & digital marketing services.",
     textSectionAgencyWithoutBold2En:
       "All our creations are fully optimized to give the best experience & performance to its users. \
-      We make your dreams our mission. Don't wait any longer, we are the solution to your needs. \
-      Check out the « Portfolio » section and take a look at our latest projects. \
-      ",
+        We make your dreams our mission. Don't wait any longer, we are the solution to your needs. \
+        Check out the « Portfolio » section and take a look at our latest projects. \
+        ",
     // 2
     textSectionAgencyBold3En:
       "Give life to your projects and enjoy a unique experience.",
@@ -423,6 +509,86 @@ const translations = {
     describeWithoutBold7En:
       "Your success is our pride. We believe in the power of creativity and team work to create unique and memorable experiences.",
     describe7Bold7En: "Rely on us, together we can achieve anything.",
+    titleServicesEn: "Find out about our talents",
+    titleServices1En:
+      "Benefit from an expertise tailored to your needs & desires.",
+    describeServices1En: "In this page you will find",
+    describeServicesBold1En: "all the services",
+    describeServices2En: "that we provide.",
+    title1ServicesEn: "Showcase site",
+    title2ServicesEn: "E-commerce site",
+    title3ServicesEn: "Redesign",
+    blocd1ServicesEn: "A showcase site that looks",
+    blocd1BoldServicesEn: "like you.",
+    blocd3ServicesEn: "Make the right first impression.",
+    bloc4ServicesEn: "Build a powerful and efficient",
+    bloc5BoldServicesEn: "e-commerce site for more sales.",
+    bloc6ServicesEn: "We create eye-catching landing pages with an optimized",
+    bloc6BoldServicesEn: "user experience.",
+    bloc7BoldServicesEn: "Do you already have a website?",
+    bloc7ServicesEn: "We can improve or redo it entirely.",
+    //
+    textServices1En:
+      "Or simply need changes to your website? We can do it quickly!",
+    titleServices3En: "Offers tailored to your needs",
+    bloc1ServicesEn:
+      "With our personalized diagnosis, discover tailor-made solutions adapted to your business & situation.",
+    bloc2ServicesEn:
+      "You have a complete production follow-up, our team remains available and at your disposal 24/7. We work hand by hand with our customers.",
+    bloc3ServicesEn:
+      "Get a free quote now and start your digital adventure with us!",
+    titleServicesMarketingEn: "Digital Marketing",
+    subTitleMarketing1En: "Brand strategy",
+    describeMarketing1En:
+      "Enjoy an in-depth analysis of your brand and a digital strategy that is tailored to the current market, along with a benchmark and sector analysis.",
+    subTitleMarketing2En: "Social Media & Referencing",
+    describeMarketing2En:
+      "From SEO to Social Media Marketing, enjoy our complementary services. Boost your online presence & generate conversions.",
+    questionServicesEn:
+      "Questions? A request? Do not hesitate to contact us directly, our team will guide you to answer all your questions.",
+    // DESIGNER
+    describeDesignerEn:
+      "Welcome on the « Designer » page. As a designer and artist, I began my journey into the digital world in 2015. I explored the world of graphics, web design, and illustration. After completing my Graphic Design and Marketing studies in France, I began my career in the UK as a UX/UI Designer and then as a Product Designer.",
+    describeDesigner2En:
+      "Today I live from my passion and I flourish through my art, my creations & my designs.",
+    describeDesigner3En:
+      "Travels, readings, visuals, and sounds are all sources of inspiration for me. This project and this collaboration was important to me and means a lot,",
+    describeDesigner4En:
+      "it's like a child born from the love of web design and development. ♥",
+    // DEV
+    describeDevEn:
+      "Welcome on the « Web Developer » page. I invite you to go through these lines to get to know me better.",
+    describeDev2En:
+      "My journey in web development began in 2021, while I was studying in France. The choice to start programming came unexpectedly. At first, I had no intention of diving into this field!",
+    describeDev3En:
+      "However, when i met React it was love at first sight, and since then, I have devoted my time to working with this technology. In addition, I have a strong interest in design and marketing.",
+    describeDev4En:
+      "Writing is another passion that drives me, it inspires me. The creation of 'Univers-Imaginaire', a website that showcases all of my writings, gave me the drive to start my collaboration with my UX/UI designer and found",
+    describeDev5En:
+      " I would like to invite you to explore our site, which has been created with great passion and enthusiasm to share with you. ✨",
+    // DEVIS
+    titleInfoFreeEn:
+      "Before submitting a quote, please read these lines carefully.",
+    describeInfoFree1En:
+      "The quote helps to secure the processing of your request. Take the time to understand the questions you are being asked and make sure you provide clear answers. We will not be able to process a quote if the informations provided are not clear.",
+    describleInfoFree2En: "Please consider these key guidelines:",
+    bloc1FreeEn:
+      "Be sure to provide complete information so we can get back to you quickly.",
+    bloc2FreeEn:
+      "Specify the service you need so that we can develop your project accordingly. Do not hesitate to consult our « Services »",
+    linkBlocFreeEn: "page by clicking on this link",
+    bloc2dFreeEn: "before submitting your quote.",
+    bloc3FreeEn:
+      "Indicate your budget to help us determine the rates that match your service. Before submitting your quote, consult our « Pricing »",
+    bloc4FreeEn:
+      "If you already have a branding guidelines, please simply answer « yes » and send it to our contact address, or contact us directly, thank you.",
+    // DEVIS SUITE
+    info1DevisEn: "Zip code",
+    info2DevisEn: "What services do you provide?",
+    info3DevisEn: "What's your budget?",
+    info4DevisEn: "For when?",
+    info5DevisEn: "Do you have a brand guidelines ?",
+    info6DevisEn: "Write to us to learn more",
   },
 };
 

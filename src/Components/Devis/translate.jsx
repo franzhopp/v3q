@@ -222,6 +222,21 @@ const translations = {
     titleServicesFr: "Découvrez nos talents",
     titleServices1Fr:
       "Bénéficiez d'une expertise adaptée à vos besoins & envies.",
+    describeServices1Fr: "Dans cette page, vous trouverez",
+    describeServicesBold1Fr: "tous les services",
+    describeServices2Fr: "adaptés à vos besoins.",
+    title1ServicesFr: "Site vitrine",
+    title2ServicesFr: "Site e-commerce",
+    title3ServicesFr: "Refonte",
+    blocd1ServicesFr: "Un site vitrine qui",
+    blocd1BoldServicesFr: "vous ressemble.",
+    blocd3ServicesFr: "Impressionnez vos visiteurs dès la première visite.",
+    bloc4ServicesFr: "Construction d'un site e-commerce puissant",
+    bloc5BoldServicesFr: "et performant pour plus de ventes.",
+    bloc6ServicesFr: "Nous créons des landing pages impactantes avec une",
+    bloc6BoldServicesFr: "expérience utilisateur optimisée.",
+    bloc7BoldServicesFr: "Vous avez déjà un site internet ?",
+    bloc7ServicesFr: "Nous pouvons l'améliorer ou le refaire entièrement.",
     textServices1Fr:
       "Ou besoin de modifications sur votre site web ? Nous pouvons le faire rapidement !",
     titleServices3Fr: "Des offres adaptées à vos besoins",
@@ -253,7 +268,7 @@ const translations = {
     describeDevFr:
       "Je vous souhaite la bienvenue sur la page « Web Developer ». Je vous invite à parcourir ces lignes pour mieux me connaître.",
     describeDev2Fr:
-      "Pour commencer, mon voyage dans le Développement web a débuté en 2021, alors que j'étudiais en France. Le choix de me lancer dans la programmation est survenu de manière inattendue. Au départ, je n'avais aucune intention de me plonger dans ce domaine ",
+      "Pour commencer, mon voyage dans le Développement web a débuté en 2021, alors que j'étudiais en France. Le choix de me lancer dans la programmation est survenu de manière inattendue. Au départ, je n'avais aucune intention de me plonger dans ce domaine. ",
     describeDev3Fr:
       "Cependant, ma rencontre avec React a été un véritable coup de cœur, et depuis, je consacre une grande partie de mon temps à travailler avec cette technologie. Parallèlement, je nourris un vif intérêt pour le Design & le Marketing.",
     describeDev4Fr:
@@ -277,6 +292,13 @@ const translations = {
       "Indiquez vos moyens budgétaires pour nous aider à déterminer les tarifs qui correspondent à votre service. Avant de soumettre votre devis, consultez notre page « Tarification »",
     bloc4FreeFr:
       "Si vous possédez déjà une charte graphique, veuillez simplement répondre « oui » et nous l'envoyer à notre adresse de contact, ou contactez-nous directement, merci.",
+    // DEVIS SUITE
+    info1DevisFr: "Code postal",
+    info2DevisFr: "Quels services établissez-vous ?",
+    info3DevisFr: "Votre budget approximatif ?",
+    info4DevisFr: "À quelle date ?",
+    info5DevisFr: "Avez-vous une charte graphique ?",
+    info6DevisFr: "Écrivez-nous afin d'en savoir plus",
   },
   en: {
     // Navbar + Footer
@@ -496,6 +518,15 @@ const translations = {
     title1ServicesEn: "Showcase site",
     title2ServicesEn: "E-commerce site",
     title3ServicesEn: "Redesign",
+    blocd1ServicesEn: "A showcase site that looks",
+    blocd1BoldServicesEn: "like you.",
+    blocd3ServicesEn: "Make the right first impression.",
+    bloc4ServicesEn: "Build a powerful and efficient",
+    bloc5BoldServicesEn: "e-commerce site for more sales.",
+    bloc6ServicesEn: "We create eye-catching landing pages with an optimized",
+    bloc6BoldServicesEn: "user experience.",
+    bloc7BoldServicesEn: "Do you already have a website?",
+    bloc7ServicesEn: "We can improve or redo it entirely.",
     //
     textServices1En:
       "Or simply need changes to your website? We can do it quickly!",
@@ -551,6 +582,13 @@ const translations = {
       "Indicate your budget to help us determine the rates that match your service. Before submitting your quote, consult our « Pricing »",
     bloc4FreeEn:
       "If you already have a branding guidelines, please simply answer « yes » and send it to our contact address, or contact us directly, thank you.",
+    // DEVIS SUITE
+    info1DevisEn: "Zip code",
+    info2DevisEn: "What services do you provide?",
+    info3DevisEn: "What's your budget?",
+    info4DevisEn: "For when?",
+    info5DevisEn: "Do you have a brand guidelines ?",
+    info6DevisEn: "Write to us to learn more",
   },
 };
 

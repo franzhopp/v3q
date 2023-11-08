@@ -58,9 +58,16 @@ const Services = () => {
                 className="text-black text-center"
               >
                 <span className="absolute h-56 w-1 bg-C22E2E -left-96 bottom-1 hidden sm:block"></span>
-                Dans cette page, vous trouverez{" "}
-                <span className="font-extrabold">tous les services</span>{" "}
-                adaptés à <span className="font-extrabold">vos besoins</span>.
+                {translations[language].describeServices1Fr}
+                {translations[language].describeServices1En}{" "}
+                <span className="font-extrabold">
+                  {translations[language].describeServicesBold1Fr}
+                  {translations[language].describeServicesBold1En}
+                </span>{" "}
+                <span className="italic">
+                  {translations[language].describeServices2Fr}
+                  {translations[language].describeServices2En}
+                </span>
               </p>
             </div>
           </div>
@@ -73,41 +80,43 @@ const Services = () => {
                 class="bg-C22E2E p-6 rounded-2xl shadow-2xl mb-5"
               >
                 <p className="text-FFF6E4 text-center text-xl font-extrabold mb-5">
-                  Site vitrine
+                  {translations[language].title1ServicesFr}
+                  {translations[language].title1ServicesEn}
                 </p>
                 <div className="w-64">
                   <p className="text-FFF6E4 text-center">
-                    Un site vitrine qui{" "}
-                    <span className="font-extrabold">vous ressemble</span>.{" "}
-                    <span className="font-extrabold">Impressionnez</span> vos
-                    visiteurs{" "}
+                    {translations[language].blocd1ServicesFr}
+                    {translations[language].blocd1ServicesEn}{" "}
                     <span className="font-extrabold">
-                      dès la première visite
-                    </span>
-                    .
+                      {" "}
+                      {translations[language].blocd1BoldServicesFr}
+                      {translations[language].blocd1BoldServicesEn}
+                    </span>{" "}
+                    {translations[language].blocd3ServicesFr}
+                    {translations[language].blocd3ServicesEn}
                   </p>
                 </div>
                 <div className="flex justify-center mt-10">
                   <img src={ImgService1} alt="Icône Services" className="" />
                 </div>
               </div>
-
               <div
                 data-aos="fade-right"
                 data-aos-duration="300"
                 class="bg-cards p-6 rounded-2xl shadow-2xl mb-5"
               >
                 <p className="text-FFF6E4 text-center text-xl font-extrabold mb-5">
-                  Site e-commerce
+                  {translations[language].title2ServicesFr}
+                  {translations[language].title2ServicesEn}
                 </p>
                 <div className="w-64">
                   <p className="text-FFF6E4 text-center">
-                    Construction{" "}
+                    {translations[language].bloc4ServicesFr}
+                    {translations[language].bloc4ServicesEn}{" "}
                     <span className="font-extrabold">
-                      d'un site e-commerce puissant
-                    </span>{" "}
-                    et <span className="font-extrabold">performant</span> pour{" "}
-                    <span className="font-extrabold">plus de ventes</span>.
+                      {translations[language].bloc5BoldServicesFr}
+                      {translations[language].bloc5BoldServicesEn}
+                    </span>
                   </p>
                 </div>
                 <div className="flex justify-center mt-10">
@@ -124,13 +133,14 @@ const Services = () => {
                   Landing page
                 </p>
                 <div className="w-64">
+                  {" "}
                   <p className="text-FFF6E4 text-center">
-                    Nous créons des landing pages{" "}
-                    <span className="font-extrabold">impactantes</span> avec une{" "}
+                    {translations[language].bloc6ServicesFr}
+                    {translations[language].bloc6ServicesEn}{" "}
                     <span className="font-extrabold">
-                      expérience utilisateur optimisée
+                      {translations[language].bloc6BoldServicesFr}
+                      {translations[language].bloc6BoldServicesEn}
                     </span>
-                    .
                   </p>
                 </div>
                 <div className="flex justify-center mt-10">
@@ -142,17 +152,18 @@ const Services = () => {
                 class="bg-C22E2E p-6 rounded-2xl shadow-2xl mb-5"
               >
                 <p className="text-FFF6E4 text-center text-xl font-extrabold mb-5">
-                  Refonte
-                </p>
+                  {translations[language].title3ServicesFr}
+                  {translations[language].title3ServicesEn}
+                </p>{" "}
                 <div className="w-64">
                   <p className="text-FFF6E4 text-center">
-                    Vous avez déjà un site internet ? Nous pouvons{" "}
-                    <span className="font-extrabold">l'améliorer</span> ou
+                    {translations[language].bloc7BoldServicesFr}
+                    {translations[language].bloc7BoldServicesEn}
                     <span className="font-extrabold">
                       {" "}
-                      le refaire entièrement
+                      {translations[language].bloc7ServicesFr}
+                      {translations[language].bloc7ServicesEn}
                     </span>
-                    .
                   </p>
                 </div>
                 <div className="flex justify-center mt-10">

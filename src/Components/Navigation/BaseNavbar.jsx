@@ -13,8 +13,8 @@ import "aos/dist/aos.css";
 // import DarkLightThemes from "../../hook/useTheme.jsx";
 
 const Navbar = () => {
-  const [isAnimating, setIsAnimating] = useState(false);
   const [scrollNavbar, setScrollNavbar] = useState();
+  const [isAnimating, setIsAnimating] = useState(false);
   const [toggleMenu, setToggleMenu] = useState(false);
   const [showSousListsAgence, setShowSousListsAgence] = useState(false);
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
@@ -313,7 +313,6 @@ const Navbar = () => {
         </div>
       </nav>
       <nav
-      
         className={`fixed w-full top-0 left-0 shadow-md md:hidden bg-FFF6E4 z-max`}
       >
         <div className="px-5 h-28 flex items-center justify-between">
@@ -327,9 +326,7 @@ const Navbar = () => {
               className="icon-toggle bg-C22E2E cursor-pointer rounded-md p-2 inline-flex items-center justify-center ring-1 ring-white ring-opacity-20"
             >
               <svg
-                className={`rotateAnimation ${
-                  isAnimating ? "animate-rotate" : ""
-                }`}
+                className={`${isAnimating ? "animate-rotate" : ""}`}
                 onClick={handleAnimateButtonClick}
                 width="53"
                 height="53"
@@ -366,7 +363,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <ul className={`toggle-menu ${isOpen ? "block" : "hidden"} p-3`}>
+        <ul className={`p-3 ${isOpen ? "block" : "hidden"}`}>
           <li>
             <NavLink className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
               <button onClick={toggleSousListsAgence}>
@@ -379,17 +376,13 @@ const Navbar = () => {
                 </div>
               </button>
 
-              <ul
-                className={`toggle-menu ${
-                  showSousListsAgence ? "block" : "hidden"
-                } p-2`}
-              >
+              <ul className={`p-2 ${showSousListsAgence ? "block" : "hidden"}`}>
                 <li className="ml-4">
                   <ul
                     data-aos="fade-left"
-                    className={`toggle-menu ${
+                    className={`p-2 ${
                       showSousListsAgence ? "block" : "hidden"
-                    } p-2`}
+                    }`}
                   >
                     <li className="list-decimal ml-4 text-C22E2E font-extrabold">
                       <NavLink

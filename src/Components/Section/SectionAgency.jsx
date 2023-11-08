@@ -158,13 +158,15 @@ const SectionAgency = () => {
             href="/portfolio"
             className="text-FFF6E4 text-center font-extrabold underline transition hover:text-C22E2E"
           >
-            › Découvrir Portfolio ➔
+            {translations[language].linkPortfolioFr}
+            {translations[language].linkPortfolioEn}
           </a>
           <a
             href="/services"
             className="text-FFF6E4 text-center font-extrabold underline transition hover:text-C22E2E"
           >
-            › Découvrir Prestations ➔
+            {translations[language].linkServicesFr}
+            {translations[language].linkServicesEn}
           </a>
         </div>
       </section>
