@@ -21,24 +21,12 @@ const EthicsPage = () => {
     },
     config: { duration: 1000 },
   });
-
   const ScrollToSectionEthics = () => {
     const sectionToScrollEthics = document.getElementById("ethics");
     if (sectionToScrollEthics) {
       sectionToScrollEthics.scrollIntoView({ behavior: "smooth" });
     }
   };
-
-  const props2 = useSpring({
-    from: { color: "#FFF6E4" },
-    to: async (next) => {
-      while (true) {
-        await next({ color: "#FFF6E4" });
-        await next({ color: "#E18AB0" });
-      }
-    },
-    config: { duration: 1000 },
-  });
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -330,8 +318,7 @@ const EthicsPage = () => {
             className="text-FFF6E4 font-extrabold text-2xl sm:text-4xl mb-10 mt-20"
           >
             <div className="flex justify-center">
-              <animated.h1
-                style={props2}
+              <h1
                 data-aos="fade-left"
                 className="px-10 font-inter mt-4 sm:mt-3 text-3xl sm:text-4xl"
               >
@@ -345,7 +332,7 @@ const EthicsPage = () => {
                   />
                 </span>{" "}
                 {translations[language].titleTrust2En} 🙏{" "}
-              </animated.h1>
+              </h1>
             </div>
           </h1>
 
