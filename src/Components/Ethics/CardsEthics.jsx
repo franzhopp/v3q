@@ -166,7 +166,7 @@ const EthicsPage = () => {
               {translations[language].titleWorkEthicsFr}
               {translations[language].titleWorkEthicsEn}
             </animated.h1>
-            <span className="absolute w-32 h-1 bg-E18AB0"></span>
+            <span className="absolute w-48 h-1 bg-E18AB0"></span>
             <div className="flex justify-center px-3 pt-6">
               <div className="rounded-lg shadow-md w-full sm:w-1/3 sm:px-0 px-3">
                 <p
