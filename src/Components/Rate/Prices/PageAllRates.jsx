@@ -180,7 +180,7 @@ const Rate = () => {
                         ))}
                         <a
                           href="/devis"
-                          className="pt-5 font-extrabold underline"
+                          className="pt-5 font-extrabold font-inter underline"
                         >
                           Demander un devis gratuit
                         </a>
