@@ -110,11 +110,11 @@ textarea {
     max-width: 100%;
 }
 
-.bg-pattern-portfolio {
-    background-image: url('./assets/pattern.png');
+/* .bg-pattern-portfolio {
+    background-image: url('./assets/Pattern_navi.png');
     background-repeat: no-repeat;
-    background-position: 35% 65%;
-}
+    background-position: 39% 50%;
+} */
 
 .star {
     margin-left: 10px;

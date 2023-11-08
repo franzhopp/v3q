@@ -77,7 +77,7 @@ const Footer = () => {
             className="h-auto mx-auto max-w-xs"
           />
         </div>
-        <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
+        <p className="mx-auto pt-6 max-w-md text-center leading-relaxed text-gray-500">
           <div className="text-center text-black mt-8 font-semibold">
             &copy; {translations[language].copy1Fr}
             {translations[language].copy1En}{" "}
