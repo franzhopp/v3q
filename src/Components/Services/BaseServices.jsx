@@ -68,6 +68,7 @@ const Services = () => {
                   {translations[language].describeServices2Fr}
                   {translations[language].describeServices2En}
                 </span>
+                .
               </p>
             </div>
           </div>
