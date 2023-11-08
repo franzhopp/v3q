@@ -223,8 +223,9 @@ const translations = {
     titleServices1Fr:
       "Bénéficiez d'une expertise adaptée à vos besoins & envies.",
     describeServices1Fr: "Dans cette page, vous trouverez",
+    wordServicesFr: "adaptés",
     describeServicesBold1Fr: "tous les services",
-    describeServices2Fr: "adaptés à vos besoins",
+    describeServices2Fr: "à vos besoins",
     title1ServicesFr: "Site vitrine",
     title2ServicesFr: "Site e-commerce",
     title3ServicesFr: "Refonte",

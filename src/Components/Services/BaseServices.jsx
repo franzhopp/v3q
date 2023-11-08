@@ -64,6 +64,7 @@ const Services = () => {
                   {translations[language].describeServicesBold1Fr}
                   {translations[language].describeServicesBold1En}
                 </span>{" "}
+                {translations[language].wordServicesFr}{" "}
                 <span className="font-extrabold">
                   {translations[language].describeServices2Fr}
                   {translations[language].describeServices2En}
