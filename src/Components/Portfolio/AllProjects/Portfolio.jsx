@@ -88,7 +88,6 @@ const Portfolio = () => {
             </div>
             <div className="flex justify-center mt-10">
               <svg
-                className=""
                 width="95"
                 height="64"
                 viewBox="0 0 95 64"

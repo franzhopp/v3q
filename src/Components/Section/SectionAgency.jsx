@@ -20,7 +20,7 @@ const SectionAgency = () => {
   });
   return (
     <section className="bg-FFF6E4 h-1/2">
-      <section className="">
+      <section>
         <TitleAgency className="mt-20" />
         <div className="h-1/3">
           <div className="flex justify-center">
@@ -85,6 +85,21 @@ const SectionAgency = () => {
                 </span>
               </p>
             </div>
+          </div>
+          <div className="flex justify-center mt-10">
+            <svg
+              className="animate-formbounce"
+              xmlns="http://www.w3.org/2000/svg"
+              width="51"
+              height="51"
+              viewBox="0 0 51 51"
+              fill="none"
+            >
+              <path
+                d="M25.5 0L32.1716 18.8284L51 25.5L32.1716 32.1716L25.5 51L18.8284 32.1716L0 25.5L18.8284 18.8284L25.5 0Z"
+                fill="#0C3E78"
+              />
+            </svg>
           </div>
         </div>
         <ButtonAgency />
