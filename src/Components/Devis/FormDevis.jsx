@@ -224,7 +224,7 @@ const DevisFree = ({ label, type, value }) => {
                     {translations[language].bloc2FreeEn}{" "}
                     <a
                       href="/services"
-                      className="underline font-extrabold text-C22E2E"
+                      className="underline font-extrabold tracking-wide text-C22E2E"
                     >
                       {" "}
                       {translations[language].linkBlocFreeFr}
@@ -240,7 +240,7 @@ const DevisFree = ({ label, type, value }) => {
                     {translations[language].bloc3FreeEn}{" "}
                     <a
                       href="/rate"
-                      className="underline font-extrabold text-C22E2E"
+                      className="underline font-extrabold tracking-wide text-C22E2E"
                     >
                       {" "}
                       {translations[language].linkBlocFreeFr}
