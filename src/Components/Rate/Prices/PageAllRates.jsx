@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
+import { NavLink } from "react-router-dom";
 import NavbarPages from "../../Navigation/PagesNavbar/PagesNavbar";
 import TitleRate from "../../UI/Title/TitleRate";
 import Footer from "../../Footer/Footer";
@@ -8,14 +9,12 @@ import "aos/dist/aos.css";
 
 const Rate = () => {
   const [openStates, setOpenStates] = useState({});
-
   const toggleSubList = (category) => {
     setOpenStates((prevOpenStates) => ({
       ...prevOpenStates,
       [category]: !prevOpenStates[category],
     }));
   };
-
   const text = "Sites Web";
   const letters = text.split("");
   const animationConfig = [
@@ -32,7 +31,6 @@ const Rate = () => {
     { dataAos: "fade-right", dataAosDelay: 500 },
     { dataAos: "fade-left", dataAosDelay: 600 },
   ];
-
   const text2 = "Marketing";
   const letters2 = text2.split("");
   const animationConfig2 = [
@@ -49,10 +47,8 @@ const Rate = () => {
     { dataAos: "fade-right", dataAosDelay: 500 },
     { dataAos: "fade-left", dataAosDelay: 600 },
   ];
-
   const Pink = "bg-pink";
   const Blue = "bg-0c3e78";
-
   const InformationsSitesWeb = [
     {
       title: "Site vitrine",
@@ -88,7 +84,6 @@ const Rate = () => {
       price: "à partir de 100€*",
     },
   ];
-
   const InformationsMarketing = [
     {
       title: "Startégie de marque",
@@ -99,12 +94,10 @@ const Rate = () => {
       price: "à partir de 150€*",
     },
   ];
-
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, [openStates]);
-
   return (
     <section className="bg-FFF6E4">
       <NavbarPages />
@@ -292,12 +285,12 @@ const Rate = () => {
           >
             › Découvrir Devis Gratuit ➔
           </a>
-          <a
-            href="/"
+          <NavLink
+            to="/"
             className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
           >
             › Retourner à la page d'Accueil ➔
-          </a>
+          </NavLink>
         </div>
       </div>
       <Footer />

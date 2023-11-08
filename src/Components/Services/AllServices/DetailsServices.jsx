@@ -93,13 +93,13 @@ const DetailsServices = () => {
           </div>
         </div>
         <div className="flex flex-col text-center justify-center">
-          <NavLink
-            to="/rate"
+          <a
+            href="/rate"
             className="text-black font-extrabold underline transition hover:text-0C3E78"
           >
             {translations[language].linkRateFr}
             {translations[language].linkRateEn}
-          </NavLink>
+          </a>
           <NavLink
             to="/"
             className="text-black font-extrabold underline transition hover:text-0C3E78"

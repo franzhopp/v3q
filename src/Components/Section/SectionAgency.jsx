@@ -9,11 +9,11 @@ import ButtonAgency from "../UI/Button/ButtonAgency";
 const SectionAgency = () => {
   const { language } = useLanguage();
   const props = useSpring({
-    from: { color: "#C22E2E" },
+    from: { color: "#E18AB0" },
     to: async (next) => {
       while (true) {
         await next({ color: "#0C3E78" });
-        await next({ color: "#C22E2E" });
+        await next({ color: "#E18AB0" });
       }
     },
     config: { duration: 1000 },

@@ -14,19 +14,15 @@ const Portfolio = () => {
       content: "Qui a dit que le prochain projet arrive très bientôt ? 😎",
     },
   ];
-
   const [currentIndex, setCurrentIndex] = useState(0);
-
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
   };
-
   const handlePrev = () => {
     setCurrentIndex(
       (prevIndex) => (prevIndex - 1 + cards.length) % cards.length
     );
   };
-
   return (
     <section className="bg-FFF6E4 bg-pattern-portfolio">
       <NavbarPages />

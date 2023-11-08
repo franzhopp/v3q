@@ -116,7 +116,7 @@ const PageMentions = () => {
               src={ImgText}
               className="h-6 ml-1 inline"
               alt="Icône navi studio."
-            />
+            />{" "}
             traite les données pour gérer les commandes, le marketing, et la
             transmission de données aux partenaires.
           </p>

@@ -588,7 +588,7 @@ const translations = {
     info2DevisEn: "What services do you provide?",
     info3DevisEn: "What's your budget?",
     info4DevisEn: "For when?",
-    info5DevisEn: "Do you have a brand guidelines ?",
+    info5DevisEn: "Do you have a brand guidelines?",
     info6DevisEn: "Write to us to learn more",
   },
 };

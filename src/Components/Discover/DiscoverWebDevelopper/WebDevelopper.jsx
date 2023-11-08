@@ -168,13 +168,13 @@ const DiscoverWebDeveloper = () => {
               {translations[language].describeDev5En}
             </p>
             <br />
-            <NavLink
-              to="/designer"
+            <a
+              href="/designer"
               className="text-FFF6E4 font-extrabold underline transition hover:text-0C3E78"
             >
               {translations[language].linkDesignerFr}
               {translations[language].linkDesignerEn}
-            </NavLink>
+            </a>
           </div>
           <NavLink
             to="/"

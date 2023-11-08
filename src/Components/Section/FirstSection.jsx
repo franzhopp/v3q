@@ -81,13 +81,12 @@ const Section = () => {
             >
               {translations[language].textWithoutBoldFsFr}
               {translations[language].textWithoutBoldFsEn}{" "}
-              <NavLink
-                href="about"
+              <a
                 onClick={SectionToScroll}
                 className="font-extrabold underline text-C22E2E"
               >
                 #♡
-              </NavLink>
+              </a>
               .
             </p>
           </div>
