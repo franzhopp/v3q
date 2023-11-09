@@ -88,7 +88,6 @@ const SectionAgency = () => {
           </div>
           <div className="flex justify-center mt-10">
             <svg
-              className="animate-formbounce"
               xmlns="http://www.w3.org/2000/svg"
               width="51"
               height="51"
