@@ -51,6 +51,7 @@ const Rate = () => {
   const Blue = "bg-0c3e78";
   const InformationsSitesWeb = [
     {
+      id: 1,
       title: "Site vitrine",
       price: "à partir de 650€*",
       details: ["5 pages — À partir de 300€", "10 pages — À partir de 650€"],
@@ -60,9 +61,11 @@ const Rate = () => {
         "Page « Services » pour présenter vos offres.",
         "Page « Nous » pour votre équipe ou votre entreprise.",
         "Page de « Contact » pour vos clients potentiels.",
+        "Inclut de plusieurs pages pour plus de contenus, d'informations concernant votre production et votre entreprise.",
       ],
     },
     {
+      id: 2,
       title: "Maquette graphique",
       price: "à partir de 250€*",
       details: [
@@ -70,53 +73,58 @@ const Rate = () => {
         "5 pages avec logo — À partir de 450€",
       ],
       subDetails: [
-        "5 : Conception graphique pour des pages spécifiques du site.",
-        "10 : Conception graphique pour de plusieurs pages avec l'inclusion d'un logo personnalisé.",
+        "Conception graphique pour des pages spécifiques du site.",
+        "Conception graphique pour de plusieurs pages avec l'inclusion d'un logo personnalisé.",
       ],
     },
     {
+      id: 3,
       title: "Landing page",
       price: "à partir de 300€*",
       details: ["5 pages — À partir de 300€", "10 pages — À partir de 600€"],
       subDetails: [
-        "5 : Conception d'une page impactante et convaincante.",
-        "10 : Inclut une extension d'une page avec des fonctionnalités supplémentaires.",
+        "Conception d'une page impactante et convaincante.",
+        "Inclut une extension d'une page avec des fonctionnalités supplémentaires.",
       ],
     },
     {
+      id: 4,
       title: "Site e-commerce",
       price: "à partir de 800€*",
       details: ["5 pages — À partir de 500€", "10 pages — À partir de 800€"],
       subDetails: [
-        "5 : Page d'accueil, catalogue de produits, pages de produits individuelles, panier, page de paiement.",
-        "10 : Inclut des fonctionnalités avancées telles que des options de filtrage, des avis clients, etc.",
+        "Page d'accueil, catalogue de produits, pages de produits individuelles, panier, page de paiement.",
+        "Inclut des fonctionnalités avancées telles que des options de filtrage, des avis clients, etc.",
       ],
     },
     {
+      id: 5,
       title: "Site sur-mesure",
       price: "à partir de 900€*",
       details: ["5 pages — À partir de 600€", "10 pages — À partir de 900€"],
       subDetails: [
-        "5 : Conception personnalisée en fonction des besoins spécifiques du client.",
-        "10 : Inclut des fonctionnalités avancées et une conception hautement personnalisée.",
+        "Conception personnalisée en fonction des besoins spécifiques du client.",
+        "Inclut des fonctionnalités avancées et une conception hautement personnalisée.",
       ],
     },
     {
+      id: 6,
       title: "Refonte totale",
       price: "à partir de 750€*",
       details: ["5 pages — À partir de 350€", "10 pages — À partir de 750€"],
       subDetails: [
-        "5 : Analyse complète de l'interface utilisateur et mise à jour du design.",
-        "10 : Inclut des améliorations significatives pour une expérience utilisateur optimisée.",
+        "Analyse complète de l'interface utilisateur et mise à jour du design.",
+        "Inclut des améliorations significatives pour une expérience utilisateur optimisée.",
       ],
     },
     {
+      id: 7,
       title: "Modifications",
       price: "à partir de 100€*",
       details: ["5 pages — À partir de 100€", "10 pages — À partir de 300€"],
       subDetails: [
-        "5 : Modifications spécifiques sur cinq pages existantes du site.",
-        "10 : Inclut des ajustements plus approfondis sur l'ensemble du site.",
+        "Modifications spécifiques sur cinq pages existantes du site.",
+        "Inclut des ajustements plus approfondis sur l'ensemble du site.",
       ],
     },
   ];
@@ -174,12 +182,12 @@ const Rate = () => {
             </p>
           </div>
         </div>
-        {InformationsSitesWeb.map((info, index) => (
+        {InformationsSitesWeb.map((info, id) => (
           <div className="flex justify-center font-inter">
             <div className="w-96 sm:w-1/2 px-5">
-              <div className={`flex ${index % 2 === 0 ? Pink : Blue}`}>
+              <div className={`flex ${id % 2 === 0 ? Pink : Blue}`}>
                 <div
-                  key={index}
+                  key={info.id}
                   className="mt-10 mb-10 ml-0 mr-0 sm:ml-5 sm:mr-5"
                 >
                   <div className="flex flex-wrap justify-center text-center space-x-0 sm:space-x-6">
@@ -203,13 +211,19 @@ const Rate = () => {
                       </div>
                     </button>
                     {openStates[info.title] && (
-                      <ul data-aos="fade-left" className="mt-3 font-arial">
+                      <ul className="mt-3 font-arial">
                         {info.details.map((detail, detailIndex) => (
-                          <li key={detailIndex}>{detail}</li>
+                          <li data-aos="fade-left" key={detailIndex}>
+                            › {detail}
+                          </li>
                         ))}
-                        <ul className="text-FFF6E4 font-extrabold font-inter mt-3 mb-3 text-sm sm:text-left text-justify px-16 sm:px-4">
+                        <ul className="text-FFF6E4 font-extrabold mt-3 mb-3 text-sm sm:text-left text-justify px-16 sm:px-4">
                           {info.subDetails.map((subDetail, subDetailIndex) => (
-                            <li className="list-disc" key={subDetailIndex}>
+                            <li
+                              data-aos="fade-right"
+                              className="list-disc"
+                              key={subDetailIndex}
+                            >
                               {subDetail}
                             </li>
                           ))}
