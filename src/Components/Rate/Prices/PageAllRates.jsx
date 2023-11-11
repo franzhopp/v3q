@@ -15,6 +15,13 @@ const Rate = () => {
       [category]: !prevOpenStates[category],
     }));
   };
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 100,
+      behavior: "smooth",
+    });
+  };
   const text = "Sites Web";
   const letters = text.split("");
   const animationConfig = [
@@ -73,8 +80,8 @@ const Rate = () => {
         "5 pages avec logo — À partir de 450€",
       ],
       subDetails: [
-        "Conception graphique pour des pages spécifiques du site.",
-        "Conception graphique pour de plusieurs pages avec l'inclusion d'un logo personnalisé.",
+        "Conception graphique pour des pages spécifiques de la maquette du site.",
+        "Conception graphique pour plusieurs pages avec l'inclusion d'un logo personnalisé.",
       ],
     },
     {
@@ -123,7 +130,7 @@ const Rate = () => {
       price: "à partir de 100€*",
       details: ["5 pages — À partir de 100€", "10 pages — À partir de 300€"],
       subDetails: [
-        "Modifications spécifiques sur cinq pages existantes du site.",
+        "Modifications spécifiques sur plusieurs pages existantes du site.",
         "Inclut des ajustements plus approfondis sur l'ensemble du site.",
       ],
     },
@@ -171,7 +178,7 @@ const Rate = () => {
             <p
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"
-              className=" text-C22E2E text-center"
+              className="text-C22E2E text-center"
             >
               {/* <span className="absolute h-56 w-1 bg-C22E2E -left-96 bottom-1 hidden sm:block"></span> */}
               Dans cette page, vous trouverez{" "}
@@ -348,6 +355,29 @@ const Rate = () => {
           >
             › Retourner à la page d'Accueil ➔
           </NavLink>
+          <div className="flex justify-center mt-10">
+            <a onClick={scrollToTop}>
+              <svg
+                className="rounded-full shadow-2xl"
+                xmlns="http://www.w3.org/2000/svg"
+                width="55"
+                height="55"
+                viewBox="0 0 95 95"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_15_2)">
+                  <path
+                    d="M47.5 95C73.7335 95 95 73.7335 95 47.5C95 21.2665 73.7335 0 47.5 0C21.2665 0 0 21.2665 0 47.5C0 73.7335 21.2665 95 47.5 95Z"
+                    fill="#E18AB0"
+                  />
+                  <path
+                    d="M49.8064 23.584C48.4393 22.2174 46.2233 22.2177 44.8566 23.5847L22.5859 45.8618C21.2192 47.2287 21.2195 49.4448 22.5866 50.8115C23.9536 52.1782 26.1697 52.1779 27.5363 50.8108L47.3325 31.009L67.1343 50.8052C68.5013 52.1719 70.7174 52.1716 72.084 50.8045C73.4507 49.4375 73.4504 47.2214 72.0833 45.8548L49.8064 23.584ZM50.8383 72.0588L50.8318 26.0588L43.8318 26.0598L43.8383 72.0598L50.8383 72.0588Z"
+                    fill="#FFF6E4"
+                  />
+                </g>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
       <Footer />
