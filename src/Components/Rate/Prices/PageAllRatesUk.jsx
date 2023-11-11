@@ -174,7 +174,7 @@ const RateUk = () => {
                           href="/devis"
                           className="pt-5 font-extrabold font-inter underline"
                         >
-                          Demander un devis gratuit
+                          › Demander un devis gratuit
                         </a>
                       </ul>
                     )}
@@ -252,7 +252,7 @@ const RateUk = () => {
                           <li key={detailIndex}>{detail}</li>
                         ))}
                         <a href="/devis" className="mt-3 font-inter underline">
-                          Demander un devis gratuit
+                          › Demander un devis gratuit
                         </a>
                       </ul>
                     )}

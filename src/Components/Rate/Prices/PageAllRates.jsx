@@ -54,6 +54,13 @@ const Rate = () => {
       title: "Site vitrine",
       price: "à partir de 650€*",
       details: ["5 pages — À partir de 300€", "10 pages — À partir de 650€"],
+      subDetails: [
+        "Page « d'Accueil » avec présentation de votre entreprise.",
+        "Page « À propos » pour partager votre histoire et votre mission.",
+        "Page « Services » pour présenter vos offres.",
+        "Page « Nous » pour votre équipe ou votre entreprise.",
+        "Page de « Contact » pour vos clients potentiels.",
+      ],
     },
     {
       title: "Maquette graphique",
@@ -62,26 +69,55 @@ const Rate = () => {
         "2 pages — À partir de 250€",
         "5 pages avec logo — À partir de 450€",
       ],
+      subDetails: [
+        "5 : Conception graphique pour des pages spécifiques du site.",
+        "10 : Conception graphique pour de plusieurs pages avec l'inclusion d'un logo personnalisé.",
+      ],
     },
     {
       title: "Landing page",
       price: "à partir de 300€*",
+      details: ["5 pages — À partir de 300€", "10 pages — À partir de 600€"],
+      subDetails: [
+        "5 : Conception d'une page impactante et convaincante.",
+        "10 : Inclut une extension d'une page avec des fonctionnalités supplémentaires.",
+      ],
     },
     {
       title: "Site e-commerce",
       price: "à partir de 800€*",
+      details: ["5 pages — À partir de 500€", "10 pages — À partir de 800€"],
+      subDetails: [
+        "5 : Page d'accueil, catalogue de produits, pages de produits individuelles, panier, page de paiement.",
+        "10 : Inclut des fonctionnalités avancées telles que des options de filtrage, des avis clients, etc.",
+      ],
     },
     {
       title: "Site sur-mesure",
       price: "à partir de 900€*",
+      details: ["5 pages — À partir de 600€", "10 pages — À partir de 900€"],
+      subDetails: [
+        "5 : Conception personnalisée en fonction des besoins spécifiques du client.",
+        "10 : Inclut des fonctionnalités avancées et une conception hautement personnalisée.",
+      ],
     },
     {
       title: "Refonte totale",
       price: "à partir de 750€*",
+      details: ["5 pages — À partir de 350€", "10 pages — À partir de 750€"],
+      subDetails: [
+        "5 : Analyse complète de l'interface utilisateur et mise à jour du design.",
+        "10 : Inclut des améliorations significatives pour une expérience utilisateur optimisée.",
+      ],
     },
     {
       title: "Modifications",
       price: "à partir de 100€*",
+      details: ["5 pages — À partir de 100€", "10 pages — À partir de 300€"],
+      subDetails: [
+        "5 : Modifications spécifiques sur cinq pages existantes du site.",
+        "10 : Inclut des ajustements plus approfondis sur l'ensemble du site.",
+      ],
     },
   ];
   const InformationsMarketing = [
@@ -171,11 +207,18 @@ const Rate = () => {
                         {info.details.map((detail, detailIndex) => (
                           <li key={detailIndex}>{detail}</li>
                         ))}
+                        <ul className="text-FFF6E4 font-extrabold font-inter mt-3 mb-3 text-sm sm:text-left text-justify px-16 sm:px-4">
+                          {info.subDetails.map((subDetail, subDetailIndex) => (
+                            <li className="list-disc" key={subDetailIndex}>
+                              {subDetail}
+                            </li>
+                          ))}
+                        </ul>
                         <a
                           href="/devis"
                           className="pt-5 font-extrabold font-inter underline"
                         >
-                          Demander un devis gratuit
+                          › Demander un devis gratuit
                         </a>
                       </ul>
                     )}
@@ -241,7 +284,7 @@ const Rate = () => {
                       {info.price}
                     </div>
                   </div>
-                  <div className="text-FFF6E4 text-center sm:text-left">
+                  {/* <div className="text-FFF6E4 text-center sm:text-left">
                     <button onClick={() => toggleSubList(info.title)}>
                       <div className="flex hover:opacity-70 transition">
                         En savoir plus <IoIosArrowDown className="mt-1  ml-1" />
@@ -253,11 +296,11 @@ const Rate = () => {
                           <li key={detailIndex}>{detail}</li>
                         ))}
                         <a href="/devis" className="mt-3 font-inter underline">
-                          Demander un devis gratuit
+                          › Demander un devis gratuit
                         </a>
                       </ul>
                     )}
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
