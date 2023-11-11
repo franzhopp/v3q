@@ -54,8 +54,8 @@ const Rate = () => {
     { dataAos: "fade-right", dataAosDelay: 500 },
     { dataAos: "fade-left", dataAosDelay: 600 },
   ];
-  const Pink = "bg-pink";
   const Blue = "bg-0c3e78";
+  const Pink = "bg-pink";
   const InformationsSitesWeb = [
     {
       id: 1,
@@ -189,10 +189,10 @@ const Rate = () => {
             </p>
           </div>
         </div>
-        {InformationsSitesWeb.map((info, id) => (
+        {InformationsSitesWeb.map((info) => (
           <div className="flex justify-center font-inter">
             <div className="w-96 sm:w-1/2 px-5">
-              <div className={`flex ${id % 2 === 0 ? Pink : Blue}`}>
+              <div className={`flex ${info.id % 2 === 0 ? Blue : Pink}`}>
                 <div
                   key={info.id}
                   className="mt-10 mb-10 ml-0 mr-0 sm:ml-5 sm:mr-5"
