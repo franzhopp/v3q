@@ -20,8 +20,8 @@ const SectionAgency = () => {
   });
   return (
     <section className="bg-FFF6E4 h-1/2">
-      <section>
-        <TitleAgency className="mt-20" />
+      <TitleAgency className="mt-20" />
+      <section className="test4">
         <div className="h-1/3">
           <div className="flex justify-center">
             <div className="w-4/5 sm:w-1/2">
@@ -103,7 +103,7 @@ const SectionAgency = () => {
         </div>
         <ButtonAgency />
       </section>
-      <section className="bg-0C3E78 py-24 px-4 sm:px-6 lg:px-8 border-b border-t border-gray-400">
+      <section className="bg-0C3E78 py-24 px-4 sm:px-6 lg:px-8 border-b border-gray-400">
         <div className="pt-3 pb-16 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
           <div className="w-80 mt-5">
             <p

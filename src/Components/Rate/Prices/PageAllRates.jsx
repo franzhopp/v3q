@@ -296,7 +296,7 @@ const Rate = () => {
                   key={index}
                   className="mt-10 mb-10 ml-0 mr-0 sm:ml-5 sm:mr-5"
                 >
-                  <div className="flex flex-wrap  justify-center text-center space-x-0 sm:space-x-6">
+                  <div className="flex flex-wrap justify-center text-center space-x-0 sm:space-x-6">
                     <div
                       data-aos="fade-left"
                       className="mt-5 mb-5 text-FFF6E4 text-3xl sm:text-4xl"
@@ -310,23 +310,44 @@ const Rate = () => {
                       {info.price}
                     </div>
                   </div>
-                  {/* <div className="text-FFF6E4 text-center sm:text-left">
+                  <div className="text-FFF6E4 text-center sm:text-left">
                     <button onClick={() => toggleSubList(info.title)}>
                       <div className="flex hover:opacity-70 transition">
                         En savoir plus <IoIosArrowDown className="mt-1  ml-1" />
                       </div>
                     </button>
                     {openStates[info.title] && (
-                      <ul data-aos="fade-left" className="mt-2 font-arial">
+                      <ul className="mt-3 font-arial">
                         {info.details.map((detail, detailIndex) => (
-                          <li key={detailIndex}>{detail}</li>
+                          <li
+                            data-aos="fade-left"
+                            data-aos-duration="600"
+                            key={detailIndex}
+                          >
+                            › {detail}
+                          </li>
                         ))}
-                        <a href="/devis" className="mt-3 font-inter underline">
+                        <ul className="text-FFF6E4 font-extrabold mt-3 mb-3 text-sm sm:text-left text-justify px-16 sm:px-4">
+                          {info.subDetails.map((subDetail, subDetailIndex) => (
+                            <li
+                              data-aos="fade-right"
+                              data-aos-duration="600"
+                              className="list-disc"
+                              key={subDetailIndex}
+                            >
+                              {subDetail}
+                            </li>
+                          ))}
+                        </ul>
+                        <a
+                          href="/devis"
+                          className="pt-5 font-extrabold font-inter underline"
+                        >
                           › Demander un devis gratuit
                         </a>
                       </ul>
                     )}
-                  </div> */}
+                  </div>
                 </div>
               </div>
             </div>
@@ -365,8 +386,8 @@ const Rate = () => {
               <svg
                 className="rounded-full shadow-2xl"
                 xmlns="http://www.w3.org/2000/svg"
-                width="55"
-                height="55"
+                width="95"
+                height="95"
                 viewBox="0 0 95 95"
                 fill="none"
               >

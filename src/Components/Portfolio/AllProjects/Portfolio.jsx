@@ -10,7 +10,7 @@ const Portfolio = () => {
   const cards = [
     {
       image: ImgDefault,
-      title: "Prochain projet",
+      title: "À venir",
       content: "Qui a dit que le prochain projet arrive très bientôt ? 😎",
     },
   ];

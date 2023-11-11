@@ -186,9 +186,10 @@ const Form = ({ label, type, value }) => {
                 <span className="absolute w-28 h-1 bg-C22E2E"></span>
               </div>
             </div>
-            <div className="flex justify-start sm:justify-center mt-10 w-80 sm:w-96 ml-6 sm:ml-0">
+            <div className="flex justify-start sm:justify-center mt-10 mb-10 w-80 sm:w-96 ml-6 sm:ml-0">
               <Link onClick={scrollToTop}>
                 <svg
+                  className="rounded-full shadow-2xl"
                   xmlns="http://www.w3.org/2000/svg"
                   width="95"
                   height="95"
