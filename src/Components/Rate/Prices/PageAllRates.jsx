@@ -220,7 +220,11 @@ const Rate = () => {
                     {openStates[info.title] && (
                       <ul className="mt-3 font-arial">
                         {info.details.map((detail, detailIndex) => (
-                          <li data-aos="fade-left" key={detailIndex}>
+                          <li
+                            data-aos="fade-left"
+                            data-aos-duration="600"
+                            key={detailIndex}
+                          >
                             › {detail}
                           </li>
                         ))}
@@ -228,6 +232,7 @@ const Rate = () => {
                           {info.subDetails.map((subDetail, subDetailIndex) => (
                             <li
                               data-aos="fade-right"
+                              data-aos-duration="600"
                               className="list-disc"
                               key={subDetailIndex}
                             >
