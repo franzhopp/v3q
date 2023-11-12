@@ -5,7 +5,7 @@ const SecondSection = () => {
   const { language } = useLanguage();
 
   return (
-    <section className="bg-C22E2E h-1/2 border-b border-gray-400">
+    <section className="bg-C22E2E h-1/2 border-b border-gray-300">
       <div className="pt-32 pb-28 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h3
           className="text-left ml-5 sm:ml-10 font-extrabold text-3xl text-FFF6E4"

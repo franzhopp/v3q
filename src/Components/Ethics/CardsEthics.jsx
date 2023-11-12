@@ -168,7 +168,7 @@ const EthicsPage = () => {
           </svg>
         </div>
         <div className="flex justify-center">
-          <div className="mt-20">
+          <div className="mt-16">
             <div className="px-10">
               <img src={ImgMac} alt="Image Ethics" className="rounded-lg" />
             </div>
@@ -189,7 +189,7 @@ const EthicsPage = () => {
               <span className="absolute w-48 h-1 bg-E18AB0"></span>
             </div>
             <div className="flex justify-center px-3 pt-6">
-              <div className="rounded-lg shadow-md w-80 sm:w-1/3 sm:px-0 px-3">
+              <div className="rounded-lg shadow-md w-96 sm:w-1/3 sm:px-0 px-3">
                 <p
                   data-aos="fade-up"
                   data-aos-anchor-placement="top-bottom"

@@ -29,7 +29,13 @@ const NavbarServices = () => {
   const changeLanguageHandler = (newLanguage) => {
     changeLanguage(newLanguage);
   };
-
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 100,
+      behavior: "smooth",
+    });
+  };
   // Toggle → HandleMouse from list items
   const toggleMenuMobile = () => {
     setToggleMenu(!toggleMenu);
@@ -98,6 +104,7 @@ const NavbarServices = () => {
             <div className="flex items-center">
               <NavLink to="/">
                 <img
+                  onClick={scrollToTop}
                   data-aos="fade-left"
                   className="lg:h-20 h-10 bg-cover bg-no-repeat xl:logo"
                   src={Image}
@@ -296,7 +303,12 @@ const NavbarServices = () => {
       >
         <div className="px-5 h-28 flex items-center justify-between">
           <NavLink to="/" data-aos="fade-left">
-            <img src={Image} alt="" className="h-10 w-auto sm:h-10" />
+            <img
+              src={Image}
+              onClick={scrollToTop}
+              alt=""
+              className="h-10 w-auto sm:h-10"
+            />
           </NavLink>
           <div>
             <div

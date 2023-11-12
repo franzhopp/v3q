@@ -116,6 +116,14 @@ export const data = [
     link: "/rate",
   },
   {
+    keywords: "Pricing",
+    link: "/rate",
+  },
+  {
+    keywords: "Free Quote",
+    link: "/devis",
+  },
+  {
     keywords: "Quote",
     link: "/devis",
   },

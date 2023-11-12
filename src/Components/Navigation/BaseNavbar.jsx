@@ -25,13 +25,18 @@ const Navbar = () => {
   const [openModel, setOpenModel] = useState();
   const [searchQuery, setSearchQuery] = useState();
   const [isOpen, setIsOpen] = useState(false);
-
   const { language, changeLanguage } = useLanguage();
 
   const changeLanguageHandler = (newLanguage) => {
     changeLanguage(newLanguage);
   };
-
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 100,
+      behavior: "smooth",
+    });
+  };
   // Toggle → HandleMouse from list items
   const toggleMenuMobile = () => {
     setToggleMenu(!toggleMenu);
@@ -107,7 +112,7 @@ const Navbar = () => {
   ]);
 
   return (
-    <div className="image-navi-studio-home border-b border-gray-400">
+    <div className="image-navi-studio-home border-b border-gray-300">
       <nav
         className={`bg-FFF6E4 border-b-4 border-C22E2E h-28 items-center transition duration-300 ease-in-out fixed w-full top-0 left-0 shadow-md z-max`}
       >
@@ -116,6 +121,7 @@ const Navbar = () => {
             <div className="flex items-center">
               <NavLink to="/">
                 <img
+                  onClick={scrollToTop}
                   data-aos="fade-left"
                   className="lg:h-20 h-10 bg-cover bg-no-repeat xl:logo"
                   src={Image}
@@ -317,7 +323,12 @@ const Navbar = () => {
       >
         <div className="px-5 h-28 flex items-center justify-between">
           <NavLink to="/" data-aos="fade-left">
-            <img src={Image} alt="" className="h-10 w-auto" />
+            <img
+              src={Image}
+              onClick={scrollToTop}
+              alt="Logo navi studio."
+              className="h-10 w-auto"
+            />
           </NavLink>
           <div>
             <div

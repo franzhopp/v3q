@@ -222,7 +222,7 @@ const Rate = () => {
                         {info.details.map((detail, detailIndex) => (
                           <li
                             data-aos="fade-left"
-                            data-aos-duration="600"
+                            data-aos-duration="500"
                             key={detailIndex}
                           >
                             › {detail}
@@ -321,7 +321,7 @@ const Rate = () => {
                         {info.details.map((detail, detailIndex) => (
                           <li
                             data-aos="fade-left"
-                            data-aos-duration="600"
+                            data-aos-duration="500"
                             key={detailIndex}
                           >
                             › {detail}
@@ -384,7 +384,7 @@ const Rate = () => {
           <div className="flex justify-center mt-10 mb-10">
             <a onClick={scrollToTop}>
               <svg
-                className="rounded-full shadow-2xl"
+                className="rounded-full shadow-lg"
                 xmlns="http://www.w3.org/2000/svg"
                 width="95"
                 height="95"
