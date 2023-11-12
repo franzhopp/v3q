@@ -213,7 +213,7 @@ const Rate = () => {
                   </div>
                   <div className="text-FFF6E4 text-center sm:text-left">
                     <button onClick={() => toggleSubList(info.title)}>
-                      <div className="flex hover:opacity-70 transition">
+                      <div className="flex">
                         En savoir plus <IoIosArrowDown className="mt-1  ml-1" />
                       </div>
                     </button>
