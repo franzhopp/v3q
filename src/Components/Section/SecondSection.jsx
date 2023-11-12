@@ -80,8 +80,8 @@ const SecondSection = () => {
               href="/ethics"
               className="text-FFF6E4 font-extrabold underline transition hover:text-0C3E78"
             >
-              {translations[language].linkPortfolioFr}
-              {translations[language].linkPortfolioEn}
+              {translations[language].linkValuesFr}
+              {translations[language].linkValuesEn}
             </a>
           </div>
         </div>

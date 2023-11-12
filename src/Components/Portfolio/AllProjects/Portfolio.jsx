@@ -136,7 +136,6 @@ const Portfolio = () => {
             </div>
           </div>
           <svg
-            className="h-14 w-14 sm:flex hidden"
             width="192"
             height="193"
             viewBox="0 0 192 193"

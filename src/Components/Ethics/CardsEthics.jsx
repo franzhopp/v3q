@@ -148,6 +148,25 @@ const EthicsPage = () => {
             </div>
           </div>
         </div>
+        <div className="flex justify-center pt-16">
+          <svg
+            className="animate-formbounce"
+            width="70"
+            height="70"
+            viewBox="0 0 192 193"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M41.5 0L54.9987 28.0013L83 41.5L54.9987 54.9987L41.5 83L28.0013 54.9987L0 41.5L28.0013 28.0013L41.5 0Z"
+              fill="#4457BE"
+            />
+            <path
+              d="M116.5 42L141.058 92.9422L192 117.5L141.058 142.058L116.5 193L91.9422 142.058L41 117.5L91.9422 92.9422L116.5 42Z"
+              fill="#4457BE"
+            />
+          </svg>
+        </div>
         <div className="flex justify-center">
           <div className="mt-20">
             <div className="px-10">
@@ -213,14 +232,18 @@ const EthicsPage = () => {
         <div className="flex justify-center pt-16">
           <svg
             className="animate-formbounce"
-            xmlns="http://www.w3.org/2000/svg"
-            width="51"
-            height="51"
-            viewBox="0 0 51 51"
+            width="70"
+            height="70"
+            viewBox="0 0 192 193"
             fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M25.5 0L32.1716 18.8284L51 25.5L32.1716 32.1716L25.5 51L18.8284 32.1716L0 25.5L18.8284 18.8284L25.5 0Z"
+              d="M41.5 0L54.9987 28.0013L83 41.5L54.9987 54.9987L41.5 83L28.0013 54.9987L0 41.5L28.0013 28.0013L41.5 0Z"
+              fill="#E18AB0"
+            />
+            <path
+              d="M116.5 42L141.058 92.9422L192 117.5L141.058 142.058L116.5 193L91.9422 142.058L41 117.5L91.9422 92.9422L116.5 42Z"
               fill="#E18AB0"
             />
           </svg>
@@ -295,19 +318,22 @@ const EthicsPage = () => {
         </div>
         <div id="ethics"></div>
       </section>
-
-      <div className="bg-ethics-blur pt-28 pb-20">
+      <div className="bg-ethics-blur pt-32 pb-20">
         <div className="flex justify-center">
           <svg
             className="animate-formbounce"
-            xmlns="http://www.w3.org/2000/svg"
-            width="51"
-            height="51"
-            viewBox="0 0 51 51"
+            width="70"
+            height="70"
+            viewBox="0 0 192 193"
             fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M25.5 0L32.1716 18.8284L51 25.5L32.1716 32.1716L25.5 51L18.8284 32.1716L0 25.5L18.8284 18.8284L25.5 0Z"
+              d="M41.5 0L54.9987 28.0013L83 41.5L54.9987 54.9987L41.5 83L28.0013 54.9987L0 41.5L28.0013 28.0013L41.5 0Z"
+              fill="#FFF6E4"
+            />
+            <path
+              d="M116.5 42L141.058 92.9422L192 117.5L141.058 142.058L116.5 193L91.9422 142.058L41 117.5L91.9422 92.9422L116.5 42Z"
               fill="#FFF6E4"
             />
           </svg>
@@ -404,14 +430,18 @@ const EthicsPage = () => {
         <div className="flex justify-center mt-28 pb-28">
           <svg
             className="animate-formbounce"
-            xmlns="http://www.w3.org/2000/svg"
-            width="51"
-            height="51"
-            viewBox="0 0 51 51"
+            width="70"
+            height="70"
+            viewBox="0 0 192 193"
             fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M25.5 0L32.1716 18.8284L51 25.5L32.1716 32.1716L25.5 51L18.8284 32.1716L0 25.5L18.8284 18.8284L25.5 0Z"
+              d="M41.5 0L54.9987 28.0013L83 41.5L54.9987 54.9987L41.5 83L28.0013 54.9987L0 41.5L28.0013 28.0013L41.5 0Z"
+              fill="#E18AB0"
+            />
+            <path
+              d="M116.5 42L141.058 92.9422L192 117.5L141.058 142.058L116.5 193L91.9422 142.058L41 117.5L91.9422 92.9422L116.5 42Z"
               fill="#E18AB0"
             />
           </svg>
