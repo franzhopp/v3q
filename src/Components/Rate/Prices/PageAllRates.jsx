@@ -381,7 +381,7 @@ const Rate = () => {
           >
             › Retourner à la page d'Accueil ➔
           </NavLink>
-          <div className="flex justify-center mt-10">
+          <div className="flex justify-center mt-10 mb-10">
             <a onClick={scrollToTop}>
               <svg
                 className="rounded-full shadow-2xl"
