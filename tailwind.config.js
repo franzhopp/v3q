@@ -25,6 +25,7 @@ export default {
         'FFF6E4': '#FFF6E4',
         '0c3e78': '#0C3E78',
         'pink': '#E18AB0',
+        '4457BE': "#4457BE",
       },
       colors: {
         'FFF6E4': '#FFF6E4',

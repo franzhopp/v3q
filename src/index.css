@@ -59,6 +59,10 @@ textarea {
     border-width: 0 0 0 10px;
 }
 
+.test5 {
+    background: linear-gradient(#4457BE, #E18AB0);
+}
+
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
