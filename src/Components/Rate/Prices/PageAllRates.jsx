@@ -68,7 +68,7 @@ const Rate = () => {
         "Page « Services » pour présenter vos offres.",
         "Page « Nous » pour votre équipe ou votre entreprise.",
         "Page de « Contact » pour vos clients potentiels.",
-        "Inclut de plusieurs pages pour plus de contenus, d'informations concernant votre production et votre entreprise.",
+        "Inclut de plusieurs pages pour plus de contenus, d'informations concernant votre entreprise.",
       ],
     },
     {
@@ -312,7 +312,7 @@ const Rate = () => {
                   </div>
                   <div className="text-FFF6E4 text-center sm:text-left">
                     <button onClick={() => toggleSubList(info.title)}>
-                      <div className="flex hover:opacity-70 transition">
+                      <div className="flex">
                         En savoir plus <IoIosArrowDown className="mt-1  ml-1" />
                       </div>
                     </button>
