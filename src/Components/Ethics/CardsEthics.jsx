@@ -187,7 +187,7 @@ const EthicsPage = () => {
             </animated.h1>
             <span className="absolute w-48 h-1 bg-E18AB0"></span>
             <div className="flex justify-center px-3 pt-6">
-              <div className="rounded-lg shadow-md w-full sm:w-1/3 sm:px-0 px-3">
+              <div className="rounded-lg shadow-md w-80 sm:w-1/3 sm:px-0 px-3">
                 <p
                   data-aos="fade-up"
                   data-aos-anchor-placement="top-bottom"
