@@ -245,7 +245,7 @@ const DiscoverWebDeveloper = () => {
           <ModalImage
             small={ImageLouisa}
             large={ImageLouisa}
-            className={`h-80 w-80 sm:h-96 sm:w-96 fade-in`}
+            className={`h-80 w-80 sm:h-96 sm:w-96 transition-opacity duration-500 hover:opacity-50`}
           />
           <p data-right="fade-right" className="flex text-black text-xs">
             {translations[language].city2Fr}

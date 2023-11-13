@@ -4,7 +4,7 @@ import translations from "./translate.jsx";
 import { useLanguage } from "../../context/LanguageProvider.jsx";
 import ImgText from "../../assets/logo-4.png";
 import ImageLondon from "../../assets/london.png";
-import ImageParis from "../../assets/paris.png";
+import ImageParis from "../../assets/paris.pnborder-b border-gray-300g";
 
 const SectionTeam = () => {
   const { language } = useLanguage();
@@ -70,7 +70,7 @@ const SectionTeam = () => {
   ];
 
   return (
-    <section className="bg-FFF6E4 pt-14 test">
+    <section className="bg-FFF6E4 pt-14">
       <div className="flex justify-center mb-6">
         <div className="w-4/5 sm:w-1/2">
           <div data-aos="fade-left">
