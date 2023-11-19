@@ -4,7 +4,7 @@ import translations from "./translate.jsx";
 import { useLanguage } from "../../context/LanguageProvider.jsx";
 import ImgText from "../../assets/logo-4.png";
 import ImageLondon from "../../assets/london.png";
-import ImageParis from "../../assets/paris.pnborder-b border-gray-300g";
+import ImageParis from "../../assets/paris.png";
 
 const SectionTeam = () => {
   const { language } = useLanguage();
