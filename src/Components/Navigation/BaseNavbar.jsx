@@ -112,7 +112,7 @@ const Navbar = () => {
   ]);
 
   return (
-    <div className="image-navi-studio-home border-b border-gray-300">
+    <div className="image-navi-studio-home border-b border-gray-500">
       <nav
         className={`bg-FFF6E4 border-b-4 border-C22E2E h-28 items-center transition duration-300 ease-in-out fixed w-full top-0 left-0 shadow-md z-max`}
       >
@@ -142,7 +142,7 @@ const Navbar = () => {
                   {translations[language].navAgency}
                 </NavLink>
                 <div className="flex justify-center">
-                  <ul className="absolute hidden group-hover:block rounded-md text-left w-48 bg-FFF6E4 border border-gray-300 mt-2 py-2">
+                  <ul className="absolute hidden group-hover:block rounded-md text-left w-48 bg-FFF6E4 border border-gray-500 mt-2 py-2">
                     <li className="text-C22E2E font-extrabold">
                       <NavLink
                         to="/"
@@ -214,7 +214,7 @@ const Navbar = () => {
                   {translations[language].navServicesEn}
                 </NavLink>
                 <div className="flex justify-center">
-                  <ul className="absolute hidden group-hover:block bg-FFF6E4 w-48 mt-2 py-2 rounded-md border border-gray-300 text-left">
+                  <ul className="absolute hidden group-hover:block bg-FFF6E4 w-48 mt-2 py-2 rounded-md border border-gray-500 text-left">
                     <li>
                       <NavLink
                         to="/services"
