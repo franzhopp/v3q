@@ -339,3 +339,17 @@ textarea {
         opacity: 1;
     }
 }
+
+#logo.zoom-in {
+    animation: zoomIn 1s ease-in-out;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
