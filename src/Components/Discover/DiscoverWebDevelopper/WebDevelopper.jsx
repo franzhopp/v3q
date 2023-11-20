@@ -38,9 +38,10 @@ const DiscoverWebDeveloper = () => {
             <div className="text-center flex-col">
               <p
                 data-aos="fade-left"
-                className="text-black text-6xl font-extrabold sm:text-7xl"
+                className="font-emblema text-black text-5xl"
               >
-                Ohsion
+                O<span className="text-0C3E78">h</span>
+                <span className="text-C22E2E">s</span>ion
               </p>
               <motion.span
                 id="all"
@@ -49,7 +50,7 @@ const DiscoverWebDeveloper = () => {
                 transition={{ duration: 0.5, delay: 0.5 }}
                 className="block xl:inline"
               >
-                <h3 className="font-extrabold text-black text-3xl">
+                <h3 className="font-extrabold text-black text-2xl">
                   Developer
                 </h3>{" "}
               </motion.span>
@@ -60,7 +61,7 @@ const DiscoverWebDeveloper = () => {
                 transition={{ duration: 0.5, delay: 1 }}
                 className="block xl:inline test-text"
               >
-                <h3 className="font-extrabold text-black text-3xl">Designer</h3>
+                <h3 className="font-extrabold text-black text-2xl">Designer</h3>
               </motion.span>
               <motion.span
                 id="all"
@@ -69,7 +70,7 @@ const DiscoverWebDeveloper = () => {
                 transition={{ duration: 0.5, delay: 2 }}
                 className="block xl:inline test-text"
               >
-                <h3 className="font-extrabold text-black text-3xl">Writer</h3>
+                <h3 className="font-extrabold text-black text-2xl">Writer</h3>
               </motion.span>
             </div>
           </div>

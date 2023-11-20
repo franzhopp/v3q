@@ -10,7 +10,7 @@ const ButtonDevis = () => {
           href="/devis"
           className="inline-flex items-center gap-2 rounded-full border-black border-4 bg-FFF6E4 px-8 py-3 text-black"
         >
-          <span className="text-3xl mr-3 font-semibold">
+          <span className="text-2xl sm:text-3xl mr-3 font-semibold">
             {" "}
             {translations[language].navSousFreeFr}
             {translations[language].navSousFreeEn}

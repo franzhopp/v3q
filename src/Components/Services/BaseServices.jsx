@@ -32,7 +32,7 @@ const Services = () => {
     <>
       <NavbarServices />
       <section className="bg-FFF6E4">
-        <div className="test">
+        <div className="test4">
           <h1
             data-aos="fade-right"
             className="text-C22E2E font-inter text-center text-4xl pt-20 pb-10 font-extrabold sm:text-5xl md:text-6xl"
