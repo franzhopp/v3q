@@ -1,7 +1,7 @@
 import translations from "./translate.jsx";
 import { useLanguage } from "../../context/LanguageProvider.jsx";
 import { NavLink } from "react-router-dom";
-import { useSpring, animated } from "react-spring";
+// import { useSpring, animated } from "react-spring";
 import NavbarEthics from "../Navigation/EthicsNavbar/EthicsNavbar";
 import ImgMac from "../../assets/bg-ethics-mac.png";
 import ImgText from "../../assets/logo-5.png";
@@ -11,16 +11,16 @@ import { useEffect, useState } from "react";
 const EthicsPage = () => {
   const [scrollSection, setScrollSection] = useState();
   const { language } = useLanguage();
-  const props = useSpring({
-    from: { color: "#FFF6E4" },
-    to: async (next) => {
-      while (true) {
-        await next({ color: "#4457BE" });
-        await next({ color: "#E18AB0" });
-      }
-    },
-    config: { duration: 1000 },
-  });
+  // const props = useSpring({
+  //   from: { color: "#FFF6E4" },
+  //   to: async (next) => {
+  //     while (true) {
+  //       await next({ color: "#4457BE" });
+  //       await next({ color: "#E18AB0" });
+  //     }
+  //   },
+  //   config: { duration: 1000 },
+  // });
   const ScrollToSectionEthics = () => {
     const sectionToScrollEthics = document.getElementById("ethics");
     if (sectionToScrollEthics) {
@@ -55,7 +55,7 @@ const EthicsPage = () => {
                 01.
               </h2>
 
-              <p className="text-black text-xl font-inter font-extrabold">
+              <p className="text-4457BE text-xl font-inter font-extrabold">
                 {translations[language].title1EthicsFr}
                 {translations[language].title1EthicsEn}
               </p>
@@ -92,7 +92,7 @@ const EthicsPage = () => {
               >
                 02.
               </h2>
-              <p className="text-black text-xl font-inter font-extrabold">
+              <p className="text-4457BE text-xl font-inter font-extrabold">
                 {translations[language].title2EthicsFr}
                 {translations[language].title2EthicsEn}
               </p>
@@ -122,7 +122,7 @@ const EthicsPage = () => {
               >
                 03.
               </h2>
-              <p className="text-black text-xl font-inter font-extrabold">
+              <p className="text-4457BE text-xl font-inter font-extrabold">
                 Passion & Motivation
               </p>
               <span className="absolute w-48 h-1 bg-E18AB0"></span>
@@ -176,15 +176,11 @@ const EthicsPage = () => {
         </div>
         <div className="flex justify-center">
           <div className="text-center mt-20">
-            <animated.h1
-              style={props}
-              data-aos="fade-right"
-              className="text-black font-extrabold font-inter text-2xl sm:text-4xl"
-            >
+            <h1 className="text-4457BE font-extrabold font-inter text-2xl sm:text-4xl">
               {" "}
               {translations[language].titleWorkEthicsFr}
               {translations[language].titleWorkEthicsEn}
-            </animated.h1>
+            </h1>
             <div className="flex justify-center">
               <span className="absolute w-48 h-1 bg-E18AB0"></span>
             </div>

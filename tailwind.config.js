@@ -35,6 +35,7 @@ export default {
         'E18AB0': '#E18AB0',
         '00E189': '#00E189',
         'EF0039': '#EF0039',
+        '4457BE': "#4457BE",
       },
       fontFamily: {
         sans: [],
