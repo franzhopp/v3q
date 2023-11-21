@@ -148,7 +148,7 @@ const EthicsPage = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center pt-16">
+        {/* <div className="flex justify-center pt-16">
           <svg
             className="animate-formbounce"
             width="70"
@@ -166,7 +166,7 @@ const EthicsPage = () => {
               fill="#4457BE"
             />
           </svg>
-        </div>
+        </div> */}
         <div className="flex justify-center">
           <div className="mt-16">
             <div className="px-10">

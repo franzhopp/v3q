@@ -82,7 +82,7 @@ const Services = () => {
                 class="bg-C22E2E p-6 rounded-2xl shadow-2xl mb-5"
               >
                 <p className="text-FFF6E4 text-center text-xl font-extrabold mb-5">
-                  {translations[language].title1ServicesFr}
+                  › {translations[language].title1ServicesFr}
                   {translations[language].title1ServicesEn}
                 </p>
                 <div className="w-64">
@@ -108,7 +108,7 @@ const Services = () => {
                 class="bg-cards p-6 rounded-2xl shadow-2xl mb-5"
               >
                 <p className="text-FFF6E4 text-center text-xl font-extrabold mb-5">
-                  {translations[language].title2ServicesFr}
+                  › {translations[language].title2ServicesFr}
                   {translations[language].title2ServicesEn}
                 </p>
                 <div className="w-64">
@@ -132,7 +132,7 @@ const Services = () => {
                 class="bg-cards-2 p-6 rounded-2xl shadow-2xl mb-5"
               >
                 <p className="text-FFF6E4 text-center text-xl font-extrabold mb-5">
-                  Landing page
+                  › Landing page
                 </p>
                 <div className="w-64">
                   {" "}
@@ -154,7 +154,7 @@ const Services = () => {
                 class="bg-C22E2E p-6 rounded-2xl shadow-2xl mb-5"
               >
                 <p className="text-FFF6E4 text-center text-xl font-extrabold mb-5">
-                  {translations[language].title3ServicesFr}
+                  › {translations[language].title3ServicesFr}
                   {translations[language].title3ServicesEn}
                 </p>{" "}
                 <div className="w-64">

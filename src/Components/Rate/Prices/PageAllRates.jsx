@@ -66,7 +66,7 @@ const Rate = () => {
         "Page « d'Accueil » avec présentation de votre entreprise.",
         "Page « À propos » pour partager votre histoire et votre mission.",
         "Page « Services » pour présenter vos offres.",
-        "Page « Nous » pour votre équipe ou votre entreprise.",
+        "Page « Nous » concernant votre production.",
         "Page de « Contact » pour vos clients potentiels.",
         "Inclut de plusieurs pages pour plus de contenus, d'informations concernant votre entreprise.",
       ],
@@ -202,7 +202,7 @@ const Rate = () => {
                       data-aos="fade-left"
                       className="mt-5 mb-5 text-FFF6E4 text-3xl sm:text-4xl"
                     >
-                      {info.title}
+                      › {info.title}
                     </div>
                     <div
                       data-aos="fade-right"
@@ -301,7 +301,7 @@ const Rate = () => {
                       data-aos="fade-left"
                       className="mt-5 mb-5 text-FFF6E4 text-3xl sm:text-4xl"
                     >
-                      {info.title}
+                      › {info.title}
                     </div>
                     <div
                       data-aos="fade-right"
