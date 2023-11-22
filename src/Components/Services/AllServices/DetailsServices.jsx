@@ -108,7 +108,7 @@ const DetailsServices = () => {
             {translations[language].linkHomeEn}
           </NavLink>
           <div className="mt-5">
-            <span className="text-black font-extrabold font-inter italic">
+            <span className="text-black font-extrabold font-inter">
               OU
             </span>
           </div>

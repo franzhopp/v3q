@@ -7,7 +7,7 @@ const ButtonContactServices = () => {
   const { language } = useLanguage();
   return (
     <>
-      <div className="animate-formbounce flex justify-center mt-5 px-10">
+      <div className="flex justify-center mt-5 px-10">
         <NavLink
           to="/"
           className="inline-flex items-center gap-2 rounded-full border-black border-4 bg-black px-8 py-3 text-FFF6E4"
