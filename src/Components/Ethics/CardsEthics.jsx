@@ -171,6 +171,7 @@ const EthicsPage = () => {
           <div className="mt-16">
             <div className="flex justify-end">
               <svg
+                data-aos="fade-up-right"
                 className="relative top-10 right-4"
                 xmlns="http://www.w3.org/2000/svg"
                 width="70"
@@ -188,6 +189,7 @@ const EthicsPage = () => {
               <img src={ImgMac} alt="Image Ethics" className="rounded-lg" />
             </div>
             <svg
+              data-aos="fade-up-left"
               className="relative bottom-10 left-4"
               xmlns="http://www.w3.org/2000/svg"
               width="70"
