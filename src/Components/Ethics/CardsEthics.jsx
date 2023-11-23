@@ -55,8 +55,8 @@ const EthicsPage = () => {
                 01.
               </h2>
 
-              <p className="text-4457BE text-xl font-inter font-extrabold">
-                {translations[language].title1EthicsFr}
+              <p className="text-black text-xl font-inter font-extrabold">
+                › {translations[language].title1EthicsFr}
                 {translations[language].title1EthicsEn}
               </p>
               <span className="absolute w-48 h-1 bg-E18AB0"></span>
@@ -66,7 +66,7 @@ const EthicsPage = () => {
                   data-aos-anchor-placement="top-bottom"
                   className="text-black"
                 >
-                  {/* <span className="absolute h-72 w-1 bg-E18AB0 -left-20 bottom-10 hidden sm:block"></span> */}
+                  <span className="absolute h-72 w-1 bg-C22E2E -left-20 bottom-10 hidden sm:block"></span>
                   {translations[language].describe1EthicsFr}
                   {translations[language].describe1EthicsEn}
                   <span className="font-extrabold">
@@ -92,8 +92,8 @@ const EthicsPage = () => {
               >
                 02.
               </h2>
-              <p className="text-4457BE text-xl font-inter font-extrabold">
-                {translations[language].title2EthicsFr}
+              <p className="text-black text-xl font-inter font-extrabold">
+                › {translations[language].title2EthicsFr}
                 {translations[language].title2EthicsEn}
               </p>
               <span className="absolute w-48 h-1 bg-E18AB0"></span>
@@ -122,8 +122,8 @@ const EthicsPage = () => {
               >
                 03.
               </h2>
-              <p className="text-4457BE text-xl font-inter font-extrabold">
-                Passion & Motivation
+              <p className="text-black text-xl font-inter font-extrabold">
+                › Passion & Motivation
               </p>
               <span className="absolute w-48 h-1 bg-E18AB0"></span>
               <div className="w-72 mt-5">
@@ -142,7 +142,7 @@ const EthicsPage = () => {
                   {translations[language].describe3Bold1En}
                   {translations[language].describeWithoutBold3Fr}
                   {translations[language].describeWithoutBold3En}
-                  <span className="absolute h-72 w-1 bg-E18AB0 -right-20 bottom-10 hidden sm:block"></span>
+                  <span className="absolute h-72 w-1 bg-C22E2E -right-20 bottom-10 hidden sm:block"></span>
                 </p>
               </div>
             </div>
@@ -172,14 +172,32 @@ const EthicsPage = () => {
             <div className="px-10">
               <img src={ImgMac} alt="Image Ethics" className="rounded-lg" />
             </div>
+            <svg
+              className="relative bottom-10 left-4"
+              xmlns="http://www.w3.org/2000/svg"
+              width="70"
+              height="70"
+              viewBox="0 0 202 202"
+              fill="none"
+            >
+              <path
+                d="M101 0L107.22 45.7993L123.475 2.53228L119.347 48.5673L144.822 10.0021L130.554 53.9645L163.972 22.035L140.28 61.7202L179.965 38.0275L148.036 71.4456L191.998 57.1777L153.433 82.653L199.468 78.5254L156.201 94.7804L202 101L156.201 107.22L199.468 123.475L153.433 119.347L191.998 144.822L148.036 130.554L179.965 163.972L140.28 140.28L163.972 179.965L130.554 148.036L144.822 191.998L119.347 153.433L123.475 199.468L107.22 156.201L101 202L94.7804 156.201L78.5254 199.468L82.653 153.433L57.1777 191.998L71.4456 148.036L38.0275 179.965L61.7202 140.28L22.035 163.972L53.9645 130.554L10.0021 144.822L48.5673 119.347L2.53228 123.475L45.7993 107.22L0 101L45.7993 94.7804L2.53228 78.5254L48.5673 82.653L10.0021 57.1777L53.9645 71.4456L22.035 38.0275L61.7202 61.7202L38.0275 22.035L71.4456 53.9645L57.1777 10.0021L82.653 48.5673L78.5254 2.53228L94.7804 45.7993L101 0Z"
+                fill="#E18AB0"
+              />
+            </svg>
           </div>
         </div>
         <div className="flex justify-center">
-          <div className="text-center mt-20">
-            <h1 className="text-4457BE font-extrabold font-inter text-2xl sm:text-4xl">
+          <div className="text-center mt-5">
+            <h1
+              data-aos="fade-right"
+              className="text-black font-extrabold font-inter text-2xl sm:text-4xl"
+            >
               {" "}
+              <span className=" text-E18AB0 ">✧</span>{" "}
               {translations[language].titleWorkEthicsFr}
-              {translations[language].titleWorkEthicsEn}
+              {translations[language].titleWorkEthicsEn}{" "}
+              <span className=" text-E18AB0 ">✧</span>
             </h1>
             <div className="flex justify-center">
               <span className="absolute w-48 h-1 bg-E18AB0"></span>
@@ -255,7 +273,7 @@ const EthicsPage = () => {
             viewBox="0 0 86 137"
             fill="none"
           >
-            <rect width="86" height="137" rx="43" fill="#4457BE" />
+            <rect width="86" height="137" rx="43" fill="black" />
             <path
               d="M47 28C47 25.7909 45.2091 24 43 24C40.7909 24 39 25.7909 39 28L47 28ZM40.1716 110.828C41.7337 112.391 44.2663 112.391 45.8284 110.828L71.2843 85.3726C72.8464 83.8105 72.8464 81.2778 71.2843 79.7157C69.7222 78.1536 67.1895 78.1536 65.6274 79.7157L43 102.343L20.3726 79.7157C18.8105 78.1536 16.2778 78.1536 14.7157 79.7157C13.1536 81.2778 13.1536 83.8105 14.7157 85.3726L40.1716 110.828ZM39 28L39 108L47 108L47 28L39 28Z"
               fill="#FFF6E4"
