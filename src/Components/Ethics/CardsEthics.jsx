@@ -190,7 +190,7 @@ const EthicsPage = () => {
             </div>
             <svg
               data-aos="fade-up-left"
-              className="relative bottom-10 left-4"
+              className="relative bottom-9 left-3"
               xmlns="http://www.w3.org/2000/svg"
               width="70"
               height="70"
