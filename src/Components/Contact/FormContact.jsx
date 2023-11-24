@@ -543,7 +543,7 @@ const Form = ({ label, type, value }) => {
                   )}
                 </button>
               </div>
-              <div className="flex justify-start">
+              <div className="flex justify-start relative">
                 <svg
                   // data-aos="fade-up-left"
                   className="absolute -rotate-6 -left-6"
