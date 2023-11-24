@@ -216,7 +216,7 @@ const Form = ({ label, type, value }) => {
             <div className="flex justify-end relative">
               <svg
                 // data-aos="fade-up-right"
-                className="absolute top-20 -right-36"
+                className="absolute top-20 -right-40"
                 xmlns="http://www.w3.org/2000/svg"
                 width="150"
                 height="150"
@@ -546,7 +546,7 @@ const Form = ({ label, type, value }) => {
               <div className="flex justify-start relative">
                 <svg
                   // data-aos="fade-up-left"
-                  className="absolute -top-12 -rotate-6 -left-24"
+                  className="absolute -top-12 -rotate-12 -left-32"
                   xmlns="http://www.w3.org/2000/svg"
                   width="150"
                   height="150"
