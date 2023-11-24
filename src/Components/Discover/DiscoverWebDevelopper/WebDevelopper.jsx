@@ -169,12 +169,12 @@ const DiscoverWebDeveloper = () => {
               {translations[language].describeDev5En}
             </p>
             <br />
-            <a
+            {/* <a
               href="/text"
               className="text-FFF6E4 font-extrabold underline transition hover:text-0C3E78"
             >
               › Découvrir Text 1 ➔
-            </a>
+            </a> */}
             <a
               href="/designer"
               className="text-FFF6E4 font-extrabold underline transition hover:text-0C3E78"
