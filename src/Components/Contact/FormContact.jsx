@@ -213,7 +213,7 @@ const Form = ({ label, type, value }) => {
             </div>
           </div>
           <div className="bg-contact p-8 shadow-lg lg:col-span-3 lg:p-12">
-            <div className="flex justify-end">
+            <div className="flex justify-end relative">
               <svg
                 // data-aos="fade-up-right"
                 className="absolute top-32 -right-16"
