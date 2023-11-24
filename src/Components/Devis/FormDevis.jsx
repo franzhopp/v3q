@@ -284,12 +284,12 @@ const DevisFree = ({ label, type, value }) => {
 
           <div className="bg-contact p-8 shadow-lg lg:col-span-3 lg:p-12">
             <div className="flex justify-end relative">
-              <svg
+            <svg
                 // data-aos="fade-up-right"
-                className="absolute top-20 -right-24"   
+                className="absolute top-20 -right-40"
                 xmlns="http://www.w3.org/2000/svg"
-                width="100"
-                height="100"
+                width="150"
+                height="150"
                 viewBox="0 0 202 202"
                 fill="none"
               >
@@ -710,12 +710,12 @@ const DevisFree = ({ label, type, value }) => {
                 </button>
               </div>
               <div className="flex justify-start relative">
-                <svg
+              <svg
                   // data-aos="fade-up-left"
-                  className="absolute -rotate-6 -left-20"
+                  className="absolute -top-12 -rotate-12 -left-32"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="100"
-                  height="100"
+                  width="150"
+                  height="150"
                   viewBox="0 0 215 219"
                   fill="none"
                 >
