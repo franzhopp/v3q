@@ -121,6 +121,7 @@ const Navbar = () => {
             <div className="flex items-center">
               <NavLink to="/">
                 <img
+                  alt="Logo navi studio avec une couleur rouge"
                   onClick={scrollToTop}
                   data-aos="fade-left"
                   className="lg:h-20 h-10 bg-cover bg-no-repeat xl:logo"
