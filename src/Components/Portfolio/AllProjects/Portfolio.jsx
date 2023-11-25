@@ -65,7 +65,7 @@ const Portfolio = () => {
                 <div className="flex justify-center pt-5 pb-5">
                   <NavLink
                     to="/"
-                    className="text-black text-sm font-extrabold underline transition hover:text-0C3E78"
+                    className="text-black text-xs font-extrabold underline transition hover:text-0C3E78"
                   >
                     › Retourner à la page d'Accueil ➔
                   </NavLink>
