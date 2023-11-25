@@ -231,7 +231,7 @@ const Form = ({ label, type, value }) => {
             </div>
             <form
               onSubmit={handleSubmit}
-              className="bg-contact p-9 shadow-lg space-y-4 pt-20 pb-20"
+              className="bg-contact p-9 shadow-lg space-y-4"
             >
               <div class="space-y-4">
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
