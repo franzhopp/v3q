@@ -231,7 +231,7 @@ const Form = ({ label, type, value }) => {
             </div>
             <form
               onSubmit={handleSubmit}
-              className="bg-contact p-9 shadow-lg space-y-4"
+              className="bg-contact p-9 pb-10 shadow-lg space-y-4"
             >
               <div class="space-y-4">
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -550,7 +550,7 @@ const Form = ({ label, type, value }) => {
             <div className="flex justify-start relative">
               <svg
                 data-aos="fade-up-left"
-                className="absolute -top-14 -left-10"
+                className="absolute -top-14 -left-8"
                 xmlns="http://www.w3.org/2000/svg"
                 width="100"
                 height="100"
