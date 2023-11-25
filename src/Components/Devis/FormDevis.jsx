@@ -282,11 +282,11 @@ const DevisFree = ({ label, type, value }) => {
             </div>
           </div>
 
-          <div className="bg-contact p-8 shadow-lg lg:col-span-3 lg:p-12">
+          <div className="lg:col-span-3 lg:p-12">
             <div className="flex justify-end relative">
-            <svg
+              <svg
                 // data-aos="fade-up-right"
-                className="absolute top-20 -right-40"
+                className="absolute top-20 -right-20"
                 xmlns="http://www.w3.org/2000/svg"
                 width="150"
                 height="150"
@@ -299,7 +299,7 @@ const DevisFree = ({ label, type, value }) => {
                 />
               </svg>
             </div>
-            <form action="" className="space-y-4">
+            <form action="" className="bg-contact p-8 shadow-lg space-y-4">
               <div onSubmit={handleSubmit} class="space-y-4">
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <div className="relative pb-5">
@@ -710,9 +710,9 @@ const DevisFree = ({ label, type, value }) => {
                 </button>
               </div>
               <div className="flex justify-start relative">
-              <svg
-                  // data-aos="fade-up-left"
-                  className="absolute -top-1 -rotate-12 -left-16"
+                <svg
+                  data-aos="fade-up-left"
+                  className="absolute -top-6 -left-16"
                   xmlns="http://www.w3.org/2000/svg"
                   width="100"
                   height="100"
