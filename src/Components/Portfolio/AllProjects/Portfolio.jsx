@@ -32,7 +32,7 @@ const Portfolio = () => {
       <div
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
-        className="pt-5 pb-12 px-4 sm:px-6 lg:px-8 test"
+        className="pt-5 pb-5 px-4 sm:px-6 lg:px-8 test"
       >
         <div className="flex justify-center">
           <div className="bg-FFF6E4 p-6 h-1/2 w-96 rounded-2xl shadow-2xl mr-5 ml-5">
