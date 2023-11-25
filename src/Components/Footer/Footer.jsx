@@ -12,6 +12,13 @@ import { NavLink } from "react-router-dom";
 const Footer = () => {
   const { language } = useLanguage();
   const [status, setStatus] = useState("");
+  const ScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 100,
+      behavior: "smooth",
+    });
+  };
   const [formData, setFormData] = useState({
     email: "",
   });
@@ -124,7 +131,11 @@ const Footer = () => {
         </form>
         <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
           <li>
-            <NavLink to="/" className="text-black transition hover:text-0C3E78">
+            <NavLink
+              to="/"
+              onClick={ScrollToTop}
+              className="text-black transition hover:text-0C3E78"
+            >
               {translations[language].navAgence}
               {translations[language].navAgency}
             </NavLink>
