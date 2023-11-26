@@ -27,7 +27,7 @@ const ButtonServices = () => {
   };
   return (
     <>
-      {/* <div className="flex justify-center sm:justify-end relative right-20 top-20 sm:right-96">
+      <div className="flex justify-center sm:justify-end relative right-20 top-20 sm:right-96">
         <svg
           onClick={SectionToSectionContactServices}
           width="200"
@@ -46,8 +46,8 @@ const ButtonServices = () => {
             fill="#FFF6E4"
           />
         </svg>
-      </div> */}
-      <div className="flex justify-center sm:justify-end relative right-24 top-20 sm:right-96">
+      </div>
+      {/* <div className="flex justify-center sm:justify-end relative right-24 top-20 sm:right-96">
         <svg
           onClick={SectionToSectionContactServices}
           xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@ const ButtonServices = () => {
             fill="#FFF6E4"
           />
         </svg>
-      </div>
+      </div> */}
     </>
   );
 };
