@@ -213,7 +213,7 @@ const DevisFree = ({ label, type, value }) => {
                 <ul>
                   <br />
                   <li data-aos="fade-right">
-                    <span className="font-extrabold">1</span>.
+                    <span className="font-extrabold">1</span>.{" "}
                     {translations[language].bloc1FreeFr}
                     {translations[language].bloc1FreeEn}
                   </li>

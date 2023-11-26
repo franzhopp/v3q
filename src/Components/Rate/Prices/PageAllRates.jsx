@@ -310,7 +310,7 @@ const Rate = () => {
                       {info.price}
                     </div>
                   </div>
-                  <div className="text-FFF6E4 text-center sm:text-left">
+                  {/* <div className="text-FFF6E4 text-center sm:text-left">
                     <button onClick={() => toggleSubList(info.title)}>
                       <div className="flex">
                         En savoir plus <IoIosArrowDown className="mt-1  ml-1" />
@@ -347,7 +347,7 @@ const Rate = () => {
                         </a>
                       </ul>
                     )}
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
