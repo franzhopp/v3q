@@ -232,8 +232,6 @@ const Footer = () => {
           <li>
             <NavLink
               to="/privacy"
-              rel="noreferrer"
-              target="_blank"
               className="text-black transition hover:text-0C3E78"
             >
               {translations[language].footerPrivacyFr}
@@ -243,8 +241,6 @@ const Footer = () => {
           <li>
             <NavLink
               to="/terms"
-              rel="noreferrer"
-              target="_blank"
               className="text-black transition hover:text-0C3E78"
             >
               {translations[language].footerTermsFr}
@@ -254,8 +250,6 @@ const Footer = () => {
           <li>
             <NavLink
               to="/mentions"
-              rel="noreferrer"
-              target="_blank"
               className="text-black transition hover:text-0C3E78"
             >
               {translations[language].footerMentionsFr}
