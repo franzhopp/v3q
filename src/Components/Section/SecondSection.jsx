@@ -1,5 +1,6 @@
 import translations from "./translate.jsx";
 import { useLanguage } from "../../context/LanguageProvider.jsx";
+import { NavLink } from "react-router-dom";
 
 const SecondSection = () => {
   const { language } = useLanguage();
@@ -76,13 +77,13 @@ const SecondSection = () => {
             </p>
           </div>
           <div className="flex justify-center mt-16">
-            <a
-              href="/ethics"
+            <NavLink
+              to="/ethics"
               className="text-FFF6E4 font-extrabold underline transition hover:text-0C3E78"
             >
               {translations[language].linkValuesFr}
               {translations[language].linkValuesEn}
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>

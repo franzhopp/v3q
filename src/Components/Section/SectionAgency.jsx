@@ -5,6 +5,7 @@ import TitleAgency from "../UI/Title/TitleAgency";
 import ImgText from "../../assets/logo-4.png";
 import SectionTeam from "./SectionTeam";
 import ButtonAgency from "../UI/Button/ButtonAgency";
+import { NavLink } from "react-router-dom";
 
 const SectionAgency = () => {
   const { language } = useLanguage();
@@ -167,20 +168,20 @@ const SectionAgency = () => {
           </div>
         </div>
         <div className="flex flex-col justify-center mt-6">
-          <a
-            href="/portfolio"
+          <NavLink
+            to="/portfolio"
             className="text-FFF6E4 text-center font-extrabold underline transition hover:text-C22E2E"
           >
             {translations[language].linkPortfolioFr}
             {translations[language].linkPortfolioEn}
-          </a>
-          <a
-            href="/services"
+          </NavLink>
+          <NavLink
+            to="/services"
             className="text-FFF6E4 text-center font-extrabold underline transition hover:text-C22E2E"
           >
             {translations[language].linkServicesFr}
             {translations[language].linkServicesEn}
-          </a>
+          </NavLink>
         </div>
       </section>
       <SectionTeam />

@@ -281,8 +281,8 @@ const Footer = () => {
           </li>
 
           <li>
-            <a
-              href="https://www.instagram.com/navistudio.fr/"
+            <NavLink
+              to="https://www.instagram.com/navistudio.fr/"
               target="_blank"
               rel="noopener noreferrer"
               className=""
@@ -293,21 +293,21 @@ const Footer = () => {
                 alt="Icône Instagram"
                 className="flex-shrink-0 h-10 w-10 transition-transform transform hover:scale-105"
               />
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="" rel="noreferrer" target="_blank">
+            <NavLink to="" rel="noreferrer" target="_blank">
               {" "}
               <img
                 src={LogoLinkedin}
                 alt="Icône Linkedin"
                 className="flex-shrink-0 h-10 w-10 transition-transform transform hover:scale-105"
               />
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a
-              href="https://t.snapchat.com/BYKwKD2r"
+            <NavLink
+              to="https://t.snapchat.com/BYKwKD2r"
               rel="noreferrer"
               target="_blank"
             >
@@ -317,7 +317,7 @@ const Footer = () => {
                 alt="Icône Snapchat"
                 className="flex-shrink-0 h-10 w-10 transition-transform transform hover:scale-105"
               />
-            </a>
+            </NavLink>
           </li>
         </ul>
       </div>

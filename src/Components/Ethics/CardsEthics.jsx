@@ -437,20 +437,20 @@ const EthicsPage = () => {
                 </span>
               </p>
               <div className="flex flex-col mt-10">
-                <a
-                  href="/services"
+                <NavLink
+                  to="/services"
                   className="text-FFF6E4 font-extrabold underline transition hover:text-E18AB0"
                 >
                   {translations[language].linkServicesFr}
                   {translations[language].linkServicesEn}
-                </a>
-                <a
-                  href="/rate"
+                </NavLink>
+                <NavLink
+                  to="/rate"
                   className="text-FFF6E4 font-extrabold underline transition hover:text-E18AB0"
                 >
                   {translations[language].linkRateFr}
                   {translations[language].linkRateEn}
-                </a>
+                </NavLink>
                 <NavLink
                   to="/"
                   className="text-FFF6E4 font-extrabold underline transition hover:text-E18AB0"

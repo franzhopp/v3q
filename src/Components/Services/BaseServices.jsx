@@ -9,6 +9,7 @@ import ImgService4 from "../../assets/home4.png";
 import Footer from "../Footer/Footer";
 import ButtonServices from "../UI/Button/ButtonServices";
 import ButtonDevis from "../UI/Button/ButtonFormDevis";
+import { NavLink } from "react-router-dom";
 
 const Services = () => {
   const { language } = useLanguage();
@@ -218,13 +219,13 @@ const Services = () => {
             </div>
           </div>
           <div className="flex justify-center mt-3">
-            <a
-              href="/ethics"
+            <NavLink
+              to="/ethics"
               className="text-black font-extrabold underline transition hover:text-0C3E78"
             >
               {translations[language].linkValuesFr}
               {translations[language].linkValuesEn}
-            </a>
+            </NavLink>
           </div>
           <ButtonServices />
         </div>

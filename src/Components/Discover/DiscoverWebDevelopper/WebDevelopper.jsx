@@ -82,7 +82,7 @@ const DiscoverWebDeveloper = () => {
             <div className="flex justify-center mt-10 mb-10">
               {" "}
               <svg
-                className="animate-formbounce animate-formbounce"
+                className="animate-formbounce"
                 width="95"
                 height="64"
                 viewBox="0 0 95 64"
@@ -175,13 +175,13 @@ const DiscoverWebDeveloper = () => {
             >
               › Découvrir Text 1 ➔
             </a> */}
-            <a
-              href="/designer"
+            <NavLink
+              to="/designer"
               className="text-FFF6E4 font-extrabold underline transition hover:text-0C3E78"
             >
               {translations[language].linkDesignerFr}
               {translations[language].linkDesignerEn}
-            </a>
+            </NavLink>
           </div>
           <NavLink
             to="/"
