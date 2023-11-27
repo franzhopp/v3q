@@ -222,14 +222,14 @@ const DevisFree = ({ label, type, value }) => {
                     <span className="font-extrabold">2</span>.{" "}
                     {translations[language].bloc2FreeFr}
                     {translations[language].bloc2FreeEn}{" "}
-                    <a
-                      href="/services"
+                    <NavLink
+                      to="/services"
                       className="underline font-extrabold tracking-wide text-C22E2E"
                     >
                       {" "}
                       {translations[language].linkBlocFreeFr}
                       {translations[language].linkBlocFreeEn}
-                    </a>{" "}
+                    </NavLink>{" "}
                     {translations[language].bloc2dFreeFr}
                     {translations[language].bloc2dFreeEn}
                   </li>
@@ -238,14 +238,14 @@ const DevisFree = ({ label, type, value }) => {
                     <span className="font-extrabold">3</span>.{" "}
                     {translations[language].bloc3FreeFr}
                     {translations[language].bloc3FreeEn}{" "}
-                    <a
-                      href="/rate"
+                    <NavLink
+                      to="/rate"
                       className="underline font-extrabold tracking-wide text-C22E2E"
                     >
                       {" "}
                       {translations[language].linkBlocFreeFr}
                       {translations[language].linkBlocFreeEn}
-                    </a>
+                    </NavLink>
                     .
                   </li>
                   <br />
@@ -315,7 +315,10 @@ const DevisFree = ({ label, type, value }) => {
                 />
               </svg>
             </div>
-            <form action="" className="bg-contact p-9 pb-12 shadow-lg space-y-4">
+            <form
+              action=""
+              className="bg-contact p-9 pb-12 shadow-lg space-y-4"
+            >
               <div onSubmit={handleSubmit} class="space-y-4">
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <div className="relative pb-5">

@@ -93,13 +93,13 @@ const DetailsServices = () => {
           </div>
         </div>
         <div className="flex flex-col text-center justify-center">
-          <a
-            href="/rate"
+          <NavLink
+            to="/rate"
             className="text-black font-extrabold underline transition hover:text-0C3E78"
           >
             {translations[language].linkRateFr}
             {translations[language].linkRateEn}
-          </a>
+          </NavLink>
           <NavLink
             to="/"
             className="text-black font-extrabold underline transition hover:text-0C3E78"
@@ -108,9 +108,7 @@ const DetailsServices = () => {
             {translations[language].linkHomeEn}
           </NavLink>
           <div className="mt-5">
-            <span className="text-black font-extrabold font-inter">
-              OU
-            </span>
+            <span className="text-black font-extrabold font-inter">OU</span>
           </div>
         </div>
         <ButtonContactServices />
