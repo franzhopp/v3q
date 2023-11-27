@@ -212,7 +212,7 @@ const translations = {
       "Évolution perpétuelle, collaboration dynamique, créativité inépuisable sont la clé de nos secrets.",
     describe6Bold6Fr: "Nous sommes votre source d'inspiration !",
     describe7EthicsWorkFr:
-      "Nous comprenons que chaque projet est unique, c'est pourquoi nous nous engageons à apporter une approche sur-mesure à chaque collaboration.",
+      "Nous comprenons que chaque projet est une histoire unique, c'est pourquoi nous nous engageons à apporter une approche sur-mesure à chaque collaboration.",
     describe7BoldEthicsWorkFr:
       "Notre équipe dévouée travaille avec passion pour donner vie à vos idées, en veillant à ce que chaque détail soit parfaitement exécuté.",
     describeWithoutBold7Fr:

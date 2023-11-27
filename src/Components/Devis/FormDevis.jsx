@@ -8,8 +8,10 @@ import TitleDevis from "../UI/Title/TitleFormDevis.jsx";
 import ImgText from "../../assets/logo-4.png";
 import ButtonSend from "../UI/Button/ButtonSend.jsx";
 import Footer from "../Footer/Footer.jsx";
+import { useNavigate } from "react-router-dom";
 
 const DevisFree = ({ label, type, value }) => {
+  const navigate = useNavigate();
   const [status, setStatus] = useState("");
   const [isFocused, setIsFocused] = useState(false);
   const { language } = useLanguage();
@@ -160,13 +162,14 @@ const DevisFree = ({ label, type, value }) => {
       );
       setStatus("Votre devis est enregistré. Merci !");
       setTimeout(() => {
-        window.location.reload();
+        navigate("/");
       }, 1000);
     } catch (error) {
       setStatus("Une erreur s'est produite.");
     }
     setIsLoading(false);
   };
+
   useEffect(() => {
     emailjs.init("E-u_BQRxlwXZIR-_Y");
   }, []);
@@ -729,7 +732,7 @@ const DevisFree = ({ label, type, value }) => {
                 </button>
               </div>
             </form>
-            <div className="text-00E189 text-center pt-5">
+            <div className="text-00E189 text-center pt-8">
               {status && <p>{status}</p>}
             </div>
           </div>

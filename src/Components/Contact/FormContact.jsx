@@ -563,8 +563,7 @@ const Form = ({ label, type, value }) => {
                 </button>
               </div>
             </form>
-
-            <div className="text-00E189 text-center pt-5">
+            <div className="text-00E189 text-center pt-8">
               {status && <p>{status}</p>}
             </div>
           </div>
