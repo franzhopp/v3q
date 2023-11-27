@@ -128,16 +128,12 @@ const PageConditions = () => {
       <div className="bg-FFF6E4 flex flex-col text-center justify-center pt-5 pb-10">
         <NavLink
           to="/privacy"
-          rel="noreferrer"
-          target="_blank"
           className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
         >
           Politique de Confidentialité ➔
         </NavLink>
         <NavLink
           to="/mentions"
-          rel="noreferrer"
-          target="_blank"
           className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
         >
           Mentions Légales ➔

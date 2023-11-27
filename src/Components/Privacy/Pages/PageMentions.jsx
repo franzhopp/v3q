@@ -249,16 +249,12 @@ const PageMentions = () => {
           <div className="flex flex-col text-center justify-center pt-10">
             <NavLink
               to="/privacy"
-              rel="noreferrer"
-              target="_blank"
               className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
             >
               Politique de Confidentialité ➔
             </NavLink>
             <NavLink
               to="/terms"
-              rel="noreferrer"
-              target="_blank"
               className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
             >
               Conditions d'Utilisation ➔
