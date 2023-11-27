@@ -113,13 +113,13 @@ const translations = {
       "Derrière chaque site se cache une histoire unique. Ne ratez aucune d'entre elles.",
     textSectionTeamBioBold1MelissaFr: "Mélissa est designer.",
     textSectionTeamBioWithoutBold1MelissaFr:
-      "Résidante à Londres, elle pratique celui-ci avec beaucoup de \
+      "Résidente à Londres, elle pratique celui-ci avec beaucoup de \
       créativité et rigueur.",
     textSectionTeamBioBold2MelissaFr:
       "Venez connaître son histoire en cliquant sur",
     textSectionTeamBioBold1LouisaFr: "Louisa est développeuse web.",
     textSectionTeamBioWithoutBold1LouisaFr:
-      " Résidante à Paris, elle pratique celui-ci avec beaucoup de \
+      " Résidente à Paris, elle pratique celui-ci avec beaucoup de \
         passion et plaisir.",
     textSectionTeamBioBold2LouisaFr:
       "Venez connaître son histoire en cliquant sur",

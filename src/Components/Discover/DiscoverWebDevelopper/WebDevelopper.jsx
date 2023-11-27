@@ -202,8 +202,8 @@ const DiscoverWebDeveloper = () => {
             <li>
               <NavLink
                 to="https://www.instagram.com/navistudio.fr/"
+                rel="noreferrer"
                 target="_blank"
-                rel="noopener noreferrer"
               >
                 {" "}
                 <img

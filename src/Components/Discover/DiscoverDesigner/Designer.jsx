@@ -182,11 +182,10 @@ const DiscoverDesigner = () => {
         <div class="p-6">
           <div className="flex flex-row space-x-10 list-none mt-20">
             <li>
-              <a
-                href="https://www.instagram.com/navistudio.uk/"
+              <NavLink
+                to="https://www.instagram.com/navistudio.uk/"
+                rel="noreferrer"
                 target="_blank"
-                rel="noopener noreferrer"
-                className=""
               >
                 {" "}
                 <img
@@ -194,33 +193,31 @@ const DiscoverDesigner = () => {
                   alt="Icône Instagram"
                   className="flex-shrink-0 h-20 w-20 transition-transform transform hover:scale-105"
                 />
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="" rel="noreferrer" target="_blank">
+              <NavLink to="" rel="noreferrer" target="_blank">
                 {" "}
                 <img
                   src={LogoLinkedin}
                   alt="Icône Linkedin"
                   className="flex-shrink-0 h-20 w-20 transition-transform transform hover:scale-105"
                 />
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="">
-                <a
-                  href="https://t.snapchat.com/BYKwKD2r"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  {" "}
-                  <img
-                    src={LogoSnap}
-                    alt="Icône Snapchat"
-                    className="flex-shrink-0 h-20 w-20 transition-transform transform hover:scale-105"
-                  />
-                </a>
-              </a>
+              <NavLink
+                to="https://t.snapchat.com/BYKwKD2r"
+                rel="noreferrer"
+                target="_blank"
+              >
+                {" "}
+                <img
+                  src={LogoSnap}
+                  alt="Icône Snapchat"
+                  className="flex-shrink-0 h-20 w-20 transition-transform transform hover:scale-105"
+                />
+              </NavLink>
             </li>
           </div>
         </div>
