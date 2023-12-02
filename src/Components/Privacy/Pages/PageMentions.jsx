@@ -39,7 +39,7 @@ const PageMentions = () => {
             <br />›<span className={keywordsStyle}> Activité :</span>{" "}
             Entrepreneur en freelance.
             <br />›<span className={keywordsStyle}> E-mail* :</span>{" "}
-            Navi.studio.info@gmail.com
+            contact@navistudio.io
             <br />›
             <span className={keywordsStyle}>
               {" "}

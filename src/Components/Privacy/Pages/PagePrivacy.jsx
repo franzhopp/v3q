@@ -125,7 +125,7 @@ const PagePrivacy = () => {
             confidentialité des données, veuillez nous contacter à l'adresse
             <span className="font-extrabold font-inter">
               {" "}
-              Navi.studio.info@gmail.com
+              contact@navistudio.io
             </span>
             .
           </p>

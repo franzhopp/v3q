@@ -101,7 +101,7 @@ const PageConditions = () => {
             d'utilisation, veuillez nous contacter à l'adresse{" "}
             <span className="font-extrabold font-inter">
               {" "}
-              Navi.studio.info@gmail.com
+              contact@navistudio.io
             </span>
             .
           </p>
