@@ -5,7 +5,6 @@ import Footer from "../../Footer/Footer";
 
 const PageMentions = () => {
   const keywordsStyle = "font-extrabold";
-
   return (
     <>
       <PrivacyNavbar />
