@@ -297,9 +297,10 @@ const translations = {
     info1DevisFr: "Code postal",
     info2DevisFr: "Quels services établissez-vous ?",
     info3DevisFr: "Votre budget approximatif ?",
-    info4DevisFr: "À quelle date ?",
+    info4DevisFr: "Date de livraison souhaitée",
     info5DevisFr: "Avez-vous une charte graphique ?",
-    info6DevisFr: "Écrivez-nous afin d'en savoir plus",
+    info6DevisFr:
+      "Dites-nous en plus à propos de votre projet en donnant le plus de détails possibles. (Ex : nombres de pages, style graphique, hébergement déjà possédé ou non, quelles fonctionnalités souhaitez-vous mettre en place ?) Etc...",
   },
   en: {
     // Navbar + Footer

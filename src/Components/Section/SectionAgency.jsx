@@ -167,7 +167,7 @@ const SectionAgency = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col justify-center mt-6">
+        {/* <div className="flex flex-col justify-center mt-6">
           <NavLink
             to="/portfolio"
             className="text-FFF6E4 text-center font-extrabold underline transition hover:text-C22E2E"
@@ -182,7 +182,7 @@ const SectionAgency = () => {
             {translations[language].linkServicesFr}
             {translations[language].linkServicesEn}
           </NavLink>
-        </div>
+        </div> */}
       </section>
       <SectionTeam />
     </section>

@@ -11,7 +11,7 @@ const PageNotFound = () => {
       <PagesNavbar />
       <div className="flex justify-start pt-32 sm:pt-12 pl-3">
         <a
-          className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
+          className="text-C22E2E shadow-full font-extrabold underline transition hover:text-0C3E78"
           href="/"
         >
           <svg

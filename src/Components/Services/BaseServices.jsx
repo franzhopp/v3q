@@ -58,7 +58,7 @@ const Services = () => {
                 data-aos-anchor-placement="top-bottom"
                 className="text-black text-center"
               >
-                <span className="absolute h-56 w-1 bg-C22E2E -left-96 bottom-1 hidden sm:block"></span>
+                {/* <span className="absolute h-56 w-1 bg-C22E2E -left-96 bottom-1 hidden sm:block"></span> */}
                 {translations[language].describeServices1Fr}
                 {translations[language].describeServices1En}{" "}
                 <span className="font-extrabold">

@@ -8,9 +8,9 @@ import NavbarDiscoverWebDevelopper from "../../Navigation/NavbarDiscover/Discove
 import Avatar from "../../UI/Avatar/TemplateAvatarWebDeveloper";
 import ImageLouisa from "../../../assets/Louisaaa1.png";
 import ImgText from "../../../assets/logo-4.png";
-import LogoInsta from "../../../assets/instagram2.png";
-import LogoLinkedin from "../../../assets/linkedin.png";
-import LogoSnap from "../../../assets/snapchat.png";
+import LogoInsta from "../../../assets/instagram1.png";
+import LogoLinkedin from "../../../assets/linkedin1.png";
+import LogoSnap from "../../../assets/snapchat1.png";
 import Footer from "../../Footer/Footer";
 
 const DiscoverWebDeveloper = () => {

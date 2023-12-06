@@ -7,9 +7,9 @@ import AvatarDesigner from "../../UI/Avatar/TemplateAvatarDesigner";
 import ImgText from "../../../assets/logo-4.png";
 import ImageMelissa from "../../../assets/picture-melissa.png";
 import LogoMelissa from "../../../assets/logo-melissa.png";
-import LogoInsta from "../../../assets/instagram2.png";
-import LogoLinkedin from "../../../assets/linkedin.png";
-import LogoSnap from "../../../assets/snapchat.png";
+import LogoInsta from "../../../assets/instagram1.png";
+import LogoLinkedin from "../../../assets/linkedin1.png";
+import LogoSnap from "../../../assets/snapchat1.png";
 import Footer from "../../Footer/Footer";
 
 const DiscoverDesigner = () => {

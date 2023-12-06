@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
 import NavbarDevis from "../Navigation/PagesNavbar/PagesNavbar.jsx";
 import TitleDevis from "../UI/Title/TitleFormDevis.jsx";
-import ImgText from "../../assets/logo-4.png";
+import ImgText from "../../assets/logo-5.png";
 import ButtonSend from "../UI/Button/ButtonSend.jsx";
 import Footer from "../Footer/Footer.jsx";
 import { useNavigate } from "react-router-dom";
@@ -182,7 +182,7 @@ const DevisFree = ({ label, type, value }) => {
           <div className="mr-10 lg:col-span-2 lg:py-12">
             <p
               data-aos="fade-right"
-              className="text-black text-2xl sm:text-3xl font-extrabold max-w-xl ml-6 sm:ml-0"
+              className="text-FFF6E4 text-2xl sm:text-3xl font-extrabold max-w-xl ml-6 sm:ml-0"
             >
               {translations[language].titleInfoFreeFr}
               {translations[language].titleInfoFreeEn}
@@ -194,7 +194,7 @@ const DevisFree = ({ label, type, value }) => {
               <p
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
-                className="text-black text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0"
+                className="text-FFF6E4 text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0"
               >
                 <span>
                   {translations[language].describeInfoFree1Fr}
@@ -204,7 +204,7 @@ const DevisFree = ({ label, type, value }) => {
               <br />
               <p
                 data-aos="fade-left"
-                className="text-black mb-5 text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0"
+                className="text-FFF6E4 mb-5 text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0"
               >
                 <span className="font-extrabold underline">
                   {translations[language].describleInfoFree2Fr}
@@ -212,7 +212,7 @@ const DevisFree = ({ label, type, value }) => {
                 </span>
               </p>
 
-              <p className="text-black mb-5 text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0">
+              <p className="text-FFF6E4 mb-5 text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0">
                 <ul>
                   <br />
                   <li data-aos="fade-right">
@@ -260,7 +260,7 @@ const DevisFree = ({ label, type, value }) => {
                 </ul>
               </p>
               <div className="flex flex-col text-left mx-6">
-                <NavLink
+                {/* <NavLink
                   to="/services"
                   className="text-FFF6E4 font-extrabold underline transition hover:text-C22E2E"
                 >
@@ -280,6 +280,44 @@ const DevisFree = ({ label, type, value }) => {
                 >
                   {translations[language].linkHomeFr}
                   {translations[language].linkHomeEn}
+                </NavLink> */}
+                <NavLink
+                  className="text-C22E2E shadow-full font-extrabold underline transition hover:text-0C3E78"
+                  to="/"
+                >
+                  <svg
+                    width="95"
+                    height="95"
+                    viewBox="0 0 112 112"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_264_4)">
+                      <path
+                        d="M56 112C86.9279 112 112 86.9279 112 56C112 25.0721 86.9279 0 56 0C25.0721 0 0 25.0721 0 56C0 86.9279 25.0721 112 56 112Z"
+                        fill="#C22E2E"
+                      />
+                      <g clip-path="url(#clip1_264_4)">
+                        <path
+                          d="M82 60C84.2091 60 86 58.2091 86 56C86 53.7909 84.2091 52 82 52V60ZM27.1716 53.1716C25.6095 54.7337 25.6095 57.2663 27.1716 58.8284L52.6274 84.2843C54.1895 85.8464 56.7222 85.8464 58.2843 84.2843C59.8464 82.7222 59.8464 80.1895 58.2843 78.6274L35.6569 56L58.2843 33.3726C59.8464 31.8105 59.8464 29.2779 58.2843 27.7158C56.7222 26.1537 54.1895 26.1537 52.6274 27.7158L27.1716 53.1716ZM82 52H30V60H82V52Z"
+                          fill="#FFF6E4"
+                        />
+                      </g>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_264_4">
+                        <rect width="112" height="112" fill="white" />
+                      </clipPath>
+                      <clipPath id="clip1_264_4">
+                        <rect
+                          width="60"
+                          height="60"
+                          fill="white"
+                          transform="translate(26 26)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
                 </NavLink>
               </div>
             </div>
@@ -646,7 +684,7 @@ const DevisFree = ({ label, type, value }) => {
                   checked={formData.privacy}
                   onChange={handleCheckboxChange}
                 />
-                <span className="text-black">
+                <span className="text-FFF6E4 font-extrabold">
                   {" "}
                   {translations[language].conditions1Fr}
                   {translations[language].conditions1En}
@@ -665,14 +703,14 @@ const DevisFree = ({ label, type, value }) => {
                   checked={formData.conditions}
                   onChange={handleCheckboxChange}
                 />
-                <span className="text-black">
+                <span className="text-FFF6E4 font-extrabold">
                   {" "}
                   {translations[language].conditions2Fr}
                   {translations[language].conditions2En}{" "}
                   <span>
                     <img
                       src={ImgText}
-                      className="h-6 mr-1 inline"
+                      className="h-10 mr-2 inline"
                       alt="Icône navi studio."
                     />
                   </span>

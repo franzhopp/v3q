@@ -7,7 +7,7 @@ const SecondSection = () => {
 
   return (
     <section className="bg-C22E2E h-1/2">
-      <div className="pt-32 pb-28 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="pt-32 pb-32 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h3
           className="text-left ml-5 sm:ml-10 font-extrabold text-3xl text-FFF6E4"
           data-aos="fade-right"
@@ -76,7 +76,7 @@ const SecondSection = () => {
               {translations[language].textSecondSectionWithoutBold3En}{" "}
             </p>
           </div>
-          <div className="flex justify-center mt-16">
+          {/* <div className="flex justify-center mt-16">
             <NavLink
               to="/ethics"
               className="text-FFF6E4 font-extrabold underline transition hover:text-0C3E78"
@@ -84,7 +84,7 @@ const SecondSection = () => {
               {translations[language].linkValuesFr}
               {translations[language].linkValuesEn}
             </NavLink>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

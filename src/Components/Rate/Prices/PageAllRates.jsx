@@ -357,13 +357,12 @@ const Rate = () => {
           <div className="w-96 sm:w-full">
             <p className="text-center text-C22E2E px-6">
               *tarifs variables suivant les fonctionnalités désirées, pour plus
-              d'informations demandez{" "}
-              <span className="font-extrabold">un devis gratuit</span>.
+              d'informations demandez <span>un devis gratuit</span>.
             </p>
           </div>
         </div>
         <div className="flex flex-col text-center justify-center pt-6 pb-20">
-          <NavLink
+          {/* <NavLink
             to="/services"
             className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
           >
@@ -380,7 +379,7 @@ const Rate = () => {
             className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
           >
             › Retourner à la page d'Accueil ➔
-          </NavLink>
+          </NavLink> */}
           <div className="flex justify-center mt-10 mb-10">
             <a onClick={scrollToTop}>
               <svg

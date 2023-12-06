@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Title from "../UI/Title/TitleFormContact";
-import ImgText from "../../assets/logo-4.png";
+import ImgText from "../../assets/logo-5.png";
 import emailjs from "emailjs-com";
 import ButtonSend from "../UI/Button/ButtonSend";
 import "../Navigation/BaseNavbar.jsx";
@@ -161,12 +161,12 @@ const Form = ({ label, type, value }) => {
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-x-16 gap-y-5 lg:grid-cols-5">
           <div className="mr-10 lg:col-span-2 lg:py-12">
-            <p className="text-black text-2xl font-extrabold sm:text-4xl max-w-xl ml-6 sm:ml-0">
+            <p className="text-FFF6E4 text-2xl font-extrabold sm:text-4xl max-w-xl ml-6 sm:ml-0">
               {translations[language].describeContactFr}
               {translations[language].describeContactEn}
               <img
                 src={ImgText}
-                className="h-8 sm:h-12 ml-1 inline"
+                className="h-14 sm:h-20 inline"
                 alt="Icône navi studio."
               />
             </p>
@@ -175,7 +175,7 @@ const Form = ({ label, type, value }) => {
               <p
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
-                className="text-black text-lg sm:text-2xl w-80 sm:w-96 ml-6 sm:ml-0"
+                className="text-FFF6E4 text-lg sm:text-2xl w-80 sm:w-96 ml-6 sm:ml-0"
               >
                 <span className="absolute h-72 w-1 bg-C22E2E -left-7 bottom-20 hidden sm:block"></span>
                 <span className="absolute h-64 w-1 bg-C22E2E -left-10 bottom-2 hidden sm:block"></span>
@@ -199,7 +199,7 @@ const Form = ({ label, type, value }) => {
                   <g clip-path="url(#clip0_15_2)">
                     <path
                       d="M47.5 95C73.7335 95 95 73.7335 95 47.5C95 21.2665 73.7335 0 47.5 0C21.2665 0 0 21.2665 0 47.5C0 73.7335 21.2665 95 47.5 95Z"
-                      fill="#171614"
+                      fill="#C22E2E"
                     />
                     <path
                       d="M49.8064 23.584C48.4393 22.2174 46.2233 22.2177 44.8566 23.5847L22.5859 45.8618C21.2192 47.2287 21.2195 49.4448 22.5866 50.8115C23.9536 52.1782 26.1697 52.1779 27.5363 50.8108L47.3325 31.009L67.1343 50.8052C68.5013 52.1719 70.7174 52.1716 72.084 50.8045C73.4507 49.4375 73.4504 47.2214 72.0833 45.8548L49.8064 23.584ZM50.8383 72.0588L50.8318 26.0588L43.8318 26.0598L43.8383 72.0598L50.8383 72.0588Z"
@@ -478,7 +478,7 @@ const Form = ({ label, type, value }) => {
                   checked={formData.privacy}
                   onChange={handleCheckboxChange}
                 />
-                <span className="text-black">
+                <span className="text-FFF6E4 font-extrabold">
                   {" "}
                   {translations[language].conditions1Fr}
                   {translations[language].conditions1En}
@@ -497,14 +497,14 @@ const Form = ({ label, type, value }) => {
                   checked={formData.conditions}
                   onChange={handleCheckboxChange}
                 />
-                <span className="text-black">
+                <span className="text-FFF6E4 font-extrabold">
                   {" "}
                   {translations[language].conditions2Fr}
                   {translations[language].conditions2En}{" "}
                   <span>
                     <img
                       src={ImgText}
-                      className="h-6 mr-1 inline"
+                      className="h-10 mr-2 inline"
                       alt="Icône navi studio."
                     />
                   </span>
