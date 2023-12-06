@@ -137,7 +137,7 @@ const SectionTeam = () => {
               {translations[language].textSectionTeamBold1En}{" "}
               <img
                 src={ImgText}
-                className="h-6 mr-1 inline sm:h-9"
+                className="h-6 ml-1 mr-2 sm:h-8 inline"
                 alt="Icône navi studio."
               />
             </span>

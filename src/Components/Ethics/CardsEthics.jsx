@@ -444,13 +444,13 @@ const EthicsPage = () => {
                   {translations[language].linkServicesFr}
                   {translations[language].linkServicesEn}
                 </NavLink>
-                <NavLink
+                {/* <NavLink
                   to="/rate"
                   className="text-FFF6E4 font-extrabold underline transition hover:text-E18AB0"
                 >
                   {translations[language].linkRateFr}
                   {translations[language].linkRateEn}
-                </NavLink>
+                </NavLink> */}
                 <NavLink
                   to="/"
                   className="text-FFF6E4 font-extrabold underline transition hover:text-E18AB0"
