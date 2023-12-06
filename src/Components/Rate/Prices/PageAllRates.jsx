@@ -355,7 +355,7 @@ const Rate = () => {
         ))}
         <div className="flex justify-center pt-2">
           <div className="w-96 sm:w-full">
-            <p className="text-center text-C22E2E px-6">
+            <p className="text-center text-xs text-C22E2E px-6">
               *tarifs variables suivant les fonctionnalités désirées, pour plus
               d'informations demandez <span>un devis gratuit</span>.
             </p>

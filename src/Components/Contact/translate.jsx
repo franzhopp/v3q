@@ -299,8 +299,7 @@ const translations = {
     info3DevisFr: "Votre budget approximatif ?",
     info4DevisFr: "Date de livraison souhaitée",
     info5DevisFr: "Avez-vous une charte graphique ?",
-    info6DevisFr:
-      "Dites-nous en plus à propos de votre projet en donnant le plus de détails possibles. (Ex : nombres de pages, style graphique, hébergement déjà possédé ou non, quelles fonctionnalités souhaitez-vous mettre en place ?) Etc...",
+    info6DevisFr: "Écrivez-nous un peu plus de votre projet...",
   },
   en: {
     // Navbar + Footer

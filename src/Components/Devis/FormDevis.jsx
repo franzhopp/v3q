@@ -720,7 +720,7 @@ const DevisFree = ({ label, type, value }) => {
                     to="/privacy"
                     rel="noreferrer"
                     target="_blank"
-                    className="underline font-extrabold text-0C3E78"
+                    className="underline font-extrabold text-FFF6E4"
                   >
                     {translations[language].linkConditions1Fr}
                     {translations[language].linkConditions1En}
@@ -730,7 +730,7 @@ const DevisFree = ({ label, type, value }) => {
                     to="/mentions"
                     rel="noreferrer"
                     target="_blank"
-                    className="underline font-extrabold text-0C3E78"
+                    className="underline font-extrabold text-FFF6E4"
                   >
                     {translations[language].linkConditions2Fr}
                     {translations[language].linkConditions2En}
@@ -740,7 +740,7 @@ const DevisFree = ({ label, type, value }) => {
                     to="/terms"
                     rel="noreferrer"
                     target="_blank"
-                    className="underline font-extrabold text-0C3E78"
+                    className="underline font-extrabold text-FFF6E4"
                   >
                     {translations[language].linkConditions3Fr}
                     {translations[language].linkConditions3En}
