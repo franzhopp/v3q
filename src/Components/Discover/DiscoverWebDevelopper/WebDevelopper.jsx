@@ -162,7 +162,7 @@ const DiscoverWebDeveloper = () => {
               {translations[language].describeDev4En}
               <img
                 src={ImgText}
-                className="h-6 ml-1 inline"
+                className="h-5 ml-2 mr-1 inline"
                 alt="Icône navi studio."
               />{" "}
               {translations[language].describeDev5Fr}

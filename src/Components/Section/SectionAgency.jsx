@@ -120,7 +120,7 @@ const SectionAgency = () => {
                 <span>
                   <img
                     src={ImgText}
-                    className="h-6 ml-1 mr-1 inline"
+                    className="h-5 ml-1 mr-1 inline"
                     alt="Icône navi studio."
                   />
                 </span>{" "}

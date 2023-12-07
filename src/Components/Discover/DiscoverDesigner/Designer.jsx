@@ -107,7 +107,7 @@ const DiscoverDesigner = () => {
                 {translations[language].describeDesigner3En}{" "}
                 <img
                   src={ImgText}
-                  className="h-6 inline"
+                  className="h-5 ml-1 mr-1 inline"
                   alt="Icône navi studio."
                 />{" "}
                 {translations[language].describeDesigner4Fr}

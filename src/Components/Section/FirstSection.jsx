@@ -38,7 +38,7 @@ const Section = () => {
             {translations[language].titleSectionEn}
           </p>
           <div className="flex justify-center">
-            <span className="absolute w-28 h-1 bg-C22E2E"></span>
+            <span className="absolute w-28 h-1 bg-C22E2E mr-0 sm:mr-40"></span>
           </div>
         </div>
         <div className="w-80 mt-10">
@@ -57,7 +57,7 @@ const Section = () => {
               <span>
                 <img
                   src={ImgText}
-                  className="h-6 mr-1 inline"
+                  className="h-5 mr-1 inline"
                   alt="Icône navi studio."
                 />
               </span>{" "}

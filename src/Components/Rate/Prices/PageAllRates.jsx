@@ -204,6 +204,7 @@ const Rate = () => {
                     >
                       › {info.title}
                     </div>
+                    <div className="flex justify-end"></div>
                     <div
                       data-aos="fade-right"
                       className="mt-5 mb-5 text-FFF6E4 text-3xl sm:text-4xl"

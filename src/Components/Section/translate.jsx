@@ -24,7 +24,7 @@ const translations = {
       "Tous droits réservés en vertu de la législation sur les droits d'auteur. Toute reproduction est interdite.",
     sendFooterFr: "Valider",
     newletterEn: "Inscrivez-vous à la newletter !",
-    findFr: "Retrouvez-nous :",
+    findFr: "Retrouvez-nous sur :",
     // Homepage
     titleHomeFr: "Agence digitale",
     scrollingTextFr:
@@ -275,7 +275,7 @@ const translations = {
     describeDev4Fr:
       "L'Écriture est une autre passion qui m'anime, elle m'inspire. Créatrice d'Univers-Imaginaire, un site déployant tous mes écrits, cette idée de création m'a donc donné la motivation de renforcer ma collaboration avec ma UX/UI Designer pour unir nos compétences et créer ensemble notre agence,",
     describeDev5Fr:
-      " Je vous invite à naviger les pages de notre site, conçu avec une grande passion et un immense plaisir de vous la partager. ✨",
+      " Je vous invite à naviger les pages de notre site, conçu avec une grande passion et un immense plaisir de vous la partager.",
     // DEVIS
     titleInfoFreeFr:
       "Avant de soumettre un devis, nous vous invitons à lire attentivement ces lignes.",
