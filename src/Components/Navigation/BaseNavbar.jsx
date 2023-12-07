@@ -26,7 +26,6 @@ const Navbar = () => {
   const [searchQuery, setSearchQuery] = useState();
   const [isOpen, setIsOpen] = useState(false);
   const { language, changeLanguage } = useLanguage();
-
   const changeLanguageHandler = (newLanguage) => {
     changeLanguage(newLanguage);
   };

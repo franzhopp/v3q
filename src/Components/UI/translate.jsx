@@ -299,7 +299,7 @@ const translations = {
     info3DevisFr: "Votre budget approximatif ?",
     info4DevisFr: "Date de livraison souhaitée",
     info5DevisFr: "Avez-vous une charte graphique ?",
-    info6DevisFr: "Écrivez-nous un peu plus de votre projet...",
+    info6DevisFr: "Écrivez-nous un peu plus concernant votre projet...",
   },
   en: {
     // Navbar + Footer

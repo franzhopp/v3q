@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import translations from "./translate.jsx";
 import { useLanguage } from "../../context/LanguageProvider.jsx";
 import { useEffect, useState } from "react";
@@ -7,7 +8,6 @@ import LogoInsta from "../../assets/instagram2.png";
 import LogoTwitter from "../../assets/twitter.png";
 import LogoLinkedin from "../../assets/linkedin.png";
 import LogoSnap from "../../assets/snapchat.png";
-import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   const { language } = useLanguage();
@@ -77,7 +77,7 @@ const Footer = () => {
   return (
     <footer className="bg-C22E2E">
       <div className="mx-auto max-w-5xl px-4 py-24 sm:px-6 lg:px-8">
-        <div className="flex justify-center mr-2">
+        <div className="flex justify-center mr-4">
           <img
             src={Image}
             alt="Icône navi studio."
