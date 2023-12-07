@@ -77,7 +77,7 @@ const Footer = () => {
   return (
     <footer className="bg-C22E2E">
       <div className="mx-auto max-w-5xl px-4 py-24 sm:px-6 lg:px-8">
-        <div className="flex justify-center mr-4">
+        <div className="flex justify-center mr-3">
           <img
             src={Image}
             alt="Icône navi studio."
