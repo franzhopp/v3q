@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
-import { IoIosArrowDown } from "react-icons/io";
 import { NavLink } from "react-router-dom";
+import { IoIosArrowDown } from "react-icons/io";
+import { useEffect, useState } from "react";
 import NavbarPages from "../../Navigation/PagesNavbar/PagesNavbar";
 import TitleRate from "../../UI/Title/TitleRate";
 import Footer from "../../Footer/Footer";
@@ -180,7 +180,6 @@ const Rate = () => {
               data-aos-anchor-placement="top-bottom"
               className="text-C22E2E text-center"
             >
-              {/* <span className="absolute h-56 w-1 bg-C22E2E -left-96 bottom-1 hidden sm:block"></span> */}
               Dans cette page, vous trouverez{" "}
               <span className="font-extrabold">
                 toutes les tarifications des services
@@ -189,33 +188,30 @@ const Rate = () => {
             </p>
           </div>
         </div>
-        {InformationsSitesWeb.map((info) => (
-          <div className="flex justify-center font-inter">
-            <div className="w-96 sm:w-1/2 px-5">
-              <div className={`flex ${info.id % 2 === 0 ? Blue : Pink}`}>
-                <div
-                  key={info.id}
-                  className="mt-10 mb-10 ml-0 mr-0 sm:ml-5 sm:mr-5"
-                >
-                  <div className="flex flex-wrap justify-center text-center space-x-0 sm:space-x-6">
-                    <div
-                      data-aos="fade-left"
-                      className="mt-5 mb-5 text-FFF6E4 text-3xl sm:text-4xl"
-                    >
+        <div className="flex justify-center">
+          <div className="w-96 sm:w-1/2">
+            {InformationsSitesWeb.map((info) => (
+              <div
+                className={`flex flex-col justify-center font-inter  ${
+                  info.id % 2 === 0 ? Blue : Pink
+                }`}
+                key={info.id}
+              >
+                <div className="w-96 sm:w-full">
+                  <div className="flex flex-wrap justify-between text-FFF6E4 p-10 text-3xl sm:text-4xl">
+                    <div data-aos="fade-left" className="">
                       › {info.title}
                     </div>
-                    <div className="flex justify-end"></div>
-                    <div
-                      data-aos="fade-right"
-                      className="mt-5 mb-5 text-FFF6E4 text-3xl sm:text-4xl"
-                    >
+                    <div data-aos="fade-right" className="text-right">
                       {info.price}
                     </div>
                   </div>
-                  <div className="text-FFF6E4 text-center sm:text-left">
+                </div>
+                <div className="flex justify-start ml-10 mb-10">
+                  <div className="text-FFF6E4">
                     <button onClick={() => toggleSubList(info.title)}>
-                      <div className="flex">
-                        En savoir plus <IoIosArrowDown className="mt-1  ml-1" />
+                      <div className="flex transition hover:opacity-30">
+                        En savoir plus <IoIosArrowDown className="mt-1 ml-1" />
                       </div>
                     </button>
                     {openStates[info.title] && (
@@ -229,32 +225,36 @@ const Rate = () => {
                             › {detail}
                           </li>
                         ))}
-                        <ul className="text-FFF6E4 font-extrabold mt-3 mb-3 text-sm sm:text-left text-justify px-16 sm:px-4">
-                          {info.subDetails.map((subDetail, subDetailIndex) => (
-                            <li
-                              data-aos="fade-right"
-                              data-aos-duration="600"
-                              className="list-disc"
-                              key={subDetailIndex}
-                            >
-                              {subDetail}
-                            </li>
-                          ))}
-                        </ul>
-                        <a
-                          href="/devis"
+                        <div className="flex justify-start">
+                          <ul className="text-FFF6E4 font-extrabold mt-3 mb-3 text-sm px-10 sm:text-left text-justify">
+                            {info.subDetails.map(
+                              (subDetail, subDetailIndex) => (
+                                <li
+                                  data-aos="fade-right"
+                                  data-aos-duration="600"
+                                  className="list-disc"
+                                  key={subDetailIndex}
+                                >
+                                  {subDetail}
+                                </li>
+                              )
+                            )}
+                          </ul>
+                        </div>
+                        <NavLink
+                          to="/devis"
                           className="pt-5 font-extrabold font-inter underline"
                         >
                           › Demander un devis gratuit
-                        </a>
+                        </NavLink>
                       </ul>
                     )}
                   </div>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
-        ))}
+        </div>
         <div className="flex justify-center pt-20">
           <svg
             className="animate-formbounce"
@@ -289,74 +289,32 @@ const Rate = () => {
             </div>
           </h1>
         </div>
-        {InformationsMarketing.map((info, index) => (
-          <div className="flex justify-center font-inter">
-            <div className="w-96 sm:w-1/2 px-5">
-              <div className={`flex ${index % 2 === 0 ? Pink : Blue}`}>
-                <div
-                  key={index}
-                  className="mt-10 mb-10 ml-0 mr-0 sm:ml-5 sm:mr-5"
-                >
-                  <div className="flex flex-wrap justify-center text-center space-x-0 sm:space-x-6">
-                    <div
-                      data-aos="fade-left"
-                      className="mt-5 mb-5 text-FFF6E4 text-3xl sm:text-4xl"
-                    >
+        <div className="flex justify-center">
+          <div className="w-96 sm:w-1/2">
+            {InformationsMarketing.map((info, index) => (
+              <div
+                className={`flex flex-col justify-center font-inter ${
+                  index % 2 === 0 ? Pink : Blue
+                }`}
+                key={index}
+              >
+                <div className="w-96 sm:w-full">
+                  <div className="flex flex-wrap justify-between text-FFF6E4 p-10 text-3xl sm:text-4xl">
+                    <div data-aos="fade-left" className="">
                       › {info.title}
                     </div>
-                    <div
-                      data-aos="fade-right"
-                      className="mt-5 mb-5 text-FFF6E4 text-3xl sm:text-4xl"
-                    >
+                    <div data-aos="fade-right" className="text-right">
                       {info.price}
                     </div>
                   </div>
-                  {/* <div className="text-FFF6E4 text-center sm:text-left">
-                    <button onClick={() => toggleSubList(info.title)}>
-                      <div className="flex">
-                        En savoir plus <IoIosArrowDown className="mt-1  ml-1" />
-                      </div>
-                    </button>
-                    {openStates[info.title] && (
-                      <ul className="mt-3 font-arial">
-                        {info.details.map((detail, detailIndex) => (
-                          <li
-                            data-aos="fade-left"
-                            data-aos-duration="500"
-                            key={detailIndex}
-                          >
-                            › {detail}
-                          </li>
-                        ))}
-                        <ul className="text-FFF6E4 font-extrabold mt-3 mb-3 text-sm sm:text-left text-justify px-16 sm:px-4">
-                          {info.subDetails.map((subDetail, subDetailIndex) => (
-                            <li
-                              data-aos="fade-right"
-                              data-aos-duration="600"
-                              className="list-disc"
-                              key={subDetailIndex}
-                            >
-                              {subDetail}
-                            </li>
-                          ))}
-                        </ul>
-                        <a
-                          href="/devis"
-                          className="pt-5 font-extrabold font-inter underline"
-                        >
-                          › Demander un devis gratuit
-                        </a>
-                      </ul>
-                    )}
-                  </div> */}
                 </div>
               </div>
-            </div>
+            ))}
           </div>
-        ))}
+        </div>
         <div className="flex justify-center pt-2">
           <div className="w-96 sm:w-full">
-            <p className="text-center text-xs text-C22E2E px-6">
+            <p className="text-center text-sm text-C22E2E px-6">
               *tarifs variables suivant les fonctionnalités désirées, pour plus
               d'informations demandez <span>un devis gratuit</span>.
             </p>

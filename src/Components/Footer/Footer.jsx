@@ -77,7 +77,7 @@ const Footer = () => {
   return (
     <footer className="bg-C22E2E">
       <div className="mx-auto max-w-5xl px-4 py-24 sm:px-6 lg:px-8">
-        <div className="flex justify-center">
+        <div className="flex justify-center mr-2">
           <img
             src={Image}
             alt="Icône navi studio."
@@ -270,13 +270,13 @@ const Footer = () => {
         </div>
         <ul className="mt-5 flex justify-center gap-6 md:gap-8">
           <li>
-            <a href="" rel="noreferrer" target="_blank">
+            <NavLink to="/" rel="noreferrer" target="_blank">
               <img
                 src={LogoTwitter}
                 alt="Icône Twitter"
                 className="flex-shrink-0 h-14 w-14 transition-transform transform hover:scale-105"
               />
-            </a>
+            </NavLink>
           </li>
 
           <li>

@@ -228,7 +228,7 @@ const PageMentions = () => {
               {" "}
               Technologies utilisées :
             </span>{" "}
-            React, Tailwind CSS, AOS... etc.
+            React, Tailwind CSS, etc.
             <br />
             <div className="text-justify font-inter mt-16 font-extrabold text-C22E2E">
               Modèle de formule de collecte de données à caractère personnel
