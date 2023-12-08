@@ -214,7 +214,7 @@ const Rate = () => {
                       className="bg-FFF6E4 text-0C3E78 p-3 rounded-3xl shadow-md"
                     >
                       <div className="flex ml-1 number">
-                        En savoir plus <IoIosArrowDown className="mt-1 ml-1" />
+                        En savoir plus <IoIosArrowDown className="mt-2 ml-1" />
                       </div>
                     </button>
                     {openStates[info.title] && (
@@ -230,7 +230,7 @@ const Rate = () => {
                         ))}
                         <div className="flex justify-start">
                           <ul className="text-FFF6E4  mt-3 mb-3 text-sm px-10 sm:text-left text-justify">
-                            <p className=" number mb-2 underline">
+                            <p className="number mb-2 underline">
                               Informations détaillées :
                             </p>
                             {info.subDetails.map(
