@@ -115,8 +115,17 @@ textarea {
     background-image: url('./assets/bg-contact-blur.png');
     background-repeat: no-repeat;
     background-size: cover;
+    animation: fadeIn 2s ease; 
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 .bg-services-blur {
     background-image: url('./assets/bg-home-blur.png');
     background-repeat: no-repeat;

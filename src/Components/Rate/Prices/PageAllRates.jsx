@@ -209,8 +209,11 @@ const Rate = () => {
                 </div>
                 <div className="flex justify-start ml-10 mb-10">
                   <div className="text-FFF6E4">
-                    <button onClick={() => toggleSubList(info.title)}>
-                      <div className="flex transition hover:opacity-30">
+                    <button
+                      onClick={() => toggleSubList(info.title)}
+                      className="bg-FFF6E4 text-0C3E78 p-3 rounded-3xl shadow-md"
+                    >
+                      <div className="flex ml-1 number">
                         En savoir plus <IoIosArrowDown className="mt-1 ml-1" />
                       </div>
                     </button>
@@ -226,7 +229,10 @@ const Rate = () => {
                           </li>
                         ))}
                         <div className="flex justify-start">
-                          <ul className="text-FFF6E4 font-extrabold mt-3 mb-3 text-sm px-10 sm:text-left text-justify">
+                          <ul className="text-FFF6E4  mt-3 mb-3 text-sm px-10 sm:text-left text-justify">
+                            <p className=" number mb-2 underline">
+                              Informations détaillées :
+                            </p>
                             {info.subDetails.map(
                               (subDetail, subDetailIndex) => (
                                 <li
@@ -243,7 +249,7 @@ const Rate = () => {
                         </div>
                         <NavLink
                           to="/devis"
-                          className="pt-5 font-extrabold font-inter underline"
+                          className="pt-5 font-extrabold number underline"
                         >
                           › Demander un devis gratuit
                         </NavLink>

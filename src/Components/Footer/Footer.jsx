@@ -94,7 +94,7 @@ const Footer = () => {
             {translations[language].copy2En}
           </div>
         </p>
-        <div className="number text-sm text-center text-FFF6E4 pt-5">
+        <div className="font-inter text-sm text-center text-FFF6E4 pt-5">
           {translations[language].newletterFr}
           {translations[language].newletterEn}
         </div>
@@ -263,7 +263,7 @@ const Footer = () => {
           </li>
         </ul>
         <div className="flex justify-center pt-10">
-          <div className="text-FFF6E4 number font-extrabold underline">
+          <div className="text-FFF6E4 font-inter font-extrabold underline">
             {translations[language].findFr}
             {translations[language].findEn}
           </div>
