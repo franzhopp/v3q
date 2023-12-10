@@ -83,7 +83,7 @@ const DiscoverWebDeveloper = () => {
                 </motion.span>
               </div>
               <div className="flex justify-center">
-                <p className="text-black">☽ لويزة</p>
+                <p className="text-black">لويزة</p>
               </div>
             </div>
           </div>
@@ -179,9 +179,9 @@ const DiscoverWebDeveloper = () => {
                   class="p-6 rounded-lg shadow-md border test border-FFF6E4"
                 >
                   <p className="text-left text-FFF6E4 font-extrabold">
-                    *･ﾟ✧*･ﾟ تعبير الروح
+                   .١
                   </p>
-                  <span className="absolute w-48 h-1 bg-FFF6E4"></span>
+                  <span className="absolute w-4 h-1 bg-FFF6E4"></span>
                   <div className="w-72 mt-5">
                     <p className="text-left text-FFF6E4 font-extrabold">
                       {translations[language].describeDevFr}
@@ -193,7 +193,7 @@ const DiscoverWebDeveloper = () => {
                       {translations[language].describeDev2En}
                     </p>
                     <br />
-                    <div className="flex flex-col">
+                    <div className="flex flex-col pb-7">
                       <NavLink
                         to="/designer"
                         className="text-FFF6E4 font-extrabold underline"
@@ -216,9 +216,9 @@ const DiscoverWebDeveloper = () => {
                   class="p-6 rounded-lg shadow-md border test border-FFF6E4"
                 >
                   <p className="text-left text-FFF6E4 font-extrabold">
-                    *･ﾟ✧*･ﾟالخيال هو
+                    .٢
                   </p>
-                  <span className="absolute w-48 h-1 bg-FFF6E4"></span>
+                  <span className="absolute w-4 h-1 bg-FFF6E4"></span>
                   <div className="w-72 mt-5">
                     <p className="text-left text-FFF6E4 font-extrabold">
                       {translations[language].describeDev3Fr}
