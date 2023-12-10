@@ -8,7 +8,7 @@ import NavbarDiscoverWebDevelopper from "../../Navigation/NavbarDiscover/Discove
 import Avatar from "../../UI/Avatar/TemplateAvatarWebDeveloper";
 import ImageLouisa from "../../../assets/Louisaaa1.png";
 import ImageTest2 from "../../../assets/bg2.png";
-import ImageTest3 from "../../../assets/bg12.png";
+import ImageTest3 from "../../../assets/bg1.png";
 import ImageTest4 from "../../../assets/bg3.png";
 import ImgText from "../../../assets/logo-57.png";
 import LogoInsta from "../../../assets/instagram2.png";
@@ -83,7 +83,7 @@ const DiscoverWebDeveloper = () => {
                 </motion.span>
               </div>
               <div className="flex justify-center">
-                <p className="text-black">さあ</p>
+                <p className="text-black">لويزة</p>
               </div>
             </div>
           </div>
@@ -179,7 +179,7 @@ const DiscoverWebDeveloper = () => {
                   class="p-6 rounded-lg shadow-md border test border-FFF6E4"
                 >
                   <p className="text-left text-FFF6E4 font-extrabold">
-                    *:･ﾟ✧*:･ﾟ تعبير الروح
+                    .*:･ﾟ✧*:･ﾟ تعبير الروح
                   </p>
                   <span className="absolute w-48 h-1 bg-FFF6E4"></span>
                   <div className="w-72 mt-5">
@@ -216,7 +216,7 @@ const DiscoverWebDeveloper = () => {
                   class="p-6 rounded-lg shadow-md border test border-FFF6E4"
                 >
                   <p className="text-left text-FFF6E4 font-extrabold">
-                    *:･ﾟ✧*:･ﾟالخيال هو
+                    .*:･ﾟ✧*:･ﾟالخيال هو
                   </p>
                   <span className="absolute w-48 h-1 bg-FFF6E4"></span>
                   <div className="w-72 mt-5">
@@ -234,7 +234,8 @@ const DiscoverWebDeveloper = () => {
                         alt="Icône navi studio."
                       />{" "}
                       {translations[language].describeDev5Fr}
-                      {translations[language].describeDev5En}
+                      {translations[language].describeDev5En}{" "}
+                      *:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧.
                     </p>
                     <br />
                   </div>
@@ -266,13 +267,13 @@ const DiscoverWebDeveloper = () => {
                 </div>
               </div>
 
-              {/* <div className="flex justify-start relative">
-                <div className="absolute bottom-24 -left-10 sm:-right-8">
-                  <h3 className="text-center -rotate-90 mt-1 font-extrabold uppercase text-FFF6E4 xs">
+              <div className="flex justify-center sm:justify-start">
+                <div className="">
+                  <h3 className="text-center rotate-180 mt-1 font-extrabold uppercase text-FFF6E4 xs">
                     JUST HERO BUT NOT HEROES IS COMING
                   </h3>
                 </div>
-              </div> */}
+              </div>
 
               {/* <div class="flex flex-wrap justify-center gap-4">
                 <ModalImage
