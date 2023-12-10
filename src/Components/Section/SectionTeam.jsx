@@ -245,7 +245,7 @@ const SectionTeam = () => {
             <div className="flex space-x-3 flex-col-reverse sm:flex-row">
               <div className="flex justify-center items-center h-24 w-96 mt-0 sm:mt-32">
                 <NavLink
-                  to="/webdev"
+                  to="/dev"
                   className="animate-formbounce inline-flex items-center gap-2 rounded-full shadow-2xl mr-2 sm:mr-0 bg-black px-8 py-3 text-FFF6E4"
                 >
                   <svg
@@ -323,7 +323,7 @@ const SectionTeam = () => {
                         translations[language].textSectionTeamBioBold2LouisaEn
                       } «{" "}
                       <span className="text-C22E2E underline">
-                        <NavLink to="/webdev">Web Developer</NavLink>
+                        <NavLink to="/dev">Web Developer</NavLink>
                       </span>{" "}
                       ».
                     </span>

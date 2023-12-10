@@ -170,7 +170,7 @@ const Footer = () => {
           </li>
           <li>
             <NavLink
-              to="/webdev"
+              to="/dev"
               className="text-FFF6E4 transition hover:text-0C3E78"
             >
               Web Developer

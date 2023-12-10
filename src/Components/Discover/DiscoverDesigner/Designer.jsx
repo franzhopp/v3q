@@ -117,7 +117,7 @@ const DiscoverDesigner = () => {
             </div>
             <div className="flex justify-center">
               <NavLink
-                to="/webdev"
+                to="/dev"
                 className="mt-7 text-C22E2E text-center font-extrabold underline transition hover:text-0C3E78"
               >
                 {translations[language].linkWebDevFr}

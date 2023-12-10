@@ -39,6 +39,14 @@ textarea {
     cursor: url('./Cursor/Cursor_3.svg'), text !important;
 }
 
+.test {
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #FFF6E4,
+    0 0 0.8rem #FFF6E4,
+    0 0 2.8rem #FFF6E4,
+    inset 0 0 1.3rem #FFF6E4; 
+}
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -110,22 +118,23 @@ textarea {
 }
 
 /* Blur */
-
 .bg-contact-blur {
     background-image: url('./assets/bg-contact-blur.png');
     background-repeat: no-repeat;
     background-size: cover;
-    animation: fadeIn 2s ease; 
+    animation: fadeIn 2s ease;
 }
 
 @keyframes fadeIn {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
 }
+
 .bg-services-blur {
     background-image: url('./assets/bg-home-blur.png');
     background-repeat: no-repeat;
@@ -133,6 +142,12 @@ textarea {
 }
 
 .bg-devis-blur {
+    background-image: url('./assets/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-devis-blur-r {
     background-image: url('./assets/bg-portfolio-blur.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -230,6 +245,23 @@ textarea {
     padding-right: 2em;
     padding-left: 100%;
     animation: scrolling-rtl 20s infinite linear;
+}
+
+@keyframes scrolling-rtl {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+.animation-scrolling-rtl-t {
+    display: inline-block;
+    padding-right: 2em;
+    padding-left: 100%;
+    animation: scrolling-rtl 35s infinite linear;
 }
 
 @keyframes scrolling-rtl {

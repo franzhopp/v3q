@@ -57,7 +57,7 @@ export const data = [
   },
   {
     keywords: "Paris",
-    link: "/webdev",
+    link: "/dev",
   },
   {
     keywords: "London",
@@ -81,7 +81,7 @@ export const data = [
   },
   {
     keywords: "Louisa",
-    link: "/webdev",
+    link: "/dev",
   },
   {
     keywords: "Mélissa",
@@ -137,7 +137,7 @@ export const data = [
   },
   {
     keywords: "Paris",
-    link: "/webdev",
+    link: "/dev",
   },
   {
     keywords: "London",
@@ -161,7 +161,7 @@ export const data = [
   },
   {
     keywords: "Louisa",
-    link: "/webdev",
+    link: "/dev",
   },
   {
     keywords: "EN",
