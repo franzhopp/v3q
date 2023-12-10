@@ -83,13 +83,14 @@ const DiscoverWebDeveloper = () => {
                 </motion.span>
               </div>
               <div className="flex justify-center">
-                <p className="text-black">لويزة</p>
+                <p className="text-black">☽ لويزة</p>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div className="bg-devis-blur">
+        
         <div className="flex justify-center pb-20">
           <div className="flex justify-center flex-col mt-10">
             <div className="flex justify-center mt-10 mb-16">
@@ -241,6 +242,14 @@ const DiscoverWebDeveloper = () => {
                   </div>
                 </div>
               </div>
+
+              <div className="flex justify-center sm:justify-start mb-1">
+                <div className="">
+                  <h3 className="text-center rotate-180 mt-1 font-extrabold uppercase text-FFF6E4 xs">
+                    JUST HERO BUT NOT HEROES IS COMING
+                  </h3>
+                </div>
+              </div>
               <div className="flex justify-center">
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
                   <ModalImage
@@ -266,15 +275,6 @@ const DiscoverWebDeveloper = () => {
                   />
                 </div>
               </div>
-
-              <div className="flex justify-center sm:justify-start">
-                <div className="">
-                  <h3 className="text-center rotate-180 mt-1 font-extrabold uppercase text-FFF6E4 xs">
-                    JUST HERO BUT NOT HEROES IS COMING
-                  </h3>
-                </div>
-              </div>
-
               {/* <div class="flex flex-wrap justify-center gap-4">
                 <ModalImage
                   small={ImageLouisa}
