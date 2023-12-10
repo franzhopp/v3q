@@ -90,7 +90,6 @@ const DiscoverWebDeveloper = () => {
         </div>
       </div>
       <div className="bg-devis-blur">
-        
         <div className="flex justify-center pb-20">
           <div className="flex justify-center flex-col mt-10">
             <div className="flex justify-center mt-10 mb-16">
@@ -180,7 +179,7 @@ const DiscoverWebDeveloper = () => {
                   class="p-6 rounded-lg shadow-md border test border-FFF6E4"
                 >
                   <p className="text-left text-FFF6E4 font-extrabold">
-                    .*:･ﾟ✧*:･ﾟ تعبير الروح
+                    *･ﾟ✧*･ﾟ تعبير الروح
                   </p>
                   <span className="absolute w-48 h-1 bg-FFF6E4"></span>
                   <div className="w-72 mt-5">
@@ -217,7 +216,7 @@ const DiscoverWebDeveloper = () => {
                   class="p-6 rounded-lg shadow-md border test border-FFF6E4"
                 >
                   <p className="text-left text-FFF6E4 font-extrabold">
-                    .*:･ﾟ✧*:･ﾟالخيال هو
+                    *･ﾟ✧*･ﾟالخيال هو
                   </p>
                   <span className="absolute w-48 h-1 bg-FFF6E4"></span>
                   <div className="w-72 mt-5">
@@ -236,7 +235,6 @@ const DiscoverWebDeveloper = () => {
                       />{" "}
                       {translations[language].describeDev5Fr}
                       {translations[language].describeDev5En}{" "}
-                      *:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧*:･ﾟ*:･ﾟ✧.
                     </p>
                     <br />
                   </div>
