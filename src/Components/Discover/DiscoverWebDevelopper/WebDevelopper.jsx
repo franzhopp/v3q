@@ -242,14 +242,13 @@ const DiscoverWebDeveloper = () => {
                   </div>
                 </div>
               </div>
-
-              <div className="flex justify-center sm:justify-start mb-1">
+              {/* <div className="flex justify-center sm:justify-start mb-1">
                 <div className="">
                   <h3 className="text-center rotate-180 mt-1 font-extrabold uppercase text-FFF6E4 xs">
                     JUST HERO BUT NOT HEROES IS COMING
                   </h3>
                 </div>
-              </div>
+              </div> */}
               <div className="flex justify-center">
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
                   <ModalImage
