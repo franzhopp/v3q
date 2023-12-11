@@ -564,9 +564,9 @@ const translations = {
     describeDev3En:
       "However, when i met React it was love at first sight, and since then, I have devoted my time to working with this technology. In addition, I have a strong interest in design and marketing.",
     describeDev4En:
-      "Writing is another passion that drives me, it inspires me. The creation of 'Univers-Imaginaire', a website that showcases all of my writings, gave me the drive to start my collaboration with my UX/UI designer and found",
+      "The drive to start my collaboration with my UX/UI designer and found",
     describeDev5En:
-      " I would like to invite you to explore our site, which has been created with great passion and enthusiasm to share with you. ✨",
+      " I would like to invite you to explore our site, which has been created with great passion and enthusiasm to share with you.",
     // DEVIS
     titleInfoFreeEn:
       "Before submitting a quote, please read these lines carefully.",
