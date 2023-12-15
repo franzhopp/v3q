@@ -262,21 +262,21 @@ const DevisFree = ({ label, type, value }) => {
               <div className="flex flex-col text-left mx-6">
                 {/* <NavLink
                   to="/services"
-                  className="text-FFF6E4 font-extrabold underline transition hover:text-C22E2E"
+                  className="text-FFF6E4 font-extrabold underline font-inter transition hover:text-C22E2E"
                 >
                   {translations[language].linkServicesFr}
                   {translations[language].linkServicesEn}
                 </NavLink>
                 <NavLink
                   to="/rate"
-                  className="text-FFF6E4 font-extrabold underline transition hover:text-C22E2E"
+                  className="text-FFF6E4 font-extrabold underline font-inter transition hover:text-C22E2E"
                 >
                   {translations[language].linkRateFr}
                   {translations[language].linkRateEn}
                 </NavLink>
                 <NavLink
                   to="/"
-                  className="text-FFF6E4 font-extrabold underline transition hover:text-C22E2E"
+                  className="text-FFF6E4 font-extrabold underline font-inter transition hover:text-C22E2E"
                 >
                   {translations[language].linkHomeFr}
                   {translations[language].linkHomeEn}

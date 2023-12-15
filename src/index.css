@@ -2,11 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Emblema+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
 @import url('https://db.onlinewebfonts.com/c/776348cc945339041ca98b13f4e7b43b?family=Gexo+Sans+Bold');
+@import url('https://fonts.cdnfonts.com/css/cosmos');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.cosmos {
+    font-family: 'Cosmos', sans-serif;
+}
 
 html,
 body {
@@ -41,11 +45,11 @@ textarea {
 
 .test {
     box-shadow: 0 0 .2rem #fff,
-    0 0 .2rem #fff,
-    0 0 2rem #FFF6E4,
-    0 0 0.8rem #FFF6E4,
-    0 0 2.8rem #FFF6E4,
-    inset 0 0 1.3rem #FFF6E4; 
+        0 0 .2rem #fff,
+        0 0 2rem #FFF6E4,
+        0 0 0.8rem #FFF6E4,
+        0 0 2.8rem #FFF6E4,
+        inset 0 0 1.3rem #FFF6E4;
 }
 
 ::-webkit-scrollbar {

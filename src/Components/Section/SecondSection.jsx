@@ -79,7 +79,7 @@ const SecondSection = () => {
           {/* <div className="flex justify-center mt-16">
             <NavLink
               to="/ethics"
-              className="text-FFF6E4 font-extrabold underline transition hover:text-0C3E78"
+              className="text-FFF6E4 font-extrabold underline font-inter transition hover:text-0C3E78"
             >
               {translations[language].linkValuesFr}
               {translations[language].linkValuesEn}

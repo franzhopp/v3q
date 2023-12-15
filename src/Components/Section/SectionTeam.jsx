@@ -18,7 +18,7 @@ const SectionTeam = () => {
     },
     config: { duration: 1000 },
   });
-  const text = "Team #navi♡";
+  const text = "Team #navi";
   const letters = text.split("");
   const animationConfig = [
     { dataAos: "fade-left", dataAosDelay: 100 },

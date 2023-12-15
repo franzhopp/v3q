@@ -117,7 +117,7 @@ const DiscoverDesigner = () => {
               </p>
               <div className="flex justify-start relative">
                 <svg
-                  className="absolute top-14 sm:-right-44 -right-96"
+                  className="absolute -top-2 sm:-right-44 -right-96"
                   width="140"
                   height="152"
                   viewBox="0 0 140 152"
@@ -208,10 +208,10 @@ const DiscoverDesigner = () => {
               large={ImageMelissa}
               className="h-80 w-80 sm:h-96 sm:w-96 transition-opacity duration-500 hover:opacity-50"
             />
-            {/* <p className="flex text-black text-xs">
+            <p className="flex text-FFF6E4 text-xs">
               {translations[language].city1Fr}
               {translations[language].city1En}
-            </p> */}
+            </p>
           </div>
         </div>
       </div>

@@ -78,7 +78,7 @@ const Section = () => {
                 onClick={SectionToScroll}
                 className="font-extrabold underline text-C22E2E"
               >
-                #♡
+                #navi
               </a>
               .
             </p>

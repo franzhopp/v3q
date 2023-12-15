@@ -439,21 +439,21 @@ const EthicsPage = () => {
               <div className="flex flex-col mt-10">
                 <NavLink
                   to="/services"
-                  className="text-FFF6E4 font-extrabold underline transition hover:text-E18AB0"
+                  className="text-FFF6E4 font-extrabold underline font-inter transition hover:text-E18AB0"
                 >
                   {translations[language].linkServicesFr}
                   {translations[language].linkServicesEn}
                 </NavLink>
                 {/* <NavLink
                   to="/rate"
-                  className="text-FFF6E4 font-extrabold underline transition hover:text-E18AB0"
+                  className="text-FFF6E4 font-extrabold underline font-inter transition hover:text-E18AB0"
                 >
                   {translations[language].linkRateFr}
                   {translations[language].linkRateEn}
                 </NavLink> */}
                 <NavLink
                   to="/"
-                  className="text-FFF6E4 font-extrabold underline transition hover:text-E18AB0"
+                  className="text-FFF6E4 font-extrabold underline font-inter transition hover:text-E18AB0"
                 >
                   {translations[language].linkHomeFr}
                   {translations[language].linkHomeEn}

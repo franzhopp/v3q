@@ -273,7 +273,7 @@ const translations = {
     describeDev3Fr:
       "Cependant, ma rencontre avec React a été un véritable coup de cœur, et depuis, je consacre une grande partie de mon temps à travailler avec cette technologie. Parallèlement, je nourris un vif intérêt pour le Design & le Marketing.",
     describeDev4Fr:
-      "Cette idée de création m'a donc donné la motivation de renforcer ma collaboration avec ma UX/UI Designer pour unir nos compétences et créer ensemble notre agence,",
+      "Cette idée de création m'a donc donné la motivation de renforcer ma collaboration avec ma UX/UI Designer pour unir nos compétences et créer ensemble notre agence.",
     describeDev5Fr:
       " Je vous invite à naviger les pages de notre site, conçu avec une grande passion et un immense plaisir de vous la partager.",
     // DEVIS

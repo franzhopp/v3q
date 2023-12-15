@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import ImageShoto from "../../../assets/picture-shoto.png";
+import ImageShoto from "../../../assets/picture-shotoo.png";
 import LoaderAvatar from "../Loader/LoaderAvatar";
 
 const Avatar = () => {
@@ -24,7 +24,7 @@ const Avatar = () => {
         <LoaderAvatar />
       ) : (
         <div className="flex justify-center">
-          <div className="bg-FFF6E4 absolute rounded-full h-48 w-48 sm:h-56 sm:w-56 left-10 sm:left-96 top-52 sm:top-56 sm:ml-4 mb-4">
+          <div className="bg-devis-blur absolute rounded-full h-48 w-48 sm:h-56 sm:w-56 left-10 sm:left-96 top-52 sm:top-56 sm:ml-4 mb-4">
             <img src={ImageShoto} className="rounded-full p-3" alt="Avatar" />
           </div>
         </div>

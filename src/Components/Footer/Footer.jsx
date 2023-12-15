@@ -263,7 +263,7 @@ const Footer = () => {
           </li>
         </ul>
         <div className="flex justify-center pt-10">
-          <div className="text-FFF6E4 font-inter font-extrabold underline">
+          <div className="text-FFF6E4 font-interx font-extrabold underline">
             {translations[language].findFr}
             {translations[language].findEn}
           </div>
