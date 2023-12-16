@@ -109,7 +109,7 @@ const DiscoverWebDeveloper = () => {
                   </motion.span>
                 </div>
                 <div className="flex justify-center">
-                  <p className="text-FFF6E4">لويزة</p>
+                  <p className="text-FFF6E4 font-aref">لويزة</p>
                 </div>
               </div>
             </div>
@@ -117,7 +117,7 @@ const DiscoverWebDeveloper = () => {
         </div>
         <div className="flex justify-start relative">
           <svg
-            className="absolute top-30 sm:left-96 -left-10"
+            className="absolute top-30 sm:left-96 -left-20"
             version="1.0"
             xmlns="http://www.w3.org/2000/svg"
             width="140px"

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import ImageShoto from "../../../assets/picture-shotoo.png";
+import ImageShoto from "../../../assets/picture-shoto.png";
 import LoaderAvatar from "../Loader/LoaderAvatar";
 
 const Avatar = () => {

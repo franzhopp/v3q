@@ -264,7 +264,7 @@ const translations = {
     describeDesigner3Fr:
       "Je puise mon inspiration dans tout ce qui m'entoure ; des voyages, des lectures, des images, des sons. Ce projet et cette collaboration me tenait à cœur,",
     describeDesigner4Fr:
-      "c'est un peu comme un enfant né de l'amour du design et du développement web. ♥",
+      "c'est un peu comme un enfant né de l'amour du design et du développement web.",
     // DEV
     describeDevFr:
       "Je vous souhaite la bienvenue sur la page « Web Developer ». Je vous invite à parcourir ces lignes pour mieux me connaître.",
@@ -555,7 +555,7 @@ const translations = {
     describeDesigner3En:
       "Travels, readings, visuals, and sounds are all sources of inspiration for me. This project and this collaboration was important to me and means a lot,",
     describeDesigner4En:
-      "it's like a child born from the love of web design and development. ♥",
+      "it's like a child born from the love of web design and development.",
     // DEV
     describeDevEn:
       "Welcome on the « Web Developer » page. I invite you to go through these lines to get to know me better.",

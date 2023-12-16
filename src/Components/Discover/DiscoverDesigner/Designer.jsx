@@ -36,8 +36,8 @@ const DiscoverDesigner = () => {
             </svg>
           </div>
           <div class="p-6">
-            <div className="w-80 sm:w-96">
-              <div className="flex justify-center mt-10 mb-10">
+            <div className="w-80">
+              <div className="flex justify-center mt-5 mb-10">
                 {" "}
                 <svg
                   className="animate-formbounce"
@@ -97,19 +97,13 @@ const DiscoverDesigner = () => {
                   />
                 </svg>
               </div>
-              <p
-                data-aos="fade-left"
-                className="text-center text-FFF6E4 font-extrabold"
-              >
+              <p data-aos="fade-left" className="text-center text-FFF6E4">
                 {translations[language].describeDesignerFr}
                 {translations[language].describeDesignerEn}
                 <br />
               </p>
               <br />
-              <p
-                data-aos="fade-left"
-                className="text-center text-FFF6E4 font-extrabold"
-              >
+              <p data-aos="fade-left" className="text-center text-FFF6E4">
                 {translations[language].describeDesigner2Fr}
                 {translations[language].describeDesigner2En}
                 <br />
@@ -117,7 +111,7 @@ const DiscoverDesigner = () => {
               </p>
               <div className="flex justify-start relative">
                 <svg
-                  className="absolute -top-2 sm:-right-44 -right-96"
+                  className="absolute -top-7 sm:-right-44 -right-96"
                   width="140"
                   height="152"
                   viewBox="0 0 140 152"
@@ -145,17 +139,9 @@ const DiscoverDesigner = () => {
                   />
                 </svg>
               </div>
-              <p
-                data-aos="fade-left"
-                className="text-center text-FFF6E4 font-extrabold"
-              >
+              <p data-aos="fade-left" className="text-center text-FFF6E4">
                 {translations[language].describeDesigner3Fr}
                 {translations[language].describeDesigner3En}{" "}
-                <img
-                  src={ImgText}
-                  className="h-8 mr-2 mb-1 inline"
-                  alt="Icône navi studio."
-                />{" "}
                 {translations[language].describeDesigner4Fr}
                 {translations[language].describeDesigner4En}
                 <br />
@@ -181,7 +167,7 @@ const DiscoverDesigner = () => {
             </div> */}
           </div>
 
-          <div className="pt-14">
+          <div className="pt-16">
             <div className="flex justify-end relative">
               <svg
                 className="absolute top-44 -right-6 sm:-right-56"
@@ -203,9 +189,8 @@ const DiscoverDesigner = () => {
               <p class="text-FFF6E4 text-4xl">ILLUSTRATOR</p>
               <p class="text-FFF6E4 text-4xl">FASHION DESIGNER</p>
             </div>
-            <ModalImage
-              small={ImageMelissa}
-              large={ImageMelissa}
+            <img
+              src={ImageMelissa}
               className="h-80 w-80 sm:h-96 sm:w-96 transition-opacity duration-500 hover:opacity-50"
             />
             <p className="flex text-FFF6E4 text-xs">
@@ -215,12 +200,19 @@ const DiscoverDesigner = () => {
           </div>
         </div>
       </div>
+      <div className="bg-FFF6E4 flex justify-center">image à mettre</div>
+      <div className="bg-1E1E20 flex justify-center pt-16 pb-16">
+        <div className="flex flex-col text-center">
+          <h1 className=" text-FFF6E4 text-4xl">GALERIE</h1>
+          <p className="text-white font-aref text-4xl"> صالة عرض</p>
+        </div>
+      </div>
       <div className="bg-FFF6E4 flex justify-center pt-20">
         <img
           data-aos="fade-in"
           src={LogoMelissa}
           alt="Picture Mélissa"
-          className="h-80 w-80 transition-opacity duration-500 hover:opacity-50"
+          className="h-80 w-80"
         />
       </div>
       <div class="bg-FFF6E4 pt-10 flex flex-wrap justify-center pb-20 space-x-0 sm:space-x-10">

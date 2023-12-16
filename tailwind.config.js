@@ -49,6 +49,7 @@ export default {
         'emblema': ['Emblema One', 'cursive'],
         'inter': ['Inter', 'sans-serif'],
         'gexo': ['Gexo Sans Bold', 'sans'],
+        'aref': ['Aref Ruqaa', 'sans-serif'],
       },
     },
     screens: {
