@@ -41,7 +41,7 @@ const DiscoverWebDeveloper = () => {
     }
   }, []);
   return (
-    <section className="">
+    <section className="bg-FFF6E4">
       <NavbarDiscoverWebDevelopper />
       <Avatar />
       <div className="bg-devis-blur">

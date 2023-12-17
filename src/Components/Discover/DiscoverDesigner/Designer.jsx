@@ -18,7 +18,7 @@ import Footer from "../../Footer/Footer";
 const DiscoverDesigner = () => {
   const { language } = useLanguage();
   return (
-    <section>
+    <section className="bg-FFF6E4">
       <NavbarDiscoverDesigner />
       <AvatarDesigner />
       <div class="bg-1E1E20 flex justify-center pt-10 pb-20">
