@@ -319,7 +319,7 @@ const Navbar = () => {
         </div>
       </nav>
       <nav
-        className={`fixed w-full top-0 left-0 shadow-md md:hidden bg-FFF6E4 z-max`}
+        className={`fixed w-full top-0 left-0 shadow-md xl:hidden bg-FFF6E4 z-max`}
       >
         <div className="px-5 h-28 flex items-center justify-between">
           <NavLink to="/" data-aos="fade-left">
@@ -514,7 +514,6 @@ const Navbar = () => {
               </ul>
             </NavLink>
           </li>
-
           <NavLink
             to="/portfolio"
             className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
