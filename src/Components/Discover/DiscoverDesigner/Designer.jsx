@@ -22,7 +22,7 @@ const DiscoverDesigner = () => {
       <NavbarDiscoverDesigner />
       <AvatarDesigner />
       <div class="bg-1E1E20 flex justify-center pt-10 pb-20">
-        <div class="mt-10 flex flex-wrap justify-center space-x-0 sm:space-x-20">
+        <div class="mt-6 flex flex-wrap justify-center space-x-0 sm:space-x-20">
           <div className="flex justify-start relative">
             <svg
               className="absolute top-20 -right-5"
