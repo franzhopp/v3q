@@ -129,7 +129,7 @@ const DiscoverDesigner = () => {
               </div>
               <div className="flex justify-start relative">
                 <svg
-                  className="absolute top-10 sm:-left-64 -left-56"
+                  className="absolute top-16 sm:-left-64 -left-56"
                   width="239"
                   height="189"
                   viewBox="0 0 239 189"
