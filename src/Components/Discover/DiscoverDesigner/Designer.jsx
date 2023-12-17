@@ -1,7 +1,7 @@
 import translations from "../translate.jsx";
 import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import { NavLink } from "react-router-dom";
-import ModalImage from "react-modal-image";
+// import ModalImage from "react-modal-image";
 import NavbarDiscoverDesigner from "../../Navigation/NavbarDiscover/DiscoverDesignerNavbar";
 import AvatarDesigner from "../../UI/Avatar/TemplateAvatarDesigner";
 // import MiniBan from "../../../assets/picture-bannier-melissa.png";
@@ -206,7 +206,7 @@ const DiscoverDesigner = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center pt-3 sm:h-5"></div>
+      <div className="testttt flex justify-center pt-3 sm:h-5"></div>
       <div className="flex justify-center relative">
         <svg
           className="absolute -top-9"
