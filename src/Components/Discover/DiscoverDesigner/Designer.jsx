@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import ModalImage from "react-modal-image";
 import NavbarDiscoverDesigner from "../../Navigation/NavbarDiscover/DiscoverDesignerNavbar";
 import AvatarDesigner from "../../UI/Avatar/TemplateAvatarDesigner";
-import ImgText from "../../../assets/logo-57.png";
+import MiniBan from "../../../assets/miniban.png";
 import ImageTest3 from "../../../assets/art1.png";
 import ImageTest2 from "../../../assets/art2.png";
 import ImageTest4 from "../../../assets/art3.png";
@@ -150,10 +150,10 @@ const DiscoverDesigner = () => {
                 <br />
               </p>
             </div>
-            {/* <div className="flex justify-center">
+            <div className="flex justify-center mt-7">
               <NavLink
                 to="/dev"
-                className="mt-7 text-C22E2E text-center font-extrabold underline transition hover:text-0C3E78"
+                className="text-FFF6E4 font-inter text-center font-extrabold underline transition"
               >
                 {translations[language].linkWebDevFr}
                 {translations[language].linkWebDevEn}
@@ -162,15 +162,14 @@ const DiscoverDesigner = () => {
             <div className="flex justify-center">
               <NavLink
                 to="/"
-                className=" text-C22E2E font-extrabold underline transition hover:text-0C3E78"
+                className="text-FFF6E4 font-inter font-extrabold underline transition"
               >
                 {translations[language].linkHomeFr}
                 {translations[language].linkHomeEn}
               </NavLink>
-            </div> */}
+            </div>
           </div>
-
-          <div className="pt-16">
+          <div className="pt-16 sm:pt-36">
             <div className="flex justify-end relative">
               <svg
                 className="absolute top-44 -right-6 sm:-right-56"
@@ -203,41 +202,67 @@ const DiscoverDesigner = () => {
           </div>
         </div>
       </div>
-      <div className="bg-FFF6E4 flex justify-center">image à mettre</div>
-      <div className="bg-1E1E20 flex justify-center pt-16 pb-16">
+      <div className="bg-FFF6E4 flex justify-center h-3 sm:h-5">
+        {/* <img src={MiniBan} /> */}
+      </div>
+      <div className="flex justify-center relative">
+        <svg
+          className="absolute -top-9"
+          width="430"
+          height="177"
+          viewBox="0 0 430 177"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M215 177L0.225723 -4.0457e-05L429.774 -2.90468e-06L215 177Z"
+            fill="#1E1E20"
+          />
+        </svg>
+      </div>
+      <div className="bg-1E1E20 flex justify-center pt-32 pb-16">
         <div className="flex flex-col text-center">
           <h1 className=" text-FFF6E4 text-4xl">GALERIE</h1>
           <p className="text-white font-aref text-4xl"> صالة عرض</p>
         </div>
       </div>
-      <div className=" bg-1E1E20 flex justify-center">
-        <div class="flex flex-col gap-2">
+      <div className="bg-1E1E20 flex justify-center">
+        <div class="flex gap-2 md:ml-0 ml-10">
           <img src={ImageTest4} data-aos="fade-in" />
           <img src={ImageTest2} data-aos="fade-in" />
           <img src={ImageTest3} data-aos="fade-in" />
         </div>
       </div>
+
       <div className="bg-1E1E20 flex justify-center pt-16 pb-16">
-        <div className="w-1/2">
+        <div className="w-96 sm:w-1/2">
           <p className="text-center text-FFF6E4">
-            Passionée d’art, je peins et dessine depuis que je sais tenir un
+            Passionée d'art, je peins et dessine depuis que je sais tenir un
             crayon dans la main. Ma boutique NA3NA3 Atelier est un hommage à mes
-            racines Algériennes, j’ai choisi d’infuser mon art de toutes ces
-            références, souvenirs et voyages qui m’ont marquée depuis l’enfance.
-            La richesse de l’Algérie est infinie et de par ma démarche
+            racines Algériennes, j'ai choisi d'infuser mon art de toutes ces
+            références, souvenirs et voyages qui m'ont marquée depuis l'enfance.
+            La richesse de l'Algérie est infinie et de par ma démarche
             artistique je souhaite restranscrire tout cela au yeux du monde
             entier, et faire connaitre mes racines dont je suis fière.{" "}
           </p>
-          <p className="text-center text-FFF6E4 mt-5">
-            Mes voyages en général et ma passion pour les cultures du monde
-            m’inspirent dans mon travail que ce soit dans le design ou l’art.
-            Ainsi, vous pourrez retrouver des influences du monde arabe, d’asie
-            de l’est et d’autres pays du mondes.{" "}
-          </p>
-          <p className="text-center text-FFF6E4 mt-5">
-            Pour plus d’informations sur mon travail n’hésitez pas à me follow
-            sur instagram @na3na3atelier & @murcielago.design.{" "}
-          </p>
+          <div className="flex justify-center">
+            <div className="w-96 sm:w-8/12">
+              <p className="text-center text-FFF6E4 mt-5">
+                Mes voyages en général et ma passion pour les cultures du monde
+                m'inspirent dans mon travail que ce soit dans le design ou
+                l'art. Ainsi, vous pourrez retrouver des influences du monde
+                arabe, d'asie de l'est et d'autres pays du monde.{" "}
+              </p>
+            </div>
+          </div>
+          <div className="flex justify-center">
+            <div className="w-96 sm:w-1/2">
+              <p className="text-center text-FFF6E4 mt-5">
+                Pour plus d'informations sur mon travail n'hésitez pas à me
+                follow sur instagram @na3na3atelier & @murcielago.design.{" "}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       <div className="bg-1E1E20 flex justify-center pb-16">
@@ -254,18 +279,36 @@ const DiscoverDesigner = () => {
           />
         </svg>
       </div>
-      {/* <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="622"
-        height="528"
-        viewBox="0 0 622 528"
-        fill="none"
-      >
-        <path
-          d="M-64.9828 19.2392C-54.0801 18.1467 -41.7923 17.7145 -28.9216 18.2615L621.265 0.634965C605.104 1.07308 572.997 9.84644 573.853 41.4349C574.71 73.0234 514.489 114.904 484.272 131.896C522.201 99.256 533.762 69.365 534.801 58.4995C532.467 40.0559 518.528 8.0219 481.44 27.4342C435.081 51.6996 433.26 95.2648 423.294 133.549C413.328 171.833 369.752 206.527 294.239 207.073C233.829 207.511 217.912 263.663 217.504 291.684C213.107 264.793 216.035 204.292 262.924 177.411C321.535 143.81 338.134 110.348 348.792 97.5547C359.449 84.7612 357.398 -46.2313 190.951 179.362C57.7925 359.837 141.764 486.808 200.395 527.734C103.182 465.846 44.9653 366.387 99.4842 181.842C136.585 56.2567 44.3793 21.3772 -28.9216 18.2615L-64.9828 19.2392Z"
-          fill="#1E1E20"
-        />
-      </svg> */}
+      <div className="flex justify-start relative">
+        <svg
+          className="absolute -top-5 sm:left-0 -left-96"
+          xmlns="http://www.w3.org/2000/svg"
+          width="622"
+          height="528"
+          viewBox="0 0 622 528"
+          fill="none"
+        >
+          <path
+            d="M-64.9828 19.2392C-54.0801 18.1467 -41.7923 17.7145 -28.9216 18.2615L621.265 0.634965C605.104 1.07308 572.997 9.84644 573.853 41.4349C574.71 73.0234 514.489 114.904 484.272 131.896C522.201 99.256 533.762 69.365 534.801 58.4995C532.467 40.0559 518.528 8.0219 481.44 27.4342C435.081 51.6996 433.26 95.2648 423.294 133.549C413.328 171.833 369.752 206.527 294.239 207.073C233.829 207.511 217.912 263.663 217.504 291.684C213.107 264.793 216.035 204.292 262.924 177.411C321.535 143.81 338.134 110.348 348.792 97.5547C359.449 84.7612 357.398 -46.2313 190.951 179.362C57.7925 359.837 141.764 486.808 200.395 527.734C103.182 465.846 44.9653 366.387 99.4842 181.842C136.585 56.2567 44.3793 21.3772 -28.9216 18.2615L-64.9828 19.2392Z"
+            fill="#1E1E20"
+          />
+        </svg>
+      </div>
+      <div className="flex justify-end relative">
+        <svg
+          className="absolute -top-5 sm:right-0 -right-96"
+          xmlns="http://www.w3.org/2000/svg"
+          width="636"
+          height="528"
+          viewBox="0 0 636 528"
+          fill="none"
+        >
+          <path
+            d="M687.218 19.2392C676.315 18.1467 664.028 17.7145 651.157 18.2615L0.97028 0.634965C17.131 1.07308 49.2384 9.84644 48.382 41.4349C47.5256 73.0234 107.746 114.904 137.963 131.896C100.034 99.256 88.4731 69.365 87.4339 58.4995C89.7679 40.0559 103.708 8.0219 140.795 27.4342C187.155 51.6996 188.975 95.2648 198.941 133.549C208.907 171.833 252.483 206.527 327.996 207.073C388.406 207.511 404.324 263.663 404.731 291.684C409.128 264.793 406.2 204.292 359.311 177.411C300.7 143.81 284.101 110.348 273.444 97.5547C262.787 84.7612 264.837 -46.2313 431.285 179.362C564.443 359.837 480.471 486.808 421.84 527.734C519.053 465.846 577.27 366.387 522.751 181.842C485.651 56.2567 577.856 21.3772 651.157 18.2615L687.218 19.2392Z"
+            fill="#1E1E20"
+          />
+        </svg>
+      </div>
       <div className="bg-FFF6E4 flex justify-center pt-20">
         <img
           data-aos="fade-in"
