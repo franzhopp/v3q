@@ -21,7 +21,6 @@ const DiscoverWebDeveloper = () => {
   useEffect(() => {
     const numStars = 20;
     const container = document.getElementById("star-container");
-
     for (let i = 0; i < numStars; i++) {
       const star = document.createElement("div");
       star.className =
@@ -32,7 +31,6 @@ const DiscoverWebDeveloper = () => {
     }
     const numStars1 = 20;
     const container1 = document.getElementById("star-containertest");
-
     for (let i = 0; i < numStars1; i++) {
       const star1 = document.createElement("div");
       star1.className =
