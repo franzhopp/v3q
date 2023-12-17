@@ -22,7 +22,7 @@ const DiscoverDesigner = () => {
       <NavbarDiscoverDesigner />
       <AvatarDesigner />
       <div class="bg-1E1E20 flex justify-center pt-10 pb-20">
-        <div class="mt-5 flex flex-wrap justify-center space-x-0 sm:space-x-20">
+        <div class="mt-10 flex flex-wrap justify-center space-x-0 sm:space-x-20">
           <div className="flex justify-start relative">
             <svg
               className="absolute top-20 -right-5"
@@ -114,7 +114,6 @@ const DiscoverDesigner = () => {
               </p>
               <div className="flex justify-start relative">
                 <svg
-                  
                   className="absolute top-9 sm:-right-44 -right-96"
                   width="140"
                   height="152"
@@ -207,7 +206,7 @@ const DiscoverDesigner = () => {
           </div>
         </div>
       </div>
-      <div className="picture-bannier-melissa flex justify-center pt-3 sm:h-5"></div>
+      <div className="flex justify-center pt-3 sm:h-5"></div>
       <div className="flex justify-center relative">
         <svg
           className="absolute -top-9"
@@ -313,7 +312,7 @@ const DiscoverDesigner = () => {
           />
         </svg>
       </div>
-      <div className="bg-FFF6E4 flex justify-center pt-20">
+      <div className="bg-FFF6E4 flex justify-center pt-56">
         <img src={LogoMelissa} alt="Picture Mélissa" className="h-80 w-80" />
       </div>
       <div class="bg-FFF6E4 pt-10 flex flex-wrap justify-center pb-20 space-x-0 sm:space-x-10">
