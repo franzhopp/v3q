@@ -221,7 +221,7 @@ const Services = () => {
           <div className="flex justify-center mt-3">
             <NavLink
               to="/ethics"
-              className="text-black font-extrabold underline transition hover:text-0C3E78"
+              className="text-black font-extrabold font-inter underline transition hover:text-0C3E78"
             >
               {translations[language].linkValuesFr}
               {translations[language].linkValuesEn}

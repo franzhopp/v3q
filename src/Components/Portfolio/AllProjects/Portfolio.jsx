@@ -51,7 +51,7 @@ const Portfolio = () => {
               <div className="flex flex-col">
                 <NavLink
                   to={cards[currentIndex].url}
-                  className="underline text-C22E2E text-sm mb-2"
+                  className="font-inter underline text-C22E2E text-sm mb-2"
                   rel="noreferrer"
                   target="_blank"
                 >
@@ -65,7 +65,7 @@ const Portfolio = () => {
                 <div className="flex justify-center pt-5 pb-5">
                   <NavLink
                     to="/"
-                    className="text-black text-xs font-extrabold underline transition hover:text-0C3E78"
+                    className="font-inter text-black text-xs font-extrabold underline transition hover:text-0C3E78"
                   >
                     › Retourner à la page d'Accueil ➔
                   </NavLink>

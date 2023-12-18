@@ -229,7 +229,7 @@ const DiscoverDesigner = () => {
         </div>
       </div>
       <div className="bg-1E1E20 flex justify-center">
-        <div class="flex gap-2 md:ml-0 ml-10">
+        <div class="grid grid-cols sm:grid-cols md:grid-cols lg:grid-cols-3 gap-2">
           <img src={ImageTest4} data-aos="fade-in" />
           <img src={ImageTest2} data-aos="fade-in" />
           <img src={ImageTest3} data-aos="fade-in" />

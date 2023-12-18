@@ -19,7 +19,7 @@ import PageConditions from "./Components/Privacy/Pages/PageTerms.jsx";
 import PageMentions from "./Components/Privacy/Pages/PageMentions.jsx";
 import PageNotFound from "./Components/404/Error/PageNotFound.jsx";
 import RateUk from "./Components/Rate/Prices/PageAllRatesUk.jsx";
-import { SkeletonTheme } from "react-loading-skeleton";
+// import { SkeletonTheme } from "react-loading-skeleton";
 // import TextLouisa from "./Components/Discover/DiscoverWebDevelopper/TextLouisa.jsx";
 
 const App = () => {
@@ -62,7 +62,7 @@ const App = () => {
                 onRequestClose={() => setCookieModalOpen(false)}
               />
             )}
-            <SkeletonTheme baseColor="#313131" highlightColor="#525252">
+            {/* <SkeletonTheme baseColor="#313131" highlightColor="#525252"> */}
               <Router>
                 <ScrollToTop />
                 <Routes>
@@ -84,7 +84,7 @@ const App = () => {
                   <Route path="*" element={<PageNotFound />} />
                 </Routes>
               </Router>
-            </SkeletonTheme>
+            {/* </SkeletonTheme> */}
           </ThemeProvider>
         </LanguageProvider>
       )}
