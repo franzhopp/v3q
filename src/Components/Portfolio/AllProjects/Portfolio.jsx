@@ -24,18 +24,49 @@ const Portfolio = () => {
     );
   };
   return (
-    <section className="bg-FFF6E4 bg-pattern-portfolio">
+    <section className="bg-FFF6E4">
       <NavbarPages />
       <div>
         <TitlePorfolio />
+        <div className="flex justify-start relative">
+          <svg
+            className="absolute left-5 sm:left-80"
+            width="4"
+            height="940"
+            viewBox="0 0 4 1490"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="2"
+              y1="-8.74228e-08"
+              x2="2.00007"
+              y2="1636"
+              stroke="#C22E2E"
+              stroke-width="4"
+            />
+            <line
+              x1="2"
+              y1="-8.74228e-08"
+              x2="2.00007"
+              y2="1636"
+              stroke="#C22E2E"
+              stroke-width="4"
+            />
+            <line
+              x1="2"
+              y1="-8.74228e-08"
+              x2="2.00007"
+              y2="1636"
+              stroke="#C22E2E"
+              stroke-width="4"
+            />
+          </svg>
+        </div>
       </div>
-      <div
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom"
-        className="pt-5 pb-5 px-4 sm:px-6 lg:px-8"
-      >
-        <div className="flex justify-center">
-          <div className="bg-FFF6E4 p-6 h-1/2  rounded-2xl shadow-2xl mr-5 ml-5">
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <div className="flex justify-center px-5">
+          <div className="bg-FFF6E4 mt-5 mb-5 p-5 h-1/2 rounded-2xl shadow-2xl mr-5 ml-5">
             <div className="flex justify-center mt-3">
               <img
                 src={cards[currentIndex].image}
@@ -160,8 +191,9 @@ const Portfolio = () => {
             </div>
           </div>
           <svg
-            width="60"
-            height="60"
+            className="sm:flex hidden mt-6"
+            width="100"
+            height="100"
             viewBox="0 0 192 193"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
