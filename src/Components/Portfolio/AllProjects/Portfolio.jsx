@@ -30,7 +30,7 @@ const Portfolio = () => {
         <TitlePorfolio />
         <div className="flex justify-start relative">
           <svg
-            className="absolute left-5 sm:left-80"
+            className="absolute left-5 xl:left-80"
             width="4"
             height="940"
             viewBox="0 0 4 1490"
@@ -78,7 +78,9 @@ const Portfolio = () => {
               <span className="text-E18AB0 font-bold number">
                 {currentIndex + 1}.
               </span>{" "}
-              <span className="font-inter">{cards[currentIndex].title}</span>
+              <span className="number font-extrabold">
+                {cards[currentIndex].title}
+              </span>
               <div className="flex flex-col">
                 <NavLink
                   to={cards[currentIndex].url}
