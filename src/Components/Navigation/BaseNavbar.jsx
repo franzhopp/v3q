@@ -327,7 +327,7 @@ const Navbar = () => {
               src={Image}
               onClick={scrollToTop}
               alt="Logo navi studio."
-              className="h-10 w-auto"
+              className="h-14 w-auto"
             />
           </NavLink>
           <div>
