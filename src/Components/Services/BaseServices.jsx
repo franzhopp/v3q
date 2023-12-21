@@ -33,6 +33,76 @@ const Services = () => {
     <>
       <NavbarServices />
       <section className="bg-FFF6E4">
+        <div className="flex justify-start relative">
+          <svg
+            className="absolute left-2 sm:left-20"
+            width="4"
+            height="1183"
+            viewBox="0 0 4 1924"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="2"
+              y1="-8.74228e-08"
+              x2="2.00008"
+              y2="1924"
+              stroke="#C22E2E"
+              stroke-width="4"
+            />
+            <line
+              x1="2"
+              y1="-8.74228e-08"
+              x2="2.00008"
+              y2="1924"
+              stroke="#C22E2E"
+              stroke-width="4"
+            />
+            <line
+              x1="2"
+              y1="-8.74228e-08"
+              x2="2.00008"
+              y2="1924"
+              stroke="#C22E2E"
+              stroke-width="4"
+            />
+          </svg>
+        </div>
+        <div className="flex justify-end relative">
+          <svg
+            className="absolute right-2 sm:right-20"
+            width="4"
+            height="1183"
+            viewBox="0 0 4 1924"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="2"
+              y1="-8.74228e-08"
+              x2="2.00008"
+              y2="1924"
+              stroke="#0C3E78"
+              stroke-width="4"
+            />
+            <line
+              x1="2"
+              y1="-8.74228e-08"
+              x2="2.00008"
+              y2="1924"
+              stroke="#0C3E78"
+              stroke-width="4"
+            />
+            <line
+              x1="2"
+              y1="-8.74228e-08"
+              x2="2.00008"
+              y2="1924"
+              stroke="#0C3E78"
+              stroke-width="4"
+            />
+          </svg>
+        </div>
         <div className="test4">
           <h1
             data-aos="fade-right"
