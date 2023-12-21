@@ -30,7 +30,11 @@ const ButtonContactServices = () => {
           </svg>
         </NavLink>
       </div>
-      <img src={Artwork} alt="Icône Gears" className="mt-10" />
+      <img
+        src={Artwork}
+        alt="Icône Gears"
+        className="mt-10 image-full"
+      />
     </>
   );
 };

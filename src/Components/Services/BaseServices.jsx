@@ -33,7 +33,7 @@ const Services = () => {
     <>
       <NavbarServices />
       <section className="bg-FFF6E4">
-        {/* SVG DESKTOP
+        {/* SVG DESKTOP */}
         <div className="flex justify-start relative">
           <svg
             className="absolute left-2 sm:left-20 sm:flex hidden"
@@ -69,8 +69,8 @@ const Services = () => {
             />
           </svg>
         </div>
-        {/* SVG MOBILE */}
-        {/* <div className="flex justify-start relative">
+        {/* SVG MOBILE  */}
+        <div className="flex justify-start relative">
           <svg
             className="absolute left-2 sm:left-20 sm:hidden flex"
             width="6"
@@ -104,9 +104,46 @@ const Services = () => {
               stroke-width="4"
             />
           </svg>
+        </div>
+        {/* SVG TABLET */}
+        {/* <div className="flex justify-start relative">
+          <svg
+            className="absolute left-2 md:left-20 md:hidden flex"
+            width="6"
+            height="2012"
+            viewBox="0 0 4 1924"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="2"
+              y1="-8.74228e-08"
+              x2="2.00008"
+              y2="1924"
+              stroke="#C22E2E"
+              stroke-width="4"
+            />
+            <line
+              x1="2"
+              y1="-8.74228e-08"
+              x2="2.00008"
+              y2="1924"
+              stroke="#C22E2E"
+              stroke-width="4"
+            />
+            <line
+              x1="2"
+              y1="-8.74228e-08"
+              x2="2.00008"
+              y2="1924"
+              stroke="#C22E2E"
+              stroke-width="4"
+            />
+          </svg>
         </div> */}
+        {/* //////////////// */}
         {/* SVG DESKTOP */}
-        {/* <div className="flex justify-end relative">
+        <div className="flex justify-end relative">
           <svg
             className="absolute right-2 sm:right-20 sm:flex hidden"
             width="4"
@@ -141,6 +178,7 @@ const Services = () => {
             />
           </svg>
         </div>
+        {/* SVG MOBILE */}
         <div className="flex justify-end relative">
           <svg
             className="absolute right-2 sm:right-20 sm:hidden flex"
@@ -175,7 +213,7 @@ const Services = () => {
               stroke-width="4"
             />
           </svg>
-        </div>  */}
+        </div>
         <div className="test4">
           <h1
             data-aos="fade-right"
