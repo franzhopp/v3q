@@ -300,7 +300,7 @@ const NavbarDiscoverDesigner = () => {
               src={Image}
               onClick={scrollToTop}
               alt=""
-              className="h-10 w-auto sm:h-10"
+              className="h-14 w-auto sm:h-10"
             />
           </NavLink>
           <div>
