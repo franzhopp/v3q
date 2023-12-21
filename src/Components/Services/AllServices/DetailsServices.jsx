@@ -64,7 +64,7 @@ const DetailsServices = () => {
       </div>
       <div>
         <div className="pb-10">
-          <div className="flex justify-start relative">
+          {/* <div className="flex justify-start relative">
             <svg
               className="absolute left-2 sm:left-20"
               width="4"
@@ -98,7 +98,7 @@ const DetailsServices = () => {
                 stroke-width="4"
               />
             </svg>
-          </div>
+          </div> */}
           <div className="flex justify-center pt-20">
             <svg
               className="animate-formbounce"
