@@ -37,8 +37,8 @@ const Section = () => {
             {translations[language].titleSectionFr}
             {translations[language].titleSectionEn}
           </p>
-          <div className="flex justify-center">
-            <span className="absolute w-28 h-1 bg-C22E2E mr-0 sm:mr-40"></span>
+          <div className="flex justify-center sm:justify-start">
+            <span className="absolute w-28 h-1 bg-C22E2E"></span>
           </div>
         </div>
         <div className="w-80 mt-10">
