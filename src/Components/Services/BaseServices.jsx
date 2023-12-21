@@ -34,7 +34,7 @@ const Services = () => {
       <NavbarServices />
       <section className="bg-FFF6E4">
         {/* SVG DESKTOP */}
-        <div className="flex justify-start relative">
+        {/* <div className="flex justify-start relative">
           <svg
             className="absolute left-2 sm:left-20 sm:flex hidden"
             width="4"
@@ -68,9 +68,9 @@ const Services = () => {
               stroke-width="4"
             />
           </svg>
-        </div>
+        </div> */}
         {/* SVG MOBILE  */}
-        <div className="flex justify-start relative">
+        {/* <div className="flex justify-start relative">
           <svg
             className="absolute left-2 sm:left-20 sm:hidden flex"
             width="6"
@@ -104,7 +104,7 @@ const Services = () => {
               stroke-width="4"
             />
           </svg>
-        </div>
+        </div> */}
         {/* SVG TABLET */}
         {/* <div className="flex justify-start relative">
           <svg
@@ -143,7 +143,7 @@ const Services = () => {
         </div> */}
         {/* //////////////// */}
         {/* SVG DESKTOP */}
-        <div className="flex justify-end relative">
+        {/* <div className="flex justify-end relative">
           <svg
             className="absolute right-2 sm:right-20 sm:flex hidden"
             width="4"
@@ -177,9 +177,9 @@ const Services = () => {
               stroke-width="4"
             />
           </svg>
-        </div>
+        </div> */}
         {/* SVG MOBILE */}
-        <div className="flex justify-end relative">
+        {/* <div className="flex justify-end relative">
           <svg
             className="absolute right-2 sm:right-20 sm:hidden flex"
             width="6"
@@ -213,7 +213,7 @@ const Services = () => {
               stroke-width="4"
             />
           </svg>
-        </div>
+        </div> */}
         <div className="test4">
           <h1
             data-aos="fade-right"
