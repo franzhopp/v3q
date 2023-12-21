@@ -23,7 +23,7 @@ const Portfolio = () => {
     );
   };
   return (
-    <section className="bg-FFF6E4 bg-pattern-portfolio">
+    <section className="bg-FFF6E4">
       <NavbarPages />
       <div>
         <TitlePorfolio />
