@@ -66,7 +66,7 @@ const EthicsPage = () => {
                   data-aos-anchor-placement="top-bottom"
                   className="text-black"
                 >
-                  <span className="absolute h-72 w-1 bg-C22E2E -left-20 bottom-0 hidden sm:block"></span>
+                  {/* <span className="absolute h-72 w-1 bg-C22E2E -left-20 bottom-0 hidden sm:block"></span> */}
                   {translations[language].describe1EthicsFr}
                   {translations[language].describe1EthicsEn}
                   <span className="font-extrabold">
@@ -142,7 +142,7 @@ const EthicsPage = () => {
                   {translations[language].describe3Bold1En}
                   {translations[language].describeWithoutBold3Fr}
                   {translations[language].describeWithoutBold3En}
-                  <span className="absolute h-72 w-1 bg-C22E2E -right-20 bottom-10 hidden sm:block"></span>
+                  {/* <span className="absolute h-72 w-1 bg-C22E2E -right-20 bottom-10 hidden sm:block"></span> */}
                 </p>
               </div>
             </div>

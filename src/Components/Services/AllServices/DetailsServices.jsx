@@ -95,14 +95,14 @@ const DetailsServices = () => {
         <div className="flex flex-col text-center justify-center">
           <NavLink
             to="/rate"
-            className="text-black font-inter font-extrabold underline transition hover:text-0C3E78"
+            className="text-black font-inter underline transition hover:text-0C3E78"
           >
             {translations[language].linkRateFr}
             {translations[language].linkRateEn}
           </NavLink>
           <NavLink
             to="/"
-            className="text-black font-inter font-extrabold underline transition hover:text-0C3E78"
+            className="text-black font-inter underline transition hover:text-0C3E78"
           >
             {translations[language].linkHomeFr}
             {translations[language].linkHomeEn}

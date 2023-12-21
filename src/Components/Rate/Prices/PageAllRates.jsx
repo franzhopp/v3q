@@ -211,7 +211,7 @@ const Rate = () => {
                   <div className="text-FFF6E4">
                     <button
                       onClick={() => toggleSubList(info.title)}
-                      className="bg-FFF6E4 text-0C3E78 p-3 rounded-3xl shadow-md"
+                      className="bg-FFF6E4 text-0C3E78 p-3 rounded-3xl shadow-md cursor-pointer transition-transform transform hover:scale-105"
                     >
                       <div className="flex ml-1 number">
                         En savoir plus <IoIosArrowDown className="mt-2 ml-1" />

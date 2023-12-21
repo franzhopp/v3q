@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { NavLink } from "react-router-dom";
 import NavbarPages from "../../Navigation/PagesNavbar/PagesNavbar";
 import TitlePorfolio from "../../UI/Title/TitlePorfolio";
@@ -24,7 +23,7 @@ const Portfolio = () => {
     );
   };
   return (
-    <section className="bg-FFF6E4">
+    <section className="bg-FFF6E4 bg-pattern-portfolio">
       <NavbarPages />
       <div>
         <TitlePorfolio />
