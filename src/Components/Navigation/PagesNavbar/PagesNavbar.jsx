@@ -312,43 +312,72 @@ const PagesNavbar = () => {
               onClick={toggleMenuMobile}
               className="icon-toggle bg-C22E2E cursor-pointer rounded-md p-2 inline-flex items-center justify-center ring-1 ring-white ring-opacity-20"
             >
-              <svg
-                className={`rotateAnimation ${
-                  isAnimating ? "animate-rotate" : ""
-                }`}
-                onClick={handleAnimateButtonClick}
-                width="53"
-                height="53"
-                viewBox="0 0 53 53"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle
-                  cx="26.5"
-                  cy="26.5"
-                  r="26.5"
-                  transform="rotate(90 26.5 26.5)"
-                  fill="#C22E2E"
-                />
-                <path
-                  d="M26 12L26 41"
-                  stroke="#FFF6E4"
-                  strokeWidth="6"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M17 18L17 35"
-                  stroke="#FFF6E4"
-                  strokeWidth="6"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M35 18L35 35"
-                  stroke="#FFF6E4"
-                  strokeWidth="6"
-                  strokeLinecap="round"
-                />
-              </svg>
+              {isAnimating ? (
+                <svg
+                  onClick={handleAnimateButtonClick}
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="53"
+                  height="53"
+                  viewBox="0 0 53 53"
+                  fill="none"
+                >
+                  <circle
+                    cx="26.5"
+                    cy="26.5"
+                    r="26.5"
+                    transform="rotate(90 26.5 26.5)"
+                    fill="#C22E2E"
+                  />
+                  <path
+                    d="M26 12L26 41"
+                    stroke="#FFF6E4"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                  />
+                  <path
+                    d="M17 18L17 35"
+                    stroke="#FFF6E4"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                  />
+                  <path
+                    d="M35 18L35 35"
+                    stroke="#FFF6E4"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  onClick={handleAnimateButtonClick}
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="53"
+                  height="53"
+                  viewBox="0 0 53 53"
+                  fill="none"
+                >
+                  {/* First SVG content */}
+                  <circle cx="26.5" cy="26.5" r="26.5" fill="#C22E2E" />
+                  <path
+                    d="M12 27H41"
+                    stroke="#FFF6E4"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                  />
+                  <path
+                    d="M18 36L35 36"
+                    stroke="#FFF6E4"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                  />
+                  <path
+                    d="M18 18L35 18"
+                    stroke="#FFF6E4"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                  />
+                </svg>
+              )}
             </div>
           </div>
         </div>
