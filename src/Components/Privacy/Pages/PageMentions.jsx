@@ -21,7 +21,7 @@ const PageMentions = () => {
             ›<span className={keywordsStyle}> Nom du site web :</span>
             <img
               src={ImgText}
-              className="h-6 ml-1 inline"
+              className="h-6 ml-2 inline"
               alt="Icône navi studio."
             />
             <br />›<span className={keywordsStyle}> Site URL :</span>{" "}
@@ -113,7 +113,7 @@ const PageMentions = () => {
             › L'entreprise
             <img
               src={ImgText}
-              className="h-6 ml-1 inline"
+              className="h-6 ml-2 inline"
               alt="Icône navi studio."
             />{" "}
             traite les données pour gérer les commandes, le marketing, et la
@@ -180,7 +180,7 @@ const PageMentions = () => {
             ,
             <img
               src={ImgText}
-              className="h-6 ml-1 inline"
+              className="h-6 ml-2 inline"
               alt="Icône navi studio."
             />
             <br />›<span className={keywordsStyle}> Hébergeur :</span> IONOS.

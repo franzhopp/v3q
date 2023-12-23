@@ -23,7 +23,7 @@ const Portfolio = () => {
     );
   };
   return (
-    <section className="bg-FFF6E4">
+    <section className="bg-FFF6E4 bg-pattern-portfolio">
       <NavbarPages />
       <div>
         <TitlePorfolio />
@@ -142,7 +142,7 @@ const Portfolio = () => {
                 </svg>
               </button>
             </div>
-            <div className="flex justify-center mt-10">
+            <div className="flex justify-center pt-10">
               <svg
                 width="95"
                 height="64"

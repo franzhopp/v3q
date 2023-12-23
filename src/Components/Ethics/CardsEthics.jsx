@@ -21,6 +21,30 @@ const EthicsPage = () => {
   //   },
   //   config: { duration: 1000 },
   // });
+  const text = "01.";
+  const letters = text.split("");
+  const animationConfig = [
+    { dataAos: "fade-left", dataAosDelay: 100 },
+    { dataAos: "fade-left", dataAosDelay: 200 },
+    { dataAos: "fade-left", dataAosDelay: 300 },
+    ,
+  ];
+  const text2 = "02.";
+  const letters2 = text2.split("");
+  const animationConfig2 = [
+    { dataAos: "fade-left", dataAosDelay: 100 },
+    { dataAos: "fade-left", dataAosDelay: 200 },
+    { dataAos: "fade-left", dataAosDelay: 300 },
+    ,
+  ];
+  const text3 = "03.";
+  const letters3 = text3.split("");
+  const animationConfig3 = [
+    { dataAos: "fade-left", dataAosDelay: 100 },
+    { dataAos: "fade-left", dataAosDelay: 200 },
+    { dataAos: "fade-left", dataAosDelay: 300 },
+    ,
+  ];
   const ScrollToSectionEthics = () => {
     const sectionToScrollEthics = document.getElementById("ethics");
     if (sectionToScrollEthics) {
@@ -52,7 +76,15 @@ const EthicsPage = () => {
                 data-aos="fade-left"
                 class="text-8xl number text-E18AB0 font-bold mb-2"
               >
-                01.
+                {letters.map((letter, index) => (
+                  <span
+                    key={index}
+                    data-aos={animationConfig[index].dataAos}
+                    data-aos-delay={animationConfig[index].dataAosDelay}
+                  >
+                    {letter}
+                  </span>
+                ))}
               </h2>
 
               <p className="text-black text-xl font-inter font-extrabold">
@@ -90,7 +122,15 @@ const EthicsPage = () => {
                 data-aos="fade-right"
                 class="text-8xl number text-E18AB0 font-bold mb-2"
               >
-                02.
+                {letters2.map((letter, index) => (
+                  <span
+                    key={index}
+                    data-aos={animationConfig2[index].dataAos}
+                    data-aos-delay={animationConfig2[index].dataAosDelay}
+                  >
+                    {letter}
+                  </span>
+                ))}
               </h2>
               <p className="text-black text-xl font-inter font-extrabold">
                 › {translations[language].title2EthicsFr}
@@ -120,7 +160,15 @@ const EthicsPage = () => {
                 data-aos="fade-left"
                 class="text-8xl number text-E18AB0 font-bold mb-2"
               >
-                03.
+                {letters3.map((letter, index) => (
+                  <span
+                    key={index}
+                    data-aos={animationConfig3[index].dataAos}
+                    data-aos-delay={animationConfig3[index].dataAosDelay}
+                  >
+                    {letter}
+                  </span>
+                ))}
               </h2>
               <p className="text-black text-xl font-inter font-extrabold">
                 › Passion & Motivation

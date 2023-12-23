@@ -107,8 +107,7 @@ textarea {
 .bg-pattern-portfolio {
     background-image: url('./assets/pattern.png');
     background-repeat: no-repeat;
-    /* background-position: left; */
-    background-position: 30% 50%;
+    background-position: 30% 10%;
 }
 
 .star {

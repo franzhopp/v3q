@@ -282,7 +282,7 @@ const DevisFree = ({ label, type, value }) => {
                   {translations[language].linkHomeEn}
                 </NavLink> */}
                 <NavLink
-                  className="text-C22E2E shadow-full font-extrabold underline transition hover:text-0C3E78"
+                  className="text-C22E2E shadow-full mt-5 mb-6 font-extrabold underline transition hover:text-0C3E78"
                   to="/"
                 >
                   <svg

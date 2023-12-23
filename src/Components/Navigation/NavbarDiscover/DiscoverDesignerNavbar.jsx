@@ -43,10 +43,7 @@ const NavbarDiscoverDesigner = () => {
   };
 
   const handleAnimateButtonClick = () => {
-    setIsAnimating(true);
-    setTimeout(() => {
-      setIsAnimating(false);
-    }, 1000);
+    setIsAnimating(!isAnimating);
   };
   const toggleSousListsAgence = () => {
     setShowSousListsAgence(!showSousListsAgence);

@@ -166,7 +166,7 @@ const Form = ({ label, type, value }) => {
               {translations[language].describeContactEn}
               <img
                 src={ImgText}
-                className="h-14 sm:h-20 inline"
+                className="h-14 ml-1 sm:h-20 inline"
                 alt="Icône navi studio."
               />
             </p>

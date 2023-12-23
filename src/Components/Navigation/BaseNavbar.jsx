@@ -382,7 +382,13 @@ const Navbar = () => {
                   fill="none"
                 >
                   {/* First SVG content */}
-                  <circle cx="26.5" cy="26.5" r="26.5" fill="#C22E2E" />
+                  <circle
+                    cy="26.5"
+                    cx="26.5"
+                    r="26.5"
+                    transform="rotate(90 26.5 26.5)"
+                    fill="#C22E2E"
+                  />
                   <path
                     d="M12 27H41"
                     stroke="#FFF6E4"
