@@ -164,7 +164,7 @@ textarea {
     display: block;
     max-width: 100%;
     border-radius: 0px 0px 0px 190px;
-    background: url("./assets/bg-title-agency.png"), lightgray -46.697px -768.547px / 106.886% 974.977% no-repeat;
+    background: url("./assets/bg-title-agency.png"), lightgray;
 }
 
 .image-navi-studio-title-devis {
@@ -172,7 +172,7 @@ textarea {
     display: block;
     max-width: 100%;
     border-radius: 0px 0px 182px 0px;
-    background: url("./assets/bg-devis.png")
+    background: url("./assets/bg-devis.png"), lightgray;
 }
 
 .image-navi-studio-title-porfolio {
@@ -180,7 +180,7 @@ textarea {
     display: block;
     max-width: 100%;
     border-radius: 0px 0px 182px 0px;
-    background: url("./assets/portfolioo1.png")
+    background: url("./assets/portfolioo1.png"), lightgray;
 }
 
 .image-navi-studio-title-rate {
@@ -190,7 +190,7 @@ textarea {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 0px 0px 154px 0px;
-    background-image: url("./assets/bg-rate.png")
+    background: url("./assets/bg-rate.png"), lightgray;
 }
 
 .image-navi-studio-title-contact {
@@ -198,7 +198,7 @@ textarea {
     display: block;
     max-width: 100%;
     border-radius: 0px 0px 0px 181px;
-    background: url("./assets/bg-title-contact.png"), lightgray -1432.171px -108.115px / 298.913% 133.472% no-repeat;
+    background: url("./assets/bg-title-contact.png"), lightgray;
 }
 
 .image-navi-studio-marketing-services {
@@ -207,7 +207,7 @@ textarea {
     max-width: 100%;
     padding-bottom: 50px;
     border-radius: 0px 0px 290px 0px;
-    background: url("./assets/bg-services-marketing.png"), lightgray -9px -327.869px / 127.649% 272.306% no-repeat;
+    background: url("./assets/bg-services-marketing.png"), lightgray;
 }
 
 .image-navi-studio-porfolio {
@@ -215,7 +215,7 @@ textarea {
     display: block;
     max-width: 100%;
     border-radius: 0px 0px 290px 0px;
-    background: url("./assets/bg-portfolio.png")
+    background: url("./assets/bg-portfolio.png"), lightgray;
 }
 
 /* BG FORM */
@@ -293,11 +293,11 @@ textarea {
     max-width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("./assets/picture-bannier-louisa.png")
+    background-image: url("./assets/picture-bannier-louisa.png");
 }
 
 .testttt {
-    background-image: url("./assets/test113.png")
+    background-image: url("./assets/test113.png");
 }
 
 .picture-bannier-melissa {
@@ -306,7 +306,7 @@ textarea {
     max-width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("./assets/picture-bannier-melissa.png")
+    background-image: url("./assets/picture-bannier-melissa.png");
 }
 
 .p {
