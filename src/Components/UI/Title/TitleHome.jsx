@@ -15,7 +15,7 @@ const TitleHome = () => {
             transition={{ duration: 1, delay: 0.5 }}
           >
             {translations[language].titleHomeFr}
-            {translations[language].titleHomeEn}
+            {translations[language].titleHomeEn},
           </motion.span>
           <div className="flex justify-center">
             <span

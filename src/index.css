@@ -171,18 +171,16 @@ textarea {
     height: auto;
     display: block;
     max-width: 100%;
-    background-size: cover;
     border-radius: 0px 0px 182px 0px;
-    background: url("./assets/bg-devis.png"), lightgray;
+    background: url("./assets/bg-devis.png");
 }
 
 .image-navi-studio-title-porfolio {
     height: auto;
     display: block;
     max-width: 100%;
-    background-size: cover;
     border-radius: 0px 0px 182px 0px;
-    background-image: url("./assets/portfolioo1.png");
+    background: url("./assets/portfolioo1.png"), lightgray;
 }
 
 .image-navi-studio-title-rate {
@@ -235,6 +233,7 @@ textarea {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
