@@ -171,6 +171,7 @@ textarea {
     height: auto;
     display: block;
     max-width: 100%;
+    background-size: cover;
     border-radius: 0px 0px 182px 0px;
     background: url("./assets/bg-devis.png"), lightgray;
 }
@@ -179,8 +180,9 @@ textarea {
     height: auto;
     display: block;
     max-width: 100%;
+    background-size: cover;
     border-radius: 0px 0px 182px 0px;
-    background: url("./assets/portfolioo1.png"), lightgray;
+    background-image: url("./assets/portfolioo1.png");
 }
 
 .image-navi-studio-title-rate {
@@ -190,7 +192,7 @@ textarea {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 0px 0px 154px 0px;
-    background: url("./assets/bg-rate.png"), lightgray;
+    background-image: url("./assets/bg-rate.png");
 }
 
 .image-navi-studio-title-contact {
@@ -233,7 +235,6 @@ textarea {
     from {
         transform: rotate(0deg);
     }
-
     to {
         transform: rotate(360deg);
     }
