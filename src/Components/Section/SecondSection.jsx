@@ -1,10 +1,8 @@
-import translations from "./translate.jsx";
 import { useLanguage } from "../../context/LanguageProvider.jsx";
-import { NavLink } from "react-router-dom";
+import translations from "./translate.jsx";
 
 const SecondSection = () => {
   const { language } = useLanguage();
-
   return (
     <section className="bg-C22E2E h-1/2">
       <div className="pt-32 pb-32 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -76,15 +74,6 @@ const SecondSection = () => {
               {translations[language].textSecondSectionWithoutBold3En}{" "}
             </p>
           </div>
-          {/* <div className="flex justify-center mt-16">
-            <NavLink
-              to="/ethics"
-              className="text-FFF6E4 font-extrabold underline font-inter transition hover:text-0C3E78"
-            >
-              {translations[language].linkValuesFr}
-              {translations[language].linkValuesEn}
-            </NavLink>
-          </div> */}
         </div>
       </div>
     </section>

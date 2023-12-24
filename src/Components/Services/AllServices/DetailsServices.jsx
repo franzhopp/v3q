@@ -1,6 +1,6 @@
-import translations from "../translate.jsx";
-import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import { NavLink } from "react-router-dom";
+import { useLanguage } from "../../../context/LanguageProvider.jsx";
+import translations from "../translate.jsx";
 import ButtonContactServices from "../../UI/Button/ButtonContactServices";
 
 const DetailsServices = () => {

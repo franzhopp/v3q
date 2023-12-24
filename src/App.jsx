@@ -19,8 +19,6 @@ import PageConditions from "./Components/Privacy/Pages/PageTerms.jsx";
 import PageMentions from "./Components/Privacy/Pages/PageMentions.jsx";
 import PageNotFound from "./Components/404/Error/PageNotFound.jsx";
 import RateUk from "./Components/Rate/Prices/PageAllRatesUk.jsx";
-// import { SkeletonTheme } from "react-loading-skeleton";
-// import TextLouisa from "./Components/Discover/DiscoverWebDevelopper/TextLouisa.jsx";
 
 const App = () => {
   const [isCookieModalOpen, setCookieModalOpen] = useState(false);
@@ -62,29 +60,25 @@ const App = () => {
                 onRequestClose={() => setCookieModalOpen(false)}
               />
             )}
-            {/* <SkeletonTheme baseColor="#313131" highlightColor="#525252"> */}
-              <Router>
-                <ScrollToTop />
-                <Routes>
-                  {/* <Route path="/test" element={<Loader />} /> */}
-                  <Route path="/" element={<Homepage />} />
-                  <Route path="/" element={<Section />} />
-                  <Route path="/services" element={<Services />} />
-                  <Route path="/ethics" element={<EthicsPage />} />
-                  <Route path="/dev" element={<DiscoverWebDeveloper />} />
-                  <Route path="/designer" element={<DiscoverDesigner />} />
-                  <Route path="/portfolio" element={<Portfolio />} />
-                  <Route path="/rate" element={<Rate />} />
-                  <Route path="/rateuk" element={<RateUk />} />
-                  <Route path="/devis" element={<DevisFree />} />
-                  <Route path="/privacy" element={<PagePrivacy />} />
-                  <Route path="/terms" element={<PageConditions />} />
-                  <Route path="/mentions" element={<PageMentions />} />
-                  {/* <Route path="/text" element={<TextLouisa />} /> */}
-                  <Route path="*" element={<PageNotFound />} />
-                </Routes>
-              </Router>
-            {/* </SkeletonTheme> */}
+            <Router>
+              <ScrollToTop />
+              <Routes>
+                <Route path="/" element={<Homepage />} />
+                <Route path="/" element={<Section />} />
+                <Route path="/services" element={<Services />} />
+                <Route path="/ethics" element={<EthicsPage />} />
+                <Route path="/dev" element={<DiscoverWebDeveloper />} />
+                <Route path="/designer" element={<DiscoverDesigner />} />
+                <Route path="/portfolio" element={<Portfolio />} />
+                <Route path="/rate" element={<Rate />} />
+                <Route path="/rateuk" element={<RateUk />} />
+                <Route path="/devis" element={<DevisFree />} />
+                <Route path="/privacy" element={<PagePrivacy />} />
+                <Route path="/terms" element={<PageConditions />} />
+                <Route path="/mentions" element={<PageMentions />} />
+                <Route path="*" element={<PageNotFound />} />
+              </Routes>
+            </Router>
           </ThemeProvider>
         </LanguageProvider>
       )}

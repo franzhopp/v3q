@@ -1,14 +1,14 @@
-import translations from "./translate.jsx";
-import { useLanguage } from "../../context/LanguageProvider.jsx";
-import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useLanguage } from "../../context/LanguageProvider.jsx";
+import translations from "./translate.jsx";
 import emailjs from "emailjs-com";
 import NavbarDevis from "../Navigation/PagesNavbar/PagesNavbar.jsx";
 import TitleDevis from "../UI/Title/TitleFormDevis.jsx";
 import ImgText from "../../assets/logo-5.png";
 import ButtonSend from "../UI/Button/ButtonSend.jsx";
 import Footer from "../Footer/Footer.jsx";
-import { useNavigate } from "react-router-dom";
 
 const DevisFree = ({ label, type, value }) => {
   const navigate = useNavigate();
@@ -260,27 +260,6 @@ const DevisFree = ({ label, type, value }) => {
                 </ul>
               </p>
               <div className="flex flex-col text-left mx-6">
-                {/* <NavLink
-                  to="/services"
-                  className="text-FFF6E4 font-extrabold underline font-inter transition hover:text-C22E2E"
-                >
-                  {translations[language].linkServicesFr}
-                  {translations[language].linkServicesEn}
-                </NavLink>
-                <NavLink
-                  to="/rate"
-                  className="text-FFF6E4 font-extrabold underline font-inter transition hover:text-C22E2E"
-                >
-                  {translations[language].linkRateFr}
-                  {translations[language].linkRateEn}
-                </NavLink>
-                <NavLink
-                  to="/"
-                  className="text-FFF6E4 font-extrabold underline font-inter transition hover:text-C22E2E"
-                >
-                  {translations[language].linkHomeFr}
-                  {translations[language].linkHomeEn}
-                </NavLink> */}
                 <NavLink
                   className="text-C22E2E shadow-full mt-5 mb-6 font-extrabold underline transition hover:text-0C3E78"
                   to="/"

@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
+import { useLanguage } from "../../context/LanguageProvider.jsx";
 import { useSpring, animated } from "react-spring";
 import translations from "./translate.jsx";
-import { useLanguage } from "../../context/LanguageProvider.jsx";
 import ImgText from "../../assets/logo-4.png";
 import ImageLondon from "../../assets/london.png";
 import ImageParis from "../../assets/paris.png";
@@ -124,7 +124,6 @@ const SectionTeam = () => {
           </h3>
         </div>
       </div>
-
       <div className="flex justify-center mb-16">
         <div className="w-4/5 sm:w-1/2 rounded-lg shadow-md">
           <p
@@ -150,7 +149,6 @@ const SectionTeam = () => {
           </p>
         </div>
       </div>
-
       <div className="flex justify-center">
         <div className="flex flex-col justify-center">
           <div className="flex flex-col space-x-3 mb-5 sm:flex-row">
@@ -280,7 +278,7 @@ const SectionTeam = () => {
                 <div className="text-black text-left mb-5 ml-10 sm:ml-0">
                   <p data-aos="fade-left" className="text-4xl font-extrabold">
                     Louisa Fernandez
-                    {/* <span className="absolute h-screen w-1 bg-0C3E78 -right-20 -bottom-1 hidden sm:block"></span> */}
+                    {/* <span className="absolute h-screen w-1 bg-C22E2E -right-20 -bottom-1 hidden sm:block"></span> */}
                   </p>
                   <p className="text-4xl font-extrabold">
                     {" "}

@@ -1,14 +1,12 @@
-import translations from "./translate.jsx";
-import { useLanguage } from "../../context/LanguageProvider.jsx";
 import Modal from "react-modal";
+import { useLanguage } from "../../context/LanguageProvider.jsx";
+import translations from "./translate.jsx";
 
 const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
   const { language, changeLanguage } = useLanguage();
-
   const changeLanguageHandler = (newLanguage) => {
     changeLanguage(newLanguage);
   };
-
   return (
     <Modal
       isOpen={isOpen}

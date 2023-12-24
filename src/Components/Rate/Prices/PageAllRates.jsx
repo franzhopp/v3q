@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
-import { IoIosArrowDown } from "react-icons/io";
 import { useEffect, useState } from "react";
+import { IoIosArrowDown } from "react-icons/io";
 import NavbarPages from "../../Navigation/PagesNavbar/PagesNavbar";
 import TitleRate from "../../UI/Title/TitleRate";
 import Footer from "../../Footer/Footer";

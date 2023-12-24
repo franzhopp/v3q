@@ -1,26 +1,15 @@
-import translations from "./translate.jsx";
-import { useLanguage } from "../../context/LanguageProvider.jsx";
 import { NavLink } from "react-router-dom";
-// import { useSpring, animated } from "react-spring";
+import { useEffect, useState } from "react";
+import { useLanguage } from "../../context/LanguageProvider.jsx";
+import translations from "./translate.jsx";
 import NavbarEthics from "../Navigation/EthicsNavbar/EthicsNavbar";
 import ImgMac from "../../assets/bg-ethics-mac.png";
 import ImgText from "../../assets/logo-5.png";
 import Footer from "../Footer/Footer";
-import { useEffect, useState } from "react";
 
 const EthicsPage = () => {
   const [scrollSection, setScrollSection] = useState();
   const { language } = useLanguage();
-  // const props = useSpring({
-  //   from: { color: "#FFF6E4" },
-  //   to: async (next) => {
-  //     while (true) {
-  //       await next({ color: "#4457BE" });
-  //       await next({ color: "#E18AB0" });
-  //     }
-  //   },
-  //   config: { duration: 1000 },
-  // });
   const text = "01.";
   const letters = text.split("");
   const animationConfig = [
@@ -60,7 +49,6 @@ const EthicsPage = () => {
       }
     };
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -86,7 +74,6 @@ const EthicsPage = () => {
                   </span>
                 ))}
               </h2>
-
               <p className="text-black text-xl font-inter font-extrabold">
                 › {translations[language].title1EthicsFr}
                 {translations[language].title1EthicsEn}
@@ -98,7 +85,6 @@ const EthicsPage = () => {
                   data-aos-anchor-placement="top-bottom"
                   className="text-black"
                 >
-                  {/* <span className="absolute h-72 w-1 bg-C22E2E -left-20 bottom-0 hidden sm:block"></span> */}
                   {translations[language].describe1EthicsFr}
                   {translations[language].describe1EthicsEn}
                   <span className="font-extrabold">
@@ -116,7 +102,6 @@ const EthicsPage = () => {
                 </p>
               </div>
             </div>
-
             <div class="p-6 rounded-lg shadow-md">
               <h2
                 data-aos="fade-right"
@@ -154,7 +139,6 @@ const EthicsPage = () => {
                 </p>
               </div>
             </div>
-
             <div class="p-6 rounded-lg shadow-md">
               <h2
                 data-aos="fade-left"
@@ -190,31 +174,11 @@ const EthicsPage = () => {
                   {translations[language].describe3Bold1En}
                   {translations[language].describeWithoutBold3Fr}
                   {translations[language].describeWithoutBold3En}
-                  {/* <span className="absolute h-72 w-1 bg-C22E2E -right-20 bottom-10 hidden sm:block"></span> */}
                 </p>
               </div>
             </div>
           </div>
         </div>
-        {/* <div className="flex justify-center pt-16">
-          <svg
-            className="animate-formbounce"
-            width="70"
-            height="70"
-            viewBox="0 0 192 193"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M41.5 0L54.9987 28.0013L83 41.5L54.9987 54.9987L41.5 83L28.0013 54.9987L0 41.5L28.0013 28.0013L41.5 0Z"
-              fill="#4457BE"
-            />
-            <path
-              d="M116.5 42L141.058 92.9422L192 117.5L141.058 142.058L116.5 193L91.9422 142.058L41 117.5L91.9422 92.9422L116.5 42Z"
-              fill="#4457BE"
-            />
-          </svg>
-        </div> */}
         <div className="flex justify-center">
           <div className="mt-16">
             <div className="flex justify-end">
@@ -253,7 +217,6 @@ const EthicsPage = () => {
             </svg>
           </div>
         </div>
-
         <div className="flex justify-center">
           <div className="text-center mt-5">
             <h1
@@ -492,13 +455,6 @@ const EthicsPage = () => {
                   {translations[language].linkServicesFr}
                   {translations[language].linkServicesEn}
                 </NavLink>
-                {/* <NavLink
-                  to="/rate"
-                  className="text-FFF6E4 font-extrabold underline font-inter transition hover:text-E18AB0"
-                >
-                  {translations[language].linkRateFr}
-                  {translations[language].linkRateEn}
-                </NavLink> */}
                 <NavLink
                   to="/"
                   className="text-FFF6E4 font-extrabold underline font-inter transition hover:text-E18AB0"

@@ -1,8 +1,8 @@
-import translations from "./translate.jsx";
-import { useLanguage } from "../../context/LanguageProvider.jsx";
-import { NavLink } from "react-router-dom";
-import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
+import { useLanguage } from "../../context/LanguageProvider.jsx";
+import { Link } from "react-router-dom";
+import translations from "./translate.jsx";
 import Title from "../UI/Title/TitleFormContact";
 import ImgText from "../../assets/logo-5.png";
 import emailjs from "emailjs-com";
@@ -207,15 +207,12 @@ const Form = ({ label, type, value }) => {
                     />
                   </g>
                 </svg>
-                {/* {translations[language].linkTopContactFr}
-                {translations[language].linkTopContactEn} */}
               </Link>
             </div>
           </div>
           <div className="lg:col-span-3 lg:p-12">
             <div className="flex justify-end relative">
               <svg
-                // data-aos="fade-up-right"
                 className="absolute top-20 -right-24"
                 xmlns="http://www.w3.org/2000/svg"
                 width="150"
@@ -231,7 +228,6 @@ const Form = ({ label, type, value }) => {
             </div>
             <div className="flex justify-start relative">
               <svg
-                // data-aos="fade-up-left"
                 className="absolute top-2/3 -left-8"
                 xmlns="http://www.w3.org/2000/svg"
                 width="100"

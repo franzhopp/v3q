@@ -1,7 +1,7 @@
-import { NavLink } from "react-router-dom";
-import translations from "./translate.jsx";
-import { useLanguage } from "../../context/LanguageProvider.jsx";
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
+import { useLanguage } from "../../context/LanguageProvider.jsx";
+import translations from "./translate.jsx";
 import emailjs from "emailjs-com";
 import Image from "../../assets/logo-56.png";
 import LogoInsta from "../../assets/instagram2.png";

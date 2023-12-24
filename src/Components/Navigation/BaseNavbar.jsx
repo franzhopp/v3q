@@ -1,8 +1,8 @@
-import translations from "./translate.jsx";
-import { useLanguage } from "../../context/LanguageProvider.jsx";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import { useLanguage } from "../../context/LanguageProvider.jsx";
 import { IoIosArrowDown } from "react-icons/io";
+import translations from "./translate.jsx";
 import TitleHome from "../UI/Title/TitleHome.jsx";
 import Image from "../../assets/logo-5.png";
 import ModalSearch from "../Modal/SearchModal.jsx";
@@ -98,9 +98,7 @@ const Navbar = () => {
         setScrollNavbar(false);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -129,7 +127,6 @@ const Navbar = () => {
                 />
               </NavLink>
             </div>
-
             <div className="flex items-center">
               <li data-aos="fade-left" className="relative group list-none">
                 <NavLink
@@ -205,7 +202,6 @@ const Navbar = () => {
                   </ul>
                 </div>
               </li>
-
               <li data-aos="fade-left" className="relative group list-none">
                 <NavLink
                   to="/services"
@@ -247,7 +243,6 @@ const Navbar = () => {
                   </ul>
                 </div>
               </li>
-
               <NavLink
                 to="/portfolio"
                 data-aos="fade-left"
@@ -256,7 +251,6 @@ const Navbar = () => {
               >
                 Portfolio
               </NavLink>
-
               <NavLink
                 to="/"
                 data-aos="fade-left"
@@ -265,7 +259,6 @@ const Navbar = () => {
               >
                 Contact
               </NavLink>
-
               <li data-aos="fade-left" className="relative group list-none">
                 <NavLink
                   onMouseEnter={handleMouseEnterSubmenu}
@@ -281,7 +274,6 @@ const Navbar = () => {
                   </select>
                 </NavLink>
               </li>
-
               <div
                 data-aos="fade-left"
                 className="text-C22E2E hover:text-0C3E78 px-6 py-2 xl:text-2xl text-base font-extrabold"
@@ -503,7 +495,6 @@ const Navbar = () => {
               </ul>
             </NavLink>
           </li>
-
           <li>
             <NavLink className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
               <button onClick={toggleSousListsMenu}>
@@ -515,7 +506,6 @@ const Navbar = () => {
                   <IoIosArrowDown className="mt-1" />
                 </div>
               </button>
-
               <ul
                 data-aos="fade-left"
                 className={`toggle-menu ${
@@ -566,7 +556,6 @@ const Navbar = () => {
           >
             Contact
           </NavLink>
-
           <li>
             <NavLink className="text-C22E2E block px-2 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
               <select
@@ -578,7 +567,6 @@ const Navbar = () => {
               </select>
             </NavLink>
           </li>
-
           <NavLink className="text-C22E2E hover:text-0C3E78 px-3 py-2">
             {openModel && (
               <ModalSearch
