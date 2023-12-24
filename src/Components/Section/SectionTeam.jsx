@@ -5,6 +5,7 @@ import translations from "./translate.jsx";
 import ImgText from "../../assets/logo-4.png";
 import ImageLondon from "../../assets/london.png";
 import ImageParis from "../../assets/paris.png";
+import ModalImage from "react-modal-image";
 
 const SectionTeam = () => {
   const { language } = useLanguage();
@@ -154,10 +155,10 @@ const SectionTeam = () => {
           <div className="flex flex-col space-x-3 mb-5 sm:flex-row">
             <div className="mb-10 sm:mb-0">
               <div className="w-auto h-auto">
-                <img
-                  src={ImageLondon}
-                  alt="Image London"
-                  className="rounded-2xl ml-10 sm:ml-0"
+                <ModalImage
+                  small={ImageLondon}
+                  large={ImageLondon}
+                  className="rounded-2xl ml-10 sm:ml-0 transition hover:opacity-90"
                 />
               </div>
             </div>
@@ -267,10 +268,10 @@ const SectionTeam = () => {
 
               <div className="mb-10 sm:mb-0">
                 <div className="w-auto h-auto">
-                  <img
-                    src={ImageParis}
-                    alt="Image London"
-                    className="rounded-2xl ml-10 sm:ml-0"
+                  <ModalImage
+                    small={ImageParis}
+                    large={ImageParis}
+                    className="rounded-2xl ml-10 sm:ml-0 transition hover:opacity-90"
                   />
                 </div>
               </div>
