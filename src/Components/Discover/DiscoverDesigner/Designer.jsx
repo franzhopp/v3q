@@ -153,7 +153,7 @@ const DiscoverDesigner = () => {
             <div className="flex justify-center mt-7">
               <NavLink
                 to="/dev"
-                className="text-FFF6E4 font-inter text-center font-extrabold underline transition hover:text-0C3E78"
+                className="text-FFF6E4 font-inter text-center font-extrabold underline transition hover:text-C22E2E"
               >
                 {translations[language].linkWebDevFr}
                 {translations[language].linkWebDevEn}
@@ -162,7 +162,7 @@ const DiscoverDesigner = () => {
             <div className="flex justify-center">
               <NavLink
                 to="/"
-                className="text-FFF6E4 font-inter font-extrabold underline transition hover:text-0C3E78"
+                className="text-FFF6E4 font-inter font-extrabold underline transition hover:text-C22E2E"
               >
                 {translations[language].linkHomeFr}
                 {translations[language].linkHomeEn}

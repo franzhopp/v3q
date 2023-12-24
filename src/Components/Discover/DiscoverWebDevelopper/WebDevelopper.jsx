@@ -338,14 +338,14 @@ c-2 -18 -4 -4 -4 32 0 36 2 50 4 33 2 -18 2 -48 0 -65z m-586 -65 c13 -16 12
                     <div className="flex flex-col pb-7">
                       <NavLink
                         to="/designer"
-                        className="text-FFF6E4 underline font-inter hover:text-0C3E78"
+                        className="text-FFF6E4 underline font-inter hover:text-C22E2E"
                       >
                         {translations[language].linkDesignerFr}
                         {translations[language].linkDesignerEn}
                       </NavLink>
                       <NavLink
                         to="/"
-                        className="text-FFF6E4 underline font-inter hover:text-0C3E78"
+                        className="text-FFF6E4 underline font-inter hover:text-C22E2E"
                       >
                         {translations[language].linkHomeFr}
                         {translations[language].linkHomeEn}
