@@ -180,7 +180,8 @@ textarea {
     display: block;
     max-width: 100%;
     border-radius: 0px 0px 182px 0px;
-    background: url("./assets/portfolioo1.png"), lightgray;
+    background-size: cover;
+    background: url("./assets/bg-portfolio.png"), lightgray;
 }
 
 .image-navi-studio-title-rate {
@@ -215,7 +216,6 @@ textarea {
     display: block;
     max-width: 100%;
     border-radius: 0px 0px 290px 0px;
-    background: url("./assets/bg-portfolio.png"), lightgray;
 }
 
 /* BG FORM */
