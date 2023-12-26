@@ -161,7 +161,6 @@ const SectionTeam = () => {
                   className="rounded-2xl ml-10 sm:ml-0 transition hover:opacity-90"
                 />
               </div>
-              <p className="xs text-black sm:ml-0 ml-10">📍 London, United Kingdom.</p>
             </div>
             <div className="flex flex-col">
               <div className="text-black text-left mb-5 ml-10 sm:ml-0">
@@ -275,9 +274,6 @@ const SectionTeam = () => {
                     className="rounded-2xl ml-10 sm:ml-0 transition hover:opacity-90"
                   />
                 </div>
-                <p className="xs text-black sm:ml-0 ml-10">
-                  📍 Paris, Île-de-France, France.
-                </p>
               </div>
               <div className="flex flex-col">
                 <div className="text-black text-left mb-5 ml-10 sm:ml-0">

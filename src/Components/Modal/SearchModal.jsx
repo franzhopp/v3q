@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ImCross } from "react-icons/im";
 import { data } from "./SearchData.jsx";
@@ -23,6 +23,18 @@ const ModalSearch = ({ closeModal, searchQuery }) => {
   const handleReset = () => {
     setSearchQueryText("");
   };
+  useEffect(() => {
+    // remove from échap!
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") {
+        closeModal(false);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [closeModal]);
   return (
     <div className="bg-FFF6E4 flex space-x-2">
       <input

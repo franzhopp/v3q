@@ -5,6 +5,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import translations from "./translate.jsx";
 import TitleHome from "../UI/Title/TitleHome.jsx";
 import Image from "../../assets/logo-5.png";
+import ImageLogo from "../../assets/logo-bit.png";
 import ModalSearch from "../Modal/SearchModal.jsx";
 import "../Section/FirstSection.jsx";
 import "../Homepage/Homepage.jsx";
@@ -312,7 +313,7 @@ const Navbar = () => {
         </div>
       </nav>
       <nav
-        className={`fixed w-full top-0 left-0 shadow-md xl:hidden bg-FFF6E4 z-max`}
+        className={`fixed w-full top-0 left-0 shadow-md 2xl:hidden bg-FFF6E4 z-max`}
       >
         <div className="px-5 h-28 flex items-center justify-between">
           <NavLink to="/" data-aos="fade-left">

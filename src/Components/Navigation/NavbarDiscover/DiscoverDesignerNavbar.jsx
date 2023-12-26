@@ -289,7 +289,7 @@ const NavbarDiscoverDesigner = () => {
         </div>
       </nav>
       <nav
-        className={`fixed w-full top-0 left-0 shadow-md xl:hidden bg-FFF6E4 z-max`}
+        className={`fixed w-full top-0 left-0 shadow-md 2xl:hidden bg-FFF6E4 z-max`}
       >
         <div className="px-5 h-28 flex items-center justify-between">
           <NavLink to="/" data-aos="fade-left">
