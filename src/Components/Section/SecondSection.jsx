@@ -26,7 +26,7 @@ const SecondSection = () => {
               <span className="absolute h-full w-1 bg-FFF6E4 -left-14 -top-1 hidden sm:block"></span>
               <h1 className="text-4xl number font-semibold pb-5">01.</h1>
               <span className="font-extrabold">
-                {translations[language].wordBoldSecondSectionFr}
+                › {translations[language].wordBoldSecondSectionFr}
                 {translations[language].wordBoldSecondSectionEn}
               </span>{" "}
               {translations[language].textSecondSectionWithoutBoldFr}
@@ -46,7 +46,7 @@ const SecondSection = () => {
             >
               <h1 className="text-4xl number font-semibold pb-5">02.</h1>
               <span className="font-extrabold">
-                {translations[language].wordBoldSecondSection2Fr}
+                › {translations[language].wordBoldSecondSection2Fr}
                 {translations[language].wordBoldSecondSection2En}
               </span>{" "}
               {translations[language].textSecondSectionWithoutBold2Fr}
@@ -67,7 +67,7 @@ const SecondSection = () => {
               <span className="absolute h-full w-1 bg-FFF6E4 -right-14 -top-1 hidden sm:block"></span>
               <h1 className="text-4xl number font-semibold pb-5">03.</h1>
               <span className="font-extrabold">
-                {translations[language].wordBoldSecondSection3Fr}
+                › {translations[language].wordBoldSecondSection3Fr}
                 {translations[language].wordBoldSecondSection3En}
               </span>{" "}
               {translations[language].textSecondSectionWithoutBold3Fr}

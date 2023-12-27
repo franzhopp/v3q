@@ -28,7 +28,7 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
             {translations[language].cookieTitleEn}
           </h2>
           <p className="text-black">
-            {translations[language].cookieDescFr}
+            › {translations[language].cookieDescFr}
             {translations[language].cookieDescEn}
           </p>
           <div className="flex flex-col my-3">

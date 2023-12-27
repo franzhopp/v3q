@@ -179,7 +179,7 @@ const Form = ({ label, type, value }) => {
               >
                 <span className="absolute h-72 w-1 bg-C22E2E -left-7 bottom-20 hidden sm:block"></span>
                 <span className="absolute h-64 w-1 bg-C22E2E -left-10 bottom-2 hidden sm:block"></span>
-                {translations[language].textContactFr}
+                › {translations[language].textContactFr}
                 {translations[language].textContactEn}
               </p>
               <div className="flex justify-center">
@@ -508,8 +508,6 @@ const Form = ({ label, type, value }) => {
                   {translations[language].conditions3En}{" "}
                   <NavLink
                     to="/privacy"
-                    rel="noreferrer"
-                    target="_blank"
                     className="underline font-extrabold text-FFF6E4"
                   >
                     {translations[language].linkConditions1Fr}
@@ -518,8 +516,6 @@ const Form = ({ label, type, value }) => {
                   ,{" "}
                   <NavLink
                     to="/mentions"
-                    rel="noreferrer"
-                    target="_blank"
                     className="underline font-extrabold text-FFF6E4"
                   >
                     {translations[language].linkConditions2Fr}
@@ -528,8 +524,6 @@ const Form = ({ label, type, value }) => {
                   , &{" "}
                   <NavLink
                     to="/terms"
-                    rel="noreferrer"
-                    target="_blank"
                     className="underline font-extrabold text-FFF6E4"
                   >
                     {translations[language].linkConditions3Fr}

@@ -114,7 +114,7 @@ const SectionAgency = () => {
               <span className="absolute h-full w-1 bg-FFF6E4 -left-14 -top-1 hidden sm:block"></span>
               <h1 className="text-4xl number font-semibold pb-5">04.</h1>
               <span className="font-extrabold">
-                {translations[language].textSectionAgencyBold1Fr}
+                › {translations[language].textSectionAgencyBold1Fr}
                 {translations[language].textSectionAgencyBold1En}{" "}
                 <span>
                   <img
@@ -138,7 +138,7 @@ const SectionAgency = () => {
             >
               <h1 className="text-4xl number font-semibold pb-5">05.</h1>
               <span className="font-extrabold">
-                {translations[language].textSectionAgencyBold3Fr}
+                › {translations[language].textSectionAgencyBold3Fr}
                 {translations[language].textSectionAgencyBold3En}{" "}
               </span>
               {translations[language].textSectionAgencyBold4Fr}
@@ -158,7 +158,7 @@ const SectionAgency = () => {
               <span className="absolute h-full w-1 bg-FFF6E4 -right-14 -top-1 hidden sm:block"></span>
               <h1 className="text-4xl number font-semibold pb-5">06.</h1>
               <span className="font-extrabold">
-                {translations[language].textSectionAgencyBold6Fr}
+                › {translations[language].textSectionAgencyBold6Fr}
                 {translations[language].textSectionAgencyBold6En}{" "}
               </span>
               {translations[language].textSectionAgencyBold7Fr}

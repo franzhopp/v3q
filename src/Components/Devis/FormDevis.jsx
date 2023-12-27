@@ -197,14 +197,14 @@ const DevisFree = ({ label, type, value }) => {
                 className="text-FFF6E4 text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0"
               >
                 <span>
-                  {translations[language].describeInfoFree1Fr}
+                  › {translations[language].describeInfoFree1Fr}
                   {translations[language].describeInfoFree1En}{" "}
                 </span>
               </p>
               <br />
               <p
-                data-aos="fade-left"
-                className="text-FFF6E4 mb-5 text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0"
+                // data-aos="fade-left"
+                className="text-FFF6E4 mb-1 text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0"
               >
                 <span className="font-extrabold underline">
                   {translations[language].describleInfoFree2Fr}
@@ -697,8 +697,6 @@ const DevisFree = ({ label, type, value }) => {
                   {translations[language].conditions3En}{" "}
                   <NavLink
                     to="/privacy"
-                    rel="noreferrer"
-                    target="_blank"
                     className="underline font-extrabold text-FFF6E4"
                   >
                     {translations[language].linkConditions1Fr}
@@ -707,8 +705,6 @@ const DevisFree = ({ label, type, value }) => {
                   ,{" "}
                   <NavLink
                     to="/mentions"
-                    rel="noreferrer"
-                    target="_blank"
                     className="underline font-extrabold text-FFF6E4"
                   >
                     {translations[language].linkConditions2Fr}
@@ -717,8 +713,6 @@ const DevisFree = ({ label, type, value }) => {
                   , &{" "}
                   <NavLink
                     to="/terms"
-                    rel="noreferrer"
-                    target="_blank"
                     className="underline font-extrabold text-FFF6E4"
                   >
                     {translations[language].linkConditions3Fr}

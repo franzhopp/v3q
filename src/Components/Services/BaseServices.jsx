@@ -429,7 +429,7 @@ const Services = () => {
                 className="mt-2 text-FFF6E4 px-5"
               >
                 <span className="absolute h-full w-1 bg-FFF6E4 -left-14 -top-1 hidden sm:block"></span>
-                {translations[language].bloc1ServicesFr}
+                › {translations[language].bloc1ServicesFr}
                 {translations[language].bloc1ServicesEn}
               </p>
             </div>
@@ -439,7 +439,7 @@ const Services = () => {
                 data-aos-anchor-placement="top-bottom"
                 className="mt-2 text-FFF6E4 px-5"
               >
-                {translations[language].bloc2ServicesFr}
+                › {translations[language].bloc2ServicesFr}
                 {translations[language].bloc2ServicesEn}
               </p>
             </div>
@@ -449,7 +449,7 @@ const Services = () => {
                 data-aos-anchor-placement="top-bottom"
                 className="mt-2 text-FFF6E4 px-5"
               >
-                {translations[language].bloc3ServicesFr}
+                › {translations[language].bloc3ServicesFr}
                 {translations[language].bloc3ServicesEn}
               </p>
             </div>

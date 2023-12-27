@@ -194,7 +194,7 @@ const SectionTeam = () => {
                 <p className="text-black text-left text-base mb-10 ml-10 sm:ml-0 p">
                   <span className="font-extrabold">
                     {" "}
-                    {translations[language].textSectionTeamBioBold1MelissaFr}
+                    › {translations[language].textSectionTeamBioBold1MelissaFr}
                     {translations[language].textSectionTeamBioBold1MelissaEn}
                   </span>{" "}
                   {
@@ -311,7 +311,7 @@ const SectionTeam = () => {
                   <p className="text-black text-left text-base mb-10 ml-10 sm:ml-0 z">
                     <span className="font-extrabold">
                       {" "}
-                      {translations[language].textSectionTeamBioBold1LouisaFr}
+                      › {translations[language].textSectionTeamBioBold1LouisaFr}
                       {translations[language].textSectionTeamBioBold1LouisaEn}
                     </span>{" "}
                     {

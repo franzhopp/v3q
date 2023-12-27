@@ -35,7 +35,7 @@ const DetailsServices = () => {
                   className="text-base mb-10 text-FFF6E4"
                 >
                   <span className="absolute h-full w-1 bg-FFF6E4 -left-14 -top-1 hidden sm:block"></span>
-                  {translations[language].describeMarketing1Fr}
+                  › {translations[language].describeMarketing1Fr}
                   {translations[language].describeMarketing1En}
                 </p>
               </div>
@@ -53,7 +53,7 @@ const DetailsServices = () => {
                   data-aos-anchor-placement="top-bottom"
                   className="text-base text-FFF6E4"
                 >
-                  {translations[language].describeMarketing2Fr}
+                  › {translations[language].describeMarketing2Fr}
                   {translations[language].describeMarketing2En}
                 </p>
               </div>

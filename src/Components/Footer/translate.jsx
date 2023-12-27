@@ -292,7 +292,7 @@ const translations = {
     bloc3FreeFr:
       "Indiquez vos moyens budgétaires pour nous aider à déterminer les tarifs qui correspondent à votre service. Avant de soumettre votre devis, consultez notre page « Tarification »",
     bloc4FreeFr:
-      "Si vous possédez déjà une charte graphique, veuillez simplement répondre « oui » et nous l'envoyer à notre adresse de contact, ou contactez-nous directement, merci.",
+      "Si vous possédez déjà une charte graphique, veuillez simplement répondre « oui » et nous l'envoyer à notre adresse de contact « contact@navistudio.io », ou contactez-nous directement, merci.",
     // DEVIS SUITE
     info1DevisFr: "Code postal",
     info2DevisFr: "Quels services établissez-vous ?",
@@ -582,7 +582,7 @@ const translations = {
     bloc3FreeEn:
       "Indicate your budget to help us determine the rates that match your service. Before submitting your quote, consult our « Pricing »",
     bloc4FreeEn:
-      "If you already have a branding guidelines, please simply answer « yes » and send it to our contact address, or contact us directly, thank you.",
+      "If you already have a branding guidelines, please simply answer « yes » and send it to  our contact address  « contact@navistudio.io », or contact us directly, thank you.",
     // DEVIS SUITE
     info1DevisEn: "Zip code",
     info2DevisEn: "What services do you provide?",

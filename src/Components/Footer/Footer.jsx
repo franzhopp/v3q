@@ -95,7 +95,7 @@ const Footer = () => {
           </div>
         </p>
         <div className="font-inter text-sm text-center text-FFF6E4 pt-5">
-          {translations[language].newletterFr}
+          › {translations[language].newletterFr}
           {translations[language].newletterEn}
         </div>
         <form onSubmit={handleSubmit}>
@@ -263,8 +263,8 @@ const Footer = () => {
           </li>
         </ul>
         <div className="flex justify-center pt-10">
-          <div className="text-FFF6E4 font-interx font-extrabold underline">
-            {translations[language].findFr}
+          <div className="text-FFF6E4 font-inter font-extrabold underline">
+            › {translations[language].findFr}
             {translations[language].findEn}
           </div>
         </div>

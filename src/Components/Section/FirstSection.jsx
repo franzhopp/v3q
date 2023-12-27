@@ -46,7 +46,7 @@ const Section = () => {
               className="text-center text-black"
             >
               <span className="font-extrabold">
-                {translations[language].textBoldOneFr}
+              › {translations[language].textBoldOneFr}
                 {translations[language].textBoldOneEn}
               </span>{" "}
               {translations[language].textWithoutBoldOneFr}
@@ -69,7 +69,7 @@ const Section = () => {
               data-aos-anchor-placement="top-bottom"
               className="font-extrabold text-center sm:text-right  text-black"
             >
-              {translations[language].textWithoutBoldFsFr}
+              › {translations[language].textWithoutBoldFsFr}
               {translations[language].textWithoutBoldFsEn}{" "}
               <a
                 onClick={SectionToScroll}
