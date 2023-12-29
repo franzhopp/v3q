@@ -259,7 +259,7 @@ const EthicsPage = () => {
                 data-aos-anchor-placement="top-bottom"
                 className="text-black text-center p-5 mb-10"
               >
-                › {translations[language].describe5EthicsWorkFr}
+                {translations[language].describe5EthicsWorkFr}
                 {translations[language].describe5EthicsWorkEn}{" "}
                 <span className="font-extrabold">
                   {translations[language].describe5BoldEthicsWorkFr}

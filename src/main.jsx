@@ -4,6 +4,7 @@ import App from "./App.jsx";
 import "./index.css";
 import "aos/dist/aos.css";
 import AOS from "aos";
+import { BrowserRouter } from "react-router-dom";
 
 AOS.init({
   once: true,

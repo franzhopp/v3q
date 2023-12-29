@@ -48,6 +48,10 @@ textarea {
         inset 0 0 1.3rem #FFF6E4;
 }
 
+.bg-loader {
+    background: lightgray;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;

@@ -45,7 +45,6 @@ const App = () => {
       }, 2000);
     }
   }, []);
-
   return (
     <main>
       {isLoading ? (

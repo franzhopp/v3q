@@ -25,7 +25,7 @@ const AvatarDesigner = () => {
       <div className="flex justify-center">
         <div className="flex justify-end relative">
           <svg
-            className="absolute bottom-20 left-96"
+            className="absolute bottom-20 left-20 sm:left-96"
             xmlns="http://www.w3.org/2000/svg"
             width="79"
             height="79"
