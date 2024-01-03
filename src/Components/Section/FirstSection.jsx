@@ -27,7 +27,7 @@ const Section = () => {
     };
   }, []);
   return (
-    <section className="bg-FFF6E4 pt-24 relative border-b border-gray-300">
+    <section className="bg-FFF6E4 pt-20 relative border-b border-gray-300">
       <div className="flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
         <div className="w-80 relative">
           <p
