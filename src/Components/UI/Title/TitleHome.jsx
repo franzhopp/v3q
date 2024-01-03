@@ -31,7 +31,7 @@ const TitleHome = () => {
         <ButtonDiscover />
       </div>
       <p className="pb-5">
-        <span className="whitespace-nowrap animation-scrolling-rtl text-FFF6E4 text-2xl sm:text-4xl">
+        <span className="whitespace-nowrap animation-scrolling-rtl text-black text-2xl sm:text-4xl">
           {translations[language].scrollingTextFr}
           {translations[language].scrollingTextEn}
         </span>
