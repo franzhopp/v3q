@@ -116,7 +116,7 @@ const DiscoverWebDeveloper = () => {
           </div>
         </div>
         <div className="flex justify-start relative">
-          <svg
+          {/* <svg
             className="absolute top-30 sm:left-96 -left-20"
             version="1.0"
             xmlns="http://www.w3.org/2000/svg"
@@ -259,7 +259,7 @@ c-2 -18 -4 -4 -4 32 0 36 2 50 4 33 2 -18 2 -48 0 -65z m-586 -65 c13 -16 12
 -10 7 -18 15 -18 17 0 8 8 3 21 -13z"
               />
             </g>
-          </svg>
+          </svg> */}
         </div>
         <div className="flex justify-center pb-20">
           <div className="flex justify-center flex-col mt-10">
