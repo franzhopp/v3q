@@ -230,7 +230,7 @@ const Footer = () => {
           </li>
           <li>
             <a className="text-FFF6E4 transition hover:text-0C3E78" href="/">
-              <a href="/">Traduction</a>
+              <a href="/">🇫🇷</a> | <a href="/">🇬🇧</a>
             </a>
           </li>
 
