@@ -34,7 +34,6 @@ const DetailsServices = () => {
                   data-aos-anchor-placement="top-bottom"
                   className="text-base mb-10 text-FFF6E4"
                 >
-                  <span className="absolute h-full w-1 bg-FFF6E4 -left-14 -top-1 hidden sm:block"></span>
                   › {translations[language].describeMarketing1Fr}
                   {translations[language].describeMarketing1En}
                 </p>
@@ -143,7 +142,7 @@ const DetailsServices = () => {
             {translations[language].linkHomeEn}
           </NavLink>
           <div className="mt-5">
-            <span className="text-black font-extrabold font-inter">OU</span>
+            <span className="text-black font-extrabold">OU</span>
           </div>
         </div>
         <ButtonContactServices />

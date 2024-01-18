@@ -23,7 +23,6 @@ const SecondSection = () => {
               data-aos-anchor-placement="top-bottom"
               className="mt-2 text-FFF6E4 text-arial"
             >
-              <span className="absolute h-full w-1 bg-FFF6E4 -left-14 -top-1 hidden sm:block"></span>
               <h1 className="text-4xl number font-semibold pb-5">01.</h1>
               <span className="font-extrabold">
                 › {translations[language].wordBoldSecondSectionFr}
@@ -64,7 +63,6 @@ const SecondSection = () => {
               data-aos-anchor-placement="top-bottom"
               className="mt-2 text-FFF6E4 text-arial"
             >
-              <span className="absolute h-full w-1 bg-FFF6E4 -right-14 -top-1 hidden sm:block"></span>
               <h1 className="text-4xl number font-semibold pb-5">03.</h1>
               <span className="font-extrabold">
                 › {translations[language].wordBoldSecondSection3Fr}

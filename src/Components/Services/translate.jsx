@@ -196,7 +196,7 @@ const translations = {
     //
     titleDetailsEthics1En: "Évolution perpétuelle.",
     describeDetailsEthics1En:
-      " L'industrie du design et du développement web est en constante évolution. Nous restons constamment à l'affût des dernières tendances, technologies et meilleures pratiques pour assurer que nos projets sont à la pointe de l'innovation. Nos réalisations sont revues.",
+      " L'industrie du design et du développement web est en constante évolution. Nous restons constamment à l'affût des dernières tendances, technologies et meilleures pratiques pour assurer que nos projets sont à la pointe de l'innovation. ",
     titleDetailsEthics2En: "Collaboration dynamique.",
     describeDetailsEthics2En:
       "La collaboration est le moteur de notre succès. Nous croyons en l'importance de travailler main dans la main, tant en interne qu'avec nos clients. Nous encourageons l'échange constant d'expertise pour réaliser des projets web extraordinaires.",

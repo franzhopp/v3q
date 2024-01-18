@@ -185,10 +185,10 @@ const EthicsPage = () => {
           <div className="flex justify-end">
             <svg
               data-aos="fade-up-right"
-              className="relative top-10 right-4"
+              className="relative top-12 right-0"
               xmlns="http://www.w3.org/2000/svg"
-              width="70"
-              height="70"
+              width="100"
+              height="100"
               viewBox="0 0 202 202"
               fill="none"
             >
@@ -203,10 +203,10 @@ const EthicsPage = () => {
           </div>
           <svg
             data-aos="fade-up-left"
-            className="relative bottom-9 left-3"
+            className="relative bottom-12 left-0"
             xmlns="http://www.w3.org/2000/svg"
-            width="70"
-            height="70"
+            width="100"
+            height="100"
             viewBox="0 0 191 190"
             fill="none"
           >
@@ -225,10 +225,8 @@ const EthicsPage = () => {
             className="text-black font-extrabold font-inter text-2xl sm:text-4xl"
           >
             {" "}
-            <span className="text-E18AB0 animate-formbounce">✦</span>{" "}
             {translations[language].titleWorkEthicsFr}
             {translations[language].titleWorkEthicsEn}{" "}
-            <span className="text-E18AB0 animate-formbounce">✧</span>
           </h1>
           <div className="flex justify-center">
             <span className="absolute w-48 h-1 bg-E18AB0"></span>
@@ -320,7 +318,6 @@ const EthicsPage = () => {
               data-aos-anchor-placement="top-bottom"
               className="mt-2 text-FFF6E4 text-arial"
             >
-              <span className="absolute h-full w-1 bg-FFF6E4 -left-14 -top-1 hidden sm:block"></span>
               <h1 className="text-4xl number font-semibold pb-5">07.</h1>
               <span className="font-extrabold">
                 › {translations[language].titleDetailsEthics1Fr}
@@ -352,7 +349,6 @@ const EthicsPage = () => {
               data-aos-anchor-placement="top-bottom"
               className="mt-2 text-FFF6E4 text-arial"
             >
-              <span className="absolute h-full w-1 bg-FFF6E4 -right-14 -top-1 hidden sm:block"></span>
               <h1 className="text-4xl number font-semibold pb-5">09.</h1>
               <span className="font-extrabold">
                 › {translations[language].titleDetailsEthics3Fr}

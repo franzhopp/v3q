@@ -46,7 +46,7 @@ const App = () => {
     }
   }, []);
   return (
-    <main>
+    <>
       {isLoading ? (
         <Loader />
       ) : (
@@ -81,7 +81,7 @@ const App = () => {
           </ThemeProvider>
         </LanguageProvider>
       )}
-    </main>
+    </>
   );
 };
 

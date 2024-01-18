@@ -58,7 +58,7 @@ textarea {
 }
 
 ::-webkit-scrollbar-track {
-    background-image: url("./assets/pattern.png");
+    background-color: rgb(209 213 219);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -125,18 +125,8 @@ textarea {
     background-image: url('./assets/bg-contact-blur.png');
     background-repeat: no-repeat;
     background-size: cover;
-    animation: fadeIn 2s ease;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
 
 .bg-services-blur {
     background-image: url('./assets/bg-home-blur.png');

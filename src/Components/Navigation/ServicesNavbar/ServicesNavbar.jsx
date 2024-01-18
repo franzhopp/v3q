@@ -304,7 +304,7 @@ const NavbarServices = () => {
               src={Image}
               onClick={scrollToTop}
               alt=""
-              className="h-14 w-auto sm:h-10"
+              className="h-14 w-auto"
             />
           </NavLink>
           <div>

@@ -29,7 +29,7 @@ const Portfolio = () => {
         <TitlePorfolio />
         <div className="flex justify-start relative">
           <svg
-            className="absolute left-5 xl:left-80"
+            className="absolute left-5 xl:left-72"
             width="4"
             height="940"
             viewBox="0 0 4 1490"
@@ -124,7 +124,7 @@ const Portfolio = () => {
                 </svg>
               </button>
               <button
-                className="bg-black font-extrabold text-FFF6E4 hover:bg-C22E2E transition  px-4 py-2 rounded-full"
+                className="bg-black font-extrabold text-FFF6E4 hover:bg-C22E2E transition px-4 py-2 rounded-full"
                 onClick={handleNext}
               >
                 <svg

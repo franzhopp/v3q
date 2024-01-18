@@ -34,11 +34,11 @@ const SectionAgency = () => {
                 <span>
                   <img
                     src={ImgText}
-                    className="h-12 sm:h-16 mr-1 inline"
+                    className="h-12 sm:h-16 mr-1 ml-1 inline"
                     alt="Icône navi studio."
                   />
                 </span>{" "}
-                – {translations[language].sloganAgencyFr}
+                {translations[language].sloganAgencyFr}
                 {translations[language].sloganAgencyEn}{" "}
                 <animated.span style={props}>
                   {translations[language].wordAgencyFr}
@@ -111,7 +111,6 @@ const SectionAgency = () => {
               data-aos-anchor-placement="top-bottom"
               className="mt-2 text-FFF6E4 text-arial"
             >
-              <span className="absolute h-full w-1 bg-FFF6E4 -left-14 -top-1 hidden sm:block"></span>
               <h1 className="text-4xl number font-semibold pb-5">04.</h1>
               <span className="font-extrabold">
                 › {translations[language].textSectionAgencyBold1Fr}
@@ -155,7 +154,6 @@ const SectionAgency = () => {
               data-aos-anchor-placement="top-bottom"
               className="mt-2 text-FFF6E4 text-arial"
             >
-              <span className="absolute h-full w-1 bg-FFF6E4 -right-14 -top-1 hidden sm:block"></span>
               <h1 className="text-4xl number font-semibold pb-5">06.</h1>
               <span className="font-extrabold">
                 › {translations[language].textSectionAgencyBold6Fr}
