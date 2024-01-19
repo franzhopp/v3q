@@ -71,7 +71,7 @@ const SectionExploration = () => {
     },
     {
       image: Img10,
-      title: "Floride",
+      title: "Atlantic beach, Florida",
       country: "États-Unis 🇺🇸",
       user: "📸 | Mélissa.",
     },
