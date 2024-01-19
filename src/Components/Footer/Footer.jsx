@@ -207,8 +207,9 @@ const Footer = () => {
               className="text-FFF6E4 transition hover:text-0C3E78"
             >
               FR{" "}
-            </NavLink>{""}
-            |{" "}
+            </NavLink>
+            {""}
+            <span className="text-FFF6E4">|</span>{" "}
             <NavLink
               to="/rateuk"
               className="text-FFF6E4 transition hover:text-0C3E78"
