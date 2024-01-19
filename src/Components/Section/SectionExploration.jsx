@@ -88,7 +88,7 @@ const SectionExploration = () => {
     setTimeout(() => {
       setAnimationClass("");
       setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
-    }, 300);
+    }, 200);
   };
 
   const handlePrev = () => {
@@ -98,7 +98,7 @@ const SectionExploration = () => {
       setCurrentIndex(
         (prevIndex) => (prevIndex - 1 + cards.length) % cards.length
       );
-    }, 300);
+    }, 200);
   };
   return (
     <section>
