@@ -131,6 +131,7 @@ const SectionTeam = () => {
         <div className="w-4/5 sm:w-1/2 rounded-lg shadow-md">
           <p
             data-aos="fade-up"
+            mb-10
             data-aos-anchor-placement="top-bottom"
             className="px-5 text-black text-center text-lg md:text-center lg:text-center sm:text-2xl mt-10 mb-5"
           >
@@ -212,7 +213,7 @@ const SectionTeam = () => {
                     {
                       translations[language].textSectionTeamBioBold2MelissaEn
                     } «{" "}
-                    <span className="text-C22E2E underline">
+                    <span className="text-C22E2E font-inter underline">
                       <NavLink to="/designer">Designer</NavLink>
                     </span>{" "}
                     ».
@@ -245,7 +246,7 @@ const SectionTeam = () => {
             </div>
           </div>
 
-          <div className="flex flex-col justify-center mb-10">
+          <div className="flex flex-col justify-center">
             <div className="flex space-x-3 flex-col-reverse sm:flex-row">
               <div className="flex justify-center items-center h-24 w-96 mt-0 sm:mt-32">
                 <NavLink
@@ -329,7 +330,7 @@ const SectionTeam = () => {
                       {
                         translations[language].textSectionTeamBioBold2LouisaEn
                       } «{" "}
-                      <span className="text-C22E2E underline">
+                      <span className="text-C22E2E font-inter underline">
                         <NavLink to="/dev">Web Developer</NavLink>
                       </span>{" "}
                       ».
@@ -338,7 +339,11 @@ const SectionTeam = () => {
                 </div>
               </div>
             </div>
-            <div id="contact" className="pb-16"></div>
+            {/* <div className="bg-red-200 h-screen">
+              hueuhzeyhfe fjezhfekjhfek fenzehjkehkurze fbzekbezhjbez
+              ezbhfzebjheb efjbehbhfe aejnzehfhehr
+            </div> */}
+            <div id="contact" className="pb-24"></div>
           </div>
         </div>
       </div>
