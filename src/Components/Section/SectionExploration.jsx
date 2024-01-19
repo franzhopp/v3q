@@ -13,6 +13,7 @@ import Img10 from "../../assets/10.png";
 import Img11 from "../../assets/11.png";
 
 const SectionExploration = () => {
+  const [animationClass, setAnimationClass] = useState("");
   const cards = [
     {
       image: Img1,
@@ -83,12 +84,21 @@ const SectionExploration = () => {
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
+    setAnimationClass("animate-next");
+    setTimeout(() => {
+      setAnimationClass("");
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
+    }, 500);
   };
+
   const handlePrev = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + cards.length) % cards.length
-    );
+    setAnimationClass("animate-prev");
+    setTimeout(() => {
+      setAnimationClass("");
+      setCurrentIndex(
+        (prevIndex) => (prevIndex - 1 + cards.length) % cards.length
+      );
+    }, 500);
   };
   return (
     <section>
@@ -134,11 +144,13 @@ const SectionExploration = () => {
         <div className="flex justify-center px-3 pt-16">
           <div className="bg-FFF6E4 p-5 h-1/2 rounded-2xl shadow-2xl mr-5 ml-5">
             <div className="flex justify-center mt-3">
-              <img
-                src={cards[currentIndex].image}
-                alt={cards[currentIndex].title}
-                className={`w-96 rounded-2xl transition hover:opacity-90`}
-              />
+              <NavLink to="https://www.instagram.com/navistudio.fr/">
+                <img
+                  src={cards[currentIndex].image}
+                  alt={cards[currentIndex].title}
+                  className={`w-96 rounded-2xl transition hover:opacity-90 ${animationClass}`}
+                />
+              </NavLink>
             </div>
             <div className="flex justify-center mt-10">
               <button
