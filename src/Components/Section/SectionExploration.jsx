@@ -96,22 +96,14 @@ const SectionExploration = () => {
     },
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [animationClass, setAnimationClass] = useState("");
+
   const handleNext = () => {
-    setAnimationClass("animate-next");
-    setTimeout(() => {
-      setAnimationClass("");
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
-    }, 500);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
   };
   const handlePrev = () => {
-    setAnimationClass("animate-prev");
-    setTimeout(() => {
-      setAnimationClass("");
-      setCurrentIndex(
-        (prevIndex) => (prevIndex - 1 + cards.length) % cards.length
-      );
-    }, 500);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + cards.length) % cards.length
+    );
   };
   return (
     <section>
@@ -159,10 +151,10 @@ const SectionExploration = () => {
             <div className="flex justify-center mt-3">
               <NavLink to="https://www.instagram.com/navistudio.fr/">
                 <img
+                  loading="lazy"
                   src={cards[currentIndex].image}
                   alt={cards[currentIndex].title}
-                  loading="lazy"
-                  className={`w-96 rounded-2xl transition hover:opacity-90 ${animationClass}`}
+                  className={`w-96 rounded-2xl transition hover:opacity-90`}
                 />
               </NavLink>
             </div>

@@ -371,13 +371,3 @@ textarea {
         transform: scale(1);
     }
 }
-
-.animate-next {
-    transform: translateX(80%);
-    opacity: 0;
-}
-
-.animate-prev {
-    transform: translateX(-80%);
-    opacity: 0;
-}
