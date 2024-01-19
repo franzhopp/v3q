@@ -15,6 +15,7 @@ import Img12 from "../../assets/12.png";
 // import Img13 from "../../assets/13.png";
 
 const SectionExploration = () => {
+  const id = "";
   const cards = [
     {
       image: Img1,
@@ -151,10 +152,10 @@ const SectionExploration = () => {
             <div className="flex justify-center mt-3">
               <NavLink to="https://www.instagram.com/navistudio.fr/">
                 <img
-                  loading="lazy"
-                  key={cards[currentIndex].title}
+                  key={id}
                   src={cards[currentIndex].image}
                   alt={cards[currentIndex].title}
+                  loading="lazy"
                   className={`w-96 rounded-2xl transition hover:opacity-90`}
                 />
               </NavLink>
