@@ -6,6 +6,7 @@ import ImgText from "../../assets/logo-4.png";
 import ImageLondon from "../../assets/london.png";
 import ImageParis from "../../assets/paris.png";
 import ModalImage from "react-modal-image";
+import SectionExploration from "./SectionExploration.jsx";
 
 const SectionTeam = () => {
   const { language } = useLanguage();
@@ -71,7 +72,7 @@ const SectionTeam = () => {
   ];
 
   return (
-    <section className="bg-FFF6E4 pt-14">
+    <section className="bg-FFF6E4 pt-12">
       <div className="flex justify-center mt-10">
         <div data-aos="fade-left">
           <svg
@@ -339,10 +340,9 @@ const SectionTeam = () => {
                 </div>
               </div>
             </div>
-            {/* <div className="bg-red-200 h-screen">
-              hueuhzeyhfe fjezhfekjhfek fenzehjkehkurze fbzekbezhjbez
-              ezbhfzebjheb efjbehbhfe aejnzehfhehr
-            </div> */}
+            <div className=" bg-FFF6E4">
+              <SectionExploration />
+            </div>
             <div id="contact" className="pb-24"></div>
           </div>
         </div>
