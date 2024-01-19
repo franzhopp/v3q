@@ -210,7 +210,7 @@ const PrivacyNavbar = () => {
                     </li>
                     <button onClick={toggleSousListsRate}>
                       <div className="flex items-center justify-between">
-                        <div className="block text-C22E2E  border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold pr-2">
+                        <div className="block text-C22E2E  hover:text-0C3E78 px-4 py-2 font-extrabold pr-2">
                           {translations[language].navSousPricingFr}
                           {translations[language].navSousPricingEn}
                         </div>
@@ -218,7 +218,6 @@ const PrivacyNavbar = () => {
                       </div>
                     </button>
                     <ul
-                      data-aos="fade-left"
                       className={`toggle-menu ${
                         showSousListsRate ? "block" : "hidden"
                       } p-2`}

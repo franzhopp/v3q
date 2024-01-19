@@ -218,7 +218,6 @@ const NavbarEthics = () => {
                       </div>
                     </button>
                     <ul
-                      data-aos="fade-left"
                       className={`toggle-menu ${
                         showSousListsRate ? "block" : "hidden"
                       } p-2`}
@@ -500,7 +499,6 @@ const NavbarEthics = () => {
               </ul>
             </NavLink>
           </li>
-
           <li>
             <NavLink className="text-C22E2E block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
               <button onClick={toggleSousListsMenu}>

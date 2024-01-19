@@ -218,7 +218,6 @@ const NavbarDiscoverWebDevelopper = () => {
                       </div>
                     </button>
                     <ul
-                      data-aos="fade-left"
                       className={`toggle-menu ${
                         showSousListsRate ? "block" : "hidden"
                       } p-2`}

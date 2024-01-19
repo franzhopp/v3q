@@ -149,7 +149,14 @@ const Rate = () => {
   return (
     <section className="bg-FFF6E4">
       <NavbarPages />
-      <TitleRate />
+      <div className="image-navi-studio-title-rate pb-24 pt-12 sm:pt-0">
+        <div
+          className="pt-28 text-FFF6E4 sm:ml-44 sm:text-left text-center font-extrabold"
+          data-aos="fade-left"
+        >
+          <p className="mt-10 sm:mt-4 mr-5 text-4xl sm:text-6xl">Pricing</p>
+        </div>
+      </div>
       <div className="test2">
         <div className="flex justify-center">
           <h1
@@ -170,19 +177,27 @@ const Rate = () => {
             </div>
           </h1>
         </div>
-        <div className="flex justify-center pb-10">
-          <div className="w-96">
-            <p
-              data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom"
-              className="text-C22E2E text-center"
-            >
-              Dans cette page, vous trouverez{" "}
-              <span className="font-extrabold">
-                toutes les tarifications des services
-              </span>
-              .
-            </p>
+        <div className="flex justify-center">
+          <div className="flex flex-col justify-center pb-10 text-center">
+            <div className="w-96">
+              <p
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+                className="text-C22E2E text-center"
+              >
+                Dans cette page, vous trouverez{" "}
+                <span className="font-extrabold">
+                  toutes les tarifications des services
+                </span>
+                .
+              </p>
+              <NavLink
+                to="/rate"
+                className="text-C22E2E number text-center font-extrabold underline"
+              >
+                Voir les tarifications FR.
+              </NavLink>
+            </div>
           </div>
         </div>
         <div className="flex justify-center">

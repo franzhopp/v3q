@@ -234,7 +234,6 @@ const Navbar = () => {
                       </div>
                     </button>
                     <ul
-                      data-aos="fade-left"
                       className={`toggle-menu ${
                         showSousListsRate ? "block" : "hidden"
                       } p-2`}
@@ -479,7 +478,6 @@ const Navbar = () => {
                     </li>
                   </ul>
                 </li>
-
                 <li>
                   <NavLink className="text-C22E2E block py-2 rounded-md text-base font-extrabold">
                     <button onClick={toggleSousListsFiveMenu}>

@@ -173,19 +173,27 @@ const Rate = () => {
             </div>
           </h1>
         </div>
-        <div className="flex justify-center pb-10">
-          <div className="w-96">
-            <p
-              data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom"
-              className="text-C22E2E text-center"
-            >
-              Dans cette page, vous trouverez{" "}
-              <span className="font-extrabold">
-                toutes les tarifications des services
-              </span>
-              .
-            </p>
+        <div className="flex justify-center">
+          <div className="flex flex-col justify-center pb-10 text-center">
+            <div className="w-96">
+              <p
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+                className="text-C22E2E text-center"
+              >
+                Dans cette page, vous trouverez{" "}
+                <span className="font-extrabold">
+                  toutes les tarifications des services
+                </span>
+                .
+              </p>
+              <NavLink
+                to="/rateuk"
+                className="text-C22E2E number text-center font-extrabold underline"
+              >
+                See UK prices.
+              </NavLink>
+            </div>
           </div>
         </div>
         <div className="flex justify-center">
