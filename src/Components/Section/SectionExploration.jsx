@@ -15,7 +15,6 @@ import Img12 from "../../assets/12.png";
 import Img13 from "../../assets/13.png";
 
 const SectionExploration = () => {
-  const [animationClass, setAnimationClass] = useState("");
   const cards = [
     {
       image: Img1,
@@ -97,14 +96,14 @@ const SectionExploration = () => {
     },
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [animationClass, setAnimationClass] = useState("");
   const handleNext = () => {
     setAnimationClass("animate-next");
     setTimeout(() => {
       setAnimationClass("");
       setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
-    }, 200);
+    }, 500);
   };
-
   const handlePrev = () => {
     setAnimationClass("animate-prev");
     setTimeout(() => {
@@ -112,7 +111,7 @@ const SectionExploration = () => {
       setCurrentIndex(
         (prevIndex) => (prevIndex - 1 + cards.length) % cards.length
       );
-    }, 200);
+    }, 500);
   };
   return (
     <section>
@@ -162,6 +161,7 @@ const SectionExploration = () => {
                 <img
                   src={cards[currentIndex].image}
                   alt={cards[currentIndex].title}
+                  loading="lazy"
                   className={`w-96 rounded-2xl transition hover:opacity-90 ${animationClass}`}
                 />
               </NavLink>
