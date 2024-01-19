@@ -47,10 +47,7 @@ const SectionAgency = () => {
                 .
               </h3>
               <div className="flex justify-center">
-                <animated.span
-                  style={props}
-                  className="absolute w-28 h-1 bg-0C3E78"
-                ></animated.span>
+                <animated.span style={props}></animated.span>
               </div>
             </div>
           </div>

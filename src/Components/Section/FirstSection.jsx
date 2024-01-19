@@ -46,7 +46,7 @@ const Section = () => {
               className="text-center text-black"
             >
               <span className="font-extrabold">
-              › {translations[language].textBoldOneFr}
+                › {translations[language].textBoldOneFr}
                 {translations[language].textBoldOneEn}
               </span>{" "}
               {translations[language].textWithoutBoldOneFr}
@@ -79,9 +79,6 @@ const Section = () => {
               </a>
               .
             </p>
-            <div className="flex justify-center sm:justify-end">
-              <span className="absolute w-28 h-1 bg-C22E2E"></span>
-            </div>
           </div>
         </div>
       </div>

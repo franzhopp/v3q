@@ -19,7 +19,10 @@ const TitleHome = () => {
           </motion.span>
         </h1>
         <div className="flex justify-center">
-          <span data-aos="fade-right" className="text-FFF6E4 text-sm font-inter">
+          <span
+            data-aos="fade-right"
+            className="text-FFF6E4 text-sm font-inter"
+          >
             PARIS X LONDON
           </span>
         </div>

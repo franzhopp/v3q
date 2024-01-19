@@ -367,7 +367,7 @@ const Form = ({ label, type, value }) => {
                     </p>
                   )}
                 </div>
-                <div className="relative pb-5">
+                {/* <div className="relative pb-5">
                   <label
                     // onClick={offFocusClick}
                     className={`mt-1 absolute left-2 transition-all duration-200 ${
@@ -398,7 +398,6 @@ const Form = ({ label, type, value }) => {
                     </p>
                   )}
                 </div>
-
                 <div className="relative pb-20">
                   <label
                     // onClick={offFocusClick}
@@ -430,8 +429,7 @@ const Form = ({ label, type, value }) => {
                       {errors.info2}
                     </p>
                   )}
-                </div>
-
+                </div> */}
                 <div className="relative">
                   <label
                     className={`mt-1 absolute left-2 transition-all duration-200 ${
