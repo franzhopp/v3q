@@ -7,14 +7,14 @@ import Footer from "../Footer/Footer.jsx";
 
 const Home = () => {
   return (
-    <main>
+    <>
       <Header />
       <FirstSection />
       <SecondSection />
       <SectionAgency />
       <Form />
       <Footer />
-    </main>
+    </>
   );
 };
 
