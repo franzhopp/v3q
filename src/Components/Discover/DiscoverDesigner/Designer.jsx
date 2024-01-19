@@ -40,7 +40,7 @@ const DiscoverDesigner = () => {
           </div>
           <div class="p-6">
             <div className="w-80">
-              <div className="flex justify-center mt-5 mb-10">
+              <div className="flex justify-center mt-16 mb-10">
                 {" "}
                 <svg
                   className="animate-formbounce"
