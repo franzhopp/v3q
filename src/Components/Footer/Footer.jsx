@@ -201,6 +201,19 @@ const Footer = () => {
             >
               {translations[language].navSousPricingFr}
               {translations[language].navSousPricingEn}
+            </NavLink>{" "}
+            <NavLink
+              to="/rate"
+              className="text-FFF6E4 transition hover:text-0C3E78"
+            >
+              FR{" "}
+            </NavLink>{""}
+            |{" "}
+            <NavLink
+              to="/rateuk"
+              className="text-FFF6E4 transition hover:text-0C3E78"
+            >
+              UK
             </NavLink>
           </li>
           <li>
