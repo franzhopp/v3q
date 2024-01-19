@@ -75,7 +75,7 @@ const SectionTeam = () => {
       <div className="flex justify-center mt-10">
         <div data-aos="fade-left">
           <svg
-            className="relative right-32 sm:right-52 -rotate-12"
+            className="relative right-28 sm:right-52 -rotate-12"
             fill="#C22E2E"
             version="1.1"
             id="Capa_1"
@@ -310,7 +310,7 @@ const SectionTeam = () => {
                 </div>
 
                 <div className="w-72">
-                  <p className="text-black text-left text-base mb-10 ml-10 sm:ml-0 z">
+                  <p className="text-black text-left text-base mb-10 ml-10 sm:ml-0 p">
                     <span className="font-extrabold">
                       {" "}
                       › {translations[language].textSectionTeamBioBold1LouisaFr}
@@ -337,20 +337,6 @@ const SectionTeam = () => {
                   </p>
                 </div>
               </div>
-            </div>
-            <div className="flex justify-center mt-10">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="51"
-                height="51"
-                viewBox="0 0 51 51"
-                fill="none"
-              >
-                <path
-                  d="M25.5 0L32.1716 18.8284L51 25.5L32.1716 32.1716L25.5 51L18.8284 32.1716L0 25.5L18.8284 18.8284L25.5 0Z"
-                  fill="#C22e2e"
-                />
-              </svg>
             </div>
             <div id="contact" className="pb-16"></div>
           </div>
