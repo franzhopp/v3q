@@ -198,7 +198,7 @@ const SectionExploration = () => {
                 </svg>
               </button>
             </div>
-            <p className="mt-6 text-black text-center number text-md overflow-auto p-5 h-40">
+            <p className="mt-6 text-black text-center font-inter text-md overflow-auto p-5 h-40">
               <div className="flex flex-col justify-center">
                 <span>{cards[currentIndex].title}</span>
                 <span>{cards[currentIndex].country}</span>
