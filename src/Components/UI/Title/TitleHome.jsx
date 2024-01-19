@@ -7,6 +7,7 @@ const TitleHome = () => {
   const { language } = useLanguage();
   return (
     <section>
+      {/* <div className="flex justify-center sm:justify-start ml-0 sm:ml-36"> */}
       <div className="flex flex-col justify-center items-center h-screen">
         <h1 className="font-extrabold tracking-tight text-FFF6E4 text-5xl md:text-8xl">
           <motion.span
@@ -26,6 +27,7 @@ const TitleHome = () => {
             PARIS X LONDON
           </span>
         </div>
+        {/* </div> */}
       </div>
       <div className="flex justify-center sm:justify-end px-0 sm:px-20 pb-14">
         <ButtonDiscover />

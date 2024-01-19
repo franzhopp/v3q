@@ -20,6 +20,7 @@ const NavbarServices = () => {
   const [showSousListsTwoMenu, setShowSousListsTwoMenu] = useState(false);
   const [showSousListsThreeMenu, setShowSousListsThreeMenu] = useState(false);
   const [showSousListsFiveMenu, setShowSousListsFiveMenu] = useState(false);
+  const [showSousListsRate, setShowSousListsRate] = useState(false);
   const [isMouseOnSubmenu, setIsMouseOnSubmenu] = useState(false);
   const [openModel, setOpenModel] = useState();
   const [searchQuery, setSearchQuery] = useState();
@@ -54,6 +55,9 @@ const NavbarServices = () => {
   };
   const toggleSousListsTwoMenu = () => {
     setShowSousListsTwoMenu(!showSousListsTwoMenu);
+  };
+  const toggleSousListsRate = () => {
+    setShowSousListsRate(!showSousListsRate);
   };
   const toggleSousListsThreeMenu = () => {
     setShowSousListsThreeMenu(!showSousListsThreeMenu);
@@ -90,6 +94,7 @@ const NavbarServices = () => {
     showSousListsFiveMenu,
     showSousListsMenu,
     showSousListsThreeMenu,
+    showSousListsRate,
   ]);
   return (
     <div className="image-navi-studio-navbar-services h-screen sm:pb-20 mb:min-h-650 min-h-500">
@@ -204,15 +209,38 @@ const NavbarServices = () => {
                       </NavLink>
                     </li>
 
-                    <li>
-                      <NavLink
-                        to="/rate"
-                        className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
-                      >
-                        {translations[language].navSousPricingFr}
-                        {translations[language].navSousPricingEn}
-                      </NavLink>
-                    </li>
+                    <button onClick={toggleSousListsRate}>
+                      <div className="flex items-center justify-between">
+                        <div className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold pr-2">
+                          {translations[language].navSousPricingFr}
+                          {translations[language].navSousPricingEn}
+                        </div>
+                        <IoIosArrowDown className="mt-1 text-C22E2E" />
+                      </div>
+                    </button>
+                    <ul
+                      data-aos="fade-left"
+                      className={`toggle-menu ${
+                        showSousListsRate ? "block" : "hidden"
+                      } p-2`}
+                    >
+                      <li className="list-decimal ml-4 text-C22E2E font-extrabold">
+                        <NavLink
+                          to="/rate"
+                          className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                        >
+                          Tarification FR
+                        </NavLink>
+                      </li>
+                      <li className="list-decimal ml-4 text-C22E2E font-extrabold">
+                        <NavLink
+                          to="/rateuk"
+                          className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                        >
+                          Tarification UK
+                        </NavLink>
+                      </li>
+                    </ul>
                     <li>
                       <NavLink
                         to="/devis"
@@ -505,15 +533,42 @@ const NavbarServices = () => {
                     {translations[language].navSousServicesEn}
                   </NavLink>
                 </li>
-                <li className="list-decimal ml-4">
-                  <NavLink
-                    to="/rate"
-                    className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
-                  >
-                    {translations[language].navSousPricingFr}
-                    {translations[language].navSousPricingEn}
-                  </NavLink>
-                </li>
+                <NavLink className="text-C22E2E block border-C22E2E border-b-2 rounded-md text-base font-extrabold">
+                  <li className="list-decimal ml-4">
+                    <button onClick={toggleSousListsRate}>
+                      <div className="flex items-center justify-between">
+                        <div className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold pr-2">
+                          {translations[language].navSousPricingFr}
+                          {translations[language].navSousPricingEn}
+                        </div>
+                        <IoIosArrowDown className="mt-1 text-C22E2E" />
+                      </div>
+                    </button>
+                    <ul
+                      data-aos="fade-left"
+                      className={`toggle-menu ${
+                        showSousListsRate ? "block" : "hidden"
+                      } p-2`}
+                    >
+                      <li className="list-decimal ml-4 text-C22E2E font-extrabold">
+                        <NavLink
+                          to="/rate"
+                          className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                        >
+                          Tarification FR
+                        </NavLink>
+                      </li>
+                      <li className="list-decimal ml-4 text-C22E2E font-extrabold">
+                        <NavLink
+                          to="/rateuk"
+                          className="block text-C22E2E rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                        >
+                          Tarification UK
+                        </NavLink>
+                      </li>
+                    </ul>
+                  </li>
+                </NavLink>
                 <li className="list-decimal ml-4">
                   <NavLink
                     to="/devis"
