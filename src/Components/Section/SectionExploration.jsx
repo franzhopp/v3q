@@ -11,6 +11,8 @@ import Img8 from "../../assets/8.png";
 import Img9 from "../../assets/9.png";
 import Img10 from "../../assets/10.png";
 import Img11 from "../../assets/11.png";
+import Img12 from "../../assets/12.png";
+import Img13 from "../../assets/13.png";
 
 const SectionExploration = () => {
   const [animationClass, setAnimationClass] = useState("");
@@ -80,6 +82,18 @@ const SectionExploration = () => {
       title: "Mont-Saint-Michel",
       country: "France 🇫🇷",
       user: "📸 | Louisa.",
+    },
+    {
+      image: Img12,
+      title: "London",
+      country: "Royaume-Uni 🇬🇧",
+      user: "📸 | Mélissa.",
+    },
+    {
+      image: Img13,
+      title: "Guadalajara, Jal",
+      country: "Mexico 🇲🇽",
+      user: "📸 | Ruben.",
     },
   ];
   const [currentIndex, setCurrentIndex] = useState(0);

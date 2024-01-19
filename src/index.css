@@ -373,11 +373,11 @@ textarea {
 }
 
 .animate-next {
-    transform: translateX(80%);
+    transform: translateX(50%);
     opacity: 0;
 }
 
 .animate-prev {
-    transform: translateX(-80%);
+    transform: translateX(-50%);
     opacity: 0;
 }
