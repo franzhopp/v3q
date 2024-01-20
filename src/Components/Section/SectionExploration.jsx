@@ -148,7 +148,7 @@ const SectionExploration = () => {
       </div> */}
       <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div className="flex justify-center px-3 pt-16">
-          <div className="bg-black border-white border-2 p-2 h-1/2 rounded-3xl shadow-2xl mr-5 ml-5">
+          <div className="bg-black border-C22E2E border-2 p-2 h-1/2 rounded-3xl shadow-2xl mr-5 ml-5">
             <div className="flex justify-center relative">
               <div className="absolute">
                 <svg
@@ -169,7 +169,7 @@ const SectionExploration = () => {
                   src={cards[currentIndex].image}
                   alt={cards[currentIndex].title}
                   loading="lazy"
-                  className={`w-96 rounded-2xl`}
+                  className={`w-80 rounded-2xl`}
                 />
               </NavLink>
             </div>
