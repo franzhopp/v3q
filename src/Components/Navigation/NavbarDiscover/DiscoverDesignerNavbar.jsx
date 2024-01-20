@@ -227,7 +227,8 @@ const NavbarDiscoverDesigner = () => {
                           to="/rate"
                           className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
                         >
-                          Tarification FR
+                          {translations[language].navSousPricingFr}
+                          {translations[language].navSousPricingEn} FR
                         </NavLink>
                       </li>
                       <li className="list-decimal ml-4 text-C22E2E font-extrabold">
@@ -235,7 +236,8 @@ const NavbarDiscoverDesigner = () => {
                           to="/rateuk"
                           className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
                         >
-                          Tarification UK
+                          {translations[language].navSousPricingFr}
+                          {translations[language].navSousPricingEn} UK
                         </NavLink>
                       </li>
                     </ul>
@@ -547,7 +549,8 @@ const NavbarDiscoverDesigner = () => {
                           to="/rate"
                           className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
                         >
-                          Tarification FR
+                          {translations[language].navSousPricingFr}
+                          {translations[language].navSousPricingEn} FR
                         </NavLink>
                       </li>
                       <li className="list-decimal ml-4 text-C22E2E font-extrabold">
@@ -555,7 +558,8 @@ const NavbarDiscoverDesigner = () => {
                           to="/rateuk"
                           className="block text-C22E2E rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
                         >
-                          Tarification UK
+                          {translations[language].navSousPricingFr}
+                          {translations[language].navSousPricingEn} UK
                         </NavLink>
                       </li>
                     </ul>

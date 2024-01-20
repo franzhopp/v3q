@@ -19,55 +19,55 @@ const SectionExploration = () => {
   const cards = [
     {
       image: Img1,
-      title: "Bruges",
+      title: "Bruges, 8000",
       country: "Belgique 🇧🇪",
       user: "📸 | Louisa.",
     },
     {
       image: Img2,
-      title: "Atomium",
+      title: "Atomium, 1020",
       country: "Belgique 🇧🇪",
       user: "📸 | Louisa.",
     },
     {
       image: Img3,
-      title: "Bruxelles",
+      title: "Bruxelles, 1000",
       country: "Belgique 🇧🇪",
       user: "📸 | Louisa.",
     },
     {
       image: Img4,
-      title: "Strasbourg",
+      title: "Strasbourg, 67000",
       country: "France 🇫🇷",
       user: "📸 | Louisa.",
     },
     {
       image: Img5,
-      title: "Boston, Massachusetts",
+      title: "Boston, Massachusetts, 02186",
       country: "États-Unis 🇺🇸",
       user: "📸 | Taylor.",
     },
     {
       image: Img6,
-      title: "Barcelone",
+      title: "Barcelone, 08001",
       country: "Espagne 🇪🇸",
       user: "📸 | Alexis.",
     },
     {
       image: Img7,
-      title: "Versailles",
+      title: "Versailles, 78646",
       country: "France 🇫🇷",
       user: "📸 | Louisa.",
     },
     {
       image: Img8,
-      title: "Marseille",
+      title: "Marseille, 13008",
       country: "France 🇫🇷",
       user: "📸 | Océane.",
     },
     {
       image: Img9,
-      title: "Paris",
+      title: "Paris, 75007",
       country: "France 🇫🇷",
       user: "📸 | Louisa.",
     },
@@ -79,13 +79,13 @@ const SectionExploration = () => {
     },
     {
       image: Img11,
-      title: "Mont-Saint-Michel",
+      title: "Mont-Saint-Michel, 50170",
       country: "France 🇫🇷",
       user: "📸 | Louisa.",
     },
     {
       image: Img12,
-      title: "London",
+      title: "London, 99132",
       country: "Royaume-Uni 🇬🇧",
       user: "📸 | Mélissa.",
     },
@@ -148,65 +148,78 @@ const SectionExploration = () => {
       </div> */}
       <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div className="flex justify-center px-3 pt-16">
-          <div className="bg-FFF6E4 p-5 h-1/2 rounded-2xl shadow-2xl mr-5 ml-5">
-            <div className="flex justify-center mt-3">
+          <div className="bg-black border-white border-2 p-2 h-1/2 rounded-3xl shadow-2xl mr-5 ml-5">
+            <div className="flex justify-center relative">
+              <div className="absolute">
+                <svg
+                  width="90"
+                  height="60"
+                  viewBox="0 0 64 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="64" height="21" rx="10.5" fill="black" />
+                </svg>
+              </div>
+            </div>
+            <div className="flex justify-center">
               <NavLink to="https://www.instagram.com/navistudio.fr/">
                 <img
                   key={id}
                   src={cards[currentIndex].image}
                   alt={cards[currentIndex].title}
                   loading="lazy"
-                  className={`w-96 rounded-2xl transition hover:opacity-90`}
+                  className={`w-96 rounded-2xl`}
                 />
               </NavLink>
             </div>
-            <div className="flex justify-center mt-10">
-              <button
-                className="bg-black font-extrabold text-FFF6E4 hover:bg-C22E2E transition px-4 py-2 rounded-full mr-2"
-                onClick={handlePrev}
-              >
-                <svg
-                  className="p-1"
-                  width="30"
-                  height="30"
-                  viewBox="0 0 50 52"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.0251 23.299C-0.3417 24.6659 -0.3417 26.8819 1.0251 28.2488L23.299 50.5226C24.6658 51.8895 26.8819 51.8895 28.2487 50.5226C29.6156 49.1558 29.6156 46.9397 28.2487 45.5729L8.4497 25.7739L28.2487 5.97487C29.6156 4.60807 29.6156 2.39197 28.2487 1.02517C26.8819 -0.341725 24.6658 -0.341725 23.299 1.02517L1.0251 23.299ZM49.5 22.2739H3.5V29.2739H49.5V22.2739Z"
-                    fill="#FFF6E4"
-                  />
-                </svg>
-              </button>
-              <button
-                className="bg-black font-extrabold text-FFF6E4 hover:bg-C22E2E transition px-4 py-2 rounded-full"
-                onClick={handleNext}
-              >
-                <svg
-                  className="p-1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="30"
-                  viewBox="0 0 50 52"
-                  fill="none"
-                >
-                  <path
-                    d="M48.4749 28.4749C49.8417 27.108 49.8417 24.892 48.4749 23.5251L26.201 1.25126C24.8342 -0.115572 22.6181 -0.115572 21.2513 1.25126C19.8844 2.6181 19.8844 4.83418 21.2513 6.20101L41.0503 26L21.2513 45.799C19.8844 47.1658 19.8844 49.3819 21.2513 50.7487C22.6181 52.1156 24.8342 52.1156 26.201 50.7487L48.4749 28.4749ZM0 29.5L46 29.5V22.5L0 22.5L0 29.5Z"
-                    fill="#FFF6E4"
-                  />
-                </svg>
-              </button>
-            </div>
-            <p className="mt-6 text-black text-center font-inter text-md overflow-auto p-5 h-40">
-              <div className="flex flex-col justify-center">
-                <span>{cards[currentIndex].title}</span>
-                <span>{cards[currentIndex].country}</span>
-                <span>{cards[currentIndex].user}</span>
-              </div>
-            </p>
           </div>
         </div>
+        <div className="flex justify-center mt-10">
+          <button
+            className="bg-black font-extrabold text-FFF6E4 hover:bg-C22E2E transition px-4 py-2 rounded-full mr-2"
+            onClick={handlePrev}
+          >
+            <svg
+              className="p-1"
+              width="30"
+              height="30"
+              viewBox="0 0 50 52"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.0251 23.299C-0.3417 24.6659 -0.3417 26.8819 1.0251 28.2488L23.299 50.5226C24.6658 51.8895 26.8819 51.8895 28.2487 50.5226C29.6156 49.1558 29.6156 46.9397 28.2487 45.5729L8.4497 25.7739L28.2487 5.97487C29.6156 4.60807 29.6156 2.39197 28.2487 1.02517C26.8819 -0.341725 24.6658 -0.341725 23.299 1.02517L1.0251 23.299ZM49.5 22.2739H3.5V29.2739H49.5V22.2739Z"
+                fill="#FFF6E4"
+              />
+            </svg>
+          </button>
+          <button
+            className="bg-black font-extrabold text-FFF6E4 hover:bg-C22E2E transition px-4 py-2 rounded-full"
+            onClick={handleNext}
+          >
+            <svg
+              className="p-1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 50 52"
+              fill="none"
+            >
+              <path
+                d="M48.4749 28.4749C49.8417 27.108 49.8417 24.892 48.4749 23.5251L26.201 1.25126C24.8342 -0.115572 22.6181 -0.115572 21.2513 1.25126C19.8844 2.6181 19.8844 4.83418 21.2513 6.20101L41.0503 26L21.2513 45.799C19.8844 47.1658 19.8844 49.3819 21.2513 50.7487C22.6181 52.1156 24.8342 52.1156 26.201 50.7487L48.4749 28.4749ZM0 29.5L46 29.5V22.5L0 22.5L0 29.5Z"
+                fill="#FFF6E4"
+              />
+            </svg>
+          </button>
+        </div>
+        <p className="mt-6 text-black text-center font-inter text-md overflow-auto p-5 h-40">
+          <div className="flex flex-col justify-center">
+            <span>{cards[currentIndex].title}</span>
+            <span>{cards[currentIndex].country}</span>
+            <span>{cards[currentIndex].user}</span>
+          </div>
+        </p>
       </div>
     </section>
   );
