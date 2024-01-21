@@ -282,9 +282,6 @@ textarea {
 
 /* BANNIER */
 .picture-bannier-louisa {
-    height: auto;
-    display: block;
-    max-width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("./assets/picture-bannier-louisa.png");
