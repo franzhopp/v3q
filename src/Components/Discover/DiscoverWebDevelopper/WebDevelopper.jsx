@@ -19,13 +19,13 @@ const DiscoverWebDeveloper = () => {
     <section className="bg-FFF6E4">
       <NavbarDiscoverWebDevelopper />
       <Avatar />
-      <div className="relative">
+      <div className="pt-24 relative">
         <svg
-          className="absolute top-20"
+          className="absolute "
           xmlns="http://www.w3.org/2000/svg"
           width="1920"
-          height="873"
-          viewBox="0 0 1920 873"
+          height="850"
+          viewBox="0 0 1920 850"
           fill="none"
         >
           <path
@@ -34,7 +34,7 @@ const DiscoverWebDeveloper = () => {
           />
         </svg>
       </div>
-      <div className="flex flex-col pt-60 h-screen">
+      <div className="flex flex-col pt-60">
         {/* Title */}
         <div className="flex justify-center mt-44">
           <TitlePage />
@@ -44,7 +44,7 @@ const DiscoverWebDeveloper = () => {
           <SubTitlePage />
         </div>
         {/* Button */}
-        <div className="flex justify-center pt-36">
+        <div className="bg-C22E2E flex justify-center pt-36 pb-24">
           <NavLink className="bg-FFF6E4 text-C22E2E shadow-md inline-flex items-center gap-2 px-8 py-3 rounded-full transition-transform transform hover:scale-105">
             <span className="text-3xl mr-3 font-semibold">
               {translations[language].btnDiscoverFr}
@@ -79,7 +79,7 @@ const DiscoverWebDeveloper = () => {
           </NavLink>
         </div>
       </div>
-      <img src={PictureBelgique} className=" bg-cover bg-no-repeat" />
+      <div className="picture-belgique h-52 pt-10"></div>
       {/* ☺︎ */}
       <div class="pt-32 pb-10 flex flex-wrap justify-center space-x-0 sm:space-x-10">
         <div class="p-6">

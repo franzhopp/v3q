@@ -369,3 +369,10 @@ textarea {
     }
 }
 
+
+
+.picture-belgique {
+    background-image: url("./assets/picture-belgique.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
