@@ -1,6 +1,6 @@
-import translations from "../translate.jsx";
-import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import { NavLink } from "react-router-dom";
+import { useLanguage } from "../../../context/LanguageProvider.jsx";
+import translations from "../translate.jsx";
 import NavbarDiscoverWebDevelopper from "../../Navigation/NavbarDiscover/DiscoverWebDevelopperNavbar";
 import Avatar from "../../UI/Avatar/TemplateAvatarWebDeveloper";
 import LogoInsta from "../../../assets/instagram1.png";
@@ -115,20 +115,20 @@ const DiscoverWebDeveloper = () => {
           <img src={PatternLouisa} className="-rotate-6" />
         </div>
         <div className="p-6 bg-F9FEFE sm:w-96 sm:h-1/2 text-center rounded-lg shadow-md rotate-6">
-          <div className="mt-5">
-            <p className="text-C22E2E mb-3 sm:text-base text-sm">
+          <div className="mt-5 text-base">
+            <p className="text-C22E2E mb-3">
               Hello ! Je m'appelle Louisa, je suis passionnée par le
-              Développement web. Mon voyage a débuté en 2022, j'ai étudié à
-              Paris en France, en me formant à travers des écoles ainsi qu'un
-              travail personnel régulier. J'aime voyager, lire des livres, et
-              aussi la photographie.
+              Développement web & le Design. Mon voyage a débuté en 2022 alors
+              que j'ai étudié à Paris en France, en me formant à travers des
+              écoles ainsi qu'un travail personnel régulier. J'aime voyager,
+              lire des livres, et aussi la photographie.
             </p>
-            <p className="text-C22E2E mb-5 sm:text-base text-sm">
+            <p className="text-C22E2E mb-5">
               C'est pour cela que cette idée de création avec Mélissa m'a donc
               donné de la motivation de créer mon agence pour unir nos
               compétences. Je t'invite à naviger les pages de notre site, conçu
-              avec une grande passion et un immense plaisir de vous la partager
-              ! ☺︎
+              avec une grande passion et un immense plaisir de te la partager !
+              ☺︎
             </p>
           </div>
         </div>
