@@ -1,6 +1,6 @@
 const BaseBackground = () => {
   return (
-    <div className="pt-24 relative">
+    <div className="pt-0 sm:pt-24 relative">
     <svg
       className="absolute "
       xmlns="http://www.w3.org/2000/svg"
