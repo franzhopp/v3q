@@ -10,41 +10,25 @@ import Footer from "../../Footer/Footer";
 
 import TitlePage from "./TitlePage.jsx";
 import SubTitlePage from "./SubTitlePage.jsx";
-import ButtonDiscover from "./ButtonDiscover.jsx";
-import PictureBelgique from "../../../assets/picture-belgique.png";
-
+import BaseBackground from "./BaseBackground.jsx";
+{
+  /* ☺︎ */
+}
 const DiscoverWebDeveloper = () => {
   const { language } = useLanguage();
   return (
     <section className="bg-FFF6E4">
       <NavbarDiscoverWebDevelopper />
       <Avatar />
-      <div className="pt-24 relative">
-        <svg
-          className="absolute "
-          xmlns="http://www.w3.org/2000/svg"
-          width="1920"
-          height="850"
-          viewBox="0 0 1920 850"
-          fill="none"
-        >
-          <path
-            d="M0 244.344C0 244.344 982.26 251.602 944.665 55.6359C907.07 -140.331 1920 244.344 1920 244.344V873H0V244.344Z"
-            fill="#C22E2E"
-          />
-        </svg>
-      </div>
+      <BaseBackground />
       <div className="flex flex-col pt-60">
-        {/* Title */}
         <div className="flex justify-center mt-44">
           <TitlePage />
         </div>
-        {/* SubTitle */}
         <div className="flex justify-center mt-32">
           <SubTitlePage />
         </div>
-        {/* Button */}
-        <div className="bg-C22E2E flex justify-center pt-36 pb-24">
+        <div className="bg-C22E2E flex justify-center pt-32 pb-24">
           <NavLink className="bg-FFF6E4 text-C22E2E shadow-md inline-flex items-center gap-2 px-8 py-3 rounded-full transition-transform transform hover:scale-105">
             <span className="text-3xl mr-3 font-semibold">
               {translations[language].btnDiscoverFr}
@@ -80,7 +64,22 @@ const DiscoverWebDeveloper = () => {
         </div>
       </div>
       <div className="picture-belgique h-52 pt-10"></div>
-      {/* ☺︎ */}
+      <div className="flex justify-center mt-28">
+        <p className="text-C22E2E text-center font-inter text-2xl lg:text-4xl">
+          Qui est-elle ?
+          <div className="flex justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="116"
+              height="20"
+              viewBox="0 0 116 20"
+              fill="none"
+            >
+              <path d="M0 0L61 20L116 0H0Z" fill="#C22E2E" />
+            </svg>
+          </div>
+        </p>
+      </div>
       <div class="pt-32 pb-10 flex flex-wrap justify-center space-x-0 sm:space-x-10">
         <div class="p-6">
           <div
