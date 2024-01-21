@@ -1,6 +1,7 @@
 const SvgMoon = () => {
   return (
     <svg
+      className="animate-formbounce"
       xmlns="http://www.w3.org/2000/svg"
       width="133"
       height="134"
