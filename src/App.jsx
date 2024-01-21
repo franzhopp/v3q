@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Loader from "./loading.jsx";
-import CookieModal from "./Components/Cookie/Cookie.jsx";
+// import CookieModal from "./Components/Cookie/Cookie.jsx";
 import ScrollToTop from "./ScrollToTop.jsx";
 import ThemeProvider from "./context/ThemeProvider.jsx";
 import LanguageProvider from "./context/LanguageProvider.jsx";
@@ -21,17 +21,17 @@ import PageNotFound from "./Components/404/Error/PageNotFound.jsx";
 import RateUk from "./Components/Rate/Prices/PageAllRatesUk.jsx";
 
 const App = () => {
-  const [isCookieModalOpen, setCookieModalOpen] = useState(false);
-  useEffect(() => {
-    const hasAcceptedCookie = localStorage.getItem("accept_cookie");
-    if (!hasAcceptedCookie) {
-      setCookieModalOpen(true);
-    }
-  }, []);
-  const handleAcceptCookie = () => {
-    localStorage.setItem("accept_cookie", "true", { expires: 365 });
-    setCookieModalOpen(false);
-  };
+  // const [isCookieModalOpen, setCookieModalOpen] = useState(false);
+  // useEffect(() => {
+  //   const hasAcceptedCookie = localStorage.getItem("accept_cookie");
+  //   if (!hasAcceptedCookie) {
+  //     setCookieModalOpen(true);
+  //   }
+  // }, []);
+  // const handleAcceptCookie = () => {
+  //   localStorage.setItem("accept_cookie", "true", { expires: 365 });
+  //   setCookieModalOpen(false);
+  // };
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     const hasLoaded = localStorage.getItem("hasLoaded");
@@ -52,13 +52,13 @@ const App = () => {
       ) : (
         <LanguageProvider>
           <ThemeProvider>
-            {isCookieModalOpen && (
+            {/* {isCookieModalOpen && (
               <CookieModal
                 isOpen={isCookieModalOpen}
                 onAccept={handleAcceptCookie}
                 onRequestClose={() => setCookieModalOpen(false)}
               />
-            )}
+            )} */}
             <Router>
               <ScrollToTop />
               <Routes>

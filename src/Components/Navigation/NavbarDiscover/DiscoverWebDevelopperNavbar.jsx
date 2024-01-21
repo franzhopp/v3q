@@ -96,7 +96,7 @@ const NavbarDiscoverWebDevelopper = () => {
     showSousListsRate,
   ]);
   return (
-    <div className="picture-bannier-louisa bg-loader pt-96 pb-50">
+    <div className="picture-bannier-louisa bg-loader pt-96">
       <nav
         className={`bg-FFF6E4 border-b-4 border-C22E2E h-28 items-center transition duration-300 ease-in-out fixed w-full top-0 left-0 shadow-md z-max`}
       >
