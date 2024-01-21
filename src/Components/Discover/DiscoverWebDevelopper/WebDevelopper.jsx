@@ -11,8 +11,9 @@ import Footer from "../../Footer/Footer";
 import TitlePage from "./TitlePage.jsx";
 import SubTitlePage from "./SubTitlePage.jsx";
 import BaseBackground from "./BaseBackground.jsx";
-import PatternLouisa from "../../../assets/pattern-louisa.png";
+import PatternLouisa from "../../../assets/picture-louisa.png";
 import FontParis from "./FontParis.jsx";
+import SvgMoon from "./SvgMoon.jsx";
 {
   /* ☺︎ */
 }
@@ -82,14 +83,44 @@ const DiscoverWebDeveloper = () => {
           </div>
         </p>
       </div>
-      <div className="flex relative">
-
-      <FontParis/>
+      {/* <div className="flex relative">
+        <FontParis />
+      </div> */}
+      <div className="flex flex-wrap justify-center pt-32 space-x-20 px-10">
+        <div className="flex pb-20">
+          <img src={PatternLouisa} className="-rotate-6" />
+        </div>
+        <div class="p-6 bg-F9FEFE w-4/5 sm:w-96 h-1/2 text-center rounded-lg shadow-md rotate-6">
+          <div className="mt-5">
+            <p className="text-C22E2E mb-3">
+              Hello ! Je m’appelle Louisa, je suis passionnée par le
+              Développement web. Mon voyage a débuté en 2022, j’ai étudié à
+              Paris en France, en me formant à travers des écoles ainsi qu’un
+              travail personnel régulier. J’aime voyager, lire des livres, et
+              aussi la photographie.
+            </p>
+            <p className="text-C22E2E mb-5">
+              C’est pour cela que cette idée de création avec Mélissa m’a donc
+              donné de la motivation de créer mon agence pour unir nos
+              compétences. Je t’invite à naviger les pages de notre site, conçu
+              avec une grande passion et un immense plaisir de vous la partager
+              ! ☺︎
+            </p>
+          </div>
+        </div>
       </div>
-      <div className="flex pt-32">
-        <img src={PatternLouisa} className="pl-10 sm:pl-24 px-10" />
+      <div className="flex justify-center pt-20">
+        <SvgMoon />
       </div>
-      <div class="pt-32 pb-10 flex flex-wrap justify-center space-x-0 sm:space-x-10">
+      <div className="flex flex-col justify-center pt-10">
+        <h2 className="text-C22E2E font-emblema text-2xl text-center">
+          Astres Lunaires
+        </h2>
+        <p className="text-C22E2E xs text-center">
+          DEVELOPER • DESIGNER • WRITER
+        </p>
+      </div>
+      <div class="pt-14 pb-28 flex flex-wrap justify-center space-x-0 sm:space-x-10">
         <div class="p-6">
           <div
             data-aos="fade-in"

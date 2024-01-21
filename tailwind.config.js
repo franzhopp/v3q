@@ -40,6 +40,7 @@ export default {
         '00E189': '#00E189',
         'EF0039': '#EF0039',
         '4457BE': "#4457BE",
+        'F9FEFE': "#F9FEFE",
       },
       fontFamily: {
         sans: [],

@@ -1,7 +1,7 @@
 const FontParis = () => {
   return (
     <svg
-      className="absolute left-32 -bottom-40 sm:-bottom-52 sm:left-96"
+      className="absolute left-32 -bottom-44 sm:-bottom-52 sm:left-96"
       width="130"
       height="96"
       viewBox="0 0 200 96"
