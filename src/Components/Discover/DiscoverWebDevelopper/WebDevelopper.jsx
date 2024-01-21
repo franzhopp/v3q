@@ -11,6 +11,7 @@ import Footer from "../../Footer/Footer";
 import TitlePage from "./TitlePage.jsx";
 import SubTitlePage from "./SubTitlePage.jsx";
 import BaseBackground from "./BaseBackground.jsx";
+import PatternLouisa from "../../../assets/pattern-louisa.png";
 {
   /* ☺︎ */
 }
@@ -79,6 +80,9 @@ const DiscoverWebDeveloper = () => {
             </svg>
           </div>
         </p>
+      </div>
+      <div className="flex pt-32">
+        <img src={PatternLouisa} className="pl-10 sm:pl-24 px-10" />
       </div>
       <div class="pt-32 pb-10 flex flex-wrap justify-center space-x-0 sm:space-x-10">
         <div class="p-6">
