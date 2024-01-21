@@ -107,7 +107,7 @@ const Rate = () => {
       price: "starting at £800*",
       details: ["5 pages, starting at £550", "10 pages, starting at £800"],
       subDetails: [
-        "Customized design according to customer’s specific needs.",
+        "Customized design according to customer's specific needs.",
         "Includes advanced features and highly customized design.",
       ],
     },

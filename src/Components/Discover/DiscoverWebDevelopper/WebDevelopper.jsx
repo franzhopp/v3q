@@ -12,13 +12,33 @@ import TitlePage from "./TitlePage.jsx";
 import SubTitlePage from "./SubTitlePage.jsx";
 import BaseBackground from "./BaseBackground.jsx";
 import PatternLouisa from "../../../assets/picture-louisa.png";
-import FontParis from "./FontParis.jsx";
+// import FontParis from "./FontParis.jsx";
 import SvgMoon from "./SvgMoon.jsx";
-{
-  /* ☺︎ */
-}
+import { useEffect } from "react";
+
 const DiscoverWebDeveloper = () => {
   const { language } = useLanguage();
+  const SectionToScrollDesc = () => {
+    const contactSection = document.getElementById("descl");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrollNavbar(true);
+      } else {
+        setScrollNavbar(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <section className="bg-FFF6E4">
       <NavbarDiscoverWebDevelopper />
@@ -32,7 +52,10 @@ const DiscoverWebDeveloper = () => {
           <SubTitlePage />
         </div>
         <div className="bg-C22E2E flex justify-center pt-32 pb-24">
-          <NavLink className="bg-FFF6E4 text-C22E2E shadow-md inline-flex items-center gap-2 px-8 py-3 rounded-full transition-transform transform hover:scale-105">
+          <NavLink
+            onClick={SectionToScrollDesc}
+            className="bg-FFF6E4 text-C22E2E shadow-md inline-flex items-center gap-2 px-8 py-3 rounded-full transition-transform transform hover:scale-105"
+          >
             <span className="text-3xl mr-3 font-semibold">
               {translations[language].btnDiscoverFr}
               {translations[language].btnDiscoverEn}{" "}
@@ -67,6 +90,7 @@ const DiscoverWebDeveloper = () => {
         </div>
       </div>
       <div className="picture-belgique h-52 pt-10"></div>
+      <div id="descl" className="pt-20"></div>
       <div className="flex justify-center mt-28">
         <p
           data-aos="fade-right"
@@ -92,32 +116,24 @@ const DiscoverWebDeveloper = () => {
         </div>
         <div className="p-6 bg-F9FEFE sm:w-96 sm:h-1/2 text-center rounded-lg shadow-md rotate-6">
           <div className="mt-5">
-            <p
-              data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom"
-              className="text-C22E2E mb-3 sm:text-base text-sm"
-            >
-              Hello ! Je m’appelle Louisa, je suis passionnée par le
-              Développement web. Mon voyage a débuté en 2022, j’ai étudié à
-              Paris en France, en me formant à travers des écoles ainsi qu’un
-              travail personnel régulier. J’aime voyager, lire des livres, et
+            <p className="text-C22E2E mb-3 sm:text-base text-sm">
+              Hello ! Je m'appelle Louisa, je suis passionnée par le
+              Développement web. Mon voyage a débuté en 2022, j'ai étudié à
+              Paris en France, en me formant à travers des écoles ainsi qu'un
+              travail personnel régulier. J'aime voyager, lire des livres, et
               aussi la photographie.
             </p>
-            <p
-              data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom"
-              className="text-C22E2E mb-5 sm:text-base text-sm"
-            >
-              C’est pour cela que cette idée de création avec Mélissa m’a donc
+            <p className="text-C22E2E mb-5 sm:text-base text-sm">
+              C'est pour cela que cette idée de création avec Mélissa m'a donc
               donné de la motivation de créer mon agence pour unir nos
-              compétences. Je t’invite à naviger les pages de notre site, conçu
+              compétences. Je t'invite à naviger les pages de notre site, conçu
               avec une grande passion et un immense plaisir de vous la partager
               ! ☺︎
             </p>
           </div>
         </div>
       </div>
-      <div className="flex justify-center pt-20">
+      <div className="flex justify-center pt-16">
         <SvgMoon />
       </div>
       <div className="flex flex-col justify-center pt-10">
