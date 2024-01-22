@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Loader from "./loading.jsx";
+// import Loader from "./loading.jsx";
 // import CookieModal from "./Components/Cookie/Cookie.jsx";
 import ScrollToTop from "./ScrollToTop.jsx";
 import ThemeProvider from "./context/ThemeProvider.jsx";
@@ -32,55 +32,55 @@ const App = () => {
   //   localStorage.setItem("accept_cookie", "true", { expires: 365 });
   //   setCookieModalOpen(false);
   // };
-  const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    const hasLoaded = localStorage.getItem("hasLoaded");
+  // const [isLoading, setIsLoading] = useState(true);
+  // useEffect(() => {
+  //   const hasLoaded = localStorage.getItem("hasLoaded");
 
-    if (hasLoaded) {
-      setIsLoading(false);
-    } else {
-      setTimeout(() => {
-        setIsLoading(false);
-        localStorage.setItem("hasLoaded", "true");
-      }, 2000);
-    }
-  }, []);
+  //   if (hasLoaded) {
+  //     setIsLoading(false);
+  //   } else {
+  //     setTimeout(() => {
+  //       setIsLoading(false);
+  //       localStorage.setItem("hasLoaded", "true");
+  //     }, 2000);
+  //   }
+  // }, []);
   return (
     <>
-      {isLoading ? (
+      {/* {isLoading ? (
         <Loader />
-      ) : (
-        <LanguageProvider>
-          <ThemeProvider>
-            {/* {isCookieModalOpen && (
+      ) : ( */}
+      <LanguageProvider>
+        <ThemeProvider>
+          {/* {isCookieModalOpen && (
               <CookieModal
                 isOpen={isCookieModalOpen}
                 onAccept={handleAcceptCookie}
                 onRequestClose={() => setCookieModalOpen(false)}
               />
             )} */}
-            <Router>
-              <ScrollToTop />
-              <Routes>
-                <Route path="/" element={<Homepage />} />
-                <Route path="/" element={<Section />} />
-                <Route path="/services" element={<Services />} />
-                <Route path="/ethics" element={<EthicsPage />} />
-                <Route path="/dev" element={<DiscoverWebDeveloper />} />
-                <Route path="/designer" element={<DiscoverDesigner />} />
-                <Route path="/portfolio" element={<Portfolio />} />
-                <Route path="/rate" element={<Rate />} />
-                <Route path="/rateuk" element={<RateUk />} />
-                <Route path="/devis" element={<DevisFree />} />
-                <Route path="/privacy" element={<PagePrivacy />} />
-                <Route path="/terms" element={<PageConditions />} />
-                <Route path="/mentions" element={<PageMentions />} />
-                <Route path="*" element={<PageNotFound />} />
-              </Routes>
-            </Router>
-          </ThemeProvider>
-        </LanguageProvider>
-      )}
+          <Router>
+            <ScrollToTop />
+            <Routes>
+              <Route path="/" element={<Homepage />} />
+              <Route path="/" element={<Section />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/ethics" element={<EthicsPage />} />
+              <Route path="/dev" element={<DiscoverWebDeveloper />} />
+              <Route path="/designer" element={<DiscoverDesigner />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/rate" element={<Rate />} />
+              <Route path="/rateuk" element={<RateUk />} />
+              <Route path="/devis" element={<DevisFree />} />
+              <Route path="/privacy" element={<PagePrivacy />} />
+              <Route path="/terms" element={<PageConditions />} />
+              <Route path="/mentions" element={<PageMentions />} />
+              <Route path="*" element={<PageNotFound />} />
+            </Routes>
+          </Router>
+        </ThemeProvider>
+      </LanguageProvider>
+      {/* )} */}
     </>
   );
 };

@@ -8,13 +8,14 @@ import LogoLinkedin from "../../../assets/linkedin1.png";
 import LogoSnap from "../../../assets/snapchat1.png";
 import Footer from "../../Footer/Footer";
 
+import { useEffect } from "react";
 import TitlePage from "./TitlePage.jsx";
 import SubTitlePage from "./SubTitlePage.jsx";
 import BaseBackground from "./BaseBackground.jsx";
 import PatternLouisa from "../../../assets/picture-louisa.png";
-// import FontParis from "./FontParis.jsx";
 import SvgMoon from "./SvgMoon.jsx";
-import { useEffect } from "react";
+import Frame from "./Frame.jsx";
+import Vector from "./Vector.jsx";
 
 const DiscoverWebDeveloper = () => {
   const { language } = useLanguage();
@@ -89,13 +90,13 @@ const DiscoverWebDeveloper = () => {
           </NavLink>
         </div>
       </div>
-      <div className="picture-belgique h-52 pt-10"></div>
-      <div id="descl" className="pt-20"></div>
-      <div className="flex justify-center mt-28">
+      <div className="picture-belgique h-52"></div>
+      <div className="flex justify-center pt-20">
         <p
           data-aos="fade-right"
           className="text-C22E2E text-center font-inter text-2xl lg:text-4xl"
         >
+          <div id="descl" className=""></div>
           Qui est-elle ?
           <div className="flex justify-center">
             <svg
@@ -111,24 +112,29 @@ const DiscoverWebDeveloper = () => {
         </p>
       </div>
       <div className="flex flex-wrap justify-center pt-32 space-x-20">
+        <div className="flex relative">
+          <Frame />
+        </div>
         <div data-aos="fade-left" className="pb-20">
           <img src={PatternLouisa} className="-rotate-6" />
+        </div>
+        <div className="flex relative">
+          <Vector />
         </div>
         <div className="p-6 bg-F9FEFE sm:w-96 sm:h-1/2 text-center rounded-lg shadow-md rotate-6">
           <div className="mt-5 text-base">
             <p className="text-C22E2E mb-3">
               Hello ! Je m'appelle Louisa, je suis passionnée par le
-              Développement web & le Design. Mon voyage a débuté en 2022 alors
-              que j'ai étudié à Paris en France, en me formant à travers des
-              écoles ainsi qu'un travail personnel régulier. J'aime voyager,
-              lire des livres, et aussi la photographie.
+              Développement web & le Design. Mon voyage a débuté en 2022, j'ai
+              étudié à Paris 🇫🇷. Me formant à travers des écoles ainsi qu'un
+              travail personnel très régulier. J'aime voyager, lire des livres,
+              l'art et aussi la photographie.
             </p>
             <p className="text-C22E2E mb-5">
               C'est pour cela que cette idée de création avec Mélissa m'a donc
-              donné de la motivation de créer mon agence pour unir nos
-              compétences. Je t'invite à naviger les pages de notre site, conçu
-              avec une grande passion et un immense plaisir de te la partager !
-              ☺︎
+              donné la motivation de créer mon agence pour unir nos compétences.
+              Je t'invite à naviger les pages de ce site, conçu avec une grande
+              passion et un immense plaisir de te la partager ! ☺
             </p>
           </div>
         </div>
