@@ -1,21 +1,21 @@
+import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import translations from "../translate.jsx";
 import NavbarDiscoverWebDevelopper from "../../Navigation/NavbarDiscover/DiscoverWebDevelopperNavbar";
 import Avatar from "../../UI/Avatar/TemplateAvatarWebDeveloper";
-import LogoInsta from "../../../assets/instagram1.png";
-import LogoLinkedin from "../../../assets/linkedin1.png";
-import LogoSnap from "../../../assets/snapchat1.png";
-import Footer from "../../Footer/Footer";
-
-import { useEffect } from "react";
 import TitlePage from "./TitlePage.jsx";
 import SubTitlePage from "./SubTitlePage.jsx";
 import BaseBackground from "./BaseBackground.jsx";
 import PatternLouisa from "../../../assets/picture-louisa.png";
-import SvgMoon from "./SvgMoon.jsx";
+import Copyright from "./Copyright.jsx";
 import Frame from "./Frame.jsx";
 import Vector from "./Vector.jsx";
+import LogoBrand from "./LogoBrand.jsx";
+import LogoInsta from "../../../assets/instagram1.png";
+import LogoLinkedin from "../../../assets/linkedin1.png";
+import LogoSnap from "../../../assets/snapchat1.png";
+import Footer from "../../Footer/Footer";
 
 const DiscoverWebDeveloper = () => {
   const { language } = useLanguage();
@@ -33,9 +33,7 @@ const DiscoverWebDeveloper = () => {
         setScrollNavbar(false);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -117,9 +115,7 @@ const DiscoverWebDeveloper = () => {
         </div>
         <div data-aos="fade-left" className="pb-20">
           <img src={PatternLouisa} className="-rotate-6" />
-          <p className="flex justify-center ml-14 text-xs -rotate-6">
-            Saint-Placide, 75006 Paris / &copy; Astres Lunaires
-          </p>
+          <Copyright />
         </div>
         <div className="flex relative">
           <Vector />
@@ -142,17 +138,7 @@ const DiscoverWebDeveloper = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center pt-16">
-        <SvgMoon />
-      </div>
-      <div className="flex flex-col justify-center pt-10">
-        <h2 className="text-C22E2E font-emblema text-2xl text-center">
-          Astres Lunaires
-        </h2>
-        <p className="text-C22E2E xs text-center">
-          DEVELOPER • DESIGNER • WRITER
-        </p>
-      </div>
+      <LogoBrand />
       <div class="pt-14 pb-28 flex flex-wrap justify-center space-x-0 sm:space-x-10">
         <div class="p-6">
           <div
@@ -204,5 +190,4 @@ const DiscoverWebDeveloper = () => {
     </section>
   );
 };
-
 export default DiscoverWebDeveloper;
