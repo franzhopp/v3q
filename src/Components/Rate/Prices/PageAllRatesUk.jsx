@@ -180,17 +180,6 @@ const Rate = () => {
         <div className="flex justify-center">
           <div className="flex flex-col justify-center pb-10 text-center">
             <div className="w-96">
-              <p
-                data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom"
-                className="text-C22E2E text-center"
-              >
-                Dans cette page, vous trouverez{" "}
-                <span className="font-extrabold">
-                  toutes les tarifications des services
-                </span>
-                .
-              </p>
               <NavLink
                 to="/rate"
                 className="text-C22E2E number text-center font-extrabold underline"
@@ -333,30 +322,12 @@ const Rate = () => {
         <div className="flex justify-center pt-2">
           <div className="w-96 sm:w-full">
             <p className="text-center text-sm text-C22E2E px-6">
-              *tarifs variables suivant les fonctionnalités désirées, pour plus
-              d'informations demandez <span>un devis gratuit</span>.
+              *variable rates depending on the desired features, for more
+              information request a free quote.
             </p>
           </div>
         </div>
         <div className="flex flex-col text-center justify-center pt-6 pb-20">
-          {/* <NavLink
-            to="/services"
-            className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
-          >
-            › Découvrir Prestations ➔
-          </NavLink>
-          <NavLink
-            to="/devis"
-            className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
-          >
-            › Découvrir Devis Gratuit ➔
-          </NavLink>
-          <NavLink
-            to="/"
-            className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
-          >
-            › Retourner à la page d'Accueil ➔
-          </NavLink> */}
           <div className="flex justify-center mt-10 mb-10">
             <a onClick={scrollToTop}>
               <svg
