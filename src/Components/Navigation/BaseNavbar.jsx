@@ -546,8 +546,8 @@ const Navbar = () => {
                     {translations[language].navSousServicesEn}
                   </NavLink>
                 </li>
-                <NavLink className="text-C22E2E block border-C22E2E border-b-2 rounded-md text-base font-extrabold">
-                  <li className="ml-4">
+                <NavLink className="block border-C22E2E border-b-2 ml-4">
+                  <li>
                     <button onClick={toggleSousListsRate}>
                       <div className="flex items-center justify-between">
                         <div className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold pr-2">
@@ -587,7 +587,7 @@ const Navbar = () => {
                 <li className="ml-4">
                   <NavLink
                     to="/devis"
-                    className="block text-C22E2E  hover:text-0C3E78 px-4 py-2 font-extrabold"
+                    className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold"
                   >
                     {translations[language].navSousFreeFr}
                     {translations[language].navSousFreeEn}
