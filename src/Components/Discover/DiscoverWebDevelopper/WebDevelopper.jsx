@@ -121,7 +121,7 @@ const DiscoverWebDeveloper = () => {
         <div className="flex relative">
           <Vector />
         </div>
-        <div className="p-6 bg-F9FEFE sm:w-96 sm:h-1/2 text-center rounded-lg shadow-md rotate-6">
+        <div className="p-6 bg-F9FEFE sm:w-96 sm:h-1/2 text-center rounded-lg shadow-lg rotate-6">
           <div className="mt-5 text-base">
             <p className="text-C22E2E mb-3">
               Hello ! Je m'appelle Louisa, je suis passionnée par le
