@@ -111,7 +111,7 @@ const DiscoverWebDeveloper = () => {
           </div>
         </p>
       </div>
-      <div className="flex flex-wrap justify-center pt-32 space-x-20">
+      <div className="flex flex-wrap justify-center pt-24 space-x-20">
         <div className="flex relative">
           <Frame />
         </div>
