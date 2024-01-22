@@ -111,12 +111,15 @@ const DiscoverWebDeveloper = () => {
           </div>
         </p>
       </div>
-      <div className="flex flex-wrap justify-center pt-24 space-x-20">
+      <div className="flex flex-wrap justify-center pt-28 space-x-20">
         <div className="flex relative">
           <Frame />
         </div>
         <div data-aos="fade-left" className="pb-20">
           <img src={PatternLouisa} className="-rotate-6" />
+          <p className="flex justify-center ml-14 text-xs -rotate-6">
+            Saint-Placide, 75006 Paris / &copy; Astres Lunaires
+          </p>
         </div>
         <div className="flex relative">
           <Vector />
@@ -128,7 +131,7 @@ const DiscoverWebDeveloper = () => {
               Développement web & le Design. Mon voyage a débuté en 2022, j'ai
               étudié à Paris 🇫🇷. Me formant à travers des écoles ainsi qu'un
               travail personnel très régulier. J'aime voyager, lire des livres,
-              l'art et aussi la photographie.
+              écrire, l'art et je suis une passionnée de la photographie.
             </p>
             <p className="text-C22E2E mb-5">
               C'est pour cela que cette idée de création avec Mélissa m'a donc
