@@ -1,10 +1,8 @@
-import translations from "../translate.jsx";
-import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import { NavLink } from "react-router-dom";
-// import ModalImage from "react-modal-image";
+import { useLanguage } from "../../../context/LanguageProvider.jsx";
+import translations from "../translate.jsx";
 import NavbarDiscoverDesigner from "../../Navigation/NavbarDiscover/DiscoverDesignerNavbar";
 import AvatarDesigner from "../../UI/Avatar/TemplateAvatarDesigner";
-// import MiniBan from "../../../assets/picture-bannier-melissa.png";
 import ImageTest3 from "../../../assets/art1.png";
 import ImageTest2 from "../../../assets/art2.png";
 import ImageTest4 from "../../../assets/art3.png";
@@ -21,7 +19,7 @@ const DiscoverDesigner = () => {
     <section className="bg-FFF6E4">
       <NavbarDiscoverDesigner />
       <AvatarDesigner />
-      <div class="bg-1E1E20 flex justify-center pt-10 pb-20">
+      <div class="bg-1E1E20 flex justify-center pt-10 pb-48">
         <div class="mt-6 flex flex-wrap justify-center space-x-0 sm:space-x-20">
           <div className="flex justify-start relative">
             <svg
@@ -114,7 +112,7 @@ const DiscoverDesigner = () => {
               </p>
               <div className="flex justify-start relative">
                 <svg
-                  className="absolute top-9 sm:-right-44 -right-96"
+                  className="absolute top-0 sm:-right-44 -right-96"
                   width="140"
                   height="152"
                   viewBox="0 0 140 152"
@@ -150,24 +148,6 @@ const DiscoverDesigner = () => {
                 <br />
               </p>
             </div>
-            <div className="flex justify-center mt-7">
-              <NavLink
-                to="/dev"
-                className="text-FFF6E4 font-inter text-center font-extrabold underline transition hover:text-C22E2E"
-              >
-                {translations[language].linkWebDevFr}
-                {translations[language].linkWebDevEn}
-              </NavLink>
-            </div>
-            <div className="flex justify-center">
-              <NavLink
-                to="/"
-                className="text-FFF6E4 font-inter font-extrabold underline transition hover:text-C22E2E"
-              >
-                {translations[language].linkHomeFr}
-                {translations[language].linkHomeEn}
-              </NavLink>
-            </div>
           </div>
           <div className="pt-16 sm:pt-32">
             <div className="flex justify-end relative">
@@ -199,9 +179,12 @@ const DiscoverDesigner = () => {
               src={ImageMelissa}
               className="h-80 w-80 sm:h-96 sm:w-96 transition hover:opacity-90"
             />
-            <p className="flex text-FFF6E4 text-xs">
+            {/* <p className="flex text-FFF6E4 text-xs">
               {translations[language].city1Fr}
               {translations[language].city1En}
+            </p> */}
+            <p className="mt-1 flex justify-start text-xs text-FFF6E4">
+              📸 : Musée d'Art Contemporain, 69006 Lyon / &copy; Mélissa
             </p>
           </div>
         </div>

@@ -185,7 +185,7 @@ const Navbar = () => {
                         showSousListsTwoMenu ? "block" : "hidden"
                       } p-2`}
                     >
-                      <li className="list-decimal ml-4 text-C22E2E font-extrabold">
+                      <li className="ml-4 text-C22E2E font-extrabold">
                         <NavLink
                           to="/designer"
                           className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
@@ -193,7 +193,7 @@ const Navbar = () => {
                           Designer
                         </NavLink>
                       </li>
-                      <li className="list-decimal ml-4 text-C22E2E font-extrabold">
+                      <li className="ml-4 text-C22E2E font-extrabold">
                         <NavLink
                           to="/dev"
                           className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
@@ -238,7 +238,7 @@ const Navbar = () => {
                         showSousListsRate ? "block" : "hidden"
                       } p-2`}
                     >
-                      <li className="list-decimal ml-4 text-C22E2E font-extrabold">
+                      <li className="ml-4 text-C22E2E font-extrabold">
                         <NavLink
                           to="/rate"
                           className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
@@ -247,7 +247,7 @@ const Navbar = () => {
                           {translations[language].navSousPricingEn} FR
                         </NavLink>
                       </li>
-                      <li className="list-decimal ml-4 text-C22E2E font-extrabold">
+                      <li className="ml-4 text-C22E2E font-extrabold">
                         <NavLink
                           to="/rateuk"
                           className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
@@ -451,7 +451,7 @@ const Navbar = () => {
                       showSousListsAgence ? "block" : "hidden"
                     }`}
                   >
-                    <li className="list-decimal ml-4 text-C22E2E font-extrabold">
+                    <li className="ml-4 text-C22E2E font-extrabold">
                       <NavLink
                         to="/"
                         className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
@@ -460,7 +460,7 @@ const Navbar = () => {
                         {translations[language].navSousHomeEn}
                       </NavLink>
                     </li>
-                    <li className="list-decimal ml-4">
+                    <li className="ml-4">
                       <NavLink
                         to="/ethics"
                         className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
@@ -469,7 +469,7 @@ const Navbar = () => {
                         {translations[language].navSousValuesEn}
                       </NavLink>
                     </li>
-                    <li className="list-decimal ml-4">
+                    <li className="ml-4">
                       <NavLink
                         to="/services"
                         className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
@@ -498,7 +498,7 @@ const Navbar = () => {
                         showSousListsFiveMenu ? "block" : "hidden"
                       } p-2`}
                     >
-                      <li className="list-decimal ml-4 text-C22E2E font-extrabold">
+                      <li className="ml-4 text-C22E2E font-extrabold">
                         <NavLink
                           to="/designer"
                           className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
@@ -506,7 +506,7 @@ const Navbar = () => {
                           Designer
                         </NavLink>
                       </li>
-                      <li className="list-decimal ml-4 text-C22E2E font-extrabold">
+                      <li className="ml-4 text-C22E2E font-extrabold">
                         <NavLink
                           to="/dev"
                           className="block text-C22E2E rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
@@ -537,7 +537,7 @@ const Navbar = () => {
                   showSousListsMenu ? "block" : "hidden"
                 } p-2`}
               >
-                <li className="list-decimal ml-4">
+                <li className="ml-4">
                   <NavLink
                     to="/services"
                     className="block text-C22E2E border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
@@ -547,7 +547,7 @@ const Navbar = () => {
                   </NavLink>
                 </li>
                 <NavLink className="text-C22E2E block border-C22E2E border-b-2 rounded-md text-base font-extrabold">
-                  <li className="list-decimal ml-4">
+                  <li className="ml-4">
                     <button onClick={toggleSousListsRate}>
                       <div className="flex items-center justify-between">
                         <div className="block text-C22E2E hover:text-0C3E78 px-4 py-2 font-extrabold pr-2">
@@ -563,7 +563,7 @@ const Navbar = () => {
                         showSousListsRate ? "block" : "hidden"
                       } p-2`}
                     >
-                      <li className="list-decimal ml-4 text-C22E2E font-extrabold">
+                      <li className="ml-4 text-C22E2E font-extrabold">
                         <NavLink
                           to="/rate"
                           className="block text-C22E2E border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
@@ -572,7 +572,7 @@ const Navbar = () => {
                           {translations[language].navSousPricingEn} FR
                         </NavLink>
                       </li>
-                      <li className="list-decimal ml-4 text-C22E2E font-extrabold">
+                      <li className="ml-4 text-C22E2E font-extrabold">
                         <NavLink
                           to="/rateuk"
                           className="block text-C22E2E rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
@@ -584,7 +584,7 @@ const Navbar = () => {
                     </ul>
                   </li>
                 </NavLink>
-                <li className="list-decimal ml-4">
+                <li className="ml-4">
                   <NavLink
                     to="/devis"
                     className="block text-C22E2E  hover:text-0C3E78 px-4 py-2 font-extrabold"

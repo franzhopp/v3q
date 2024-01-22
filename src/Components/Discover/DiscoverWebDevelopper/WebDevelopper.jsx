@@ -109,20 +109,23 @@ const DiscoverWebDeveloper = () => {
           </div>
         </p>
       </div>
-      <div className="flex flex-wrap justify-center pt-28 space-x-20">
+      <div className="flex flex-wrap justify-center pt-28 space-x-10">
         <div className="flex relative">
           <Frame />
         </div>
         <div data-aos="fade-left" className="pb-20">
-          <img src={PatternLouisa} className="-rotate-6" />
+          <img
+            src={PatternLouisa}
+            className="-rotate-6 transition hover:opacity-90"
+          />
           <Copyright />
         </div>
         <div className="flex relative">
           <Vector />
         </div>
-        <div className="p-6 bg-F9FEFE sm:w-96 sm:h-1/2 text-center rounded-lg shadow-lg rotate-6">
+        <div className="p-5 bg-F9FEFE sm:w-96 sm:h-1/2 text-center rounded-lg shadow-lg rotate-6">
           <div className="mt-5 text-base">
-            <p className="text-C22E2E mb-3">
+            <p className="text-C22E2E mb-5">
               Hello ! Je m'appelle Louisa, je suis passionnée par le
               Développement web & le Design. Mon voyage a débuté en 2022, j'ai
               étudié à Paris 🇫🇷. Me formant à travers des écoles ainsi qu'un
