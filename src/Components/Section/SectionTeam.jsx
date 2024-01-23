@@ -154,7 +154,7 @@ const SectionTeam = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center mt-16">
         <div className="flex flex-col justify-center">
           <div className="flex flex-col space-x-3 mb-5 sm:flex-row">
             <div className="mb-10 sm:mb-0">

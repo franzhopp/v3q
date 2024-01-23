@@ -253,8 +253,8 @@ const DevisFree = ({ label, type, value }) => {
                     <span className="font-extrabold">4</span>.{" "}
                     {translations[language].bloc4FreeFr}
                     {translations[language].bloc4FreeEn}
-                    <span className="absolute h-72 w-1 bg-C22E2E -left-7 bottom-20 hidden sm:block"></span>
-                    <span className="absolute h-64 w-1 bg-C22E2E -left-10 bottom-2 hidden sm:block"></span>
+                    {/* <span className="absolute h-72 w-1 bg-C22E2E -left-7 bottom-20 hidden sm:block"></span>
+                    <span className="absolute h-64 w-1 bg-C22E2E -left-10 bottom-2 hidden sm:block"></span> */}
                   </li>
                 </ul>
               </p>

@@ -182,7 +182,7 @@ const Rate = () => {
             <div className="w-96">
               <NavLink
                 to="/rate"
-                className="text-C22E2E number text-center font-extrabold underline"
+                className="text-C22E2E text-center font-extrabold underline"
               >
                 Voir les tarifications FR.
               </NavLink>

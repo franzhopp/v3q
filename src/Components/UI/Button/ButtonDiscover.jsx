@@ -41,7 +41,6 @@ const Button = () => {
           {translations[language].btnDiscoverFr}
           {translations[language].btnDiscoverEn}{" "}
         </span>
-
         <svg
           className="hidden sm:block"
           width="44"
