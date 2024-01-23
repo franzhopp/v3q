@@ -19,7 +19,7 @@ const TitleHome = () => {
           </motion.span>
         </h1>
         <div className="flex justify-center">
-          <span className="text-FFF6E4 text-sm font-inter uppercase">Paris x London</span>
+          <h2 className="text-FFF6E4 text-sm font-inter uppercase">Paris x London</h2>
         </div>
       </div>
       <div className="flex justify-center sm:justify-end px-0 sm:px-20 pb-14">
