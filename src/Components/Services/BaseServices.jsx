@@ -48,7 +48,7 @@ const Services = () => {
               </span>
             ))}
             <div className="flex justify-center">
-              <span className="absolute w-32 h-1  bg-C22E2E"></span>
+              <span className="absolute w-32 h-1 bg-C22E2E"></span>
             </div>
           </h1>
           <div className="flex justify-center">
@@ -207,7 +207,7 @@ const Services = () => {
             </svg>
           </div>
           <div className="flex justify-center pt-16">
-            <div className="w-96 sm:w-1/3 px-5">
+            <div className="w-96 xl:w-1/3 px-5">
               <p
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
