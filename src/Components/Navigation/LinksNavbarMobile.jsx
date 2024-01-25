@@ -1,26 +1,26 @@
-import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
-import { useLanguage } from "../../context/LanguageProvider.jsx";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
+import { useTheme } from "./../../context/ThemeProvider.jsx";
+import { useLanguage } from "./../../context/LanguageProvider.jsx";
+import DarkLightThemes from "./../../hook/useTheme.jsx";
+import ModalSearch from "./../Modal/SearchModal";
 import translations from "./translate.jsx";
-import Image from "../../assets/logo-5.png";
-import ModalSearch from "../Modal/SearchModal.jsx";
-import "../Section/FirstSection.jsx";
-import "../Homepage/Homepage.jsx";
+import { NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
+import Image from "./../../assets/logo-5.png";
+import "./../Section/FirstSection.jsx";
+import "./../Homepage/Homepage";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import DarkLightThemes from "../../hook/useTheme.jsx";
-import { useTheme } from "../../context/ThemeProvider.jsx";
-const NavbarMobile = () => {
-  const [scrollNavbar, setScrollNavbar] = useState();
+
+const LinksNavbarMobile = () => {
   const [isAnimating, setIsAnimating] = useState(false);
+  const [scrollNavbar, setScrollNavbar] = useState();
   const [toggleMenu, setToggleMenu] = useState(false);
   const [showSousListsAgence, setShowSousListsAgence] = useState(false);
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
-  const [showSousListsThreeMenu, setShowSousListsThreeMenu] = useState(false);
-  const [showSousListsRate, setShowSousListsRate] = useState(false);
   const [showSousListsFiveMenu, setShowSousListsFiveMenu] = useState(false);
+  const [showSousListsRate, setShowSousListsRate] = useState(false);
   const [openModel, setOpenModel] = useState();
   const [searchQuery, setSearchQuery] = useState();
   const [isOpen, setIsOpen] = useState(false);
@@ -35,19 +35,11 @@ const NavbarMobile = () => {
       left: 100,
       behavior: "smooth",
     });
-    setIsOpen(false);
   };
   const toggleMenuMobile = () => {
     setToggleMenu(!toggleMenu);
     setIsOpen(!isOpen);
     document.body.style.overflowY = "hidden";
-  };
-  const SectionToSectionContact = () => {
-    const ContactToScroll = document.getElementById("contact");
-    if (ContactToScroll) {
-      ContactToScroll.scrollIntoView({ behavior: "smooth" });
-    }
-    setIsOpen(false);
   };
   const handleAnimateButtonClick = () => {
     setIsAnimating(!isAnimating);
@@ -82,7 +74,6 @@ const NavbarMobile = () => {
     showSousListsAgence,
     showSousListsFiveMenu,
     showSousListsMenu,
-    showSousListsThreeMenu,
     showSousListsRate,
   ]);
   return (
@@ -352,7 +343,6 @@ const NavbarMobile = () => {
         <li className={`${isDarkMode ? "text-C22E2E" : "text-FFF6E4"}`}>
           <NavLink
             to="/"
-            onClick={SectionToSectionContact}
             className="block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             Contact
@@ -407,4 +397,4 @@ const NavbarMobile = () => {
   );
 };
 
-export default NavbarMobile;
+export default LinksNavbarMobile;

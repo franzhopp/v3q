@@ -1,4 +1,4 @@
-import Header from "../Navigation/BaseNavbar.jsx";
+import Header from "../Navigation/MainNavbarDesktop.jsx";
 import FirstSection from "../Section/FirstSection.jsx";
 import SecondSection from "../Section/SecondSection.jsx";
 import SectionAgency from "../Section/SectionAgency.jsx";

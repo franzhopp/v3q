@@ -23,13 +23,15 @@ const DarkLightThemes = () => {
     <div className={isDarkMode ? "" : ""}>
       <button
         onClick={toggleTheme}
-        className={`py-2 px-4 bg-transparent rounded-full text-C22E2E ${
-          isDarkMode ? "bg-C22E2E" : ""
-        }`}
+        className={`${isDarkMode ? "text-C22E2E" : "text-FFF6E4"}`}
       >
         {isDarkMode ? "" : ""}
-        <div className="border border-C22E2E rounded-full p-2">
-          {isDarkMode ? <IoMdSunny /> : <IoMdMoon />}
+        <div>
+          {isDarkMode ? (
+            <IoMdSunny className="h-5 w-5 2xl:h-7 2xl:w-7 2xl:mt-1 mt-0" />
+          ) : (
+            <IoMdMoon className="h-5 w-5 2xl:h-7 2xl:w-7 2xl:mt-1 mt-0" />
+          )}
         </div>
       </button>
     </div>

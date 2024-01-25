@@ -7,7 +7,7 @@ import Title from "../UI/Title/TitleFormContact";
 import ImgText from "../../assets/logo-5.png";
 import emailjs from "emailjs-com";
 import ButtonSend from "../UI/Button/ButtonSend";
-import "../Navigation/BaseNavbar.jsx";
+import "../Navigation/MainNavbarDesktop.jsx";
 
 const Form = ({ label, type, value }) => {
   const [isFocused, setIsFocused] = useState(false);

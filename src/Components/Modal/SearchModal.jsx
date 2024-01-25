@@ -38,9 +38,7 @@ const ModalSearch = ({ closeModal, searchQuery }) => {
     };
   }, [closeModal]);
   return (
-    <div
-      className={`flex space-x-2 ${isDarkMode ? "bg-FFF6E4 " : "bg-021228"}`}
-    >
+    <div className={`flex space-x-2 ${isDarkMode ? "bg-FFF6E4" : "bg-021228"}`}>
       <input
         data-aos="fade-left"
         type="text"
@@ -53,7 +51,7 @@ const ModalSearch = ({ closeModal, searchQuery }) => {
       <button onClick={handleSearch}>
         <ImCross
           onClick={() => closeModal(false)}
-          className={`mb-4 sm:mb-0 ${
+          className={`mb-4 mr-4 sm:mb-0 hover:text-0C3E78 ${
             isDarkMode ? "text-C22E2E" : "text-FFF6E4"
           }`}
         />

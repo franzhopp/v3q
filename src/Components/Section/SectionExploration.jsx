@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { useTheme } from "../../context/ThemeProvider.jsx";
 import Img1 from "../../assets/2.png";
 import Img2 from "../../assets/3.png";
 import Img3 from "../../assets/1.png";
@@ -15,7 +16,7 @@ import Img12 from "../../assets/12.png";
 // import Img13 from "../../assets/13.png";
 
 const SectionExploration = () => {
-  const id = "";
+  const { isDarkMode } = useTheme();
   const cards = [
     {
       image: Img1,
@@ -165,7 +166,6 @@ const SectionExploration = () => {
             <div className="flex justify-center">
               <NavLink to="https://www.instagram.com/navistudio.fr/">
                 <img
-                  key={id}
                   src={cards[currentIndex].image}
                   alt={cards[currentIndex].title}
                   loading="lazy"
@@ -213,7 +213,11 @@ const SectionExploration = () => {
             </svg>
           </button>
         </div>
-        <p className="mt-6 text-black text-center font-extrabold text-base overflow-auto p-5 h-40">
+        <p
+          className={`mt-6 text-center font-extrabold text-base overflow-auto p-5 h-40 ${
+            isDarkMode ? "text-black" : "text-FFF6E4"
+          }`}
+        >
           <div className="flex flex-col justify-center">
             <span>{cards[currentIndex].title}</span>
             <span>{cards[currentIndex].country}</span>

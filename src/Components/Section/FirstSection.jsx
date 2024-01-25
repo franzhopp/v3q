@@ -30,11 +30,15 @@ const Section = () => {
   }, []);
   return (
     <section className="bg-FFF6E4 pt-20">
-      <div className="flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
+      <div
+        className={`flex flex-wrap justify-center items-center space-x-0 sm:space-x-6 ${
+          isDarkMode ? "text-black" : "text-FFF6E4"
+        }`}
+      >
         <div className="w-80 relative">
           <p
             data-aos="fade-left"
-            className="mt-10 font-extrabold text-black text-4xl sm:text-left text-center relative"
+            className="mt-10 font-extrabold text-4xl sm:text-left text-center relative"
           >
             {translations[language].titleSectionFr}
             {translations[language].titleSectionEn}
@@ -45,7 +49,7 @@ const Section = () => {
             <p
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"
-              className="text-center text-black"
+              className="text-center"
             >
               <span className="font-extrabold">
                 › {translations[language].textBoldOneFr}
@@ -69,7 +73,7 @@ const Section = () => {
             <p
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"
-              className="font-extrabold text-center sm:text-right  text-black"
+              className="font-extrabold text-center sm:text-right"
             >
               › {translations[language].textWithoutBoldFsFr}
               {translations[language].textWithoutBoldFsEn}{" "}
