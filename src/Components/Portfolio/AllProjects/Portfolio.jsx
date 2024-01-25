@@ -1,6 +1,7 @@
 import { useTheme } from "../../../context/ThemeProvider";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import NavbarPages from "../../Navigation/PagesNavbar/PagesNavbar";
 import TitlePorfolio from "../../UI/Title/TitlePorfolio";
 import ImgDefault from "../../../assets/imgdefault.svg";
@@ -33,8 +34,8 @@ const Portfolio = () => {
         <SvgLine />
       </div>
       <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-        <div className="flex justify-center px-3 pt-12 pb-12">
-          <div className="bg-FFF6E4 p-5 h-1/2 rounded-2xl shadow-2xl mr-5 ml-5">
+        <div className="flex justify-center px-3 pt-12 pb-16">
+          <div className="bg-FFF6E4 p-5 py-10 h-1/2 rounded-2xl shadow-2xl mr-5 ml-5">
             <div className="flex justify-center mt-3">
               <img
                 src={cards[currentIndex].image}
@@ -67,14 +68,6 @@ const Portfolio = () => {
             <div className={`${isDarkMode ? "text-black" : "text-FFF6E4"}`}>
               <p className="overflow-auto p-5 h-40">
                 {cards[currentIndex].content}
-                <div className="flex justify-center pt-5 pb-5">
-                  <NavLink
-                    to="/"
-                    className="font-inter text-xs font-extrabold underline transition hover:text-0C3E78"
-                  >
-                    › Retourner à la page d'Accueil ➔
-                  </NavLink>
-                </div>
               </p>
             </div>
             <div className="flex justify-center mt-5">
@@ -82,37 +75,13 @@ const Portfolio = () => {
                 className="bg-black font-extrabold text-FFF6E4 hover:bg-C22E2E transition px-4 py-2 rounded-full mr-2"
                 onClick={handlePrev}
               >
-                <svg
-                  className="p-1"
-                  width="30"
-                  height="30"
-                  viewBox="0 0 50 52"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.0251 23.299C-0.3417 24.6659 -0.3417 26.8819 1.0251 28.2488L23.299 50.5226C24.6658 51.8895 26.8819 51.8895 28.2487 50.5226C29.6156 49.1558 29.6156 46.9397 28.2487 45.5729L8.4497 25.7739L28.2487 5.97487C29.6156 4.60807 29.6156 2.39197 28.2487 1.02517C26.8819 -0.341725 24.6658 -0.341725 23.299 1.02517L1.0251 23.299ZM49.5 22.2739H3.5V29.2739H49.5V22.2739Z"
-                    fill="#FFF6E4"
-                  />
-                </svg>
+                <FaArrowLeft className="h-8 w-8" />
               </button>
               <button
                 className="bg-black font-extrabold text-FFF6E4 hover:bg-C22E2E transition px-4 py-2 rounded-full"
                 onClick={handleNext}
               >
-                <svg
-                  className="p-1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="30"
-                  viewBox="0 0 50 52"
-                  fill="none"
-                >
-                  <path
-                    d="M48.4749 28.4749C49.8417 27.108 49.8417 24.892 48.4749 23.5251L26.201 1.25126C24.8342 -0.115572 22.6181 -0.115572 21.2513 1.25126C19.8844 2.6181 19.8844 4.83418 21.2513 6.20101L41.0503 26L21.2513 45.799C19.8844 47.1658 19.8844 49.3819 21.2513 50.7487C22.6181 52.1156 24.8342 52.1156 26.201 50.7487L48.4749 28.4749ZM0 29.5L46 29.5V22.5L0 22.5L0 29.5Z"
-                    fill="#FFF6E4"
-                  />
-                </svg>
+                <FaArrowRight className="h-8 w-8" />
               </button>
             </div>
             <div className="flex justify-center pt-10">

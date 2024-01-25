@@ -34,7 +34,6 @@ const Footer = () => {
       [name]: value,
     }));
   };
-
   const regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -71,14 +70,12 @@ const Footer = () => {
 
     setIsLoading(false);
   };
-
   useEffect(() => {
     emailjs.init("E-u_BQRxlwXZIR-_Y");
   }, []);
-
   return (
     <footer className="bg-C22E2E">
-      <div className="mx-auto max-w-5xl px-4 py-24 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-5xl px-5 py-28">
         <div className="flex justify-center mr-3">
           <img
             src={Image}
@@ -86,22 +83,20 @@ const Footer = () => {
             className="h-auto mx-auto max-w-xs"
           />
         </div>
-        <p className="mx-auto pt-6 max-w-md text-center leading-relaxed text-gray-500">
+        <p className="mx-auto max-w-md text-center">
           <div className="text-center text-FFF6E4 mt-8 font-semibold">
             &copy; {translations[language].copy1Fr}
-            {translations[language].copy1En}{" "}
-            <span className="text-FFF6E4">Mélissa</span> &{" "}
-            <span className="text-FFF6E4">Louisa</span>.{" "}
+            {translations[language].copy1En} l'agence.{" "}
             {translations[language].copy2Fr}
             {translations[language].copy2En}
           </div>
         </p>
-        <div className="font-inter text-sm text-center text-FFF6E4 pt-5">
+        <div className="font-inter text-sm text-center text-FFF6E4 pt-10">
           › {translations[language].newletterFr}
           {translations[language].newletterEn}
         </div>
         <form onSubmit={handleSubmit}>
-          <div className="flex justify-center pt-1">
+          <div className="flex justify-center">
             <input
               type="text"
               placeholder="E-mail*"
@@ -135,7 +130,7 @@ const Footer = () => {
             {status && <p>{status}</p>}
           </div>
         </form>
-        <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
+        <ul className="pt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-16">
           <li>
             <NavLink
               to="/"
@@ -223,7 +218,7 @@ const Footer = () => {
               Contact
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink
               to="/privacy"
               className="text-FFF6E4 transition hover:text-0C3E78"
@@ -249,15 +244,15 @@ const Footer = () => {
               {translations[language].footerMentionsFr}
               {translations[language].footerMentionsEn}
             </NavLink>
-          </li>
+          </li> */}
         </ul>
-        <div className="flex justify-center pt-12 pb-10">
+        <div className="flex justify-center pt-12 pb-8">
           <div className="text-FFF6E4 font-inter font-extrabold">
             › {translations[language].findFr}
             {translations[language].findEn}
           </div>
         </div>
-        <ul className="mt-5 flex justify-center gap-6 md:gap-8">
+        <ul className="flex justify-center gap-6 md:gap-8">
           <li>
             <NavLink to="/" rel="noreferrer" target="_blank">
               <img
@@ -267,7 +262,6 @@ const Footer = () => {
               />
             </NavLink>
           </li>
-
           <li>
             <NavLink
               to="https://www.instagram.com/navistudio.fr/"
