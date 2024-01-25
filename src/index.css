@@ -20,6 +20,15 @@ select {
     background-color: #FFF6E4;
 }
 
+.dark-mode {
+    background-color: #021228;
+}
+
+.light-mode {
+    background-color: #FFF6E4;
+}
+
+
 a,
 span,
 path,

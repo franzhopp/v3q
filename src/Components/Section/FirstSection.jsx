@@ -3,9 +3,11 @@ import { useLanguage } from "../../context/LanguageProvider.jsx";
 import translations from "./translate.jsx";
 import ImgText from "../../assets/logo-4.png";
 import ButtonContact from "../UI/Button/ButtonFormContact";
+import { useTheme } from "../../context/ThemeProvider.jsx";
 
 const Section = () => {
   const { language } = useLanguage();
+  const { isDarkMode } = useTheme();
   const [scrollNavbar, setScrollNavbar] = useState();
   const SectionToScroll = () => {
     const contactSection = document.getElementById("team");
@@ -27,7 +29,7 @@ const Section = () => {
     };
   }, []);
   return (
-    <section className="bg-FFF6E4 pt-20 relative border-b border-gray-300">
+    <section className="bg-FFF6E4 pt-20">
       <div className="flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
         <div className="w-80 relative">
           <p

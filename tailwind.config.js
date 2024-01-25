@@ -41,6 +41,9 @@ export default {
         'EF0039': '#EF0039',
         '4457BE': "#4457BE",
         'F9FEFE': "#F9FEFE",
+        '021228': "#021228",
+        'FC7A44': "#FC7A44",
+        'FFF068': "#FFF068",
       },
       fontFamily: {
         sans: [],

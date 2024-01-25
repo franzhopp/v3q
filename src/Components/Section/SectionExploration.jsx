@@ -177,7 +177,7 @@ const SectionExploration = () => {
         </div>
         <div className="flex justify-center mt-10">
           <button
-            className="bg-black font-extrabold text-FFF6E4 hover:bg-C22E2E transition px-4 py-2 rounded-full mr-2"
+            className="bg-black font-extrabold text-FFF6E4 hover:bg-C22E2E transition px-4 rounded-full mr-2"
             onClick={handlePrev}
           >
             <svg
@@ -213,7 +213,7 @@ const SectionExploration = () => {
             </svg>
           </button>
         </div>
-        <p className="mt-6 text-black text-center font-inter text-md overflow-auto p-5 h-40">
+        <p className="mt-6 text-black text-center font-extrabold text-base overflow-auto p-5 h-40">
           <div className="flex flex-col justify-center">
             <span>{cards[currentIndex].title}</span>
             <span>{cards[currentIndex].country}</span>

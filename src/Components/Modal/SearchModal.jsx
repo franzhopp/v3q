@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ImCross } from "react-icons/im";
 import { data } from "./SearchData.jsx";
+import { useTheme } from "../../context/ThemeProvider.jsx";
 
 const ModalSearch = ({ closeModal, searchQuery }) => {
   const [searchQueryText, setSearchQueryText] = useState("");
+  const { isDarkMode } = useTheme();
   const navigate = useNavigate();
   const handleSearch = (e) => {
     if (e.key === "Enter") {
@@ -36,7 +38,9 @@ const ModalSearch = ({ closeModal, searchQuery }) => {
     };
   }, [closeModal]);
   return (
-    <div className="bg-FFF6E4 flex space-x-2">
+    <div
+      className={`flex space-x-2 ${isDarkMode ? "bg-FFF6E4 " : "bg-021228"}`}
+    >
       <input
         data-aos="fade-left"
         type="text"
@@ -49,7 +53,9 @@ const ModalSearch = ({ closeModal, searchQuery }) => {
       <button onClick={handleSearch}>
         <ImCross
           onClick={() => closeModal(false)}
-          className="text-C22E2E mb-4 sm:mb-0"
+          className={`mb-4 sm:mb-0 ${
+            isDarkMode ? "text-C22E2E" : "text-FFF6E4"
+          }`}
         />
       </button>
     </div>
