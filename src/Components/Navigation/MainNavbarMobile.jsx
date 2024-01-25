@@ -88,7 +88,7 @@ const NavbarMobile = () => {
   ]);
   return (
     <nav
-      className={`fixed w-full top-0 left-0 shadow-md 2xl:hidden transition duration-300 ease-in-out bg-FFF6E4 z-max`}
+      className={`fixed w-full top-0 left-0 shadow-md 2xl:hidden bg-FFF6E4 z-max`}
     >
       <div className="px-5 h-28 flex items-center justify-between">
         <NavLink to="/" data-aos="fade-left">
@@ -374,14 +374,14 @@ const NavbarMobile = () => {
           </div>
         </li>
         {/* BARRE DE RECHERCHE */}
-        <div className="flex justify-start px-2 pt-4 pb-3">
+        <div className="flex justify-start px-3 pt-4 pb-3">
           <div
             className={`hover:text-0C3E78 ${
               isDarkMode ? "text-C22E2E" : "text-FFF6E4"
             }`}
           >
             <FaSearch
-              className="h-5 mr-2"
+              className="h-8 mr-5"
               onClick={() => {
                 setOpenModel(true);
               }}
