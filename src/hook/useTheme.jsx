@@ -6,15 +6,15 @@ const DarkLightThemes = () => {
   const { isDarkMode, toggleTheme } = useTheme();
 
   useEffect(() => {
-    const sections = document.querySelectorAll(".bg-021228, .bg-FFF6E4");
+    const sections = document.querySelectorAll(".bg-042142, .bg-FFF6E4");
 
     sections.forEach((section) => {
       if (isDarkMode) {
-        section.classList.remove("bg-021228");
+        section.classList.remove("bg-042142");
         section.classList.add("bg-FFF6E4");
       } else {
         section.classList.remove("bg-FFF6E4");
-        section.classList.add("bg-021228");
+        section.classList.add("bg-042142");
       }
     });
   }, [isDarkMode]);

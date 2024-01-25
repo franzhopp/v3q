@@ -216,7 +216,7 @@ const LinksNavbarDesktop = () => {
               className={`hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold`}
             >
               <select
-                className={`${isDarkMode ? "bg-FFF6E4" : "bg-021228"}`}
+                className={`${isDarkMode ? "bg-FFF6E4" : "bg-042142"}`}
                 value={language}
                 onChange={(e) => changeLanguageHandler(e.target.value)}
               >
@@ -250,7 +250,7 @@ const LinksNavbarDesktop = () => {
           </div>
           {openModel && (
             <ModalSearch
-              className={`${isDarkMode ? "bg-FFF6E4" : "bg-021228"}`}
+              className={`${isDarkMode ? "bg-FFF6E4" : "bg-042142"}`}
               closeModal={setOpenModel}
               searchQuery={setSearchQuery}
             />

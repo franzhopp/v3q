@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { useLanguage } from "../../context/LanguageProvider.jsx";
 import translations from "./translate.jsx";
-import ImgText from "../../assets/logo-4.png";
+import ImgBlack from "../../assets/logo-4.png";
+import ImgWhite from "../../assets/logo-57.png";
 import ButtonContact from "../UI/Button/ButtonFormContact";
 import { useTheme } from "../../context/ThemeProvider.jsx";
 
@@ -59,7 +60,7 @@ const Section = () => {
               {translations[language].textWithoutBoldOneEn}
               <span>
                 <img
-                  src={ImgText}
+                  src={isDarkMode ? ImgBlack : ImgWhite}
                   className="h-5 mr-1 inline"
                   alt="Icône navi studio."
                 />

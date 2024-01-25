@@ -78,7 +78,7 @@ const LinksNavbarMobile = () => {
   ]);
   return (
     <nav
-      className={`fixed w-full top-0 left-0 shadow-md 2xl:hidden bg-FFF6E4 z-max`}
+      className={`fixed w-full top-0 left-0 shadow-md 2xl:hidden bg-FFF6E4 transition duration-300 ease-in-out z-max`}
     >
       <div className="px-5 h-28 flex items-center justify-between">
         <NavLink to="/" data-aos="fade-left">
@@ -343,7 +343,7 @@ const LinksNavbarMobile = () => {
         <li className={`${isDarkMode ? "text-C22E2E" : "text-FFF6E4"}`}>
           <div className="block px-2 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
             <select
-              className={`${isDarkMode ? "bg-FFF6E4" : "bg-021228"}`}
+              className={`${isDarkMode ? "bg-FFF6E4" : "bg-042142"}`}
               value={language}
               onChange={(e) => changeLanguageHandler(e.target.value)}
             >

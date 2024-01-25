@@ -4,7 +4,8 @@ import { useLanguage } from "../../context/LanguageProvider.jsx";
 import { useSpring, animated } from "react-spring";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import translations from "./translate.jsx";
-import ImgText from "../../assets/logo-4.png";
+import ImgBlack from "../../assets/logo-4.png";
+import ImgWhite from "../../assets/logo-57.png";
 import ImageLondon from "../../assets/london.png";
 import ImageParis from "../../assets/paris.png";
 import ModalImage from "react-modal-image";
@@ -121,7 +122,7 @@ const SectionTeam = () => {
               {translations[language].textSectionTeamBold1Fr}
               {translations[language].textSectionTeamBold1En}{" "}
               <img
-                src={ImgText}
+                src={isDarkMode ? ImgBlack : ImgWhite}
                 className="h-6 ml-1 mr-2 sm:h-8 inline"
                 alt="Icône navi studio."
               />
@@ -210,7 +211,7 @@ const SectionTeam = () => {
             <div className="flex justify-center items-center h-24 w-96 mt-0 sm:mt-32">
               <NavLink
                 to="/designer"
-                className="inline-flex items-center gap-2 rounded-full shadow-2xl mr-6 mb-10 bg-black px-8 py-3 text-FFF6E4"
+                className="inline-flex items-center gap-2 rounded-full mr-6 mb-10 bg-black px-8 py-3 text-FFF6E4"
               >
                 <span className="text-3xl mr-3 font-semibold">
                   {translations[language].btnMoreFr}
@@ -226,7 +227,7 @@ const SectionTeam = () => {
               <div className="flex justify-center items-center h-24 w-96 mt-0 sm:mt-32">
                 <NavLink
                   to="/dev"
-                  className="inline-flex items-center gap-2 rounded-full shadow-2xl mr-2 sm:mr-0 bg-black px-8 py-3 text-FFF6E4"
+                  className="inline-flex items-center gap-2 rounded-full mr-2 sm:mr-0 bg-black px-8 py-3 text-FFF6E4"
                 >
                   <FaArrowLeft className="h-10 w-10" />
                   <span className="text-3xl ml-3 font-semibold">

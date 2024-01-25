@@ -2,7 +2,8 @@ import { useSpring, animated } from "react-spring";
 import translations from "./translate.jsx";
 import { useLanguage } from "../../context/LanguageProvider.jsx";
 import TitleAgency from "../UI/Title/TitleAgency";
-import ImgText from "../../assets/logo-4.png";
+import ImgBlack from "../../assets/logo-4.png";
+import ImgWhite from "../../assets/logo-57.png";
 import SectionTeam from "./SectionTeam";
 import ButtonAgency from "../UI/Button/ButtonAgency";
 import { useTheme } from "../../context/ThemeProvider.jsx";
@@ -37,7 +38,7 @@ const SectionAgency = () => {
             {translations[language].welcomeAgencyEn}{" "}
             <span>
               <img
-                src={ImgText}
+                src={isDarkMode ? ImgBlack : ImgWhite}
                 className="h-12 sm:h-16 mr-1 ml-1 inline"
                 alt="Icône navi studio."
               />
@@ -106,8 +107,8 @@ const SectionAgency = () => {
                 {translations[language].textSectionAgencyBold1En}{" "}
                 <span>
                   <img
-                    src={ImgText}
-                    className="h-5 ml-1 mr-1 inline"
+                    src={ImgWhite}
+                    className="h-8 mr-1 inline"
                     alt="Icône navi studio."
                   />
                 </span>{" "}
