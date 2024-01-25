@@ -158,9 +158,8 @@ const translations = {
     describe1BoldEthicsFr:
       "en nous assurant de les faire grandir et de les développer sur le long terme.",
     describeWithoutBold1Fr:
-      "Nous nous consacrons à la réussite de nos collaborateurs et à faire de notre entreprise un endroit où il fait bon travailler.",
-    describe1Bold1Fr:
-      "L'éthique est au coeur de notre travail et est notre priorité.",
+      "Nous nous consacrons à la réussite de nos collaborateurs.",
+    describe1Bold1Fr: "L'éthique est au coeur de notre travail.",
     // 2
     title2EthicsFr: "Satisfaction client",
     describe2EthicsFr:

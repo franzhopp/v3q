@@ -84,15 +84,6 @@ const LinksNavbarDesktop = () => {
                       {translations[language].navSousValuesEn}
                     </NavLink>
                   </li>
-                  <li>
-                    <NavLink
-                      to="/services"
-                      className="block hover:text-0C3E78 px-4 py-2 font-extrabold"
-                    >
-                      {translations[language].navSousAboutUsFr}
-                      {translations[language].navSousAboutUsEn}
-                    </NavLink>
-                  </li>
                 </li>
                 <button onClick={toggleSousListsTwoMenu}>
                   <div className="flex items-center justify-between">

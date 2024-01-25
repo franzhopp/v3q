@@ -6,7 +6,7 @@ export const useTheme = () => {
 };
 
 const ThemeProvider = ({ children }) => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState("bg-FFF6E4");
   const toggleTheme = () => {
     setIsDarkMode((prevMode) => !prevMode);
   };

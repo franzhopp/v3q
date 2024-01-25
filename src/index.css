@@ -15,6 +15,10 @@ body {
     cursor: url('./Cursor/Cursor_1.svg'), default !important;
 }
 
+.line {
+    background-color: #FFF6E4;
+}
+
 select {
     outline: none;
     background-color: #FFF6E4;

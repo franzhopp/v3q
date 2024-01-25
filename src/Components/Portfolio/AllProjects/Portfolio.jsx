@@ -1,11 +1,14 @@
+import { useTheme } from "../../../context/ThemeProvider";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import NavbarPages from "../../Navigation/PagesNavbar/PagesNavbar";
 import TitlePorfolio from "../../UI/Title/TitlePorfolio";
 import ImgDefault from "../../../assets/imgdefault.svg";
 import Footer from "../../Footer/Footer";
+import SvgLine from "./SvgLine";
 
 const Portfolio = () => {
+  const { isDarkMode } = useTheme();
   const cards = [
     {
       image: ImgDefault,
@@ -25,43 +28,9 @@ const Portfolio = () => {
   return (
     <section className="bg-FFF6E4 bg-pattern-portfolio">
       <NavbarPages />
-      <div>
-        <TitlePorfolio />
-        <div className="flex justify-start relative">
-          <svg
-            className="absolute left-5 xl:left-72"
-            width="4"
-            height="940"
-            viewBox="0 0 4 1490"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <line
-              x1="2"
-              y1="-8.74228e-08"
-              x2="2.00007"
-              y2="1636"
-              stroke="#C22E2E"
-              stroke-width="4"
-            />
-            <line
-              x1="2"
-              y1="-8.74228e-08"
-              x2="2.00007"
-              y2="1636"
-              stroke="#C22E2E"
-              stroke-width="4"
-            />
-            <line
-              x1="2"
-              y1="-8.74228e-08"
-              x2="2.00007"
-              y2="1636"
-              stroke="#C22E2E"
-              stroke-width="4"
-            />
-          </svg>
-        </div>
+      <TitlePorfolio />
+      <div className="flex justify-start relative">
+        <SvgLine />
       </div>
       <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div className="flex justify-center px-3 pt-12 pb-12">
@@ -73,17 +42,21 @@ const Portfolio = () => {
                 className={`w-auto h-44 object-cover rounded-2xl animate-formbounce`}
               />
             </div>
-            <p className="mt-6 text-black text-xl font-extrabold ">
-              <span className="text-E18AB0 font-bold number">
-                {currentIndex + 1}.
-              </span>{" "}
+            <p
+              className={`mt-6 text-xl font-extrabold ${
+                isDarkMode ? "text-black" : "text-FFF6E4"
+              }`}
+            >
+              <span className="font-bold number">{currentIndex + 1}.</span>{" "}
               <span className="number font-extrabold">
                 {cards[currentIndex].title}
               </span>
               <div className="flex flex-col">
                 <NavLink
                   to={cards[currentIndex].url}
-                  className="font-inter underline text-C22E2E text-sm mb-2"
+                  className={`font-inter underline text-sm mb-2 ${
+                    isDarkMode ? "text-C22E2E" : "text-FFF6E4"
+                  }`}
                   rel="noreferrer"
                   target="_blank"
                 >
@@ -91,13 +64,13 @@ const Portfolio = () => {
                 </NavLink>
               </div>
             </p>
-            <div className="">
-              <p className="text-black overflow-auto p-5 h-40">
+            <div className={`${isDarkMode ? "text-black" : "text-FFF6E4"}`}>
+              <p className="overflow-auto p-5 h-40">
                 {cards[currentIndex].content}
                 <div className="flex justify-center pt-5 pb-5">
                   <NavLink
                     to="/"
-                    className="font-inter text-black text-xs font-extrabold underline transition hover:text-0C3E78"
+                    className="font-inter text-xs font-extrabold underline transition hover:text-0C3E78"
                   >
                     › Retourner à la page d'Accueil ➔
                   </NavLink>

@@ -1,3 +1,4 @@
+import { useTheme } from "../../context/ThemeProvider.jsx";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useLanguage } from "../../context/LanguageProvider.jsx";
@@ -11,6 +12,7 @@ import LogoSnap from "../../assets/snapchat.png";
 
 const Footer = () => {
   const { language } = useLanguage();
+  const { isDarkMode } = useTheme();
   const [status, setStatus] = useState("");
   const ScrollToTop = () => {
     window.scrollTo({
@@ -114,7 +116,9 @@ const Footer = () => {
             <button
               type="submit"
               onSubmit={handleSubmit}
-              className="rounded-tl-none rounded-bl-none rounded-tr-2xl rounded-br-2xl p-2 bg-FFF6E4 text-C22E2E font-extrabold"
+              className={`rounded-tl-none rounded-bl-none rounded-tr-2xl rounded-br-2xl p-2 bg-FFF6E4 font-extrabold ${
+                isDarkMode ? "text-C22E2E" : "text-FFF6E4"
+              }`}
             >
               <span className="transition hover:opacity-30">
                 {translations[language].sendFooterFr}
@@ -149,15 +153,6 @@ const Footer = () => {
             >
               {translations[language].navSousValuesFr}
               {translations[language].navSousValuesEn}
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/services"
-              className="text-FFF6E4 transition hover:text-0C3E78"
-            >
-              {translations[language].navSousAboutUsFr}
-              {translations[language].navSousAboutUsEn}
             </NavLink>
           </li>
           <li>
@@ -202,20 +197,6 @@ const Footer = () => {
               {translations[language].navSousPricingFr}
               {translations[language].navSousPricingEn}
             </NavLink>{" "}
-            <NavLink
-              to="/rate"
-              className="text-FFF6E4 transition hover:text-0C3E78"
-            >
-              FR{" "}
-            </NavLink>
-            {""}
-            <span className="text-FFF6E4">|</span>{" "}
-            <NavLink
-              to="/rateuk"
-              className="text-FFF6E4 transition hover:text-0C3E78"
-            >
-              UK
-            </NavLink>
           </li>
           <li>
             <NavLink
@@ -242,12 +223,6 @@ const Footer = () => {
               Contact
             </NavLink>
           </li>
-          <li>
-            <a className="text-FFF6E4 transition hover:text-0C3E78" href="/">
-              <a href="/">🇫🇷</a> | <a href="/">🇬🇧</a>
-            </a>
-          </li>
-
           <li>
             <NavLink
               to="/privacy"
@@ -276,8 +251,8 @@ const Footer = () => {
             </NavLink>
           </li>
         </ul>
-        <div className="flex justify-center pt-10">
-          <div className="text-FFF6E4 font-inter font-extrabold underline">
+        <div className="flex justify-center pt-12 pb-10">
+          <div className="text-FFF6E4 font-inter font-extrabold">
             › {translations[language].findFr}
             {translations[language].findEn}
           </div>

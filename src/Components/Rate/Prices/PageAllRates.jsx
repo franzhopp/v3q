@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
+import { useTheme } from "../../../context/ThemeProvider.jsx";
 import NavbarPages from "../../Navigation/PagesNavbar/PagesNavbar";
 import TitleRate from "../../UI/Title/TitleRate";
 import Footer from "../../Footer/Footer";
@@ -8,6 +9,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Rate = () => {
+  const { isDarkMode } = useTheme();
   const [openStates, setOpenStates] = useState({});
   const toggleSubList = (category) => {
     setOpenStates((prevOpenStates) => ({
@@ -208,7 +210,9 @@ const Rate = () => {
                   <div className="text-FFF6E4">
                     <button
                       onClick={() => toggleSubList(info.title)}
-                      className="bg-FFF6E4 text-0C3E78 p-3 rounded-3xl shadow-md cursor-pointer transition-transform transform hover:scale-105"
+                      className={`bg-FFF6E4 p-3 rounded-3xl shadow-md cursor-pointer transition-transform transform hover:scale-105 ${
+                        isDarkMode ? "text-0C3E78" : "text-FFF6E4 "
+                      }`}
                     >
                       <div className="flex ml-1 number">
                         En savoir plus <IoIosArrowDown className="mt-2 ml-1" />

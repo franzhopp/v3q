@@ -12,6 +12,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import DarkLightThemes from "../../hook/useTheme.jsx";
 import { useTheme } from "../../context/ThemeProvider.jsx";
+
 const NavbarMobile = () => {
   const [scrollNavbar, setScrollNavbar] = useState();
   const [isAnimating, setIsAnimating] = useState(false);
@@ -208,19 +209,10 @@ const NavbarMobile = () => {
                   <li className="ml-4">
                     <NavLink
                       to="/ethics"
-                      className="block border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
+                      className="block hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       {translations[language].navSousValuesFr}
                       {translations[language].navSousValuesEn}
-                    </NavLink>
-                  </li>
-                  <li className="ml-4">
-                    <NavLink
-                      to="/services"
-                      className="block border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
-                    >
-                      {translations[language].navSousAboutUsFr}
-                      {translations[language].navSousAboutUsEn}
                     </NavLink>
                   </li>
                 </ul>
