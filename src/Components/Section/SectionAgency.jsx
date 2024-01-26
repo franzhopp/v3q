@@ -3,8 +3,6 @@ import { useSpring, animated } from "react-spring";
 import { RiBardLine } from "react-icons/ri";
 import translations from "./translate.jsx";
 import TitleAgency from "../UI/Title/TitleAgency";
-import ImgBlack from "../../assets/logo-4.png";
-import ImgWhite from "../../assets/logo-57.png";
 import SectionTeam from "./SectionTeam";
 import ButtonAgency from "../UI/Button/ButtonAgency";
 import { useTheme } from "../../context/ThemeProvider.jsx";

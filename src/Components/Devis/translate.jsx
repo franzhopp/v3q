@@ -58,7 +58,7 @@ const translations = {
       "Notre équipe produit des sites modernes et intuitifs qui sauront attirer l'oeil des visiteurs. Venez découvrir",
     textWithoutWordBoldFsFr: "dès aujourd'hui.",
     textWithoutBoldFsFr:
-      "Votre site est votre vision. Chaque site raconte une histoire que notre équipe restranscrit en développant des expériences uniques qui reflètent l'identité de votre marque. Découvrez notre agence,",
+      "Votre site est votre vision. Chaque site raconte une histoire que notre équipe restranscrit en développant des expériences uniques qui reflètent l'identité de votre marque. Découvrez l'équipe",
     // Second Section :
     titleSecondSectionFr: "Découvrez des offres adaptées à vos besoins",
     wordBoldSecondSectionFr: "Efficacité.",

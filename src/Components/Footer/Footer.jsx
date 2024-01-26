@@ -131,7 +131,7 @@ const Footer = () => {
             {status && <p>{status}</p>}
           </div>
         </form>
-        <ul className="pt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-16">
+        <ul className="pt-16 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-20">
           <li>
             <NavLink
               to="/"
@@ -247,13 +247,7 @@ const Footer = () => {
             </NavLink>
           </li> */}
         </ul>
-        <div className="flex justify-center pt-12 pb-8">
-          <div className="text-FFF6E4 font-inter font-extrabold">
-            <RiBardLine className="inline" /> {translations[language].findFr}
-            {translations[language].findEn}
-          </div>
-        </div>
-        <ul className="flex justify-center gap-6 md:gap-8">
+        <ul className="flex justify-center gap-6 md:gap-8 pt-16">
           <li>
             <NavLink to="/" rel="noreferrer" target="_blank">
               <img

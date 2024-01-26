@@ -5,8 +5,6 @@ import { useSpring, animated } from "react-spring";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import { RiBardLine } from "react-icons/ri";
 import translations from "./translate.jsx";
-import ImgBlack from "../../assets/logo-4.png";
-import ImgWhite from "../../assets/logo-57.png";
 import ImageLondon from "../../assets/london.png";
 import ImageParis from "../../assets/paris.png";
 import ModalImage from "react-modal-image";

@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import { useLanguage } from "../../context/LanguageProvider.jsx";
 import { RiBardLine } from "react-icons/ri";
 import translations from "./translate.jsx";
-import ImgBlack from "../../assets/logo-4.png";
-import ImgWhite from "../../assets/logo-57.png";
 import ButtonContact from "../UI/Button/ButtonFormContact";
 import { useTheme } from "../../context/ThemeProvider.jsx";
 
