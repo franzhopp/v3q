@@ -4,6 +4,7 @@ import SecondSection from "../Section/SecondSection.jsx";
 import SectionAgency from "../Section/SectionAgency.jsx";
 import Form from "../Contact/FormContact.jsx";
 import Footer from "../Footer/Footer.jsx";
+import BackToTopButton from "../ScrollText/BackToTopButton.jsx";
 
 const Home = () => {
   return (

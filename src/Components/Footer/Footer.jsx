@@ -131,7 +131,7 @@ const Footer = () => {
             {status && <p>{status}</p>}
           </div>
         </form>
-        <ul className="flex flex-wrap justify-center pt-16 font-extrabold gap-6 md:gap-8 lg:gap-20">
+        <ul className="flex flex-wrap justify-center pt-16 gap-6 md:gap-8 lg:gap-24">
           <li>
             <NavLink
               to="/"

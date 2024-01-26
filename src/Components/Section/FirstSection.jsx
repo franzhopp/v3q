@@ -4,6 +4,7 @@ import { RiBardLine } from "react-icons/ri";
 import translations from "./translate.jsx";
 import ButtonContact from "../UI/Button/ButtonFormContact";
 import { useTheme } from "../../context/ThemeProvider.jsx";
+import BackToTopButton from "../ScrollText/BackToTopButton.jsx";
 
 const Section = () => {
   const { language } = useLanguage();
@@ -84,6 +85,7 @@ const Section = () => {
           </div>
         </div>
       </div>
+      <BackToTopButton />
       <ButtonContact />
     </section>
   );
