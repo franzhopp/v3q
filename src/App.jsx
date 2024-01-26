@@ -9,7 +9,7 @@ import Homepage from "./Components/Homepage/Homepage.jsx";
 import Section from "./Components/Section/FirstSection.jsx";
 import EthicsPage from "./Components/Ethics/CardsEthics.jsx";
 import Services from "./Components/Services/MainServices.jsx";
-import DiscoverWebDeveloper from "./Components/Discover/DiscoverWebDevelopper/WebDevelopper.jsx";
+import DiscoverWebDeveloper from "./Components/Discover/DiscoverWebDevelopper/MainPageDevelopper.jsx";
 import DiscoverDesigner from "./Components/Discover/DiscoverDesigner/Designer.jsx";
 import Rate from "./Components/Rate/Prices/PageAllRates.jsx";
 import Portfolio from "./Components/Portfolio/AllProjects/Portfolio.jsx";

@@ -3,12 +3,12 @@ import { useEffect, useState } from "react";
 import { useLanguage } from "../../context/LanguageProvider.jsx";
 import { RiBardLine } from "react-icons/ri";
 import translations from "./translate.jsx";
+import SvgFontRight from "./Svg/SvgFontRight";
+import SvgFontLeft from "./Svg/SvgFontLeft";
 import NavbarEthics from "../Navigation/EthicsNavbar/EthicsNavbar";
 import ImgMac from "../../assets/bg-ethics-mac.png";
 import ImgText from "../../assets/logo-5.png";
 import Footer from "../Footer/Footer";
-import SvgFontRight from "./SvgFontRight";
-import SvgFontLeft from "./SvgFontLeft";
 
 const EthicsPage = () => {
   const { isDarkMode } = useTheme();

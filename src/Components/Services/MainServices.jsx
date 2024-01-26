@@ -2,6 +2,7 @@ import translations from "./translate.jsx";
 import { useLanguage } from "../../context/LanguageProvider.jsx";
 import { useTheme } from "../../context/ThemeProvider.jsx";
 import { RiBardLine } from "react-icons/ri";
+import SvgSettings from "./Svg/SvgSettings.jsx";
 import NavbarServices from "../Navigation/ServicesNavbar/ServicesNavbar";
 import DetailsServices from "./AllServices/DetailsServices";
 import ImgService1 from "../../assets/home1.png";
@@ -11,7 +12,6 @@ import ImgService4 from "../../assets/home4.png";
 import Footer from "../Footer/Footer";
 import ButtonServices from "../UI/Button/ButtonServices";
 import ButtonDevis from "../UI/Button/ButtonFormDevis";
-import SvgSettings from "./SvgSettings.jsx";
 
 const Services = () => {
   const { language } = useLanguage();

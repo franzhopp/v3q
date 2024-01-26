@@ -1,9 +1,9 @@
 import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import { useTheme } from "../../../context/ThemeProvider.jsx";
 import { RiBardLine } from "react-icons/ri";
+import SvgPoint from "../Svg/SvgPoint.jsx";
 import translations from "../translate.jsx";
 import ButtonContactServices from "../../UI/Button/ButtonContactServices";
-import SvgPoint from "../SvgPoint.jsx";
 
 const DetailsServices = () => {
   const { language } = useLanguage();

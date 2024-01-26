@@ -1,4 +1,4 @@
-import SvgMoon from "./SvgMoon";
+import SvgMoon from "../Svg/SvgMoon";
 
 const LogoBrand = () => {
   return (
