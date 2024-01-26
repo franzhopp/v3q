@@ -198,7 +198,7 @@ const SectionExploration = () => {
         </button>
       </div>
       <p
-        className={`mt-6 text-center font-extrabold text-base overflow-auto p-5 h-40 ${
+        className={`font-arial tracking-tighter mt-6 text-center font-extrabold text-base overflow-auto p-5 h-40 ${
           isDarkMode ? "text-black" : "text-FFF6E4"
         }`}
       >

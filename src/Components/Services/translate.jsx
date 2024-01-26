@@ -81,7 +81,7 @@ const translations = {
     textAgency1Fr: "Cette agence a été créée par",
     textAgency2Fr:
       "Nous avons décidé de collaborer pour créer des expériences exceptionnelles.",
-    textAgency3Fr: "Notre Voyage a débuté avec une vision commune",
+    textAgency3Fr: "Notre Voyage a débuté avec une vision commune,",
     textAgencyBold4Fr:
       "celle de repousser les limites de la créativité et l'intuitivité",
     textAgency5Fr:

@@ -88,7 +88,8 @@ const NavbarDesktop = () => {
         <div className="flex justify-between items-center h-24 mt-2 container mx-auto px-4 sm:px-6 lg:px-8">
           <NavLink to="/">
             <img
-              src={isDarkMode ? ImgBlack : ImgWhite}
+              src={ImgBlack}
+              // src={isDarkMode ? ImgBlack : ImgWhite}
               alt="Logo"
               onClick={scrollToTop}
               data-aos="fade-left"

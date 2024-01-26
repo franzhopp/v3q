@@ -36,11 +36,8 @@ const SectionAgency = () => {
             className="text-center font-extrabold mt-28 text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
           >
             {translations[language].welcomeAgencyFr}
-            {translations[language].welcomeAgencyEn}{" "}
-            <span>
-            navi studio.™
-            </span>{" "}–{" "}
-            {translations[language].sloganAgencyFr}
+            {translations[language].welcomeAgencyEn} <span>navi studio.™</span>{" "}
+            – {translations[language].sloganAgencyFr}
             {translations[language].sloganAgencyEn}{" "}
             <animated.span style={props}>
               {translations[language].wordAgencyFr}
@@ -62,13 +59,8 @@ const SectionAgency = () => {
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className="px-5 text-center text-lg sm:text-2xl mt-10"
+            className="font-arial tracking-tighter px-5 text-center text-lg sm:text-2xl mt-10"
           >
-            {/* {translations[language].textAgency1Fr}
-            {translations[language].textAgency1En}{" "}
-            <span className="font-extrabold text-C22E2E">{"Mélissa"}</span>
-            {" & "}
-            <span className="font-extrabold text-C22E2E">Louisa</span>.{" "} */}
             <span>
               {translations[language].textAgency2Fr}
               {translations[language].textAgency2En}
@@ -77,7 +69,6 @@ const SectionAgency = () => {
                 {translations[language].textAgency3Fr}
                 {translations[language].textAgency3En}
               </span>{" "}
-              :
               <span className="font-extrabold">
                 {" "}
                 {translations[language].textAgencyBold4Fr}
@@ -103,10 +94,8 @@ const SectionAgency = () => {
                 <RiBardLine className="inline" />{" "}
                 {translations[language].textSectionAgencyBold1Fr}
                 {translations[language].textSectionAgencyBold1En}{" "}
-                <span>
-                navi studio.™
-                </span>{" "}
-                ? {translations[language].textSectionAgencyBold2Fr}
+                <span>navi studio.™</span> ?{" "}
+                {translations[language].textSectionAgencyBold2Fr}
                 {translations[language].textSectionAgencyBold2En}{" "}
               </span>
               {translations[language].textSectionAgencyWithoutBold2Fr}

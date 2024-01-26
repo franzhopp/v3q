@@ -235,7 +235,7 @@ const Rate = () => {
                         ))}
                         <div className="flex justify-start">
                           <ul className="text-FFF6E4  mt-3 mb-3 text-sm px-10 sm:text-left text-justify">
-                            <p className="number mb-2 underline">
+                            <p className="number mb-2">
                               Detailed informations :
                             </p>
                             {info.subDetails.map(

@@ -42,9 +42,9 @@ const SectionTeam = () => {
     { dataAos: "fade-right", dataAosDelay: 500 },
     { dataAos: "fade-left", dataAosDelay: 600 },
   ];
-  const text1 = "Designer";
-  const letters1 = text1.split("");
-  const animationConfig1 = [
+  const text2 = "Designer";
+  const letters2 = text2.split("");
+  const animationConfig2 = [
     { dataAos: "fade-left", dataAosDelay: 100 },
     { dataAos: "fade-left", dataAosDelay: 200 },
     { dataAos: "fade-left", dataAosDelay: 300 },
@@ -58,9 +58,9 @@ const SectionTeam = () => {
     { dataAos: "fade-right", dataAosDelay: 500 },
     { dataAos: "fade-left", dataAosDelay: 600 },
   ];
-  const text2 = "Web Developper";
-  const letters2 = text2.split("");
-  const animationConfig2 = [
+  const text1 = "Web Developper";
+  const letters1 = text1.split("");
+  const animationConfig1 = [
     { dataAos: "fade-left", dataAosDelay: 100 },
     { dataAos: "fade-left", dataAosDelay: 200 },
     { dataAos: "fade-left", dataAosDelay: 300 },
@@ -112,12 +112,11 @@ const SectionTeam = () => {
           isDarkMode ? "text-black" : "text-FFF6E4"
         }`}
       >
-        <div className="w-4/5 sm:w-1/2 rounded-lg shadow-md">
+        <div className="w-4/5 sm:w-1/2">
           <p
             data-aos="fade-up"
-            mb-10
             data-aos-anchor-placement="top-bottom"
-            className="px-5 text-center text-lg md:text-center lg:text-center sm:text-2xl mt-10 mb-5"
+            className="font-arial px-5 text-center tracking-tighter text-lg md:text-center lg:text-center sm:text-2xl mt-10 mb-5"
           >
             <span className="font-extrabold">
               {translations[language].textSectionTeamBold1Fr}
@@ -142,19 +141,19 @@ const SectionTeam = () => {
             <div className="mb-10 sm:mb-0">
               <div className="w-auto h-auto">
                 <ModalImage
-                  small={ImageLondon}
-                  large={ImageLondon}
+                  large={ImageParis}
+                  small={ImageParis}
                   className="rounded-2xl ml-10 sm:ml-0 transition hover:opacity-90"
                 />
                 <p className="text-sm sm:ml-0 ml-10">
-                  📍 London, United Kingdom.
+                  📍 Paris, Île-de-France, France.
                 </p>
               </div>
             </div>
             <div className="flex flex-col">
               <div className="text-left mb-5 ml-10 sm:ml-0">
                 <p data-aos="fade-right" className="text-4xl font-extrabold">
-                  Mélissa Nefti
+                  Louisa Fernandez
                 </p>
                 <p className="text-4xl font-extrabold">
                   {" "}
@@ -172,7 +171,7 @@ const SectionTeam = () => {
                   style={props}
                   className="text-4xl font-extrabold tracking-wide"
                 >
-                  London
+                  Paris
                 </animated.h1>
               </div>
 
@@ -181,26 +180,26 @@ const SectionTeam = () => {
                   <span className="font-extrabold">
                     {" "}
                     <RiBardLine className="inline" />{" "}
-                    {translations[language].textSectionTeamBioBold1MelissaFr}
-                    {translations[language].textSectionTeamBioBold1MelissaEn}
+                    {translations[language].textSectionTeamBioBold1LouisaFr}
+                    {translations[language].textSectionTeamBioBold1LouisaEn}
                   </span>{" "}
                   {
                     translations[language]
-                      .textSectionTeamBioWithoutBold1MelissaFr
+                      .textSectionTeamBioWithoutBold1LouisaFr
                   }
                   {
                     translations[language]
-                      .textSectionTeamBioWithoutBold1MelissaEn
+                      .textSectionTeamBioWithoutBold1LouisaEn
                   }{" "}
                   <span className="font-extrabold">
-                    {translations[language].textSectionTeamBioBold2MelissaFr}
+                    {translations[language].textSectionTeamBioBold2LouisaFr}
                     {
-                      translations[language].textSectionTeamBioBold2MelissaEn
-                    } «{" "}
-                    <span className="text-C22E2E font-inter underline">
-                      <NavLink to="/designer">Designer</NavLink>
-                    </span>{" "}
-                    ».
+                      translations[language].textSectionTeamBioBold2LouisaEn
+                    }{" "}
+                    <span className="text-C22E2E hover:text-0C3E78 font-inter">
+                      <NavLink to="/dev">Web Developer</NavLink>
+                    </span>
+                    .
                   </span>
                 </p>
               </div>
@@ -237,19 +236,19 @@ const SectionTeam = () => {
               <div className="mb-10 sm:mb-0">
                 <div className="w-auto h-auto">
                   <ModalImage
-                    small={ImageParis}
-                    large={ImageParis}
+                    small={ImageLondon}
+                    large={ImageLondon}
                     className="rounded-2xl ml-10 sm:ml-0 transition hover:opacity-90"
                   />
                 </div>
                 <p className="text-sm sm:ml-0 ml-10">
-                  📍 Paris, Île-de-France, France.
+                  📍 London, United Kingdom.
                 </p>
               </div>
               <div className="flex flex-col">
                 <div className="text-left mb-5 ml-10 sm:ml-0">
                   <p data-aos="fade-left" className="text-4xl font-extrabold">
-                    Louisa Fernandez
+                    Mélissa Nefti
                   </p>
                   <p className="text-4xl font-extrabold">
                     {" "}
@@ -267,35 +266,34 @@ const SectionTeam = () => {
                     style={props}
                     className="text-4xl font-extrabold tracking-wide"
                   >
-                    Paris
+                    London
                   </animated.h1>
                 </div>
-
                 <div className="w-72">
                   <p className=" text-left text-base mb-10 ml-10 sm:ml-0 p">
                     <span className="font-extrabold">
                       {" "}
                       <RiBardLine className="inline" />{" "}
-                      {translations[language].textSectionTeamBioBold1LouisaFr}
-                      {translations[language].textSectionTeamBioBold1LouisaEn}
+                      {translations[language].textSectionTeamBioBold1MelissaFr}
+                      {translations[language].textSectionTeamBioBold1MelissaEn}
                     </span>{" "}
                     {
                       translations[language]
-                        .textSectionTeamBioWithoutBold1LouisaFr
+                        .textSectionTeamBioWithoutBold1MelissaFr
                     }
                     {
                       translations[language]
-                        .textSectionTeamBioWithoutBold1LouisaEn
+                        .textSectionTeamBioWithoutBold1MelissaEn
                     }{" "}
                     <span className="font-extrabold">
-                      {translations[language].textSectionTeamBioBold2LouisaFr}
+                      {translations[language].textSectionTeamBioBold2MelissaFr}
                       {
-                        translations[language].textSectionTeamBioBold2LouisaEn
-                      } «{" "}
-                      <span className="text-C22E2E font-inter underline">
-                        <NavLink to="/dev">Web Developer</NavLink>
-                      </span>{" "}
-                      ».
+                        translations[language].textSectionTeamBioBold2MelissaEn
+                      }{" "}
+                      <span className="text-C22E2E hover:text-0C3E78 font-inter">
+                        <NavLink to="/designer">Designer</NavLink>
+                      </span>
+                      .
                     </span>
                   </p>
                 </div>

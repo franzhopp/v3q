@@ -26,7 +26,7 @@ const DarkLightThemes = () => {
         className={`${isDarkMode ? "text-C22E2E" : "text-FFF6E4"}`}
       >
         {isDarkMode ? "" : ""}
-        <div>
+        <div data-aos="fade-right">
           {isDarkMode ? (
             <IoMdSunny className="h-8 w-5 2xl:h-7 2xl:w-7 2xl:mt-1 mt-0" />
           ) : (

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
-import { useTheme } from "../../context/ThemeProvider";
+import { useTheme } from "../../context/ThemeProvider.jsx";
 import { useLanguage } from "../../context/LanguageProvider";
 import DarkLightThemes from "../../hook/useTheme";
 import ModalSearch from "../Modal/SearchModal";
