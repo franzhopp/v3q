@@ -60,13 +60,7 @@ const Section = () => {
               </span>{" "}
               {translations[language].textWithoutBoldOneFr}
               {translations[language].textWithoutBoldOneEn}{" "}
-              <span>
-                <img
-                  src={isDarkMode ? ImgBlack : ImgWhite}
-                  className="h-5 mr-1 inline"
-                  alt="Icône navi studio."
-                />
-              </span>{" "}
+              <span>navi studio.™</span>{" "}
               {translations[language].textWithoutWordBoldFsFr}
             </p>
           </div>

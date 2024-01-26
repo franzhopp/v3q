@@ -121,12 +121,7 @@ const SectionTeam = () => {
           >
             <span className="font-extrabold">
               {translations[language].textSectionTeamBold1Fr}
-              {translations[language].textSectionTeamBold1En}{" "}
-              <img
-                src={isDarkMode ? ImgBlack : ImgWhite}
-                className="h-6 ml-1 mr-2 sm:h-8 inline"
-                alt="Icône navi studio."
-              />
+              {translations[language].textSectionTeamBold1En} navi studio.™{" "}
             </span>
             <span className="font-extrabold">
               {translations[language].textSectionTeamBold2Fr}

@@ -38,11 +38,7 @@ const SectionAgency = () => {
             {translations[language].welcomeAgencyFr}
             {translations[language].welcomeAgencyEn}{" "}
             <span>
-              <img
-                src={isDarkMode ? ImgBlack : ImgWhite}
-                className="h-12 sm:h-16 mr-1 ml-1 inline"
-                alt="Icône navi studio."
-              />
+            navi studio.™
             </span>{" "}–{" "}
             {translations[language].sloganAgencyFr}
             {translations[language].sloganAgencyEn}{" "}
@@ -108,11 +104,7 @@ const SectionAgency = () => {
                 {translations[language].textSectionAgencyBold1Fr}
                 {translations[language].textSectionAgencyBold1En}{" "}
                 <span>
-                  <img
-                    src={ImgWhite}
-                    className="h-8 mr-1 inline"
-                    alt="Icône navi studio."
-                  />
+                navi studio.™
                 </span>{" "}
                 ? {translations[language].textSectionAgencyBold2Fr}
                 {translations[language].textSectionAgencyBold2En}{" "}
