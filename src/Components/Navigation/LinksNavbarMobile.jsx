@@ -370,7 +370,7 @@ const LinksNavbarMobile = () => {
             }`}
           >
             <FaSearch
-              className="h-8 mr-5"
+              className="h-4 mr-5"
               onClick={() => {
                 setOpenModel(true);
               }}

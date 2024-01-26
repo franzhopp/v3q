@@ -28,9 +28,9 @@ const DarkLightThemes = () => {
         {isDarkMode ? "" : ""}
         <div>
           {isDarkMode ? (
-            <IoMdSunny className="h-8 w-5 2xl:h-7 2xl:w-7 2xl:mt-1 mt-0" />
+            <IoMdSunny className="h-4 w-5 2xl:h-7 2xl:w-7 2xl:mt-1 mt-0" />
           ) : (
-            <IoMdMoon className="h-8 w-5 2xl:h-7 2xl:w-7 2xl:mt-1 mt-0" />
+            <IoMdMoon className="h-4 w-5 2xl:h-7 2xl:w-7 2xl:mt-1 mt-0" />
           )}
         </div>
       </button>
