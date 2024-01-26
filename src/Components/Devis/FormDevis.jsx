@@ -9,6 +9,7 @@ import TitleDevis from "../UI/Title/TitleFormDevis.jsx";
 import ImgText from "../../assets/logo-5.png";
 import ButtonSend from "../UI/Button/ButtonSend.jsx";
 import Footer from "../Footer/Footer.jsx";
+import BackToTopButton from "../ScrollText/BackToTopButton.jsx";
 
 const DevisFree = ({ label, type, value }) => {
   const navigate = useNavigate();
@@ -253,6 +254,7 @@ const DevisFree = ({ label, type, value }) => {
                   </li>
                 </ul>
               </p>
+              <BackToTopButton />
               <div className="flex flex-col text-left mx-6">
                 <NavLink
                   className="text-C22E2E shadow-full mt-5 mb-6 font-extrabold underline transition hover:text-0C3E78"

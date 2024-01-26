@@ -16,6 +16,7 @@ import LogoInsta from "../../../assets/instagram1.png";
 import LogoLinkedin from "../../../assets/linkedin1.png";
 import LogoSnap from "../../../assets/snapchat1.png";
 import Footer from "../../Footer/Footer.jsx";
+import BackToTopButton from "../../ScrollText/BackToTopButton.jsx";
 
 const DiscoverWebDeveloper = () => {
   const { language } = useLanguage();
@@ -86,6 +87,7 @@ const DiscoverWebDeveloper = () => {
               />
             </svg>
           </NavLink>
+          <BackToTopButton/>
         </div>
       </div>
       <div className="picture-belgique h-52"></div>

@@ -12,6 +12,7 @@ import ImgService4 from "../../assets/home4.png";
 import Footer from "../Footer/Footer";
 import ButtonServices from "../UI/Button/ButtonServices";
 import ButtonDevis from "../UI/Button/ButtonFormDevis";
+import BackToTopButton from "../ScrollText/BackToTopButton.jsx";
 
 const Services = () => {
   const { language } = useLanguage();
@@ -183,6 +184,7 @@ const Services = () => {
         <div className="flex justify-center pt-16">
           <SvgSettings />
         </div>
+        <BackToTopButton />
         <div
           className={`flex justify-center pt-16 ${
             isDarkMode ? "text-black" : " text-FFF6E4"

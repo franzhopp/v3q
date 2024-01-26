@@ -7,6 +7,7 @@ import NavbarPages from "../../Navigation/PagesNavbar/PagesNavbar";
 import Footer from "../../Footer/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import BackToTopButton from "../../ScrollText/BackToTopButton.jsx";
 
 const Rate = () => {
   const { isDarkMode } = useTheme();
@@ -323,6 +324,7 @@ const Rate = () => {
             ))}
           </div>
         </div>
+        <BackToTopButton />
         <div className="flex justify-center pt-2">
           <div className="w-96 sm:w-full">
             <p className="text-center text-sm text-C22E2E px-6">
@@ -333,7 +335,7 @@ const Rate = () => {
         </div>
         <div className="flex flex-col text-center justify-center pt-6 pb-20">
           <div className="flex justify-center mt-10 mb-10">
-            <a onClick={scrollToTop}>
+            <NavLink to="/quote">
               <svg
                 className="rounded-full shadow-lg"
                 xmlns="http://www.w3.org/2000/svg"
@@ -348,12 +350,12 @@ const Rate = () => {
                     fill="#E18AB0"
                   />
                   <path
-                    d="M49.8064 23.584C48.4393 22.2174 46.2233 22.2177 44.8566 23.5847L22.5859 45.8618C21.2192 47.2287 21.2195 49.4448 22.5866 50.8115C23.9536 52.1782 26.1697 52.1779 27.5363 50.8108L47.3325 31.009L67.1343 50.8052C68.5013 52.1719 70.7174 52.1716 72.084 50.8045C73.4507 49.4375 73.4504 47.2214 72.0833 45.8548L49.8064 23.584ZM50.8383 72.0588L50.8318 26.0588L43.8318 26.0598L43.8383 72.0598L50.8383 72.0588Z"
+                    d="M73.4749 50.4749C74.8417 49.108 74.8417 46.892 73.4749 45.5251L51.201 23.2513C49.8342 21.8844 47.6181 21.8844 46.2513 23.2513C44.8844 24.6181 44.8844 26.8342 46.2513 28.201L66.0503 48L46.2513 67.799C44.8844 69.1658 44.8844 71.3819 46.2513 72.7487C47.6181 74.1156 49.8342 74.1156 51.201 72.7487L73.4749 50.4749ZM25 51.5L71 51.5V44.5L25 44.5V51.5Z"
                     fill="#FFF6E4"
                   />
                 </g>
               </svg>
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>

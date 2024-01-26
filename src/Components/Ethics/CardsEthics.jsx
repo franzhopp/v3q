@@ -9,6 +9,7 @@ import NavbarEthics from "../Navigation/EthicsNavbar/EthicsNavbar";
 import ImgMac from "../../assets/bg-ethics-mac.png";
 import ImgText from "../../assets/logo-5.png";
 import Footer from "../Footer/Footer";
+import BackToTopButton from "../ScrollText/BackToTopButton";
 
 const EthicsPage = () => {
   const { isDarkMode } = useTheme();
@@ -249,6 +250,7 @@ const EthicsPage = () => {
           </div>
         </div>
       </div>
+      <BackToTopButton />
       <div className="flex justify-center pt-16">
         <svg
           className="animate-formbounce"
@@ -284,7 +286,6 @@ const EthicsPage = () => {
           />
         </svg>
       </div>
-
       <section className="bg-E18AB0 py-24 px-4 sm:px-6 lg:px-8">
         <div className="pt-8 pb-10 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
           <div className="min-h-500 w-80 rounded-lg mt-5">
