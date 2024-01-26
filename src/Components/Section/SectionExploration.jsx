@@ -18,6 +18,18 @@ import Img13 from "../../assets/13.png";
 
 const SectionExploration = () => {
   const { isDarkMode } = useTheme();
+  const [currentIndex, setCurrentIndex] = useState(0);
+  // const [borderColors, setBorderColors] = useState([
+  //   "#0C3E78",
+  //   "#C22E2E",
+  //   "#E18AB0",
+  // ]);
+  // const handleBorderColorChange = (index) => {
+  //   const colorPalette = ["#0C3E78", "#C22E2E", "#E18AB0"];
+  //   const newBorderColors = [...borderColors];
+  //   newBorderColors[index] = colorPalette[index % colorPalette.length];
+  //   setBorderColors(newBorderColors);
+  // };
   const cards = [
     {
       image: Img1,
@@ -98,8 +110,6 @@ const SectionExploration = () => {
       user: "📸 | Ruben.",
     },
   ];
-  const [currentIndex, setCurrentIndex] = useState(0);
-
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
   };
@@ -113,6 +123,7 @@ const SectionExploration = () => {
       <div className="relative">
         <div className="absolute top-36 -left-36 2xl:top-40 2xl:left-20">
           <svg
+            // onClick={() => handleBorderColorChange(0)}
             xmlns="http://www.w3.org/2000/svg"
             width="152"
             height="152"
@@ -122,6 +133,7 @@ const SectionExploration = () => {
             <circle cx="76" cy="76" r="76" fill="#0C3E78" />
           </svg>
           <svg
+            // onClick={() => handleBorderColorChange(1)}
             xmlns="http://www.w3.org/2000/svg"
             width="152"
             height="152"
@@ -131,6 +143,7 @@ const SectionExploration = () => {
             <circle cx="76" cy="76" r="76" fill="#C22E2E" />
           </svg>
           <svg
+            // onClick={() => handleBorderColorChange(2)}
             xmlns="http://www.w3.org/2000/svg"
             width="152"
             height="152"
@@ -142,7 +155,9 @@ const SectionExploration = () => {
         </div>
       </div>
       <div className="flex justify-center px-3 pt-20">
-        <div className="bg-black border-C22E2E border-2 p-2 h-1/2 rounded-3xl shadow-2xl mr-5 ml-5">
+        <div
+          className={`bg-black border-C22E2E border-2 p-2 h-1/2 rounded-3xl shadow-2xl mr-5 ml-5`}
+        >
           <div className="flex justify-center relative">
             <div className="absolute">
               <svg
