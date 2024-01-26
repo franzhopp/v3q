@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { useTheme } from "../../../context/ThemeProvider.jsx";
+import { RiBardLine } from "react-icons/ri";
 import NavbarPages from "../../Navigation/PagesNavbar/PagesNavbar";
 import TitleRate from "../../UI/Title/TitleRate";
 import Footer from "../../Footer/Footer";
@@ -199,7 +200,7 @@ const Rate = () => {
                 <div className="w-96 sm:w-full">
                   <div className="flex flex-wrap justify-between text-FFF6E4 p-10 text-3xl sm:text-4xl">
                     <div data-aos="fade-left" className="">
-                      › {info.title}
+                      <RiBardLine className="inline" /> {info.title}
                     </div>
                     <div data-aos="fade-right" className="text-right">
                       {info.price}
@@ -226,7 +227,7 @@ const Rate = () => {
                             data-aos-duration="500"
                             key={detailIndex}
                           >
-                            › {detail}
+                            <RiBardLine className="inline" /> {detail}
                           </li>
                         ))}
                         <div className="flex justify-start">
@@ -252,7 +253,8 @@ const Rate = () => {
                           to="/devis"
                           className="pt-5 font-extrabold number underline"
                         >
-                          › Demander un devis gratuit
+                          <RiBardLine className="inline" /> Demander un devis
+                          gratuit
                         </NavLink>
                       </ul>
                     )}
@@ -308,7 +310,7 @@ const Rate = () => {
                 <div className="w-96 sm:w-full">
                   <div className="flex flex-wrap justify-between text-FFF6E4 p-10 text-3xl sm:text-4xl">
                     <div data-aos="fade-left" className="">
-                      › {info.title}
+                      <RiBardLine className="inline" /> {info.title}
                     </div>
                     <div data-aos="fade-right" className="text-right">
                       {info.price}
@@ -332,19 +334,19 @@ const Rate = () => {
             to="/services"
             className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
           >
-            › Découvrir Prestations ➔
+            <RiBardLine className="inline" /> Découvrir Prestations ➔
           </NavLink>
           <NavLink
             to="/devis"
             className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
           >
-            › Découvrir Devis Gratuit ➔
+            <RiBardLine className="inline" /> Découvrir Devis Gratuit ➔
           </NavLink>
           <NavLink
             to="/"
             className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
           >
-            › Retourner à la page d'Accueil ➔
+            <RiBardLine className="inline" /> Retourner à la page d'Accueil ➔
           </NavLink> */}
           <div className="flex justify-center mt-10 mb-10">
             <a onClick={scrollToTop}>

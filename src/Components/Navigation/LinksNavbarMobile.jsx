@@ -7,11 +7,14 @@ import ModalSearch from "./../Modal/SearchModal";
 import translations from "./translate.jsx";
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Image from "./../../assets/logo-5.png";
+import ImgBlack from "../../assets/logo-5.png";
+import ImgWhite from "../../assets/logo-57.png";
 import "./../Section/FirstSection.jsx";
 import "./../Homepage/Homepage";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ButtonOpen from "./ButtonMobile/ButtonOpen.jsx";
+import ButtonClose from "./ButtonMobile/ButtonClose.jsx";
 
 const LinksNavbarMobile = () => {
   const [isAnimating, setIsAnimating] = useState(false);
@@ -83,90 +86,26 @@ const LinksNavbarMobile = () => {
       <div className="px-5 h-28 flex items-center justify-between">
         <NavLink to="/" data-aos="fade-left">
           <img
-            src={Image}
+            src={isDarkMode ? ImgBlack : ImgWhite}
             onClick={scrollToTop}
             alt="Logo navi studio."
             className="h-14 w-auto"
           />
         </NavLink>
-        <div>
-          <div
-            data-aos="fade-left"
-            onClick={toggleMenuMobile}
-            className="icon-toggle bg-C22E2E cursor-pointer rounded-md p-2 inline-flex items-center justify-center ring-1 ring-white ring-opacity-20"
-          >
-            {isAnimating ? (
-              <svg
-                onClick={handleAnimateButtonClick}
-                xmlns="http://www.w3.org/2000/svg"
-                width="53"
-                height="53"
-                viewBox="0 0 53 53"
-                fill="none"
-              >
-                <circle
-                  cx="26.5"
-                  cy="26.5"
-                  r="26.5"
-                  transform="rotate(90 26.5 26.5)"
-                  fill="#C22E2E"
-                />
-                <path
-                  d="M26 12L26 41"
-                  stroke="#FFF6E4"
-                  strokeWidth="6"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M17 18L17 35"
-                  stroke="#FFF6E4"
-                  strokeWidth="6"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M35 18L35 35"
-                  stroke="#FFF6E4"
-                  strokeWidth="6"
-                  strokeLinecap="round"
-                />
-              </svg>
-            ) : (
-              <svg
-                onClick={handleAnimateButtonClick}
-                xmlns="http://www.w3.org/2000/svg"
-                width="53"
-                height="53"
-                viewBox="0 0 53 53"
-                fill="none"
-              >
-                <circle
-                  cy="26.5"
-                  cx="26.5"
-                  r="26.5"
-                  transform="rotate(90 26.5 26.5)"
-                  fill="#C22E2E"
-                />
-                <path
-                  d="M12 27H41"
-                  stroke="#FFF6E4"
-                  strokeWidth="6"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M18 36L35 36"
-                  stroke="#FFF6E4"
-                  strokeWidth="6"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M18 18L35 18"
-                  stroke="#FFF6E4"
-                  strokeWidth="6"
-                  strokeLinecap="round"
-                />
-              </svg>
-            )}
-          </div>
+        <div
+          data-aos="fade-left"
+          onClick={toggleMenuMobile}
+          className="cursor-pointer rounded-full"
+        >
+          {isAnimating ? (
+            <div onClick={handleAnimateButtonClick}>
+              <ButtonOpen />
+            </div>
+          ) : (
+            <div onClick={handleAnimateButtonClick}>
+              <ButtonClose />
+            </div>
+          )}
         </div>
       </div>
       <ul className={`p-5 ${isOpen ? "block" : "hidden"}`}>

@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
+import { RiBardLine } from "react-icons/ri";
 import { useTheme } from "../../../context/ThemeProvider.jsx";
 import NavbarPages from "../../Navigation/PagesNavbar/PagesNavbar";
 import Footer from "../../Footer/Footer";
@@ -202,7 +203,7 @@ const Rate = () => {
                 <div className="w-96 sm:w-full">
                   <div className="flex flex-wrap justify-between text-FFF6E4 p-10 text-3xl sm:text-4xl">
                     <div data-aos="fade-left" className="">
-                      › {info.title}
+                      <RiBardLine className="inline" /> {info.title}
                     </div>
                     <div data-aos="fade-right" className="text-right">
                       {info.price}
@@ -229,7 +230,7 @@ const Rate = () => {
                             data-aos-duration="500"
                             key={detailIndex}
                           >
-                            › {detail}
+                            <RiBardLine className="inline" /> {detail}
                           </li>
                         ))}
                         <div className="flex justify-start">
@@ -255,7 +256,7 @@ const Rate = () => {
                           to="/devis"
                           className="pt-5 font-extrabold number underline"
                         >
-                          › Request a free quote
+                          <RiBardLine className="inline" /> Request a free quote
                         </NavLink>
                       </ul>
                     )}
@@ -311,7 +312,7 @@ const Rate = () => {
                 <div className="w-96 sm:w-full">
                   <div className="flex flex-wrap justify-between text-FFF6E4 p-10 text-3xl sm:text-4xl">
                     <div data-aos="fade-left" className="">
-                      › {info.title}
+                      <RiBardLine className="inline" /> {info.title}
                     </div>
                     <div data-aos="fade-right" className="text-right">
                       {info.price}

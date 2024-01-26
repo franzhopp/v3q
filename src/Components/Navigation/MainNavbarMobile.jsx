@@ -4,7 +4,8 @@ import { useLanguage } from "../../context/LanguageProvider.jsx";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
 import translations from "./translate.jsx";
-import Image from "../../assets/logo-5.png";
+import ImgBlack from "../../assets/logo-5.png";
+import ImgWhite from "../../assets/logo-57.png";
 import ModalSearch from "../Modal/SearchModal.jsx";
 import "../Section/FirstSection.jsx";
 import "../Homepage/Homepage.jsx";
@@ -12,6 +13,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import DarkLightThemes from "../../hook/useTheme.jsx";
 import { useTheme } from "../../context/ThemeProvider.jsx";
+import ButtonClose from "./ButtonMobile/ButtonClose.jsx";
+import ButtonOpen from "./ButtonMobile/ButtonOpen.jsx";
 
 const NavbarMobile = () => {
   const [scrollNavbar, setScrollNavbar] = useState();
@@ -91,94 +94,33 @@ const NavbarMobile = () => {
       className={`fixed w-full top-0 left-0 shadow-md 2xl:hidden bg-FFF6E4 z-max`}
     >
       <div className="px-5 h-28 flex items-center justify-between">
+        {/* LOGO */}
         <NavLink to="/" data-aos="fade-left">
           <img
-            src={Image}
+            src={isDarkMode ? ImgBlack : ImgWhite}
             onClick={scrollToTop}
             alt="Logo navi studio."
             className="h-14 w-auto"
           />
         </NavLink>
-        <div>
-          <div
-            data-aos="fade-left"
-            onClick={toggleMenuMobile}
-            className="icon-toggle bg-C22E2E cursor-pointer rounded-md p-2 inline-flex items-center justify-center ring-1 ring-white ring-opacity-20"
-          >
-            {isAnimating ? (
-              <svg
-                onClick={handleAnimateButtonClick}
-                xmlns="http://www.w3.org/2000/svg"
-                width="53"
-                height="53"
-                viewBox="0 0 53 53"
-                fill="none"
-              >
-                <circle
-                  cx="26.5"
-                  cy="26.5"
-                  r="26.5"
-                  transform="rotate(90 26.5 26.5)"
-                  fill="#C22E2E"
-                />
-                <path
-                  d="M26 12L26 41"
-                  stroke="#FFF6E4"
-                  strokeWidth="6"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M17 18L17 35"
-                  stroke="#FFF6E4"
-                  strokeWidth="6"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M35 18L35 35"
-                  stroke="#FFF6E4"
-                  strokeWidth="6"
-                  strokeLinecap="round"
-                />
-              </svg>
-            ) : (
-              <svg
-                onClick={handleAnimateButtonClick}
-                xmlns="http://www.w3.org/2000/svg"
-                width="53"
-                height="53"
-                viewBox="0 0 53 53"
-                fill="none"
-              >
-                <circle
-                  cy="26.5"
-                  cx="26.5"
-                  r="26.5"
-                  transform="rotate(90 26.5 26.5)"
-                  fill="#C22E2E"
-                />
-                <path
-                  d="M12 27H41"
-                  stroke="#FFF6E4"
-                  strokeWidth="6"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M18 36L35 36"
-                  stroke="#FFF6E4"
-                  strokeWidth="6"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M18 18L35 18"
-                  stroke="#FFF6E4"
-                  strokeWidth="6"
-                  strokeLinecap="round"
-                />
-              </svg>
-            )}
-          </div>
+        {/* BUTTON MOBILE NAV */}
+        <div
+          data-aos="fade-left"
+          onClick={toggleMenuMobile}
+          className="cursor-pointer rounded-full"
+        >
+          {isAnimating ? (
+            <div onClick={handleAnimateButtonClick}>
+              <ButtonOpen />
+            </div>
+          ) : (
+            <div onClick={handleAnimateButtonClick}>
+              <ButtonClose />
+            </div>
+          )}
         </div>
       </div>
+      {/* LINKS */}
       <ul className={`p-5 ${isOpen ? "block" : "hidden"}`}>
         <li className={`${isDarkMode ? "text-C22E2E" : "text-FFF6E4"}`}>
           <NavLink className="block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
@@ -394,6 +336,7 @@ const NavbarMobile = () => {
           <ModalSearch closeModal={setOpenModel} searchQuery={setSearchQuery} />
         )}
       </ul>
+      {/* END LINKS */}
       <div id="home"></div>
     </nav>
   );

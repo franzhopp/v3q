@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useTheme } from "../../context/ThemeProvider.jsx";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import { RiBardLine } from "react-icons/ri";
 import Img1 from "../../assets/2.png";
 import Img2 from "../../assets/3.png";
 import Img3 from "../../assets/1.png";

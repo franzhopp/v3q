@@ -2,6 +2,7 @@ import { useTheme } from "../../../context/ThemeProvider";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import { RiBardLine } from "react-icons/ri";
 import NavbarPages from "../../Navigation/PagesNavbar/PagesNavbar";
 import TitlePorfolio from "../../UI/Title/TitlePorfolio";
 import ImgDefault from "../../../assets/imgdefault.svg";
@@ -61,7 +62,7 @@ const Portfolio = () => {
                   rel="noreferrer"
                   target="_blank"
                 >
-                  › Lien vers le site ➔
+                  <RiBardLine className="inline" /> Lien vers le site ➔
                 </NavLink>
               </div>
             </p>

@@ -1,6 +1,7 @@
 import { useTheme } from "../../context/ThemeProvider";
 import { useEffect, useState } from "react";
 import { useLanguage } from "../../context/LanguageProvider.jsx";
+import { RiBardLine } from "react-icons/ri";
 import translations from "./translate.jsx";
 import NavbarEthics from "../Navigation/EthicsNavbar/EthicsNavbar";
 import ImgMac from "../../assets/bg-ethics-mac.png";
@@ -82,7 +83,8 @@ const EthicsPage = () => {
               ))}
             </h2>
             <p className="text-xl font-inter font-extrabold">
-              › {translations[language].title1EthicsFr}
+              <RiBardLine className="inline" />{" "}
+              {translations[language].title1EthicsFr}
               {translations[language].title1EthicsEn}
             </p>
             <span className="absolute w-48 h-1 bg-E18AB0"></span>
@@ -121,7 +123,8 @@ const EthicsPage = () => {
               ))}
             </h2>
             <p className="text-xl font-inter font-extrabold">
-              › {translations[language].title2EthicsFr}
+              <RiBardLine className="inline" />{" "}
+              {translations[language].title2EthicsFr}
               {translations[language].title2EthicsEn}
             </p>
             <span className="absolute w-48 h-1 bg-E18AB0"></span>
@@ -154,7 +157,7 @@ const EthicsPage = () => {
               ))}
             </h2>
             <p className=" text-xl font-inter font-extrabold">
-              › Passion & Motivation
+              <RiBardLine className="inline" /> Passion & Motivation
             </p>
             <span className="absolute w-48 h-1 bg-E18AB0"></span>
             <div className="w-72 mt-5">
@@ -209,7 +212,8 @@ const EthicsPage = () => {
                 data-aos-anchor-placement="top-bottom"
                 className=" text-center p-5 mt-10"
               >
-                › {translations[language].describe4EthicsWorkFr}
+                <RiBardLine className="inline" />{" "}
+                {translations[language].describe4EthicsWorkFr}
                 {translations[language].describe4EthicsWorkEn}{" "}
                 <span className="font-extrabold">
                   {translations[language].describe4BoldEthicsWorkFr}
@@ -291,7 +295,8 @@ const EthicsPage = () => {
             >
               <h1 className="text-4xl number font-semibold pb-5">07.</h1>
               <span className="font-extrabold">
-                › {translations[language].titleDetailsEthics1Fr}
+                <RiBardLine className="inline" />{" "}
+                {translations[language].titleDetailsEthics1Fr}
                 {translations[language].titleDetailsEthics1En}{" "}
               </span>
               {translations[language].describeDetailsEthics1Fr}
@@ -306,7 +311,8 @@ const EthicsPage = () => {
             >
               <h1 className="text-4xl number font-semibold pb-5">08.</h1>
               <span className="font-extrabold">
-                › {translations[language].titleDetailsEthics2Fr}
+                <RiBardLine className="inline" />{" "}
+                {translations[language].titleDetailsEthics2Fr}
                 {translations[language].titleDetailsEthics2En}{" "}
               </span>
               {translations[language].describeDetailsEthics2Fr}
@@ -322,7 +328,8 @@ const EthicsPage = () => {
             >
               <h1 className="text-4xl number font-semibold pb-5">09.</h1>
               <span className="font-extrabold">
-                › {translations[language].titleDetailsEthics3Fr}
+                <RiBardLine className="inline" />{" "}
+                {translations[language].titleDetailsEthics3Fr}
                 {translations[language].titleDetailsEthics3En}{" "}
               </span>
               {translations[language].describeDetailsEthics3Fr}
@@ -383,7 +390,8 @@ const EthicsPage = () => {
                 data-aos-anchor-placement="top-bottom"
                 className="text-FFF6E4 text-center"
               >
-                › {translations[language].describe6EthicsWorkFr}
+                <RiBardLine className="inline" />{" "}
+                {translations[language].describe6EthicsWorkFr}
                 {translations[language].describe6EthicsWorkEn}{" "}
                 <span className="font-extrabold">
                   {translations[language].describe6BoldEthicsWorkFr}

@@ -1,6 +1,7 @@
-import { useSpring, animated } from "react-spring";
-import translations from "./translate.jsx";
 import { useLanguage } from "../../context/LanguageProvider.jsx";
+import { useSpring, animated } from "react-spring";
+import { RiBardLine } from "react-icons/ri";
+import translations from "./translate.jsx";
 import TitleAgency from "../UI/Title/TitleAgency";
 import ImgBlack from "../../assets/logo-4.png";
 import ImgWhite from "../../assets/logo-57.png";
@@ -103,7 +104,8 @@ const SectionAgency = () => {
             >
               <h1 className="text-4xl number font-semibold pb-5">04.</h1>
               <span className="font-extrabold">
-                › {translations[language].textSectionAgencyBold1Fr}
+                <RiBardLine className="inline" />{" "}
+                {translations[language].textSectionAgencyBold1Fr}
                 {translations[language].textSectionAgencyBold1En}{" "}
                 <span>
                   <img
@@ -127,7 +129,8 @@ const SectionAgency = () => {
             >
               <h1 className="text-4xl number font-semibold pb-5">05.</h1>
               <span className="font-extrabold">
-                › {translations[language].textSectionAgencyBold3Fr}
+                <RiBardLine className="inline" />{" "}
+                {translations[language].textSectionAgencyBold3Fr}
                 {translations[language].textSectionAgencyBold3En}{" "}
               </span>
               {translations[language].textSectionAgencyBold4Fr}
@@ -146,7 +149,8 @@ const SectionAgency = () => {
             >
               <h1 className="text-4xl number font-semibold pb-5">06.</h1>
               <span className="font-extrabold">
-                › {translations[language].textSectionAgencyBold6Fr}
+                <RiBardLine className="inline" />{" "}
+                {translations[language].textSectionAgencyBold6Fr}
                 {translations[language].textSectionAgencyBold6En}{" "}
               </span>
               {translations[language].textSectionAgencyBold7Fr}

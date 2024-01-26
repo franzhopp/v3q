@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLanguage } from "../../context/LanguageProvider.jsx";
+import { RiBardLine } from "react-icons/ri";
 import translations from "./translate.jsx";
 import ImgBlack from "../../assets/logo-4.png";
 import ImgWhite from "../../assets/logo-57.png";
@@ -53,7 +54,8 @@ const Section = () => {
               className="text-center"
             >
               <span className="font-extrabold">
-                › {translations[language].textBoldOneFr}
+                <RiBardLine className="inline" />{" "}
+                {translations[language].textBoldOneFr}
                 {translations[language].textBoldOneEn}
               </span>{" "}
               {translations[language].textWithoutBoldOneFr}
@@ -76,7 +78,8 @@ const Section = () => {
               data-aos-anchor-placement="top-bottom"
               className="font-extrabold text-center sm:text-right"
             >
-              › {translations[language].textWithoutBoldFsFr}
+              <RiBardLine className="inline" />{" "}
+              {translations[language].textWithoutBoldFsFr}
               {translations[language].textWithoutBoldFsEn}{" "}
               <a
                 onClick={SectionToScroll}

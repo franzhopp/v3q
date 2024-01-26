@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useLanguage } from "../../context/LanguageProvider.jsx";
+import { RiBardLine } from "react-icons/ri";
 import translations from "./translate.jsx";
 import emailjs from "emailjs-com";
 import NavbarDevis from "../Navigation/PagesNavbar/PagesNavbar.jsx";
@@ -194,7 +195,8 @@ const DevisFree = ({ label, type, value }) => {
                 className="text-FFF6E4 text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0"
               >
                 <span>
-                  › {translations[language].describeInfoFree1Fr}
+                  <RiBardLine className="inline" />{" "}
+                  {translations[language].describeInfoFree1Fr}
                   {translations[language].describeInfoFree1En}{" "}
                 </span>
               </p>

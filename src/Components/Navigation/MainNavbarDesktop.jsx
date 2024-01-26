@@ -4,7 +4,8 @@ import { useLanguage } from "../../context/LanguageProvider.jsx";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
 import translations from "./translate.jsx";
-import Image from "../../assets/logo-5.png";
+import ImgBlack from "../../assets/logo-5.png";
+import ImgWhite from "../../assets/logo-57.png";
 import TitleHome from "../UI/Title/TitleHome.jsx";
 import ModalSearch from "../Modal/SearchModal.jsx";
 import "../Section/FirstSection.jsx";
@@ -87,11 +88,11 @@ const NavbarDesktop = () => {
         <div className="flex justify-between items-center h-24 mt-2 container mx-auto px-4 sm:px-6 lg:px-8">
           <NavLink to="/">
             <img
+              src={isDarkMode ? ImgBlack : ImgWhite}
               alt="Logo"
               onClick={scrollToTop}
               data-aos="fade-left"
-              className="lg:h-20 h-10 bg-cover bg-no-repeat"
-              src={Image}
+              className="lg:h-16 h-10 bg-cover bg-no-repeat"
             />
           </NavLink>
           <div className="flex justify-center items-center">

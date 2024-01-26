@@ -1,5 +1,6 @@
 import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import { useTheme } from "../../../context/ThemeProvider.jsx";
+import { RiBardLine } from "react-icons/ri";
 import translations from "../translate.jsx";
 import ButtonContactServices from "../../UI/Button/ButtonContactServices";
 import SvgPoint from "../SvgPoint.jsx";
@@ -37,7 +38,8 @@ const DetailsServices = () => {
                   data-aos-anchor-placement="top-bottom"
                   className="text-base mb-10 text-FFF6E4"
                 >
-                  › {translations[language].describeMarketing1Fr}
+                  <RiBardLine className="inline" />{" "}
+                  {translations[language].describeMarketing1Fr}
                   {translations[language].describeMarketing1En}
                 </p>
               </div>
@@ -55,7 +57,8 @@ const DetailsServices = () => {
                   data-aos-anchor-placement="top-bottom"
                   className="text-base text-FFF6E4"
                 >
-                  › {translations[language].describeMarketing2Fr}
+                  <RiBardLine className="inline" />{" "}
+                  {translations[language].describeMarketing2Fr}
                   {translations[language].describeMarketing2En}
                 </p>
               </div>

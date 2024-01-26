@@ -2,6 +2,7 @@ import { useTheme } from "../../context/ThemeProvider.jsx";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useLanguage } from "../../context/LanguageProvider.jsx";
+import { RiBardLine } from "react-icons/ri";
 import translations from "./translate.jsx";
 import emailjs from "emailjs-com";
 import Image from "../../assets/logo-56.png";
@@ -92,7 +93,7 @@ const Footer = () => {
           </div>
         </p>
         <div className="font-inter text-sm text-center text-FFF6E4 pt-10">
-          › {translations[language].newletterFr}
+          <RiBardLine className="inline" /> {translations[language].newletterFr}
           {translations[language].newletterEn}
         </div>
         <form onSubmit={handleSubmit}>
@@ -248,7 +249,7 @@ const Footer = () => {
         </ul>
         <div className="flex justify-center pt-12 pb-8">
           <div className="text-FFF6E4 font-inter font-extrabold">
-            › {translations[language].findFr}
+            <RiBardLine className="inline" /> {translations[language].findFr}
             {translations[language].findEn}
           </div>
         </div>

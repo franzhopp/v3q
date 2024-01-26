@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { useLanguage } from "../../context/LanguageProvider.jsx";
 import { useSpring, animated } from "react-spring";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import { RiBardLine } from "react-icons/ri";
 import translations from "./translate.jsx";
 import ImgBlack from "../../assets/logo-4.png";
 import ImgWhite from "../../assets/logo-57.png";
@@ -184,7 +185,8 @@ const SectionTeam = () => {
                 <p className="text-left text-base mb-10 ml-10 sm:ml-0 p">
                   <span className="font-extrabold">
                     {" "}
-                    › {translations[language].textSectionTeamBioBold1MelissaFr}
+                    <RiBardLine className="inline" />
+                    {translations[language].textSectionTeamBioBold1MelissaFr}
                     {translations[language].textSectionTeamBioBold1MelissaEn}
                   </span>{" "}
                   {
@@ -278,7 +280,8 @@ const SectionTeam = () => {
                   <p className=" text-left text-base mb-10 ml-10 sm:ml-0 p">
                     <span className="font-extrabold">
                       {" "}
-                      › {translations[language].textSectionTeamBioBold1LouisaFr}
+                      <RiBardLine className="inline" />
+                      {translations[language].textSectionTeamBioBold1LouisaFr}
                       {translations[language].textSectionTeamBioBold1LouisaEn}
                     </span>{" "}
                     {

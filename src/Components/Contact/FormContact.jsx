@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useLanguage } from "../../context/LanguageProvider.jsx";
 import { Link } from "react-router-dom";
+import { RiBardLine } from "react-icons/ri";
 import translations from "./translate.jsx";
 import Title from "../UI/Title/TitleFormContact";
 import ImgText from "../../assets/logo-5.png";
@@ -179,7 +180,8 @@ const Form = ({ label, type, value }) => {
               >
                 {/* <span className="absolute h-72 w-1 bg-C22E2E -left-7 bottom-20 hidden sm:block"></span>
                 <span className="absolute h-64 w-1 bg-C22E2E -left-10 bottom-2 hidden sm:block"></span> */}
-                › {translations[language].textContactFr}
+                <RiBardLine className="inline" />
+                {translations[language].textContactFr}
                 {translations[language].textContactEn}
               </p>
             </div>

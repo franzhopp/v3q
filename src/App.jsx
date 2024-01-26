@@ -8,7 +8,7 @@ import LanguageProvider from "./context/LanguageProvider.jsx";
 import Homepage from "./Components/Homepage/Homepage.jsx";
 import Section from "./Components/Section/FirstSection.jsx";
 import EthicsPage from "./Components/Ethics/CardsEthics.jsx";
-import Services from "./Components/Services/BaseServices.jsx";
+import Services from "./Components/Services/MainServices.jsx";
 import DiscoverWebDeveloper from "./Components/Discover/DiscoverWebDevelopper/WebDevelopper.jsx";
 import DiscoverDesigner from "./Components/Discover/DiscoverDesigner/Designer.jsx";
 import Rate from "./Components/Rate/Prices/PageAllRates.jsx";
