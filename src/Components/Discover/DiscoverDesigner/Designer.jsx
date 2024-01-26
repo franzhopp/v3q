@@ -179,10 +179,6 @@ const DiscoverDesigner = () => {
               src={ImageMelissa}
               className="h-80 w-80 sm:h-96 sm:w-96 transition hover:opacity-90"
             />
-            {/* <p className="flex text-FFF6E4 text-xs">
-              {translations[language].city1Fr}
-              {translations[language].city1En}
-            </p> */}
             <p className="mt-1 flex justify-start text-xs text-FFF6E4">
               📸 : Musée d'Art Contemporain, 69006 Lyon / &copy; Mélissa
             </p>

@@ -14,7 +14,7 @@ const ButtonDevis = () => {
       }`}
     >
       <NavLink
-        to="/devis"
+        to="/quote"
         className="inline-flex items-center gap-2 rounded-full border-black border-4 bg-FFF6E4 px-8 py-3"
       >
         <span className="text-2xl sm:text-3xl mr-3 font-semibold">

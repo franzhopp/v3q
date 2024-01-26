@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { useLanguage } from "../../context/LanguageProvider.jsx";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
+import { useTheme } from "../../context/ThemeProvider.jsx";
 import translations from "./translate.jsx";
 import ImgBlack from "../../assets/logo-5.png";
 import ImgWhite from "../../assets/logo-57.png";
@@ -10,11 +11,10 @@ import TitleHome from "../UI/Title/TitleHome.jsx";
 import ModalSearch from "../Modal/SearchModal.jsx";
 import "../Section/FirstSection.jsx";
 import "../Homepage/Homepage.jsx";
+import DarkLightThemes from "../../hook/useTheme.jsx";
+import NavbarMobile from "./MainNavbarMobile.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import DarkLightThemes from "../../hook/useTheme.jsx";
-import { useTheme } from "../../context/ThemeProvider.jsx";
-import NavbarMobile from "./MainNavbarMobile.jsx";
 
 const NavbarDesktop = () => {
   const [scrollNavbar, setScrollNavbar] = useState();
@@ -126,7 +126,7 @@ const NavbarDesktop = () => {
                     </NavLink>
                     <li>
                       <NavLink
-                        to="/ethics"
+                        to="/values"
                         className="block hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
                         {translations[language].navSousValuesFr}
@@ -162,7 +162,7 @@ const NavbarDesktop = () => {
                     </li>
                     <li className="ml-4 font-extrabold">
                       <NavLink
-                        to="/dev"
+                        to="/developer"
                         className="block border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
                         Web Developer
@@ -213,7 +213,7 @@ const NavbarDesktop = () => {
                   >
                     <li className="ml-4 font-extrabold">
                       <NavLink
-                        to="/rate"
+                        to="/pricingfr"
                         className="block border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
                         {translations[language].navSousPricingFr}
@@ -222,7 +222,7 @@ const NavbarDesktop = () => {
                     </li>
                     <li className="ml-4 font-extrabold">
                       <NavLink
-                        to="/rateuk"
+                        to="/pricinguk"
                         className="block border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
                         {translations[language].navSousPricingFr}
@@ -232,7 +232,7 @@ const NavbarDesktop = () => {
                   </ul>
                   <li>
                     <NavLink
-                      to="/devis"
+                      to="/quote"
                       className="block hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       {translations[language].navSousFreeFr}

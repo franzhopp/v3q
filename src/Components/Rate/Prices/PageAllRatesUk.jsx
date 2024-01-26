@@ -183,7 +183,7 @@ const Rate = () => {
           <div className="flex flex-col justify-center pb-10 text-center">
             <div className="w-96">
               <NavLink
-                to="/rate"
+                to="/pricingfr"
                 className="text-C22E2E text-center font-extrabold underline"
               >
                 Voir les tarifications FR.
@@ -253,7 +253,7 @@ const Rate = () => {
                           </ul>
                         </div>
                         <NavLink
-                          to="/devis"
+                          to="/quote"
                           className="pt-5 font-extrabold number underline"
                         >
                           Request a free quote

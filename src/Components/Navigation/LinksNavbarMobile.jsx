@@ -137,7 +137,7 @@ const LinksNavbarMobile = () => {
                   </li>
                   <li className="ml-4">
                     <NavLink
-                      to="/ethics"
+                      to="/values"
                       className="block border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       {translations[language].navSousValuesFr}
@@ -174,7 +174,7 @@ const LinksNavbarMobile = () => {
                     </li>
                     <li className="ml-4 font-extrabold">
                       <NavLink
-                        to="/dev"
+                        to="/developer"
                         className="block rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
                         Web Developer
@@ -231,7 +231,7 @@ const LinksNavbarMobile = () => {
                   >
                     <li className="ml-4 font-extrabold">
                       <NavLink
-                        to="/rate"
+                        to="/pricingfr"
                         className="block border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
                         {translations[language].navSousPricingFr}
@@ -240,7 +240,7 @@ const LinksNavbarMobile = () => {
                     </li>
                     <li className="ml-4 font-extrabold">
                       <NavLink
-                        to="/rateuk"
+                        to="/pricingfruk"
                         className="block rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
                         {translations[language].navSousPricingFr}
@@ -252,7 +252,7 @@ const LinksNavbarMobile = () => {
               </NavLink>
               <li className="ml-4">
                 <NavLink
-                  to="/devis"
+                  to="/quote"
                   className="block hover:text-0C3E78 px-4 py-2 font-extrabold"
                 >
                   {translations[language].navSousFreeFr}

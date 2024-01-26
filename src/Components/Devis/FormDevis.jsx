@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useLanguage } from "../../context/LanguageProvider.jsx";
-import { RiBardLine } from "react-icons/ri";
 import translations from "./translate.jsx";
 import emailjs from "emailjs-com";
 import NavbarDevis from "../Navigation/PagesNavbar/PagesNavbar.jsx";
@@ -19,9 +18,6 @@ const DevisFree = ({ label, type, value }) => {
   const handleFocus = () => {
     setIsFocused(true);
   };
-  // const offFocusClick = () => {
-  //   setIsFocused(false);
-  // };
   const handleBlur = () => {
     if (!value) {
       setIsFocused(true);
@@ -195,7 +191,6 @@ const DevisFree = ({ label, type, value }) => {
                 className="text-FFF6E4 text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0"
               >
                 <span>
-                  <RiBardLine className="inline" />{" "}
                   {translations[language].describeInfoFree1Fr}
                   {translations[language].describeInfoFree1En}{" "}
                 </span>
@@ -241,7 +236,7 @@ const DevisFree = ({ label, type, value }) => {
                     {translations[language].bloc3FreeFr}
                     {translations[language].bloc3FreeEn}{" "}
                     <NavLink
-                      to="/rate"
+                      to="/pricingfr"
                       className="underline font-extrabold tracking-wide text-C22E2E"
                     >
                       {" "}
@@ -255,8 +250,6 @@ const DevisFree = ({ label, type, value }) => {
                     <span className="font-extrabold">4</span>.{" "}
                     {translations[language].bloc4FreeFr}
                     {translations[language].bloc4FreeEn}
-                    {/* <span className="absolute h-72 w-1 bg-C22E2E -left-7 bottom-20 hidden sm:block"></span>
-                    <span className="absolute h-64 w-1 bg-C22E2E -left-10 bottom-2 hidden sm:block"></span> */}
                   </li>
                 </ul>
               </p>

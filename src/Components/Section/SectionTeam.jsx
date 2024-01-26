@@ -195,7 +195,7 @@ const SectionTeam = () => {
                       translations[language].textSectionTeamBioBold2LouisaEn
                     }{" "}
                     <span className="text-C22E2E hover:text-0C3E78 font-inter">
-                      <NavLink to="/dev">Web Developer</NavLink>
+                      <NavLink to="/developer">Web Developer</NavLink>
                     </span>
                     .
                   </span>
@@ -220,7 +220,7 @@ const SectionTeam = () => {
             <div className="flex space-x-3 flex-col-reverse sm:flex-row">
               <div className="flex justify-center items-center h-24 w-96 mt-0 sm:mt-32">
                 <NavLink
-                  to="/dev"
+                  to="/developer"
                   className="inline-flex items-center gap-2 rounded-full mr-2 sm:mr-0 bg-black px-8 py-3 text-FFF6E4"
                 >
                   <FaArrowLeft className="h-10 w-10" />

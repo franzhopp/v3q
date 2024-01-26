@@ -180,7 +180,7 @@ const Rate = () => {
           <div className="flex flex-col justify-center pb-10 text-center">
             <div className="w-96">
               <NavLink
-                to="/rateuk"
+                to="/pricinguk"
                 className="text-C22E2E text-center font-extrabold underline"
               >
                 See UK prices.
@@ -250,7 +250,7 @@ const Rate = () => {
                           </ul>
                         </div>
                         <NavLink
-                          to="/devis"
+                          to="/quote"
                           className="pt-5 font-extrabold number underline"
                         >
                           Demander un devis gratuit
@@ -336,7 +336,7 @@ const Rate = () => {
             <RiBardLine className="inline" /> Découvrir Prestations ➔
           </NavLink>
           <NavLink
-            to="/devis"
+            to="/quote"
             className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
           >
             <RiBardLine className="inline" /> Découvrir Devis Gratuit ➔

@@ -5,15 +5,15 @@ export const data = [
   },
   {
     keywords: "Nos valeurs",
-    link: "/ethics",
+    link: "/values",
   },
   {
     keywords: "Valeurs",
-    link: "/ethics",
+    link: "/values",
   },
   {
     keywords: "Valeur",
-    link: "/ethics",
+    link: "/values",
   },
   {
     keywords: "Services",
@@ -25,7 +25,7 @@ export const data = [
   },
   {
     keywords: "Tarification",
-    link: "/rate",
+    link: "/pricingfr",
   },
   {
     keywords: "Designer",
@@ -33,19 +33,19 @@ export const data = [
   },
   {
     keywords: "Web Developer",
-    link: "/devweb",
+    link: "/developer",
   },
   {
     keywords: "Prestations",
-    link: "/rate",
+    link: "/pricingfr",
   },
   {
     keywords: "Tarification",
-    link: "/rate",
+    link: "/pricingfr",
   },
   {
     keywords: "Devis",
-    link: "/devis",
+    link: "/quote",
   },
   {
     keywords: "Portfolio",
@@ -57,7 +57,7 @@ export const data = [
   },
   {
     keywords: "Paris",
-    link: "/dev",
+    link: "/developer",
   },
   {
     keywords: "London",
@@ -81,7 +81,7 @@ export const data = [
   },
   {
     keywords: "Louisa",
-    link: "/dev",
+    link: "/developer",
   },
   {
     keywords: "Mélissa",
@@ -105,7 +105,7 @@ export const data = [
   },
   {
     keywords: "Our Values",
-    link: "/ethics",
+    link: "/values",
   },
   {
     keywords: "Services",
@@ -113,19 +113,19 @@ export const data = [
   },
   {
     keywords: "Rates",
-    link: "/rate",
+    link: "/pricingfr",
   },
   {
     keywords: "Pricing",
-    link: "/rate",
+    link: "/pricingfr",
   },
   {
     keywords: "Free Quote",
-    link: "/devis",
+    link: "/quote",
   },
   {
     keywords: "Quote",
-    link: "/devis",
+    link: "/quote",
   },
   {
     keywords: "Portfolio",
@@ -137,7 +137,7 @@ export const data = [
   },
   {
     keywords: "Paris",
-    link: "/dev",
+    link: "/developer",
   },
   {
     keywords: "London",
@@ -161,7 +161,7 @@ export const data = [
   },
   {
     keywords: "Louisa",
-    link: "/dev",
+    link: "/developer",
   },
   {
     keywords: "EN",

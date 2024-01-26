@@ -85,7 +85,7 @@ const Footer = () => {
           />
         </div>
         <p className="mx-auto max-w-md text-center">
-          <div className="text-center text-FFF6E4 mt-8 font-semibold">
+          <div className="text-center tracking-tighter text-FFF6E4 mt-8">
             &copy; {translations[language].copy1Fr}
             {translations[language].copy1En} l'agence.{" "}
             {translations[language].copy2Fr}
@@ -93,7 +93,7 @@ const Footer = () => {
           </div>
         </p>
         <div className="font-inter text-sm text-center text-FFF6E4 pt-10">
-          <RiBardLine className="inline" /> {translations[language].newletterFr}
+          {translations[language].newletterFr}
           {translations[language].newletterEn}
         </div>
         <form onSubmit={handleSubmit}>
@@ -131,7 +131,7 @@ const Footer = () => {
             {status && <p>{status}</p>}
           </div>
         </form>
-        <ul className="pt-16 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-20">
+        <ul className="flex flex-wrap justify-center pt-16 font-extrabold gap-6 md:gap-8 lg:gap-20">
           <li>
             <NavLink
               to="/"
@@ -144,7 +144,7 @@ const Footer = () => {
           </li>
           <li>
             <NavLink
-              to="/ethics"
+              to="/values"
               className="text-FFF6E4 transition hover:text-0C3E78"
             >
               {translations[language].navSousValuesFr}
@@ -161,7 +161,7 @@ const Footer = () => {
           </li>
           <li>
             <NavLink
-              to="/dev"
+              to="/developer"
               className="text-FFF6E4 transition hover:text-0C3E78"
             >
               Web Developer
@@ -187,7 +187,7 @@ const Footer = () => {
           </li>
           <li>
             <NavLink
-              to="/rate"
+              to="/pricingfr"
               className="text-FFF6E4 transition hover:text-0C3E78"
             >
               {translations[language].navSousPricingFr}
@@ -196,7 +196,7 @@ const Footer = () => {
           </li>
           <li>
             <NavLink
-              to="/devis"
+              to="/quote"
               className="text-FFF6E4 transition hover:text-0C3E78"
             >
               {translations[language].navSousFreeFr}
