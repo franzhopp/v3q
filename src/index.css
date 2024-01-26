@@ -8,6 +8,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body * {
+    @apply transition-colors duration-200;
+}
+
 html,
 body {
     overflow-x: hidden;
@@ -21,14 +25,6 @@ body {
 
 select {
     outline: none;
-    background-color: #FFF6E4;
-}
-
-.dark-mode {
-    background-color: #042142;
-}
-
-.light-mode {
     background-color: #FFF6E4;
 }
 
@@ -49,19 +45,6 @@ label,
 input,
 textarea {
     cursor: url('./Cursor/Cursor_3.svg'), text !important;
-}
-
-.test {
-    box-shadow: 0 0 .2rem #fff,
-        0 0 .2rem #fff,
-        0 0 2rem #FFF6E4,
-        0 0 0.8rem #FFF6E4,
-        0 0 2.8rem #FFF6E4,
-        inset 0 0 1.3rem #FFF6E4;
-}
-
-.bg-loader {
-    background: lightgray;
 }
 
 ::-webkit-scrollbar {
@@ -140,7 +123,6 @@ textarea {
     background-size: cover;
 }
 
-
 .bg-services-blur {
     background-image: url('./assets/bg-home-blur.png');
     background-repeat: no-repeat;
@@ -165,7 +147,6 @@ textarea {
     background-size: cover;
 }
 
-/* Title */
 .image-navi-studio-title-agency {
     height: auto;
     display: block;
@@ -280,7 +261,6 @@ textarea {
     }
 }
 
-/* CARDS SERVICES */
 .bg-cards {
     background-repeat: no-repeat;
     background-size: cover;
@@ -293,7 +273,6 @@ textarea {
     background-image: url("./assets/bg-cards-2.png");
 }
 
-/* BANNIER */
 .picture-bannier-louisa {
     background-repeat: no-repeat;
     background-size: cover;
