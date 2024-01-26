@@ -256,7 +256,7 @@ const Rate = () => {
                           to="/devis"
                           className="pt-5 font-extrabold number underline"
                         >
-                          <RiBardLine className="inline" /> Request a free quote
+                          Request a free quote
                         </NavLink>
                       </ul>
                     )}

@@ -59,7 +59,7 @@ const Section = () => {
                 {translations[language].textBoldOneEn}
               </span>{" "}
               {translations[language].textWithoutBoldOneFr}
-              {translations[language].textWithoutBoldOneEn}
+              {translations[language].textWithoutBoldOneEn}{" "}
               <span>
                 <img
                   src={isDarkMode ? ImgBlack : ImgWhite}

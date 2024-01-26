@@ -43,7 +43,7 @@ const SectionAgency = () => {
                 className="h-12 sm:h-16 mr-1 ml-1 inline"
                 alt="Icône navi studio."
               />
-            </span>{" "}
+            </span>{" "}–{" "}
             {translations[language].sloganAgencyFr}
             {translations[language].sloganAgencyEn}{" "}
             <animated.span style={props}>
@@ -66,13 +66,13 @@ const SectionAgency = () => {
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className="px-5 text-arial text-center text-lg sm:text-2xl mt-10"
+            className="px-5 text-center text-lg sm:text-2xl mt-10"
           >
-            {translations[language].textAgency1Fr}
+            {/* {translations[language].textAgency1Fr}
             {translations[language].textAgency1En}{" "}
             <span className="font-extrabold text-C22E2E">{"Mélissa"}</span>
             {" & "}
-            <span className="font-extrabold text-C22E2E">Louisa</span>.{" "}
+            <span className="font-extrabold text-C22E2E">Louisa</span>.{" "} */}
             <span>
               {translations[language].textAgency2Fr}
               {translations[language].textAgency2En}

@@ -92,7 +92,7 @@ const NavbarDesktop = () => {
               alt="Logo"
               onClick={scrollToTop}
               data-aos="fade-left"
-              className="lg:h-16 h-10 bg-cover bg-no-repeat"
+              className="lg:h-20 h-10 bg-cover bg-no-repeat"
             />
           </NavLink>
           <div className="flex justify-center items-center">

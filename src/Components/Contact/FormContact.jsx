@@ -171,16 +171,13 @@ const Form = ({ label, type, value }) => {
                 alt="Icône navi studio."
               />
             </p>
-
             <div className="mt-10">
               <p
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
-                className="text-FFF6E4 text-lg sm:text-2xl w-80 sm:w-96 ml-6 sm:ml-0"
+                className="text-FFF6E4 text-left text-lg sm:text-2xl w-80 sm:w-96 ml-6 sm:ml-0"
               >
-                {/* <span className="absolute h-72 w-1 bg-C22E2E -left-7 bottom-20 hidden sm:block"></span>
-                <span className="absolute h-64 w-1 bg-C22E2E -left-10 bottom-2 hidden sm:block"></span> */}
-                <RiBardLine className="inline" />
+                <RiBardLine className="inline" />{" "}
                 {translations[language].textContactFr}
                 {translations[language].textContactEn}
               </p>

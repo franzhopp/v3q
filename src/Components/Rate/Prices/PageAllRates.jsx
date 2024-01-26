@@ -253,8 +253,7 @@ const Rate = () => {
                           to="/devis"
                           className="pt-5 font-extrabold number underline"
                         >
-                          <RiBardLine className="inline" /> Demander un devis
-                          gratuit
+                          Demander un devis gratuit
                         </NavLink>
                       </ul>
                     )}

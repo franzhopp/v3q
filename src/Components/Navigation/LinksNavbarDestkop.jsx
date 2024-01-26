@@ -1,3 +1,5 @@
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
 import { useTheme } from "../../context/ThemeProvider";
@@ -5,8 +7,6 @@ import { useLanguage } from "../../context/LanguageProvider";
 import DarkLightThemes from "../../hook/useTheme";
 import ModalSearch from "../Modal/SearchModal";
 import translations from "./translate.jsx";
-import { NavLink } from "react-router-dom";
-import { useState } from "react";
 import Image from "../../assets/logo-5.png";
 
 const LinksNavbarDesktop = () => {
