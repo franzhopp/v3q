@@ -10,6 +10,7 @@ import Footer from "../../Footer/Footer";
 import SvgLine from "./Svg/SvgLine";
 import SvgHeart from "./Svg/SvgHeart";
 import SvgStarPink from "./Svg/SvgStarPink";
+import BackToTopButton from "../../ScrollText/BackToTopButton";
 
 const Portfolio = () => {
   const { isDarkMode } = useTheme();
@@ -74,6 +75,7 @@ const Portfolio = () => {
                 {cards[currentIndex].content}
               </p>
             </div>
+            <BackToTopButton />
             <div className="flex justify-center mt-5">
               <button
                 className="bg-black font-extrabold text-FFF6E4 hover:bg-C22E2E transition px-4 py-2 rounded-full mr-2"
