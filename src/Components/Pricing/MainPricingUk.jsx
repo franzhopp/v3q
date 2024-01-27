@@ -1,14 +1,14 @@
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
-import { useTheme } from "../../context/ThemeProvider.jsx";
 import { RiBardLine } from "react-icons/ri";
+import { useTheme } from "../../context/ThemeProvider.jsx";
 import NavbarPages from "../Navigation/PagesNavbar/PagesNavbar.jsx";
-import TitleRate from "../UI/Title/TitleRate.jsx";
 import Footer from "../Footer/MainFooter.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import BackToTopButton from "../UI/ScrollToTop/BackToTopButton.jsx";
+import ConditionUk from "./Title/ConditionUk.jsx";
 
 const Rate = () => {
   const { isDarkMode } = useTheme();
@@ -26,7 +26,7 @@ const Rate = () => {
       behavior: "smooth",
     });
   };
-  const text = "Sites Web";
+  const text = "Websites";
   const letters = text.split("");
   const animationConfig = [
     { dataAos: "fade-left", dataAosDelay: 100 },
@@ -63,90 +63,87 @@ const Rate = () => {
   const InformationsSitesWeb = [
     {
       id: 1,
-      title: "Site vitrine",
-      price: "à partir de 650€*",
-      details: ["5 pages — À partir de 300€", "10 pages — À partir de 650€"],
+      title: "Showcase site",
+      price: "starting at £590*",
+      details: ["5 pages, starting at £280", "10 pages, starting at £580"],
       subDetails: [
-        "Page « d'Accueil » avec présentation de votre entreprise.",
-        "Page « À propos » pour partager votre histoire et votre mission.",
-        "Page « Services » pour présenter vos offres.",
-        "Page « Nous » concernant votre production.",
-        "Page de « Contact » pour vos clients potentiels.",
-        "Inclut de plusieurs pages pour plus de contenus, d'informations concernant votre entreprise.",
+        "« Home » page with an overview of your company.",
+        "« About » page to share your story and vision.",
+        "« Services » page to introduce your offers.",
+        "« About us » page to introduce your business.",
+        "« Contact » page for your potential customers to reach you out.",
+        "Includes multiple pages for additional content or information about your business.",
       ],
     },
     {
       id: 2,
-      title: "Maquette graphique",
-      price: "à partir de 250€*",
-      details: [
-        "2 pages — À partir de 250€",
-        "5 pages avec logo — À partir de 450€",
-      ],
+      title: "Website mock-up design",
+      price: " starting at £220*",
+      details: ["2 pages, starting at £220", "5 pages, starting at £400"],
       subDetails: [
-        "Conception graphique pour des pages spécifiques de la maquette du site.",
-        "Conception graphique pour plusieurs pages avec l'inclusion d'un logo personnalisé.",
+        "Graphic design for specific pages of the site layout.",
+        "Graphic design for multiple pages with the inclusion of a custom logo.",
       ],
     },
     {
       id: 3,
       title: "Landing page",
-      price: "à partir de 300€*",
-      details: ["5 pages — À partir de 300€", "10 pages — À partir de 600€"],
+      price: "starting at £280*",
+      details: ["5 pages, starting at £280", "10 pages, starting at £550"],
       subDetails: [
-        "Conception d'une page impactante et convaincante.",
-        "Inclut une extension d'une page avec des fonctionnalités supplémentaires.",
+        "Design of an impactful and eye-catching page.",
+        "Includes a page extension with additional features.",
       ],
     },
     {
       id: 4,
-      title: "Site e-commerce",
-      price: "à partir de 800€*",
-      details: ["5 pages — À partir de 500€", "10 pages — À partir de 800€"],
+      title: "E-commerce site",
+      price: "starting at £720*",
+      details: ["5 pages, starting at £450", "10 pages, starting at £720"],
       subDetails: [
-        "Page d'accueil, catalogue de produits, pages de produits individuelles, panier, page de paiement.",
-        "Inclut des fonctionnalités avancées telles que des options de filtrage, des avis clients, etc.",
+        "Homepage, product catalog, individual product pages, shopping cart, payment page.",
+        "Includes advanced features such as filtering options, customer reviews, etc.",
       ],
     },
     {
       id: 5,
-      title: "Site sur-mesure",
-      price: "à partir de 900€*",
-      details: ["5 pages — À partir de 600€", "10 pages — À partir de 900€"],
+      title: "Custom site",
+      price: "starting at £800*",
+      details: ["5 pages, starting at £550", "10 pages, starting at £800"],
       subDetails: [
-        "Conception personnalisée en fonction des besoins spécifiques du client.",
-        "Inclut des fonctionnalités avancées et une conception hautement personnalisée.",
+        "Customized design according to customer's specific needs.",
+        "Includes advanced features and highly customized design.",
       ],
     },
     {
       id: 6,
-      title: "Refonte totale",
-      price: "à partir de 750€*",
-      details: ["5 pages — À partir de 350€", "10 pages — À partir de 750€"],
+      title: "Redesign",
+      price: "starting at £680*",
+      details: ["5 pages, starting at £325", "10 pages, starting at £680"],
       subDetails: [
-        "Analyse complète de l'interface utilisateur et mise à jour du design.",
-        "Inclut des améliorations significatives pour une expérience utilisateur optimisée.",
+        "Comprehensive user interface analysis and design update.",
+        "Includes significant improvements for an optimized user experience.",
       ],
     },
     {
-      id: 7,
-      title: "Modifications",
-      price: "à partir de 100€*",
-      details: ["5 pages — À partir de 100€", "10 pages — À partir de 300€"],
+      id: 5,
+      title: "Changes",
+      price: "starting at £80*",
+      details: ["5 pages, starting at £80", "10 pages, starting at £280"],
       subDetails: [
-        "Modifications spécifiques sur plusieurs pages existantes du site.",
-        "Inclut des ajustements plus approfondis sur l'ensemble du site.",
+        "Specific changes on several existing pages of the site.",
+        "Includes more in-depth site-wide adjustments.",
       ],
     },
   ];
   const InformationsMarketing = [
     {
-      title: "Startégie de marque",
-      price: "à partir de 250€*",
+      title: "Brand strategy",
+      price: "starting at £220*",
     },
     {
-      title: "Réseaux sociaux & SEO",
-      price: "à partir de 150€*",
+      title: "Socials & SEO ",
+      price: "starting at  £140*",
     },
   ];
   useEffect(() => {
@@ -156,7 +153,14 @@ const Rate = () => {
   return (
     <section className="bg-FFF6E4">
       <NavbarPages />
-      <TitleRate />
+      <div className="image-navi-studio-title-rate pb-24 pt-12 sm:pt-0">
+        <div
+          className="pt-28 text-FFF6E4 sm:ml-44 sm:text-left text-center font-extrabold"
+          data-aos="fade-left"
+        >
+          <p className="mt-10 sm:mt-4 mr-5 text-4xl sm:text-6xl">Pricing</p>
+        </div>
+      </div>
       <div className="test2">
         <div className="flex justify-center">
           <h1
@@ -181,10 +185,10 @@ const Rate = () => {
           <div className="flex flex-col justify-center pb-10 text-center">
             <div className="w-96">
               <NavLink
-                to="/pricinguk"
+                to="/pricingfr"
                 className="text-C22E2E text-center font-extrabold underline"
               >
-                See UK prices.
+                Voir les tarifications FR.
               </NavLink>
             </div>
           </div>
@@ -217,7 +221,7 @@ const Rate = () => {
                       }`}
                     >
                       <div className="flex ml-1 number">
-                        En savoir plus <IoIosArrowDown className="mt-2 ml-1" />
+                        Learn more <IoIosArrowDown className="mt-2 ml-1" />
                       </div>
                     </button>
                     {openStates[info.title] && (
@@ -234,7 +238,7 @@ const Rate = () => {
                         <div className="flex justify-start">
                           <ul className="text-FFF6E4  mt-3 mb-3 text-sm px-10 sm:text-left text-justify">
                             <p className="number mb-2">
-                              Informations détaillées :
+                              Detailed informations :
                             </p>
                             {info.subDetails.map(
                               (subDetail, subDetailIndex) => (
@@ -254,7 +258,7 @@ const Rate = () => {
                           to="/quote"
                           className="pt-5 font-extrabold number underline"
                         >
-                          Demander un devis gratuit
+                          Request a free quote
                         </NavLink>
                       </ul>
                     )}
@@ -264,7 +268,6 @@ const Rate = () => {
             ))}
           </div>
         </div>
-        <BackToTopButton />
         <div className="flex justify-center pt-20">
           <svg
             className="animate-formbounce"
@@ -322,14 +325,8 @@ const Rate = () => {
             ))}
           </div>
         </div>
-        <div className="flex justify-center pt-2">
-          <div className="w-96 sm:w-full">
-            <p className="text-center text-sm text-C22E2E px-6">
-              *tarifs variables suivant les fonctionnalités désirées, pour plus
-              d'informations demandez <span>un devis gratuit</span>.
-            </p>
-          </div>
-        </div>
+        <ConditionUk />
+        <BackToTopButton />
         <div className="flex flex-col text-center justify-center pt-6 pb-20">
           <div className="flex justify-center mt-10 mb-10">
             <NavLink to="/quote">
