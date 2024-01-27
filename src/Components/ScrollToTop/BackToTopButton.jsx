@@ -25,9 +25,9 @@ const BackToTopButton = () => {
         <button>
           <div
             onClick={scrollUp}
-            className="fixed bottom-10 right-7 shadow-sm rounded-full z-max"
+            className="fixed bottom-8 right-4 shadow-sm rounded-full z-max"
           >
-            <div className="h-53 h-54 bg-FFF6E4 rounded-full border-D83939 border-4 p-5">
+            <div className="h-53 h-54 bg-FFF6E4 rounded-full transition duration-500 border-D83939 border-2 p-4">
               <FaArrowUp className="text-D83939" />
             </div>
           </div>
