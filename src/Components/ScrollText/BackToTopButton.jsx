@@ -24,7 +24,7 @@ const BackToTopButton = () => {
         <button>
           <svg
             onClick={scrollUp}
-            className="fixed bottom-24 right-10 z-max"
+            className="fixed bottom-24 right-10 shadow-sm rounded-full z-max"
             xmlns="http://www.w3.org/2000/svg"
             width="53"
             height="54"
