@@ -10,7 +10,6 @@ import Footer from "../../Footer/Footer";
 import SvgLine from "./Svg/SvgLine";
 import SvgHeart from "./Svg/SvgHeart";
 import SvgStarPink from "./Svg/SvgStarPink";
-import BackToTopButton from "../../ScrollText/BackToTopButton";
 
 const Portfolio = () => {
   const { isDarkMode } = useTheme();
@@ -93,7 +92,6 @@ const Portfolio = () => {
               <SvgHeart />
             </div>
           </div>
-          <BackToTopButton />
           <SvgStarPink />
         </div>
       </div>
