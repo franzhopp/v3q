@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useLanguage } from "../../../context/LanguageProvider.jsx";
@@ -467,23 +467,6 @@ const FormQuote = ({ label, type, value }) => {
             </p>
           )}
         </div>
-        {/* <input
-        className="outline-none input-secondary border-gray-200 mr-1"
-        type="checkbox"
-        name="privacy"
-        checked={formData.privacy}
-        onChange={handleCheckboxChange}
-      />
-      <span className="text-FFF6E4 font-extrabold">
-        {" "}
-        {translations[language].conditions1Fr}
-        {translations[language].conditions1En}
-      </span>
-      {errors.privacy && (
-        <p className="text-left font-sans-serif text-red-700">
-          {errors.privacy}
-        </p>
-      )} */}
         <input
           className="outline-none input-secondary border-gray-200 mr-1"
           type="checkbox"

@@ -8,7 +8,6 @@ const ButtonHome = () => {
           to="/"
           className="bg-FFF6E4 text-black border-black border-4 inline-flex items-center gap-2 px-8 py-3 rounded-full"
         >
-          <span className="text-3xl mr-3 font-semibold">Page d'Accueil </span>
           <svg
             className="hidden sm:block"
             width="44"
@@ -22,7 +21,6 @@ const ButtonHome = () => {
               fill="black"
             />
           </svg>
-
           <svg
             className="sm:hidden"
             width="44"

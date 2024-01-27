@@ -5,17 +5,17 @@ import LanguageProvider from "./context/LanguageProvider.jsx";
 import Homepage from "./Components/Homepage/Homepage.jsx";
 import Section from "./Components/Section/FirstSection.jsx";
 import EthicsPage from "./Components/Ethics/CardsEthics.jsx";
+import DiscoverDeveloper from "./Components/Discover/DiscoverDevelopper/MainPageDevelopper.jsx";
+import DiscoverDesigner from "./Components/Discover/DiscoverDesigner/MainPageDesigner.jsx";
 import Services from "./Components/Services/MainServices.jsx";
-import DiscoverWebDeveloper from "./Components/Discover/DiscoverWebDevelopper/MainPageDevelopper.jsx";
-import DiscoverDesigner from "./Components/Discover/DiscoverDesigner/Designer.jsx";
-import Rate from "./Components/Rate/Prices/PageAllRates.jsx";
-import Portfolio from "./Components/Portfolio/AllProjects/Portfolio.jsx";
+import PricingFr from "./Components/Rate/Prices/PageAllRates.jsx";
+import PricingUk from "./Components/Rate/Prices/PageAllRatesUk.jsx";
 import MainPageQuote from "./Components/Quote/MainPageQuote.jsx";
-import PagePrivacy from "./Components/Privacy/Pages/PagePrivacy.jsx";
-import PageConditions from "./Components/Privacy/Pages/PageTerms.jsx";
-import PageMentions from "./Components/Privacy/Pages/PageMentions.jsx";
+import Portfolio from "./Components/Portfolio/AllProjects/Portfolio.jsx";
 import PageNotFound from "./Components/404/Error/PageNotFound.jsx";
-import RateUk from "./Components/Rate/Prices/PageAllRatesUk.jsx";
+// import PagePrivacy from "./Components/Privacy/Pages/PagePrivacy.jsx";
+// import PageConditions from "./Components/Privacy/Pages/PageTerms.jsx";
+// import PageMentions from "./Components/Privacy/Pages/PageMentions.jsx";
 
 const App = () => {
   return (
@@ -26,18 +26,18 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/" element={<Section />} />
-            <Route path="/services" element={<Services />} />
             <Route path="/values" element={<EthicsPage />} />
-            <Route path="/developer" element={<DiscoverWebDeveloper />} />
+            <Route path="/developer" element={<DiscoverDeveloper />} />
             <Route path="/designer" element={<DiscoverDesigner />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/pricingfr" element={<PricingFr />} />
+            <Route path="/pricinguk" element={<PricingUk />} />
             <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/pricingfr" element={<Rate />} />
-            <Route path="/pricinguk" element={<RateUk />} />
             <Route path="/quote" element={<MainPageQuote />} />
-            <Route path="/privacy" element={<PagePrivacy />} />
-            <Route path="/terms" element={<PageConditions />} />
-            <Route path="/mentions" element={<PageMentions />} />
             <Route path="*" element={<PageNotFound />} />
+            {/* <Route path="/privacy" element={<PagePrivacy />} />
+            <Route path="/terms" element={<PageConditions />} />
+            <Route path="/mentions" element={<PageMentions />} /> */}
           </Routes>
         </Router>
       </ThemeProvider>

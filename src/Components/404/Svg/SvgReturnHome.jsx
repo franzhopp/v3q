@@ -1,6 +1,7 @@
 const SvgReturnHome = () => {
   return (
     <svg
+      className="rounded-full shadow-lg"
       width="112"
       height="112"
       viewBox="0 0 112 112"

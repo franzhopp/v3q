@@ -26,7 +26,7 @@ const BackToTopButton = () => {
           <div
             data-aos="fade-right"
             onClick={scrollUp}
-            className="fixed bottom-8 right-4 shadow-sm rounded-full z-max"
+            className="fixed bottom-8 right-5 shadow-sm rounded-full z-max"
           >
             <div className="bg-FFF6E4 p-4 border-D83939 border-2 h-53 h-54 rounded-full transition duration-500">
               <FaArrowUp className="text-D83939" />
