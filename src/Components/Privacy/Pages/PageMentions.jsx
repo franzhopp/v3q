@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import PrivacyNavbar from "../../Navigation/PrivacyNavbar/PrivacyNavbar.jsx";
 import { RiBardLine } from "react-icons/ri";
 import ImgText from "../../../assets/logo-4.png";
-import Footer from "../../Footer/Footer";
+import Footer from "../../Footer/MainFooter.jsx";
 
 const PageMentions = () => {
   const keywordsStyle = "font-extrabold";

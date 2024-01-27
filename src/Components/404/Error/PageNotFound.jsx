@@ -5,7 +5,7 @@ import SvgReturnHome from "../Svg/SvgReturnHome.jsx";
 import SvgError from "../Svg/SvgError.jsx";
 import PagesNavbar from "../../Navigation/PagesNavbar/PagesNavbar";
 import ImgLogo from "../../../assets/logo-6.png";
-import Footer from "../../Footer/Footer";
+import Footer from "../../Footer/MainFooter.jsx";
 
 const PageNotFound = () => {
   const { language } = useLanguage();

@@ -3,7 +3,7 @@ import FirstSection from "../Section/FirstSection.jsx";
 import SecondSection from "../Section/SecondSection.jsx";
 import SectionAgency from "../Section/SectionAgency.jsx";
 import Form from "../Contact/MainPageContact.jsx";
-import Footer from "../Footer/Footer.jsx";
+import Footer from "../Footer/MainFooter.jsx";
 
 const Home = () => {
   return (

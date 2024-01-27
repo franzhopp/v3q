@@ -13,7 +13,7 @@ import SvgStarPinkEnd from "./Svg/SvgStarPinkEnd";
 import SubBlocs from "./Blocs/SubBlocs";
 import SubBlocsBgPink from "./Blocs/SubBlocsBgPink";
 import EndTextValues from "./Text/EndTextValues";
-import Footer from "../Footer/Footer";
+import Footer from "../Footer/MainFooter.jsx";
 
 const EthicsPage = () => {
   const { isDarkMode } = useTheme();

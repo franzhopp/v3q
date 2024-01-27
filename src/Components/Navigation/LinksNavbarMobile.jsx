@@ -240,7 +240,7 @@ const LinksNavbarMobile = () => {
                     </li>
                     <li className="ml-4 font-extrabold">
                       <NavLink
-                        to="/pricingfruk"
+                        to="/pricinguk"
                         className="block rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
                         {translations[language].navSousPricingFr}

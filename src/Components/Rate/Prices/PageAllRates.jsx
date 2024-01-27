@@ -5,7 +5,7 @@ import { useTheme } from "../../../context/ThemeProvider.jsx";
 import { RiBardLine } from "react-icons/ri";
 import NavbarPages from "../../Navigation/PagesNavbar/PagesNavbar";
 import TitleRate from "../../UI/Title/TitleRate";
-import Footer from "../../Footer/Footer";
+import Footer from "../../Footer/MainFooter.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import BackToTopButton from "../../ScrollToTop/BackToTopButton.jsx";

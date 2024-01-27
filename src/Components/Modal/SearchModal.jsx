@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ImCross } from "react-icons/im";
-import { data } from "./SearchData.jsx";
+import { data } from "./Data/SearchData.jsx";
 import { useTheme } from "../../context/ThemeProvider.jsx";
 
 const ModalSearch = ({ closeModal, searchQuery }) => {
@@ -26,7 +26,6 @@ const ModalSearch = ({ closeModal, searchQuery }) => {
     setSearchQueryText("");
   };
   useEffect(() => {
-    // remove from échap!
     const handleKeyDown = (e) => {
       if (e.key === "Escape") {
         closeModal(false);

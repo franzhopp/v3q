@@ -9,7 +9,7 @@ import ImgService1 from "../../assets/home1.png";
 import ImgService2 from "../../assets/home2.png";
 import ImgService3 from "../../assets/home3.png";
 import ImgService4 from "../../assets/home4.png";
-import Footer from "../Footer/Footer";
+import Footer from "../Footer/MainFooter.jsx";
 import ButtonServices from "../UI/Button/ButtonServices";
 import ButtonDevis from "../UI/Button/ButtonFormDevis";
 import BackToTopButton from "../ScrollToTop/BackToTopButton.jsx";

@@ -17,7 +17,7 @@ import Vector from "./Svg/SvgVector.jsx";
 import LogoBrand from "./Logo/LogoBrand.jsx";
 import BackToTopButton from "../../ScrollToTop/BackToTopButton.jsx";
 import LinksNetwork from "./Network/LinksNetwork.jsx";
-import Footer from "../../Footer/Footer.jsx";
+import Footer from "../../Footer/MainFooter.jsx";
 
 const DiscoverWebDeveloper = () => {
   const { language } = useLanguage();

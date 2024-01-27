@@ -4,7 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { RiBardLine } from "react-icons/ri";
 import { useTheme } from "../../../context/ThemeProvider.jsx";
 import NavbarPages from "../../Navigation/PagesNavbar/PagesNavbar";
-import Footer from "../../Footer/Footer";
+import Footer from "../../Footer/MainFooter.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import BackToTopButton from "../../ScrollToTop/BackToTopButton.jsx";
@@ -324,7 +324,6 @@ const Rate = () => {
             ))}
           </div>
         </div>
-        <BackToTopButton />
         <div className="flex justify-center pt-2">
           <div className="w-96 sm:w-full">
             <p className="text-center text-sm text-C22E2E px-6">
@@ -333,6 +332,7 @@ const Rate = () => {
             </p>
           </div>
         </div>
+        <BackToTopButton />
         <div className="flex flex-col text-center justify-center pt-6 pb-20">
           <div className="flex justify-center mt-10 mb-10">
             <NavLink to="/quote">
