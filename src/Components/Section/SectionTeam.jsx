@@ -76,7 +76,7 @@ const SectionTeam = () => {
   ];
 
   return (
-    <section className="bg-FFF6E4 pt-28">
+    <section className="bg-FFF6E4 pt-24">
       <div className="flex justify-center mt-10">
         <div data-aos="fade-left">
           <SvgHeart />
@@ -300,7 +300,7 @@ const SectionTeam = () => {
             <div className=" bg-FFF6E4">
               <SectionExploration />
             </div>
-            <div id="contact" className="pb-24"></div>
+            <div id="contact" className="pb-20"></div>
           </div>
         </div>
       </div>
