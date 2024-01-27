@@ -12,7 +12,7 @@ import ImgService4 from "../../assets/home4.png";
 import Footer from "../Footer/MainFooter.jsx";
 import ButtonServices from "../UI/Button/ButtonServices";
 import ButtonDevis from "../UI/Button/ButtonFormDevis";
-import BackToTopButton from "../ScrollToTop/BackToTopButton.jsx";
+import BackToTopButton from "../UI/ScrollToTop/BackToTopButton.jsx";
 
 const Services = () => {
   const { language } = useLanguage();

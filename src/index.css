@@ -8,6 +8,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body * {
+    @apply transition-colors duration-200;
+}
+
 html,
 body {
     overflow-x: hidden;

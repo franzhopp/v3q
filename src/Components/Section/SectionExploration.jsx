@@ -185,13 +185,13 @@ const SectionExploration = () => {
       </div>
       <div className="flex justify-center mt-10">
         <button
-          className="bg-black h-16 w-16 font-extrabold text-FFF6E4 hover:bg-C22E2E transition px-4 rounded-full mr-2 shadow-lg"
+          className="bg-black hover:bg-C22E2E text-FFF6E4 h-16 w-16 px-4 mr-2 rounded-full shadow-lg transform active:scale-x-75 transition-transform"
           onClick={handlePrev}
         >
           <FaArrowLeft className="h-10 w-8" />
         </button>
         <button
-          className="bg-black h-16 w-16 font-extrabold text-FFF6E4 hover:bg-C22E2E transition px-4 py-2 rounded-full shadow-lg"
+          className="bg-black hover:bg-C22E2E text-FFF6E4 h-16 w-16 px-4 py-2 rounded-full shadow-lg transform active:scale-x-75 transition-transform"
           onClick={handleNext}
         >
           <FaArrowRight className="h-10 w-8" />

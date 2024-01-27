@@ -15,7 +15,7 @@ import Copyright from "./Copyright/LocationCopyright.jsx";
 import Frame from "./Svg/SvgFrame.jsx";
 import Vector from "./Svg/SvgVector.jsx";
 import LogoBrand from "./Logo/LogoBrand.jsx";
-import BackToTopButton from "../../ScrollToTop/BackToTopButton.jsx";
+import BackToTopButton from "../../UI/ScrollToTop/BackToTopButton.jsx";
 import LinksNetwork from "./Network/LinksNetwork.jsx";
 import Footer from "../../Footer/MainFooter.jsx";
 

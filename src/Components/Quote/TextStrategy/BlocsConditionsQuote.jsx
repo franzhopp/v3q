@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import translations from "../translate.jsx";
 import SvgBtnQuote from "../Svg/SvgBtnQuote.jsx";
-import BackToTopButton from "../../ScrollToTop/BackToTopButton.jsx";
+import BackToTopButton from "../../UI/ScrollToTop/BackToTopButton.jsx";
 
 const BlocsConditions = () => {
   const { language } = useLanguage();

@@ -4,7 +4,7 @@ import SvgFontRight from "./Svg/SvgFontRight";
 import SvgFontLeft from "./Svg/SvgFontLeft";
 import NavbarEthics from "../Navigation/EthicsNavbar/EthicsNavbar";
 import Img from "../../assets/bg-ethics-mac.png";
-import BackToTopButton from "../ScrollToTop/BackToTopButton";
+import BackToTopButton from "../UI/ScrollToTop/BackToTopButton";
 import Blocs from "./Blocs/Blocs";
 import SvgStarPink from "./Svg/SvgStarPink";
 import SvgArrowScroll from "./Svg/SvgArrowScroll";

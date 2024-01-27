@@ -4,7 +4,7 @@ import { RiBardLine } from "react-icons/ri";
 import translations from "./translate.jsx";
 import ButtonContact from "../UI/Button/ButtonFormContact";
 import { useTheme } from "../../context/ThemeProvider.jsx";
-import BackToTopButton from "../ScrollToTop/BackToTopButton.jsx";
+import BackToTopButton from "../UI/ScrollToTop/BackToTopButton.jsx";
 
 const Section = () => {
   const { language } = useLanguage();

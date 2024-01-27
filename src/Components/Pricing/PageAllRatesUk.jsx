@@ -2,12 +2,12 @@ import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { RiBardLine } from "react-icons/ri";
-import { useTheme } from "../../../context/ThemeProvider.jsx";
-import NavbarPages from "../../Navigation/PagesNavbar/PagesNavbar";
-import Footer from "../../Footer/MainFooter.jsx";
+import { useTheme } from "../../context/ThemeProvider.jsx";
+import NavbarPages from "../Navigation/PagesNavbar/PagesNavbar.jsx";
+import Footer from "../Footer/MainFooter.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import BackToTopButton from "../../ScrollToTop/BackToTopButton.jsx";
+import BackToTopButton from "../UI/ScrollToTop/BackToTopButton.jsx";
 
 const Rate = () => {
   const { isDarkMode } = useTheme();

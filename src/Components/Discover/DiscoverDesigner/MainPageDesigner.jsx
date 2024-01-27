@@ -15,7 +15,7 @@ import SvgPolygone from "./Svg/SvgPolygone.jsx";
 import SvgIllustration from "./Svg/SvgIllustration.jsx";
 import SvgItemLeft from "./Svg/SvgItemLeft.jsx";
 import SvgItemRight from "./Svg/SvgItemRight.jsx";
-import BackToTopButton from "../../ScrollToTop/BackToTopButton.jsx";
+import BackToTopButton from "../../UI/ScrollToTop/BackToTopButton.jsx";
 import LinksNetwork from "./Network/LinksNetwork.jsx";
 import Footer from "../../Footer/MainFooter.jsx";
 

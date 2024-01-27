@@ -1,12 +1,12 @@
-import { useTheme } from "../../../context/ThemeProvider";
+import { useTheme } from "../../context/ThemeProvider";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import { RiBardLine } from "react-icons/ri";
-import NavbarPages from "../../Navigation/PagesNavbar/PagesNavbar";
-import TitlePorfolio from "../../UI/Title/TitlePorfolio";
-import ImgDefault from "../../../assets/imgdefault.svg";
-import Footer from "../../Footer/MainFooter.jsx";
+import NavbarPages from "../Navigation/PagesNavbar/PagesNavbar";
+import TitlePorfolio from "../UI/Title/TitlePorfolio";
+import ImgDefault from "../../assets/imgdefault.svg";
+import Footer from "../Footer/MainFooter.jsx";
 import SvgLine from "./Svg/SvgLine";
 import SvgHeart from "./Svg/SvgHeart";
 import SvgStarPink from "./Svg/SvgStarPink";
@@ -69,20 +69,24 @@ const Portfolio = () => {
                 </NavLink>
               </div>
             </p>
-            <div className={`${isDarkMode ? "text-black" : "text-FFF6E4"}`}>
+            <div
+              className={`text-center ${
+                isDarkMode ? "text-black" : "text-FFF6E4"
+              }`}
+            >
               <p className="overflow-auto p-5 h-40">
                 {cards[currentIndex].content}
               </p>
             </div>
             <div className="flex justify-center">
               <button
-                className="bg-black h-16 w-16 font-extrabold text-FFF6E4 hover:bg-C22E2E transition px-4 py-2 rounded-full mr-2 shadow-lg"
+                className="bg-black hover:bg-C22E2E text-FFF6E4 h-16 w-16 px-4 py-2 mr-2 rounded-full shadow-lg transform active:scale-x-75 transition-transform"
                 onClick={handlePrev}
               >
                 <FaArrowLeft className="h-10 w-8" />
               </button>
               <button
-                className="bg-black h-16 w-16 font-extrabold text-FFF6E4 hover:bg-C22E2E transition px-4 py-2 rounded-full shadow-lg"
+                className="bg-black hover:bg-C22E2E text-FFF6E4 h-16 w-16 px-4 py-2 rounded-full shadow-lg transform active:scale-x-75 transition-transform"
                 onClick={handleNext}
               >
                 <FaArrowRight className="h-10 w-8" />
