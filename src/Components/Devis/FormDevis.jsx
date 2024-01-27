@@ -9,7 +9,7 @@ import TitleDevis from "../UI/Title/TitleFormDevis.jsx";
 import ImgText from "../../assets/logo-5.png";
 import ButtonSend from "../UI/Button/ButtonSend.jsx";
 import Footer from "../Footer/Footer.jsx";
-import BackToTopButton from "../ScrollText/BackToTopButton.jsx";
+import BackToTopButton from "../ScrollToTop/BackToTopButton.jsx";
 
 const DevisFree = ({ label, type, value }) => {
   const navigate = useNavigate();

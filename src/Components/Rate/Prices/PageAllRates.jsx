@@ -8,7 +8,7 @@ import TitleRate from "../../UI/Title/TitleRate";
 import Footer from "../../Footer/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import BackToTopButton from "../../ScrollText/BackToTopButton.jsx";
+import BackToTopButton from "../../ScrollToTop/BackToTopButton.jsx";
 
 const Rate = () => {
   const { isDarkMode } = useTheme();

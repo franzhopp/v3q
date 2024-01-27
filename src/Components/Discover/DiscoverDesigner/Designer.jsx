@@ -12,7 +12,7 @@ import LogoInsta from "../../../assets/instagram1.png";
 import LogoLinkedin from "../../../assets/linkedin1.png";
 import LogoSnap from "../../../assets/snapchat1.png";
 import Footer from "../../Footer/Footer";
-import BackToTopButton from "../../ScrollText/BackToTopButton.jsx";
+import BackToTopButton from "../../ScrollToTop/BackToTopButton.jsx";
 
 const DiscoverDesigner = () => {
   const { language } = useLanguage();

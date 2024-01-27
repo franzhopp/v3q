@@ -9,7 +9,7 @@ import NavbarEthics from "../Navigation/EthicsNavbar/EthicsNavbar";
 import ImgMac from "../../assets/bg-ethics-mac.png";
 import ImgText from "../../assets/logo-5.png";
 import Footer from "../Footer/Footer";
-import BackToTopButton from "../ScrollText/BackToTopButton";
+import BackToTopButton from "../ScrollToTop/BackToTopButton";
 
 const EthicsPage = () => {
   const { isDarkMode } = useTheme();

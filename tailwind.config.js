@@ -22,14 +22,16 @@ export default {
         },
       },
       backgroundColor: {
-        'FFF6E4': '#FFF6E4',
-        '0c3e78': '#0C3E78',
-        'pink': '#E18AB0',
+        'FFF6E4': "#FFF6E4",
+        '0c3e78': "#0C3E78",
+        'pink': "#E18AB0",
         '4457BE': "#4457BE",
         '001C58': "#001c58",
-        "aba497": "#282828",
-        "090a0a": "#090a0a",
-        "1E1E20": "#1E1E20",
+        'aba497': "#282828",
+        '090a0a': "#090a0a",
+        '1E1E20': "#1E1E20",
+        'D83939': "#D83939"
+
       },
       colors: {
         'FFF6E4': '#FFF6E4',
@@ -39,6 +41,7 @@ export default {
         'E18AB0': '#E18AB0',
         'F9FEFE': "#F9FEFE",
         '042142': "#042142",
+        'D83939': "#D83939"
 
       },
       fontFamily: {
