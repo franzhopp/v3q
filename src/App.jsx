@@ -4,7 +4,7 @@ import ThemeProvider from "./context/ThemeProvider.jsx";
 import LanguageProvider from "./context/LanguageProvider.jsx";
 import Homepage from "./Components/Homepage/Homepage.jsx";
 import Section from "./Components/Section/FirstSection.jsx";
-import EthicsPage from "./Components/Ethics/CardsEthics.jsx";
+import PageValues from "./Components/Values/MainPageValues.jsx";
 import DiscoverDeveloper from "./Components/Discover/DiscoverDevelopper/MainPageDevelopper.jsx";
 import DiscoverDesigner from "./Components/Discover/DiscoverDesigner/MainPageDesigner.jsx";
 import Services from "./Components/Services/MainServices.jsx";
@@ -26,7 +26,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/" element={<Section />} />
-            <Route path="/values" element={<EthicsPage />} />
+            <Route path="/values" element={<PageValues />} />
             <Route path="/developer" element={<DiscoverDeveloper />} />
             <Route path="/designer" element={<DiscoverDesigner />} />
             <Route path="/services" element={<Services />} />
