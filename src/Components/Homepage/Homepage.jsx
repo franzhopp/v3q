@@ -2,7 +2,7 @@ import Header from "../Navigation/MainNavbarDesktop.jsx";
 import FirstSection from "../Section/FirstSection.jsx";
 import SecondSection from "../Section/SecondSection.jsx";
 import SectionAgency from "../Section/SectionAgency.jsx";
-import Form from "../Contact/FormContact.jsx";
+import Form from "../Contact/MainPageContact.jsx";
 import Footer from "../Footer/Footer.jsx";
 import BackToTopButton from "../ScrollToTop/BackToTopButton.jsx";
 

@@ -10,7 +10,7 @@ import DiscoverWebDeveloper from "./Components/Discover/DiscoverWebDevelopper/Ma
 import DiscoverDesigner from "./Components/Discover/DiscoverDesigner/Designer.jsx";
 import Rate from "./Components/Rate/Prices/PageAllRates.jsx";
 import Portfolio from "./Components/Portfolio/AllProjects/Portfolio.jsx";
-import DevisFree from "./Components/Devis/FormDevis.jsx";
+import MainPageQuote from "./Components/Quote/MainPageQuote.jsx";
 import PagePrivacy from "./Components/Privacy/Pages/PagePrivacy.jsx";
 import PageConditions from "./Components/Privacy/Pages/PageTerms.jsx";
 import PageMentions from "./Components/Privacy/Pages/PageMentions.jsx";
@@ -33,7 +33,7 @@ const App = () => {
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/pricingfr" element={<Rate />} />
             <Route path="/pricinguk" element={<RateUk />} />
-            <Route path="/quote" element={<DevisFree />} />
+            <Route path="/quote" element={<MainPageQuote />} />
             <Route path="/privacy" element={<PagePrivacy />} />
             <Route path="/terms" element={<PageConditions />} />
             <Route path="/mentions" element={<PageMentions />} />

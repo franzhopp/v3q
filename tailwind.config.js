@@ -41,7 +41,8 @@ export default {
         'E18AB0': '#E18AB0',
         'F9FEFE': "#F9FEFE",
         '042142': "#042142",
-        'D83939': "#D83939"
+        'D83939': "#D83939",
+        '3BE69E': "#3BE69E",
 
       },
       fontFamily: {
