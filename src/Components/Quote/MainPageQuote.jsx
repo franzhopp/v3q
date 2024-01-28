@@ -1,5 +1,5 @@
 import NavbarQuote from "../Navigation/NavbarPages/NavbarPages.jsx";
-import TitleQuoteNavbar from "../UI/Title/TitleFormDevis.jsx";
+import TitleQuoteNavbar from "../UI/Title/TitleFormQuote.jsx";
 import BlocsConditions from "./TextStrategy/BlocsConditionsQuote.jsx";
 import FormQuote from "./Email/FormQuote.jsx";
 import Footer from "../Footer/MainFooter.jsx";

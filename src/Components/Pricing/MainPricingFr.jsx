@@ -4,7 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { useTheme } from "../../context/ThemeProvider.jsx";
 import { RiBardLine } from "react-icons/ri";
 import NavbarPages from "../Navigation/NavbarPages/NavbarPages.jsx";
-import TitlePricing from "../UI/Title/TitleRate.jsx";
+import TitlePricing from "../UI/Title/TitlePricing.jsx";
 import TitleWebsiteFr from "./Title/TitleWebsiteFr.jsx";
 import TitleMarketing from "./Title/TitleMarketing.jsx";
 import LinksUk from "./Links/LinksUk.jsx";
