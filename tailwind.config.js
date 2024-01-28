@@ -9,6 +9,9 @@ export default {
       animation: {
         'formbounce': 'button-design-formbounce 4s infinite',
       },
+      backgroundImage: {
+        'image-home': 'url("../assets/bg-home.png")',
+      },
       keyframes: {
         'button-design-formbounce': {
           '5%, 50%': { transform: 'scale(1)' },

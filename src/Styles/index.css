@@ -65,12 +65,6 @@ textarea {
     background-size: cover;
 }
 
-.image-navi-studio-home {
-    background-image: url('../assets/bg-home.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .image-navi-studio-navbar-services {
     background-image: url('../assets/bg-home-services.png');
     background-repeat: no-repeat;
