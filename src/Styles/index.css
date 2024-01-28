@@ -132,17 +132,23 @@ textarea {
     background: url("../assets/bg-devis.png");
 }
 
-.image-navi-studio-title-porfolio {
+.image-title-portfolio {
     border-radius: 0px 0px 182px 0px;
     background-size: cover;
-    background: url("../assets/bg-portfolio.png"), lightgray;
+    background: lightgray;
 }
 
-.image-navi-studio-title-rate {
+.image-title-pricing {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 0px 0px 154px 0px;
     background-image: url("../assets/bg-rate.png");
+}
+
+.image-title-pricing-uk {
+    border-radius: 0px 0px 182px 0px;
+    background-size: cover;
+    background: lightgray;
 }
 
 .image-navi-studio-title-contact {

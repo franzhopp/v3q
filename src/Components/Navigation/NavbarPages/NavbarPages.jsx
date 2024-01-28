@@ -7,10 +7,10 @@ import "../../Homepage/Homepage.jsx";
 const PagesNavbar = () => {
   // const { language, changeLanguage } = useLanguage();
   return (
-    <div className="image-navi-studio-porfolio">
+    <>
       <LinksNavbarDesktop />
       <LinksNavbarMobile />
-    </div>
+    </>
   );
 };
 

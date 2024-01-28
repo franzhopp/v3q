@@ -1,6 +1,6 @@
+import { NavLink } from "react-router-dom";
 import { useTheme } from "../../context/ThemeProvider";
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import { RiBardLine } from "react-icons/ri";
 import NavbarPages from "../Navigation/NavbarPages/NavbarPages.jsx";
@@ -17,7 +17,7 @@ const Portfolio = () => {
     {
       image: ImgDefault,
       title: "À venir",
-      content: "Futur projet arrive très prochainement. 😎",
+      content: "Qui a dit que le futur projet arrive très prochainement ? 😎",
     },
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
