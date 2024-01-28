@@ -1,6 +1,7 @@
 const SvgSettings = () => {
-    return (
-        <svg
+  return (
+    <div className="flex justify-center pt-16">
+      <svg
         className="animate-formbounce"
         width="100"
         height="100"
@@ -29,7 +30,8 @@ const SvgSettings = () => {
           </g>
         </g>
       </svg>
-    )
-}
+    </div>
+  );
+};
 
 export default SvgSettings;

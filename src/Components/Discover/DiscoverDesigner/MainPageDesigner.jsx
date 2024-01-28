@@ -1,5 +1,5 @@
-import NavbarDiscoverDesigner from "../../Navigation/NavbarDiscover/DiscoverDesignerNavbar.jsx";
-import AvatarDesigner from "../../UI/Avatar/TemplateAvatarDesigner.jsx";
+import NavbarDiscoverDesigner from "../../Navigation/NavbarDiscover/NavbarDesigner.jsx";
+import AvatarDesigner from "../../UI/Avatar/AvatarDesigner.jsx";
 import TitleJob from "./Title/TitleJob.jsx";
 import TitleGallery from "./Title/TitleGallery.jsx";
 import Logo from "./Logo/Logo.jsx";

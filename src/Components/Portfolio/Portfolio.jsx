@@ -3,7 +3,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import { RiBardLine } from "react-icons/ri";
-import NavbarPages from "../Navigation/PagesNavbar/PagesNavbar";
+import NavbarPages from "../Navigation/NavbarPages/NavbarPages.jsx";
 import TitlePorfolio from "../UI/Title/TitlePorfolio";
 import ImgDefault from "../../assets/imgdefault.svg";
 import Footer from "../Footer/MainFooter.jsx";

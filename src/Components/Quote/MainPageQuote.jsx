@@ -1,4 +1,4 @@
-import NavbarQuote from "../Navigation/PagesNavbar/PagesNavbar.jsx";
+import NavbarQuote from "../Navigation/NavbarPages/NavbarPages.jsx";
 import TitleQuoteNavbar from "../UI/Title/TitleFormDevis.jsx";
 import BlocsConditions from "./TextStrategy/BlocsConditionsQuote.jsx";
 import FormQuote from "./Email/FormQuote.jsx";

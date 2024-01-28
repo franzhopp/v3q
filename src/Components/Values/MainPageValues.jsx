@@ -2,7 +2,7 @@ import { useTheme } from "../../context/ThemeProvider";
 import { useEffect, useState } from "react";
 import SvgFontRight from "./Svg/SvgFontRight";
 import SvgFontLeft from "./Svg/SvgFontLeft";
-import NavbarEthics from "../Navigation/EthicsNavbar/EthicsNavbar";
+import NavbarEthics from "../Navigation/NavbarValues/NavbarValues.jsx";
 import Img from "../../assets/bg-ethics-mac.png";
 import BackToTopButton from "../UI/ScrollToTop/BackToTopButton";
 import Blocs from "./Blocs/Blocs";

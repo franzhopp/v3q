@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { RiBardLine } from "react-icons/ri";
 import { useTheme } from "../../context/ThemeProvider.jsx";
-import NavbarPages from "../Navigation/PagesNavbar/PagesNavbar.jsx";
+import NavbarPages from "../Navigation/NavbarPages/NavbarPages.jsx";
 import TitleMarketing from "./Title/TitleMarketing.jsx";
 import TitleWebsiteUk from "./Title/TitleWebsiteUk.jsx";
 import TitleUk from "./Title/TitleUk.jsx";
@@ -229,11 +229,7 @@ const Rate = () => {
       </div>
       <ConditionUk />
       <BackToTopButton />
-      <div className="flex flex-col text-center justify-center pt-6 pb-20">
-        <div className="flex justify-center mt-10 mb-10">
-          <SvgReturnQuote />
-        </div>
-      </div>
+      <SvgReturnQuote />
       <Footer />
     </section>
   );

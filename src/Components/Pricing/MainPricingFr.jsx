@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { useTheme } from "../../context/ThemeProvider.jsx";
 import { RiBardLine } from "react-icons/ri";
-import NavbarPages from "../Navigation/PagesNavbar/PagesNavbar.jsx";
+import NavbarPages from "../Navigation/NavbarPages/NavbarPages.jsx";
 import TitlePricing from "../UI/Title/TitleRate.jsx";
 import TitleWebsiteFr from "./Title/TitleWebsiteFr.jsx";
 import TitleMarketing from "./Title/TitleMarketing.jsx";

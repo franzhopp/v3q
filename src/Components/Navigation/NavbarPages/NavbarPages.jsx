@@ -2,7 +2,7 @@
 // import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import LinksNavbarDesktop from "../LinksNavbarDestkop.jsx";
 import LinksNavbarMobile from "../LinksNavbarMobile.jsx";
-import "../../Homepage/Homepage";
+import "../../Homepage/Homepage.jsx";
 
 const PagesNavbar = () => {
   // const { language, changeLanguage } = useLanguage();

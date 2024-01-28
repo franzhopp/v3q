@@ -1,7 +1,7 @@
 import LinksNavbarDesktop from "../LinksNavbarDestkop.jsx";
 import LinksNavbarMobile from "../LinksNavbarMobile.jsx";
 import "../../Section/TextHome/MainBlocsHome.jsx";
-import "../../Homepage/Homepage";
+import "../../Homepage/Homepage.jsx";
 
 const NavbarDiscoverDesigner = () => {
   return (

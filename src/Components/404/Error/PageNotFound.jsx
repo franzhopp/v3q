@@ -3,7 +3,7 @@ import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import translations from "./translate.jsx";
 import SvgReturnHome from "../Svg/SvgReturnHome.jsx";
 import SvgError from "../Svg/SvgError.jsx";
-import PagesNavbar from "../../Navigation/PagesNavbar/PagesNavbar";
+import PagesNavbar from "../../Navigation/NavbarPages/NavbarPages.jsx";
 import ImgLogo from "../../../assets/logo-6.png";
 import Footer from "../../Footer/MainFooter.jsx";
 
