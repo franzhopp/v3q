@@ -81,7 +81,7 @@ const NavbarDesktop = () => {
     };
   });
   return (
-    <div className="h-screen">
+    <div>
       <div className="bg-image-home relative h-full w-full bg-cover bg-center bg-fixed bg-no-repeat">
         <nav
           className={`bg-FFF6E4 border-b-4 border-C22E2E h-28 items-center fixed w-full top-0 left-0 shadow-md z-50`}
