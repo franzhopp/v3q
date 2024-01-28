@@ -2,7 +2,7 @@
 // import translations from "../translate.jsx";
 import LinksNavbarDesktop from "../LinksNavbarDestkop.jsx";
 import LinksNavbarMobile from "../LinksNavbarMobile.jsx";
-import "../../Section/FirstSection.jsx";
+import "../../Section/TextHome/MainBlocs.jsx";
 import "../../Homepage/Homepage";
 
 const PrivacyNavbar = () => {

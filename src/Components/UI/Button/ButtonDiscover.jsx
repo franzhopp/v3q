@@ -4,7 +4,7 @@ import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
-import "../../Section/FirstSection.jsx";
+import "../../Section/TextHome/MainBlocsHome.jsx";
 
 const Button = () => {
   const { language } = useLanguage();

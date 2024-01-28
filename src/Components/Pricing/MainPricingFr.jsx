@@ -5,20 +5,26 @@ import { useTheme } from "../../context/ThemeProvider.jsx";
 import { RiBardLine } from "react-icons/ri";
 import NavbarPages from "../Navigation/PagesNavbar/PagesNavbar.jsx";
 import TitleRate from "../UI/Title/TitleRate.jsx";
+import TitleWebsiteFr from "./Title/TitleWebsiteFr.jsx";
+import TitleMarketing from "./Title/TitleMarketing.jsx";
+import LinksUk from "./Links/LinksUk.jsx";
+import SvgStar from "./Svg/SvgStar.jsx";
+import ConditionFr from "./Title/ConditionFr.jsx";
+import SvgReturnQuote from "./Svg/SvgReturnQuote.jsx";
+import BackToTopButton from "../UI/ScrollToTop/BackToTopButton.jsx";
 import Footer from "../Footer/MainFooter.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import BackToTopButton from "../UI/ScrollToTop/BackToTopButton.jsx";
-import TitleWebsite from "./Title/TitleWebsite.jsx";
-import LinksUk from "./Links/LinksUk.jsx";
-import SvgStar from "./Svg/SvgStar.jsx";
-import SvgReturnQuote from "./Svg/SvgReturnQuote.jsx";
-import TitleMarketing from "./Title/TitleMarketing.jsx";
-import ConditionFr from "./Title/ConditionFr.jsx";
 
 const Rate = () => {
-  const [openStates, setOpenStates] = useState({});
   const { isDarkMode } = useTheme();
+  const [openStates, setOpenStates] = useState({});
+  const toggleSubList = (category) => {
+    setOpenStates((prevOpenStates) => ({
+      ...prevOpenStates,
+      [category]: !prevOpenStates[category],
+    }));
+  };
   const Blue = "bg-0c3e78";
   const Pink = "bg-pink";
   const InformationsSitesWeb = [
@@ -119,7 +125,7 @@ const Rate = () => {
     <section className="bg-FFF6E4">
       <NavbarPages />
       <TitleRate />
-      <TitleWebsite />
+      <TitleWebsiteFr />
       <div className="flex justify-center">
         <div className="flex flex-col justify-center pb-10 text-center">
           <div className="w-96">
@@ -127,7 +133,8 @@ const Rate = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center ">
+      {/* ARRAY 1 */}
+      <div className="flex justify-center">
         <div className="w-96 sm:w-1/2">
           {InformationsSitesWeb.map((info) => (
             <div
@@ -203,6 +210,7 @@ const Rate = () => {
       <BackToTopButton />
       <SvgStar />
       <TitleMarketing />
+      {/* ARRAY 2 */}
       <div className="flex justify-center">
         <div className="w-96 sm:w-1/2">
           {InformationsMarketing.map((info, index) => (

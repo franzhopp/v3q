@@ -9,7 +9,7 @@ import ImgBlack from "../../assets/logo-5.png";
 import ImgWhite from "../../assets/logo-57.png";
 import TitleHome from "../UI/Title/TitleHome.jsx";
 import ModalSearch from "../Modal/SearchModal.jsx";
-import "../Section/FirstSection.jsx";
+import "../Section/TextHome/MainBlocsHome.jsx";
 import "../Homepage/Homepage.jsx";
 import DarkLightThemes from "../../hook/useTheme.jsx";
 import NavbarMobile from "./MainNavbarMobile.jsx";
@@ -83,7 +83,7 @@ const NavbarDesktop = () => {
   return (
     <div className="image-navi-studio-home">
       <nav
-        className={`bg-FFF6E4 border-b-4 border-C22E2E h-28 items-center fixed w-full top-0 left-0 shadow-md z-max`}
+        className={`bg-FFF6E4 border-b-4 border-C22E2E h-28 items-center fixed w-full top-0 left-0 shadow-md z-50`}
       >
         <div className="flex justify-between items-center h-24 mt-2 container mx-auto px-4 sm:px-6 lg:px-8">
           <NavLink to="/">

@@ -7,7 +7,7 @@ import translations from "./translate.jsx";
 import ImgBlack from "../../assets/logo-5.png";
 import ImgWhite from "../../assets/logo-57.png";
 import ModalSearch from "../Modal/SearchModal.jsx";
-import "../Section/FirstSection.jsx";
+import "../Section/TextHome/MainBlocsHome.jsx";
 import "../Homepage/Homepage.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -91,7 +91,7 @@ const NavbarMobile = () => {
   ]);
   return (
     <nav
-      className={`fixed w-full top-0 left-0 shadow-md 2xl:hidden bg-FFF6E4 z-max`}
+      className={`fixed w-full top-0 left-0 shadow-md 2xl:hidden bg-FFF6E4 z-50`}
     >
       <div className="px-5 h-28 flex items-center justify-between">
         {/* LOGO */}

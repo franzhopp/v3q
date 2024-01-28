@@ -9,12 +9,12 @@ import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import ImgBlack from "../../assets/logo-5.png";
 import ImgWhite from "../../assets/logo-57.png";
-import "./../Section/FirstSection.jsx";
+import ButtonOpen from "./ButtonMobile/ButtonOpen.jsx";
+import ButtonClose from "./ButtonMobile/ButtonClose.jsx";
+import "../Section/TextHome/MainBlocsHome.jsx";
 import "./../Homepage/Homepage";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import ButtonOpen from "./ButtonMobile/ButtonOpen.jsx";
-import ButtonClose from "./ButtonMobile/ButtonClose.jsx";
 
 const LinksNavbarMobile = () => {
   const [isAnimating, setIsAnimating] = useState(false);
@@ -81,7 +81,7 @@ const LinksNavbarMobile = () => {
   ]);
   return (
     <nav
-      className={`fixed w-full top-0 left-0 shadow-md 2xl:hidden bg-FFF6E4 z-max`}
+      className={`fixed w-full top-0 left-0 shadow-md 2xl:hidden bg-FFF6E4 z-50`}
     >
       <div className="px-5 h-28 flex items-center justify-between">
         <NavLink to="/" data-aos="fade-left">

@@ -1,7 +1,7 @@
 import SubLine from "../../UI/Highlighting/SubLine";
 
-const TitleWebsite = () => {
-  const text = "Sites Web";
+const TitleWebsiteUk = () => {
+  const text = "Websites";
   const letters = text.split("");
   const animationConfig = [
     { dataAos: "fade-left", dataAosDelay: 100 },
@@ -32,10 +32,13 @@ const TitleWebsite = () => {
             {letter}
           </span>
         ))}
-        <SubLine />
+        <div className="flex justify-center">
+          <span className="absolute w-32 h-1 bg-C22E2E"></span>
+        </div>
       </h1>
+      <SubLine />
     </div>
   );
 };
 
-export default TitleWebsite;
+export default TitleWebsiteUk;

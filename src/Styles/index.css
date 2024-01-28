@@ -8,16 +8,25 @@
 @tailwind components;
 @tailwind utilities;
 
-body * {
-    @apply transition duration-200;
-}
-
 html,
 body {
-    overflow-x: hidden;
-    background-color: #C22E2E;
     -webkit-tap-highlight-color: transparent;
-    cursor: url('./Cursor/Cursor_1.svg'), default !important;
+    cursor: url('../Cursor/Cursor_1.svg'), default !important;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+::-webkit-scrollbar-track {
+    width: 0;
+    height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 0;
+    height: 0;
 }
 
 select {
@@ -44,56 +53,30 @@ textarea {
     cursor: url('./Cursor/Cursor_3.svg'), text !important;
 }
 
-::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-}
-
-::-webkit-scrollbar-track {
-    width: 0;
-    height: 0;
-}
-
-::-webkit-scrollbar-thumb {
-    width: 0;
-    height: 0;
-}
-
-.xs {
-    font-size: 8px;
-}
-
 .number {
     font-family: 'Aoboshi One', serif;
 }
 
-.z-max {
-    z-index: 50 !important;
-}
-
-.logo {
-    background-image: url("./assets/logo-bit.png");
-    height: 40px;
-    width: 40px;
+.picture-belgique {
+    background-image: url("../assets/picture-belgique.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .image-navi-studio-home {
-    background-image: url('./assets/bg-home.png');
+    background-image: url('../assets/bg-home.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .image-navi-studio-navbar-services {
-    background-image: url('./assets/bg-home-services.png');
+    background-image: url('../assets/bg-home-services.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: auto;
-    display: block;
-    max-width: 100%;
 }
 
 .image-navi-studio-navbar-ethics {
-    background-image: url('./assets/bg-ethics.png');
+    background-image: url('../assets/bg-ethics.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
@@ -102,110 +85,75 @@ textarea {
 }
 
 .bg-pattern-portfolio {
-    background-image: url('./assets/pattern.png');
+    background-image: url('../assets/pattern.png');
     background-repeat: no-repeat;
     background-position: 30% 10%;
 }
 
-.star {
-    margin-left: 10px;
-    background-repeat: no-repeat;
-    background-position: right;
-}
-
-/* Blur */
 .bg-contact-blur {
-    background-image: url('./assets/bg-contact-blur.png');
+    background-image: url('../assets/bg-contact-blur.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .bg-services-blur {
-    background-image: url('./assets/bg-home-blur.png');
+    background-image: url('../assets/bg-home-blur.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .bg-devis-blur {
-    background-image: url('./assets/bg.png');
+    background-image: url('../assets/bg.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .bg-devis-blur-r {
-    background-image: url('./assets/bg-portfolio-blur.png');
+    background-image: url('../assets/bg-portfolio-blur.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .bg-ethics-blur {
-    background-image: url('./assets/bg-ethics-blur.png');
+    background-image: url('../assets/bg-ethics-blur.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .image-navi-studio-title-agency {
-    height: auto;
-    display: block;
-    max-width: 100%;
     border-radius: 0px 0px 0px 190px;
-    background: url("./assets/bg-title-agency.png"), lightgray;
+    background: url("../assets/bg-title-agency.png"), lightgray;
 }
 
 .image-navi-studio-title-devis {
-    height: auto;
-    display: block;
-    max-width: 100%;
     border-radius: 0px 0px 182px 0px;
-    background: url("./assets/bg-devis.png");
+    background: url("../assets/bg-devis.png");
 }
 
 .image-navi-studio-title-porfolio {
-    height: auto;
-    display: block;
-    max-width: 100%;
     border-radius: 0px 0px 182px 0px;
     background-size: cover;
-    background: url("./assets/bg-portfolio.png"), lightgray;
+    background: url("../assets/bg-portfolio.png"), lightgray;
 }
 
 .image-navi-studio-title-rate {
-    height: auto;
-    display: block;
-    max-width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 0px 0px 154px 0px;
-    background-image: url("./assets/bg-rate.png");
+    background-image: url("../assets/bg-rate.png");
 }
 
 .image-navi-studio-title-contact {
-    height: auto;
-    display: block;
-    max-width: 100%;
     border-radius: 0px 0px 0px 181px;
-    background: url("./assets/bg-title-contact.png"), lightgray;
+    background: url("../assets/bg-title-contact.png"), lightgray;
 }
 
 .image-navi-studio-marketing-services {
-    height: auto;
-    display: block;
-    max-width: 100%;
-    padding-bottom: 50px;
     border-radius: 0px 0px 290px 0px;
-    background: url("./assets/bg-services-marketing.png"), lightgray;
+    background: url("../assets/bg-services-marketing.png"), lightgray;
 }
 
-.image-navi-studio-porfolio {
-    height: auto;
-    display: block;
-    max-width: 100%;
-    border-radius: 0px 0px 290px 0px;
-}
-
-/* BG FORM */
-.bg-contact {
-    border-radius: 56px;
+.bg-color-form {
     background: rgba(0, 0, 0, 0.08);
     backdrop-filter: blur(6.5px);
 }
@@ -244,42 +192,35 @@ textarea {
 .bg-cards {
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("./assets/bg-cards.png");
+    background-image: url("../assets/bg-cards.png");
 }
 
 .bg-cards-2 {
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("./assets/bg-cards-2.png");
+    background-image: url("../assets/bg-cards-2.png");
 }
 
 .picture-bannier-louisa {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("./assets/picture-bannier-louisa.png");
+    background-image: url("../assets/picture-bannier-louisa.png");
 }
 
 .picture-bannier-melissa {
-    height: auto;
-    display: block;
-    max-width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("./assets/picture-bannier-melissa.png");
+    background-image: url("../assets/picture-bannier-melissa.png");
 }
 
 .p {
     width: 248px;
     height: 230px;
     background-repeat: no-repeat;
-    background-image: url("./assets/bg-sun-r.svg");
+    background-image: url("../assets/bg-sun-r.svg");
 }
 
 .z {
     width: 248px;
     height: 230px;
     background-repeat: no-repeat;
-    background-image: url("./assets/bg-sun-v.svg");
+    background-image: url("../assets/bg-sun-v.svg");
 }
 
 .input-error {
@@ -322,7 +263,6 @@ textarea {
     background-color: rgba(0, 0, 0, -0.3) !important;
 }
 
-
 #logo.zoom-in {
     animation: zoomIn 1s ease-in-out;
 }
@@ -335,10 +275,4 @@ textarea {
     to {
         transform: scale(1);
     }
-}
-
-.picture-belgique {
-    background-image: url("./assets/picture-belgique.png");
-    background-repeat: no-repeat;
-    background-size: cover;
 }

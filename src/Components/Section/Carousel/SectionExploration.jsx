@@ -1,20 +1,20 @@
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { useTheme } from "../../context/ThemeProvider.jsx";
-import Img1 from "../../assets/2.png";
-import Img2 from "../../assets/3.png";
-import Img3 from "../../assets/1.png";
-import Img4 from "../../assets/4.png";
-import Img5 from "../../assets/5.png";
-import Img6 from "../../assets/6.png";
-import Img7 from "../../assets/7.png";
-import Img8 from "../../assets/8.png";
-import Img9 from "../../assets/9.png";
-import Img10 from "../../assets/10.png";
-import Img11 from "../../assets/11.png";
-import Img12 from "../../assets/12.png";
-import Img13 from "../../assets/13.png";
+import { useTheme } from "../../../context/ThemeProvider.jsx";
+import Img1 from "../../../assets/2.png";
+import Img2 from "../../../assets/3.png";
+import Img3 from "../../../assets/1.png";
+import Img4 from "../../../assets/4.png";
+import Img5 from "../../../assets/5.png";
+import Img6 from "../../../assets/6.png";
+import Img7 from "../../../assets/7.png";
+import Img8 from "../../../assets/8.png";
+import Img9 from "../../../assets/9.png";
+import Img10 from "../../../assets/10.png";
+import Img11 from "../../../assets/11.png";
+import Img12 from "../../../assets/12.png";
+// import Img13 from "../../../assets/13.png";
 
 const SectionExploration = () => {
   const { isDarkMode } = useTheme();
@@ -103,12 +103,12 @@ const SectionExploration = () => {
       country: "Royaume-Uni 🇬🇧",
       user: "📸 | Mélissa.",
     },
-    {
-      image: Img13,
-      title: "Guadalajara, Jal",
-      country: "Mexico 🇲🇽",
-      user: "📸 | Ruben.",
-    },
+    // {
+    //   image: Img13,
+    //   title: "Guadalajara, Jal",
+    //   country: "Mexico 🇲🇽",
+    //   user: "📸 | Ruben.",
+    // },
   ];
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);

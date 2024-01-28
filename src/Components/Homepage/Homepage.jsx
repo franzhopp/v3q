@@ -1,18 +1,18 @@
 import Header from "../Navigation/MainNavbarDesktop.jsx";
-import FirstSection from "../Section/FirstSection.jsx";
-import SecondSection from "../Section/SecondSection.jsx";
-import SectionAgency from "../Section/SectionAgency.jsx";
-import Form from "../Contact/MainPageContact.jsx";
+import BlocsItemsHome from "../Section/TextHome/MainBlocsHome.jsx";
+import BlocsItemsStrategy from "../Section/TextStrategy/MainBlocsStrategy.jsx";
+import BlocsItemsAgency from "../Section/TextAgency/MainBlocsAgency.jsx";
+import Contact from "../Contact/MainPageContact.jsx";
 import Footer from "../Footer/MainFooter.jsx";
 
 const Home = () => {
   return (
     <>
       <Header />
-      <FirstSection />
-      <SecondSection />
-      <SectionAgency />
-      <Form />
+      <BlocsItemsHome />
+      <BlocsItemsStrategy />
+      <BlocsItemsAgency />
+      <Contact />
       <Footer />
     </>
   );

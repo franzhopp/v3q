@@ -8,7 +8,7 @@ import translations from "./translate.jsx";
 import ImageLondon from "../../assets/london.png";
 import ImageParis from "../../assets/paris.png";
 import ModalImage from "react-modal-image";
-import SectionExploration from "./SectionExploration.jsx";
+import SectionExploration from "./Carousel/SectionExploration.jsx";
 import SvgHeart from "./Svg/SvgHeart.jsx";
 
 const SectionTeam = () => {

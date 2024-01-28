@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "../../Section/FirstSection.jsx";
+import "../../Section/TextHome/MainBlocsHome.jsx";
 
 const ButtonServices = () => {
   const [scrollNavbar, setScrollNavbar] = useState();
