@@ -4,7 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { useTheme } from "../../context/ThemeProvider.jsx";
 import { RiBardLine } from "react-icons/ri";
 import NavbarPages from "../Navigation/PagesNavbar/PagesNavbar.jsx";
-import TitleRate from "../UI/Title/TitleRate.jsx";
+import TitlePricing from "../UI/Title/TitleRate.jsx";
 import TitleWebsiteFr from "./Title/TitleWebsiteFr.jsx";
 import TitleMarketing from "./Title/TitleMarketing.jsx";
 import LinksUk from "./Links/LinksUk.jsx";
@@ -124,7 +124,7 @@ const Rate = () => {
   return (
     <section className="bg-FFF6E4">
       <NavbarPages />
-      <TitleRate />
+      <TitlePricing />
       <TitleWebsiteFr />
       <div className="flex justify-center">
         <div className="flex flex-col justify-center pb-10 text-center">

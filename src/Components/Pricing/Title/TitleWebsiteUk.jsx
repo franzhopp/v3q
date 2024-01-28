@@ -36,7 +36,6 @@ const TitleWebsiteUk = () => {
           <span className="absolute w-32 h-1 bg-C22E2E"></span>
         </div>
       </h1>
-      <SubLine />
     </div>
   );
 };
