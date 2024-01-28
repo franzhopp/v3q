@@ -9,6 +9,7 @@ const DarkLightThemes = () => {
     const sections = document.querySelectorAll(".bg-042142, .bg-FFF6E4");
 
     sections.forEach((section) => {
+      section.classList.add("duration-300");
       if (isDarkMode) {
         section.classList.remove("bg-042142");
         section.classList.add("bg-FFF6E4");
