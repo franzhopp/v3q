@@ -1,9 +1,9 @@
-import translations from "../translate.jsx";
+import { NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { FaArrowRight } from "react-icons/fa";
 import { useTheme } from "../../../context/ThemeProvider.jsx";
 import { useLanguage } from "../../../context/LanguageProvider.jsx";
-import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
-import { FaArrowRight } from "react-icons/fa";
+import translations from "../translate.jsx";
 import "../../Section/TextHome/MainBlocsHome.jsx";
 
 const Button = () => {

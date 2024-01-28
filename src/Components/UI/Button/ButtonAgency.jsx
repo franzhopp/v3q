@@ -1,17 +1,15 @@
-import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
 import "../../Section/TextHome/MainBlocsHome.jsx";
 
 const ButtonAgency = () => {
   const [scrollNavbar, setScrollNavbar] = useState();
-
   const SectionToScrollContact = () => {
     const contactSection = document.getElementById("contact");
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: "smooth" });
     }
   };
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -20,14 +18,11 @@ const ButtonAgency = () => {
         setScrollNavbar(false);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
   return (
     <>
       <div className="animate-formbounce flex justify-center sm:justify-end relative right-20 top-20 sm:right-96">

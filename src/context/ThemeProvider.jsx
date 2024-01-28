@@ -4,7 +4,6 @@ const ThemeContext = createContext();
 export const useTheme = () => {
   return useContext(ThemeContext);
 };
-
 const ThemeProvider = ({ children }) => {
   const [isDarkMode, setIsDarkMode] = useState("bg-FFF6E4");
   const toggleTheme = () => {
@@ -14,7 +13,6 @@ const ThemeProvider = ({ children }) => {
     isDarkMode,
     toggleTheme,
   };
-
   return (
     <ThemeContext.Provider value={options}>{children}</ThemeContext.Provider>
   );

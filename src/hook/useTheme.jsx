@@ -4,11 +4,9 @@ import { IoMdSunny, IoMdMoon } from "react-icons/io";
 
 const DarkLightThemes = () => {
   const { isDarkMode, toggleTheme } = useTheme();
-
   useEffect(() => {
-    const sections = document.querySelectorAll(".bg-042142, .bg-FFF6E4");
-
-    sections.forEach((section) => {
+    const section = document.querySelectorAll(".bg-042142, .bg-FFF6E4");
+    section.forEach((section) => {
       section.classList.add("duration-300");
       if (isDarkMode) {
         section.classList.remove("bg-042142");
@@ -19,7 +17,6 @@ const DarkLightThemes = () => {
       }
     });
   }, [isDarkMode]);
-
   return (
     <div className={isDarkMode ? "" : ""}>
       <button

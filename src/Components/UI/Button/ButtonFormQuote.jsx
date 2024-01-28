@@ -1,10 +1,10 @@
-import translations from "../translate.jsx";
+import { NavLink } from "react-router-dom";
 import { useTheme } from "../../../context/ThemeProvider.jsx";
 import { useLanguage } from "../../../context/LanguageProvider.jsx";
-import { NavLink } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
+import translations from "../translate.jsx";
 
-const ButtonDevis = () => {
+const ButtonQuote = () => {
   const { isDarkMode } = useTheme();
   const { language } = useLanguage();
   return (
@@ -28,4 +28,4 @@ const ButtonDevis = () => {
   );
 };
 
-export default ButtonDevis;
+export default ButtonQuote;

@@ -1,11 +1,10 @@
 import { useLanguage } from "../../../context/LanguageProvider.jsx";
-import { useTheme } from "../../../context/ThemeProvider.jsx";
 import { RiBardLine } from "react-icons/ri";
 import translations from "../translate.jsx";
+import ButtonQuote from "../../UI/Button/ButtonFormQuote.jsx";
 
 const TextOffers = () => {
   const { language } = useLanguage();
-  const { isDarkMode } = useTheme();
   return (
     <div className="bg-0C3E78 pt-28 pb-28 px-4 sm:px-6 lg:px-8">
       <h3
@@ -53,6 +52,7 @@ const TextOffers = () => {
           </p>
         </div>
       </div>
+        <ButtonQuote/>
     </div>
   );
 };

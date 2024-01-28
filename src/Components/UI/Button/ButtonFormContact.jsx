@@ -4,14 +4,12 @@ import "../../Section/TextHome/MainBlocsHome.jsx";
 
 const ButtonContact = () => {
   const [scrollNavbar, setScrollNavbar] = useState();
-
   const SectionToScrollContact = () => {
     const contactSection = document.getElementById("team");
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: "smooth" });
     }
   };
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -20,14 +18,11 @@ const ButtonContact = () => {
         setScrollNavbar(false);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
   return (
     <div className="animate-formbounce flex justify-center sm:justify-end relative right-20 top-20 sm:right-96">
       <NavLink to="/" onClick={SectionToScrollContact}>

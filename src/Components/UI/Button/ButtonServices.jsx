@@ -3,7 +3,6 @@ import "../../Section/TextHome/MainBlocsHome.jsx";
 
 const ButtonServices = () => {
   const [scrollNavbar, setScrollNavbar] = useState();
-
   const SectionToSectionContactServices = () => {
     const ContactToScroll = document.getElementById("contact-services");
     if (ContactToScroll) {
@@ -17,9 +16,7 @@ const ButtonServices = () => {
           setScrollNavbar(false);
         }
       };
-
       window.addEventListener("scroll", handleScroll);
-
       return () => {
         window.removeEventListener("scroll", handleScroll);
       };
