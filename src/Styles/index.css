@@ -122,12 +122,12 @@ textarea {
     background-size: cover;
 }
 
-.image-navi-studio-title-agency {
+.image-title-agency {
     border-radius: 0px 0px 0px 190px;
     background: url("../assets/bg-title-agency.png"), lightgray;
 }
 
-.image-navi-studio-title-devis {
+.image-title-quote {
     border-radius: 0px 0px 182px 0px;
     background: url("../assets/bg-devis.png");
 }
@@ -151,7 +151,7 @@ textarea {
     background: lightgray;
 }
 
-.image-navi-studio-title-contact {
+.image-title-contact {
     border-radius: 0px 0px 0px 181px;
     background: url("../assets/bg-title-contact.png"), lightgray;
 }

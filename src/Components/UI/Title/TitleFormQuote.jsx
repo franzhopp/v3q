@@ -3,7 +3,7 @@ import { useLanguage } from "../../../context/LanguageProvider.jsx";
 const TitleDevis = () => {
   const { language } = useLanguage();
   return (
-    <div className="image-navi-studio-title-devis mt-20 pb-24">
+    <div className="image-title-quote mt-20 pb-24">
       <div
         className="pt-28 text-FFF6E4 sm:ml-44 sm:text-left text-center font-extrabold"
         data-aos="fade-left"

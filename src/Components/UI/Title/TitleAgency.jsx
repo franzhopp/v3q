@@ -4,7 +4,7 @@ import { useLanguage } from "../../../context/LanguageProvider.jsx";
 const TitleAgency = () => {
   const { language } = useLanguage();
   return (
-    <div className="image-navi-studio-title-agency mt-20 pb-24">
+    <div className="image-title-agency mt-20 pb-24">
       <div
         className="pt-20 text-FFF6E4 sm:ml-44 sm:text-left text-center font-extrabold"
         data-aos="fade-left"
