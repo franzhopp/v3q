@@ -9,7 +9,7 @@
 @tailwind utilities;
 
 body * {
-    @apply transition-colors duration-200;
+    @apply transition duration-200;
 }
 
 html,
