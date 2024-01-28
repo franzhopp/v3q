@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Emblema+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
-@import url('https://db.onlinewebfonts.com/c/776348cc945339041ca98b13f4e7b43b?family=Gexo+Sans+Bold');
 @import url('https://fonts.cdnfonts.com/css/aref-ruqaa');
 
 @tailwind base;
@@ -12,7 +11,7 @@ html,
 body {
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
-    cursor: url('../Cursor/Cursor_1.svg'), default !important;
+    cursor: url('./Cursor/Cursor_1.svg'), default !important;
 }
 
 ::-webkit-scrollbar {
@@ -32,7 +31,6 @@ body {
 
 select {
     outline: none;
-    background-color: #FFF6E4;
 }
 
 a,
@@ -42,16 +40,19 @@ svg,
 button,
 label,
 select,
+input,
 img,
 li {
     cursor: url('./Cursor/Cursor_2.svg'), pointer !important;
 }
 
 input[type="text"],
-label,
-input,
 textarea {
     cursor: url('./Cursor/Cursor_3.svg'), text !important;
+}
+
+.xs {
+    font-size: 8px;
 }
 
 .number {

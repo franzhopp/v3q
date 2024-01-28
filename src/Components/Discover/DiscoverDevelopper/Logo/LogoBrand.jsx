@@ -10,7 +10,7 @@ const LogoBrand = () => {
         <h2 className="text-C22E2E font-emblema text-2xl text-center">
           Astres Lunaires
         </h2>
-        <p className="text-C22E2E text-xs text-center">
+        <p className="text-C22E2E xs text-center">
           DEVELOPER • DESIGNER • WRITER
         </p>
       </div>

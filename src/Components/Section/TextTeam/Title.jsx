@@ -1,41 +1,45 @@
-const TitleWelcome = () => {
-  const { isDarkMode } = useTheme();
-  const props = useSpring({
-    from: { color: "#C22E2E" },
-    to: async (next) => {
-      while (true) {
-        await next({ color: "#0C3E78" });
-        await next({ color: "#C22E2E" });
-      }
-    },
-    config: { duration: 1000 },
-  });
+import SubLine from "../../UI/Highlighting/SubLine";
+
+const TitleTeamNavi = () => {
+  const text = "Team #navi";
+  const letters = text.split("");
+  const animationConfig = [
+    { dataAos: "fade-left", dataAosDelay: 100 },
+    { dataAos: "fade-left", dataAosDelay: 200 },
+    { dataAos: "fade-left", dataAosDelay: 300 },
+    { dataAos: "fade-left", dataAosDelay: 400 },
+    { dataAos: "fade-left", dataAosDelay: 500 },
+    { dataAos: "fade-right", dataAosDelay: 100 },
+    { dataAos: "fade-right", dataAosDelay: 200 },
+    { dataAos: "fade-right", dataAosDelay: 300 },
+    { dataAos: "fade-right", dataAosDelay: 400 },
+    { dataAos: "fade-right", dataAosDelay: 500 },
+    { dataAos: "fade-right", dataAosDelay: 500 },
+    { dataAos: "fade-left", dataAosDelay: 600 },
+  ];
   return (
-    <div
-      className={`flex justify-center mb-16 ${
-        isDarkMode ? "text-black" : "text-FFF6E4"
-      }`}
-    >
+    <div className="flex justify-center mb-6">
       <div className="w-4/5 sm:w-1/2">
-        <p
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-bottom"
-          className="font-arial px-5 text-center tracking-tighter text-lg md:text-center lg:text-center sm:text-2xl mt-10 mb-5"
+        <h3
+          data-aos="fade-right"
+          className="text-center font-extrabold mt-6 text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
         >
-          <span className="font-extrabold">
-            {translations[language].textSectionTeamBold1Fr}
-            {translations[language].textSectionTeamBold1En} navi studio.™{" "}
+          <span className="text-C22E2E font-inter">
+            {letters.map((letter, index) => (
+              <span
+                key={index}
+                data-aos={animationConfig[index].dataAos}
+                data-aos-delay={animationConfig[index].dataAosDelay}
+              >
+                {letter}
+              </span>
+            ))}
+            <SubLine />
           </span>
-          <span className="font-extrabold">
-            {translations[language].textSectionTeamBold2Fr}
-            {translations[language].textSectionTeamBold2En}{" "}
-          </span>
-          {translations[language].textSectionTeamWithoutBold1Fr}
-          {translations[language].textSectionTeamWithoutBold1En} <br />
-        </p>
+        </h3>
       </div>
     </div>
   );
 };
 
-export default TitleWelcome;
+export default TitleTeamNavi;

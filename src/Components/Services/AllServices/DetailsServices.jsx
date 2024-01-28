@@ -10,9 +10,7 @@ const DetailsServices = () => {
   const { isDarkMode } = useTheme();
   return (
     <section>
-      <div
-        className={`image-navi-studio-marketing-services pb-12 text-FFF6E4 pr-0 sm:pr-10 md:pr-20 lg:pr-32 xl:pr-96`}
-      >
+      <div className="image-navi-studio-marketing-services pb-12 text-FFF6E4 pr-0 sm:pr-10 md:pr-20 lg:pr-32 xl:pr-96">
         <div
           data-aos="fade-right"
           className="text-center text-4xl sm:text-5xl font-extrabold pt-10"
