@@ -65,17 +65,6 @@ const NavbarDesktop = () => {
       setShowSousListsMenu(false);
     }, 1000);
   };
-  // document.addEventListener("scroll", function () {
-  //   const scrollPosition = window.scrollY;
-  //   const opacityValue = 1 - scrollPosition / 200;
-  //   document.querySelector(".image-home").style.opacity = opacityValue;
-  // });
-  document.addEventListener("scroll", function () {
-    const scrollPosition = window.scrollY;
-    document.querySelector(
-      ".image-home"
-    ).style.backgroundPositionX = `${scrollPosition}px`;
-  });
   useEffect(() => {
     AOS.init();
     AOS.refresh();
