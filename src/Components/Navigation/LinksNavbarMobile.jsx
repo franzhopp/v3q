@@ -304,7 +304,7 @@ const LinksNavbarMobile = () => {
         {/* BARRE DE RECHERCHE */}
         <div className="flex justify-start px-2 pt-4 pb-3">
           <div
-            className={`hover:text-0C3E78 ${
+            className={`hover:text-0C3E78 transform active:scale-75 transition-transform ${
               isDarkMode ? "text-C22E2E" : "text-FFF6E4"
             }`}
           >

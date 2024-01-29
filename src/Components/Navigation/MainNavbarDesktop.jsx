@@ -286,13 +286,13 @@ const NavbarDesktop = () => {
               </div>
             </li>
             <div
-              className={`hover:text-0C3E78 px-6 py-2 xl:text-2xl text-base font-extrabold ${
+              className={`hover:text-0C3E78 px-6 py-2 xl:text-2xl text-base font-extrabold transform active:scale-75 transition-transform ${
                 isDarkMode ? "text-C22E2E" : "text-FFF6E4"
               }`}
             >
               <FaSearch
                 data-aos="fade-left"
-                className="h-5 xl:h-7"
+                className="h-5 xl:h-7"  
                 onClick={() => {
                   setOpenModel(true);
                 }}

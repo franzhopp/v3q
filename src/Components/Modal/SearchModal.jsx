@@ -50,7 +50,7 @@ const ModalSearch = ({ closeModal, searchQuery }) => {
       <button onClick={handleSearch}>
         <ImCross
           onClick={() => closeModal(false)}
-          className={`mb-4 mr-4 sm:mb-0 hover:text-0C3E78 ${
+          className={`mb-4 mr-4 sm:mb-0 hover:text-0C3E78 transform active:scale-75 transition-transform ${
             isDarkMode ? "text-C22E2E" : "text-FFF6E4"
           }`}
         />
