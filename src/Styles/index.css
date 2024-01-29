@@ -12,6 +12,7 @@ body {
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
     cursor: url('./Cursor/Cursor_1.svg'), default !important;
+    background: url('../assets/pattern-original.png');
 }
 
 ::-webkit-scrollbar {
@@ -69,10 +70,7 @@ textarea {
     background-image: url('../assets/bg-home.png');
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
-
-
 
 .image-navi-studio-navbar-services {
     background-image: url('../assets/bg-home-services.png');
