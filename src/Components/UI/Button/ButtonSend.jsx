@@ -1,7 +1,7 @@
-import translations from "../translate.jsx";
-import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import { NavLink } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
+import { useLanguage } from "../../../context/LanguageProvider.jsx";
+import translations from "../translate.jsx";
 
 const ButtonSend = () => {
   const { language } = useLanguage();

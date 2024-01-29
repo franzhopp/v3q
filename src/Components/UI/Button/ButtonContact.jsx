@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
 import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import Artwork from "../../../assets/artworkheart.png";
-import { FaArrowRight } from "react-icons/fa";
 import translations from "../translate.jsx";
 
 const ButtonContactServices = () => {

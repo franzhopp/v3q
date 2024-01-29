@@ -1,5 +1,5 @@
-import translations from "../translate.jsx";
 import { useLanguage } from "../../../context/LanguageProvider.jsx";
+import translations from "../translate.jsx";
 
 const Title = () => {
   const { language } = useLanguage();

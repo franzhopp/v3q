@@ -1,6 +1,6 @@
-import translations from "../translate.jsx";
-import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import { motion } from "framer-motion";
+import { useLanguage } from "../../../context/LanguageProvider.jsx";
+import translations from "../translate.jsx";
 import ButtonDiscover from "../Button/ButtonDiscover";
 
 const TitleHome = () => {
