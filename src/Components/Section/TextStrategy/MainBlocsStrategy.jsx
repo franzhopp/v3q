@@ -10,6 +10,7 @@ const MainBlocsStrategy = () => {
           <SubTextStrategy />
         </div>
       </div>
+      <div id="team" className=""></div>
     </section>
   );
 };

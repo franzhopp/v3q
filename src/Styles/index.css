@@ -166,37 +166,6 @@ textarea {
     backdrop-filter: blur(6.5px);
 }
 
-.animate-rotate {
-    animation: rotateAnimation 0.5s ease-in-out forwards;
-}
-
-@keyframes rotateAnimation {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.animation-scrolling-rtl {
-    display: inline-block;
-    padding-right: 2em;
-    padding-left: 100%;
-    animation: scrolling-rtl 20s infinite linear;
-}
-
-@keyframes scrolling-rtl {
-    0% {
-        transform: translate3d(0, 0, 0);
-    }
-
-    100% {
-        transform: translate3d(-100%, 0, 0);
-    }
-}
-
 .bg-cards {
     background-repeat: no-repeat;
     background-size: cover;
