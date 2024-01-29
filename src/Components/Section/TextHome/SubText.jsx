@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useLanguage } from "../../../context/LanguageProvider.jsx";
-import { RiBardLine } from "react-icons/ri";
 import translations from "../translate.jsx";
 
 const SubTextHome = () => {
@@ -35,7 +34,6 @@ const SubTextHome = () => {
             className="text-center"
           >
             <span className="font-extrabold">
-              <RiBardLine className="inline" />{" "}
               {translations[language].textBoldOneFr}
               {translations[language].textBoldOneEn}
             </span>{" "}
@@ -53,7 +51,6 @@ const SubTextHome = () => {
             data-aos-anchor-placement="top-bottom"
             className="font-extrabold text-center sm:text-right"
           >
-            <RiBardLine className="inline" />{" "}
             {translations[language].textWithoutBoldFsFr}
             {translations[language].textWithoutBoldFsEn}{" "}
             <a
