@@ -6,7 +6,7 @@ import ButtonDiscover from "../Button/ButtonDiscover";
 const TitleHome = () => {
   const { language } = useLanguage();
   return (
-    <section>
+    <>
       <div className="flex flex-col justify-center items-center h-screen pt-32">
         <h1 className="font-extrabold tracking-tight text-FFF6E4 text-5xl md:text-8xl">
           <motion.span
@@ -24,10 +24,10 @@ const TitleHome = () => {
           </h2>
         </div>
       </div>
-        <div className="flex justify-center pb-24">
-          <ButtonDiscover />
-        </div>
-    </section>
+      <div className="flex justify-center pb-24">
+        <ButtonDiscover />
+      </div>
+    </>
   );
 };
 

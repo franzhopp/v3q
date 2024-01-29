@@ -329,7 +329,7 @@ const translations = {
     // Homepage
     titleHomeEn: "Digital Agency",
     scrollingTextEn:
-      "DESIGN | WEB DEVELOPMENT | DIGITAL MARKETING | BRAND STRATEGY",
+      "DESIGN ◦ WEB DEVELOPMENT ◦ DIGITAL MARKETING ◦ BRAND STRATEGY",
     btnDiscoverEn: "About Us",
     footerPrivacyEn: "Privacy",
     footerTermsEn: "Terms Of Use",
