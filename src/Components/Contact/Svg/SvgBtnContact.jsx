@@ -1,7 +1,7 @@
 const SvgBtnContact = () => {
   return (
     <svg
-      className="rounded-full shadow-lg"
+      className="rounded-full shadow-lg transform active:scale-75 transition-transform"
       xmlns="http://www.w3.org/2000/svg"
       width="95"
       height="95"

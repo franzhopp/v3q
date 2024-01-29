@@ -1,6 +1,7 @@
 const SvgBtnQuote = () => {
   return (
     <svg
+      className="transform active:scale-75 transition-transform"
       width="95"
       height="95"
       viewBox="0 0 112 112"

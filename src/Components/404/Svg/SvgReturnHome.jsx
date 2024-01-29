@@ -1,7 +1,7 @@
 const SvgReturnHome = () => {
   return (
     <svg
-      className="rounded-full shadow-lg"
+      className="rounded-full shadow-lg transform active:scale-75 transition-transform"
       width="112"
       height="112"
       viewBox="0 0 112 112"
