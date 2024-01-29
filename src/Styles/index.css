@@ -51,18 +51,6 @@ textarea {
     cursor: url('./Cursor/Cursor_3.svg'), text !important;
 }
 
-@media (prefers-reduced-motion) {
-    :root {
-        --scale: 0;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .parallax {
-        background-attachment: scroll !important;
-    }
-}
-
 .xs {
     font-size: 8px;
 }
@@ -73,6 +61,12 @@ textarea {
 
 .picture-belgique {
     background-image: url("../assets/picture-belgique.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-navi-studio-home {
+    background-image: url('../assets/bg-home.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
