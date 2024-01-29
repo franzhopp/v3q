@@ -36,11 +36,11 @@ const Button = () => {
         isDarkMode ? "text-black" : "text-FFF6E4"
       }`}
     >
-      <span className="text-2xl mr-3 font-semibold">
+      <span className="text-xl sm:text-3xl mr-3 font-semibold">
         {translations[language].btnDiscoverFr}
         {translations[language].btnDiscoverEn}
       </span>
-      <FaArrowRight className="h-8 w-8" />
+      <FaArrowRight className="h-5 w-5 sm:h-8 sm:w-8" />
     </NavLink>
   );
 };

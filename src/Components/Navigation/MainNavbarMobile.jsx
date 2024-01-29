@@ -15,6 +15,7 @@ import DarkLightThemes from "../../hook/useTheme.jsx";
 import { useTheme } from "../../context/ThemeProvider.jsx";
 import ButtonClose from "./ButtonMobile/ButtonClose.jsx";
 import ButtonOpen from "./ButtonMobile/ButtonOpen.jsx";
+import { motion, useScroll } from "framer-motion"
 
 const NavbarMobile = () => {
   const [scrollNavbar, setScrollNavbar] = useState();
@@ -30,6 +31,7 @@ const NavbarMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { language, changeLanguage } = useLanguage();
   const { isDarkMode } = useTheme();
+  const { scrollYProgress } = useScroll();
   const changeLanguageHandler = (newLanguage) => {
     changeLanguage(newLanguage);
   };
@@ -93,6 +95,7 @@ const NavbarMobile = () => {
     <nav
       className={`fixed w-full top-0 left-0 shadow-md 2xl:hidden bg-FFF6E4 z-50`}
     >
+       <motion.div style={{ scaleX: scrollYProgress }} />  
       <div className="px-5 h-28 flex items-center justify-between">
         {/* LOGO */}
         <NavLink to="/" data-aos="fade-left">

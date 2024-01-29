@@ -12,20 +12,20 @@ const ButtonClose = () => {
       <path
         d="M12 27H41"
         stroke="#FFF6E4"
-        stroke-width="6"
-        stroke-linecap="round"
+        strokeWidth="6"
+        strokeLinecap="round"
       />
       <path
         d="M18 36L35 36"
         stroke="#FFF6E4"
-        stroke-width="6"
-        stroke-linecap="round"
+        strokeWidth="6"
+        strokeLinecap="round"
       />
       <path
         d="M18 18L35 18"
         stroke="#FFF6E4"
-        stroke-width="6"
-        stroke-linecap="round"
+        strokeWidth="6"
+        strokeLinecap="round"
       />
     </svg>
   );

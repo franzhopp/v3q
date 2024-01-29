@@ -165,7 +165,7 @@ const FormQuote = ({ label, type, value }) => {
         onSubmit={handleSubmit}
         className="bg-color-form rounded-3xl p-9 pb-12 shadow-lg space-y-4"
       >
-        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div className="relative pb-5">
             <label
               className={`mt-1 absolute left-2 transition-all duration-200 ${

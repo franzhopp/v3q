@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { useTheme } from "../../../context/ThemeProvider.jsx";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import Img1 from "../../../assets/2.png";
@@ -104,16 +105,56 @@ const SectionExploration = () => {
     <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
       <div className="relative">
         <div className="absolute top-36 -left-36 2xl:top-40 2xl:left-20">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="152"
-            height="152"
-            viewBox="0 0 152 152"
-            fill="none"
+          <motion.span
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
           >
-            <circle cx="76" cy="76" r="76" fill="#0C3E78" />
-          </svg>
-          <svg
+            <svg
+              data-aos="fade-in"
+              xmlns="http://www.w3.org/2000/svg"
+              width="152"
+              height="152"
+              viewBox="0 0 152 152"
+              fill="none"
+            >
+              <circle cx="76" cy="76" r="76" fill="#0C3E78" />
+            </svg>
+          </motion.span>
+          <motion.span
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 1 }}
+          >
+            <svg
+              data-aos="fade-in"
+              xmlns="http://www.w3.org/2000/svg"
+              width="152"
+              height="152"
+              viewBox="0 0 152 152"
+              fill="none"
+            >
+              <circle cx="76" cy="76" r="76" fill="#C22E2E" />
+            </svg>
+          </motion.span>
+          <motion.span
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 2 }}
+          >
+            <svg
+              data-aos="fade-in"
+              xmlns="http://www.w3.org/2000/svg"
+              width="152"
+              height="152"
+              viewBox="0 0 152 152"
+              fill="none"
+            >
+              <circle cx="76" cy="76" r="76" fill="#E18AB0" />
+            </svg>
+          </motion.span>
+          {/* <svg
+            data-aos="fade-in"
             xmlns="http://www.w3.org/2000/svg"
             width="152"
             height="152"
@@ -123,6 +164,7 @@ const SectionExploration = () => {
             <circle cx="76" cy="76" r="76" fill="#C22E2E" />
           </svg>
           <svg
+            data-aos="fade-in"
             xmlns="http://www.w3.org/2000/svg"
             width="152"
             height="152"
@@ -130,7 +172,7 @@ const SectionExploration = () => {
             fill="none"
           >
             <circle cx="76" cy="76" r="76" fill="#E18AB0" />
-          </svg>
+          </svg> */}
         </div>
       </div>
       <div className="flex justify-center px-3 pt-20">

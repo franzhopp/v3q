@@ -8,12 +8,12 @@ import ImgBloc4 from "../Image/home4.png";
 const BlocsItems = () => {
   const { language } = useLanguage();
   return (
-    <div class="flex justify-center mt-10">
-      <div class="mt-5 flex flex-wrap justify-center space-x-0 sm:space-x-6">
+    <div className="flex justify-center mt-10">
+      <div className="mt-5 flex flex-wrap justify-center space-x-0 sm:space-x-6">
         <div
           data-aos="fade-left"
           data-aos-duration="300"
-          class="bg-C22E2E p-6 rounded-2xl shadow-2xl mb-5"
+          className="bg-C22E2E p-6 rounded-2xl shadow-2xl mb-5"
         >
           <p className="text-FFF6E4 text-center text-xl font-extrabold mb-5">
             {translations[language].title1ServicesFr}
@@ -39,7 +39,7 @@ const BlocsItems = () => {
         <div
           data-aos="fade-right"
           data-aos-duration="300"
-          class="bg-cards p-6 rounded-2xl shadow-2xl mb-5"
+          className="bg-cards p-6 rounded-2xl shadow-2xl mb-5"
         >
           <p className="text-FFF6E4 text-center text-xl font-extrabold mb-5">
             {translations[language].title2ServicesFr}
@@ -63,7 +63,7 @@ const BlocsItems = () => {
         <div
           data-aos="fade-left"
           data-aos-duration="300"
-          class="bg-cards-2 p-6 rounded-2xl shadow-2xl mb-5"
+          className="bg-cards-2 p-6 rounded-2xl shadow-2xl mb-5"
         >
           <p className="text-FFF6E4 text-center text-xl font-extrabold mb-5">
             Landing page
@@ -85,7 +85,7 @@ const BlocsItems = () => {
         </div>
         <div
           data-aos="fade-right"
-          class="bg-C22E2E p-6 rounded-2xl shadow-2xl mb-5"
+          className="bg-C22E2E p-6 rounded-2xl shadow-2xl mb-5"
         >
           <p className="text-FFF6E4 text-center text-xl font-extrabold mb-5">
             {translations[language].title3ServicesFr}

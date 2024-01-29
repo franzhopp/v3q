@@ -100,8 +100,8 @@ const DiscoverWebDeveloper = () => {
         </div>
       </div>
       <LogoBrand />
-      <div class="pt-14 pb-28 flex flex-wrap justify-center space-x-0 sm:space-x-10">
-        <div class="p-6">
+      <div className="pt-14 pb-28 flex flex-wrap justify-center space-x-0 sm:space-x-10">
+        <div className="p-6">
           <div
             data-aos="fade-in"
             className="flex flex-row space-x-10 list-none"

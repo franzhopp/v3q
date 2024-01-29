@@ -24,12 +24,12 @@ const DiscoverDesigner = () => {
     <section className="bg-FFF6E4">
       <NavbarDiscoverDesigner />
       <AvatarDesigner />
-      <div class="bg-1E1E20 flex justify-center pt-10 pb-48">
-        <div class="mt-6 flex flex-wrap justify-center space-x-0 sm:space-x-20">
+      <div className="bg-1E1E20 flex justify-center pt-10 pb-48">
+        <div className="mt-6 flex flex-wrap justify-center space-x-0 sm:space-x-20">
           <div className="flex justify-start relative">
             <SvgMexico />
           </div>
-          <div class="p-6">
+          <div className="p-6">
             <div className="w-80">
               <div className="flex justify-center mt-16 mb-10">
                 <SvgMadeWithLove />
@@ -44,7 +44,7 @@ const DiscoverDesigner = () => {
             <div
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"
-              class="flex justify-start flex-col mb-5"
+              className="flex justify-start flex-col mb-5"
             >
               <TitleJob />
             </div>
@@ -64,7 +64,7 @@ const DiscoverDesigner = () => {
         </div>
       </div>
       <div className="bg-1E1E20 flex justify-center">
-        <div class="grid grid-cols sm:grid-cols md:grid-cols lg:grid-cols-3 gap-2">
+        <div className="grid grid-cols sm:grid-cols md:grid-cols lg:grid-cols-3 gap-2">
           <ImageGallery />
         </div>
       </div>
@@ -83,7 +83,7 @@ const DiscoverDesigner = () => {
       <div className="bg-FFF6E4 flex justify-center pt-56">
         <Logo />
       </div>
-      <div class="bg-FFF6E4 pt-10 flex flex-wrap justify-center pb-20 space-x-0 sm:space-x-10">
+      <div className="bg-FFF6E4 pt-10 flex flex-wrap justify-center pb-20 space-x-0 sm:space-x-10">
         <div className="flex flex-row space-x-10 list-none mt-20 p-6">
           <LinksNetwork />
         </div>

@@ -18,20 +18,20 @@ const ButtonOpen = () => {
       <path
         d="M26 12L26 41"
         stroke="#FFF6E4"
-        stroke-width="6"
-        stroke-linecap="round"
+        strokeWidth="6"
+        strokeLinecap="round"
       />
       <path
         d="M17 18L17 35"
         stroke="#FFF6E4"
-        stroke-width="6"
-        stroke-linecap="round"
+        strokeWidth="6"
+        strokeLinecap="round"
       />
       <path
         d="M35 18L35 35"
         stroke="#FFF6E4"
-        stroke-width="6"
-        stroke-linecap="round"
+        strokeWidth="6"
+        strokeLinecap="round"
       />
     </svg>
   );

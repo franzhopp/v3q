@@ -40,7 +40,7 @@ const EthicsPage = () => {
   return (
     <section className="bg-FFF6E4">
       <NavbarEthics />
-      <div class="flex justify-center mt-10">
+      <div className="flex justify-center mt-10">
         {/* Les 3 blocs */}
         <Blocs />
       </div>
