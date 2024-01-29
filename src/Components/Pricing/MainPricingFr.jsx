@@ -157,7 +157,7 @@ const Rate = () => {
                 <div className="text-FFF6E4">
                   <button
                     onClick={() => toggleSubList(info.title)}
-                    className={`bg-FFF6E4 p-3 rounded-3xl shadow-md cursor-pointer transition-transform transform hover:scale-105 ${
+                    className={`bg-FFF6E4 p-3 rounded-3xl shadow-md cursor-pointer transform active:scale-75 transition-transform ${
                       isDarkMode ? "text-0C3E78" : "text-FFF6E4 "
                     }`}
                   >

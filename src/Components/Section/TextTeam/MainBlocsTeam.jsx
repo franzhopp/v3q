@@ -184,7 +184,7 @@ const SectionTeam = () => {
             <div className="flex justify-center items-center h-24 w-96 mt-0 sm:mt-32">
               <NavLink
                 to="/designer"
-                className="inline-flex items-center gap-2 rounded-full mr-6 mb-10 bg-black px-8 py-3 text-FFF6E4"
+                className="bg-black text-FFF6E4 inline-flex items-center gap-2 rounded-full mr-6 mb-10  px-8 py-3 transform active:scale-75 transition-transform"
               >
                 <span className="text-3xl mr-3 font-semibold">
                   {translations[language].btnMoreFr}
@@ -199,7 +199,7 @@ const SectionTeam = () => {
               <div className="flex justify-center items-center h-24 w-96 mt-0 sm:mt-32">
                 <NavLink
                   to="/developer"
-                  className="inline-flex items-center gap-2 rounded-full mr-2 sm:mr-0 bg-black px-8 py-3 text-FFF6E4"
+                  className="bg-black text-FFF6E4 inline-flex items-center gap-2 rounded-full mr-2 sm:mr-0  px-8 py-3 transform active:scale-75 transition-transform"
                 >
                   <FaArrowLeft className="h-10 w-10" />
                   <span className="text-3xl ml-3 font-semibold">

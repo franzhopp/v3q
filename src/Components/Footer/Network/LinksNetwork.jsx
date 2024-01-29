@@ -12,7 +12,7 @@ const LinksNetwork = () => {
           <img
             src={LogoTwitter}
             alt="Icône Twitter"
-            className="flex-shrink-0 h-14 w-14 transition-transform transform hover:scale-105"
+            className="flex-shrink-0 h-14 w-14 transform active:scale-75 transition-transform"
           />
         </NavLink>
       </li>
@@ -27,7 +27,7 @@ const LinksNetwork = () => {
           <img
             src={LogoInsta}
             alt="Icône Instagram"
-            className="flex-shrink-0 h-14 w-14 transition-transform transform hover:scale-105"
+            className="flex-shrink-0 h-14 w-14 transform active:scale-75 transition-transform"
           />
         </NavLink>
       </li>
@@ -37,7 +37,7 @@ const LinksNetwork = () => {
           <img
             src={LogoLinkedin}
             alt="Icône Linkedin"
-            className="flex-shrink-0 h-14 w-14 transition-transform transform hover:scale-105"
+            className="flex-shrink-0 h-14 w-14 transform active:scale-75 transition-transform"
           />
         </NavLink>
       </li>
@@ -51,7 +51,7 @@ const LinksNetwork = () => {
           <img
             src={LogoSnap}
             alt="Icône Snapchat"
-            className="flex-shrink-0 h-14 w-14 transition-transform transform hover:scale-105"
+            className="flex-shrink-0 h-14 w-14 transform active:scale-75 transition-transform"
           />
         </NavLink>
       </li>
