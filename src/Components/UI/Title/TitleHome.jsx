@@ -23,10 +23,10 @@ const TitleHome = () => {
             Paris x London
           </h2>
         </div>
-        <div className="flex justify-center pt-10">
+      </div>
+        <div className="flex justify-center pb-24">
           <ButtonDiscover />
         </div>
-      </div>
     </section>
   );
 };

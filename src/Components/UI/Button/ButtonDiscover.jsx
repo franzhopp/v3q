@@ -32,15 +32,15 @@ const Button = () => {
   return (
     <NavLink
       onClick={SectionToScroll}
-      className={`bg-FFF6E4 border-black border-4 inline-flex items-center gap-2 px-8 py-3 shadow-2xl rounded-full transform active:scale-75 transition-transform ${
+      className={`bg-FFF6E4 inline-flex items-center border-black border-4 gap-2 px-8 py-3 shadow-2xl rounded-full transform active:scale-75 transition-transform ${
         isDarkMode ? "text-black" : "text-FFF6E4"
       }`}
     >
-      <span className="text-xl sm:text-3xl mr-3 font-semibold">
+      <span className="text-3xl mr-3 font-semibold">
         {translations[language].btnDiscoverFr}
         {translations[language].btnDiscoverEn}
       </span>
-      <FaArrowRight className="h-5 w-5 sm:h-8 sm:w-8" />
+      <FaArrowRight className="h-10 w-10" />
     </NavLink>
   );
 };
