@@ -28,7 +28,7 @@ const translations = {
     // Homepage
     titleHomeFr: "Agence digitale",
     scrollingTextFr:
-      "DESIGN | DÉVELOPPEMENT | MARKETING DIGITAL | STRATÉGIE DE MARQUE",
+      "DESIGN ◦ DÉVELOPPEMENT ◦ MARKETING DIGITAL ◦ STRATÉGIE DE MARQUE",
     btnDiscoverFr: "Découvrir",
     footerPrivacyFr: "Politique de Confidentialité",
     footerTermsFr: "Conditions d'Utilisation",
