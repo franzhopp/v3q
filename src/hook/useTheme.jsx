@@ -7,7 +7,7 @@ const DarkLightThemes = () => {
   useEffect(() => {
     const section = document.querySelectorAll(".bg-042142, .bg-FFF6E4");
     section.forEach((section) => {
-      section.classList.add("duration-500");
+      section.classList.add("duration-100");
       if (isDarkMode) {
         section.classList.remove("bg-042142");
         section.classList.add("bg-FFF6E4");
