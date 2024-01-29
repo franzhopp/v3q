@@ -254,7 +254,6 @@ textarea {
     }
 }
 
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -267,7 +266,6 @@ textarea {
     }
 }
 
-/* Apply animation with staggered delays */
 .fadeInDelay-1 {
     animation: fadeIn 0.5s ease-in-out 0.1s forwards;
 }

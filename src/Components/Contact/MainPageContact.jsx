@@ -9,7 +9,7 @@ import "../Navigation/MainNavbarDesktop.jsx";
 
 const MainPageContact = () => {
   return (
-    <section data-aos="fade-in" className="bg-FFF6E4 bg-contact-blur">
+    <section className="bg-FFF6E4 bg-contact-blur">
       <Title />
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-x-16 gap-y-5 lg:grid-cols-5">

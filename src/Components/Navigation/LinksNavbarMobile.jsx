@@ -109,7 +109,7 @@ const LinksNavbarMobile = () => {
         </div>
       </div>
       <ul className={`p-5 ${isOpen ? "block" : "hidden"}`}>
-        <li className={`${isDarkMode ? "text-C22E2E" : "text-FFF6E4"}`}>
+        <li className={`${isDarkMode ? "text-C22E2E" : "text-FFF6E4"} fadeInDelay-1`}>
           <NavLink className="block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
             <button onClick={toggleSousListsAgence}>
               <div className="flex items-center justify-between">
@@ -186,7 +186,7 @@ const LinksNavbarMobile = () => {
             </ul>
           </NavLink>
         </li>
-        <li className={`${isDarkMode ? "text-C22E2E" : "text-FFF6E4"}`}>
+        <li className={`${isDarkMode ? "text-C22E2E" : "text-FFF6E4"} fadeInDelay-2`}>
           <NavLink className="block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
             <button onClick={toggleSousListsMenu}>
               <div className="flex items-center justify-between">
@@ -262,7 +262,7 @@ const LinksNavbarMobile = () => {
             </ul>
           </NavLink>
         </li>
-        <li className={`${isDarkMode ? "text-C22E2E" : "text-FFF6E4"}`}>
+        <li className={`${isDarkMode ? "text-C22E2E" : "text-FFF6E4"} fadeInDelay-3`}>
           <NavLink
             to="/portfolio"
             className="block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
@@ -270,7 +270,7 @@ const LinksNavbarMobile = () => {
             Portfolio
           </NavLink>
         </li>
-        <li className={`${isDarkMode ? "text-C22E2E" : "text-FFF6E4"}`}>
+        <li className={`${isDarkMode ? "text-C22E2E" : "text-FFF6E4"} fadeInDelay-4`}>
           <NavLink
             to="/"
             className="block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
@@ -279,7 +279,7 @@ const LinksNavbarMobile = () => {
           </NavLink>
         </li>
         {/* SELECT TRAD */}
-        <li className={`${isDarkMode ? "text-C22E2E" : "text-FFF6E4"}`}>
+        <li className={`${isDarkMode ? "text-C22E2E" : "text-FFF6E4"} fadeInDelay-5`}>
           <div className="block px-2 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
             <select
               className={`${isDarkMode ? "bg-FFF6E4" : "bg-042142"}`}
