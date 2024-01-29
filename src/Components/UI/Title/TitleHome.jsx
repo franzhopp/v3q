@@ -7,7 +7,7 @@ const TitleHome = () => {
   const { language } = useLanguage();
   return (
     <section>
-      <div className="flex flex-col justify-center items-center h-screen">
+      <div className="flex flex-col justify-center items-center h-screen pt-36">
         <h1 className="font-extrabold tracking-tight text-FFF6E4 text-5xl md:text-8xl">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
@@ -23,12 +23,15 @@ const TitleHome = () => {
             Paris x London
           </h2>
         </div>
-      </div>
-      <div className="flex justify-center sm:justify-end px-0 sm:px-20 pb-14">
-        <ButtonDiscover />
+        <div className="flex justify-center pt-10">
+          <ButtonDiscover />
+        </div>
       </div>
       <p className="pb-5">
-        <span className="whitespace-nowrap animation-scrolling-rtl font-extrabold text-FFF6E4 text-2xl sm:text-4xl">
+        <span
+          data-aos="fade-left"
+          className="flex justify-center text-center font-extrabold text-FFF6E4 text-2xl sm:text-4xl"
+        >
           {translations[language].scrollingTextFr}
           {translations[language].scrollingTextEn}
         </span>

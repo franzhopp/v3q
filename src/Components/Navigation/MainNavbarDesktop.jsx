@@ -292,7 +292,7 @@ const NavbarDesktop = () => {
             >
               <FaSearch
                 data-aos="fade-left"
-                className="h-5 xl:h-7"  
+                className="h-5 xl:h-7"
                 onClick={() => {
                   setOpenModel(true);
                 }}

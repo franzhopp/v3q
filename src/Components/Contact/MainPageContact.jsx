@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import Title from "../UI/Title/TitleFormContact.jsx";
+import Title from "../UI/Title/TitleContact.jsx";
 import TextStrategy from "./TextContact/TextStrategy.jsx";
 import SvgBtnContact from "./Svg/SvgBtnContact.jsx";
 import SvgFontRight from "./Svg/SvgFontRight.jsx";
