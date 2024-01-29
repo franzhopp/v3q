@@ -12,7 +12,6 @@ body {
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
     cursor: url('./Cursor/Cursor_1.svg'), default !important;
-    background: url('../assets/pattern-original.png');
 }
 
 ::-webkit-scrollbar {
