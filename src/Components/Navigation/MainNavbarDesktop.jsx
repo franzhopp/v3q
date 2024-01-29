@@ -81,7 +81,19 @@ const NavbarDesktop = () => {
     };
   });
   return (
-    <div>
+    <div className="h-screen">
+      <div className="p-5 text-2xl bg-purple-300 bg-opacity-50 rounded-xl">
+        Welcome to my site!
+      </div>
+      <div className="p-5 text-2xl bg-purple-300 bg-opacity-50 rounded-xl">
+        Welcome to my site!
+      </div>
+      <div className="p-5 text-2xl bg-purple-300 bg-opacity-50 rounded-xl">
+        Welcome to my site!
+      </div>
+      <div className="p-5 text-2xl bg-purple-300 bg-opacity-50 rounded-xl">
+        Welcome to my site!
+      </div>
       <div className="bg-image-home relative h-full w-full bg-cover bg-center bg-fixed bg-no-repeat">
         <nav
           className={`bg-FFF6E4 border-b-4 border-C22E2E h-28 items-center fixed w-full top-0 left-0 shadow-md z-50`}
