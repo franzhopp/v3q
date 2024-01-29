@@ -7,7 +7,7 @@ const TitleHome = () => {
   const { language } = useLanguage();
   return (
     <>
-      <div className="flex flex-col justify-center items-center h-screen pt-32">
+      <div className="flex flex-col justify-center items-center h-screen pt-20">
         <h1 className="font-extrabold tracking-tight text-FFF6E4 text-5xl md:text-8xl">
           <motion.span
             initial={{ opacity: 0, y: 20 }}

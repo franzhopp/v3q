@@ -15,7 +15,7 @@ import DarkLightThemes from "../../hook/useTheme.jsx";
 import { useTheme } from "../../context/ThemeProvider.jsx";
 import ButtonClose from "./ButtonMobile/ButtonClose.jsx";
 import ButtonOpen from "./ButtonMobile/ButtonOpen.jsx";
-import { motion, useScroll } from "framer-motion"
+import { motion, useScroll } from "framer-motion";
 
 const NavbarMobile = () => {
   const [scrollNavbar, setScrollNavbar] = useState();
@@ -95,7 +95,7 @@ const NavbarMobile = () => {
     <nav
       className={`fixed w-full top-0 left-0 shadow-md 2xl:hidden bg-FFF6E4 z-50`}
     >
-       <motion.div style={{ scaleX: scrollYProgress }} />  
+      <motion.div style={{ scaleX: scrollYProgress }} />
       <div className="px-5 h-28 flex items-center justify-between">
         {/* LOGO */}
         <NavLink to="/" data-aos="fade-left">
@@ -125,7 +125,11 @@ const NavbarMobile = () => {
       </div>
       {/* LINKS */}
       <ul className={`p-5 ${isOpen ? "block" : "hidden"}`}>
-        <li className={`${isDarkMode ? "text-C22E2E" : "text-FFF6E4"}`}>
+        <li
+          className={`${
+            isDarkMode ? "text-C22E2E" : "text-FFF6E4"
+          } fadeInDelay-1`}
+        >
           <NavLink className="block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
             <button onClick={toggleSousListsAgence}>
               <div className="flex items-center justify-between">
@@ -173,7 +177,6 @@ const NavbarMobile = () => {
                       <IoIosArrowDown className="mt-1" />
                     </div>
                   </button>
-
                   <ul
                     data-aos="fade-left"
                     className={`toggle-menu ${
@@ -202,7 +205,11 @@ const NavbarMobile = () => {
             </ul>
           </NavLink>
         </li>
-        <li className={`${isDarkMode ? "text-C22E2E" : "text-FFF6E4"}`}>
+        <li
+          className={`${
+            isDarkMode ? "text-C22E2E" : "text-FFF6E4"
+          } fadeInDelay-2`}
+        >
           <NavLink className="block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
             <button onClick={toggleSousListsMenu}>
               <div className="flex items-center justify-between">
@@ -278,7 +285,11 @@ const NavbarMobile = () => {
             </ul>
           </NavLink>
         </li>
-        <li className={`${isDarkMode ? "text-C22E2E" : "text-FFF6E4"}`}>
+        <li
+          className={`${
+            isDarkMode ? "text-C22E2E" : "text-FFF6E4"
+          } fadeInDelay-3`}
+        >
           <NavLink
             to="/portfolio"
             className="block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
@@ -286,7 +297,11 @@ const NavbarMobile = () => {
             Portfolio
           </NavLink>
         </li>
-        <li className={`${isDarkMode ? "text-C22E2E" : "text-FFF6E4"}`}>
+        <li
+          className={`${
+            isDarkMode ? "text-C22E2E" : "text-FFF6E4"
+          } fadeInDelay-4`}
+        >
           <NavLink
             to="/"
             onClick={SectionToSectionContact}
@@ -296,7 +311,11 @@ const NavbarMobile = () => {
           </NavLink>
         </li>
         {/* SELECT TRAD */}
-        <li className={`${isDarkMode ? "text-C22E2E" : "text-FFF6E4"}`}>
+        <li
+          className={`${
+            isDarkMode ? "text-C22E2E" : "text-FFF6E4"
+          } fadeInDelay-5`}
+        >
           <div className="block px-2 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
             <select
               className={`${isDarkMode ? "bg-FFF6E4" : "bg-042142"}`}
