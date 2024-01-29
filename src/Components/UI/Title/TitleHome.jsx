@@ -27,15 +27,6 @@ const TitleHome = () => {
           <ButtonDiscover />
         </div>
       </div>
-      <p className="pb-5">
-        <span
-          data-aos="fade-left"
-          className="flex justify-center text-center font-extrabold px-10 text-FFF6E4 text-2xl sm:text-4xl"
-        >
-          {translations[language].scrollingTextFr}
-          {translations[language].scrollingTextEn}
-        </span>
-      </p>
     </section>
   );
 };
