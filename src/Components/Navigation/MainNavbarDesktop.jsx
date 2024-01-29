@@ -65,6 +65,17 @@ const NavbarDesktop = () => {
       setShowSousListsMenu(false);
     }, 1000);
   };
+  // document.addEventListener("scroll", function () {
+  //   const scrollPosition = window.scrollY;
+  //   const opacityValue = 1 - scrollPosition / 200;
+  //   document.querySelector(".image-home").style.opacity = opacityValue;
+  // });
+  document.addEventListener("scroll", function () {
+    const scrollPosition = window.scrollY;
+    document.querySelector(
+      ".image-home"
+    ).style.backgroundPositionX = `${scrollPosition}px`;
+  });
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -81,7 +92,7 @@ const NavbarDesktop = () => {
     };
   });
   return (
-    <div className="image-navi-studio-home">
+    <div className="image-home">
       <nav
         className={`bg-FFF6E4 border-b-4 border-C22E2E h-28 items-center fixed w-full top-0 left-0 shadow-md z-50`}
       >
