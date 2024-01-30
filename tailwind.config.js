@@ -25,7 +25,7 @@ export default {
         },
       },
       backgroundColor: {
-        'FFF6E4': "#FFF6E4",
+        'fff6e4': "#fff6e4",
         '0c3e78': "#0C3E78",
         'pink': "#E18AB0",
         '4457BE': "#4457BE",
@@ -37,8 +37,8 @@ export default {
         'D83939': "#D83939",
       },
       colors: {
-        'FFF6E4': '#FFF6E4',
-        'C22E2E': '#C22E2E',
+        'fff6e4': '#fff6e4',
+        'c22e2e': '#c22e2e',
         '0C3E78': '#0C3E78',
         '3E9BF0': '#3E9BF0',
         'E18AB0': '#E18AB0',
@@ -73,9 +73,9 @@ export default {
       {
         light: {
           ...require("daisyui/src/theming/themes"),
-          "primary": "#C22E2E",
-          "primary-focus": "#FFF6E4",
-          "secondary": "#FFF6E4",
+          "primary": "#c22e2e",
+          "primary-focus": "#fff6e4",
+          "secondary": "#fff6e4",
         },
       },
     ],

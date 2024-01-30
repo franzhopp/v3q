@@ -37,7 +37,7 @@ const LinksNavbarDesktop = () => {
   };
   return (
     <nav
-      className={`bg-FFF6E4 border-b-4 border-C22E2E h-28 items-center fixed w-full top-0 left-0 shadow-md z-50`}
+      className={`bg-fff6e4 border-b-4 border-c22e2e h-28 items-center fixed w-full top-0 left-0 shadow-md z-50`}
     >
       <div className="flex justify-between items-center h-24 mt-2 container mx-auto px-4 sm:px-6 lg:px-8">
         <NavLink to="/">
@@ -55,7 +55,7 @@ const LinksNavbarDesktop = () => {
               onMouseEnter={handleMouseEnterSubmenu}
               onMouseLeave={closeSubmenuWithDelay}
               className={`hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold ${
-                isDarkMode ? "text-C22E2E" : "text-FFF6E4"
+                isDarkMode ? "text-c22e2e" : "text-fff6e4"
               }`}
             >
               {translations[language].navAgence}
@@ -63,8 +63,8 @@ const LinksNavbarDesktop = () => {
             </NavLink>
             <div className="flex justify-center">
               <ul
-                className={`absolute hidden group-hover:block rounded-md font-extrabold text-left w-48 bg-FFF6E4 mt-2 py-2 ${
-                  isDarkMode ? "text-C22E2E" : "text-FFF6E4"
+                className={`absolute hidden group-hover:block rounded-md font-extrabold text-left w-48 bg-fff6e4 mt-2 py-2 ${
+                  isDarkMode ? "text-c22e2e" : "text-fff6e4"
                 } fadeInDelayDesktop`}
               >
                 <li>
@@ -101,12 +101,12 @@ const LinksNavbarDesktop = () => {
                 >
                   <li
                     className={`ml-4 ${
-                      isDarkMode ? "text-C22E2E" : "text-FFF6E4"
+                      isDarkMode ? "text-c22e2e" : "text-fff6e4"
                     }`}
                   >
                     <NavLink
                       to="/designer"
-                      className="block border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                      className="block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       Designer
                     </NavLink>
@@ -114,7 +114,7 @@ const LinksNavbarDesktop = () => {
                   <li className="ml-4 font-extrabold">
                     <NavLink
                       to="/developer"
-                      className="block border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                      className="block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       Web Developer
                     </NavLink>
@@ -127,7 +127,7 @@ const LinksNavbarDesktop = () => {
             <NavLink
               to="/services"
               className={`hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold ${
-                isDarkMode ? "text-C22E2E" : "text-FFF6E4"
+                isDarkMode ? "text-c22e2e" : "text-fff6e4"
               }`}
             >
               {translations[language].navServices}
@@ -135,8 +135,8 @@ const LinksNavbarDesktop = () => {
             </NavLink>
             <div className="flex justify-center">
               <ul
-                className={`absolute hidden group-hover:block bg-FFF6E4 w-48 mt-2 py-2 rounded-md text-left ${
-                  isDarkMode ? "text-C22E2E" : "text-FFF6E4"
+                className={`absolute hidden group-hover:block bg-fff6e4 w-48 mt-2 py-2 rounded-md text-left ${
+                  isDarkMode ? "text-c22e2e" : "text-fff6e4"
                 } fadeInDelayDesktop`}
               >
                 <li>
@@ -165,7 +165,7 @@ const LinksNavbarDesktop = () => {
                   <li className="ml-4 font-extrabold">
                     <NavLink
                       to="/pricingfr"
-                      className="block border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                      className="block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       {translations[language].navSousPricingFr}
                       {translations[language].navSousPricingEn} FR
@@ -174,7 +174,7 @@ const LinksNavbarDesktop = () => {
                   <li className="ml-4 font-extrabold">
                     <NavLink
                       to="/pricinguk"
-                      className="block border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                      className="block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       {translations[language].navSousPricingFr}
                       {translations[language].navSousPricingEn} UK
@@ -193,7 +193,7 @@ const LinksNavbarDesktop = () => {
               </ul>
             </div>
           </li>
-          <div className={`${isDarkMode ? "text-C22E2E" : "text-FFF6E4"}`}>
+          <div className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
             <NavLink
               to="/portfolio"
               className="hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
@@ -209,26 +209,26 @@ const LinksNavbarDesktop = () => {
           </div>
           <li
             className={`relative group list-none ${
-              isDarkMode ? "text-C22E2E" : "text-FFF6E4"
+              isDarkMode ? "text-c22e2e" : "text-fff6e4"
             }`}
           >
             <div
               className={`hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold`}
             >
               <select
-                className={`${isDarkMode ? "bg-FFF6E4" : "bg-042142"}`}
+                className={`${isDarkMode ? "bg-fff6e4" : "bg-042142"}`}
                 value={language}
                 onChange={(e) => changeLanguageHandler(e.target.value)}
               >
                 <option
                   value="fr"
-                  className={`${isDarkMode ? "text-C22E2E" : "text-FFF6E4"}`}
+                  className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}
                 >
                   FR
                 </option>
                 <option
                   value="en"
-                  className={`${isDarkMode ? "text-C22E2E" : "text-FFF6E4"}`}
+                  className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}
                 >
                   EN
                 </option>
@@ -237,7 +237,7 @@ const LinksNavbarDesktop = () => {
           </li>
           <div
             className={`hover:text-0C3E78 px-6 py-2 xl:text-2xl text-base font-extrabold transform active:scale-75 transition-transform ${
-              isDarkMode ? "text-C22E2E" : "text-FFF6E4"
+              isDarkMode ? "text-c22e2e" : "text-fff6e4"
             }`}
           >
             <FaSearch
@@ -250,7 +250,7 @@ const LinksNavbarDesktop = () => {
           </div>
           {openModel && (
             <ModalSearch
-              className={`${isDarkMode ? "bg-FFF6E4" : "bg-042142"}`}
+              className={`${isDarkMode ? "bg-fff6e4" : "bg-042142"}`}
               closeModal={setOpenModel}
               searchQuery={setSearchQuery}
             />

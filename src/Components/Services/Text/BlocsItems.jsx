@@ -13,14 +13,14 @@ const BlocsItems = () => {
         <div
           data-aos="fade-left"
           data-aos-duration="300"
-          className="bg-C22E2E p-6 rounded-2xl shadow-2xl mb-5"
+          className="bg-c22e2e p-6 rounded-2xl shadow-2xl mb-5"
         >
-          <p className="text-FFF6E4 text-center text-xl font-extrabold mb-5">
+          <p className="text-fff6e4 text-center text-xl font-extrabold mb-5">
             {translations[language].title1ServicesFr}
             {translations[language].title1ServicesEn}
           </p>
           <div className="w-64">
-            <p className="text-FFF6E4 text-center">
+            <p className="text-fff6e4 text-center">
               {translations[language].blocd1ServicesFr}
               {translations[language].blocd1ServicesEn}{" "}
               <span className="font-extrabold">
@@ -41,12 +41,12 @@ const BlocsItems = () => {
           data-aos-duration="300"
           className="bg-cards p-6 rounded-2xl shadow-2xl mb-5"
         >
-          <p className="text-FFF6E4 text-center text-xl font-extrabold mb-5">
+          <p className="text-fff6e4 text-center text-xl font-extrabold mb-5">
             {translations[language].title2ServicesFr}
             {translations[language].title2ServicesEn}
           </p>
           <div className="w-64">
-            <p className="text-FFF6E4 text-center">
+            <p className="text-fff6e4 text-center">
               {translations[language].bloc4ServicesFr}
               {translations[language].bloc4ServicesEn}{" "}
               <span className="font-extrabold">
@@ -65,12 +65,12 @@ const BlocsItems = () => {
           data-aos-duration="300"
           className="bg-cards-2 p-6 rounded-2xl shadow-2xl mb-5"
         >
-          <p className="text-FFF6E4 text-center text-xl font-extrabold mb-5">
+          <p className="text-fff6e4 text-center text-xl font-extrabold mb-5">
             Landing page
           </p>
           <div className="w-64">
             {" "}
-            <p className="text-FFF6E4 text-center">
+            <p className="text-fff6e4 text-center">
               {translations[language].bloc6ServicesFr}
               {translations[language].bloc6ServicesEn}{" "}
               <span className="font-extrabold">
@@ -85,14 +85,14 @@ const BlocsItems = () => {
         </div>
         <div
           data-aos="fade-right"
-          className="bg-C22E2E p-6 rounded-2xl shadow-2xl mb-5"
+          className="bg-c22e2e p-6 rounded-2xl shadow-2xl mb-5"
         >
-          <p className="text-FFF6E4 text-center text-xl font-extrabold mb-5">
+          <p className="text-fff6e4 text-center text-xl font-extrabold mb-5">
             {translations[language].title3ServicesFr}
             {translations[language].title3ServicesEn}
           </p>{" "}
           <div className="w-64">
-            <p className="text-FFF6E4 text-center">
+            <p className="text-fff6e4 text-center">
               {translations[language].bloc7BoldServicesFr}
               {translations[language].bloc7BoldServicesEn}
               <span className="font-extrabold">

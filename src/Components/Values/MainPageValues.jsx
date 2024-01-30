@@ -38,7 +38,7 @@ const EthicsPage = () => {
     };
   }, []);
   return (
-    <section className="bg-FFF6E4">
+    <section className="bg-fff6e4">
       <NavbarEthics />
       <div className="flex justify-center mt-10">
         {/* Les 3 blocs */}
@@ -57,7 +57,7 @@ const EthicsPage = () => {
       </div>
       <div
         className={`flex justify-center ${
-          isDarkMode ? "text-black" : "text-FFF6E4"
+          isDarkMode ? "text-black" : "text-fff6e4"
         }`}
       >
         <SubBlocs />

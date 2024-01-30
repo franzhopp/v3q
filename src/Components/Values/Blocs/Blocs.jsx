@@ -34,7 +34,7 @@ const Blocs = () => {
     <>
       <div
         class={`mt-5 flex flex-wrap justify-center space-x-0 sm:space-x-6 ${
-          isDarkMode ? "text-black" : "text-FFF6E4"
+          isDarkMode ? "text-black" : "text-fff6e4"
         }`}
       >
         <div className="p-6 rounded-lg shadow-md">

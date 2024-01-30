@@ -20,7 +20,7 @@ const BlocAgency = () => {
     <>
       <div
         className={`flex justify-center h-1/3 ${
-          isDarkMode ? "text-black" : "text-FFF6E4"
+          isDarkMode ? "text-black" : "text-fff6e4"
         }`}
       >
         <div className="w-4/5 xl:w-1/2">
@@ -45,7 +45,7 @@ const BlocAgency = () => {
       </div>
       <div
         className={`flex justify-center ${
-          isDarkMode ? "text-black" : "text-FFF6E4"
+          isDarkMode ? "text-black" : "text-fff6e4"
         }`}
       >
         <div className="w-4/5 xl:w-1/2">

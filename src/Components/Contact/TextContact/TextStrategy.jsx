@@ -6,7 +6,7 @@ const TextStrategy = () => {
   const { language } = useLanguage();
   return (
     <>
-      <p className="text-FFF6E4 text-2xl font-extrabold sm:text-4xl max-w-xl ml-6 sm:ml-0">
+      <p className="text-fff6e4 text-2xl font-extrabold sm:text-4xl max-w-xl ml-6 sm:ml-0">
         {translations[language].describeContactFr}
         {translations[language].describeContactEn}
         <img
@@ -19,7 +19,7 @@ const TextStrategy = () => {
         <p
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
-          className="text-FFF6E4 text-left text-lg sm:text-2xl w-80 sm:w-96 ml-6 sm:ml-0"
+          className="text-fff6e4 text-left text-lg sm:text-2xl w-80 sm:w-96 ml-6 sm:ml-0"
         >
           {translations[language].textContactFr}
           {translations[language].textContactEn}

@@ -21,7 +21,7 @@ import Footer from "../../Footer/MainFooter.jsx";
 
 const DiscoverDesigner = () => {
   return (
-    <section className="bg-FFF6E4">
+    <section className="bg-fff6e4">
       <NavbarDiscoverDesigner />
       <AvatarDesigner />
       <div className="bg-1E1E20 flex justify-center pt-10 pb-48">
@@ -54,7 +54,7 @@ const DiscoverDesigner = () => {
         </div>
         <BackToTopButton />
       </div>
-      {/* <div className="bg-C22E2E flex justify-center pt-3 sm:h-5"></div> */}
+      {/* <div className="bg-c22e2e flex justify-center pt-3 sm:h-5"></div> */}
       <div className="flex justify-center relative">
         <SvgPolygone />
       </div>
@@ -80,10 +80,10 @@ const DiscoverDesigner = () => {
       <div className="flex justify-end relative">
         <SvgItemRight />
       </div>
-      <div className="bg-FFF6E4 flex justify-center pt-56">
+      <div className="bg-fff6e4 flex justify-center pt-56">
         <Logo />
       </div>
-      <div className="bg-FFF6E4 pt-10 flex flex-wrap justify-center pb-20 space-x-0 sm:space-x-10">
+      <div className="bg-fff6e4 pt-10 flex flex-wrap justify-center pb-20 space-x-0 sm:space-x-10">
         <div className="flex flex-row space-x-10 list-none mt-20 p-6">
           <LinksNetwork />
         </div>

@@ -7,7 +7,7 @@ import TitleNewletter from "./Newletters/TitleNewletter.jsx";
 
 const Footer = () => {
   return (
-    <footer className="bg-C22E2E">
+    <footer className="bg-c22e2e">
       <div className="mx-auto max-w-5xl px-5 py-28">
         <div className="flex justify-center mr-3">
           <ImgLogo />

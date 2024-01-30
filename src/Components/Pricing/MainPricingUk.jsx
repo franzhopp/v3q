@@ -118,7 +118,7 @@ const Rate = () => {
     AOS.refresh();
   }, [openStates]);
   return (
-    <section className="bg-FFF6E4">
+    <section className="bg-fff6e4">
       <NavbarPages />
       <TitleUk />
       <TitleWebsiteUk />
@@ -140,7 +140,7 @@ const Rate = () => {
               key={info.id}
             >
               <div className="w-96 sm:w-full">
-                <div className="flex flex-wrap justify-between text-FFF6E4 p-10 text-3xl sm:text-4xl">
+                <div className="flex flex-wrap justify-between text-fff6e4 p-10 text-3xl sm:text-4xl">
                   <div data-aos="fade-left" className="">
                     <RiBardLine className="inline" /> {info.title}
                   </div>
@@ -150,11 +150,11 @@ const Rate = () => {
                 </div>
               </div>
               <div className="flex justify-start ml-10 mb-10">
-                <div className="text-FFF6E4">
+                <div className="text-fff6e4">
                   <button
                     onClick={() => toggleSubList(info.title)}
-                    className={`bg-FFF6E4 p-3 rounded-3xl shadow-md cursor-pointer transform active:scale-75 transition-transform ${
-                      isDarkMode ? "text-0C3E78" : "text-FFF6E4 "
+                    className={`bg-fff6e4 p-3 rounded-3xl shadow-md cursor-pointer transform active:scale-75 transition-transform ${
+                      isDarkMode ? "text-0C3E78" : "text-fff6e4 "
                     }`}
                   >
                     <div className="flex ml-1 number">
@@ -173,7 +173,7 @@ const Rate = () => {
                         </li>
                       ))}
                       <div className="flex justify-start">
-                        <ul className="text-FFF6E4  mt-3 mb-3 text-sm px-10 sm:text-left text-justify">
+                        <ul className="text-fff6e4  mt-3 mb-3 text-sm px-10 sm:text-left text-justify">
                           <p className="number mb-2">Detailed informations :</p>
                           {info.subDetails.map((subDetail, subDetailIndex) => (
                             <li
@@ -214,7 +214,7 @@ const Rate = () => {
               key={index}
             >
               <div className="w-96 sm:w-full">
-                <div className="flex flex-wrap justify-between text-FFF6E4 p-10 text-3xl sm:text-4xl">
+                <div className="flex flex-wrap justify-between text-fff6e4 p-10 text-3xl sm:text-4xl">
                   <div data-aos="fade-left" className="">
                     <RiBardLine className="inline" /> {info.title}
                   </div>

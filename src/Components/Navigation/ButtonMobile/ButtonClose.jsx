@@ -8,22 +8,22 @@ const ButtonClose = () => {
       viewBox="0 0 53 53"
       fill="none"
     >
-      <circle cx="26.5" cy="26.5" r="26.5" fill="#C22E2E" />
+      <circle cx="26.5" cy="26.5" r="26.5" fill="#c22e2e" />
       <path
         d="M12 27H41"
-        stroke="#FFF6E4"
+        stroke="#fff6e4"
         strokeWidth="6"
         strokeLinecap="round"
       />
       <path
         d="M18 36L35 36"
-        stroke="#FFF6E4"
+        stroke="#fff6e4"
         strokeWidth="6"
         strokeLinecap="round"
       />
       <path
         d="M18 18L35 18"
-        stroke="#FFF6E4"
+        stroke="#fff6e4"
         strokeWidth="6"
         strokeLinecap="round"
       />

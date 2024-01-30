@@ -474,7 +474,7 @@ const FormQuote = ({ label, type, value }) => {
           checked={formData.conditions}
           onChange={handleCheckboxChange}
         />
-        <span className="text-FFF6E4 font-extrabold">
+        <span className="text-fff6e4 font-extrabold">
           {" "}
           {translations[language].conditions2Fr}
           {translations[language].conditions2En}{" "}
@@ -487,20 +487,20 @@ const FormQuote = ({ label, type, value }) => {
           </span>
           {translations[language].conditions3Fr}
           {translations[language].conditions3En}{" "}
-          {/* <NavLink to="/privacy" className="underline font-extrabold text-FFF6E4">
+          {/* <NavLink to="/privacy" className="underline font-extrabold text-fff6e4">
             {translations[language].linkConditions1Fr}
             {translations[language].linkConditions1En}
           </NavLink>
           ,{" "}
           <NavLink
             to="/mentions"
-            className="underline font-extrabold text-FFF6E4"
+            className="underline font-extrabold text-fff6e4"
           >
             {translations[language].linkConditions2Fr}
             {translations[language].linkConditions2En}
           </NavLink>
           , &{" "}
-          <NavLink to="/terms" className="underline font-extrabold text-FFF6E4">
+          <NavLink to="/terms" className="underline font-extrabold text-fff6e4">
             {translations[language].linkConditions3Fr}
             {translations[language].linkConditions3En}
           </NavLink>

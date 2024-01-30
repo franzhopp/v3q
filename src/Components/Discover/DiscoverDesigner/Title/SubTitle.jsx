@@ -1,7 +1,7 @@
 const SubTitle = () => {
   return (
     <div className="w-96 sm:w-1/2">
-      <p data-aos="fade-right" className="text-center text-FFF6E4">
+      <p data-aos="fade-right" className="text-center text-fff6e4">
         Passionée d'art, je peins et dessine depuis que je sais tenir un crayon
         dans la main. Ma boutique NA3NA3 Atelier est un hommage à mes racines
         Algériennes, j'ai choisi d'infuser mon art de toutes ces références,
@@ -12,7 +12,7 @@ const SubTitle = () => {
       </p>
       <div className="flex justify-center">
         <div className="w-96 sm:w-8/12">
-          <p data-aos="fade-left" className="text-center text-FFF6E4 mt-5">
+          <p data-aos="fade-left" className="text-center text-fff6e4 mt-5">
             Mes voyages en général et ma passion pour les cultures du monde
             m'inspirent dans mon travail que ce soit dans le design ou l'art.
             Ainsi, vous pourrez retrouver des influences du monde arabe, d'asie
@@ -22,7 +22,7 @@ const SubTitle = () => {
       </div>
       <div className="flex justify-center">
         <div className="w-96 sm:w-1/2">
-          <p data-aos="fade-right" className="text-center text-FFF6E4 mt-5">
+          <p data-aos="fade-right" className="text-center text-fff6e4 mt-5">
             Pour plus d'informations sur mon travail n'hésitez pas à me follow
             sur instagram @na3na3atelier & @murcielago.design.{" "}
           </p>

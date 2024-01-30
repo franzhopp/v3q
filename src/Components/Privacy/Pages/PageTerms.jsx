@@ -7,9 +7,9 @@
 //   return (
 //     <>
 //       <PrivacyNavbar />
-//       <div className="bg-FFF6E4 flex justify-center pt-40 sm:pt-20">
+//       <div className="bg-fff6e4 flex justify-center pt-40 sm:pt-20">
 //         <div className="w-full md:max-w-3xl p-4">
-//           <h1 className="text-C22E2E text-center font-inter mb-16 text-2xl md:text-3xl font-semibold">
+//           <h1 className="text-c22e2e text-center font-inter mb-16 text-2xl md:text-3xl font-semibold">
 //             Conditions d'Utilisation
 //           </h1>
 //           <p className="text-black font-extrabold text-justify mb-10 italic">
@@ -18,7 +18,7 @@
 //             conditions peuvent être modifiées ou complétées à tout moment.
 //           </p>
 
-//           <h2 className="text-C22E2E underline font-inter text-2xl md:text-3xl font-semibold mb-2">
+//           <h2 className="text-c22e2e underline font-inter text-2xl md:text-3xl font-semibold mb-2">
 //             Informations
 //           </h2>
 //           <p className="text-black text-justify mb-4">
@@ -27,7 +27,7 @@
 //             propriétaire du site ne peut être tenu responsable des dommages
 //             directs ou indirects résultant de l'accès au site.
 //           </p>
-//           <h2 className="text-C22E2E underline font-inter text-2xl md:text-3xl font-semibold mb-2">
+//           <h2 className="text-c22e2e underline font-inter text-2xl md:text-3xl font-semibold mb-2">
 //             Interactivité
 //           </h2>
 //           <p className="text-black text-justify mb-4">
@@ -38,7 +38,7 @@
 //             de retirer tout contenu qui ne respecterait pas la charte
 //             déontologique du site ou la loi, sans préavis ni justification.
 //           </p>
-//           <h2 className="text-C22E2E underline font-inter text-2xl md:text-3xl font-semibold mb-2">
+//           <h2 className="text-c22e2e underline font-inter text-2xl md:text-3xl font-semibold mb-2">
 //             Propriété intellectuelle
 //           </h2>
 //           <p className="text-black text-justify mb-4">
@@ -47,7 +47,7 @@
 //             en matière de droits de propriété intellectuelle. Toute utilisation
 //             non autorisée est interdite.
 //           </p>
-//           <h2 className="text-C22E2E underline font-inter text-2xl md:text-3xl font-semibold mb-2">
+//           <h2 className="text-c22e2e underline font-inter text-2xl md:text-3xl font-semibold mb-2">
 //             Liens sortants
 //           </h2>
 //           <p className="text-black text-justify mb-4">
@@ -55,7 +55,7 @@
 //             aucune responsabilité pour les liens vers des ressources tierces sur
 //             Internet en ce qui concerne leur contenu ou leur pertinence.
 //           </p>
-//           <h2 className="text-C22E2E underline font-inter text-2xl md:text-3xl font-semibold mb-2">
+//           <h2 className="text-c22e2e underline font-inter text-2xl md:text-3xl font-semibold mb-2">
 //             Liens entrants
 //           </h2>
 //           <p className="text-black text-justify mb-4">
@@ -66,7 +66,7 @@
 //             réserve le droit de demander la suppression de liens ne respectant
 //             pas ces règles.
 //           </p>
-//           <h2 className="text-C22E2E underline font-inter text-2xl md:text-3xl font-semibold mb-2">
+//           <h2 className="text-c22e2e underline font-inter text-2xl md:text-3xl font-semibold mb-2">
 //             Responsabilité
 //           </h2>
 //           <p className="text-black text-justify mb-4">
@@ -77,7 +77,7 @@
 //             seulement et ne constituent pas des conseils juridiques, médicaux ou
 //             professionnels.
 //           </p>
-//           <h2 className="text-C22E2E underline font-inter text-2xl md:text-3xl font-semibold mb-2">
+//           <h2 className="text-c22e2e underline font-inter text-2xl md:text-3xl font-semibold mb-2">
 //             Sécurité
 //           </h2>
 //           <p className="text-black text-justify mb-4">
@@ -87,7 +87,7 @@
 //             garantir la sécurité absolue des informations transmises par les
 //             utilisateurs via Internet.
 //           </p>
-//           <h2 className="text-C22E2E underline font-inter text-2xl md:text-3xl font-semibold mb-2">
+//           <h2 className="text-c22e2e underline font-inter text-2xl md:text-3xl font-semibold mb-2">
 //             Modifications des Conditions
 //           </h2>
 //           <p className="text-black text-justify mb-4">
@@ -96,7 +96,7 @@
 //             utilisateurs sont encouragés à consulter régulièrement les
 //             conditions pour rester informés des mises à jour.
 //           </p>
-//           <h2 className="text-C22E2E underline font-inter text-2xl md:text-3xl font-semibold mb-2">
+//           <h2 className="text-c22e2e underline font-inter text-2xl md:text-3xl font-semibold mb-2">
 //             Contact
 //           </h2>
 //           <p className="text-black text-justify mb-4">
@@ -109,7 +109,7 @@
 //             </span>
 //             .
 //           </p>
-//           <h2 className="text-C22E2E underline font-inter text-2xl md:text-3xl font-semibold mb-2">
+//           <h2 className="text-c22e2e underline font-inter text-2xl md:text-3xl font-semibold mb-2">
 //             Droit applicable et juridiction
 //           </h2>
 //           <p className="text-black text-justify mb-4">
@@ -118,7 +118,7 @@
 //             litige découlant de l'utilisation de ce site sera soumis à la
 //             compétence exclusive des tribunaux de nos villes.
 //           </p>
-//           <h2 className="text-C22E2E underline font-inter text-2xl md:text-3xl font-semibold mb-2">
+//           <h2 className="text-c22e2e underline font-inter text-2xl md:text-3xl font-semibold mb-2">
 //             Dispositions finales
 //           </h2>
 //           <p className="text-black text-justify mb-4">
@@ -130,16 +130,16 @@
 //           </p>
 //         </div>
 //       </div>
-//       <div className="bg-FFF6E4 flex flex-col text-center justify-center pt-5 pb-10">
+//       <div className="bg-fff6e4 flex flex-col text-center justify-center pt-5 pb-10">
 //         <NavLink
 //           to="/privacy"
-//           className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
+//           className="text-c22e2e font-extrabold underline transition hover:text-0C3E78"
 //         >
 //           Politique de Confidentialité ➔
 //         </NavLink>
 //         <NavLink
 //           to="/mentions"
-//           className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
+//           className="text-c22e2e font-extrabold underline transition hover:text-0C3E78"
 //         >
 //           Mentions Légales ➔
 //         </NavLink>

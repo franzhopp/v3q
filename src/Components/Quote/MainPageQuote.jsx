@@ -9,7 +9,7 @@ import TitleQuoteBloc from "./TitleQuote/Title.jsx";
 
 const MainPageQuote = () => {
   return (
-    <section className="bg-FFF6E4 bg-contact-blur">
+    <section className="bg-fff6e4 bg-contact-blur">
       <NavbarQuote />
       <TitleQuoteNavbar />
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">

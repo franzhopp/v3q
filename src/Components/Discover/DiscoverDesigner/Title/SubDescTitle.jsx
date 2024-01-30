@@ -7,11 +7,11 @@ const SubDescTitle = () => {
   const { language } = useLanguage();
   return (
     <>
-      <p data-aos="fade-right" className="text-center text-FFF6E4">
+      <p data-aos="fade-right" className="text-center text-fff6e4">
         {translations[language].describeDesignerFr}
         {translations[language].describeDesignerEn}
       </p>
-      <p data-aos="fade-left" className="text-center text-FFF6E4">
+      <p data-aos="fade-left" className="text-center text-fff6e4">
         {translations[language].describeDesigner2Fr}
         {translations[language].describeDesigner2En}
       </p>
@@ -21,7 +21,7 @@ const SubDescTitle = () => {
       <div className="flex justify-start relative">
         <SvgAlgeria />
       </div>
-      <p data-aos="fade-right" className="text-center text-FFF6E4">
+      <p data-aos="fade-right" className="text-center text-fff6e4">
         {translations[language].describeDesigner3Fr}
         {translations[language].describeDesigner3En}{" "}
         {translations[language].describeDesigner4Fr}

@@ -21,7 +21,7 @@ const TitleWebsiteFr = () => {
     <div className="flex justify-center">
       <h1
         data-aos="fade-in"
-        className="text-C22E2E text-center text-4xl mt-20 mb-10 font-extrabold sm:text-5xl md:text-6xl"
+        className="text-c22e2e text-center text-4xl mt-20 mb-10 font-extrabold sm:text-5xl md:text-6xl"
       >
         {letters.map((letter, index) => (
           <span

@@ -10,7 +10,7 @@ import Footer from "../../Footer/MainFooter.jsx";
 const PageNotFound = () => {
   const { language } = useLanguage();
   return (
-    <div className="bg-FFF6E4">
+    <div className="bg-fff6e4">
       <NavbaPages />
       <div className="flex justify-start pt-32 sm:pt-30 pl-4">
         <NavLink to="/">
@@ -22,8 +22,8 @@ const PageNotFound = () => {
           <SvgError />
         </div>
         <div className="pb-28 text-center">
-          <h1 className="text-C22E2E text-9xl font-extrabold">404</h1>
-          <p className="text-C22E2E text-2xl sm:text-4xl font-extrabold tracking-tight">
+          <h1 className="text-c22e2e text-9xl font-extrabold">404</h1>
+          <p className="text-c22e2e text-2xl sm:text-4xl font-extrabold tracking-tight">
             {translations[language].pageNotFoundFr}
             {translations[language].pageNotFoundEn}
           </p>

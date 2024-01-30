@@ -9,13 +9,13 @@
 //   return (
 //     <>
 //       <PrivacyNavbar />
-//       <div className="bg-FFF6E4 flex justify-center pt-40 sm:pt-20 pb-16">
+//       <div className="bg-fff6e4 flex justify-center pt-40 sm:pt-20 pb-16">
 //         <div className="w-full md:max-w-3xl p-4">
-//           <h1 className="text-C22E2E text-center font-inter mb-16 text-2xl md:text-3xl font-semibold">
+//           <h1 className="text-c22e2e text-center font-inter mb-16 text-2xl md:text-3xl font-semibold">
 //             Mentions légales
 //           </h1>
 
-//           <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mb-2">
+//           <h2 className="text-c22e2e font-inter underline text-2xl md:text-3xlfont-semibold mb-2">
 //             Identité
 //           </h2>
 //           <p className="text-black mb-4">
@@ -67,7 +67,7 @@
 //             <br />
 //           </p>
 
-//           <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mb-2">
+//           <h2 className="text-c22e2e font-inter underline text-2xl md:text-3xlfont-semibold mb-2">
 //             Conditions d'utilisation
 //           </h2>
 //           <p className="text-black text-justify mb-4">
@@ -76,7 +76,7 @@
 //             conditions peuvent être modifiées à tout moment.
 //           </p>
 
-//           <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mb-2">
+//           <h2 className="text-c22e2e font-inter underline text-2xl md:text-3xlfont-semibold mb-2">
 //             Informations
 //           </h2>
 //           <p className="text-black text-justify mb-4">
@@ -85,7 +85,7 @@
 //             responsable des dommages résultant de l'accès au site.
 //           </p>
 
-//           <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mb-2">
+//           <h2 className="text-c22e2e font-inter underline text-2xl md:text-3xlfont-semibold mb-2">
 //             Interactivité
 //           </h2>
 //           <p className="text-black text-justify mb-4">
@@ -94,7 +94,7 @@
 //             déontologique du site et la législation en vigueur.
 //           </p>
 
-//           <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mb-2">
+//           <h2 className="text-c22e2e font-inter underline text-2xl md:text-3xlfont-semibold mb-2">
 //             Propriété intellectuelle
 //           </h2>
 //           <p className="text-black text-justify">
@@ -103,7 +103,7 @@
 //             autorisée est interdite.
 //           </p>
 
-//           <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mb-2 mt-2">
+//           <h2 className="text-c22e2e font-inter underline text-2xl md:text-3xlfont-semibold mb-2 mt-2">
 //             Liens
 //           </h2>
 //           <p className="text-black text-justify">
@@ -111,7 +111,7 @@
 //             vers le site sous certaines conditions.
 //           </p>
 
-//           <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mb-2 mt-2">
+//           <h2 className="text-c22e2e font-inter underline text-2xl md:text-3xlfont-semibold mb-2 mt-2">
 //             Politique de confidentialité des données
 //           </h2>
 //           <p className="text-black text-justify">
@@ -119,7 +119,7 @@
 //             de rectification et d'opposition à ses données personnelles.
 //           </p>
 
-//           <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mb-2 mt-2">
+//           <h2 className="text-c22e2e font-inter underline text-2xl md:text-3xlfont-semibold mb-2 mt-2">
 //             Objet du traitement
 //           </h2>
 //           <p className="text-black text-justify">
@@ -133,7 +133,7 @@
 //             transmission de données aux partenaires.
 //           </p>
 
-//           <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mb-2 mt-2">
+//           <h2 className="text-c22e2e font-inter underline text-2xl md:text-3xlfont-semibold mb-2 mt-2">
 //             Bases légales
 //           </h2>
 //           <p className="text-black text-justify">
@@ -142,7 +142,7 @@
 //             l'obligation légale.
 //           </p>
 
-//           <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mb-2 mt-2">
+//           <h2 className="text-c22e2e font-inter underline text-2xl md:text-3xlfont-semibold mb-2 mt-2">
 //             Destinataires des données
 //           </h2>
 //           <p className="text-black text-justify">
@@ -151,7 +151,7 @@
 //             électroniques peuvent être transmises à des partenaires commerciaux.
 //           </p>
 
-//           <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mb-2 mt-2">
+//           <h2 className="text-c22e2e font-inter underline text-2xl md:text-3xlfont-semibold mb-2 mt-2">
 //             Durée de conservation des données
 //           </h2>
 //           <p className="text-black text-justify">
@@ -159,7 +159,7 @@
 //             les besoins légaux.
 //           </p>
 
-//           <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mb-2 mt-2">
+//           <h2 className="text-c22e2e font-inter underline text-2xl md:text-3xlfont-semibold mb-2 mt-2">
 //             Droits de l'utilisateur
 //           </h2>
 //           <p className="text-black text-justify">
@@ -167,14 +167,14 @@
 //             droits sur ses données en contactant l'entreprise.
 //           </p>
 
-//           <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mb-2 mt-2">
+//           <h2 className="text-c22e2e font-inter underline text-2xl md:text-3xlfont-semibold mb-2 mt-2">
 //             Consentement
 //           </h2>
 //           <p className="text-black text-justify">
 //             <RiBardLine className="inline" /> Un consentement explicite est
 //             requis pour certaines autorisations.
 //           </p>
-//           <h2 className="text-C22E2E font-inter underline text-2xl md:text-3xlfont-semibold mt-16 mb-2">
+//           <h2 className="text-c22e2e font-inter underline text-2xl md:text-3xlfont-semibold mt-16 mb-2">
 //             Crédits
 //           </h2>
 //           <p className="mb-4 text-black">
@@ -257,7 +257,7 @@
 //             </span>{" "}
 //             React, Tailwind CSS, etc.
 //             <br />
-//             <div className="text-justify font-inter mt-16 font-extrabold text-C22E2E">
+//             <div className="text-justify font-inter mt-16 font-extrabold text-c22e2e">
 //               Modèle de formule de collecte de données à caractère personnel
 //               pour la conception de la rubrique "MENTIONS LÉGALES" : Site du
 //               CNIL - Version 2019 /{" "}
@@ -275,13 +275,13 @@
 //           <div className="flex flex-col text-center justify-center pt-10">
 //             <NavLink
 //               to="/privacy"
-//               className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
+//               className="text-c22e2e font-extrabold underline transition hover:text-0C3E78"
 //             >
 //               Politique de Confidentialité ➔
 //             </NavLink>
 //             <NavLink
 //               to="/terms"
-//               className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
+//               className="text-c22e2e font-extrabold underline transition hover:text-0C3E78"
 //             >
 //               Conditions d'Utilisation ➔
 //             </NavLink>

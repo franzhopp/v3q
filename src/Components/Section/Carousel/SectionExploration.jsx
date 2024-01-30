@@ -134,7 +134,7 @@ const SectionExploration = () => {
               viewBox="0 0 152 152"
               fill="none"
             >
-              <circle cx="76" cy="76" r="76" fill="#C22E2E" />
+              <circle cx="76" cy="76" r="76" fill="#c22e2e" />
             </svg>
           </motion.span>
           <motion.span
@@ -161,7 +161,7 @@ const SectionExploration = () => {
             viewBox="0 0 152 152"
             fill="none"
           >
-            <circle cx="76" cy="76" r="76" fill="#C22E2E" />
+            <circle cx="76" cy="76" r="76" fill="#c22e2e" />
           </svg>
           <svg
             data-aos="fade-in"
@@ -177,7 +177,7 @@ const SectionExploration = () => {
       </div>
       <div className="flex justify-center px-3 pt-20">
         <div
-          className={`bg-black border-C22E2E border-2 p-2 h-1/2 rounded-3xl shadow-2xl mr-5 ml-5`}
+          className={`bg-black border-c22e2e border-2 p-2 h-1/2 rounded-3xl shadow-2xl mr-5 ml-5`}
         >
           <div className="flex justify-center relative">
             <div className="absolute">
@@ -206,13 +206,13 @@ const SectionExploration = () => {
       </div>
       <div className="flex justify-center mt-10">
         <button
-          className="bg-black text-FFF6E4 h-16 w-16 px-4 mr-2 rounded-full shadow-lg transform active:scale-75 transition-transform"
+          className="bg-black text-fff6e4 h-16 w-16 px-4 mr-2 rounded-full shadow-lg transform active:scale-75 transition-transform"
           onClick={handlePrev}
         >
           <FaArrowLeft className="h-10 w-8" />
         </button>
         <button
-          className="bg-black text-FFF6E4 h-16 w-16 px-4 py-2 rounded-full shadow-lg transform active:scale-75 transition-transform"
+          className="bg-black text-fff6e4 h-16 w-16 px-4 py-2 rounded-full shadow-lg transform active:scale-75 transition-transform"
           onClick={handleNext}
         >
           <FaArrowRight className="h-10 w-8" />
@@ -220,7 +220,7 @@ const SectionExploration = () => {
       </div>
       <p
         className={`font-arial tracking-tighter mt-6 text-center font-extrabold text-base overflow-auto p-5 h-40 ${
-          isDarkMode ? "text-black" : "text-FFF6E4"
+          isDarkMode ? "text-black" : "text-fff6e4"
         }`}
       >
         <div className="flex flex-col justify-center">

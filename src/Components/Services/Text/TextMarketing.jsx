@@ -5,7 +5,7 @@ import { RiBardLine } from "react-icons/ri";
 const TextMarketing = () => {
   const { language } = useLanguage();
   return (
-    <div className="image-navi-studio-marketing-services pb-12 text-FFF6E4 pr-0 sm:pr-10 md:pr-20 lg:pr-32 xl:pr-96">
+    <div className="image-navi-studio-marketing-services pb-12 text-fff6e4 pr-0 sm:pr-10 md:pr-20 lg:pr-32 xl:pr-96">
       <div
         data-aos="fade-right"
         className="text-center text-4xl sm:text-5xl font-extrabold pt-10"
@@ -18,8 +18,8 @@ const TextMarketing = () => {
       </div>
       <div className="mt-10 sm:mt-20">
         <div className="flex flex-wrap justify-center">
-          <div className="font-extrabold text-FFF6E4 text-left mr-20">
-            <p className="text-2xl mb-10 font-extrabold text-FFF6E4">
+          <div className="font-extrabold text-fff6e4 text-left mr-20">
+            <p className="text-2xl mb-10 font-extrabold text-fff6e4">
               <div className="w-44">
                 {translations[language].subTitleMarketing1Fr}
                 {translations[language].subTitleMarketing1En}
@@ -29,7 +29,7 @@ const TextMarketing = () => {
               <p
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
-                className="text-base mb-10 text-FFF6E4"
+                className="text-base mb-10 text-fff6e4"
               >
                 <RiBardLine className="inline" />{" "}
                 {translations[language].describeMarketing1Fr}
@@ -37,8 +37,8 @@ const TextMarketing = () => {
               </p>
             </div>
           </div>
-          <div className="font-extrabold text-FFF6E4 text-left mr-20">
-            <p className="text-2xl mb-10 font-extrabold text-FFF6E4">
+          <div className="font-extrabold text-fff6e4 text-left mr-20">
+            <p className="text-2xl mb-10 font-extrabold text-fff6e4">
               <div className="w-44">
                 {translations[language].subTitleMarketing2Fr}
                 {translations[language].subTitleMarketing2En}
@@ -48,7 +48,7 @@ const TextMarketing = () => {
               <p
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
-                className="text-base text-FFF6E4"
+                className="text-base text-fff6e4"
               >
                 <RiBardLine className="inline" />{" "}
                 {translations[language].describeMarketing2Fr}

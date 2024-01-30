@@ -13,23 +13,23 @@ const ButtonOpen = () => {
         cy="26.5"
         r="26.5"
         transform="rotate(90 26.5 26.5)"
-        fill="#C22E2E"
+        fill="#c22e2e"
       />
       <path
         d="M26 12L26 41"
-        stroke="#FFF6E4"
+        stroke="#fff6e4"
         strokeWidth="6"
         strokeLinecap="round"
       />
       <path
         d="M17 18L17 35"
-        stroke="#FFF6E4"
+        stroke="#fff6e4"
         strokeWidth="6"
         strokeLinecap="round"
       />
       <path
         d="M35 18L35 35"
-        stroke="#FFF6E4"
+        stroke="#fff6e4"
         strokeWidth="6"
         strokeLinecap="round"
       />

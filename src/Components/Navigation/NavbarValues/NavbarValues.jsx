@@ -13,7 +13,7 @@ const NavbarEthics = () => {
       <LinksNavbarDesktop />
       <LinksNavbarMobile />
       <div className="pt-44 px-14 py-20 text-left sm:mt-28">
-        <h1 className="text-5xl tracking-tight font-extrabold text-FFF6E4 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
+        <h1 className="text-5xl tracking-tight font-extrabold text-fff6e4 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
           <motion.span
             id="all"
             initial={{ opacity: 0, y: 20 }}
@@ -25,7 +25,7 @@ const NavbarEthics = () => {
           </motion.span>
         </h1>
         <div className="w-full sm:w-1/2">
-          <span className="block pt-10 text-base sm:text-4xl text-FFF6E4 font-extrabold">
+          <span className="block pt-10 text-base sm:text-4xl text-fff6e4 font-extrabold">
             {translations[language].titleNavEthicsFr}
             {translations[language].titleNavEthicsEn}
           </span>

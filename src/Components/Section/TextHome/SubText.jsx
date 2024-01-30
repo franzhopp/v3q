@@ -55,7 +55,7 @@ const SubTextHome = () => {
             {translations[language].textWithoutBoldFsEn}{" "}
             <a
               onClick={SectionToScroll}
-              className="font-extrabold underline text-C22E2E"
+              className="font-extrabold underline text-c22e2e"
             >
               #navi
             </a>

@@ -24,7 +24,7 @@ const TitleTeamNavi = () => {
           data-aos="fade-right"
           className="text-center font-extrabold mt-6 text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
         >
-          <span className="text-C22E2E font-inter">
+          <span className="text-c22e2e font-inter">
             {letters.map((letter, index) => (
               <span
                 key={index}

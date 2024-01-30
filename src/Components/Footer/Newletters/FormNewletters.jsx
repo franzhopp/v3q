@@ -77,8 +77,8 @@ const FormNewletters = () => {
         <button
           type="submit"
           onSubmit={handleSubmit}
-          className={`rounded-tl-none rounded-bl-none rounded-tr-2xl rounded-br-2xl p-2 bg-FFF6E4 font-extrabold ${
-            isDarkMode ? "text-C22E2E" : "text-FFF6E4"
+          className={`rounded-tl-none rounded-bl-none rounded-tr-2xl rounded-br-2xl p-2 bg-fff6e4 font-extrabold ${
+            isDarkMode ? "text-c22e2e" : "text-fff6e4"
           }`}
         >
           <span className="transition hover:opacity-30">
@@ -88,9 +88,9 @@ const FormNewletters = () => {
         </button>
       </div>
       <div className="flex justify-center pt-1">
-        {errors.email && <p className="text-FFF6E4 text-sm">{errors.email}</p>}
+        {errors.email && <p className="text-fff6e4 text-sm">{errors.email}</p>}
       </div>
-      <div className="text-center text-sm text-FFF6E4">
+      <div className="text-center text-sm text-fff6e4">
         {status && <p>{status}</p>}
       </div>
     </form>

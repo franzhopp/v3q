@@ -4,7 +4,7 @@ const LinksUk = () => {
   return (
     <NavLink
       to="/pricinguk"
-      className="text-C22E2E text-center font-extrabold underline"
+      className="text-c22e2e text-center font-extrabold underline"
     >
       See UK prices.
     </NavLink>

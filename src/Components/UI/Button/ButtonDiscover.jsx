@@ -32,8 +32,8 @@ const Button = () => {
   return (
     <NavLink
       onClick={SectionToScroll}
-      className={`bg-FFF6E4 inline-flex items-center border-black border-4 gap-2 px-8 py-3 shadow-2xl rounded-full transform active:scale-75 transition-transform ${
-        isDarkMode ? "text-black" : "text-FFF6E4"
+      className={`bg-fff6e4 inline-flex items-center border-black border-4 gap-2 px-8 py-3 shadow-2xl rounded-full transform active:scale-75 transition-transform ${
+        isDarkMode ? "text-black" : "text-fff6e4"
       }`}
     >
       <span className="text-3xl mr-3 font-semibold">

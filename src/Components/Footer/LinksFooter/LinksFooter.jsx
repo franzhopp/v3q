@@ -17,7 +17,7 @@ const LinksFooter = () => {
         <NavLink
           to="/"
           onClick={ScrollToTop}
-          className="text-FFF6E4 transition hover:text-0C3E78"
+          className="text-fff6e4 transition hover:text-0C3E78"
         >
           {translations[language].navAgence}
           {translations[language].navAgency}
@@ -26,7 +26,7 @@ const LinksFooter = () => {
       <li>
         <NavLink
           to="/values"
-          className="text-FFF6E4 transition hover:text-0C3E78"
+          className="text-fff6e4 transition hover:text-0C3E78"
         >
           {translations[language].navSousValuesFr}
           {translations[language].navSousValuesEn}
@@ -35,7 +35,7 @@ const LinksFooter = () => {
       <li>
         <NavLink
           to="/designer"
-          className="text-FFF6E4 transition hover:text-0C3E78"
+          className="text-fff6e4 transition hover:text-0C3E78"
         >
           Designer
         </NavLink>
@@ -43,7 +43,7 @@ const LinksFooter = () => {
       <li>
         <NavLink
           to="/developer"
-          className="text-FFF6E4 transition hover:text-0C3E78"
+          className="text-fff6e4 transition hover:text-0C3E78"
         >
           Web Developer
         </NavLink>
@@ -51,7 +51,7 @@ const LinksFooter = () => {
       <li>
         <NavLink
           to="/services"
-          className="text-FFF6E4 transition hover:text-0C3E78"
+          className="text-fff6e4 transition hover:text-0C3E78"
         >
           {translations[language].navServices}
           {translations[language].navServicesEn}
@@ -60,7 +60,7 @@ const LinksFooter = () => {
       <li>
         <NavLink
           to="/services"
-          className="text-FFF6E4 transition hover:text-0C3E78"
+          className="text-fff6e4 transition hover:text-0C3E78"
         >
           {translations[language].navSousServicesFr}
           {translations[language].navSousServicesEn}
@@ -69,7 +69,7 @@ const LinksFooter = () => {
       <li>
         <NavLink
           to="/pricingfr"
-          className="text-FFF6E4 transition hover:text-0C3E78"
+          className="text-fff6e4 transition hover:text-0C3E78"
         >
           {translations[language].navSousPricingFr}
           {translations[language].navSousPricingEn}
@@ -78,7 +78,7 @@ const LinksFooter = () => {
       <li>
         <NavLink
           to="/quote"
-          className="text-FFF6E4 transition hover:text-0C3E78"
+          className="text-fff6e4 transition hover:text-0C3E78"
         >
           {translations[language].navSousFreeFr}
           {translations[language].navSousFreeEn}
@@ -87,13 +87,13 @@ const LinksFooter = () => {
       <li>
         <NavLink
           to="/portfolio"
-          className="text-FFF6E4 transition hover:text-0C3E78"
+          className="text-fff6e4 transition hover:text-0C3E78"
         >
           Portfolio
         </NavLink>
       </li>
       <li>
-        <NavLink to="/" className="text-FFF6E4 transition hover:text-0C3E78">
+        <NavLink to="/" className="text-fff6e4 transition hover:text-0C3E78">
           Contact
         </NavLink>
       </li>

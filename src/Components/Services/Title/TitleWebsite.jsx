@@ -18,7 +18,7 @@ const TitleWebsite = () => {
   return (
     <h1
       data-aos="fade-right"
-      className="text-C22E2E font-inter text-center text-4xl pt-20 pb-10 font-extrabold sm:text-5xl md:text-6xl"
+      className="text-c22e2e font-inter text-center text-4xl pt-20 pb-10 font-extrabold sm:text-5xl md:text-6xl"
     >
       {letters.map((letter, index) => (
         <span
@@ -30,7 +30,7 @@ const TitleWebsite = () => {
         </span>
       ))}
       <div className="flex justify-center">
-        <span className="absolute w-32 h-1 bg-C22E2E"></span>
+        <span className="absolute w-32 h-1 bg-c22e2e"></span>
       </div>
     </h1>
   );

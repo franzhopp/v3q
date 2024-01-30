@@ -9,7 +9,7 @@ const EndTextValues = () => {
     <div className="text-center">
       <h1
         data-aos="fade-left"
-        className="text-FFF6E4 font-extrabold text-2xl sm:text-4xl mb-10 mt-20"
+        className="text-fff6e4 font-extrabold text-2xl sm:text-4xl mb-10 mt-20"
       >
         <div className="flex justify-center">
           <h1
@@ -34,7 +34,7 @@ const EndTextValues = () => {
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className="text-FFF6E4 text-center"
+            className="text-fff6e4 text-center"
           >
             <RiBardLine className="inline" />{" "}
             {translations[language].describe6EthicsWorkFr}
@@ -54,7 +54,7 @@ const EndTextValues = () => {
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className=" text-FFF6E4 text-center mb-10"
+            className=" text-fff6e4 text-center mb-10"
           >
             {translations[language].describe7EthicsWorkFr}
             {translations[language].describe7EthicsWorkEn}{" "}

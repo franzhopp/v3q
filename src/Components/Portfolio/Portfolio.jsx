@@ -30,7 +30,7 @@ const Portfolio = () => {
     );
   };
   return (
-    <section className="bg-FFF6E4 bg-pattern-portfolio">
+    <section className="bg-fff6e4 bg-pattern-portfolio">
       <NavbarPages />
       <TitlePorfolio />
       <div className="flex justify-start relative">
@@ -38,7 +38,7 @@ const Portfolio = () => {
       </div>
       <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div className="flex justify-center px-3 py-10">
-          <div className="bg-FFF6E4 p-5 py-10 h-1/2 rounded-2xl shadow-2xl mr-5 ml-5">
+          <div className="bg-fff6e4 p-5 py-10 h-1/2 rounded-2xl shadow-2xl mr-5 ml-5">
             <div className="flex justify-center mt-3">
               <img
                 src={cards[currentIndex].image}
@@ -48,7 +48,7 @@ const Portfolio = () => {
             </div>
             <p
               className={`mt-6 text-xl font-extrabold ${
-                isDarkMode ? "text-black" : "text-FFF6E4"
+                isDarkMode ? "text-black" : "text-fff6e4"
               }`}
             >
               <span className="font-bold number">{currentIndex + 1}.</span>{" "}
@@ -59,7 +59,7 @@ const Portfolio = () => {
                 <NavLink
                   to={cards[currentIndex].url}
                   className={`font-inter text-sm mb-2 hover:text-0C3E78 ${
-                    isDarkMode ? "text-C22E2E" : "text-FFF6E4"
+                    isDarkMode ? "text-c22e2e" : "text-fff6e4"
                   }`}
                   rel="noreferrer"
                   target="_blank"
@@ -71,7 +71,7 @@ const Portfolio = () => {
             </p>
             <div
               className={`text-center ${
-                isDarkMode ? "text-black" : "text-FFF6E4"
+                isDarkMode ? "text-black" : "text-fff6e4"
               }`}
             >
               <p className="overflow-auto p-5 h-40">
@@ -80,13 +80,13 @@ const Portfolio = () => {
             </div>
             <div className="flex justify-center">
               <button
-                className="bg-black text-FFF6E4 h-16 w-16 px-4 py-2 mr-2 rounded-full shadow-lg transform active:scale-75 transition-transform"
+                className="bg-black text-fff6e4 h-16 w-16 px-4 py-2 mr-2 rounded-full shadow-lg transform active:scale-75 transition-transform"
                 onClick={handlePrev}
               >
                 <FaArrowLeft className="h-10 w-8" />
               </button>
               <button
-                className="bg-black text-FFF6E4 h-16 w-16 px-4 py-2 rounded-full shadow-lg transform active:scale-75 transition-transform"
+                className="bg-black text-fff6e4 h-16 w-16 px-4 py-2 rounded-full shadow-lg transform active:scale-75 transition-transform"
                 onClick={handleNext}
               >
                 <FaArrowRight className="h-10 w-8" />

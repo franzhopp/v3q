@@ -7,7 +7,7 @@ const SvgPyramid = () => {
       viewBox="0 0 116 20"
       fill="none"
     >
-      <path d="M0 0L61 20L116 0H0Z" fill="#C22E2E" />
+      <path d="M0 0L61 20L116 0H0Z" fill="#c22e2e" />
     </svg>
   );
 };

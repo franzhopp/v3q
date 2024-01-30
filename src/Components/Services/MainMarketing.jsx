@@ -15,7 +15,7 @@ const DetailsServices = () => {
         </div>
         <div
           className={`flex justify-center ${
-            isDarkMode ? "text-black" : "text-FFF6E4 "
+            isDarkMode ? "text-black" : "text-fff6e4 "
           }`}
         >
           <div className="w-96 sm:w-1/2 mt-10">

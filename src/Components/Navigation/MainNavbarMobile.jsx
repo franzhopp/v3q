@@ -93,7 +93,7 @@ const NavbarMobile = () => {
   ]);
   return (
     <nav
-      className={`fixed w-full top-0 left-0 shadow-md 2xl:hidden bg-FFF6E4 z-50`}
+      className={`fixed w-full top-0 left-0 shadow-md 2xl:hidden bg-fff6e4 z-50`}
     >
       <motion.div style={{ scaleX: scrollYProgress }} />
       <div className="px-5 h-28 flex items-center justify-between">
@@ -127,10 +127,10 @@ const NavbarMobile = () => {
       <ul className={`p-5 ${isOpen ? "block" : "hidden"}`}>
         <li
           className={`${
-            isDarkMode ? "text-C22E2E" : "text-FFF6E4"
+            isDarkMode ? "text-c22e2e" : "text-fff6e4"
           } fadeInDelay-1`}
         >
-          <NavLink className="block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
+          <NavLink className="block px-3 py-2 border-c22e2e border-b-2 rounded-md text-base font-extrabold">
             <button onClick={toggleSousListsAgence}>
               <div className="flex items-center justify-between">
                 <div className="pr-2">
@@ -149,7 +149,7 @@ const NavbarMobile = () => {
                   <li className="ml-4 font-extrabold">
                     <NavLink
                       to="/"
-                      className="block border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
+                      className="block border-c22e2e border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       {translations[language].navSousHomeFr}
                       {translations[language].navSousHomeEn}
@@ -186,7 +186,7 @@ const NavbarMobile = () => {
                     <li className="ml-4 font-extrabold">
                       <NavLink
                         to="/designer"
-                        className="block border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
+                        className="block border-c22e2e border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
                         Designer
                       </NavLink>
@@ -207,10 +207,10 @@ const NavbarMobile = () => {
         </li>
         <li
           className={`${
-            isDarkMode ? "text-C22E2E" : "text-FFF6E4"
+            isDarkMode ? "text-c22e2e" : "text-fff6e4"
           } fadeInDelay-2`}
         >
-          <NavLink className="block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
+          <NavLink className="block px-3 py-2 border-c22e2e border-b-2 rounded-md text-base font-extrabold">
             <button onClick={toggleSousListsMenu}>
               <div className="flex items-center justify-between">
                 <div className="pr-2">
@@ -229,13 +229,13 @@ const NavbarMobile = () => {
               <li className="ml-4">
                 <NavLink
                   to="/services"
-                  className="block border-C22E2E border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
+                  className="block border-c22e2e border-b-2 hover:text-0C3E78 px-4 py-2 font-extrabold"
                 >
                   {translations[language].navSousServicesFr}
                   {translations[language].navSousServicesEn}
                 </NavLink>
               </li>
-              <NavLink className="block border-C22E2E border-b-2 ml-4">
+              <NavLink className="block border-c22e2e border-b-2 ml-4">
                 <li>
                   <button onClick={toggleSousListsRate}>
                     <div className="flex items-center justify-between">
@@ -255,7 +255,7 @@ const NavbarMobile = () => {
                     <li className="ml-4 font-extrabold">
                       <NavLink
                         to="/pricingfr"
-                        className="block border-C22E2E border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                        className="block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
                         {translations[language].navSousPricingFr}
                         {translations[language].navSousPricingEn} FR
@@ -287,25 +287,25 @@ const NavbarMobile = () => {
         </li>
         <li
           className={`${
-            isDarkMode ? "text-C22E2E" : "text-FFF6E4"
+            isDarkMode ? "text-c22e2e" : "text-fff6e4"
           } fadeInDelay-3`}
         >
           <NavLink
             to="/portfolio"
-            className="block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
+            className="block px-3 py-2 border-c22e2e border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             Portfolio
           </NavLink>
         </li>
         <li
           className={`${
-            isDarkMode ? "text-C22E2E" : "text-FFF6E4"
+            isDarkMode ? "text-c22e2e" : "text-fff6e4"
           } fadeInDelay-4`}
         >
           <NavLink
             to="/"
             onClick={SectionToSectionContact}
-            className="block px-3 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
+            className="block px-3 py-2 border-c22e2e border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
           >
             Contact
           </NavLink>
@@ -313,24 +313,24 @@ const NavbarMobile = () => {
         {/* SELECT TRAD */}
         <li
           className={`${
-            isDarkMode ? "text-C22E2E" : "text-FFF6E4"
+            isDarkMode ? "text-c22e2e" : "text-fff6e4"
           } fadeInDelay-5`}
         >
-          <div className="block px-2 py-2 border-C22E2E border-b-2 rounded-md text-base font-extrabold">
+          <div className="block px-2 py-2 border-c22e2e border-b-2 rounded-md text-base font-extrabold">
             <select
-              className={`${isDarkMode ? "bg-FFF6E4" : "bg-042142"}`}
+              className={`${isDarkMode ? "bg-fff6e4" : "bg-042142"}`}
               value={language}
               onChange={(e) => changeLanguageHandler(e.target.value)}
             >
               <option
                 value="fr"
-                className={`${isDarkMode ? "text-C22E2E" : "text-FFF6E4"}`}
+                className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}
               >
                 FR
               </option>
               <option
                 value="en"
-                className={`${isDarkMode ? "text-C22E2E" : "text-FFF6E4"}`}
+                className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}
               >
                 EN
               </option>
@@ -341,7 +341,7 @@ const NavbarMobile = () => {
         <div className="flex justify-start px-3 pt-4 pb-3">
           <div
             className={`hover:text-0C3E78 transform active:scale-75 transition-transform ${
-              isDarkMode ? "text-C22E2E" : "text-FFF6E4"
+              isDarkMode ? "text-c22e2e" : "text-fff6e4"
             }`}
           >
             <FaSearch

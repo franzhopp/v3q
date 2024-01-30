@@ -9,9 +9,9 @@
 //     <>
 //       {" "}
 //       <PrivacyNavbar />
-//       <div className="bg-FFF6E4 flex justify-center pt-40 sm:pt-20">
+//       <div className="bg-fff6e4 flex justify-center pt-40 sm:pt-20">
 //         <div className="w-full md:max-w-3xl p-4">
-//           <h1 className="text-2xl text-center font-inter md:text-3xl font-semibold mb-16 text-C22E2E">
+//           <h1 className="text-2xl text-center font-inter md:text-3xl font-semibold mb-16 text-c22e2e">
 //             Politique de Confidentialité
 //           </h1>
 
@@ -28,7 +28,7 @@
 //             données.
 //           </p>
 
-//           <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-C22E2E underline font-inter">
+//           <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-c22e2e underline font-inter">
 //             Collecte des Données
 //           </h2>
 //           <p className="text-black text-justify mb-4">
@@ -38,7 +38,7 @@
 //             informations sont essentielles pour vous fournir nos services.
 //           </p>
 
-//           <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-C22E2E underline font-inter">
+//           <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-c22e2e underline font-inter">
 //             Finalités et Bases Légales
 //           </h2>
 //           <p className="text-black text-justify mb-4">
@@ -50,7 +50,7 @@
 //             légitimes, ou votre consentement, le cas échéant.
 //           </p>
 
-//           <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-C22E2E underline font-inter">
+//           <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-c22e2e underline font-inter">
 //             Destinataires des Données
 //           </h2>
 //           <p className="text-black text-justify mb-4">
@@ -60,7 +60,7 @@
 //             nos partenaires commerciaux pour des offres spéciales.
 //           </p>
 
-//           <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-C22E2E underline font-inter">
+//           <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-c22e2e underline font-inter">
 //             Durée de Conservation
 //           </h2>
 //           <p className="text-black text-justify mb-4">
@@ -80,7 +80,7 @@
 //             réglementations en vigueur pour protéger vos données personnelles.
 //           </p>
 
-//           <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-C22E2E underline font-inter">
+//           <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-c22e2e underline font-inter">
 //             Sécurité et Confidentialité
 //           </h2>
 //           <p className="text-black text-justify mb-4">
@@ -92,7 +92,7 @@
 //             réglementations en vigueur pour protéger vos données personnelles.
 //           </p>
 
-//           <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-C22E2E underline font-inter">
+//           <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-c22e2e underline font-inter">
 //             Droits des Utilisateurs
 //           </h2>
 //           <p className="text-black text-justify mb-4">
@@ -111,7 +111,7 @@
 //             lois en vigueur.
 //           </p>
 
-//           <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-C22E2E underline font-inter">
+//           <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-c22e2e underline font-inter">
 //             Modifications de la Politique de Confidentialité
 //           </h2>
 //           <p className="text-black text-justify mb-4">
@@ -121,7 +121,7 @@
 //             si nécessaire.
 //           </p>
 
-//           <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-C22E2E underline font-inter">
+//           <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-c22e2e underline font-inter">
 //             Contact
 //           </h2>
 //           <p className="text-black text-justify mb-4">
@@ -136,16 +136,16 @@
 //           </p>
 //         </div>
 //       </div>
-//       <div className="bg-FFF6E4 flex flex-col text-center justify-center pt-5 pb-10">
+//       <div className="bg-fff6e4 flex flex-col text-center justify-center pt-5 pb-10">
 //         <NavLink
 //           to="/terms"
-//           className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
+//           className="text-c22e2e font-extrabold underline transition hover:text-0C3E78"
 //         >
 //           Conditions d'Utilisation ➔
 //         </NavLink>
 //         <NavLink
 //           to="/mentions"
-//           className="text-C22E2E font-extrabold underline transition hover:text-0C3E78"
+//           className="text-c22e2e font-extrabold underline transition hover:text-0C3E78"
 //         >
 //           Mentions Légales ➔
 //         </NavLink>

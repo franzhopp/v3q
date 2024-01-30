@@ -10,7 +10,7 @@ const SubBlocsBgPink = () => {
         <p
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
-          className="mt-2 text-FFF6E4 text-arial"
+          className="mt-2 text-fff6e4 text-arial"
         >
           <h1 className="text-4xl number font-semibold pb-5">07.</h1>
           <span className="font-extrabold">
@@ -26,7 +26,7 @@ const SubBlocsBgPink = () => {
         <p
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
-          className="mt-2 text-FFF6E4 text-arial"
+          className="mt-2 text-fff6e4 text-arial"
         >
           <h1 className="text-4xl number font-semibold pb-5">08.</h1>
           <span className="font-extrabold">
@@ -43,7 +43,7 @@ const SubBlocsBgPink = () => {
         <p
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
-          className="mt-2 text-FFF6E4 text-arial"
+          className="mt-2 text-fff6e4 text-arial"
         >
           <h1 className="text-4xl number font-semibold pb-5">09.</h1>
           <span className="font-extrabold">

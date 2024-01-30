@@ -8,7 +8,7 @@ const TextOffers = () => {
   return (
     <div className="bg-0C3E78 pt-28 pb-28 px-4 sm:px-6 lg:px-8">
       <h3
-        className="text-center font-extrabold text-3xl text-FFF6E4 px-5"
+        className="text-center font-extrabold text-3xl text-fff6e4 px-5"
         data-aos="fade-left"
       >
         {translations[language].titleServices3Fr}
@@ -22,7 +22,7 @@ const TextOffers = () => {
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className="mt-2 text-FFF6E4 px-5"
+            className="mt-2 text-fff6e4 px-5"
           >
             <RiBardLine className="inline" />{" "}
             {translations[language].bloc1ServicesFr}
@@ -33,7 +33,7 @@ const TextOffers = () => {
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className="mt-2 text-FFF6E4 px-5"
+            className="mt-2 text-fff6e4 px-5"
           >
             <RiBardLine className="inline" />{" "}
             {translations[language].bloc2ServicesFr}
@@ -44,7 +44,7 @@ const TextOffers = () => {
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className="mt-2 text-FFF6E4 px-5"
+            className="mt-2 text-fff6e4 px-5"
           >
             <RiBardLine className="inline" />{" "}
             {translations[language].bloc3ServicesFr}
@@ -52,7 +52,7 @@ const TextOffers = () => {
           </p>
         </div>
       </div>
-        <ButtonQuote/>
+      <ButtonQuote />
     </div>
   );
 };

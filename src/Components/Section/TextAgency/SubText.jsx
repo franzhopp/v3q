@@ -11,7 +11,7 @@ const SubTextAgency = () => {
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className="mt-2 text-FFF6E4 text-arial"
+            className="mt-2 text-fff6e4 text-arial"
           >
             <h1 className="text-4xl number font-semibold pb-5">04.</h1>
             <span className="font-extrabold">
@@ -30,7 +30,7 @@ const SubTextAgency = () => {
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className="mt-2 text-FFF6E4 text-arial"
+            className="mt-2 text-fff6e4 text-arial"
           >
             <h1 className="text-4xl number font-semibold pb-5">05.</h1>
             <span className="font-extrabold">
@@ -50,7 +50,7 @@ const SubTextAgency = () => {
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className="mt-2 text-FFF6E4 text-arial"
+            className="mt-2 text-fff6e4 text-arial"
           >
             <h1 className="text-4xl number font-semibold pb-5">06.</h1>
             <span className="font-extrabold">

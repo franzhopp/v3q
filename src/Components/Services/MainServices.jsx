@@ -13,7 +13,7 @@ import Footer from "../Footer/MainFooter.jsx";
 
 const Services = () => {
   return (
-    <section className="bg-FFF6E4">
+    <section className="bg-fff6e4">
       <NavbarServices />
       <TitleWebsite />
       <SubTitle />
@@ -23,8 +23,8 @@ const Services = () => {
       <TextServices />
       <ButtonServices />
       <TextOffers />
-      <TextMarketing/>
-      <TextReturnContact/>
+      <TextMarketing />
+      <TextReturnContact />
       <Footer />
     </section>
   );

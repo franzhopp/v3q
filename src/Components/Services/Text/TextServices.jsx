@@ -8,7 +8,7 @@ const TextServices = () => {
   return (
     <div
       className={`flex justify-center pt-16 ${
-        isDarkMode ? "text-black" : " text-FFF6E4"
+        isDarkMode ? "text-black" : " text-fff6e4"
       }`}
     >
       <div

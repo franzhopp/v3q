@@ -13,7 +13,7 @@ const SvgLine = () => {
         y1="-8.74228e-08"
         x2="2.00007"
         y2="1636"
-        stroke="#C22E2E"
+        stroke="#c22e2e"
         strokeWidth="4"
       />
       <line
@@ -21,7 +21,7 @@ const SvgLine = () => {
         y1="-8.74228e-08"
         x2="2.00007"
         y2="1636"
-        stroke="#C22E2E"
+        stroke="#c22e2e"
         strokeWidth="4"
       />
       <line
@@ -29,7 +29,7 @@ const SvgLine = () => {
         y1="-8.74228e-08"
         x2="2.00007"
         y2="1636"
-        stroke="#C22E2E"
+        stroke="#c22e2e"
         strokeWidth="4"
       />
     </svg>

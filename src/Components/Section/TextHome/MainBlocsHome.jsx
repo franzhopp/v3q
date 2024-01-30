@@ -11,20 +11,20 @@ const BlocsItemsHome = () => {
   const { isDarkMode } = useTheme();
   return (
     <>
-      <div className="py-3 bg-FFF6E4 border-b-2 border-C22E2E">
+      <div className="py-3 bg-fff6e4 border-b-2 border-c22e2e">
         <div
           className={`flex justify-center text-center font-extrabold px-10 text-md tracking-tight ${
-            isDarkMode ? "text-black" : "text-FFF6E4"
+            isDarkMode ? "text-black" : "text-fff6e4"
           }`}
         >
           {translations[language].scrollingTextFr}
           {translations[language].scrollingTextEn}
         </div>
       </div>
-      <div className="bg-FFF6E4 pt-24">
+      <div className="bg-fff6e4 pt-24">
         <div
           className={`flex flex-wrap justify-center items-center space-x-0 sm:space-x-6 ${
-            isDarkMode ? "text-black" : "text-FFF6E4"
+            isDarkMode ? "text-black" : "text-fff6e4"
           }`}
         >
           <TitleTextHome />

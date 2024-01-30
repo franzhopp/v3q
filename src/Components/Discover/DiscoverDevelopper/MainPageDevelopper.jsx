@@ -41,7 +41,7 @@ const DiscoverWebDeveloper = () => {
     };
   }, []);
   return (
-    <section className="bg-FFF6E4">
+    <section className="bg-fff6e4">
       <NavbarDiscoverWebDevelopper />
       <Avatar />
       <BaseBackground />
@@ -52,10 +52,10 @@ const DiscoverWebDeveloper = () => {
         <div className="flex justify-center mt-32">
           <SubTitlePage />
         </div>
-        <div className="bg-C22E2E flex justify-center pt-32 pb-24">
+        <div className="bg-c22e2e flex justify-center pt-32 pb-24">
           <NavLink
             onClick={SectionToScrollDesc}
-            className="bg-FFF6E4 text-C22E2E shadow-md inline-flex items-center gap-2 px-8 py-3 rounded-full transform active:scale-75 transition-transform"
+            className="bg-fff6e4 text-c22e2e shadow-md inline-flex items-center gap-2 px-8 py-3 rounded-full transform active:scale-75 transition-transform"
           >
             <span className="text-3xl mr-3 font-semibold">
               {translations[language].btnDiscoverFr}
@@ -70,7 +70,7 @@ const DiscoverWebDeveloper = () => {
       <div className="flex justify-center pt-20">
         <p
           data-aos="fade-right"
-          className="text-C22E2E text-center font-inter text-2xl lg:text-4xl"
+          className="text-c22e2e text-center font-inter text-2xl lg:text-4xl"
         >
           <div id="descl" className=""></div>
           Qui est-elle ?

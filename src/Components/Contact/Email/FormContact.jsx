@@ -290,7 +290,7 @@ const FormEmailJs = ({ label, type, value }) => {
           checked={formData.conditions}
           onChange={handleCheckboxChange}
         />
-        <span className="text-FFF6E4 font-extrabold">
+        <span className="text-fff6e4 font-extrabold">
           {" "}
           {translations[language].conditions2Fr}
           {translations[language].conditions2En}{" "}
@@ -305,7 +305,7 @@ const FormEmailJs = ({ label, type, value }) => {
           {translations[language].conditions3En}{" "}
           {/* <NavLink
               to="/privacy"
-              className="underline font-extrabold text-FFF6E4"
+              className="underline font-extrabold text-fff6e4"
             >
               {translations[language].linkConditions1Fr}
               {translations[language].linkConditions1En}
@@ -313,7 +313,7 @@ const FormEmailJs = ({ label, type, value }) => {
             ,{" "}
             <NavLink
               to="/mentions"
-              className="underline font-extrabold text-FFF6E4"
+              className="underline font-extrabold text-fff6e4"
             >
               {translations[language].linkConditions2Fr}
               {translations[language].linkConditions2En}
@@ -321,7 +321,7 @@ const FormEmailJs = ({ label, type, value }) => {
             , &{" "}
             <NavLink
               to="/terms"
-              className="underline font-extrabold text-FFF6E4"
+              className="underline font-extrabold text-fff6e4"
             >
               {translations[language].linkConditions3Fr}
               {translations[language].linkConditions3En}

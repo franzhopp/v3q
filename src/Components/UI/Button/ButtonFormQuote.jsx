@@ -10,12 +10,12 @@ const ButtonQuote = () => {
   return (
     <div
       className={`flex justify-center sm:justify-end mt-10 px-10 ${
-        isDarkMode ? "text-black" : "text-FFF6E4 "
+        isDarkMode ? "text-black" : "text-fff6e4 "
       }`}
     >
       <NavLink
         to="/quote"
-        className="inline-flex items-center gap-2 rounded-full border-black border-4 shadow-2xl bg-FFF6E4 px-8 py-3 transform active:scale-75 transition-transform"
+        className="inline-flex items-center gap-2 rounded-full border-black border-4 shadow-2xl bg-fff6e4 px-8 py-3 transform active:scale-75 transition-transform"
       >
         <span className="text-2xl sm:text-3xl mr-3 font-semibold">
           {" "}

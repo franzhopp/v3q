@@ -4,7 +4,7 @@ const LinksFr = () => {
   return (
     <NavLink
       to="/pricingfr"
-      className="text-C22E2E text-center font-extrabold underline"
+      className="text-c22e2e text-center font-extrabold underline"
     >
       Voir les tarifications FR.
     </NavLink>

@@ -16,11 +16,11 @@ const SectionTeam = () => {
   const { language } = useLanguage();
   const { isDarkMode } = useTheme();
   const props = useSpring({
-    from: { color: "#C22E2E" },
+    from: { color: "#c22e2e" },
     to: async (next) => {
       while (true) {
         await next({ color: "#0C3E78" });
-        await next({ color: "#C22E2E" });
+        await next({ color: "#c22e2e" });
       }
     },
     config: { duration: 1000 },
@@ -77,7 +77,7 @@ const SectionTeam = () => {
   ];
 
   return (
-    <section className="bg-FFF6E4 pt-24">
+    <section className="bg-fff6e4 pt-24">
       <div className="flex justify-center mt-10">
         <div data-aos="fade-left">
           <SvgHeart />
@@ -86,7 +86,7 @@ const SectionTeam = () => {
       <TitleTeamNavi />
       <div
         className={`flex justify-center mb-16 ${
-          isDarkMode ? "text-black" : "text-FFF6E4"
+          isDarkMode ? "text-black" : "text-fff6e4"
         }`}
       >
         <div className="w-4/5 xl:w-1/2">
@@ -110,7 +110,7 @@ const SectionTeam = () => {
       </div>
       <div
         className={`flex justify-center mt-16 ${
-          isDarkMode ? "text-black" : "text-FFF6E4"
+          isDarkMode ? "text-black" : "text-fff6e4"
         } px-10`}
       >
         <div className="flex flex-col justify-center">
@@ -173,7 +173,7 @@ const SectionTeam = () => {
                     {
                       translations[language].textSectionTeamBioBold2LouisaEn
                     }{" "}
-                    <span className="text-C22E2E hover:text-0C3E78 font-inter">
+                    <span className="text-c22e2e hover:text-0C3E78 font-inter">
                       <NavLink to="/developer">Web Developer</NavLink>
                     </span>
                     .
@@ -184,7 +184,7 @@ const SectionTeam = () => {
             <div className="flex justify-center items-center h-24 w-96 mt-0 sm:mt-32">
               <NavLink
                 to="/developer"
-                className="bg-black text-FFF6E4 inline-flex items-center gap-2 rounded-full mr-6 mb-10  px-8 py-3 transform active:scale-75 transition-transform"
+                className="bg-black text-fff6e4 inline-flex items-center gap-2 rounded-full mr-6 mb-10  px-8 py-3 transform active:scale-75 transition-transform"
               >
                 <span className="text-3xl mr-3 font-semibold shadow-sm">
                   {translations[language].btnMoreFr}
@@ -199,7 +199,7 @@ const SectionTeam = () => {
               <div className="flex justify-center items-center h-24 w-96 mt-0 sm:mt-32">
                 <NavLink
                   to="/designer"
-                  className="bg-black text-FFF6E4 inline-flex items-center gap-2 rounded-full mr-2 sm:mr-0  px-8 py-3 transform active:scale-75 transition-transform"
+                  className="bg-black text-fff6e4 inline-flex items-center gap-2 rounded-full mr-2 sm:mr-0  px-8 py-3 transform active:scale-75 transition-transform"
                 >
                   <FaArrowLeft className="h-10 w-10" />
                   <span className="text-3xl ml-3 font-semibold shadow-sm">
@@ -266,7 +266,7 @@ const SectionTeam = () => {
                       {
                         translations[language].textSectionTeamBioBold2MelissaEn
                       }{" "}
-                      <span className="text-C22E2E hover:text-0C3E78 font-inter">
+                      <span className="text-c22e2e hover:text-0C3E78 font-inter">
                         <NavLink to="/designer">Designer</NavLink>
                       </span>
                       .
@@ -275,7 +275,7 @@ const SectionTeam = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-FFF6E4">
+            <div className="bg-fff6e4">
               <SectionExploration />
             </div>
             <div id="contact" className="pb-20"></div>
