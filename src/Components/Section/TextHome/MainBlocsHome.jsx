@@ -12,10 +12,7 @@ const BlocsItemsHome = () => {
   return (
     <>
       <div className="py-3 bg-FFF6E4 border-b-2 border-C22E2E">
-        <span
-          data-aos="fade-right"
-          className="flex justify-center text-center font-extrabold px-10 text-black text-lg tracking-tight"
-        >
+        <span className="flex justify-center text-center font-extrabold px-10 text-black text-md tracking-tight">
           {translations[language].scrollingTextFr}
           {translations[language].scrollingTextEn}
         </span>
