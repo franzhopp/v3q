@@ -65,7 +65,7 @@ const LinksNavbarDesktop = () => {
               <ul
                 className={`absolute hidden group-hover:block rounded-md font-extrabold text-left w-48 bg-FFF6E4 mt-2 py-2 ${
                   isDarkMode ? "text-C22E2E" : "text-FFF6E4"
-                }`}
+                } fadeInDelayDesktop`}
               >
                 <li>
                   <NavLink
@@ -137,7 +137,7 @@ const LinksNavbarDesktop = () => {
               <ul
                 className={`absolute hidden group-hover:block bg-FFF6E4 w-48 mt-2 py-2 rounded-md text-left ${
                   isDarkMode ? "text-C22E2E" : "text-FFF6E4"
-                }`}
+                } fadeInDelayDesktop`}
               >
                 <li>
                   <NavLink

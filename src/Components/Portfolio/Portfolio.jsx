@@ -4,12 +4,12 @@ import { useState } from "react";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import { RiBardLine } from "react-icons/ri";
 import NavbarPages from "../Navigation/NavbarPages/NavbarPages.jsx";
-import TitlePorfolio from "../UI/Title/TitlePorfolio";
+import TitlePorfolio from "../UI/Title/TitlePorfolio.jsx";
 import ImgDefault from "../../assets/imgdefault.svg";
+import SvgLine from "./Svg/SvgLine.jsx";
+import SvgHeart from "./Svg/SvgHeart.jsx";
+import SvgStarPink from "./Svg/SvgStarPink.jsx";
 import Footer from "../Footer/MainFooter.jsx";
-import SvgLine from "./Svg/SvgLine";
-import SvgHeart from "./Svg/SvgHeart";
-import SvgStarPink from "./Svg/SvgStarPink";
 
 const Portfolio = () => {
   const { isDarkMode } = useTheme();
