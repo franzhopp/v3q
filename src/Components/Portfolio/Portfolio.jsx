@@ -5,7 +5,7 @@ import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import { RiBardLine } from "react-icons/ri";
 import NavbarPages from "../Navigation/NavbarPages/NavbarPages.jsx";
 import TitlePorfolio from "../UI/Title/TitlePorfolio.jsx";
-import ImgDefault from "../../assets/imgdefault.svg";
+// import ImgDefault from "../../assets/imgdefault.svg";
 import SvgLine from "./Svg/SvgLine.jsx";
 import SvgHeart from "./Svg/SvgHeart.jsx";
 import SvgStarPink from "./Svg/SvgStarPink.jsx";
@@ -15,7 +15,7 @@ const Portfolio = () => {
   const { isDarkMode } = useTheme();
   const cards = [
     {
-      image: ImgDefault,
+      // image: ImgDefault,
       title: "À venir",
       content: "Qui a dit que le futur projet arrive très prochainement ? 😎",
     },
@@ -40,11 +40,11 @@ const Portfolio = () => {
         <div className="flex justify-center px-3 py-10">
           <div className="bg-FFF6E4 p-5 py-10 h-1/2 rounded-2xl shadow-2xl mr-5 ml-5">
             <div className="flex justify-center mt-3">
-              <img
+              {/* <img
                 src={cards[currentIndex].image}
                 alt={cards[currentIndex].title}
                 className={`w-auto h-44 object-cover rounded-2xl animate-formbounce`}
-              />
+              /> */}
             </div>
             <p
               className={`mt-6 text-xl font-extrabold ${
