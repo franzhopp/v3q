@@ -23,7 +23,7 @@ const BlocAgency = () => {
           isDarkMode ? "text-black" : "text-FFF6E4"
         }`}
       >
-        <div className="w-4/5 sm:w-1/2">
+        <div className="w-4/5 xl:w-1/2">
           <h3
             data-aos="fade-right"
             className="text-center font-extrabold mt-28 text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
@@ -48,7 +48,7 @@ const BlocAgency = () => {
           isDarkMode ? "text-black" : "text-FFF6E4"
         }`}
       >
-        <div className="w-4/5 sm:w-1/2">
+        <div className="w-4/5 xl:w-1/2">
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"

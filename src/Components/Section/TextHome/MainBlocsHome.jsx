@@ -12,10 +12,14 @@ const BlocsItemsHome = () => {
   return (
     <>
       <div className="py-3 bg-FFF6E4 border-b-2 border-C22E2E">
-        <span className="flex justify-center text-center font-extrabold px-10 text-black text-md tracking-tight">
+        <div
+          className={`flex justify-center text-center font-extrabold px-10 text-md tracking-tight ${
+            isDarkMode ? "text-black" : "text-FFF6E4"
+          }`}
+        >
           {translations[language].scrollingTextFr}
           {translations[language].scrollingTextEn}
-        </span>
+        </div>
       </div>
       <div className="bg-FFF6E4 pt-24">
         <div

@@ -89,7 +89,7 @@ const SectionTeam = () => {
           isDarkMode ? "text-black" : "text-FFF6E4"
         }`}
       >
-        <div className="w-4/5 sm:w-1/2">
+        <div className="w-4/5 xl:w-1/2">
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
@@ -111,7 +111,7 @@ const SectionTeam = () => {
       <div
         className={`flex justify-center mt-16 ${
           isDarkMode ? "text-black" : "text-FFF6E4"
-        }`}
+        } px-10`}
       >
         <div className="flex flex-col justify-center">
           <div className="flex flex-col space-x-3 mb-5 sm:flex-row">
@@ -183,10 +183,10 @@ const SectionTeam = () => {
             </div>
             <div className="flex justify-center items-center h-24 w-96 mt-0 sm:mt-32">
               <NavLink
-                to="/designer"
+                to="/developer"
                 className="bg-black text-FFF6E4 inline-flex items-center gap-2 rounded-full mr-6 mb-10  px-8 py-3 transform active:scale-75 transition-transform"
               >
-                <span className="text-3xl mr-3 font-semibold">
+                <span className="text-3xl mr-3 font-semibold shadow-sm">
                   {translations[language].btnMoreFr}
                   {translations[language].btnMoreEn}{" "}
                 </span>
@@ -198,11 +198,11 @@ const SectionTeam = () => {
             <div className="flex space-x-3 flex-col-reverse sm:flex-row">
               <div className="flex justify-center items-center h-24 w-96 mt-0 sm:mt-32">
                 <NavLink
-                  to="/developer"
+                  to="/designer"
                   className="bg-black text-FFF6E4 inline-flex items-center gap-2 rounded-full mr-2 sm:mr-0  px-8 py-3 transform active:scale-75 transition-transform"
                 >
                   <FaArrowLeft className="h-10 w-10" />
-                  <span className="text-3xl ml-3 font-semibold">
+                  <span className="text-3xl ml-3 font-semibold shadow-sm">
                     {translations[language].btnMoreFr}
                     {translations[language].btnMoreEn}{" "}
                   </span>
@@ -275,7 +275,7 @@ const SectionTeam = () => {
                 </div>
               </div>
             </div>
-            <div className=" bg-FFF6E4">
+            <div className="bg-FFF6E4">
               <SectionExploration />
             </div>
             <div id="contact" className="pb-20"></div>
