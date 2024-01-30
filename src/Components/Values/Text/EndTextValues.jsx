@@ -30,7 +30,7 @@ const EndTextValues = () => {
         </div>
       </h1>
       <div className="flex justify-center">
-        <div className="w-full sm:w-1/3 sm:px-0 px-10">
+        <div className="w-full 2xl:w-1/3 sm:px-5 px-10">
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
