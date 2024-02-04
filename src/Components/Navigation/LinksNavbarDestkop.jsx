@@ -37,7 +37,7 @@ const LinksNavbarDesktop = () => {
   };
   return (
     <nav
-      className={`bg-fff6e4 border-b-4 border-c22e2e h-28 items-center fixed w-full top-0 left-0 shadow-md z-50`}
+      className={`bg-fff6e4 border-b-4 border-c22e2e fixed w-full top-0 left-0 h-28 items-center shadow-md z-50 2xl:flex hidden`}
     >
       <div className="flex justify-between items-center h-24 mt-2 container mx-auto px-4 sm:px-6 lg:px-8">
         <NavLink to="/">

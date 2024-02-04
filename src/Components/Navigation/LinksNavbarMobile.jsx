@@ -81,7 +81,7 @@ const LinksNavbarMobile = () => {
   ]);
   return (
     <nav
-      className={`fixed w-full top-0 left-0 shadow-md 2xl:hidden bg-fff6e4 z-50`}
+      className={`bg-fff6e4 fixed w-full top-0 left-0 shadow-md 2xl:hidden z-50`}
     >
       <div className="px-5 h-28 flex items-center justify-between">
         <NavLink to="/" data-aos="fade-left">
@@ -108,12 +108,8 @@ const LinksNavbarMobile = () => {
           )}
         </div>
       </div>
-      <ul className={`p-5 ${isOpen ? "block" : "hidden"}`}>
-        <li
-          className={`${
-            isDarkMode ? "text-c22e2e" : "text-fff6e4"
-          } fadeInDelay-1`}
-        >
+      <ul className={`p-5 fadeInDelayDesktop ${isOpen ? "block" : "hidden"}`}>
+        <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
           <NavLink className="block px-3 py-2 border-c22e2e border-b-2 rounded-md text-base font-extrabold">
             <button onClick={toggleSousListsAgence}>
               <div className="flex items-center justify-between">
@@ -190,11 +186,7 @@ const LinksNavbarMobile = () => {
             </ul>
           </NavLink>
         </li>
-        <li
-          className={`${
-            isDarkMode ? "text-c22e2e" : "text-fff6e4"
-          } fadeInDelay-2`}
-        >
+        <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
           <NavLink className="block px-3 py-2 border-c22e2e border-b-2 rounded-md text-base font-extrabold">
             <button onClick={toggleSousListsMenu}>
               <div className="flex items-center justify-between">
@@ -270,11 +262,7 @@ const LinksNavbarMobile = () => {
             </ul>
           </NavLink>
         </li>
-        <li
-          className={`${
-            isDarkMode ? "text-c22e2e" : "text-fff6e4"
-          } fadeInDelay-3`}
-        >
+        <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
           <NavLink
             to="/portfolio"
             className="block px-3 py-2 border-c22e2e border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
@@ -282,11 +270,7 @@ const LinksNavbarMobile = () => {
             Portfolio
           </NavLink>
         </li>
-        <li
-          className={`${
-            isDarkMode ? "text-c22e2e" : "text-fff6e4"
-          } fadeInDelay-4`}
-        >
+        <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
           <NavLink
             to="/"
             className="block px-3 py-2 border-c22e2e border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78"
@@ -295,11 +279,7 @@ const LinksNavbarMobile = () => {
           </NavLink>
         </li>
         {/* SELECT TRAD */}
-        <li
-          className={`${
-            isDarkMode ? "text-c22e2e" : "text-fff6e4"
-          } fadeInDelay-5`}
-        >
+        <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
           <div className="block px-2 py-2 border-c22e2e border-b-2 rounded-md text-base font-extrabold">
             <select
               className={`${isDarkMode ? "bg-fff6e4" : "bg-042142"}`}
