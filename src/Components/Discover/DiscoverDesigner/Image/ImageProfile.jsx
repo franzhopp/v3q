@@ -4,7 +4,7 @@ const ImageProfile = () => {
   return (
     <img
       src={ImageDesigner}
-      className="h-80 w-80 sm:h-96 sm:w-96 transition hover:opacity-90"
+      className="h-80 w-80 sm:h-96 sm:w-96 transition duration-500 hover:opacity-90"
     />
   );
 };

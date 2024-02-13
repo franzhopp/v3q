@@ -3,6 +3,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { useTheme } from "../../../context/ThemeProvider.jsx";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import Img0 from "../../../assets/0.png";
 import Img1 from "../../../assets/2.png";
 import Img2 from "../../../assets/3.png";
 import Img3 from "../../../assets/1.png";
@@ -14,12 +15,18 @@ import Img8 from "../../../assets/8.png";
 import Img9 from "../../../assets/9.png";
 import Img10 from "../../../assets/10.png";
 import Img11 from "../../../assets/11.png";
-import Img12 from "../../../assets/12.png";
+// import Img12 from "../../../assets/12.png";
 
 const SectionExploration = () => {
   const { isDarkMode } = useTheme();
   const [currentIndex, setCurrentIndex] = useState(0);
   const cards = [
+    {
+      image: Img0,
+      title: "Toulouse, 31000",
+      country: "France 🇫🇷",
+      user: "📸 | Louisa.",
+    },
     {
       image: Img1,
       title: "Bruges, 8000",
@@ -86,12 +93,12 @@ const SectionExploration = () => {
       country: "France 🇫🇷",
       user: "📸 | Louisa.",
     },
-    {
-      image: Img12,
-      title: "London, 99132",
-      country: "Royaume-Uni 🇬🇧",
-      user: "📸 | Mélissa.",
-    },
+    // {
+    //   image: Img12,
+    //   title: "London, 99132",
+    //   country: "Royaume-Uni 🇬🇧",
+    //   user: "📸 | Mélissa.",
+    // },
   ];
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);

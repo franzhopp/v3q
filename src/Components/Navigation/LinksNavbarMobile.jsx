@@ -95,7 +95,7 @@ const LinksNavbarMobile = () => {
         <div
           data-aos="fade-left"
           onClick={toggleMenuMobile}
-          className="cursor-pointer rounded-full"
+          className="cursor-pointer rounded-full mr-1"
         >
           {isAnimating ? (
             <div onClick={handleAnimateButtonClick}>

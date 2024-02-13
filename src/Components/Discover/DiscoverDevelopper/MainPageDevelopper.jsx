@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import { FaArrowRight } from "react-icons/fa";
 import translations from "../translate.jsx";
@@ -14,6 +14,8 @@ import Pattern from "../../../assets/picture-louisa.png";
 import Copyright from "./Copyright/LocationCopyright.jsx";
 import Frame from "./Svg/SvgFrame.jsx";
 import Vector from "./Svg/SvgVector.jsx";
+import ImgP from "../../../assets/projectslouisans.png";
+import ImgT from "../../../assets/hoverimg.png";
 import LogoBrand from "./Logo/LogoBrand.jsx";
 import BackToTopButton from "../../UI/ScrollToTop/BackToTopButton.jsx";
 import LinksNetwork from "./Network/LinksNetwork.jsx";
@@ -21,6 +23,7 @@ import Footer from "../../Footer/MainFooter.jsx";
 
 const DiscoverWebDeveloper = () => {
   const { language } = useLanguage();
+  const [isHovered, setIsHovered] = useState(false);
   const SectionToScrollDesc = () => {
     const contactSection = document.getElementById("descl");
     if (contactSection) {
@@ -86,7 +89,7 @@ const DiscoverWebDeveloper = () => {
         <div data-aos="fade-left" className="pb-20">
           <img
             src={Pattern}
-            className="-rotate-6 transition hover:opacity-90"
+            className="-rotate-6 transition duration-500 hover:opacity-90"
           />
           <Copyright />
         </div>
@@ -99,8 +102,29 @@ const DiscoverWebDeveloper = () => {
           </div>
         </div>
       </div>
+      <div className="flex justify-center pt-20">
+        <p
+          data-aos="fade-left"
+          className="text-c22e2e text-center font-inter text-2xl lg:text-4xl"
+        >
+          <div id="descl" className=""></div>
+          Mes projets
+          <div className="flex justify-center">
+            <SvgPyramid />
+          </div>
+        </p>
+      </div>
+      <div data-aos="fade-right" className="flex justify-center py-20 p-10">
+        <div className="bg-F9FEFE p-5 sm:w-1/2 sm:h-1/2 transition duration-500 hover:opacity-90">
+          <img
+            src={`${isHovered ? ImgP : ImgT}`}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          />
+        </div>
+      </div>
       <LogoBrand />
-      <div className="pt-14 pb-28 flex flex-wrap justify-center space-x-0 sm:space-x-10">
+      <div className="py-16 flex flex-wrap justify-center space-x-0 sm:space-x-10">
         <div className="p-6">
           <div
             data-aos="fade-in"

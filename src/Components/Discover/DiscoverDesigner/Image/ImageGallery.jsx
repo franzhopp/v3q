@@ -5,9 +5,21 @@ import ImageGallery3 from "../../../../assets/art3.png";
 const ImageGallery = () => {
   return (
     <>
-      <img src={ImageGallery1} data-aos="fade-in" />
-      <img src={ImageGallery2} data-aos="fade-in" />
-      <img src={ImageGallery3} data-aos="fade-in" />
+      <img
+        src={ImageGallery1}
+        data-aos="fade-in"
+        className="transition duration-500 hover:opacity-90"
+      />
+      <img
+        src={ImageGallery2}
+        data-aos="fade-in"
+        className="transition duration-500 hover:opacity-90"
+      />
+      <img
+        src={ImageGallery3}
+        data-aos="fade-in"
+        className="transition duration-500 hover:opacity-90"
+      />
     </>
   );
 };

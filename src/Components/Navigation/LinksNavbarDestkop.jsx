@@ -106,7 +106,7 @@ const LinksNavbarDesktop = () => {
                   >
                     <NavLink
                       to="/designer"
-                      className="block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                      className="fadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       Designer
                     </NavLink>
@@ -114,7 +114,7 @@ const LinksNavbarDesktop = () => {
                   <li className="ml-4 font-extrabold">
                     <NavLink
                       to="/developer"
-                      className="block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                      className="fadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       Web Developer
                     </NavLink>
@@ -165,7 +165,7 @@ const LinksNavbarDesktop = () => {
                   <li className="ml-4 font-extrabold">
                     <NavLink
                       to="/pricingfr"
-                      className="block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                      className="fadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       {translations[language].navSousPricingFr}
                       {translations[language].navSousPricingEn} FR
@@ -174,7 +174,7 @@ const LinksNavbarDesktop = () => {
                   <li className="ml-4 font-extrabold">
                     <NavLink
                       to="/pricinguk"
-                      className="block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                      className="fadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       {translations[language].navSousPricingFr}
                       {translations[language].navSousPricingEn} UK

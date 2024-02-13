@@ -155,7 +155,7 @@ const NavbarDesktop = () => {
                     >
                       <NavLink
                         to="/designer"
-                        className="block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                        className="fadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
                         Designer
                       </NavLink>
@@ -163,7 +163,7 @@ const NavbarDesktop = () => {
                     <li className="ml-4 font-extrabold">
                       <NavLink
                         to="/developer"
-                        className="block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                        className="fadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
                         Web Developer
                       </NavLink>
@@ -223,7 +223,7 @@ const NavbarDesktop = () => {
                     <li className="ml-4 font-extrabold">
                       <NavLink
                         to="/pricinguk"
-                        className="block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                        className="fadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
                       >
                         {translations[language].navSousPricingFr}
                         {translations[language].navSousPricingEn} UK
@@ -233,7 +233,7 @@ const NavbarDesktop = () => {
                   <li>
                     <NavLink
                       to="/quote"
-                      className="block hover:text-0C3E78 px-4 py-2 font-extrabold"
+                      className="fadeInDelayDesktop block hover:text-0C3E78 px-4 py-2 font-extrabold"
                     >
                       {translations[language].navSousFreeFr}
                       {translations[language].navSousFreeEn}
