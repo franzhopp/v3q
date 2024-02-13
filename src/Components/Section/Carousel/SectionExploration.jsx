@@ -11,11 +11,8 @@ import Img4 from "../../../assets/4.png";
 import Img5 from "../../../assets/5.png";
 import Img6 from "../../../assets/6.png";
 import Img7 from "../../../assets/7.png";
-import Img8 from "../../../assets/8.png";
-import Img9 from "../../../assets/9.png";
+import Img12 from "../../../assets/12.png";
 import Img10 from "../../../assets/10.png";
-import Img11 from "../../../assets/11.png";
-// import Img12 from "../../../assets/12.png";
 
 const SectionExploration = () => {
   const { isDarkMode } = useTheme();
@@ -25,80 +22,52 @@ const SectionExploration = () => {
       image: Img0,
       title: "Toulouse, 31000",
       country: "France 🇫🇷",
-      user: "📸 | Louisa.",
-    },
-    {
-      image: Img1,
-      title: "Bruges, 8000",
-      country: "Belgique 🇧🇪",
-      user: "📸 | Louisa.",
-    },
-    {
-      image: Img2,
-      title: "Atomium, 1020",
-      country: "Belgique 🇧🇪",
-      user: "📸 | Louisa.",
-    },
-    {
-      image: Img3,
-      title: "Bruxelles, 1000",
-      country: "Belgique 🇧🇪",
-      user: "📸 | Louisa.",
     },
     {
       image: Img4,
       title: "Strasbourg, 67000",
       country: "France 🇫🇷",
-      user: "📸 | Louisa.",
-    },
-    {
-      image: Img5,
-      title: "Boston, Massachusetts, 02186",
-      country: "États-Unis 🇺🇸",
-      user: "📸 | Taylor.",
-    },
-    {
-      image: Img6,
-      title: "Barcelone, 08001",
-      country: "Espagne 🇪🇸",
-      user: "📸 | Alexis.",
     },
     {
       image: Img7,
       title: "Versailles, 78646",
       country: "France 🇫🇷",
-      user: "📸 | Louisa.",
     },
     {
-      image: Img8,
-      title: "Marseille, 13008",
-      country: "France 🇫🇷",
-      user: "📸 | Océane.",
+      image: Img1,
+      title: "Bruges, 8000",
+      country: "Belgique 🇧🇪",
     },
     {
-      image: Img9,
-      title: "Paris, 75007",
-      country: "France 🇫🇷",
-      user: "📸 | Louisa.",
+      image: Img2,
+      title: "Atomium, 1020",
+      country: "Belgique 🇧🇪",
+    },
+    {
+      image: Img3,
+      title: "Bruxelles, 3000",
+      country: "Belgique 🇧🇪",
+    },
+    {
+      image: Img12,
+      title: "Londres",
+      country: "Royaume-Uni 🇬🇧",
+    },
+    {
+      image: Img6,
+      title: "Barcelone, 08001",
+      country: "Espagne 🇪🇸",
     },
     {
       image: Img10,
       title: "Atlantic beach, Florida",
       country: "États-Unis 🇺🇸",
-      user: "📸 | Mélissa.",
     },
     {
-      image: Img11,
-      title: "Mont-Saint-Michel, 50170",
-      country: "France 🇫🇷",
-      user: "📸 | Louisa.",
+      image: Img5,
+      title: "Boston, Massachusetts, 02186",
+      country: "États-Unis 🇺🇸",
     },
-    // {
-    //   image: Img12,
-    //   title: "London, 99132",
-    //   country: "Royaume-Uni 🇬🇧",
-    //   user: "📸 | Mélissa.",
-    // },
   ];
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
@@ -160,26 +129,6 @@ const SectionExploration = () => {
               <circle cx="76" cy="76" r="76" fill="#E18AB0" />
             </svg>
           </motion.span>
-          {/* <svg
-            data-aos="fade-in"
-            xmlns="http://www.w3.org/2000/svg"
-            width="152"
-            height="152"
-            viewBox="0 0 152 152"
-            fill="none"
-          >
-            <circle cx="76" cy="76" r="76" fill="#c22e2e" />
-          </svg>
-          <svg
-            data-aos="fade-in"
-            xmlns="http://www.w3.org/2000/svg"
-            width="152"
-            height="152"
-            viewBox="0 0 152 152"
-            fill="none"
-          >
-            <circle cx="76" cy="76" r="76" fill="#E18AB0" />
-          </svg> */}
         </div>
       </div>
       <div className="flex justify-center px-3 pt-20">

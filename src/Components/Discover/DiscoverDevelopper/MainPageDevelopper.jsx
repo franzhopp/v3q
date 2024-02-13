@@ -96,7 +96,7 @@ const DiscoverWebDeveloper = () => {
         <div className="flex relative">
           <Vector />
         </div>
-        <div className="p-5 bg-F9FEFE sm:w-96 sm:h-1/2 text-center rounded-lg shadow-lg rotate-6">
+        <div className="p-5 bg-F9FEFE sm:w-96 sm:h-1/2 text-center rounded-2xl shadow-lg rotate-6">
           <div className="mt-5 text-base">
             <SubDescTitle />
           </div>
@@ -107,15 +107,14 @@ const DiscoverWebDeveloper = () => {
           data-aos="fade-left"
           className="text-c22e2e text-center font-inter text-2xl lg:text-4xl"
         >
-          <div id="descl" className=""></div>
           Mes projets
           <div className="flex justify-center">
             <SvgPyramid />
           </div>
         </p>
       </div>
-      <div data-aos="fade-right" className="flex justify-center py-20 p-10">
-        <div className="bg-F9FEFE p-5 sm:w-1/2 sm:h-1/2 transition duration-500 hover:opacity-90">
+      <div className="flex justify-center py-20 p-10">
+        <div className="bg-F9FEFE p-4 rounded-2xl sm:w-1/2 sm:h-1/2 transition duration-500 hover:opacity-90">
           <img
             src={`${isHovered ? ImgP : ImgT}`}
             onMouseEnter={() => setIsHovered(true)}

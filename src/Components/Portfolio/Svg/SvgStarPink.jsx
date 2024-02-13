@@ -1,10 +1,10 @@
 const SvgStarPink = () => {
   return (
     <svg
-      className="sm:flex hidden mt-6"
-      width="100"
-      height="100"
-      viewBox="0 0 192 193"
+      className="absolute right-96 mt-10"
+      width="200"
+      height="200"
+      viewBox="0 0 200 200"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
