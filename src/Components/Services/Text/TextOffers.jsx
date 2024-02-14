@@ -6,7 +6,7 @@ import ButtonQuote from "../../UI/Button/ButtonFormQuote.jsx";
 const TextOffers = () => {
   const { language } = useLanguage();
   return (
-    <div className="bg-0C3E78 py-24 lg:py-28">
+    <div className="bg-0C3E78 py-32">
       <div className="flex justify-center">
         <h3
           className="text-fff6e4 text-3xl text-center font-extrabold px-5"

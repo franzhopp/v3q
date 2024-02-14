@@ -133,13 +133,13 @@
 //       <div className="bg-fff6e4 flex flex-col text-center justify-center pt-5 pb-10">
 //         <NavLink
 //           to="/privacy"
-//           className="text-c22e2e font-extrabold underline transition hover:text-0C3E78"
+//           className="text-c22e2e font-extrabold underline transition hover:text-0C3E78 transition duration-500"
 //         >
 //           Politique de Confidentialité ➔
 //         </NavLink>
 //         <NavLink
 //           to="/mentions"
-//           className="text-c22e2e font-extrabold underline transition hover:text-0C3E78"
+//           className="text-c22e2e font-extrabold underline transition hover:text-0C3E78 transition duration-500"
 //         >
 //           Mentions Légales ➔
 //         </NavLink>

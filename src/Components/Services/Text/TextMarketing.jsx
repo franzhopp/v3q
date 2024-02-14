@@ -5,7 +5,7 @@ import { RiBardLine } from "react-icons/ri";
 const TextMarketing = () => {
   const { language } = useLanguage();
   return (
-    <div className="image-navi-studio-marketing-services py-24 lg:py-28">
+    <div className="image-navi-studio-marketing-services py-32">
       <div x-comp="Main" className={`pl-10 2xl:pl-96`}>
         <div
           data-aos="fade-right"

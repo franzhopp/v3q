@@ -9,7 +9,7 @@ import "../../Homepage/Homepage.jsx";
 const NavbarEthics = () => {
   const { language } = useLanguage();
   return (
-    <div className="image-navi-studio-navbar-ethics h-full py-56">
+    <div className="image-navi-studio-navbar-ethics bg-cover bg-center h-full py-44">
       <LinksNavbarDesktop />
       <LinksNavbarMobile />
       <div className="px-10">
@@ -24,7 +24,7 @@ const NavbarEthics = () => {
             {translations[language].navSousValuesEn}
           </motion.span>
         </h1>
-        <div className="w-80 lg:w-1/2 py-5">
+        <div className="w-80 lg:w-1/2 pt-5">
           <span className="text-fff6e4 text-lg lg:text-4xl font-extrabold">
             {translations[language].titleNavEthicsFr}
             {translations[language].titleNavEthicsEn}

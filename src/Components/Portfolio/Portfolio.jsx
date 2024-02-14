@@ -18,7 +18,7 @@ const Portfolio = () => {
     {
       image: ImgDefault,
       title: "À venir",
-      content: "Qui a dit que le futur projet arrive très prochainement ? 😎",
+      content: "Qui a dit que le futur projet arrive très prochainement ? 🎉",
     },
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -34,7 +34,6 @@ const Portfolio = () => {
     <section className="bg-fff6e4 bg-pattern-portfolio">
       <NavbarPages />
       <TitlePorfolio />
-      <BackToTopButton/>
       <div className="flex justify-start relative">
         <SvgLine />
       </div>
@@ -63,7 +62,7 @@ const Portfolio = () => {
               <div className="flex flex-col">
                 <NavLink
                   to={cards[currentIndex].url}
-                  className={`font-inter text-sm hover:text-0C3E78 ${
+                  className={`font-inter text-sm hover:text-0C3E78 transition duration-500 ${
                     isDarkMode ? "text-c22e2e" : "text-fff6e4"
                   }`}
                   rel="noreferrer"
@@ -103,6 +102,7 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
+      <BackToTopButton />
       <Footer />
     </section>
   );

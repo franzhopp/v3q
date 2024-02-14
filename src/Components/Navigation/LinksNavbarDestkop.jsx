@@ -70,7 +70,7 @@ const LinksNavbarDesktop = () => {
                 <li>
                   <NavLink
                     to="/"
-                    className="block hover:text-0C3E78 px-4 py-2 font-extrabold"
+                    className="block hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
                   >
                     {translations[language].navSousHomeFr}
                     {translations[language].navSousHomeEn}
@@ -78,7 +78,7 @@ const LinksNavbarDesktop = () => {
                   <li>
                     <NavLink
                       to="/values"
-                      className="block hover:text-0C3E78 px-4 py-2 font-extrabold"
+                      className="block hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
                     >
                       {translations[language].navSousValuesFr}
                       {translations[language].navSousValuesEn}
@@ -87,7 +87,7 @@ const LinksNavbarDesktop = () => {
                 </li>
                 <button onClick={toggleSousListsTwoMenu}>
                   <div className="flex items-center justify-between">
-                    <div className="block hover:text-0C3E78 px-4 py-2 font-extrabold pr-2">
+                    <div className="block hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold pr-2">
                       {translations[language].navSousTeamFr}
                       {translations[language].navSousTeamEn}
                     </div>
@@ -106,7 +106,7 @@ const LinksNavbarDesktop = () => {
                   >
                     <NavLink
                       to="/designer"
-                      className="fadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                      className="fadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
                     >
                       Designer
                     </NavLink>
@@ -114,7 +114,7 @@ const LinksNavbarDesktop = () => {
                   <li className="ml-4 font-extrabold">
                     <NavLink
                       to="/developer"
-                      className="fadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                      className="fadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
                     >
                       Web Developer
                     </NavLink>
@@ -142,7 +142,7 @@ const LinksNavbarDesktop = () => {
                 <li>
                   <NavLink
                     to="/services"
-                    className="block hover:text-0C3E78 px-4 py-2 font-extrabold"
+                    className="block hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
                   >
                     {translations[language].navSousServicesFr}
                     {translations[language].navSousServicesEn}
@@ -150,7 +150,7 @@ const LinksNavbarDesktop = () => {
                 </li>
                 <button onClick={toggleSousListsRate}>
                   <div className="flex items-center justify-between">
-                    <div className="block hover:text-0C3E78 px-4 py-2 font-extrabold pr-2">
+                    <div className="block hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold pr-2">
                       {translations[language].navSousPricingFr}
                       {translations[language].navSousPricingEn}
                     </div>
@@ -165,7 +165,7 @@ const LinksNavbarDesktop = () => {
                   <li className="ml-4 font-extrabold">
                     <NavLink
                       to="/pricingfr"
-                      className="fadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                      className="fadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
                     >
                       {translations[language].navSousPricingFr}
                       {translations[language].navSousPricingEn} FR
@@ -174,7 +174,7 @@ const LinksNavbarDesktop = () => {
                   <li className="ml-4 font-extrabold">
                     <NavLink
                       to="/pricinguk"
-                      className="fadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 px-4 py-2 font-extrabold"
+                      className="fadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
                     >
                       {translations[language].navSousPricingFr}
                       {translations[language].navSousPricingEn} UK
@@ -184,7 +184,7 @@ const LinksNavbarDesktop = () => {
                 <li>
                   <NavLink
                     to="/quote"
-                    className="block hover:text-0C3E78 px-4 py-2 font-extrabold"
+                    className="block hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
                   >
                     {translations[language].navSousFreeFr}
                     {translations[language].navSousFreeEn}
@@ -236,7 +236,7 @@ const LinksNavbarDesktop = () => {
             </div>
           </li>
           <div
-            className={`hover:text-0C3E78 duration-500 px-6 py-2 text-2xl font-extrabold transform active:scale-75 transition-transform ${
+            className={`hover:text-0C3E78 transition duration-500 duration-500 px-6 py-2 text-2xl font-extrabold transform active:scale-75 transition-transform ${
               isDarkMode ? "text-c22e2e" : "text-fff6e4"
             }`}
           >
