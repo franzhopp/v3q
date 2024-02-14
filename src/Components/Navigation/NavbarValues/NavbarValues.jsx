@@ -13,7 +13,7 @@ const NavbarEthics = () => {
       <LinksNavbarDesktop />
       <LinksNavbarMobile />
       <div className="px-10">
-        <h1 className="text-fff6e4 tracking-tighter font-extrabold text-6xl lg:text-8xl">
+        <h1 className="text-fff6e4 text-6xl lg:text-8xl tracking-tighter font-extrabold">
           <motion.span
             id="all"
             initial={{ opacity: 0, y: 20 }}

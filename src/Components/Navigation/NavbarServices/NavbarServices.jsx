@@ -13,7 +13,7 @@ const NavbarServices = () => {
       <LinksNavbarDesktop />
       <LinksNavbarMobile />
       <div className="px-10">
-        <h1 className="text-fff6e4 tracking-tighter font-extrabold text-6xl lg:text-8xl">
+        <h1 className="text-fff6e4 text-6xl lg:text-8xl tracking-tighter font-extrabold">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -24,7 +24,7 @@ const NavbarServices = () => {
           </motion.span>
         </h1>
         <div className="w-80 lg:w-1/2 pt-5">
-          <span className="text-fff6e4 text-lg lg:text-2xl font-extrabold">
+          <span className="text-fff6e4 text-lg lg:text-4xl font-extrabold">
             {translations[language].titleServices1Fr}
             {translations[language].titleServices1En}
           </span>
