@@ -36,12 +36,12 @@ const Portfolio = () => {
       <div className="flex justify-start relative">
         <SvgLine />
       </div>
-      <div className="flex justify-end relative">
+      {/* <div className="flex justify-end relative">
         <SvgStarPink />
-      </div>
+      </div> */}
       <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div className="flex justify-center px-3 py-10">
-          <div className="bg-fff6e4 p-5 py-10 h-1/2 rounded-2xl shadow-2xl mr-5 ml-5">
+          <div className="bg-fff6e4 p-5 py-5  rounded-2xl shadow-2xl mr-5 ml-5">
             <div className="flex justify-center mt-3">
               <img
                 src={cards[currentIndex].image}
@@ -61,13 +61,14 @@ const Portfolio = () => {
               <div className="flex flex-col">
                 <NavLink
                   to={cards[currentIndex].url}
-                  className={`font-inter text-sm underline hover:text-0C3E78 ${
+                  className={`font-inter text-sm hover:text-0C3E78 ${
                     isDarkMode ? "text-c22e2e" : "text-fff6e4"
                   }`}
                   rel="noreferrer"
                   target="_blank"
                 >
-                  <RiBardLine className="h-3 w-3 inline" /> Lien vers le site
+                  <RiBardLine className="h-3 w-3 inline" />{" "}
+                  <span className="underline">Lien vers le site</span>
                 </NavLink>
               </div>
             </p>
@@ -94,10 +95,10 @@ const Portfolio = () => {
                 <FaArrowRight className="h-10 w-8" />
               </button>
             </div>
+            <div className="flex justify-center relative py-10">
+              <SvgHeart />
+            </div>
           </div>
-        </div>
-        <div className="flex justify-center relative pb-10">
-          <SvgHeart />
         </div>
       </div>
       <Footer />

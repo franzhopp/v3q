@@ -83,6 +83,7 @@ const SectionTeam = () => {
           <SvgHeart />
         </div>
       </div>
+      <div id="team"></div>
       <TitleTeamNavi />
       <div
         className={`flex justify-center mb-16 ${

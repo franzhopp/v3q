@@ -114,7 +114,7 @@ const DiscoverWebDeveloper = () => {
         </p>
       </div>
       <div className="flex justify-center py-20 p-10">
-        <div className="bg-F9FEFE p-4 rounded-2xl sm:w-1/2 sm:h-1/2 transition duration-500 hover:opacity-90">
+        <div className="bg-F9FEFE p-4 rounded-2xl shadow-lg sm:w-1/2 sm:h-1/2 transition duration-500 hover:opacity-90">
           <img
             src={`${isHovered ? ImgP : ImgT}`}
             onMouseEnter={() => setIsHovered(true)}
