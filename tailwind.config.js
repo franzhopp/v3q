@@ -42,7 +42,7 @@ export default {
         '0C3E78': '#0C3E78',
         '3E9BF0': '#3E9BF0',
         'E18AB0': '#E18AB0',
-        'F9FEFE': "#F9FEFE",
+        'f9fefe': "#f9fefe",
         '042142': "#042142",
         'D83939': "#D83939",
         '3BE69E': "#3BE69E",

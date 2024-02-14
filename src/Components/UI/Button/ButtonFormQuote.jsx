@@ -9,20 +9,20 @@ const ButtonQuote = () => {
   const { language } = useLanguage();
   return (
     <div
-      className={`flex justify-center sm:justify-end mt-10 px-10 ${
-        isDarkMode ? "text-black" : "text-fff6e4 "
+      className={`flex justify-center lg:justify-end px-10 ${
+        isDarkMode ? "text-black" : "text-fff6e4"
       }`}
     >
       <NavLink
         to="/quote"
-        className="inline-flex items-center gap-2 rounded-full border-black border-4 shadow-2xl bg-fff6e4 px-8 py-3 transform active:scale-75 transition-transform"
+        className={`bg-fff6e4 border-black border-4 inline-flex items-center rounded-full shadow-2xl px-8 py-3 transform active:scale-75 transition-transform`}
       >
-        <span className="text-2xl sm:text-3xl mr-3 font-semibold">
+        <span className={`text-2xl lg:text-3xl font-extrabold pr-3`}>
           {" "}
           {translations[language].navSousFreeFr}
           {translations[language].navSousFreeEn}
         </span>
-        <FaArrowRight className="h-10 w-10" />
+        <FaArrowRight className={`h-10 w-10`} />
       </NavLink>
     </div>
   );

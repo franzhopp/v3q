@@ -7,15 +7,14 @@ import "../../Section/TextHome/MainBlocsHome.jsx";
 import "../../Homepage/Homepage.jsx";
 
 const NavbarServices = () => {
-  const { language, changeLanguage } = useLanguage();
+  const { language } = useLanguage();
   return (
-    <div className="image-navi-studio-navbar-services pb-0 2xl:pb-20">
+    <div className="image-navi-studio-navbar-services h-full py-56">
       <LinksNavbarDesktop />
       <LinksNavbarMobile />
-      <div className="pt-44 px-14 py-20 text-left sm:mt-28">
-        <h1 className="font-extrabold text-fff6e4 text-5xl tracking-tight sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
+      <div className="px-10">
+        <h1 className="text-fff6e4 tracking-tighter font-extrabold text-6xl lg:text-8xl">
           <motion.span
-            id="all"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
@@ -24,8 +23,8 @@ const NavbarServices = () => {
             {translations[language].titleServicesEn}
           </motion.span>
         </h1>
-        <div className="w-full sm:w-1/2">
-          <span className="font-extrabold text-fff6e4 block pt-10 text-base sm:text-4xl">
+        <div className="w-80 lg:w-1/2 py-5">
+          <span className="text-fff6e4 text-lg lg:text-2xl font-extrabold">
             {translations[language].titleServices1Fr}
             {translations[language].titleServices1En}
           </span>

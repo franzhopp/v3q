@@ -15,9 +15,10 @@ import SvgPolygone from "./Svg/SvgPolygone.jsx";
 import SvgIllustration from "./Svg/SvgIllustration.jsx";
 import SvgItemLeft from "./Svg/SvgItemLeft.jsx";
 import SvgItemRight from "./Svg/SvgItemRight.jsx";
-import BackToTopButton from "../../UI/ScrollToTop/BackToTopButton.jsx";
+
 import LinksNetwork from "./Network/LinksNetwork.jsx";
 import Footer from "../../Footer/MainFooter.jsx";
+import BackToTopButton from "../../UI/ScrollToTop/BackToTopButton.jsx";
 
 const DiscoverDesigner = () => {
   return (
@@ -52,7 +53,6 @@ const DiscoverDesigner = () => {
             <Copyright />
           </div>
         </div>
-        <BackToTopButton />
       </div>
       {/* <div className="bg-c22e2e flex justify-center pt-3 sm:h-5"></div> */}
       <div className="flex justify-center relative">
@@ -83,6 +83,7 @@ const DiscoverDesigner = () => {
       <div className="bg-fff6e4 flex justify-center pt-56">
         <Logo />
       </div>
+      <BackToTopButton/>
       <div className="bg-fff6e4 pt-10 flex flex-wrap justify-center pb-20 space-x-0 sm:space-x-10">
         <div className="flex flex-row space-x-10 list-none mt-20 p-6">
           <LinksNetwork />

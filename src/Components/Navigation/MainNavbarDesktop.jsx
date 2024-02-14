@@ -103,7 +103,7 @@ const NavbarDesktop = () => {
                 onClick={SectionToScroll}
                 onMouseEnter={handleMouseEnterSubmenu}
                 onMouseLeave={closeSubmenuWithDelay}
-                className={`hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold ${
+                className={`hover:text-0C3E78 transition duration-500 px-6 py-2 text-2xl font-extrabold ${
                   isDarkMode ? "text-c22e2e" : "text-fff6e4"
                 }`}
               >
@@ -175,7 +175,7 @@ const NavbarDesktop = () => {
             <li className="relative group list-none">
               <NavLink
                 to="/services"
-                className={`hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold ${
+                className={`hover:text-0C3E78 transition duration-500 px-6 py-2 text-2xl font-extrabold ${
                   isDarkMode ? "text-c22e2e" : "text-fff6e4"
                 }`}
               >
@@ -245,14 +245,14 @@ const NavbarDesktop = () => {
             <div className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
               <NavLink
                 to="/portfolio"
-                className="hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
+                className="hover:text-0C3E78 transition duration-500 px-6 py-2 text-2xl font-extrabold"
               >
                 Portfolio
               </NavLink>
               <NavLink
                 to="/"
                 onClick={SectionToSectionContact}
-                className="hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
+                className="hover:text-0C3E78 transition duration-500 px-6 py-2 text-2xl font-extrabold"
               >
                 Contact
               </NavLink>
@@ -263,7 +263,7 @@ const NavbarDesktop = () => {
               }`}
             >
               <div
-                className={`hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold`}
+                className={`hover:text-0C3E78 transition duration-500 px-6 py-2 text-2xl font-extrabold`}
               >
                 <select
                   className={`${isDarkMode ? "bg-fff6e4" : "bg-042142"}`}
@@ -286,7 +286,7 @@ const NavbarDesktop = () => {
               </div>
             </li>
             <div
-              className={`hover:text-0C3E78 px-6 py-2 xl:text-2xl text-base font-extrabold transform active:scale-75 transition-transform ${
+              className={`hover:text-0C3E78 duration-500 px-6 py-2 text-2xl font-extrabold transform active:scale-75 transition-transform ${
                 isDarkMode ? "text-c22e2e" : "text-fff6e4"
               }`}
             >

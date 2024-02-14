@@ -7,13 +7,13 @@ import "../../Section/TextHome/MainBlocsHome.jsx";
 import "../../Homepage/Homepage.jsx";
 
 const NavbarEthics = () => {
-  const { language, changeLanguage } = useLanguage();
+  const { language } = useLanguage();
   return (
-    <div className="image-navi-studio-navbar-ethics h-screen sm:pb-20 mb:min-h-650 min-h-500">
+    <div className="image-navi-studio-navbar-ethics h-full py-56">
       <LinksNavbarDesktop />
       <LinksNavbarMobile />
-      <div className="pt-44 px-14 py-20 text-left sm:mt-28">
-        <h1 className="text-5xl tracking-tight font-extrabold text-fff6e4 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
+      <div className="px-10">
+        <h1 className="text-fff6e4 tracking-tighter font-extrabold text-6xl lg:text-8xl">
           <motion.span
             id="all"
             initial={{ opacity: 0, y: 20 }}
@@ -24,8 +24,8 @@ const NavbarEthics = () => {
             {translations[language].navSousValuesEn}
           </motion.span>
         </h1>
-        <div className="w-full sm:w-1/2">
-          <span className="block pt-10 text-base sm:text-4xl text-fff6e4 font-extrabold">
+        <div className="w-80 lg:w-1/2 py-5">
+          <span className="text-fff6e4 text-lg lg:text-4xl font-extrabold">
             {translations[language].titleNavEthicsFr}
             {translations[language].titleNavEthicsEn}
           </span>

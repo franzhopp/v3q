@@ -5,7 +5,7 @@ import "../../Homepage/Homepage.jsx";
 
 const NavbarDiscoverDesigner = () => {
   return (
-    <div className="picture-bannier-melissa pt-96 bg-no-repeat bg-cover">
+    <div className="picture-bannier-melissa h-96 bg-left lg:bg-center bg-cover">
       <LinksNavbarDesktop />
       <LinksNavbarMobile />
     </div>

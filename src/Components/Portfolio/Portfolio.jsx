@@ -10,6 +10,7 @@ import SvgLine from "./Svg/SvgLine.jsx";
 import SvgHeart from "./Svg/SvgHeart.jsx";
 import SvgStarPink from "./Svg/SvgStarPink.jsx";
 import Footer from "../Footer/MainFooter.jsx";
+import BackToTopButton from "../UI/ScrollToTop/BackToTopButton";
 
 const Portfolio = () => {
   const { isDarkMode } = useTheme();
@@ -33,6 +34,7 @@ const Portfolio = () => {
     <section className="bg-fff6e4 bg-pattern-portfolio">
       <NavbarPages />
       <TitlePorfolio />
+      <BackToTopButton/>
       <div className="flex justify-start relative">
         <SvgLine />
       </div>

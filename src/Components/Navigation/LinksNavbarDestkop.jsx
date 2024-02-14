@@ -54,7 +54,7 @@ const LinksNavbarDesktop = () => {
               to="/"
               onMouseEnter={handleMouseEnterSubmenu}
               onMouseLeave={closeSubmenuWithDelay}
-              className={`hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold ${
+              className={`hover:text-0C3E78 transition duration-500 px-6 py-2 text-2xl font-extrabold ${
                 isDarkMode ? "text-c22e2e" : "text-fff6e4"
               }`}
             >
@@ -97,7 +97,7 @@ const LinksNavbarDesktop = () => {
                 <ul
                   className={`toggle-menu ${
                     showSousListsTwoMenu ? "block" : "hidden"
-                  } p-2`}
+                  } p-2 py-3`}
                 >
                   <li
                     className={`ml-4 ${
@@ -126,7 +126,7 @@ const LinksNavbarDesktop = () => {
           <li className="relative group list-none">
             <NavLink
               to="/services"
-              className={`hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold ${
+              className={`hover:text-0C3E78 transition duration-500 px-6 py-2 text-2xl font-extrabold ${
                 isDarkMode ? "text-c22e2e" : "text-fff6e4"
               }`}
             >
@@ -158,9 +158,9 @@ const LinksNavbarDesktop = () => {
                   </div>
                 </button>
                 <ul
-                  className={`toggle-menu ${
+                  className={`${
                     showSousListsRate ? "block" : "hidden"
-                  } p-2`}
+                  } p-2 py-3`}
                 >
                   <li className="ml-4 font-extrabold">
                     <NavLink
@@ -196,13 +196,13 @@ const LinksNavbarDesktop = () => {
           <div className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
             <NavLink
               to="/portfolio"
-              className="hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
+              className="hover:text-0C3E78 transition duration-500 px-6 py-2 text-2xl font-extrabold"
             >
               Portfolio
             </NavLink>
             <NavLink
               to="/"
-              className="hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold"
+              className="hover:text-0C3E78 transition duration-500 px-6 py-2 text-2xl font-extrabold"
             >
               Contact
             </NavLink>
@@ -213,7 +213,7 @@ const LinksNavbarDesktop = () => {
             }`}
           >
             <div
-              className={`hover:text-0C3E78 px-6 py-2 rounded-md xl:text-2xl text-base font-extrabold`}
+              className={`hover:text-0C3E78 transition duration-500 px-6 py-2 text-2xl font-extrabold`}
             >
               <select
                 className={`${isDarkMode ? "bg-fff6e4" : "bg-042142"}`}
@@ -236,7 +236,7 @@ const LinksNavbarDesktop = () => {
             </div>
           </li>
           <div
-            className={`hover:text-0C3E78 px-6 py-2 xl:text-2xl text-base font-extrabold transform active:scale-75 transition-transform ${
+            className={`hover:text-0C3E78 duration-500 px-6 py-2 text-2xl font-extrabold transform active:scale-75 transition-transform ${
               isDarkMode ? "text-c22e2e" : "text-fff6e4"
             }`}
           >
