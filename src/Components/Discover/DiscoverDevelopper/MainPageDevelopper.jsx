@@ -24,7 +24,7 @@ const DiscoverWebDeveloper = () => {
   const { language } = useLanguage();
 
   const SectionToScrollDesc = () => {
-    const contactSection = document.getElementById("descl");
+    const contactSection = document.getElementById("AboutLouisa");
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: "smooth" });
     }
@@ -67,7 +67,7 @@ const DiscoverWebDeveloper = () => {
           </NavLink>
         </div>
       </div>
-      <div id="descl" className="picture-belgique h-52"></div>
+      <div id="AboutLouisa" className="picture-belgique h-52"></div>
       <BackToTopButton />
       <div className="flex justify-center pt-20">
         <p

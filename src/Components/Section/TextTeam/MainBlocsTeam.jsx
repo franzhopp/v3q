@@ -121,7 +121,7 @@ const SectionTeam = () => {
                 <ModalImage
                   large={ImageParis}
                   small={ImageParis}
-                  className="rounded-2xl ml-10 sm:ml-0 transition hover:opacity-90"
+                  className="rounded-2xl ml-10 sm:ml-0 transition-transform hover:opacity-90 transform active:scale-75"
                 />
                 <p className="text-sm sm:ml-0 ml-10">
                   📍 Paris, Île-de-France, France.
@@ -215,7 +215,7 @@ const SectionTeam = () => {
                   <ModalImage
                     small={ImageLondon}
                     large={ImageLondon}
-                    className="rounded-2xl ml-10 sm:ml-0 transition hover:opacity-90"
+                    className="rounded-2xl ml-10 sm:ml-0 transition-transform hover:opacity-90 transform active:scale-75"
                   />
                 </div>
                 <p className="text-sm sm:ml-0 ml-10">

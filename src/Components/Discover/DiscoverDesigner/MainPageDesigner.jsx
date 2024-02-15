@@ -54,7 +54,7 @@ const DiscoverDesigner = () => {
           </div>
         </div>
       </div>
-      {/* <div className="bg-c22e2e flex justify-center pt-3 sm:h-5"></div> */}
+      <div className="picture-bannier-melissa bg-right flex justify-center pt-3 sm:h-5"></div>
       <div className="flex justify-center relative">
         <SvgPolygone />
       </div>

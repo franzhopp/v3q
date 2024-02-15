@@ -9,13 +9,24 @@
 
 html,
 body {
-    overflow-x: hidden;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
     -webkit-tap-highlight-color: transparent;
     cursor: url('./Cursor/Cursor_1.svg'), default !important;
 }
 
 body * {
     @apply transition-colors duration-200;
+}
+
+.__react_modal_image__modal_content {
+    background-color: rgba(23, 22, 20, 0.83) !important;
+}
+
+.__react_modal_image__header {
+    padding-top: 20px !important;
+    padding-right: 15px !important;
+    background-color: rgba(0, 0, 0, -0.3) !important;
 }
 
 ::-webkit-scrollbar {
@@ -230,42 +241,6 @@ textarea {
     }
 }
 
-.__react_modal_image__modal_content {
-    background-color: rgba(23, 22, 20, 0.83) !important;
-}
-
-.__react_modal_image__header {
-    padding-top: 20px !important;
-    padding-right: 15px !important;
-    background-color: rgba(0, 0, 0, -0.3) !important;
-}
-
-#logo.zoom-in {
-    animation: zoomIn 1s ease-in-out;
-}
-
-@keyframes zoomIn {
-    from {
-        transform: scale(0);
-    }
-
-    to {
-        transform: scale(1);
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 @keyframes fadeInDelayDesktop {
     from {
         opacity: 0;
@@ -279,25 +254,5 @@ textarea {
 }
 
 .fadeInDelayDesktop {
-    animation: fadeInDelayDesktop 0.5s ease-in-out;
-}
-
-.fadeInDelay-1 {
-    animation: fadeIn 0.5s ease-in-out 0.1s forwards;
-}
-
-.fadeInDelay-2 {
-    animation: fadeIn 0.5s ease-in-out 0.2s forwards;
-}
-
-.fadeInDelay-3 {
-    animation: fadeIn 0.5s ease-in-out 0.3s forwards;
-}
-
-.fadeInDelay-4 {
-    animation: fadeIn 0.5s ease-in-out 0.4s forwards;
-}
-
-.fadeInDelay-5 {
-    animation: fadeIn 0.5s ease-in-out 0.4s forwards;
+    animation: fadeInDelayDesktop 0.3s ease-in-out;
 }
