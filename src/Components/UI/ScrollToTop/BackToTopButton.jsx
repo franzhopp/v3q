@@ -32,7 +32,7 @@ const BackToTopButton = () => {
           >
             <div
               className={`p-4 border-D83939 border-4 h-53 h-54 rounded-full shadow-sm transform active:scale-75 transition-transform ${
-                isDarkMode ? "bg-fff6e4" : "bg-042142"
+                isDarkMode ? "bg-fff6e4" : "bg-061628"
               }`}
             >
               <FaArrowUp className="text-D83939" />

@@ -5,6 +5,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
 import { useTheme } from "../../context/ThemeProvider.jsx";
 import translations from "./translate.jsx";
+import { RxCross2 } from "react-icons/rx";
 import ImgBlack from "../../assets/logo-5.png";
 import ImgWhite from "../../assets/logo-57.png";
 import TitleHome from "../UI/Title/TitleHome.jsx";
@@ -25,6 +26,7 @@ const NavbarDesktop = () => {
   const [openModel, setOpenModel] = useState();
   const [searchQuery, setSearchQuery] = useState();
   const [isOpen, setIsOpen] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
   const { language, changeLanguage } = useLanguage();
   const { isDarkMode } = useTheme();
   const changeLanguageHandler = (newLanguage) => {
@@ -53,6 +55,7 @@ const NavbarDesktop = () => {
   };
   const toggleSousListsTwoMenu = () => {
     setShowSousListsTwoMenu(!showSousListsTwoMenu);
+    setIsHovered(false);
   };
   const toggleSousListsRate = () => {
     setShowSousListsRate(!showSousListsRate);
@@ -144,12 +147,12 @@ const NavbarDesktop = () => {
                     </div>
                   </button>
                   <ul
-                    className={`toggle-menu ${
+                    className={`${
                       showSousListsTwoMenu ? "block" : "hidden"
                     } p-2`}
                   >
                     <li
-                      className={`ml-4 ${
+                      className={`ml-2 ${
                         isDarkMode ? "text-c22e2e" : "text-fff6e4"
                       }`}
                     >
@@ -160,7 +163,7 @@ const NavbarDesktop = () => {
                         Designer
                       </NavLink>
                     </li>
-                    <li className="ml-4 font-extrabold">
+                    <li className="ml-2 font-extrabold">
                       <NavLink
                         to="/developer"
                         className="fadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
@@ -207,11 +210,11 @@ const NavbarDesktop = () => {
                     </div>
                   </button>
                   <ul
-                    className={`toggle-menu ${
+                    className={`fadeInDelayDesktop p-2 ${
                       showSousListsRate ? "block" : "hidden"
-                    } p-2`}
+                    }`}
                   >
-                    <li className="ml-4 font-extrabold">
+                    <li className="ml-2 font-extrabold">
                       <NavLink
                         to="/pricingfr"
                         className="block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
@@ -220,10 +223,10 @@ const NavbarDesktop = () => {
                         {translations[language].navSousPricingEn} FR
                       </NavLink>
                     </li>
-                    <li className="ml-4 font-extrabold">
+                    <li className="ml-2 font-extrabold">
                       <NavLink
                         to="/pricinguk"
-                        className="fadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
+                        className="block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
                       >
                         {translations[language].navSousPricingFr}
                         {translations[language].navSousPricingEn} UK
@@ -233,7 +236,7 @@ const NavbarDesktop = () => {
                   <li>
                     <NavLink
                       to="/quote"
-                      className="fadeInDelayDesktop block hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
+                      className="block hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
                     >
                       {translations[language].navSousFreeFr}
                       {translations[language].navSousFreeEn}
@@ -266,7 +269,7 @@ const NavbarDesktop = () => {
                 className={`hover:text-0C3E78 transition duration-500 px-6 py-2 text-2xl font-extrabold`}
               >
                 <select
-                  className={`${isDarkMode ? "bg-fff6e4" : "bg-042142"}`}
+                  className={`${isDarkMode ? "bg-fff6e4" : "bg-061628"}`}
                   value={language}
                   onChange={(e) => changeLanguageHandler(e.target.value)}
                 >
@@ -286,7 +289,7 @@ const NavbarDesktop = () => {
               </div>
             </li>
             <div
-              className={`hover:text-0C3E78 transition duration-500 duration-500 px-6 py-2 text-2xl font-extrabold transform active:scale-75 transition-transform ${
+              className={`hover:text-0C3E78 duration-500 px-6 py-2 text-2xl font-extrabold transform active:scale-75 transition-transform ${
                 isDarkMode ? "text-c22e2e" : "text-fff6e4"
               }`}
             >
@@ -300,7 +303,7 @@ const NavbarDesktop = () => {
             </div>
             {openModel && (
               <ModalSearch
-                className={`${isDarkMode ? "bg-fff6e4" : "bg-042142"}`}
+                className={`${isDarkMode ? "bg-fff6e4" : "bg-061628"}`}
                 closeModal={setOpenModel}
                 searchQuery={setSearchQuery}
               />

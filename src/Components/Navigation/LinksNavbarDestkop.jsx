@@ -95,12 +95,12 @@ const LinksNavbarDesktop = () => {
                   </div>
                 </button>
                 <ul
-                  className={`toggle-menu ${
+                  className={`${
                     showSousListsTwoMenu ? "block" : "hidden"
                   } p-2 py-3`}
                 >
                   <li
-                    className={`ml-4 ${
+                    className={`ml-2 ${
                       isDarkMode ? "text-c22e2e" : "text-fff6e4"
                     }`}
                   >
@@ -111,7 +111,7 @@ const LinksNavbarDesktop = () => {
                       Designer
                     </NavLink>
                   </li>
-                  <li className="ml-4 font-extrabold">
+                  <li className="ml-2 font-extrabold">
                     <NavLink
                       to="/developer"
                       className="fadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
@@ -162,7 +162,7 @@ const LinksNavbarDesktop = () => {
                     showSousListsRate ? "block" : "hidden"
                   } p-2 py-3`}
                 >
-                  <li className="ml-4 font-extrabold">
+                  <li className="ml-2 font-extrabold">
                     <NavLink
                       to="/pricingfr"
                       className="fadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
@@ -171,7 +171,7 @@ const LinksNavbarDesktop = () => {
                       {translations[language].navSousPricingEn} FR
                     </NavLink>
                   </li>
-                  <li className="ml-4 font-extrabold">
+                  <li className="ml-2 font-extrabold">
                     <NavLink
                       to="/pricinguk"
                       className="fadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
@@ -216,7 +216,7 @@ const LinksNavbarDesktop = () => {
               className={`hover:text-0C3E78 transition duration-500 px-6 py-2 text-2xl font-extrabold`}
             >
               <select
-                className={`${isDarkMode ? "bg-fff6e4" : "bg-042142"}`}
+                className={`${isDarkMode ? "bg-fff6e4" : "bg-061628"}`}
                 value={language}
                 onChange={(e) => changeLanguageHandler(e.target.value)}
               >
@@ -236,7 +236,7 @@ const LinksNavbarDesktop = () => {
             </div>
           </li>
           <div
-            className={`hover:text-0C3E78 transition duration-500 duration-500 px-6 py-2 text-2xl font-extrabold transform active:scale-75 transition-transform ${
+            className={`hover:text-0C3E78 duration-500  px-6 py-2 text-2xl font-extrabold transform active:scale-75 transition-transform ${
               isDarkMode ? "text-c22e2e" : "text-fff6e4"
             }`}
           >
@@ -250,7 +250,7 @@ const LinksNavbarDesktop = () => {
           </div>
           {openModel && (
             <ModalSearch
-              className={`${isDarkMode ? "bg-fff6e4" : "bg-042142"}`}
+              className={`${isDarkMode ? "bg-fff6e4" : "bg-061628"}`}
               closeModal={setOpenModel}
               searchQuery={setSearchQuery}
             />

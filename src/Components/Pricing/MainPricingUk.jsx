@@ -4,10 +4,8 @@ import { IoIosArrowDown } from "react-icons/io";
 import { RiBardLine } from "react-icons/ri";
 import { useTheme } from "../../context/ThemeProvider.jsx";
 import NavbarPages from "../Navigation/NavbarPages/NavbarPages.jsx";
-import TitleMarketing from "./Title/TitleMarketing.jsx";
 import TitleWebsiteUk from "./Title/TitleWebsiteUk.jsx";
 import TitleUk from "./Title/TitleUk.jsx";
-import SvgStar from "./Svg/SvgStar.jsx";
 import LinksFr from "./Links/LinksFr.jsx";
 import ConditionUk from "./Title/ConditionUk.jsx";
 import SvgReturnQuote from "./Svg/SvgReturnQuote.jsx";
@@ -15,6 +13,8 @@ import BackToTopButton from "../UI/ScrollToTop/BackToTopButton.jsx";
 import Footer from "../Footer/MainFooter.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import TitleMarketingUk from "./Title/TitleMarketingUk.jsx";
+import SvgStarUk from "./Svg/SvgStarUk.jsx";
 
 const Rate = () => {
   const { isDarkMode } = useTheme();
@@ -25,7 +25,7 @@ const Rate = () => {
       [category]: !prevOpenStates[category],
     }));
   };
-  const Blue = "bg-0c3e78";
+  const Blue = "bg-c22e2e";
   const Pink = "bg-pink";
   const InformationsSitesWeb = [
     {
@@ -135,7 +135,7 @@ const Rate = () => {
           {InformationsSitesWeb.map((info) => (
             <div
               className={`flex flex-col justify-center font-inter  ${
-                info.id % 2 === 0 ? Blue : Pink
+                info.id % 2 === 0 ? Pink : Blue
               }`}
               key={info.id}
             >
@@ -201,15 +201,15 @@ const Rate = () => {
           ))}
         </div>
       </div>
-      <SvgStar />
-      <TitleMarketing />
+      <SvgStarUk />
+      <TitleMarketingUk />
       {/* ARRAY 2 */}
       <div className="flex justify-center">
         <div className="w-96 sm:w-1/2">
           {InformationsMarketing.map((info, index) => (
             <div
               className={`flex flex-col justify-center font-inter ${
-                index % 2 === 0 ? Pink : Blue
+                index % 2 === 0 ? Blue : Pink
               }`}
               key={index}
             >

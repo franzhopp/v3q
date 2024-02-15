@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
 import { useTheme } from "./../../context/ThemeProvider.jsx";
@@ -5,10 +7,7 @@ import { useLanguage } from "./../../context/LanguageProvider.jsx";
 import DarkLightThemes from "./../../hook/useTheme.jsx";
 import ModalSearch from "./../Modal/SearchModal";
 import translations from "./translate.jsx";
-import { NavLink } from "react-router-dom";
-import { useEffect, useState } from "react";
 import ImgBlack from "../../assets/logo-5.png";
-import ImgWhite from "../../assets/logo-57.png";
 import ButtonOpen from "./ButtonMobile/ButtonOpen.jsx";
 import ButtonClose from "./ButtonMobile/ButtonClose.jsx";
 import "../Section/TextHome/MainBlocsHome.jsx";
@@ -86,7 +85,8 @@ const LinksNavbarMobile = () => {
       <div className="px-5 h-28 flex items-center justify-between">
         <NavLink to="/" data-aos="fade-left">
           <img
-            src={isDarkMode ? ImgBlack : ImgWhite}
+            // src={isDarkMode ? ImgBlack : ImgWhite}
+            src={ImgBlack}
             onClick={scrollToTop}
             alt="Logo navi studio."
             className="h-14 w-auto"
@@ -121,12 +121,12 @@ const LinksNavbarMobile = () => {
               </div>
             </button>
             <ul className={`p-2 ${showSousListsAgence ? "block" : "hidden"}`}>
-              <li className="ml-4">
+              <li>
                 <ul
                   data-aos="fade-left"
                   className={`p-2 ${showSousListsAgence ? "block" : "hidden"}`}
                 >
-                  <li className="ml-4 font-extrabold">
+                  <li className="font-extrabold">
                     <NavLink
                       to="/"
                       className="block border-c22e2e border-b-2 hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
@@ -135,7 +135,7 @@ const LinksNavbarMobile = () => {
                       {translations[language].navSousHomeEn}
                     </NavLink>
                   </li>
-                  <li className="ml-4">
+                  <li>
                     <NavLink
                       to="/values"
                       className="block border-c22e2e border-b-2 hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
@@ -164,7 +164,7 @@ const LinksNavbarMobile = () => {
                       showSousListsFiveMenu ? "block" : "hidden"
                     } p-2`}
                   >
-                    <li className="ml-4 font-extrabold">
+                    <li className="font-extrabold">
                       <NavLink
                         to="/designer"
                         className="block border-c22e2e border-b-2 hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
@@ -172,7 +172,7 @@ const LinksNavbarMobile = () => {
                         Designer
                       </NavLink>
                     </li>
-                    <li className="ml-4 font-extrabold">
+                    <li className="font-extrabold">
                       <NavLink
                         to="/developer"
                         className="block rounded-md hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
@@ -203,7 +203,7 @@ const LinksNavbarMobile = () => {
                 showSousListsMenu ? "block" : "hidden"
               } p-2`}
             >
-              <li className="ml-4">
+              <li>
                 <NavLink
                   to="/services"
                   className="block border-c22e2e border-b-2 hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
@@ -212,7 +212,7 @@ const LinksNavbarMobile = () => {
                   {translations[language].navSousServicesEn}
                 </NavLink>
               </li>
-              <NavLink className="block border-c22e2e border-b-2 ml-4">
+              <NavLink className="block border-c22e2e border-b-2">
                 <li>
                   <button onClick={toggleSousListsRate}>
                     <div className="flex items-center justify-between">
@@ -229,16 +229,16 @@ const LinksNavbarMobile = () => {
                       showSousListsRate ? "block" : "hidden"
                     } p-2`}
                   >
-                    <li className="ml-4 font-extrabold">
+                    <li className="font-extrabold">
                       <NavLink
                         to="/pricingfr"
-                        className="block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
+                        className="block border-c22e2e border-b-2 hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
                       >
                         {translations[language].navSousPricingFr}
                         {translations[language].navSousPricingEn} FR
                       </NavLink>
                     </li>
-                    <li className="ml-4 font-extrabold">
+                    <li className="font-extrabold">
                       <NavLink
                         to="/pricinguk"
                         className="block rounded-md hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
@@ -250,7 +250,7 @@ const LinksNavbarMobile = () => {
                   </ul>
                 </li>
               </NavLink>
-              <li className="ml-4">
+              <li>
                 <NavLink
                   to="/quote"
                   className="block hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
@@ -282,7 +282,7 @@ const LinksNavbarMobile = () => {
         <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
           <div className="block px-2 py-2 border-c22e2e border-b-2 rounded-md text-base font-extrabold">
             <select
-              className={`${isDarkMode ? "bg-fff6e4" : "bg-042142"}`}
+              className={`${isDarkMode ? "bg-fff6e4" : "bg-061628"}`}
               value={language}
               onChange={(e) => changeLanguageHandler(e.target.value)}
             >
@@ -304,7 +304,7 @@ const LinksNavbarMobile = () => {
         {/* BARRE DE RECHERCHE */}
         <div className="flex justify-start px-2 pt-4 pb-3">
           <div
-            className={`hover:text-0C3E78 transition duration-500 duration-500 transform active:scale-75 transition-transform ${
+            className={`hover:text-0C3E78 duration-500 transform active:scale-75 transition-transform ${
               isDarkMode ? "text-c22e2e" : "text-fff6e4"
             }`}
           >

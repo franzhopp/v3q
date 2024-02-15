@@ -37,7 +37,7 @@ const ModalSearch = ({ closeModal, searchQuery }) => {
     };
   }, [closeModal]);
   return (
-    <div className={`flex space-x-2 ${isDarkMode ? "bg-fff6e4" : "bg-042142"}`}>
+    <div className={`flex space-x-2 ${isDarkMode ? "bg-fff6e4" : "bg-061628"}`}>
       <input
         data-aos="fade-left"
         type="text"

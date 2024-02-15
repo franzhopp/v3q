@@ -5,15 +5,14 @@ import { IoMdSunny, IoMdMoon } from "react-icons/io";
 const DarkLightThemes = () => {
   const { isDarkMode, toggleTheme } = useTheme();
   useEffect(() => {
-    const section = document.querySelectorAll(".bg-042142, .bg-fff6e4");
+    const section = document.querySelectorAll(".bg-061628, .bg-fff6e4");
     section.forEach((section) => {
-      section.classList.add("duration-200");
       if (isDarkMode) {
-        section.classList.remove("bg-042142");
+        section.classList.remove("bg-061628");
         section.classList.add("bg-fff6e4");
       } else {
         section.classList.remove("bg-fff6e4");
-        section.classList.add("bg-042142");
+        section.classList.add("bg-061628");
       }
     });
   }, [isDarkMode]);
