@@ -143,7 +143,7 @@ textarea {
 
 .image-title-pricing {
     border-radius: 0px 0px 154px 0px;
-    background: url("../assets/bg-rate.png"), lightgray;
+    background-image: url("../assets/bg-rate.png");
 }
 
 .image-title-pricing-uk {

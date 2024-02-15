@@ -1,6 +1,6 @@
 const TitleRate = () => {
   return (
-    <div className="image-title-pricing bg-cover bg-center py-32">
+    <div className="image-title-pricing bg-cover py-32">
       <div
         className="flex justify-center lg:justify-start text-fff6e4 font-extrabold pt-20"
         data-aos="fade-left"
