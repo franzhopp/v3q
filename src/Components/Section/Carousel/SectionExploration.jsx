@@ -50,7 +50,7 @@ const SectionExploration = () => {
     },
     {
       image: Img12,
-      title: "Londres",
+      title: "Londres, SW1X 7LX",
       country: "Royaume-Uni 🇬🇧",
     },
     {
@@ -60,12 +60,12 @@ const SectionExploration = () => {
     },
     {
       image: Img10,
-      title: "Atlantic beach, Florida",
+      title: "Atlantic Beach, 32233",
       country: "États-Unis 🇺🇸",
     },
     {
       image: Img5,
-      title: "Boston, Massachusetts, 02186",
+      title: "Boston Massachusetts, 02186",
       country: "États-Unis 🇺🇸",
     },
   ];

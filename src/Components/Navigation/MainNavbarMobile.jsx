@@ -44,7 +44,6 @@ const NavbarMobile = () => {
   const toggleMenuMobile = () => {
     setToggleMenu(!toggleMenu);
     setIsOpen(!isOpen);
-    document.body.style.overflowY = "hidden";
   };
   const SectionToSectionContact = () => {
     const ContactToScroll = document.getElementById("contact");

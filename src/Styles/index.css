@@ -147,13 +147,13 @@ textarea {
 
 .image-title-quote {
     border-radius: 0px 0px 182px 0px;
-    background: url("../assets/bg-devis.png");
+    background: url("../assets/bg-devis.png"), lightgray;
     animation: fadeIn 0.5s ease-in-out;
 }
 
 .image-title-portfolio {
     border-radius: 0px 0px 182px 0px;
-    background: lightgray;
+    background: url("../assets/testportfolio.png"), lightgray;
     animation: fadeIn 0.5s ease-in-out;
 }
 
@@ -204,6 +204,10 @@ textarea {
 .picture-bannier-melissa {
     background-image: url("../assets/picture-bannier-melissa.png");
     animation: fadeIn 1.5s ease-in-out;
+}
+
+.mini-bannier-melissa {
+    background-image: url("../assets/minibanniermelissa.png");
 }
 
 @keyframes fadeIn {
