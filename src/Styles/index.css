@@ -9,6 +9,7 @@
 
 html,
 body {
+    overflow-x: hidden;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-tap-highlight-color: transparent;
