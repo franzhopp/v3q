@@ -100,7 +100,7 @@ const DiscoverWebDeveloper = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center pt-10">
+      <div className="flex justify-center pt-20">
         <p
           data-aos="fade-left"
           className="text-c22e2e text-center font-inter text-2xl lg:text-4xl"
@@ -112,7 +112,7 @@ const DiscoverWebDeveloper = () => {
         </p>
       </div>
 
-      <div className="flex justify-center py-20 p-10">
+      <div className="flex justify-center pt-20 p-10">
         <div className="bg-f9fefe p-4 rounded-2xl shadow-lg sm:w-1/2 sm:h-1/2 transition duration-500 hover:opacity-90">
           <ImageProjects />
         </div>

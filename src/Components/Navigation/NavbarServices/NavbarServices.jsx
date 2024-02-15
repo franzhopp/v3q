@@ -9,7 +9,7 @@ import "../../Homepage/Homepage.jsx";
 const NavbarServices = () => {
   const { language } = useLanguage();
   return (
-    <div className="image-navi-studio-navbar-services bg-cover bg-center h-full py-44">
+    <div className="image-navi-studio-navbar-services h-full py-56 bg-cover bg-center">
       <LinksNavbarDesktop />
       <LinksNavbarMobile />
       <div className="px-10">
@@ -23,11 +23,11 @@ const NavbarServices = () => {
             {translations[language].titleServicesEn}
           </motion.span>
         </h1>
-        <div className="w-80 lg:w-1/2 pt-5">
-          <span className="text-fff6e4 text-lg lg:text-4xl font-extrabold">
+        <div className="w-80 lg:w-1/2 pt-5 pl-1">
+          <p className="text-fff6e4 text-lg lg:text-4xl font-extrabold">
             {translations[language].titleServices1Fr}
             {translations[language].titleServices1En}
-          </span>
+          </p>
         </div>
       </div>
     </div>
