@@ -40,7 +40,7 @@ const Blocs = () => {
         <div className="p-6 rounded-lg shadow-md">
           <h2
             data-aos="fade-left"
-            className="text-8xl number text-E18AB0 font-bold mb-2"
+            className="text-8xl FontNumber text-E18AB0 font-bold mb-2"
           >
             {letters.map((letter, index) => (
               <span
@@ -80,7 +80,7 @@ const Blocs = () => {
         <div className="p-6 rounded-lg shadow-md">
           <h2
             data-aos="fade-right"
-            className="text-8xl number text-E18AB0 font-bold mb-2"
+            className="text-8xl FontNumber text-E18AB0 font-bold mb-2"
           >
             {letters2.map((letter, index) => (
               <span
@@ -114,7 +114,7 @@ const Blocs = () => {
         <div className="p-6 rounded-lg shadow-md">
           <h2
             data-aos="fade-left"
-            className="text-8xl number text-E18AB0 font-bold mb-2"
+            className="text-8xl FontNumber text-E18AB0 font-bold mb-2"
           >
             {letters3.map((letter, index) => (
               <span

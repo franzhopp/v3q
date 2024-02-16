@@ -8,7 +8,7 @@ import "../../Homepage/Homepage.jsx";
 const PrivacyNavbar = () => {
   // const { language, changeLanguage } = useLanguage();
   return (
-    <div className="image-navi-studio-navbar-services h-screen sm:pb-20 mb:min-h-650 min-h-500">
+    <div className="BgServices h-screen sm:pb-20 mb:min-h-650 min-h-500">
       <LinksNavbarDesktop />
       <LinksNavbarMobile />
     </div>

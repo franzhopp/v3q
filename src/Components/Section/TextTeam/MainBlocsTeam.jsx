@@ -8,8 +8,8 @@ import translations from "../translate.jsx";
 import SvgHeart from "../Svg/SvgHeart.jsx";
 import TitleTeamNavi from "./Title.jsx";
 import ModalImage from "react-modal-image";
-import ImageLondon from "../../../assets/london.png";
-import ImageParis from "../../../assets/paris.png";
+import ImageLondon from "../../../assets/PictureTeam/London.png";
+import ImageParis from "../../../assets/PictureTeam/Paris.png";
 import SectionExploration from "../Carousel/SectionExploration.jsx";
 
 const SectionTeam = () => {
@@ -154,7 +154,7 @@ const SectionTeam = () => {
               </div>
 
               <div className="w-72">
-                <p className="text-left text-base mb-10 ml-10 sm:ml-0 p">
+                <p className="BgSun bg-no-repeat text-left text-base mb-10 ml-10 sm:ml-0">
                   <span className="font-extrabold">
                     {" "}
                     <RiBardLine className="inline" />{" "}
@@ -247,7 +247,7 @@ const SectionTeam = () => {
                   </animated.h1>
                 </div>
                 <div className="w-72">
-                  <p className=" text-left text-base mb-10 ml-10 sm:ml-0 p">
+                  <p className="BgSun bg-no-repeat text-left text-base mb-10 ml-10 sm:ml-0">
                     <span className="font-extrabold">
                       {" "}
                       <RiBardLine className="inline" />{" "}

@@ -1,4 +1,4 @@
-import ImgLogo from "../../../assets/logo-5.png";
+import ImgLogo from "../../../assets/Logo/MainLogoNaviStudio.png";
 import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import translations from "../translate.jsx";
 

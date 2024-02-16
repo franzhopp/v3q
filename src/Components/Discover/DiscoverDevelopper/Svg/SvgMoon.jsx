@@ -1,6 +1,6 @@
 import { useTheme } from "../../../../context/ThemeProvider";
-import SvgMoonSun from "../../../../assets/SvgMoonSun.svg";
-import SvgMoonDark from "../../../../assets/SvgMoonDark.svg";
+import SvgMoonSun from "../../../../assets/Svg/SvgMoonSun.svg";
+import SvgMoonDark from "../../../../assets/Svg/SvgMoonDark.svg";
 
 const SvgMoon = () => {
   const { isDarkMode } = useTheme();

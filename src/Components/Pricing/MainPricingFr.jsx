@@ -178,7 +178,7 @@ const Rate = () => {
                       ))}
                       <div className="flex justify-start">
                         <ul className="text-fff6e4  mt-3 mb-3 text-sm px-10 sm:text-left text-justify">
-                          <p className="number mb-2">
+                          <p className="FontNumber mb-2">
                             Informations détaillées :
                           </p>
                           {info.subDetails.map((subDetail, subDetailIndex) => (
@@ -195,7 +195,7 @@ const Rate = () => {
                       </div>
                       <NavLink
                         to="/quote"
-                        className="pt-5 font-extrabold number underline"
+                        className="pt-5 font-extrabold FontNumber underline"
                       >
                         Demander un devis gratuit
                       </NavLink>

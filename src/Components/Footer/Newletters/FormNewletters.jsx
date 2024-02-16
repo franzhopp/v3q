@@ -29,6 +29,9 @@ const FormNewletters = () => {
 
     if (!formData.email || !regexEmail.test(formData.email)) {
       newErrors.email = "Veuillez entrer une adresse e-mail valide.";
+      setTimeout(() => {
+        window.location.reload();
+      }, 1000);
     }
 
     if (Object.keys(newErrors).length > 0) {
@@ -53,6 +56,9 @@ const FormNewletters = () => {
       }, 1000);
     } catch (error) {
       setStatus("Une erreur s'est produite.");
+      setTimeout(() => {
+        window.location.reload();
+      }, 1000);
     }
 
     setIsLoading(false);
@@ -77,11 +83,11 @@ const FormNewletters = () => {
         <button
           type="submit"
           onSubmit={handleSubmit}
-          className={`rounded-tl-none rounded-bl-none rounded-tr-2xl rounded-br-2xl p-2 bg-fff6e4 font-extrabold ${
+          className={`bg-fff6e4 rounded-tl-none rounded-bl-none rounded-tr-2xl rounded-br-2xl p-2 font-extrabold transform active:scale-75 transition-transform ${
             isDarkMode ? "text-c22e2e" : "text-fff6e4"
           }`}
         >
-          <span className="transition hover:opacity-30">
+          <span className="font-inter text-sm transition hover:opacity-30">
             {translations[language].sendFooterFr}
             {translations[language].sendFooterEn}
           </span>

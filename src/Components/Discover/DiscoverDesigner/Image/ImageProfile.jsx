@@ -1,4 +1,4 @@
-import ImageDesigner from "../../../../assets/picture-melissa.png";
+import ImageDesigner from "../../../../assets/Picture/PictureMelissa.png";
 
 const ImageProfile = () => {
   return (

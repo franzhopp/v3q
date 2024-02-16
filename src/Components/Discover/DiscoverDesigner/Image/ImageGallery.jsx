@@ -1,6 +1,6 @@
-import ImageGallery1 from "../../../../assets/art1.png";
-import ImageGallery2 from "../../../../assets/art2.png";
-import ImageGallery3 from "../../../../assets/art3.png";
+import ImageGallery1 from "../../../../assets/Artwork/Art1.png";
+import ImageGallery2 from "../../../../assets/Artwork/Art2.png";
+import ImageGallery3 from "../../../../assets/Artwork/Art3.png";
 
 const ImageGallery = () => {
   return (

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import SvgFontRight from "./Svg/SvgFontRight";
 import SvgFontLeft from "./Svg/SvgFontLeft";
 import NavbarEthics from "../Navigation/NavbarValues/NavbarValues.jsx";
-import Img from "../../assets/bg-ethics-mac.png";
+import Img from "../../assets/Picture/PictureValuesMac.png";
 import BackToTopButton from "../UI/ScrollToTop/BackToTopButton";
 import Blocs from "./Blocs/Blocs";
 import SvgStarPink from "./Svg/SvgStarPink";
@@ -75,7 +75,7 @@ const EthicsPage = () => {
         <SubBlocsBgPink />
         <div id="ethics"></div>
       </div>
-      <div className="bg-ethics-blur pt-32 pb-20">
+      <div className="BgValuesBlur pt-32 pb-20">
         <div className="flex justify-center">
           <SvgStarBeige />
         </div>

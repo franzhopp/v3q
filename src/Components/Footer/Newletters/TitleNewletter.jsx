@@ -4,7 +4,7 @@ import translations from "../translate.jsx";
 const TitleNewletter = () => {
   const { language } = useLanguage();
   return (
-    <div className="font-inter text-sm text-center text-fff6e4 pt-10">
+    <div className="text-fff6e4 font-inter text-center text-sm pt-10">
       {translations[language].newletterFr}
       {translations[language].newletterEn}
     </div>

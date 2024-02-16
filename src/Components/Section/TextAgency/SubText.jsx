@@ -13,7 +13,7 @@ const SubTextAgency = () => {
             data-aos-anchor-placement="top-bottom"
             className="mt-2 text-fff6e4 text-arial"
           >
-            <h1 className="text-4xl number font-semibold pb-5">04.</h1>
+            <h1 className="text-4xl FontNumber font-semibold pb-5">04.</h1>
             <span className="font-extrabold">
               <RiBardLine className="inline" />{" "}
               {translations[language].textSectionAgencyBold1Fr}
@@ -32,7 +32,7 @@ const SubTextAgency = () => {
             data-aos-anchor-placement="top-bottom"
             className="mt-2 text-fff6e4 text-arial"
           >
-            <h1 className="text-4xl number font-semibold pb-5">05.</h1>
+            <h1 className="text-4xl FontNumber font-semibold pb-5">05.</h1>
             <span className="font-extrabold">
               <RiBardLine className="inline" />{" "}
               {translations[language].textSectionAgencyBold3Fr}
@@ -52,7 +52,7 @@ const SubTextAgency = () => {
             data-aos-anchor-placement="top-bottom"
             className="mt-2 text-fff6e4 text-arial"
           >
-            <h1 className="text-4xl number font-semibold pb-5">06.</h1>
+            <h1 className="text-4xl FontNumber font-semibold pb-5">06.</h1>
             <span className="font-extrabold">
               <RiBardLine className="inline" />{" "}
               {translations[language].textSectionAgencyBold6Fr}

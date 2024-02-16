@@ -4,7 +4,7 @@ import NavbaPages from "../../Navigation/NavbarPages/NavbarPages.jsx";
 import translations from "./translate.jsx";
 import SvgReturnHome from "../Svg/SvgReturnHome.jsx";
 import SvgError from "../Svg/SvgError.jsx";
-import ImgLogo from "../../../assets/logo-6.png";
+import ImgLogo from "../../../assets/Logo/LogoNaviStudioPinkFlash.png";
 import Footer from "../../Footer/MainFooter.jsx";
 
 const PageNotFound = () => {

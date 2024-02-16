@@ -71,145 +71,127 @@ textarea {
     font-size: 8px;
 }
 
-.number {
+.FontNumber {
     font-family: 'Aoboshi One', serif;
 }
 
-.picture-belgique {
-    background-image: url("../assets/picture-belgique.png");
+.PictureBelgique {
+    background-image: url("../assets/PictureBelgique.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.image-home {
-    background-image: url('../assets/bg-home.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+.BgHome {
+    background-image: url('../assets/Background/BgHome.png');
 }
 
-.image-navi-studio-navbar-services {
-    background-image: url('../assets/bg-home-services.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: fadeIn 1.5s ease-in-out;
+.BgServices {
+    background-image: url('../assets/Background/BgServices.png');
+    animation: FadeIn 1.5s ease-in-out;
 }
 
-.image-navi-studio-navbar-ethics {
-    background-image: url('../assets/bg-ethics.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: auto;
-    display: block;
-    max-width: 100%;
-    animation: fadeIn 1.5s ease-in-out;
+.BgValues {
+    background-image: url('../assets/Background/BgValues.png');
+    animation: FadeIn 1.5s ease-in-out;
 }
 
-.bg-pattern-portfolio {
-    background-image: url('../assets/pattern.png');
-    background-repeat: no-repeat;
+.BgPatternPortfolio {
+    background-image: url('../assets/Pattern.png');
     background-position: 30% 10%;
 }
 
-.bg-contact-blur {
-    background-image: url('../assets/bg-contact-blur.png');
+.BgContactBlur {
+    background-image: url('../assets/Background/BgContactBlur.png');
+}
+
+.BgValuesBlur {
+    background-image: url('../assets/Background/BgValuesBlur.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.bg-services-blur {
-    background-image: url('../assets/bg-home-blur.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.bg-devis-blur {
-    background-image: url('../assets/bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.bg-devis-blur-r {
-    background-image: url('../assets/bg-portfolio-blur.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.bg-ethics-blur {
-    background-image: url('../assets/bg-ethics-blur.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.image-title-agency {
+.BgTitleAgency {
     border-radius: 0px 0px 0px 190px;
-    background: url("../assets/bg-title-agency.png"), lightgray;
+    background: url("../assets/Background/BgTitleAgency.png"), lightgray;
 }
 
-.image-title-quote {
+.BgTitleQuote {
     border-radius: 0px 0px 182px 0px;
-    background: url("../assets/bg-devis.png"), lightgray;
-    animation: fadeIn 0.5s ease-in-out;
+    background: url("../assets/Background/BgQuote.png"), lightgray;
+    animation: FadeIn 0.5s ease-in-out;
 }
 
-.image-title-portfolio {
+.BgTitlePortfolio {
     border-radius: 0px 0px 182px 0px;
-    background: url("../assets/testportfolio.png"), lightgray;
-    animation: fadeIn 0.5s ease-in-out;
+    background: url("../assets/Picture/PicturePortfolio.png"), lightgray;
+    animation: FadeIn 0.5s ease-in-out;
 }
 
-.image-title-pricing {
+.BgTitlePricing {
     border-radius: 0px 0px 154px 0px;
-    background-image: url("../assets/bg-rate.png");
-    animation: fadeIn 0.5s ease-in-out;
+    background-image: url("../assets/Background/BgPricing.png");
+    animation: FadeIn 0.5s ease-in-out;
 }
 
-.image-title-pricing-uk {
+.BgTitlePricingUk {
     border-radius: 0px 0px 182px 0px;
     background: lightgray;
-    animation: fadeIn 0.5s ease-in-out;
+    animation: FadeIn 0.5s ease-in-out;
 }
 
-.image-title-contact {
+.BgTitleContact {
     border-radius: 0px 0px 0px 181px;
-    background: url("../assets/bg-title-contact.png"), lightgray;
+    background: url("../assets/Background/BgTitleContact.png"), lightgray;
 }
 
-.image-navi-studio-marketing-services {
+.BgServicesMarketing {
     border-radius: 0px 0px 290px 0px;
-    background: url("../assets/bg-services-marketing.png"), lightgray;
+    background: url("../assets/Background/BgServicesMarketing.png"), lightgray;
 }
 
-.bg-color-form {
+.BgColorFilterForm {
     background: rgba(0, 0, 0, 0.08);
     backdrop-filter: blur(6.5px);
 }
 
-.bg-cards {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../assets/bg-cards.png");
+.BgCards {
+    background-image: url("../assets/Background/BgCards.png");
 }
 
-.bg-cards-2 {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../assets/bg-cards-2.png");
+.BgCardsTwo {
+    background-image: url("../assets/Background/BgCardsTwo.png");
 }
 
-.picture-bannier-louisa {
-    background-image: url("../assets/picture-bannier-louisa.png");
-    animation: fadeIn 1.5s ease-in-out;
+.PictureBannierLouisa {
+    background-image: url("../assets/Picture/PictureBannierLouisa.png");
+    animation: FadeIn 1.5s ease-in-out;
 }
 
-.picture-bannier-melissa {
-    background-image: url("../assets/picture-bannier-melissa.png");
-    animation: fadeIn 1.5s ease-in-out;
+.PictureBannierMelissa {
+    background-image: url("../assets/Picture/PictureBannierMelissa.png");
+    animation: FadeIn 1.5s ease-in-out;
 }
 
-.mini-bannier-melissa {
-    background-image: url("../assets/minibanniermelissa.png");
+.MiniBannierMelissa {
+    background-image: url("../assets/MiniBannierMelissa.png");
 }
 
+.BgSun {
+    width: 248px;
+    height: 230px;
+    background-image: url("../assets/Svg/BgSun.svg");
+}
+
+/* Names Of Animation */
+.FadeInDelayDesktop {
+    animation: FadeInDelayDesktop 0.3s ease-in-out;
+}
+
+.InputError {
+    animation: Shake 0.5s ease-in-out;
+}
+
+/* Animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -220,25 +202,19 @@ textarea {
     }
 }
 
-.p {
-    width: 248px;
-    height: 230px;
-    background-repeat: no-repeat;
-    background-image: url("../assets/bg-sun-r.svg");
+@keyframes FadeInDelayDesktop {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.z {
-    width: 248px;
-    height: 230px;
-    background-repeat: no-repeat;
-    background-image: url("../assets/bg-sun-v.svg");
-}
-
-.input-error {
-    animation: shake 0.5s ease-in-out;
-}
-
-@keyframes shake {
+@keyframes Shake {
     0% {
         transform: rotate(0);
     }
@@ -262,20 +238,4 @@ textarea {
     100% {
         transform: rotate(0);
     }
-}
-
-@keyframes fadeInDelayDesktop {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.fadeInDelayDesktop {
-    animation: fadeInDelayDesktop 0.3s ease-in-out;
 }

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import translations from "../translate.jsx";
-import ImgLogo from "../../../assets/logo-5.png";
+import ImgLogo from "../../../assets/Logo/MainLogoNaviStudio.png";
 import ButtonSend from "../../UI/Button/ButtonSend.jsx";
 import emailjs from "emailjs-com";
 
@@ -163,7 +163,7 @@ const FormQuote = ({ label, type, value }) => {
     <>
       <form
         onSubmit={handleSubmit}
-        className="bg-color-form rounded-3xl p-9 pb-12 shadow-lg space-y-4"
+        className="BgColorFilterForm rounded-3xl p-9 pb-12 shadow-lg space-y-4"
       >
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div className="relative pb-5">
@@ -181,7 +181,7 @@ const FormQuote = ({ label, type, value }) => {
             <input
               type={type}
               className={`rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm ${
-                errors.firstname ? "input-error border-red-700" : ""
+                errors.firstname ? "InputError border-red-700" : ""
               }`}
               id="firstname"
               name="firstname"
@@ -211,7 +211,7 @@ const FormQuote = ({ label, type, value }) => {
             <input
               type={type}
               className={`rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm ${
-                errors.lastname ? "input-error border-red-700" : ""
+                errors.lastname ? "InputError border-red-700" : ""
               }`}
               id="lastname"
               name="lastname"
@@ -241,7 +241,7 @@ const FormQuote = ({ label, type, value }) => {
           <input
             type={type}
             className={`rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm ${
-              errors.email ? "input-error border-red-700" : ""
+              errors.email ? "InputError border-red-700" : ""
             }`}
             id="email"
             name="email"
@@ -271,7 +271,7 @@ const FormQuote = ({ label, type, value }) => {
           <input
             type={"tel"}
             className={`rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm ${
-              errors.tel ? "input-error border-red-700" : ""
+              errors.tel ? "InputError border-red-700" : ""
             }`}
             id="tel"
             name="tel"
@@ -301,7 +301,7 @@ const FormQuote = ({ label, type, value }) => {
           <input
             type={"tel"}
             className={`rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm ${
-              errors.codepostal ? "input-error border-red-700" : ""
+              errors.codepostal ? "InputError border-red-700" : ""
             }`}
             id="codepostal"
             name="codepostal"
@@ -331,7 +331,7 @@ const FormQuote = ({ label, type, value }) => {
           <input
             type={"text"}
             className={`rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm ${
-              errors.info1 ? "input-error border-red-700" : ""
+              errors.info1 ? "InputError border-red-700" : ""
             }`}
             id="info1"
             name="info1"
@@ -361,7 +361,7 @@ const FormQuote = ({ label, type, value }) => {
           <input
             type={"text"}
             className={`rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm ${
-              errors.info2 ? "input-error border-red-700" : ""
+              errors.info2 ? "InputError border-red-700" : ""
             }`}
             id="info2"
             name="info2"
@@ -391,7 +391,7 @@ const FormQuote = ({ label, type, value }) => {
           <input
             type={"text"}
             className={`rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm ${
-              errors.info3 ? "input-error border-red-700" : ""
+              errors.info3 ? "InputError border-red-700" : ""
             }`}
             id="info3"
             name="info3"
@@ -421,7 +421,7 @@ const FormQuote = ({ label, type, value }) => {
           <input
             type={"text"}
             className={`rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm ${
-              errors.info4 ? "input-error border-red-700" : ""
+              errors.info4 ? "InputError border-red-700" : ""
             }`}
             id="info4"
             name="info4"
@@ -451,7 +451,7 @@ const FormQuote = ({ label, type, value }) => {
           </label>
           <textarea
             className={`rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm ${
-              errors.firstname ? "input-error border-red-700" : ""
+              errors.firstname ? "InputError border-red-700" : ""
             }`}
             rows="8"
             id="message"

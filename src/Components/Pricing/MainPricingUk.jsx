@@ -8,7 +8,7 @@ import TitleWebsiteUk from "./Title/TitleWebsiteUk.jsx";
 import TitleUk from "./Title/TitleUk.jsx";
 import LinksFr from "./Links/LinksFr.jsx";
 import ConditionUk from "./Title/ConditionUk.jsx";
-import SvgReturnQuote from "./Svg/SvgReturnQuote.jsx";
+import SvgReturnQuote from "./Svg/SvgReturnQuoteUk.jsx";
 import BackToTopButton from "../UI/ScrollToTop/BackToTopButton.jsx";
 import Footer from "../Footer/MainFooter.jsx";
 import AOS from "aos";
@@ -25,8 +25,8 @@ const Rate = () => {
       [category]: !prevOpenStates[category],
     }));
   };
-  const Blue = "bg-c22e2e";
-  const Pink = "bg-pink";
+  const Blue = "bg-FC7A44";
+  const Pink = "bg-EC307A";
   const InformationsSitesWeb = [
     {
       id: 1,
@@ -174,7 +174,9 @@ const Rate = () => {
                       ))}
                       <div className="flex justify-start">
                         <ul className="text-fff6e4  mt-3 mb-3 text-sm px-10 sm:text-left text-justify">
-                          <p className="number mb-2">Detailed informations :</p>
+                          <p className="FontNumber mb-2">
+                            Detailed informations :
+                          </p>
                           {info.subDetails.map((subDetail, subDetailIndex) => (
                             <li
                               data-aos="fade-right"
@@ -189,7 +191,7 @@ const Rate = () => {
                       </div>
                       <NavLink
                         to="/quote"
-                        className="pt-5 font-extrabold number underline"
+                        className="pt-5 font-extrabold FontNumber underline"
                       >
                         Request a free quote
                       </NavLink>

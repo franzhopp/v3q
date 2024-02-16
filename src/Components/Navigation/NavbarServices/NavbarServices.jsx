@@ -9,7 +9,7 @@ import "../../Homepage/Homepage.jsx";
 const NavbarServices = () => {
   const { language } = useLanguage();
   return (
-    <div className="image-navi-studio-navbar-services h-full py-56 bg-cover bg-center">
+    <div className="BgServices bg-cover bg-no-repeat bg-center h-full py-56">
       <LinksNavbarDesktop />
       <LinksNavbarMobile />
       <div className="px-10">

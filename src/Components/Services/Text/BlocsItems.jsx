@@ -39,7 +39,7 @@ const BlocsItems = () => {
         <div
           data-aos="fade-right"
           data-aos-duration="300"
-          className="bg-cards p-6 rounded-2xl shadow-2xl mb-5"
+          className="BgCards bg-cover bg-no-repeat p-6 rounded-2xl shadow-2xl mb-5"
         >
           <p className="text-fff6e4 text-center text-xl font-extrabold mb-5">
             {translations[language].title2ServicesFr}
@@ -63,7 +63,7 @@ const BlocsItems = () => {
         <div
           data-aos="fade-left"
           data-aos-duration="300"
-          className="bg-cards-2 p-6 rounded-2xl shadow-2xl mb-5"
+          className="BgCardsTwo bg-cover bg-no-repeat p-6 rounded-2xl shadow-2xl mb-5"
         >
           <p className="text-fff6e4 text-center text-xl font-extrabold mb-5">
             Landing page

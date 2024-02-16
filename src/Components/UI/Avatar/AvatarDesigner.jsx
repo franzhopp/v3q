@@ -1,4 +1,4 @@
-import AvatarMelissa from "../../../assets/avatar-melissa.png";
+import AvatarMelissa from "../../../assets/Avatar/AvatarMelissa.png";
 
 const AvatarDesigner = () => {
   return (

@@ -6,8 +6,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
 import translations from "./translate.jsx";
 import DarkLightThemes from "../../hook/useTheme.jsx";
-import ImgBlack from "../../assets/logo-5.png";
-import ImgWhite from "../../assets/logo-57.png";
+import ImgBlack from "../../assets/Logo/MainLogoNaviStudio.png";
 import ModalSearch from "../Modal/SearchModal.jsx";
 import ButtonClose from "./ButtonMobile/ButtonClose.jsx";
 import ButtonOpen from "./ButtonMobile/ButtonOpen.jsx";
@@ -120,7 +119,7 @@ const NavbarMobile = () => {
         </div>
       </div>
       {/* LINKS */}
-      <ul className={`p-5 fadeInDelayDesktop ${isOpen ? "block" : "hidden"}`}>
+      <ul className={`p-5 FadeInDelayDesktop ${isOpen ? "block" : "hidden"}`}>
         <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
           <NavLink className="block px-3 py-2 border-c22e2e border-b-2 rounded-md text-base font-extrabold">
             <button onClick={toggleSousListsAgence}>

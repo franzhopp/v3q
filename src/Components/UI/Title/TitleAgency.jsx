@@ -5,7 +5,7 @@ const TitleAgency = () => {
   const { language } = useLanguage();
   return (
     <>
-      <div className="image-title-agency pb-24">
+      <div className="BgTitleAgency pb-24">
         <div
           className="pt-20 text-fff6e4 sm:ml-44 sm:text-left text-center font-extrabold"
           data-aos="fade-left"

@@ -1,6 +1,6 @@
 import { useLanguage } from "../../../context/LanguageProvider";
 import translations from "../translate.jsx";
-import ImgLogo from "../../../assets/logo-5.png";
+import ImgLogo from "../../../assets/Logo/MainLogoNaviStudio.png";
 import { RiBardLine } from "react-icons/ri";
 
 const EndTextValues = () => {

@@ -7,7 +7,7 @@ import { useLanguage } from "../../context/LanguageProvider";
 import DarkLightThemes from "../../hook/useTheme";
 import ModalSearch from "../Modal/SearchModal";
 import translations from "./translate.jsx";
-import Image from "../../assets/logo-5.png";
+import Image from "../../assets/Logo/MainLogoNaviStudio.png";
 
 const LinksNavbarDesktop = () => {
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
@@ -65,7 +65,7 @@ const LinksNavbarDesktop = () => {
               <ul
                 className={`absolute hidden group-hover:block rounded-md font-extrabold text-left w-48 bg-fff6e4 mt-2 py-2 ${
                   isDarkMode ? "text-c22e2e" : "text-fff6e4"
-                } fadeInDelayDesktop`}
+                } FadeInDelayDesktop`}
               >
                 <li>
                   <NavLink
@@ -106,7 +106,7 @@ const LinksNavbarDesktop = () => {
                   >
                     <NavLink
                       to="/designer"
-                      className="fadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
+                      className="FadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
                     >
                       Designer
                     </NavLink>
@@ -114,7 +114,7 @@ const LinksNavbarDesktop = () => {
                   <li className="ml-2 font-extrabold">
                     <NavLink
                       to="/developer"
-                      className="fadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
+                      className="FadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
                     >
                       Web Developer
                     </NavLink>
@@ -137,7 +137,7 @@ const LinksNavbarDesktop = () => {
               <ul
                 className={`absolute hidden group-hover:block bg-fff6e4 w-48 mt-2 py-2 rounded-md text-left ${
                   isDarkMode ? "text-c22e2e" : "text-fff6e4"
-                } fadeInDelayDesktop`}
+                } FadeInDelayDesktop`}
               >
                 <li>
                   <NavLink
@@ -165,7 +165,7 @@ const LinksNavbarDesktop = () => {
                   <li className="ml-2 font-extrabold">
                     <NavLink
                       to="/pricingfr"
-                      className="fadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
+                      className="FadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
                     >
                       {translations[language].navSousPricingFr}
                       {translations[language].navSousPricingEn} FR
@@ -174,7 +174,7 @@ const LinksNavbarDesktop = () => {
                   <li className="ml-2 font-extrabold">
                     <NavLink
                       to="/pricinguk"
-                      className="fadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
+                      className="FadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
                     >
                       {translations[language].navSousPricingFr}
                       {translations[language].navSousPricingEn} UK

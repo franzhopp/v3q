@@ -1,7 +1,6 @@
-// import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useLanguage } from "../../../context/LanguageProvider.jsx";
-import ImgLogo from "../../../assets/logo-5.png";
+import ImgLogo from "../../../assets/Logo/MainLogoNaviStudio.png";
 import translations from "../translate.jsx";
 import ButtonSend from "../../UI/Button/ButtonSend.jsx";
 import emailjs from "emailjs-com";
@@ -126,7 +125,7 @@ const FormEmailJs = ({ label, type, value }) => {
     <>
       <form
         onSubmit={handleSubmit}
-        className="bg-color-form rounded-3xl p-9 pb-12 shadow-lg space-y-4"
+        className="BgColorFilterForm rounded-3xl p-9 pb-12 shadow-lg space-y-4"
       >
         <div className="space-y-4">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -145,7 +144,7 @@ const FormEmailJs = ({ label, type, value }) => {
               <input
                 type={type}
                 className={`rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm ${
-                  errors.firstname ? "input-error border-red-700" : ""
+                  errors.firstname ? "InputError border-red-700" : ""
                 }`}
                 id="firstname"
                 name="firstname"
@@ -175,7 +174,7 @@ const FormEmailJs = ({ label, type, value }) => {
               <input
                 type={type}
                 className={`rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm ${
-                  errors.lastname ? "input-error border-red-700" : ""
+                  errors.lastname ? "InputError border-red-700" : ""
                 }`}
                 id="lastname"
                 name="lastname"
@@ -205,7 +204,7 @@ const FormEmailJs = ({ label, type, value }) => {
             <input
               type={type}
               className={`rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm ${
-                errors.email ? "input-error border-red-700" : ""
+                errors.email ? "InputError border-red-700" : ""
               }`}
               id="email"
               name="email"
@@ -235,7 +234,7 @@ const FormEmailJs = ({ label, type, value }) => {
             <input
               type={"tel"}
               className={`rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm ${
-                errors.tel ? "input-error border-red-700" : ""
+                errors.tel ? "InputError border-red-700" : ""
               }`}
               id="tel"
               name="tel"
@@ -265,7 +264,7 @@ const FormEmailJs = ({ label, type, value }) => {
             </label>
             <textarea
               className={`rounded-3xl w-full p-4 pb-5 outline-none input-secondary border-gray-200 text-sm ${
-                errors.firstname ? "input-error border-red-700" : ""
+                errors.firstname ? "InputError border-red-700" : ""
               }`}
               rows="8"
               id="message"

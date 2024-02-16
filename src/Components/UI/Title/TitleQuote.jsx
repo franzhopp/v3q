@@ -4,7 +4,7 @@ import translations from "../translate.jsx";
 const TitleDevis = () => {
   const { language } = useLanguage();
   return (
-    <div className="image-title-quote bg-cover py-32">
+    <div className="BgTitleQuote bg-cover py-32">
       <div
         className="flex justify-center lg:justify-start text-fff6e4 font-extrabold pt-20"
         data-aos="fade-left"

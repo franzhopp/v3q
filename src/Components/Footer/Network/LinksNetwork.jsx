@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
-import LogoInsta from "../../../assets/instagram2.png";
-import LogoTwitter from "../../../assets/twitter.png";
-import LogoLinkedin from "../../../assets/linkedin.png";
-import LogoSnap from "../../../assets/snapchat.png";
+import LogoInsta from "../../../assets/Network/Instagram.png";
+import LogoTwitter from "../../../assets/Network/Twitter.png";
+import LogoLinkedin from "../../../assets/Network/Linkedin.png";
+import LogoSnap from "../../../assets/Network/Snapchat.png";
 
 const LinksNetwork = () => {
   return (
@@ -43,7 +43,7 @@ const LinksNetwork = () => {
       </li>
       <li>
         <NavLink
-          to="https://t.snapchat.com/BYKwKD2r"
+          to="https://t.Snapchat.com/BYKwKD2r"
           rel="noreferrer"
           target="_blank"
         >

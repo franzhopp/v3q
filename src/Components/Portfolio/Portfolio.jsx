@@ -5,7 +5,7 @@ import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import { RiBardLine } from "react-icons/ri";
 import NavbarPages from "../Navigation/NavbarPages/NavbarPages.jsx";
 import TitlePorfolio from "../UI/Title/TitlePorfolio.jsx";
-import ImgDefault from "../../assets/hourglass.svg";
+import ImgDefault from "../../assets/Svg/Hourglass.svg";
 import SvgLine from "./Svg/SvgLine.jsx";
 import SvgHeart from "./Svg/SvgHeart.jsx";
 import SvgStarPink from "./Svg/SvgStarPink.jsx";
@@ -31,7 +31,7 @@ const Portfolio = () => {
     );
   };
   return (
-    <section className="bg-fff6e4 bg-pattern-portfolio">
+    <section className="bg-fff6e4 BgPatternPortfolio bg-no-repeat">
       <BackToTopButton />
       <NavbarPages />
       <TitlePorfolio />
@@ -59,7 +59,7 @@ const Portfolio = () => {
               }`}
             >
               <span className="font-bold number">{currentIndex + 1}.</span>{" "}
-              <span className="number font-extrabold">
+              <span className="FontNumber font-extrabold">
                 {cards[currentIndex].title}
               </span>
               <div className="flex flex-col">

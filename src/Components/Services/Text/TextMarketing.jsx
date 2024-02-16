@@ -5,15 +5,15 @@ import { RiBardLine } from "react-icons/ri";
 const TextMarketing = () => {
   const { language } = useLanguage();
   return (
-    <div className="image-navi-studio-marketing-services py-32">
+    <div className="BgServicesMarketing bg-cover bg-no-repeat py-32">
+      <div
+        data-aos="fade-right"
+        className="text-fff6e4 text-4xl lg:text-5xl text-center font-extrabold py-3"
+      >
+        {translations[language].titleServicesMarketingFr}
+        {translations[language].titleServicesMarketingEn}
+      </div>
       <div x-comp="Main" className={`pl-10 2xl:pl-96`}>
-        <div
-          data-aos="fade-right"
-          className="text-fff6e4 text-4xl lg:text-5xl font-extrabold py-3"
-        >
-          {translations[language].titleServicesMarketingFr}
-          {translations[language].titleServicesMarketingEn}
-        </div>
         <div className="flex flex-wrap">
           {/* BLOC 1 */}
           <div className="text-fff6e4 text-left font-extrabold py-3 pr-3">

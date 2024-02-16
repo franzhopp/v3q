@@ -1,5 +1,5 @@
-import ImgP from "../../../../assets/projectslouisans.png";
-import ImgT from "../../../../assets/hoverimg.png";
+import ImgP from "../../../../assets/Picture/PictureProjectsLouisa.png";
+import ImgT from "../../../../assets/Picture/PictureHoverProjectsLouisa.png";
 import { useState } from "react";
 
 const ImageProjects = () => {

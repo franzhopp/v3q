@@ -9,9 +9,6 @@ export default {
       animation: {
         'formbounce': 'button-design-formbounce 4s infinite',
       },
-      backgroundImage: {
-        'image-home': 'url("../assets/bg-home.png")',
-      },
       keyframes: {
         'button-design-formbounce': {
           '5%, 50%': { transform: 'scale(1)' },
@@ -35,6 +32,7 @@ export default {
         '1E1E20': "#1E1E20",
         '061628': "#061628",
         'D83939': "#D83939",
+        'FC7A44': "#FC7A44",
       },
       colors: {
         'fff6e4': '#fff6e4',
@@ -46,7 +44,7 @@ export default {
         '061628': "#061628",
         'D83939': "#D83939",
         '3BE69E': "#3BE69E",
-
+        'EC307A': "#EC307A",
       },
       fontFamily: {
         sans: [],

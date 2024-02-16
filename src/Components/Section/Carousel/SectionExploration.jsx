@@ -3,23 +3,23 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { useTheme } from "../../../context/ThemeProvider.jsx";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-import Img0 from "../../../assets/0.png";
-import Img1 from "../../../assets/2.png";
-import Img2 from "../../../assets/3.png";
-import Img3 from "../../../assets/1.png";
-import Img4 from "../../../assets/4.png";
-import Img5 from "../../../assets/5.png";
-import Img6 from "../../../assets/6.png";
-import Img7 from "../../../assets/7.png";
-import Img12 from "../../../assets/12.png";
-import Img10 from "../../../assets/10.png";
+import Img0 from "../../../assets/Pays/Atonium.png";
+import Img1 from "../../../assets/Pays/Toulouse.png";
+import Img3 from "../../../assets/Pays/Bruges.png";
+import Img2 from "../../../assets/Pays/Bruxelles.png";
+import Img4 from "../../../assets/Pays/Strasbourg.png";
+import Img5 from "../../../assets/Pays/Boston.png";
+import Img6 from "../../../assets/Pays/Espagne.png";
+import Img7 from "../../../assets/Pays/Versailles.png";
+import Img10 from "../../../assets/Pays/Floride.png";
+import Img12 from "../../../assets/Pays/LondonUk.png";
 
 const SectionExploration = () => {
   const { isDarkMode } = useTheme();
   const [currentIndex, setCurrentIndex] = useState(0);
   const cards = [
     {
-      image: Img0,
+      image: Img1,
       title: "Toulouse, 31000",
       country: "France 🇫🇷",
     },
@@ -34,17 +34,17 @@ const SectionExploration = () => {
       country: "France 🇫🇷",
     },
     {
-      image: Img1,
+      image: Img3,
       title: "Bruges, 8000",
       country: "Belgique 🇧🇪",
     },
     {
-      image: Img2,
+      image: Img0,
       title: "Atomium, 1020",
       country: "Belgique 🇧🇪",
     },
     {
-      image: Img3,
+      image: Img2,
       title: "Bruxelles, 3000",
       country: "Belgique 🇧🇪",
     },

@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import { FaArrowRight } from "react-icons/fa";
 import translations from "../translate.jsx";
@@ -11,7 +11,7 @@ import SubDescTitle from "./Title/SubDescTitle.jsx";
 import BaseBackground from "./Svg/SvgMainBackground.jsx";
 import SvgPyramid from "./Svg/SvgPyramid.jsx";
 import ImageProjects from "./Image/ImageProjects.jsx";
-import Pattern from "../../../assets/picture-louisa.png";
+import Pattern from "../../../assets/Picture/PictureLouisa.png";
 import Copyright from "./Copyright/LocationCopyright.jsx";
 import Frame from "./Svg/SvgFrame.jsx";
 import Vector from "./Svg/SvgVector.jsx";
@@ -67,7 +67,7 @@ const DiscoverWebDeveloper = () => {
           </NavLink>
         </div>
       </div>
-      <div id="AboutLouisa" className="picture-belgique h-52"></div>
+      <div id="AboutLouisa" className="PictureBelgique h-52"></div>
       <BackToTopButton />
       <div className="flex justify-center pt-20">
         <p

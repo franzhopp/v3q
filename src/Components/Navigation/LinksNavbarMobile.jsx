@@ -7,7 +7,7 @@ import { useLanguage } from "./../../context/LanguageProvider.jsx";
 import DarkLightThemes from "./../../hook/useTheme.jsx";
 import ModalSearch from "./../Modal/SearchModal";
 import translations from "./translate.jsx";
-import ImgBlack from "../../assets/logo-5.png";
+import ImgBlack from "../../assets/Logo/MainLogoNaviStudio.png";
 import ButtonOpen from "./ButtonMobile/ButtonOpen.jsx";
 import ButtonClose from "./ButtonMobile/ButtonClose.jsx";
 import "../Section/TextHome/MainBlocsHome.jsx";
@@ -108,7 +108,7 @@ const LinksNavbarMobile = () => {
           )}
         </div>
       </div>
-      <ul className={`p-5 fadeInDelayDesktop ${isOpen ? "block" : "hidden"}`}>
+      <ul className={`p-5 FadeInDelayDesktop ${isOpen ? "block" : "hidden"}`}>
         <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
           <NavLink className="block px-3 py-2 border-c22e2e border-b-2 rounded-md text-base font-extrabold">
             <button onClick={toggleSousListsAgence}>

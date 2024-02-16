@@ -1,0 +1,36 @@
+ <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="158"
+      height="152"
+      viewBox="0 0 158 152"
+      fill="none"
+    >
+      <circle
+        cx="82.5332"
+        cy="77.1048"
+        r="48.5"
+        transform="rotate(0.0592846 82.5332 77.1048)"
+        fill="url(#paint0_linear_8_35)"
+      />
+      <ellipse
+        cx="63.7886"
+        cy="62.1283"
+        rx="45.4688"
+        ry="48.5"
+        transform="rotate(16.5155 63.7886 62.1283)"
+        fill="#061628"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_8_35"
+          x1="82.5332"
+          y1="28.6048"
+          x2="82.5332"
+          y2="125.605"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#FFB635" />
+          <stop offset="1" stop-color="#FFB635" stop-opacity="0" />
+        </linearGradient>
+      </defs>
+    </svg>
