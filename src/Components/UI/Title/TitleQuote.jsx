@@ -1,7 +1,7 @@
 import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import translations from "../translate.jsx";
 
-const TitleDevis = () => {
+const TitleQuote = () => {
   const { language } = useLanguage();
   return (
     <div className="BgTitleQuote bg-cover py-32">
@@ -19,4 +19,4 @@ const TitleDevis = () => {
   );
 };
 
-export default TitleDevis;
+export default TitleQuote;

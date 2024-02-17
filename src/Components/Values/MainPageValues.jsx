@@ -71,11 +71,11 @@ const EthicsPage = () => {
           <SvgArrowScroll />
         </div>
       </div>
-      <div className="bg-E18AB0 py-24 px-4 sm:px-6 lg:px-8">
+      <div className="bg-e18ab0 py-24 px-4 sm:px-6 lg:px-8">
         <SubBlocsBgPink />
         <div id="ethics"></div>
       </div>
-      <div className="BgValuesBlur pt-32 pb-20">
+      <div className="BgValuesBlur bg-cover bg-no-repeat pt-32 pb-20">
         <div className="flex justify-center">
           <SvgStarBeige />
         </div>

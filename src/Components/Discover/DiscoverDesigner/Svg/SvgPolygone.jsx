@@ -10,7 +10,7 @@ const SvgPolygone = () => {
     >
       <path
         d="M215 177L0.225723 -4.0457e-05L429.774 -2.90468e-06L215 177Z"
-        fill="#1E1E20"
+        fill="#1e1e20"
       />
     </svg>
   );

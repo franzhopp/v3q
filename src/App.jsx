@@ -1,18 +1,18 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import ScrollToTop from "./TopOfPage/ScrollToTop.jsx";
+import ScrollToTop from "./Components/UI/TopOfPage/ScrollToTop.jsx";
 import ThemeProvider from "./context/ThemeProvider.jsx";
 import LanguageProvider from "./context/LanguageProvider.jsx";
-import Homepage from "./Components/Homepage/Homepage.jsx";
+import Homepage from "./Home/Homepage.jsx";
 import BlocsItemsHome from "./Components/Section/TextHome/MainBlocsHome.jsx";
 import PageValues from "./Components/Values/MainPageValues.jsx";
 import DiscoverDeveloper from "./Components/Discover/DiscoverDevelopper/MainPageDevelopper.jsx";
 import DiscoverDesigner from "./Components/Discover/DiscoverDesigner/MainPageDesigner.jsx";
-import Services from "./Components/Services/MainServices.jsx";
+import Services from "./Services/MainServices.jsx";
 import PricingFr from "./Components/Pricing/MainPricingFr.jsx";
 import PricingUk from "./Components/Pricing/MainPricingUk.jsx";
-import MainPageQuote from "./Components/Quote/MainPageQuote.jsx";
+import MainPageQuote from "./Components/UI/Form/Quote/MainPageQuote.jsx";
 import Portfolio from "./Components/Portfolio/Portfolio.jsx";
-import PageNotFound from "./Components/404/Error/PageNotFound.jsx";
+import PageNotFound from "./Pages/Error/PageNotFound.jsx";
 
 const App = () => {
   return (

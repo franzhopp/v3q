@@ -3,7 +3,7 @@
 import LinksNavbarDesktop from "../LinksNavbarDestkop.jsx";
 import LinksNavbarMobile from "../LinksNavbarMobile.jsx";
 import "../../Section/TextHome/MainBlocs.jsx";
-import "../../Homepage/Homepage.jsx";
+import "../Home/Homepage";
 
 const PrivacyNavbar = () => {
   // const { language, changeLanguage } = useLanguage();

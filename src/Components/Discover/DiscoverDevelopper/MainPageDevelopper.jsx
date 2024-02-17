@@ -67,7 +67,7 @@ const DiscoverWebDeveloper = () => {
           </NavLink>
         </div>
       </div>
-      <div id="AboutLouisa" className="PictureBelgique h-52"></div>
+      <div id="AboutLouisa" className="PictureBelgique bg-cover bg-no-repeat h-52"></div>
       <BackToTopButton />
       <div className="flex justify-center pt-20">
         <p

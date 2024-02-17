@@ -65,7 +65,7 @@ const Portfolio = () => {
               <div className="flex flex-col">
                 <NavLink
                   to={cards[currentIndex].url}
-                  className={`font-inter text-sm hover:text-0C3E78 transition duration-500 ${
+                  className={`font-inter text-sm hover:text-0c3e78 transition duration-500 ${
                     isDarkMode ? "text-c22e2e" : "text-fff6e4"
                   }`}
                   rel="noreferrer"

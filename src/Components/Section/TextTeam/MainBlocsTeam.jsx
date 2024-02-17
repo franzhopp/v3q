@@ -12,6 +12,7 @@ import ImageLondon from "../../../assets/PictureTeam/London.png";
 import ImageParis from "../../../assets/PictureTeam/Paris.png";
 import SectionExploration from "../Carousel/SectionExploration.jsx";
 
+
 const SectionTeam = () => {
   const { language } = useLanguage();
   const { isDarkMode } = useTheme();
@@ -19,7 +20,7 @@ const SectionTeam = () => {
     from: { color: "#c22e2e" },
     to: async (next) => {
       while (true) {
-        await next({ color: "#0C3E78" });
+        await next({ color: "#0c3e78" });
         await next({ color: "#c22e2e" });
       }
     },
@@ -174,7 +175,7 @@ const SectionTeam = () => {
                     {
                       translations[language].textSectionTeamBioBold2LouisaEn
                     }{" "}
-                    <span className="text-c22e2e hover:text-0C3E78 transition duration-500 font-inter">
+                    <span className="text-c22e2e hover:text-0c3e78 transition duration-500 font-inter">
                       <NavLink to="/developer">Web Developer</NavLink>
                     </span>
                     .
@@ -267,7 +268,7 @@ const SectionTeam = () => {
                       {
                         translations[language].textSectionTeamBioBold2MelissaEn
                       }{" "}
-                      <span className="text-c22e2e hover:text-0C3E78 transition duration-500 font-inter">
+                      <span className="text-c22e2e hover:text-0c3e78 transition duration-500 font-inter">
                         <NavLink to="/designer">Designer</NavLink>
                       </span>
                       .

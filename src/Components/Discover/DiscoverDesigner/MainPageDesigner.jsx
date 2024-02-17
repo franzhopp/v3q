@@ -24,7 +24,7 @@ const DiscoverDesigner = () => {
     <section className="bg-fff6e4">
       <NavbarDiscoverDesigner />
       <AvatarDesigner />
-      <div className="bg-1E1E20 flex justify-center pt-10 pb-48">
+      <div className="bg-1e1e20 flex justify-center pt-10 pb-48">
         <div className="mt-6 flex flex-wrap justify-center space-x-0 sm:space-x-20">
           <div className="flex justify-start relative">
             <SvgMexico />
@@ -57,20 +57,20 @@ const DiscoverDesigner = () => {
       <div className="flex justify-center relative">
         <SvgPolygone />
       </div>
-      <div className="bg-1E1E20 flex justify-center pt-36 pb-16">
+      <div className="bg-1e1e20 flex justify-center pt-36 pb-16">
         <div className="flex flex-col text-center">
           <TitleGallery />
         </div>
       </div>
-      <div className="bg-1E1E20 flex justify-center">
+      <div className="bg-1e1e20 flex justify-center">
         <div className="grid grid-cols sm:grid-cols md:grid-cols lg:grid-cols-3 gap-2">
           <ImageGallery />
         </div>
       </div>
-      <div className="bg-1E1E20 flex justify-center pt-16 pb-16">
+      <div className="bg-1e1e20 flex justify-center pt-16 pb-16">
         <SubTitle />
       </div>
-      <div className="bg-1E1E20 flex justify-center pb-16">
+      <div className="bg-1e1e20 flex justify-center pb-16">
         <SvgIllustration />
       </div>
       <div className="flex justify-start relative">

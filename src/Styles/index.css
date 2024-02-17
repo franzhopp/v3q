@@ -7,6 +7,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body * {
+    @apply transition-colors duration-200;
+}
+
 html,
 body {
     overflow-x: hidden;
@@ -14,10 +18,6 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-tap-highlight-color: transparent;
     cursor: url('./Cursor/Cursor_1.svg'), default !important;
-}
-
-body * {
-    @apply transition-colors duration-200;
 }
 
 .__react_modal_image__modal_content {
@@ -76,9 +76,7 @@ textarea {
 }
 
 .PictureBelgique {
-    background-image: url("../assets/PictureBelgique.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("../assets/Picture/PictureBelgique.png");
 }
 
 .BgHome {
@@ -96,7 +94,7 @@ textarea {
 }
 
 .BgPatternPortfolio {
-    background-image: url('../assets/Pattern.png');
+    background-image: url('../assets/Picture/Pattern.png');
     background-position: 30% 10%;
 }
 
@@ -106,8 +104,6 @@ textarea {
 
 .BgValuesBlur {
     background-image: url('../assets/Background/BgValuesBlur.png');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .BgTitleAgency {
@@ -173,7 +169,7 @@ textarea {
 }
 
 .MiniBannierMelissa {
-    background-image: url("../assets/MiniBannierMelissa.png");
+    background-image: url("../assets/Picture/MiniBannierMelissa.png");
 }
 
 .BgSun {
@@ -182,7 +178,6 @@ textarea {
     background-image: url("../assets/Svg/BgSun.svg");
 }
 
-/* Names Of Animation */
 .FadeInDelayDesktop {
     animation: FadeInDelayDesktop 0.3s ease-in-out;
 }
@@ -191,8 +186,7 @@ textarea {
     animation: Shake 0.5s ease-in-out;
 }
 
-/* Animation */
-@keyframes fadeIn {
+@keyframes FadeIn {
     from {
         opacity: 0;
     }

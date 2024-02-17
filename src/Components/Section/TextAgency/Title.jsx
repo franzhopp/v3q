@@ -7,11 +7,11 @@ const BlocAgency = () => {
   const { isDarkMode } = useTheme();
   const { language } = useLanguage();
   const props = useSpring({
-    from: { color: "#E18AB0" },
+    from: { color: "#e18ab0" },
     to: async (next) => {
       while (true) {
-        await next({ color: "#0C3E78" });
-        await next({ color: "#E18AB0" });
+        await next({ color: "#0c3e78" });
+        await next({ color: "#e18ab0" });
       }
     },
     config: { duration: 1000 },

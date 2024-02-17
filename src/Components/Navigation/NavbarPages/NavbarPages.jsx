@@ -1,6 +1,6 @@
 import LinksNavbarDesktop from "../LinksNavbarDestkop.jsx";
 import LinksNavbarMobile from "../LinksNavbarMobile.jsx";
-import "../../Homepage/Homepage.jsx";
+import "../../../Home/Homepage";
 
 const PagesNavbar = () => {
   return (

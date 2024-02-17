@@ -5,13 +5,13 @@ import { FaSearch } from "react-icons/fa";
 import { useTheme } from "./../../context/ThemeProvider.jsx";
 import { useLanguage } from "./../../context/LanguageProvider.jsx";
 import DarkLightThemes from "./../../hook/useTheme.jsx";
-import ModalSearch from "./../Modal/SearchModal";
+import ModalSearch from "../UI/Modal/SearchModal.jsx";
 import translations from "./translate.jsx";
-import ImgBlack from "../../assets/Logo/MainLogoNaviStudio.png";
+import ImgBlack from "../../assets/Logo/LogoMainNaviStudio.png";
 import ButtonOpen from "./ButtonMobile/ButtonOpen.jsx";
 import ButtonClose from "./ButtonMobile/ButtonClose.jsx";
 import "../Section/TextHome/MainBlocsHome.jsx";
-import "./../Homepage/Homepage";
+import "../../Home/Homepage";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -89,7 +89,7 @@ const LinksNavbarMobile = () => {
             src={ImgBlack}
             onClick={scrollToTop}
             alt="Logo navi studio."
-            className="h-14 w-auto"
+            className="h-14 w-auto transform active:scale-75 transition-transform"
           />
         </NavLink>
         <div
@@ -129,7 +129,7 @@ const LinksNavbarMobile = () => {
                   <li className="font-extrabold">
                     <NavLink
                       to="/"
-                      className="block border-c22e2e border-b-2 hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
+                      className="block border-c22e2e border-b-2 hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                     >
                       {translations[language].navSousHomeFr}
                       {translations[language].navSousHomeEn}
@@ -138,7 +138,7 @@ const LinksNavbarMobile = () => {
                   <li>
                     <NavLink
                       to="/values"
-                      className="block border-c22e2e border-b-2 hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
+                      className="block border-c22e2e border-b-2 hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                     >
                       {translations[language].navSousValuesFr}
                       {translations[language].navSousValuesEn}
@@ -167,7 +167,7 @@ const LinksNavbarMobile = () => {
                     <li className="font-extrabold">
                       <NavLink
                         to="/designer"
-                        className="block border-c22e2e border-b-2 hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
+                        className="block border-c22e2e border-b-2 hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                       >
                         Designer
                       </NavLink>
@@ -175,7 +175,7 @@ const LinksNavbarMobile = () => {
                     <li className="font-extrabold">
                       <NavLink
                         to="/developer"
-                        className="block rounded-md hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
+                        className="block rounded-md hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                       >
                         Web Developer
                       </NavLink>
@@ -206,7 +206,7 @@ const LinksNavbarMobile = () => {
               <li>
                 <NavLink
                   to="/services"
-                  className="block border-c22e2e border-b-2 hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
+                  className="block border-c22e2e border-b-2 hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                 >
                   {translations[language].navSousServicesFr}
                   {translations[language].navSousServicesEn}
@@ -216,7 +216,7 @@ const LinksNavbarMobile = () => {
                 <li>
                   <button onClick={toggleSousListsRate}>
                     <div className="flex items-center justify-between">
-                      <div className="block hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold pr-2">
+                      <div className="block hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold pr-2">
                         {translations[language].navSousPricingFr}
                         {translations[language].navSousPricingEn}
                       </div>
@@ -232,7 +232,7 @@ const LinksNavbarMobile = () => {
                     <li className="font-extrabold">
                       <NavLink
                         to="/pricingfr"
-                        className="block border-c22e2e border-b-2 hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
+                        className="block border-c22e2e border-b-2 hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                       >
                         {translations[language].navSousPricingFr}
                         {translations[language].navSousPricingEn} FR
@@ -241,7 +241,7 @@ const LinksNavbarMobile = () => {
                     <li className="font-extrabold">
                       <NavLink
                         to="/pricinguk"
-                        className="block rounded-md hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
+                        className="block rounded-md hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                       >
                         {translations[language].navSousPricingFr}
                         {translations[language].navSousPricingEn} UK
@@ -253,7 +253,7 @@ const LinksNavbarMobile = () => {
               <li>
                 <NavLink
                   to="/quote"
-                  className="block hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
+                  className="block hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                 >
                   {translations[language].navSousFreeFr}
                   {translations[language].navSousFreeEn}
@@ -265,7 +265,7 @@ const LinksNavbarMobile = () => {
         <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
           <NavLink
             to="/portfolio"
-            className="block px-3 py-2 border-c22e2e border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78 transition duration-500"
+            className="block px-3 py-2 border-c22e2e border-b-2 rounded-md text-base font-extrabold hover:text-0c3e78 transition duration-500"
           >
             Portfolio
           </NavLink>
@@ -273,7 +273,7 @@ const LinksNavbarMobile = () => {
         <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
           <NavLink
             to="/"
-            className="block px-3 py-2 border-c22e2e border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78 transition duration-500"
+            className="block px-3 py-2 border-c22e2e border-b-2 rounded-md text-base font-extrabold hover:text-0c3e78 transition duration-500"
           >
             Contact
           </NavLink>
@@ -304,7 +304,7 @@ const LinksNavbarMobile = () => {
         {/* BARRE DE RECHERCHE */}
         <div className="flex justify-start px-2 pt-4 pb-3">
           <div
-            className={`hover:text-0C3E78 duration-500 transform active:scale-75 transition-transform ${
+            className={`hover:text-0c3e78 duration-500 transform active:scale-75 transition-transform ${
               isDarkMode ? "text-c22e2e" : "text-fff6e4"
             }`}
           >

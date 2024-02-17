@@ -41,7 +41,7 @@ const translations = {
     // Sous liste Services
     navSousServicesFr: "Prestations",
     navSousPricingFr: "Tarification",
-    navSousFreeFr: "Devis gratuit",
+    navSousFreeFr: "Devis",
     // Cookie
     cookieTitleFr: "Politique de cookies",
     cookieDescFr:
@@ -279,7 +279,7 @@ const translations = {
     titleInfoFreeFr:
       "Avant de soumettre un devis, nous vous invitons à lire attentivement ces lignes.",
     describeInfoFree1Fr:
-      "Le devis permet de sécuriser le traitement de votre demande. Prenez le temps de bien comprendre les questions qui vous sont posées et veillez à fournir des réponses claires. Nous ne pourrons pas traiter un devis si les informations fournies sont illisibles.",
+      "Le devis gratuit permet de sécuriser le traitement de votre demande. Prenez le temps de bien comprendre les questions qui vous sont posées et veillez à fournir des réponses claires. Nous ne pourrons pas traiter un devis si les informations fournies sont illisibles.",
     describleInfoFree2Fr:
       "Veuillez prendre en considération ces directives essentielles :",
     bloc1FreeFr:
@@ -342,7 +342,7 @@ const translations = {
     // Sous liste Services
     navSousServicesEn: "Services",
     navSousPricingEn: "Pricing",
-    navSousFreeEn: "Free Quote",
+    navSousFreeEn: "Quote",
     // Cookie
     cookieTitleEn: "Cookie Policy",
     cookieDescEn:
@@ -570,7 +570,7 @@ const translations = {
     titleInfoFreeEn:
       "Before submitting a quote, please read these lines carefully.",
     describeInfoFree1En:
-      "The quote helps to secure the processing of your request. Take the time to understand the questions you are being asked and make sure you provide clear answers. We will not be able to process a quote if the informations provided are not clear.",
+      "The free quote helps to secure the processing of your request. Take the time to understand the questions you are being asked and make sure you provide clear answers. We will not be able to process a quote if the informations provided are not clear.",
     describleInfoFree2En: "Please consider these key guidelines:",
     bloc1FreeEn:
       "Be sure to provide complete information so we can get back to you quickly.",

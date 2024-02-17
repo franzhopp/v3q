@@ -21,7 +21,7 @@ const TitleMarketingUk = () => {
     <div className="flex justify-center">
       <h1
         data-aos="fade-in"
-        className="text-0C3E78 text-center text-4xl mt-20 mb-10 font-extrabold sm:text-5xl md:text-6xl"
+        className="text-0c3e78 text-center text-4xl mt-20 mb-10 font-extrabold sm:text-5xl md:text-6xl"
       >
         {letters2.map((letter, index) => (
           <span
@@ -33,7 +33,7 @@ const TitleMarketingUk = () => {
           </span>
         ))}
         <div className="flex justify-center">
-          <span className="absolute w-32 h-1 bg-0C3E78"></span>
+          <span className="absolute w-32 h-1 bg-0c3e78"></span>
         </div>
       </h1>
     </div>

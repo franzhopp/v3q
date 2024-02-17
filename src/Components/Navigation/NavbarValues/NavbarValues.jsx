@@ -4,7 +4,7 @@ import translations from "../translate.jsx";
 import LinksNavbarDesktop from "../LinksNavbarDestkop.jsx";
 import LinksNavbarMobile from "../LinksNavbarMobile.jsx";
 import "../../Section/TextHome/MainBlocsHome.jsx";
-import "../../Homepage/Homepage.jsx";
+import "../../../Home/Homepage";
 
 const NavbarEthics = () => {
   const { language } = useLanguage();

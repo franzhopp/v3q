@@ -3,7 +3,7 @@ import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import translations from "../translate.jsx";
 import TitleTextHome from "./Title.jsx";
 import SubTextHome from "./SubText.jsx";
-import ButtonContact from "../../UI/Button/ButtonFormContact.jsx";
+import ButtonContact from "../../UI/Button/BtnFormContact.jsx";
 import BackToTopButton from "../../UI/ScrollToTop/BackToTopButton.jsx";
 
 const BlocsItemsHome = () => {

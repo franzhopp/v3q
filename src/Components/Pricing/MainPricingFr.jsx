@@ -26,7 +26,7 @@ const Rate = () => {
     }));
   };
   const Blue = "bg-0c3e78";
-  const Pink = "bg-pink";
+  const e18ab0 = "bg-e18ab0";
   const InformationsSitesWeb = [
     {
       id: 1,
@@ -139,7 +139,7 @@ const Rate = () => {
           {InformationsSitesWeb.map((info) => (
             <div
               className={`flex flex-col justify-center font-inter  ${
-                info.id % 2 === 0 ? Blue : Pink
+                info.id % 2 === 0 ? Blue : e18ab0
               }`}
               key={info.id}
             >
@@ -158,7 +158,7 @@ const Rate = () => {
                   <button
                     onClick={() => toggleSubList(info.title)}
                     className={`bg-fff6e4 p-3 rounded-3xl shadow-md cursor-pointer transform active:scale-75 transition-transform ${
-                      isDarkMode ? "text-0C3E78" : "text-fff6e4 "
+                      isDarkMode ? "text-0c3e78" : "text-fff6e4 "
                     }`}
                   >
                     <div className="flex ml-1 number">
@@ -216,7 +216,7 @@ const Rate = () => {
           {InformationsMarketing.map((info, index) => (
             <div
               className={`flex flex-col justify-center font-inter ${
-                index % 2 === 0 ? Pink : Blue
+                index % 2 === 0 ? e18ab0 : Blue
               }`}
               key={index}
             >

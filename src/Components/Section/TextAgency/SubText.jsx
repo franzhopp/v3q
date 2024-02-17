@@ -5,7 +5,7 @@ import translations from "../translate.jsx";
 const SubTextAgency = () => {
   const { language } = useLanguage();
   return (
-    <div className="bg-0C3E78 py-40">
+    <div className="bg-0c3e78 py-40">
       <div className="flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
         <div className="w-80 mt-5">
           <p

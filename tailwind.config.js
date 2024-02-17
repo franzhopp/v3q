@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+
+      },
       animation: {
         'formbounce': 'button-design-formbounce 4s infinite',
       },
@@ -23,28 +26,27 @@ export default {
       },
       backgroundColor: {
         'fff6e4': "#fff6e4",
-        '0c3e78': "#0C3E78",
-        'pink': "#E18AB0",
-        '4457BE': "#4457BE",
-        '001C58': "#001c58",
-        'aba497': "#282828",
+        '0c3e78': "#0c3e78",
+        'e18ab0': "#e18ab0",
+        '001c58': "#001c58",
+        '1e1e20': "#1e1e20",
         '090a0a': "#090a0a",
-        '1E1E20': "#1E1E20",
         '061628': "#061628",
-        'D83939': "#D83939",
-        'FC7A44': "#FC7A44",
+        'd83939': "#d83939",
+        'fc7a44': "#fc7a44",
+        'ec307a': "#ec307a",
       },
       colors: {
         'fff6e4': '#fff6e4',
         'c22e2e': '#c22e2e',
-        '0C3E78': '#0C3E78',
-        '3E9BF0': '#3E9BF0',
-        'E18AB0': '#E18AB0',
+        '0c3e78': '#0c3e78',
+        '3e9bf0': '#3e9bf0',
+        'e18ab0': '#e18ab0',
         'f9fefe': "#f9fefe",
         '061628': "#061628",
-        'D83939': "#D83939",
-        '3BE69E': "#3BE69E",
-        'EC307A': "#EC307A",
+        'd83939': "#d83939",
+        '3be69e': "#3be69e",
+        'ec307a': "#ec307a",
       },
       fontFamily: {
         sans: [],

@@ -1,7 +1,7 @@
 import TitleAgency from "../../UI/Title/TitleAgency";
 import BlocAgency from "./Title.jsx";
 import SubTextAgency from "./SubText.jsx";
-import ButtonAgency from "../../UI/Button/ButtonAgency";
+import ButtonAgency from "../../UI/Button/BtnAgency";
 import SectionTeam from "../TextTeam/MainBlocsTeam";
 
 const SectionAgency = () => {

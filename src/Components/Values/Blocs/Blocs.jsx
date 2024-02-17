@@ -40,7 +40,7 @@ const Blocs = () => {
         <div className="p-6 rounded-lg shadow-md">
           <h2
             data-aos="fade-left"
-            className="text-8xl FontNumber text-E18AB0 font-bold mb-2"
+            className="text-8xl FontNumber text-e18ab0 font-bold mb-2"
           >
             {letters.map((letter, index) => (
               <span
@@ -57,7 +57,7 @@ const Blocs = () => {
             {translations[language].title1EthicsFr}
             {translations[language].title1EthicsEn}
           </p>
-          <span className="absolute w-48 h-1 bg-E18AB0"></span>
+          <span className="absolute w-48 h-1 bg-e18ab0"></span>
           <div className="w-72 mt-5">
             <p data-aos="fade-up" data-aos-anchor-placement="top-bottom">
               {translations[language].describe1EthicsFr}
@@ -80,7 +80,7 @@ const Blocs = () => {
         <div className="p-6 rounded-lg shadow-md">
           <h2
             data-aos="fade-right"
-            className="text-8xl FontNumber text-E18AB0 font-bold mb-2"
+            className="text-8xl FontNumber text-e18ab0 font-bold mb-2"
           >
             {letters2.map((letter, index) => (
               <span
@@ -97,7 +97,7 @@ const Blocs = () => {
             {translations[language].title2EthicsFr}
             {translations[language].title2EthicsEn}
           </p>
-          <span className="absolute w-48 h-1 bg-E18AB0"></span>
+          <span className="absolute w-48 h-1 bg-e18ab0"></span>
           <div className="w-72 mt-5">
             <p data-aos="fade-up" data-aos-anchor-placement="top-bottom">
               {translations[language].describe2EthicsFr}
@@ -114,7 +114,7 @@ const Blocs = () => {
         <div className="p-6 rounded-lg shadow-md">
           <h2
             data-aos="fade-left"
-            className="text-8xl FontNumber text-E18AB0 font-bold mb-2"
+            className="text-8xl FontNumber text-e18ab0 font-bold mb-2"
           >
             {letters3.map((letter, index) => (
               <span
@@ -129,7 +129,7 @@ const Blocs = () => {
           <p className=" text-xl font-inter font-extrabold">
             <RiBardLine className="inline" /> Passion & Motivation
           </p>
-          <span className="absolute w-48 h-1 bg-E18AB0"></span>
+          <span className="absolute w-48 h-1 bg-e18ab0"></span>
           <div className="w-72 mt-5">
             <p data-aos="fade-up" data-aos-anchor-placement="top-bottom">
               {translations[language].describe3EthicsFr}

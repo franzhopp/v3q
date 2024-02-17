@@ -6,12 +6,12 @@ import { IoIosArrowDown } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
 import translations from "./translate.jsx";
 import DarkLightThemes from "../../hook/useTheme.jsx";
-import ImgBlack from "../../assets/Logo/MainLogoNaviStudio.png";
-import ModalSearch from "../Modal/SearchModal.jsx";
+import ImgBlack from "../../assets/Logo/LogoMainNaviStudio.png";
+import ModalSearch from "../UI/Modal/SearchModal.jsx";
 import ButtonClose from "./ButtonMobile/ButtonClose.jsx";
 import ButtonOpen from "./ButtonMobile/ButtonOpen.jsx";
 import "../Section/TextHome/MainBlocsHome.jsx";
-import "../Homepage/Homepage.jsx";
+import "../../Home/Homepage";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -98,7 +98,7 @@ const NavbarMobile = () => {
             src={ImgBlack}
             onClick={scrollToTop}
             alt="Logo navi studio."
-            className="h-14 w-auto"
+            className="h-14 w-auto transform active:scale-75 transition-transform"
           />
         </NavLink>
         {/* BUTTON MOBILE NAV */}
@@ -140,7 +140,7 @@ const NavbarMobile = () => {
                   <li className="font-extrabold">
                     <NavLink
                       to="/"
-                      className="block border-c22e2e border-b-2 hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
+                      className="block border-c22e2e border-b-2 hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                     >
                       {translations[language].navSousHomeFr}
                       {translations[language].navSousHomeEn}
@@ -149,7 +149,7 @@ const NavbarMobile = () => {
                   <li>
                     <NavLink
                       to="/values"
-                      className="block hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
+                      className="block hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                     >
                       {translations[language].navSousValuesFr}
                       {translations[language].navSousValuesEn}
@@ -177,7 +177,7 @@ const NavbarMobile = () => {
                     <li className="font-extrabold">
                       <NavLink
                         to="/designer"
-                        className="block border-c22e2e border-b-2 hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
+                        className="block border-c22e2e border-b-2 hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                       >
                         Designer
                       </NavLink>
@@ -185,7 +185,7 @@ const NavbarMobile = () => {
                     <li className="font-extrabold">
                       <NavLink
                         to="/developer"
-                        className="block rounded-md hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
+                        className="block rounded-md hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                       >
                         Web Developer
                       </NavLink>
@@ -216,7 +216,7 @@ const NavbarMobile = () => {
               <li>
                 <NavLink
                   to="/services"
-                  className="block border-c22e2e border-b-2 hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
+                  className="block border-c22e2e border-b-2 hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                 >
                   {translations[language].navSousServicesFr}
                   {translations[language].navSousServicesEn}
@@ -226,7 +226,7 @@ const NavbarMobile = () => {
                 <li>
                   <button onClick={toggleSousListsRate}>
                     <div className="flex items-center justify-between">
-                      <div className="block hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold pr-2">
+                      <div className="block hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold pr-2">
                         {translations[language].navSousPricingFr}
                         {translations[language].navSousPricingEn}
                       </div>
@@ -242,7 +242,7 @@ const NavbarMobile = () => {
                     <li className="font-extrabold">
                       <NavLink
                         to="/pricingfr"
-                        className="block border-c22e2e border-b-2 hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
+                        className="block border-c22e2e border-b-2 hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                       >
                         {translations[language].navSousPricingFr}
                         {translations[language].navSousPricingEn} FR
@@ -251,7 +251,7 @@ const NavbarMobile = () => {
                     <li className="font-extrabold">
                       <NavLink
                         to="/pricinguk"
-                        className="block rounded-md hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
+                        className="block rounded-md hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                       >
                         {translations[language].navSousPricingFr}
                         {translations[language].navSousPricingEn} UK
@@ -263,7 +263,7 @@ const NavbarMobile = () => {
               <li>
                 <NavLink
                   to="/quote"
-                  className="block hover:text-0C3E78 transition duration-500 px-4 py-2 font-extrabold"
+                  className="block hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                 >
                   {translations[language].navSousFreeFr}
                   {translations[language].navSousFreeEn}
@@ -275,7 +275,7 @@ const NavbarMobile = () => {
         <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
           <NavLink
             to="/portfolio"
-            className="block px-3 py-2 border-c22e2e border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78 transition duration-500"
+            className="block px-3 py-2 border-c22e2e border-b-2 rounded-md text-base font-extrabold hover:text-0c3e78 transition duration-500"
           >
             Portfolio
           </NavLink>
@@ -284,7 +284,7 @@ const NavbarMobile = () => {
           <NavLink
             to="/"
             onClick={SectionToSectionContact}
-            className="block px-3 py-2 border-c22e2e border-b-2 rounded-md text-base font-extrabold hover:text-0C3E78 transition duration-500"
+            className="block px-3 py-2 border-c22e2e border-b-2 rounded-md text-base font-extrabold hover:text-0c3e78 transition duration-500"
           >
             Contact
           </NavLink>
@@ -315,7 +315,7 @@ const NavbarMobile = () => {
         {/* BARRE DE RECHERCHE */}
         <div className="flex justify-start px-3 pt-4 pb-3">
           <div
-            className={`hover:text-0C3E78 duration-500 transform active:scale-75 transition-transform ${
+            className={`hover:text-0c3e78 duration-500 transform active:scale-75 transition-transform ${
               isDarkMode ? "text-c22e2e" : "text-fff6e4"
             }`}
           >
