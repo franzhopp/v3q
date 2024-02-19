@@ -1,9 +1,9 @@
-
 import SvgPoint from "../Svg/SvgPoint.jsx";
 import translations from "../translate.jsx";
 import ButtonContact from "../../Components/UI/Button/BtnFormContact.jsx";
 import { useTheme } from "../../context/ThemeProvider.jsx";
 import { useLanguage } from "../../context/LanguageProvider.jsx";
+import ButtonContactServices from "../../Components/UI/Button/BtnContact.jsx";
 
 const TextReturnContact = () => {
   const { language } = useLanguage();
@@ -29,7 +29,7 @@ const TextReturnContact = () => {
           </p>
         </div>
       </div>
-      <ButtonContact />
+      <ButtonContactServices />
     </div>
   );
 };

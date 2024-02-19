@@ -1,9 +1,10 @@
-import { useEffect } from "react";
-import { useTheme } from "../context/ThemeProvider";
+import { useEffect, useState } from "react";
 import { IoMdSunny, IoMdMoon } from "react-icons/io";
+import { useTheme } from "../context/ThemeProvider";
 
 const DarkLightThemes = () => {
   const { isDarkMode, toggleTheme } = useTheme();
+  const [localStorageTheme, setLocalStorageTheme] = useState(false);
   useEffect(() => {
     const section = document.querySelectorAll(".bg-061628, .bg-fff6e4");
     section.forEach((section) => {

@@ -5,7 +5,7 @@ const ImgLogo = () => {
     <img
       src={ImageLogo}
       alt="Icône navi studio."
-      className="h-auto mx-auto max-w-xs"
+      className="h-14 w-auto transform active:scale-75 transition-transform"
     />
   );
 };

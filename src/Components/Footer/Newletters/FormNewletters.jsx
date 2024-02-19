@@ -31,7 +31,7 @@ const FormNewletters = () => {
       newErrors.email = "Veuillez entrer une adresse e-mail valide.";
       setTimeout(() => {
         window.location.reload();
-      }, 1000);
+      }, 3000);
     }
 
     if (Object.keys(newErrors).length > 0) {
