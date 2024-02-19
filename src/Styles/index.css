@@ -81,6 +81,7 @@ textarea {
 
 .BgHome {
     background-image: url('../assets/Background/BgHome.png');
+    animation: FadeIn 1.5s ease-in-out;
 }
 
 .BgServices {
