@@ -11,7 +11,7 @@ const BlocsItemsHome = () => {
   const { isDarkMode } = useTheme();
   return (
     <>
-      <div className="py-3 bg-fff6e4">
+      <div className="py-3 bg-fff6e4 border-b-2 border-c22e2e">
         <div
           className={`flex justify-center text-center font-extrabold px-10 text-lg lg:text-2xl tracking-tight ${
             isDarkMode ? "text-black" : "text-fff6e4"
