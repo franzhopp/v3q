@@ -5,7 +5,7 @@ import "../../../Home/Homepage";
 
 const NavbarDiscoverWebDevelopper = () => {
   return (
-    <div className="PictureBannierLouisa h-96 w-full bg-cover bg-center">
+    <div className="bg-c22e2e h-96 w-full bg-cover bg-center">
       <LinksNavbarDesktop />
       <LinksNavbarMobile />
     </div>

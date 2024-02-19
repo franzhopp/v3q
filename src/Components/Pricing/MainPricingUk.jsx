@@ -134,7 +134,7 @@ const Rate = () => {
         <div className="w-96 sm:w-1/2">
           {InformationsSitesWeb.map((info) => (
             <div
-              className={`flex flex-col justify-center font-inter  ${
+              className={`flex flex-col justify-center font-inter shadow-md ${
                 info.id % 2 === 0 ? e18ab0 : Blue
               }`}
               key={info.id}
@@ -142,7 +142,7 @@ const Rate = () => {
               <div className="w-96 sm:w-full">
                 <div className="flex flex-wrap justify-between text-fff6e4 p-10 text-3xl sm:text-4xl">
                   <div data-aos="fade-left" className="">
-                    <RiBardLine className="inline" /> {info.title}
+                    {info.title}
                   </div>
                   <div data-aos="fade-right" className="text-right">
                     {info.price}
@@ -181,7 +181,7 @@ const Rate = () => {
                             <li
                               data-aos="fade-right"
                               data-aos-duration="600"
-                              className="list-disc"
+                              className="list-decimal"
                               key={subDetailIndex}
                             >
                               {subDetail}
@@ -210,7 +210,7 @@ const Rate = () => {
         <div className="w-96 sm:w-1/2">
           {InformationsMarketing.map((info, index) => (
             <div
-              className={`flex flex-col justify-center font-inter ${
+              className={`flex flex-col justify-center font-inter shadow-md ${
                 index % 2 === 0 ? Blue : e18ab0
               }`}
               key={index}
@@ -218,7 +218,7 @@ const Rate = () => {
               <div className="w-96 sm:w-full">
                 <div className="flex flex-wrap justify-between text-fff6e4 p-10 text-3xl sm:text-4xl">
                   <div data-aos="fade-left" className="">
-                    <RiBardLine className="inline" /> {info.title}
+                    {info.title}
                   </div>
                   <div data-aos="fade-right" className="text-right">
                     {info.price}
