@@ -24,7 +24,7 @@ const TitleHome = () => {
           </h2>
         </div>
       </div>
-      <div className="flex justify-center pb-24">
+      <div className="flex justify-center lg:justify-end pb-24 px-32">
         <ButtonDiscover />
       </div>
     </>

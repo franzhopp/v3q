@@ -28,7 +28,7 @@ const translations = {
     // Homepage
     titleHomeFr: "Agence digitale",
     scrollingTextFr:
-      "DESIGN ◦ DÉVELOPPEMENT ◦ MARKETING DIGITAL ◦ STRATÉGIE DE MARQUE",
+      "DESIGN | DÉVELOPPEMENT | MARKETING DIGITAL | STRATÉGIE DE MARQUE",
     btnDiscoverFr: "Découvrir",
     footerPrivacyFr: "Politique de Confidentialité",
     footerTermsFr: "Conditions d'Utilisation",
@@ -41,7 +41,7 @@ const translations = {
     // Sous liste Services
     navSousServicesFr: "Prestations",
     navSousPricingFr: "Tarification",
-    navSousFreeFr: "Devis",
+    navSousFreeFr: "Devis Gratuit",
     // Cookie
     cookieTitleFr: "Politique de cookies",
     cookieDescFr:
@@ -329,7 +329,7 @@ const translations = {
     // Homepage
     titleHomeEn: "Digital Agency",
     scrollingTextEn:
-      "DESIGN ◦ WEB DEVELOPMENT ◦ DIGITAL MARKETING ◦ BRAND STRATEGY",
+      "DESIGN | WEB DEVELOPMENT | DIGITAL MARKETING | BRAND STRATEGY",
     btnDiscoverEn: "About Us",
     footerPrivacyEn: "Privacy",
     footerTermsEn: "Terms Of Use",
@@ -342,7 +342,7 @@ const translations = {
     // Sous liste Services
     navSousServicesEn: "Services",
     navSousPricingEn: "Pricing",
-    navSousFreeEn: "Quote",
+    navSousFreeEn: "Free Quote",
     // Cookie
     cookieTitleEn: "Cookie Policy",
     cookieDescEn:
