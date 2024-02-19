@@ -6,7 +6,7 @@ import { RiBardLine } from "react-icons/ri";
 const Blocs = () => {
   const { isDarkMode } = useTheme();
   const { language } = useLanguage();
-  const text = "01";
+  const text = "01.";
   const letters = text.split("");
   const animationConfig = [
     { dataAos: "fade-left", dataAosDelay: 100 },
@@ -14,7 +14,7 @@ const Blocs = () => {
     { dataAos: "fade-left", dataAosDelay: 300 },
     ,
   ];
-  const text2 = "02";
+  const text2 = "02.";
   const letters2 = text2.split("");
   const animationConfig2 = [
     { dataAos: "fade-left", dataAosDelay: 100 },
@@ -22,7 +22,7 @@ const Blocs = () => {
     { dataAos: "fade-left", dataAosDelay: 300 },
     ,
   ];
-  const text3 = "03";
+  const text3 = "03.";
   const letters3 = text3.split("");
   const animationConfig3 = [
     { dataAos: "fade-left", dataAosDelay: 100 },
@@ -53,13 +53,13 @@ const Blocs = () => {
             ))}
           </h2>
           <p className="text-xl font-inter font-extrabold">
-            <RiBardLine className="inline" />{" "}
             {translations[language].title1EthicsFr}
             {translations[language].title1EthicsEn}
           </p>
           <span className="absolute w-48 h-1 bg-e18ab0"></span>
           <div className="w-72 mt-5">
             <p data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <RiBardLine className="inline" />{" "}
               {translations[language].describe1EthicsFr}
               {translations[language].describe1EthicsEn}
               <span className="font-extrabold">
@@ -93,13 +93,13 @@ const Blocs = () => {
             ))}
           </h2>
           <p className="text-xl font-inter font-extrabold">
-            <RiBardLine className="inline" />{" "}
             {translations[language].title2EthicsFr}
             {translations[language].title2EthicsEn}
           </p>
           <span className="absolute w-48 h-1 bg-e18ab0"></span>
           <div className="w-72 mt-5">
             <p data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <RiBardLine className="inline" />{" "}
               {translations[language].describe2EthicsFr}
               {translations[language].describe2EthicsEn}{" "}
               <span className="font-extrabold">
@@ -127,11 +127,12 @@ const Blocs = () => {
             ))}
           </h2>
           <p className=" text-xl font-inter font-extrabold">
-            <RiBardLine className="inline" /> Passion & Motivation
+            Passion & Motivation
           </p>
           <span className="absolute w-48 h-1 bg-e18ab0"></span>
           <div className="w-72 mt-5">
             <p data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <RiBardLine className="inline" />{" "}
               {translations[language].describe3EthicsFr}
               {translations[language].describe3EthicsEn}{" "}
               <span className="font-extrabold">

@@ -81,17 +81,17 @@ textarea {
 
 .BgHome {
     background-image: url('../assets/Background/BgHome.png');
-    animation: FadeIn 1.5s ease-in-out;
+    animation: FadeIn 0.5s ease-in-out;
 }
 
 .BgServices {
     background-image: url('../assets/Background/BgServices.png');
-    animation: FadeIn 1.5s ease-in-out;
+    animation: FadeIn 0.5s ease-in-out;
 }
 
 .BgValues {
     background-image: url('../assets/Background/BgValues.png');
-    animation: FadeIn 1.5s ease-in-out;
+    animation: FadeIn 0.5s ease-in-out;
 }
 
 .BgPatternPortfolio {
@@ -161,12 +161,12 @@ textarea {
 
 .PictureBannierLouisa {
     background-image: url("../assets/Background/BgContactBlur.png");
-    animation: FadeIn 1.5s ease-in-out;
+    animation: FadeIn 0.5s ease-in-out;
 }
 
 .PictureBannierMelissa {
     background-image: url("../assets/Picture/PictureBannierMelissa.png");
-    animation: FadeIn 1.5s ease-in-out;
+    animation: FadeIn 0.5s ease-in-out;
 }
 
 .MiniBannierMelissa {
@@ -180,7 +180,7 @@ textarea {
 }
 
 .FadeInDelayDesktop {
-    animation: FadeInDelayDesktop 0.3s ease-in-out;
+    animation: FadeInDelayDesktop 0.5s ease-in-out;
 }
 
 .InputError {

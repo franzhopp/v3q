@@ -12,7 +12,7 @@ const SubTextStrategy = () => {
           data-aos-anchor-placement="top-bottom"
           className="mt-2 text-fff6e4 text-arial"
         >
-          <h1 className="text-4xl FontNumber font-semibold pb-5">01</h1>
+          <h1 className="text-4xl FontNumber font-semibold pb-5">01.</h1>
           <span className="font-extrabold">
             <RiBardLine className="inline" />{" "}
             {translations[language].wordBoldSecondSectionFr}
@@ -33,7 +33,7 @@ const SubTextStrategy = () => {
           data-aos-anchor-placement="top-bottom"
           className="mt-2 text-fff6e4 text-arial"
         >
-          <h1 className="text-4xl FontNumber font-semibold pb-5">02</h1>
+          <h1 className="text-4xl FontNumber font-semibold pb-5">02.</h1>
           <span className="font-extrabold">
             <RiBardLine className="inline" />{" "}
             {translations[language].wordBoldSecondSection2Fr}
@@ -54,7 +54,7 @@ const SubTextStrategy = () => {
           data-aos-anchor-placement="top-bottom"
           className="mt-2 text-fff6e4 text-arial"
         >
-          <h1 className="text-4xl FontNumber font-semibold pb-5">03</h1>
+          <h1 className="text-4xl FontNumber font-semibold pb-5">03.</h1>
           <span className="font-extrabold">
             <RiBardLine className="inline" />{" "}
             {translations[language].wordBoldSecondSection3Fr}
