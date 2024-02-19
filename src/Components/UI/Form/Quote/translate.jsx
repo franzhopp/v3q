@@ -41,7 +41,7 @@ const translations = {
     // Sous liste Services
     navSousServicesFr: "Prestations",
     navSousPricingFr: "Tarification",
-    navSousFreeFr: "Devis Gratuit",
+    navSousFreeFr: "Devis gratuit",
     // Cookie
     cookieTitleFr: "Politique de cookies",
     cookieDescFr:

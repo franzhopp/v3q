@@ -160,7 +160,7 @@ textarea {
 }
 
 .PictureBannierLouisa {
-    background-image: url("../assets/Picture/test.png");
+    background-image: url("../assets/Background/BgContactBlur.png");
     animation: FadeIn 1.5s ease-in-out;
 }
 

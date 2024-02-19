@@ -6,7 +6,7 @@ import { RiBardLine } from "react-icons/ri";
 const Blocs = () => {
   const { isDarkMode } = useTheme();
   const { language } = useLanguage();
-  const text = "01.";
+  const text = "01";
   const letters = text.split("");
   const animationConfig = [
     { dataAos: "fade-left", dataAosDelay: 100 },
@@ -14,7 +14,7 @@ const Blocs = () => {
     { dataAos: "fade-left", dataAosDelay: 300 },
     ,
   ];
-  const text2 = "02.";
+  const text2 = "02";
   const letters2 = text2.split("");
   const animationConfig2 = [
     { dataAos: "fade-left", dataAosDelay: 100 },
@@ -22,7 +22,7 @@ const Blocs = () => {
     { dataAos: "fade-left", dataAosDelay: 300 },
     ,
   ];
-  const text3 = "03.";
+  const text3 = "03";
   const letters3 = text3.split("");
   const animationConfig3 = [
     { dataAos: "fade-left", dataAosDelay: 100 },
