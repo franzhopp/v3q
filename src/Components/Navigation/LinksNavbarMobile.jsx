@@ -98,7 +98,7 @@ const LinksNavbarMobile = () => {
           className="cursor-pointer rounded-full mr-1"
         >
           {isAnimating ? (
-            <div onClick={handleAnimateButtonClick}>
+            <div onClick={handleAnimateButtonClick} className="animate-formbounce">
               <ButtonOpen />
             </div>
           ) : (

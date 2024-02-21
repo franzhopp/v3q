@@ -43,7 +43,6 @@ const LinksNavbarDesktop = () => {
         <NavLink to="/">
           <img
             alt="Logo"
-            data-aos="fade-left"
             className="lg:h-20 h-10 w-auto transform active:scale-75 transition-transform"
             src={Image}
           />
