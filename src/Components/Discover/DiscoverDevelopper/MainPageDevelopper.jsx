@@ -67,7 +67,10 @@ const DiscoverWebDeveloper = () => {
           </NavLink>
         </div>
       </div>
-      <div id="AboutLouisa" className="PictureBelgique bg-cover bg-no-repeat h-52"></div>
+      <div
+        id="AboutLouisa"
+        className="PictureBelgique bg-cover bg-no-repeat h-52"
+      ></div>
       <BackToTopButton />
       <div className="flex justify-center pt-20">
         <p
@@ -80,11 +83,11 @@ const DiscoverWebDeveloper = () => {
           </div>
         </p>
       </div>
-      <div className="flex flex-wrap justify-center pt-28 space-x-10">
+      <div className="flex flex-wrap justify-center pt-20 space-x-10">
         <div className="flex relative">
           <Frame />
         </div>
-        <div data-aos="fade-left" className="pb-20">
+        <div data-aos="fade-left">
           <img
             src={Pattern}
             className="-rotate-6 transition duration-500 hover:opacity-90"
@@ -94,7 +97,7 @@ const DiscoverWebDeveloper = () => {
         <div className="flex relative">
           <Vector />
         </div>
-        <div className="bg-f9fefe p-5 sm:w-96 sm:h-1/2 text-center rounded-2xl shadow-lg rotate-6">
+        <div className="bg-f9fefe p-5 mt-20 lg:mt-0 sm:w-96 sm:h-1/2 text-center rounded-2xl shadow-lg rotate-6">
           <div className="mt-5 text-base">
             <SubDescTitle />
           </div>

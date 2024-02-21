@@ -5,7 +5,7 @@ import { RiBardLine } from "react-icons/ri";
 const SubBlocs = () => {
   const { language } = useLanguage();
   return (
-    <div className="text-center mt-5">
+    <div className="text-center">
       <h1
         data-aos="fade-right"
         className="font-extrabold font-inter text-2xl sm:text-4xl"
