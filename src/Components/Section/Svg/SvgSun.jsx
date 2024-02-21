@@ -1,9 +1,9 @@
 const SvgSun = () => {
   return (
     <svg
-      className=" animate-spin"
-      width="215"
-      height="218"
+      className="absolute left-60 lg:left-56 -bottom-20 animate-spin"
+      width="130"
+      height="130"
       viewBox="0 0 215 218"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

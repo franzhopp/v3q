@@ -11,6 +11,7 @@ import ModalImage from "react-modal-image";
 import ImageLondon from "../../../assets/PictureTeam/London.png";
 import ImageParis from "../../../assets/PictureTeam/Paris.png";
 import SectionExploration from "../Carousel/SectionExploration.jsx";
+import SvgSun from "../Svg/SvgSun.jsx";
 
 const SectionTeam = () => {
   const { language } = useLanguage();
@@ -151,8 +152,10 @@ const SectionTeam = () => {
                   Paris
                 </animated.h1>
               </div>
-
-              <div className="w-72">
+              <div className="relative">
+                <SvgSun />
+              </div>
+              <div className="w-56 lg:w-52">
                 <p className="BgSun bg-no-repeat text-left text-base mb-10 ml-10 sm:ml-0">
                   <span className="font-extrabold">
                     {" "}
@@ -245,7 +248,10 @@ const SectionTeam = () => {
                     London
                   </animated.h1>
                 </div>
-                <div className="w-72">
+                <div className="relative">
+                  <SvgSun />
+                </div>
+                <div className="w-56 lg:w-52">
                   <p className="BgSun bg-no-repeat text-left text-base mb-10 ml-10 sm:ml-0">
                     <span className="font-extrabold">
                       {" "}

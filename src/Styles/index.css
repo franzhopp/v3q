@@ -174,12 +174,7 @@ textarea {
     animation: FadeIn 0.5s ease-in-out;
 }
 
-.BgSun {
-    width: 248px;
-    height: 230px;
-    background-image: url("../assets/Svg/BgSun.svg");
 
-}
 
 .FadeInDelayDesktop {
     animation: FadeInDelayDesktop 0.5s ease-in-out;
@@ -269,4 +264,13 @@ textarea {
     100% {
         transform: translateX(0%);
     }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+.animate-spin {
+    animation: spin 6s linear infinite;
 }
