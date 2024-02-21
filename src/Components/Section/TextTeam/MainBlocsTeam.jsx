@@ -12,7 +12,6 @@ import ImageLondon from "../../../assets/PictureTeam/London.png";
 import ImageParis from "../../../assets/PictureTeam/Paris.png";
 import SectionExploration from "../Carousel/SectionExploration.jsx";
 
-
 const SectionTeam = () => {
   const { language } = useLanguage();
   const { isDarkMode } = useTheme();
@@ -78,13 +77,12 @@ const SectionTeam = () => {
   ];
 
   return (
-    <section className="bg-fff6e4 pt-24">
+    <section id="team" className="bg-fff6e4 pt-24">
       <div className="flex justify-center mt-10">
         <div data-aos="fade-left">
           <SvgHeart />
         </div>
       </div>
-      <div id="team"></div>
       <TitleTeamNavi />
       <div
         className={`flex justify-center mb-16 ${

@@ -94,6 +94,7 @@ const NavbarDesktop = () => {
               // src={isDarkMode ? ImgBlack : ImgWhite}
               alt="Logo"
               onClick={scrollToTop}
+              data-aos="fade-left"
               className="lg:h-20 h-10 w-auto transform active:scale-75 transition-transform"
             />
           </NavLink>

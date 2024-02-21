@@ -37,7 +37,11 @@ export const data = [
   },
   {
     keywords: "Prestations",
-    link: "/pricingfr",
+    link: "/services",
+  },
+  {
+    keywords: "Prestation",
+    link: "/services",
   },
   {
     keywords: "Tarification",
