@@ -12,6 +12,7 @@ import ImageLondon from "../../../assets/PictureTeam/London.png";
 import ImageParis from "../../../assets/PictureTeam/Paris.png";
 import SectionExploration from "../Carousel/SectionExploration.jsx";
 import SvgSun from "../Svg/SvgSun.jsx";
+import SvgFlower from "../Svg/SvgFlower.jsx";
 
 const SectionTeam = () => {
   const { language } = useLanguage();
@@ -153,7 +154,7 @@ const SectionTeam = () => {
                 </animated.h1>
               </div>
               <div className="relative">
-                <SvgSun />
+                <SvgFlower />
               </div>
               <div className="w-56 lg:w-52">
                 <p className="BgSun bg-no-repeat text-left text-base mb-10 ml-10 sm:ml-0">

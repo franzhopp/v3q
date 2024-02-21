@@ -2,7 +2,7 @@ const SvgSun = () => {
   return (
     <svg
       className="absolute left-60 lg:left-56 -bottom-20 animate-spin"
-      width="130"
+      width="130    "
       height="130"
       viewBox="0 0 215 218"
       fill="none"
@@ -13,6 +13,7 @@ const SvgSun = () => {
         fill="#e18ab0"
       />
     </svg>
+    
   );
 };
 
