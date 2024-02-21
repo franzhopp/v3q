@@ -5,7 +5,7 @@ import Img1 from "../../../assets/Pays/Strasbourg.png";
 import Img2 from "../../../assets/Pays/Versailles.png";
 import Img3 from "../../../assets/Pays/Bruges.png";
 import Img4 from "../../../assets/Pays/Atonium.png";
-import Img5 from "../../../assets/Pays/Bruxelles.png";
+// import Img5 from "../../../assets/Pays/Bruxelles.png";
 import Img6 from "../../../assets/Pays/LondonUk.png";
 import Img7 from "../../../assets/Pays/Espagne.png";
 import Img8 from "../../../assets/Pays/Floride.png";
@@ -37,11 +37,11 @@ const slides = [
     title: "Atomium, 1020",
     country: "Belgique 🇧🇪",
   },
-  {
-    image: Img5,
-    title: "Bruxelles, 3000",
-    country: "Belgique 🇧🇪",
-  },
+  // {
+  //   image: Img5,
+  //   title: "Bruxelles, 3000",
+  //   country: "Belgique 🇧🇪",
+  // },
   {
     image: Img6,
     title: "Londres, SW1X 7LX",
@@ -65,7 +65,7 @@ const slides = [
 ];
 
 export default function MainCarousel() {
-  //   const { isDarkMode } = useTheme();
+    // const { isDarkMode } = useTheme();
   return (
     <div className={`flex justify-center pt-10`}>
       <Carousel autoSlide={true} autoSlideInterval={1000}>
@@ -78,8 +78,8 @@ export default function MainCarousel() {
           }`}
         >
           <div className="flex flex-col justify-center">
-            <span>{cards[currentIndex].title}</span>
-            <span>{cards[currentIndex].country}</span>
+            <span>{slides.title}</span>
+            <span>{slides.country}</span>
           </div>
         </p> */}
       </Carousel>

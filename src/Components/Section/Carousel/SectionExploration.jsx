@@ -13,6 +13,8 @@ import Img6 from "../../../assets/Pays/Espagne.png";
 import Img7 from "../../../assets/Pays/Versailles.png";
 import Img10 from "../../../assets/Pays/Floride.png";
 import Img12 from "../../../assets/Pays/LondonUk.png";
+import Carousel from "./Carousel.jsx";
+import MainCarousel from "./MainCarousel.jsx";
 
 const SectionExploration = () => {
   const { isDarkMode } = useTheme();
