@@ -1,7 +1,7 @@
 const SvgItemRight = () => {
   return (
     <svg
-      className="absolute -top-5 sm:right-0 -right-96"
+      className="absolute -top-5 lg:right-0 -right-96"
       xmlns="http://www.w3.org/2000/svg"
       width="636"
       height="528"

@@ -171,6 +171,7 @@ textarea {
 
 .MiniBannierMelissa {
     background-image: url("../assets/Picture/MiniBannierMelissa.png");
+    animation: FadeIn 0.5s ease-in-out;
 }
 
 .BgSun {

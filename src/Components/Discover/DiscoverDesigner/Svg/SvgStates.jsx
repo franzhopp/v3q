@@ -1,7 +1,7 @@
 const SvgStates = () => {
   return (
     <svg
-      className="absolute top-44 -right-6 sm:-right-56"
+      className="absolute top-44 -right-6 lg:-right-56"
       width="290"
       height="180"
       viewBox="0 0 290 180"

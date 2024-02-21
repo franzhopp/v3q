@@ -1,7 +1,7 @@
 const SvgAroundMexico = () => {
   return (
     <svg
-      className="absolute top-0 sm:-right-44 -right-96"
+      className="absolute top-0 lg:-right-44 -right-96"
       width="140"
       height="152"
       viewBox="0 0 140 152"
