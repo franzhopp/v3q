@@ -26,9 +26,9 @@ const BackToTopButton = () => {
       {BackToTopButton && (
         <button>
           <div
-            data-aos="fade-right"
+           
             onClick={scrollUp}
-            className="fixed bottom-8 right-5 shadow-sm rounded-full z-50"
+            className="fixed bottom-8 right-5 shadow-sm rounded-full z-50 wobble"
           >
             <div
               className={`p-4 border-d83939 border-4 h-53 h-54 rounded-full shadow-sm transform active:scale-75 transition-transform ${
