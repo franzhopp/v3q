@@ -37,7 +37,7 @@ const Blocs = () => {
           isDarkMode ? "text-black" : "text-fff6e4"
         }`}
       >
-        <div className="p-6 rounded-lg shadow-md">
+        <div className="p-6 rounded-lg shadow-md transition-transform transform hover:scale-105">
           <h2
             data-aos="fade-left"
             className="text-8xl FontNumber text-e18ab0 font-bold mb-2"
@@ -77,7 +77,7 @@ const Blocs = () => {
             </p>
           </div>
         </div>
-        <div className="p-6 rounded-lg shadow-md">
+        <div className="p-6 rounded-lg shadow-md transition-transform transform hover:scale-105">
           <h2
             data-aos="fade-right"
             className="text-8xl FontNumber text-e18ab0 font-bold mb-2"
@@ -111,7 +111,7 @@ const Blocs = () => {
             </p>
           </div>
         </div>
-        <div className="p-6 rounded-lg shadow-md">
+        <div className="p-6 rounded-lg shadow-md transition-transform transform hover:scale-105">
           <h2
             data-aos="fade-left"
             className="text-8xl FontNumber text-e18ab0 font-bold mb-2"

@@ -53,7 +53,11 @@ const EthicsPage = () => {
             <SvgFontLeft />
           </div>
           <div className="px-10">
-            <img src={Img} alt="Image Values" className="relative rounded-lg transition duration-500 hover:opacity-90" />
+            <img
+              src={Img}
+              alt="Image Values"
+              className="relative rounded-lg transition duration-500 hover:opacity-90"
+            />
           </div>
         </div>
       </div>
