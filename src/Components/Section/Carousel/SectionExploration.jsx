@@ -13,8 +13,7 @@ import Img6 from "../../../assets/Pays/Espagne.png";
 import Img7 from "../../../assets/Pays/Versailles.png";
 import Img10 from "../../../assets/Pays/Floride.png";
 import Img12 from "../../../assets/Pays/LondonUk.png";
-import Carousel from "./Carousel.jsx";
-import MainCarousel from "./MainCarousel.jsx";
+import Img13 from "../../../assets/Pays/Nantes.png";
 
 const SectionExploration = () => {
   const { isDarkMode } = useTheme();
@@ -33,6 +32,11 @@ const SectionExploration = () => {
     {
       image: Img7,
       title: "Versailles, 78646",
+      country: "France 🇫🇷",
+    },
+    {
+      image: Img13,
+      title: "Nantes, 44000",
       country: "France 🇫🇷",
     },
     {
