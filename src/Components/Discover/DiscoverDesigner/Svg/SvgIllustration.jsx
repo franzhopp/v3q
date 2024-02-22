@@ -1,7 +1,7 @@
 const SvgIllustration = () => {
   return (
     <svg
-      className="wobble"
+      className="swing"
       width="174"
       height="175"
       viewBox="0 0 174 175"

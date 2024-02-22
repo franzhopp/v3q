@@ -1,7 +1,7 @@
 const SvgHeart = () => {
   return (
     <svg
-      className="relative right-28 sm:right-52 -rotate-12 wobble"
+      className="relative right-28 sm:right-52 -rotate-12 swing"
       fill="#c22e2e"
       version="1.1"
       id="Capa_1"
