@@ -1,7 +1,7 @@
 const SvgSun = () => {
   return (
     <svg
-      className="absolute right-56 lg:right-0 swing"
+      className="absolute right-48 lg:right-0 swing"
       width="180"
       height="180"
       viewBox="0 0 215 218"
