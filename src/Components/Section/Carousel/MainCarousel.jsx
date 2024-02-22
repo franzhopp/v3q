@@ -1,14 +1,14 @@
 import Carousel from "./Carousel.jsx";
 // import { useTheme } from "../../../context/ThemeProvider.jsx";
 import Img0 from "../../../assets/Pays/Toulouse.png";
-import Img1 from "../../../assets/Pays/Strasbourg.png";
-import Img2 from "../../../assets/Pays/Versailles.png";
+// import Img1 from "../../../assets/Pays/Strasbourg.png";
+// import Img2 from "../../../assets/Pays/Versailles.png";
 import Img3 from "../../../assets/Pays/Bruges.png";
-import Img4 from "../../../assets/Pays/Atonium.png";
+// import Img4 from "../../../assets/Pays/Atonium.png";
 // import Img5 from "../../../assets/Pays/Bruxelles.png";
 import Img6 from "../../../assets/Pays/LondonUk.png";
 import Img7 from "../../../assets/Pays/Espagne.png";
-import Img8 from "../../../assets/Pays/Floride.png";
+// import Img8 from "../../../assets/Pays/Floride.png";
 import Img9 from "../../../assets/Pays/Boston.png";
 
 const slides = [
@@ -17,26 +17,26 @@ const slides = [
     title: "Toulouse, 31000",
     country: "France 🇫🇷",
   },
-  {
-    image: Img1,
-    title: "Strasbourg, 67000",
-    country: "France 🇫🇷",
-  },
-  {
-    image: Img2,
-    title: "Versailles, 78646",
-    country: "France 🇫🇷",
-  },
+  // {
+  //   image: Img1,
+  //   title: "Strasbourg, 67000",
+  //   country: "France 🇫🇷",
+  // },
+  // {
+  //   image: Img2,
+  //   title: "Versailles, 78646",
+  //   country: "France 🇫🇷",
+  // },
   {
     image: Img3,
     title: "Bruges, 8000",
     country: "Belgique 🇧🇪",
   },
-  {
-    image: Img4,
-    title: "Atomium, 1020",
-    country: "Belgique 🇧🇪",
-  },
+  // {
+  //   image: Img4,
+  //   title: "Atomium, 1020",
+  //   country: "Belgique 🇧🇪",
+  // },
   // {
   //   image: Img5,
   //   title: "Bruxelles, 3000",
@@ -52,11 +52,11 @@ const slides = [
     title: "Barcelone, 08001",
     country: "Espagne 🇪🇸",
   },
-  {
-    image: Img8,
-    title: "Atlantic Beach, 32233",
-    country: "États-Unis 🇺🇸",
-  },
+  // {
+  //   image: Img8,
+  //   title: "Atlantic Beach, 32233",
+  //   country: "États-Unis 🇺🇸",
+  // },
   {
     image: Img9,
     title: "Boston Massachusetts, 02186",
@@ -65,7 +65,7 @@ const slides = [
 ];
 
 export default function MainCarousel() {
-    // const { isDarkMode } = useTheme();
+  // const { isDarkMode } = useTheme();
   return (
     <div className={`flex justify-center pt-10`}>
       <Carousel autoSlide={true} autoSlideInterval={1000}>

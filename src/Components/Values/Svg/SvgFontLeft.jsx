@@ -1,8 +1,7 @@
 const SvgFontLeft = () => {
   return (
     <svg
-      data-aos="swing"
-      className="relative bottom-12 left-0"
+      className=" absolute top-28 lg:top-64 -left-0 swing"
       xmlns="http://www.w3.org/2000/svg"
       width="100"
       height="100"

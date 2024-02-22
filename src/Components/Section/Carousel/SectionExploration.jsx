@@ -24,31 +24,31 @@ const SectionExploration = () => {
       title: "Toulouse, 31000",
       country: "France 🇫🇷",
     },
-    {
-      image: Img4,
-      title: "Strasbourg, 67000",
-      country: "France 🇫🇷",
-    },
-    {
-      image: Img7,
-      title: "Versailles, 78646",
-      country: "France 🇫🇷",
-    },
-    {
-      image: Img13,
-      title: "Nantes, 44000",
-      country: "France 🇫🇷",
-    },
+    // {
+    //   image: Img4,
+    //   title: "Strasbourg, 67000",
+    //   country: "France 🇫🇷",
+    // },
+    // {
+    //   image: Img7,
+    //   title: "Versailles, 78646",
+    //   country: "France 🇫🇷",
+    // },
+    // {
+    //   image: Img13,
+    //   title: "Nantes, 44000",
+    //   country: "France 🇫🇷",
+    // },
     {
       image: Img3,
       title: "Bruges, 8000",
       country: "Belgique 🇧🇪",
     },
-    {
-      image: Img0,
-      title: "Atomium, 1020",
-      country: "Belgique 🇧🇪",
-    },
+    // {
+    //   image: Img0,
+    //   title: "Atomium, 1020",
+    //   country: "Belgique 🇧🇪",
+    // },
     // {
     //   image: Img2,
     //   title: "Bruxelles, 3000",
@@ -64,11 +64,11 @@ const SectionExploration = () => {
       title: "Barcelone, 08001",
       country: "Espagne 🇪🇸",
     },
-    {
-      image: Img10,
-      title: "Atlantic Beach, 32233",
-      country: "États-Unis 🇺🇸",
-    },
+    // {
+    //   image: Img10,
+    //   title: "Atlantic Beach, 32233",
+    //   country: "États-Unis 🇺🇸",
+    // },
     {
       image: Img5,
       title: "Boston Massachusetts, 02186",

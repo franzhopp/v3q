@@ -40,23 +40,25 @@ const EthicsPage = () => {
   return (
     <section className="bg-fff6e4">
       <NavbarEthics />
-      <div className="flex justify-center mt-16">
+      <div className="flex justify-center pt-16">
         {/* Les 3 blocs */}
         <Blocs />
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center pt-16">
         <div>
           <div className="flex justify-end">
             <SvgFontRight />
           </div>
-          <div className="px-10">
-            <img src={Img} alt="Image Values" className="rounded-lg" />
+          <div className="flex justify-start relative">
+            <SvgFontLeft />
           </div>
-          <SvgFontLeft />
+          <div className="px-10">
+            <img src={Img} alt="Image Values" className="relative rounded-lg transition duration-500 hover:opacity-90" />
+          </div>
         </div>
       </div>
       <div
-        className={`flex justify-center ${
+        className={`flex justify-center pt-16 ${
           isDarkMode ? "text-black" : "text-fff6e4"
         }`}
       >
