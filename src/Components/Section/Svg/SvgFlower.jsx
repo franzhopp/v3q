@@ -1,7 +1,7 @@
 const SvgFlower = () => {
   return (
     <svg
-      className="absolute left-60 lg:left-44 -top-10 -bottom-20 swing"
+      className="absolute right-60 lg:right-0 swing"
       width="150"
       height="150"
       viewBox="0 0 215 219"

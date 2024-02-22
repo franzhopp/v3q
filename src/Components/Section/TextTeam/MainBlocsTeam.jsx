@@ -11,6 +11,8 @@ import ModalImage from "react-modal-image";
 import ImageLondon from "../../../assets/PictureTeam/London.png";
 import ImageParis from "../../../assets/PictureTeam/Paris.png";
 import SectionExploration from "../Carousel/SectionExploration.jsx";
+import SvgSun from "../Svg/SvgSun.jsx";
+import SvgFlower from "../Svg/SvgFlower.jsx";
 
 const SectionTeam = () => {
   const { language } = useLanguage();
@@ -108,6 +110,7 @@ const SectionTeam = () => {
           </p>
         </div>
       </div>
+
       <div
         className={`flex justify-center mt-16 ${
           isDarkMode ? "text-black" : "text-fff6e4"
@@ -128,11 +131,14 @@ const SectionTeam = () => {
               </div>
             </div>
             <div className="flex flex-col">
+              <div className="relative">
+                <SvgSun />
+              </div>
               <div className="text-left mb-5 ml-10 sm:ml-0">
                 <p data-aos="fade-right" className="text-4xl font-extrabold">
                   Louisa Fernandez
                 </p>
-                <p className="text-4xl font-extrabold">
+                <p className="relative text-4xl font-extrabold">
                   {" "}
                   {letters1.map((letter, index) => (
                     <span
@@ -146,14 +152,14 @@ const SectionTeam = () => {
                 </p>
                 <animated.h1
                   style={props}
-                  className="text-4xl font-extrabold tracking-wide"
+                  className="relative text-4xl font-extrabold tracking-wide"
                 >
                   Paris
                 </animated.h1>
               </div>
 
-              <div className="w-72">
-                <p className="BgSun bg-no-repeat text-left text-base mb-10 ml-10 sm:ml-0">
+              <div className="w-72 lg:w-60">
+                <p className="text-left text-base mb-10 ml-10 sm:ml-0">
                   <span className="font-extrabold">
                     {" "}
                     <RiBardLine className="inline" />{" "}
@@ -222,11 +228,17 @@ const SectionTeam = () => {
                 </p>
               </div>
               <div className="flex flex-col">
+                <div className="relative">
+                  <SvgFlower />
+                </div>
                 <div className="text-left mb-5 ml-10 sm:ml-0">
-                  <p data-aos="fade-left" className="text-4xl font-extrabold">
+                  <p
+                    data-aos="fade-left"
+                    className="relative text-4xl font-extrabold"
+                  >
                     Mélissa Nefti
                   </p>
-                  <p className="text-4xl font-extrabold">
+                  <p className="relative text-4xl font-extrabold">
                     {" "}
                     {letters2.map((letter, index) => (
                       <span
@@ -240,13 +252,13 @@ const SectionTeam = () => {
                   </p>
                   <animated.h1
                     style={props}
-                    className="text-4xl font-extrabold tracking-wide"
+                    className="relative text-4xl font-extrabold tracking-wide"
                   >
                     London
                   </animated.h1>
                 </div>
-                <div className="w-72">
-                  <p className="BgSun bg-no-repeat text-left text-base mb-10 ml-10 sm:ml-0">
+                <div className="w-72 lg:w-60">
+                  <p className="text-left text-base mb-10 ml-10 sm:ml-0">
                     <span className="font-extrabold">
                       {" "}
                       <RiBardLine className="inline" />{" "}
