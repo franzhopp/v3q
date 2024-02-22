@@ -11,7 +11,7 @@ const BlocsItems = () => {
     <div className="flex justify-center mt-10">
       <div className="mt-5 flex flex-wrap justify-center space-x-0 sm:space-x-6">
         <div data-aos="fade-left" data-aos-duration="300">
-          <div className="bg-c22e2e rounded-2xl shadow-2xl p-6 mb-5 transition-transform transform hover:scale-105">
+          <div className="bg-c22e2e rounded-2xl shadow-2xl p-6 mb-5 transition-transform transform hover:scale-90">
             <p className="text-fff6e4 text-center text-xl font-extrabold mb-5">
               {translations[language].title1ServicesFr}
               {translations[language].title1ServicesEn}
@@ -35,7 +35,7 @@ const BlocsItems = () => {
           </div>
         </div>
         <div data-aos="fade-left" data-aos-duration="300">
-          <div className="BgCards bg-cover bg-no-repeat p-6 rounded-2xl shadow-2xl mb-5 transition-transform transform hover:scale-105">
+          <div className="BgCards bg-cover bg-no-repeat p-6 rounded-2xl shadow-2xl mb-5 transition-transform transform hover:scale-90">
             <p className="text-fff6e4 text-center text-xl font-extrabold mb-5">
               {translations[language].title2ServicesFr}
               {translations[language].title2ServicesEn}
@@ -56,7 +56,7 @@ const BlocsItems = () => {
           </div>
         </div>
         <div data-aos="fade-left" data-aos-duration="300">
-          <div className="BgCardsTwo bg-cover bg-no-repeat p-6 rounded-2xl shadow-2xl mb-5 transition-transform transform hover:scale-105">
+          <div className="BgCardsTwo bg-cover bg-no-repeat p-6 rounded-2xl shadow-2xl mb-5 transition-transform transform hover:scale-90">
             <p className="text-fff6e4 text-center text-xl font-extrabold mb-5">
               Landing page
             </p>
@@ -77,7 +77,7 @@ const BlocsItems = () => {
           </div>
         </div>
         <div data-aos="fade-left" data-aos-duration="300">
-          <div className="bg-c22e2e p-6 rounded-2xl shadow-2xl mb-5 transition-transform transform hover:scale-105">
+          <div className="bg-c22e2e p-6 rounded-2xl shadow-2xl mb-5 transition-transform transform hover:scale-90">
             <p className="text-fff6e4 text-center text-xl font-extrabold mb-5">
               {translations[language].title3ServicesFr}
               {translations[language].title3ServicesEn}

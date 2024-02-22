@@ -18,7 +18,7 @@ const SubBlocs = () => {
         <span className="absolute w-48 h-1 bg-e18ab0"></span>
       </div>
       <div className="flex justify-center px-3 pt-6">
-        <div className="rounded-lg shadow-md w-96 2xl:w-1/3 sm:px-0 px-3 transition-transform transform hover:scale-105">
+        <div className="rounded-lg shadow-md w-96 2xl:w-1/3 sm:px-0 px-3 transition-transform transform hover:scale-90">
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
