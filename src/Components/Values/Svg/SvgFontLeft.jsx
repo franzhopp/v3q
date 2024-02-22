@@ -1,7 +1,7 @@
 const SvgFontLeft = () => {
   return (
     <svg
-      data-aos="fade-up-left"
+      data-aos="wobble"
       className="relative bottom-12 left-0"
       xmlns="http://www.w3.org/2000/svg"
       width="100"

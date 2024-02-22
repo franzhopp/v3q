@@ -1,7 +1,7 @@
 const SvgStarPinkEnd = () => {
   return (
     <svg
-      className="animate-formbounce"
+      className="wobble"
       width="70"
       height="70"
       viewBox="0 0 192 193"

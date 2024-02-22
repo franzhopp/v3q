@@ -6,7 +6,7 @@ const SvgMoon = () => {
   const { isDarkMode } = useTheme();
   return (
     <img
-      className="animate-formbounce"
+      className="wobble"
       src={isDarkMode ? SvgMoonSun : SvgMoonDark}
     />
   );

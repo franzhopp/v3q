@@ -1,7 +1,7 @@
 const SvgMadeWithLove = () => {
   return (
     <svg
-      className="animate-formbounce"
+      className="wobble"
       width="95"
       height="64"
       viewBox="0 0 95 64"

@@ -2,7 +2,7 @@ const SvgSettings = () => {
   return (
     <div className="flex justify-center pt-16">
       <svg
-        className="animate-formbounce"
+        className="wobble"
         width="100"
         height="100"
         viewBox="0 0 100 100"
