@@ -138,7 +138,7 @@ const Rate = () => {
         <div className="w-96 sm:w-1/2">
           {InformationsSitesWeb.map((info) => (
             <div
-              className={`flex flex-col justify-center font-inter shadow-md transition-transform transform hover:scale-105 ${
+              className={`flex flex-col justify-center font-inter shadow-md ${
                 info.id % 2 === 0 ? Blue : e18ab0
               }`}
               key={info.id}
@@ -215,7 +215,7 @@ const Rate = () => {
         <div className="w-96 sm:w-1/2">
           {InformationsMarketing.map((info, index) => (
             <div
-              className={`flex flex-col justify-center font-inter shadow-md transition-transform transform hover:scale-105 ${
+              className={`flex flex-col justify-center font-inter shadow-md ${
                 index % 2 === 0 ? e18ab0 : Blue
               }`}
               key={index}
