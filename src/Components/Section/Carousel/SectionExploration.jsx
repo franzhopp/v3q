@@ -6,7 +6,7 @@ import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import Img0 from "../../../assets/Pays/Atonium.png";
 import Img1 from "../../../assets/Pays/Toulouse.png";
 import Img3 from "../../../assets/Pays/Bruges.png";
-import Img2 from "../../../assets/Pays/Bruxelles.png";
+// import Img2 from "../../../assets/Pays/Bruxelles.png";
 import Img4 from "../../../assets/Pays/Strasbourg.png";
 import Img5 from "../../../assets/Pays/Boston.png";
 import Img6 from "../../../assets/Pays/Espagne.png";
@@ -49,11 +49,11 @@ const SectionExploration = () => {
       title: "Atomium, 1020",
       country: "Belgique 🇧🇪",
     },
-    {
-      image: Img2,
-      title: "Bruxelles, 3000",
-      country: "Belgique 🇧🇪",
-    },
+    // {
+    //   image: Img2,
+    //   title: "Bruxelles, 3000",
+    //   country: "Belgique 🇧🇪",
+    // },
     {
       image: Img12,
       title: "Londres, SW1X 7LX",
