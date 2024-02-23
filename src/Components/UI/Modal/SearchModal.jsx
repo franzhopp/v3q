@@ -45,12 +45,12 @@ const ModalSearch = ({ closeModal, searchQuery }) => {
         onKeyDown={handleSearch}
         value={searchQueryText}
         onChange={(e) => setSearchQueryText(e.target.value)}
-        className="rounded-xl p-3 outline-none border border-1-c22e2e input-bordered input-primary mb-5 ml-3 mr-3 sm:mb-0 md:ml-0"
+        className="text-c22e2e rounded-xl p-3 outline-none border border-1-c22e2e input-bordered input-primary mb-5 ml-3 mr-3 sm:mb-0 md:ml-0"
       />
       <button onClick={handleSearch}>
         <ImCross
           onClick={() => closeModal(false)}
-          className={`mb-4 mr-4 sm:mb-0 hover:text-0c3e78 duration-500 transform active:scale-75 transition-transform ${
+          className={`mb-4 mr-6 sm:mb-0 hover:text-0c3e78 duration-500 transform active:scale-75 transition-transform animate-formbounce ${
             isDarkMode ? "text-c22e2e" : "text-fff6e4"
           }`}
         />
