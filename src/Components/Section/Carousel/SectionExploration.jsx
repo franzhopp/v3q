@@ -38,18 +38,18 @@ const SectionExploration = () => {
     },
     {
       image: Img7,
-      title: "Guadalajara, Jal",
+      title: "Guadalajara Jalisco, 44100",
       country: "Mexique 🇲🇽",
-    },
-    {
-      image: Img8,
-      title: "Toyko, 〒160-0022",
-      country: "Japon 🇯🇵",
     },
     {
       image: Img9,
       title: "Kuala Lumpur, 50088",
       country: "Malaisie 🇲🇾",
+    },
+    {
+      image: Img8,
+      title: "Toyko, 〒160-0022",
+      country: "Japon 🇯🇵",
     },
     // {
     //   image: Img10,
