@@ -1,7 +1,7 @@
 const SvgFontLeft = () => {
   return (
     <svg
-      className={`absolute top-14 lg:top-52 -left-0 Swing`}
+      className={`absolute top-10 lg:top-52 -left-0 Swing`}
       width="100"
       height="100"
       viewBox="0 0 215 219"

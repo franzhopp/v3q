@@ -44,7 +44,7 @@ const EthicsPage = () => {
         {/* Les 3 blocs */}
         <Blocs />
       </div>
-      <div className="flex justify-center pt-16">
+      <div className="flex justify-center">
         <div>
           <div className="flex justify-end">
             <SvgFontRight />

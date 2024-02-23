@@ -34,7 +34,7 @@ const BlocsItems = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-left" data-aos-duration="300">
+        <div data-aos="fade-right" data-aos-duration="300">
           <div className="BgCards bg-cover bg-no-repeat p-6 rounded-2xl shadow-2xl mb-5 transition-transform transform hover:scale-90">
             <p className="text-fff6e4 text-center text-xl font-extrabold mb-5">
               {translations[language].title2ServicesFr}
@@ -76,7 +76,7 @@ const BlocsItems = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-left" data-aos-duration="300">
+        <div data-aos="fade-right" data-aos-duration="300">
           <div className="bg-c22e2e p-6 rounded-2xl shadow-2xl mb-5 transition-transform transform hover:scale-90">
             <p className="text-fff6e4 text-center text-xl font-extrabold mb-5">
               {translations[language].title3ServicesFr}
