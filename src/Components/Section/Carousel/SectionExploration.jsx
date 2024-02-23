@@ -3,17 +3,17 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { useTheme } from "../../../context/ThemeProvider.jsx";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-import Img0 from "../../../assets/Pays/Atonium.png";
+// import Img0 from "../../../assets/Pays/Atonium.png";
 import Img1 from "../../../assets/Pays/Toulouse.png";
 import Img3 from "../../../assets/Pays/Bruges.png";
 // import Img2 from "../../../assets/Pays/Bruxelles.png";
-import Img4 from "../../../assets/Pays/Strasbourg.png";
+// import Img4 from "../../../assets/Pays/Strasbourg.png";
 import Img5 from "../../../assets/Pays/Boston.png";
 import Img6 from "../../../assets/Pays/Espagne.png";
-import Img7 from "../../../assets/Pays/Versailles.png";
-import Img10 from "../../../assets/Pays/Floride.png";
-import Img12 from "../../../assets/Pays/LondonUk.png";
-import Img13 from "../../../assets/Pays/Nantes.png";
+// import Img7 from "../../../assets/Pays/Versailles.png";
+// import Img10 from "../../../assets/Pays/Floride.png";
+// import Img12 from "../../../assets/Pays/LondonUk.png";
+// import Img13 from "../../../assets/Pays/Nantes.png";
 
 const SectionExploration = () => {
   const { isDarkMode } = useTheme();
@@ -54,11 +54,11 @@ const SectionExploration = () => {
     //   title: "Bruxelles, 3000",
     //   country: "Belgique 🇧🇪",
     // },
-    {
-      image: Img12,
-      title: "Londres, SW1X 7LX",
-      country: "Royaume-Uni 🇬🇧",
-    },
+    // {
+    //   image: Img12,
+    //   title: "Londres, SW1X 7LX",
+    //   country: "Royaume-Uni 🇬🇧",
+    // },
     {
       image: Img6,
       title: "Barcelone, 08001",
