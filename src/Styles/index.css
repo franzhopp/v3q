@@ -191,7 +191,7 @@ textarea {
 .AnimationScrolling:first-child {
     padding-right: 2em;
     padding-left: 100%;
-    animation: scrolling-rtl 20s infinite linear;
+    animation: ScrollingRtl 20s infinite linear;
 }
 
 .Swing {
@@ -268,7 +268,7 @@ textarea {
     }
 }
 
-@keyframes scrolling-rtl {
+@keyframes ScrollingRtl {
     0% {
         transform: translate3d(0, 0, 0);
     }

@@ -124,7 +124,7 @@ const NavbarMobile = () => {
       {/* LINKS */}
       <ul className={`p-5 FadeInDelayDesktop ${isOpen ? "block" : "hidden"}`}>
         <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
-          <NavLink className="text-lg block px-3 py-2 border-c22e2e border-b-2 rounded-md font-extrabold">
+          <NavLink className="text-md block px-3 py-2 border-c22e2e border-b-2 rounded-md font-extrabold">
             <button onClick={toggleSousListsAgence}>
               <div className="flex items-center justify-between">
                 <div className="pr-2">
@@ -143,7 +143,7 @@ const NavbarMobile = () => {
                   <li className="font-extrabold">
                     <NavLink
                       to="/"
-                      className="text-lg block border-c22e2e border-b-2 hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
+                      className="text-md block border-c22e2e border-b-2 hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                     >
                       {translations[language].navSousHomeFr}
                       {translations[language].navSousHomeEn}
@@ -152,7 +152,7 @@ const NavbarMobile = () => {
                   <li>
                     <NavLink
                       to="/values"
-                      className="text-lg block hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
+                      className="text-md block hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                     >
                       {translations[language].navSousValuesFr}
                       {translations[language].navSousValuesEn}
@@ -161,7 +161,7 @@ const NavbarMobile = () => {
                 </ul>
               </li>
               <li>
-                <NavLink className="text-lg block py-2 rounded-md font-extrabold">
+                <NavLink className="text-md block py-2 rounded-md font-extrabold">
                   <button onClick={toggleSousListsFiveMenu}>
                     <div className="flex items-center justify-between">
                       <div className="pr-2">
@@ -180,7 +180,7 @@ const NavbarMobile = () => {
                     <li className="font-extrabold">
                       <NavLink
                         to="/designer"
-                        className="text-lg block border-c22e2e border-b-2 hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
+                        className="text-md block border-c22e2e border-b-2 hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                       >
                         Designer
                       </NavLink>
@@ -188,7 +188,7 @@ const NavbarMobile = () => {
                     <li className="font-extrabold">
                       <NavLink
                         to="/developer"
-                        className="text-lg block rounded-md hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
+                        className="text-md block rounded-md hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                       >
                         Web Developer
                       </NavLink>
@@ -200,7 +200,7 @@ const NavbarMobile = () => {
           </NavLink>
         </li>
         <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
-          <NavLink className="text-lg block px-3 py-2 border-c22e2e border-b-2 rounded-md font-extrabold">
+          <NavLink className="text-md block px-3 py-2 border-c22e2e border-b-2 rounded-md font-extrabold">
             <button onClick={toggleSousListsMenu}>
               <div className="flex items-center justify-between">
                 <div className="pr-2">
@@ -219,7 +219,7 @@ const NavbarMobile = () => {
               <li>
                 <NavLink
                   to="/services"
-                  className="text-lg block border-c22e2e border-b-2 hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
+                  className="text-md block border-c22e2e border-b-2 hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                 >
                   {translations[language].navSousServicesFr}
                   {translations[language].navSousServicesEn}
@@ -229,7 +229,7 @@ const NavbarMobile = () => {
                 <li>
                   <button onClick={toggleSousListsRate}>
                     <div className="flex items-center justify-between">
-                      <div className="text-lg block hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold pr-2">
+                      <div className="text-md block hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold pr-2">
                         {translations[language].navSousPricingFr}
                         {translations[language].navSousPricingEn}
                       </div>
@@ -245,7 +245,7 @@ const NavbarMobile = () => {
                     <li className="font-extrabold">
                       <NavLink
                         to="/pricingfr"
-                        className="text-lg block border-c22e2e border-b-2 hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
+                        className="text-md block border-c22e2e border-b-2 hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                       >
                         {translations[language].navSousPricingFr}
                         {translations[language].navSousPricingEn} FR
@@ -254,7 +254,7 @@ const NavbarMobile = () => {
                     <li className="font-extrabold">
                       <NavLink
                         to="/pricinguk"
-                        className="text-lg block rounded-md hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
+                        className="text-md block rounded-md hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                       >
                         {translations[language].navSousPricingFr}
                         {translations[language].navSousPricingEn} UK
@@ -266,7 +266,7 @@ const NavbarMobile = () => {
               <li>
                 <NavLink
                   to="/quote"
-                  className="text-lg block hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
+                  className="text-md block hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                 >
                   {translations[language].navSousFreeFr}
                   {translations[language].navSousFreeEn}
@@ -278,7 +278,7 @@ const NavbarMobile = () => {
         <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
           <NavLink
             to="/portfolio"
-            className="text-lg block px-3 py-2 border-c22e2e border-b-2 rounded-md font-extrabold hover:text-0c3e78 transition duration-500"
+            className="text-md block px-3 py-2 border-c22e2e border-b-2 rounded-md font-extrabold hover:text-0c3e78 transition duration-500"
           >
             Portfolio
           </NavLink>
@@ -287,14 +287,14 @@ const NavbarMobile = () => {
           <NavLink
             to="/"
             onClick={SectionToSectionContact}
-            className="text-lg block px-3 py-2 border-c22e2e border-b-2 rounded-md font-extrabold hover:text-0c3e78 transition duration-500"
+            className="text-md block px-3 py-2 border-c22e2e border-b-2 rounded-md font-extrabold hover:text-0c3e78 transition duration-500"
           >
             Contact
           </NavLink>
         </li>
         {/* SELECT TRAD */}
         <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"} `}>
-          <div className="text-lg block px-2 py-2 border-c22e2e border-b-2 rounded-md font-extrabold">
+          <div className="text-md block px-2 py-2 border-c22e2e border-b-2 rounded-md font-extrabold">
             <select
               className={`${isDarkMode ? "bg-fff6e4" : "bg-061628"}`}
               value={language}
@@ -323,7 +323,7 @@ const NavbarMobile = () => {
             }`}
           >
             <FaSearch
-              className="h-10 w-6 mr-5"
+              className="h-10 w-5 mr-5"
               onClick={() => {
                 setOpenModel(true);
               }}

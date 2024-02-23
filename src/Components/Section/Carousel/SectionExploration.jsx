@@ -3,17 +3,14 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { useTheme } from "../../../context/ThemeProvider.jsx";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-// import Img0 from "../../../assets/Pays/Atonium.png";
 import Img1 from "../../../assets/Pays/Toulouse.png";
 import Img3 from "../../../assets/Pays/Bruges.png";
-// import Img2 from "../../../assets/Pays/Bruxelles.png";
-// import Img4 from "../../../assets/Pays/Strasbourg.png";
 import Img5 from "../../../assets/Pays/Boston.png";
 import Img6 from "../../../assets/Pays/Espagne.png";
-// import Img7 from "../../../assets/Pays/Versailles.png";
-// import Img10 from "../../../assets/Pays/Floride.png";
-// import Img12 from "../../../assets/Pays/LondonUk.png";
-// import Img13 from "../../../assets/Pays/Nantes.png";
+import Img7 from "../../../assets/Pays/Mexique.png";
+import Img8 from "../../../assets/Pays/Japon.png";
+import Img9 from "../../../assets/Pays/Malaisie.png";
+// import Img10 from "../../../assets/Pays/Laos.png";
 
 const SectionExploration = () => {
   const { isDarkMode } = useTheme();
@@ -24,56 +21,41 @@ const SectionExploration = () => {
       title: "Toulouse, 31000",
       country: "France 🇫🇷",
     },
-    // {
-    //   image: Img4,
-    //   title: "Strasbourg, 67000",
-    //   country: "France 🇫🇷",
-    // },
-    // {
-    //   image: Img7,
-    //   title: "Versailles, 78646",
-    //   country: "France 🇫🇷",
-    // },
-    // {
-    //   image: Img13,
-    //   title: "Nantes, 44000",
-    //   country: "France 🇫🇷",
-    // },
     {
       image: Img3,
       title: "Bruges, 8000",
       country: "Belgique 🇧🇪",
     },
-    // {
-    //   image: Img0,
-    //   title: "Atomium, 1020",
-    //   country: "Belgique 🇧🇪",
-    // },
-    // {
-    //   image: Img2,
-    //   title: "Bruxelles, 3000",
-    //   country: "Belgique 🇧🇪",
-    // },
-    // {
-    //   image: Img12,
-    //   title: "Londres, SW1X 7LX",
-    //   country: "Royaume-Uni 🇬🇧",
-    // },
     {
       image: Img6,
       title: "Barcelone, 08001",
       country: "Espagne 🇪🇸",
     },
-    // {
-    //   image: Img10,
-    //   title: "Atlantic Beach, 32233",
-    //   country: "États-Unis 🇺🇸",
-    // },
     {
       image: Img5,
       title: "Boston Massachusetts, 02186",
       country: "États-Unis 🇺🇸",
     },
+    {
+      image: Img7,
+      title: "Guadalajara, Jal",
+      country: "Mexique 🇲🇽",
+    },
+    {
+      image: Img8,
+      title: "Toyko, 〒160-0022",
+      country: "Japon 🇯🇵",
+    },
+    {
+      image: Img9,
+      title: "Kuala Lumpur, 50088",
+      country: "Malaisie 🇲🇾",
+    },
+    // {
+    //   image: Img10,
+    //   title: "Loas, 99241",
+    //   country: "Malaisie 🇲🇾",
+    // },
   ];
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
