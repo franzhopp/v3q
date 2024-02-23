@@ -4,7 +4,7 @@ import SvgMoonDark from "../../../../assets/Svg/SvgMoonDark.svg";
 
 const SvgMoon = () => {
   const { isDarkMode } = useTheme();
-  return <img className="swing" src={isDarkMode ? SvgMoonSun : SvgMoonDark} />;
+  return <img className="Swing" src={isDarkMode ? SvgMoonSun : SvgMoonDark} />;
 };
 
 export default SvgMoon;

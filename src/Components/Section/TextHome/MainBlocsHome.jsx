@@ -13,12 +13,14 @@ const BlocsItemsHome = () => {
     <>
       <div className="py-3 bg-fff6e4 border-b-4 border-c22e2e">
         <div
-          className={`flex justify-center text-center font-extrabold px-10 text-lg lg:text-2xl tracking-tight ${
+          className={`font-extrabold px-10 text-lg lg:text-2xl tracking-tight inline-block whitespace-nowrap AnimationScrolling ${
             isDarkMode ? "text-black" : "text-fff6e4"
           }`}
         >
-          {translations[language].scrollingTextFr}
-          {translations[language].scrollingTextEn}
+          <span className={`transform active:scale-75 transition-transform`}>
+            {translations[language].scrollingTextFr}
+            {translations[language].scrollingTextEn}
+          </span>
         </div>
       </div>
       <div className="bg-fff6e4 pt-24">
