@@ -31,35 +31,54 @@ const Portfolio = () => {
     );
   };
   return (
-    <section x-comp={`Portfolio`} className={`bg-fff6e4`}>
-      <NavbarPages />
-      <TitlePorfolio />
-      {/* Title */}
-      <div
-        x-comp={`TitlePortfolio`}
-        className={`flex justify-start px-32 py-10`}
-      >
-        <h1 className={`text-c22e2e text-2xl lg:text-5xl font-extrabold`}>
-          Latest Projects
-        </h1>
-        <div className={`pt-1 px-2`}>
-          <SvgStarPink />
-        </div>
-      </div>
-      <div className={`flex`}>
-        <div className={`bg-gray-700 h-96 w-full`}>
-          <div className="flex flex-wrap ">
-            <div className={`bg-slate-300 h-96 w-1/2`}></div>
-            <div className={`bg-slate-500 h-96 w-1/2`}></div>
+    <>
+      <section x-comp={`Portfolio`} className={`bg-fff6e4`}>
+        <NavbarPages />
+        <TitlePorfolio />
+        {/* Title */}
+        <div>
+          <div
+            x-comp={`TitlePortfolio`}
+            className={`flex justify-center lg:justify-start px-10 lg:px-32 py-10`}
+          >
+            <h1 className={`text-c22e2e text-2xl lg:text-5xl font-extrabold`}>
+              Latest Projects
+            </h1>
+            <div className={`pt-1 px-2`}>
+              <SvgStarPink />
+            </div>
           </div>
         </div>
-      </div>
-      <div className={`flex justify-center py-10`}>
-        <SvgHeart />
-      </div>
-      <BackToTopButton />
+        <div className={`h-screen`}>
+          <div class={`flex justify-center`}>
+            <div class={`h-96 w-full`}>
+              <div class={`flex flex-wrap justify-center`}>
+                <div class={`bg-slate-300 h-96 w-full lg:w-1/2`}>
+                  {/* Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam
+              mollitia nihil temporibus eius magni sit id, fuga voluptatibus
+              vero, itaque illo. Ad cum, voluptate voluptatum voluptas sint
+              error totam nobis! */}
+                </div>
+                <div class={`bg-slate-500 h-96 w-full lg:w-1/2`}>
+                  {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+              aperiam officiis, quae saepe voluptates perferendis repellat
+              voluptatibus dicta facere velit illum veritatis, sit nostrum! Odit
+              ipsa corrupti pariatur ut totam. */}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <div className="flex justify-start">
+          <SvgLine />
+        </div> */}
+        <BackToTopButton />
+        <div className={`flex justify-center py-20`}>
+          <SvgHeart />
+        </div>
+      </section>
       <Footer />
-    </section>
+    </>
   );
 };
 

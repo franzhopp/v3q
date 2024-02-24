@@ -87,7 +87,6 @@ const DiscoverDesigner = () => {
       <div className="flex justify-end relative">
         <SvgItemRight />
       </div>
-
       <div className="bg-fff6e4 flex justify-center pt-56">
         <Logo />
       </div>
