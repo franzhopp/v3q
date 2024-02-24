@@ -71,6 +71,10 @@ textarea {
     font-size: 8px;
 }
 
+.test {
+    border-radius: 30px;
+}
+
 .FontNumber {
     font-family: 'Aoboshi One', serif;
 }

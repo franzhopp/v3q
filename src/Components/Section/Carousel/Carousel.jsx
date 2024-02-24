@@ -26,13 +26,13 @@ export default function Carousel({
       <div
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
-        className="bg-black border-c22e2e border-4 p-2 rounded-3xl flex justify-center w-96 3xl:w-1/2"
+        className="bg-black border-c22e2e border-4 test p-2 flex justify-center w-96 3xl:w-1/2"
       >
-        <div className={`h-1/2 overflow-hidden  rounded-3xl shadow-2xl`}>
+        <div className={`h-1/2 test overflow-hidden shadow-2xl`}>
           <div className="flex justify-center">
             <NavLink to="https://www.instagram.com/navistudio.fr/">
               <div
-                className={`flex rounded-3xl transition-transform ease-out duration-500`}
+                className={`flex transition-transform ease-out duration-500`}
                 style={{ transform: `translateX(-${curr * 100}%)` }}
               >
                 {cards}

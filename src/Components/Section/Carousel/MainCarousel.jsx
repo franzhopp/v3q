@@ -50,7 +50,7 @@ export default function MainCarousel() {
     <div className={`flex justify-center py-32`}>
       <Carousel autoSlide={true} autoSlideInterval={1000}>
         {cards.map((cards, index) => (
-          <img key={index} src={cards.image} className={`rounded-3xl`} />
+          <img key={index} src={cards.image} className="test" />
         ))}
       </Carousel>
     </div>
