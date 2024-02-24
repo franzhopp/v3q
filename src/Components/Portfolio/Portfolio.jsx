@@ -31,6 +31,27 @@ const Portfolio = () => {
       content:
         "This is a short text describing your project and use these few words to catch the customer's attention. 2",
     },
+    {
+      image: ImgDefault,
+      title: "Project title 3 -",
+      subtitle: "Project short description 3",
+      content:
+        "This is a short text describing your project and use these few words to catch the customer's attention. 3",
+    },
+    {
+      image: ImgDefault,
+      title: "Project title 4 -",
+      subtitle: "Project short description 4",
+      content:
+        "This is a short text describing your project and use these few words to catch the customer's attention. 4",
+    },
+    {
+      image: ImgDefault,
+      title: "Project title 5 -",
+      subtitle: "Project short description 5",
+      content:
+        "This is a short text describing your project and use these few words to catch the customer's attention. 5",
+    },
   ];
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
@@ -76,15 +97,15 @@ const Portfolio = () => {
                 />
               </div>
             </div>
-            <div class={`bg-slate-500 py-28 px-20 h-96 w-full lg:w-1/2`}>
-              <h1 className="text-black text-xl lg:text-4xl text-left font-extrabold">
+            <div class={`bg-slate-500 py-24 px-20 h-96 w-full lg:w-1/2`}>
+              <h1 className="text-black text-2xl lg:text-4xl text-left font-extrabold">
                 {cards[currentIndex].title}
               </h1>
-              <h2 className="text-black text-xl lg:text-4xl text-left font-extrabold">
+              <h2 className="text-black text-2xl lg:text-4xl text-left font-extrabold">
                 {cards[currentIndex].subtitle}
               </h2>
               <p
-                className={`text-black text-xl lg:text-2xl text-left font-extrabold`}
+                className={`text-black text-xl lg:text-2xl text-left font-extrabold py-5`}
               >
                 {cards[currentIndex].content}
               </p>
@@ -94,8 +115,8 @@ const Portfolio = () => {
         <div x-comp={`BtnDisplayPrevNext`} className={`pt-10`}>
           <div className={`flex justify-center items-center gap-2`}>
             <button
-              className="bg-black text-fff6e4 p-3 rounded-full mr-3 transform active:scale-75 transition-transform"
-              onClick={handleNext}
+              className="bg-black text-fff6e4 p-3 shadow-lg rounded-full mr-3 transform active:scale-75 transition-transform"
+              onClick={handlePrev}
             >
               <FaArrowLeft className="h-6 w-6" />
             </button>
@@ -107,22 +128,56 @@ const Portfolio = () => {
               />
             ))}
             <button
-              className="bg-black text-fff6e4 p-3 rounded-full ml-3 transform active:scale-75 transition-transform"
-              onClick={handlePrev}
+              className="bg-black text-fff6e4 p-3 shadow-lg rounded-full ml-3 transform active:scale-75 transition-transform"
+              onClick={handleNext}
             >
               <FaArrowRight className="h-6 w-6" />
             </button>
           </div>
         </div>
-
-        <div x-comp={`SubTitlePortfolio`} className={`flex justify-center`}>
-          <h1
-            className={`text-c22e2e text-2xl lg:text-4xl font-extrabold py-20`}
+        <div className="flex justify-center">
+          <div
+            x-comp={`SubTitlePortfolio`}
+            className={`flex flex-col text-center pt-28`}
           >
-            Wanna see some more ?
-          </h1>
+            <h1
+              className={`text-c22e2e text-2xl lg:text-4xl font-extrabold pb-5`}
+            >
+              Wanna see some more ?
+            </h1>
+            <p className={`text-c22e2e text-2xl lg:text-4xl font-extrabold`}>
+              Check out our personal portfolios
+            </p>
+          </div>
         </div>
-
+        <div
+          class={`flex flex-wrap justify-center space-x-0 sm:space-x-6 py-20`}
+        >
+          <div className="bg-slate-500 p-6 rounded-lg shadow-md transition-transform transform hover:scale-90">
+            <div className="w-72 mt-5">
+              <p data-aos="fade-up" data-aos-anchor-placement="top-bottom"></p>
+            </div>
+          </div>
+          <div className="bg-slate-500 p-6 rounded-lg shadow-md transition-transform transform hover:scale-90">
+            <div className="w-72 mt-5">
+              <p data-aos="fade-up" data-aos-anchor-placement="top-bottom"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class={`flex flex-wrap justify-center space-x-0 sm:space-x-6 py-20`}
+        >
+          <div className="bg-slate-500 p-6 rounded-lg shadow-md transition-transform transform hover:scale-90">
+            <div className="w-72 mt-5">
+              <p data-aos="fade-up" data-aos-anchor-placement="top-bottom"></p>
+            </div>
+          </div>
+          <div className="bg-slate-500 p-6 rounded-lg shadow-md transition-transform transform hover:scale-90">
+            <div className="w-72 mt-5">
+              <p data-aos="fade-up" data-aos-anchor-placement="top-bottom"></p>
+            </div>
+          </div>
+        </div>
         <BackToTopButton />
         <div className={`flex justify-center py-20`}>
           <SvgHeart />

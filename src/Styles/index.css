@@ -117,14 +117,14 @@ textarea {
 }
 
 .BgTitleQuote {
-    border-radius: 0px 0px 182px 0px;
+    border-radius: 0px 0px 154px 0px;
     background: url("../assets/Background/BgQuote.png"), lightgray;
     animation: FadeIn 0.5s ease-in-out;
 }
 
 .BgTitlePortfolio {
-    border-radius: 0px 0px 182px 0px;
-    background: url("../assets/Picture/PicturePortfolio.png"), lightgray;
+    border-radius: 0px 0px 154px 0px;
+    background-image: url("../assets/Picture/PicturePortfolio.png");
     animation: FadeIn 0.5s ease-in-out;
 }
 
@@ -135,13 +135,13 @@ textarea {
 }
 
 .BgTitlePricingUk {
-    border-radius: 0px 0px 182px 0px;
+    border-radius: 0px 0px 154px 0px;
     background: lightgray;
     animation: FadeIn 0.5s ease-in-out;
 }
 
 .BgTitleContact {
-    border-radius: 0px 0px 0px 181px;
+    border-radius: 0px 0px 154px 0px;
     background: url("../assets/Background/BgTitleContact.png"), lightgray;
 }
 
