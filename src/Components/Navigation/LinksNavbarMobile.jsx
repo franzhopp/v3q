@@ -113,7 +113,7 @@ const LinksNavbarMobile = () => {
       </div>
       <ul className={`p-5 FadeInDelayDesktop ${isOpen ? "block" : "hidden"}`}>
         <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
-          <NavLink className="text-md block px-3 py-2 border-c22e2e border-b-2 rounded-md font-extrabold">
+          <NavLink className="text-lg block px-3 py-2 border-c22e2e border-b-2 rounded-md font-extrabold">
             <button onClick={toggleSousListsAgence}>
               <div className="flex items-center justify-between">
                 <div className="pr-2">
@@ -132,7 +132,7 @@ const LinksNavbarMobile = () => {
                   <li className="font-extrabold">
                     <NavLink
                       to="/"
-                      className="text-md block border-c22e2e border-b-2 hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
+                      className="text-lg block border-c22e2e border-b-2 hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                     >
                       {translations[language].navSousHomeFr}
                       {translations[language].navSousHomeEn}
@@ -141,7 +141,7 @@ const LinksNavbarMobile = () => {
                   <li>
                     <NavLink
                       to="/values"
-                      className="text-md block border-c22e2e border-b-2 hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
+                      className="text-lg block border-c22e2e border-b-2 hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                     >
                       {translations[language].navSousValuesFr}
                       {translations[language].navSousValuesEn}
@@ -150,7 +150,7 @@ const LinksNavbarMobile = () => {
                 </ul>
               </li>
               <li>
-                <NavLink className="text-md block py-2 rounded-md font-extrabold">
+                <NavLink className="text-lg block py-2 rounded-md font-extrabold">
                   <button onClick={toggleSousListsFiveMenu}>
                     <div className="flex items-center justify-between">
                       <div className="pr-2">
@@ -170,7 +170,7 @@ const LinksNavbarMobile = () => {
                     <li className="font-extrabold">
                       <NavLink
                         to="/designer"
-                        className="text-md block border-c22e2e border-b-2 hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
+                        className="text-lg block border-c22e2e border-b-2 hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                       >
                         Designer
                       </NavLink>
@@ -178,7 +178,7 @@ const LinksNavbarMobile = () => {
                     <li className="font-extrabold">
                       <NavLink
                         to="/developer"
-                        className="text-md block rounded-md hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
+                        className="text-lg block rounded-md hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                       >
                         Web Developer
                       </NavLink>
@@ -190,7 +190,7 @@ const LinksNavbarMobile = () => {
           </NavLink>
         </li>
         <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
-          <NavLink className="text-md block px-3 py-2 border-c22e2e border-b-2 rounded-md font-extrabold">
+          <NavLink className="text-lg block px-3 py-2 border-c22e2e border-b-2 rounded-md font-extrabold">
             <button onClick={toggleSousListsMenu}>
               <div className="flex items-center justify-between">
                 <div className="pr-2">
@@ -209,7 +209,7 @@ const LinksNavbarMobile = () => {
               <li>
                 <NavLink
                   to="/services"
-                  className="text-md block border-c22e2e border-b-2 hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
+                  className="text-lg block border-c22e2e border-b-2 hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                 >
                   {translations[language].navSousServicesFr}
                   {translations[language].navSousServicesEn}
@@ -219,7 +219,7 @@ const LinksNavbarMobile = () => {
                 <li>
                   <button onClick={toggleSousListsRate}>
                     <div className="flex items-center justify-between">
-                      <div className="text-md block hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold pr-2">
+                      <div className="text-lg block hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold pr-2">
                         {translations[language].navSousPricingFr}
                         {translations[language].navSousPricingEn}
                       </div>
@@ -235,7 +235,7 @@ const LinksNavbarMobile = () => {
                     <li className="font-extrabold">
                       <NavLink
                         to="/pricingfr"
-                        className="text-md block border-c22e2e border-b-2 hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
+                        className="text-lg block border-c22e2e border-b-2 hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                       >
                         {translations[language].navSousPricingFr}
                         {translations[language].navSousPricingEn} FR
@@ -244,7 +244,7 @@ const LinksNavbarMobile = () => {
                     <li className="font-extrabold">
                       <NavLink
                         to="/pricinguk"
-                        className="text-md block rounded-md hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
+                        className="text-lg block rounded-md hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                       >
                         {translations[language].navSousPricingFr}
                         {translations[language].navSousPricingEn} UK
@@ -256,7 +256,7 @@ const LinksNavbarMobile = () => {
               <li>
                 <NavLink
                   to="/quote"
-                  className="text-md block hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
+                  className="text-lg block hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold"
                 >
                   {translations[language].navSousFreeFr}
                   {translations[language].navSousFreeEn}
@@ -268,7 +268,7 @@ const LinksNavbarMobile = () => {
         <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
           <NavLink
             to="/portfolio"
-            className="text-md block px-3 py-2 border-c22e2e border-b-2 rounded-md font-extrabold hover:text-0c3e78 transition duration-500"
+            className="text-lg block px-3 py-2 border-c22e2e border-b-2 rounded-md font-extrabold hover:text-0c3e78 transition duration-500"
           >
             Portfolio
           </NavLink>
@@ -276,14 +276,14 @@ const LinksNavbarMobile = () => {
         <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
           <NavLink
             to="/"
-            className="text-md block px-3 py-2 border-c22e2e border-b-2 rounded-md font-extrabold hover:text-0c3e78 transition duration-500"
+            className="text-lg block px-3 py-2 border-c22e2e border-b-2 rounded-md font-extrabold hover:text-0c3e78 transition duration-500"
           >
             Contact
           </NavLink>
         </li>
         {/* SELECT TRAD */}
         <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
-          <div className="text-md block px-2 py-2 border-c22e2e border-b-2 rounded-md font-extrabold">
+          <div className="text-lg block px-2 py-2 border-c22e2e border-b-2 rounded-md font-extrabold">
             <select
               className={`${isDarkMode ? "bg-fff6e4" : "bg-061628"}`}
               value={language}
