@@ -130,7 +130,11 @@ const Rate = () => {
         </div>
       </div>
       {/* ARRAY 1 */}
-      <div className="flex justify-center">
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        className="flex justify-center"
+      >
         <div className="w-96 sm:w-1/2">
           {InformationsSitesWeb.map((info) => (
             <div
@@ -162,7 +166,7 @@ const Rate = () => {
                     </div>
                   </button>
                   {openStates[info.title] && (
-                    <ul className="mt-3 font-arial">
+                    <ul className="text-md mt-3 font-arial">
                       {info.details.map((detail, detailIndex) => (
                         <li
                           data-aos="fade-left"
@@ -173,7 +177,7 @@ const Rate = () => {
                         </li>
                       ))}
                       <div className="flex justify-start">
-                        <ul className="text-fff6e4  mt-3 mb-3 text-sm px-10 sm:text-left text-justify">
+                        <ul className="text-fff6e4 text-md mt-3 mb-3  px-10 sm:text-left text-justify">
                           <p className="FontNumber mb-2">
                             Detailed informations :
                           </p>
@@ -191,7 +195,7 @@ const Rate = () => {
                       </div>
                       <NavLink
                         to="/quote"
-                        className="pt-5 font-extrabold FontNumber underline"
+                        className="text-md pt-5 font-extrabold FontNumber underline"
                       >
                         Request a free quote
                       </NavLink>
@@ -206,7 +210,11 @@ const Rate = () => {
       <SvgStarUk />
       <TitleMarketingUk />
       {/* ARRAY 2 */}
-      <div className="flex justify-center">
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        className="flex justify-center"
+      >
         <div className="w-96 sm:w-1/2">
           {InformationsMarketing.map((info, index) => (
             <div

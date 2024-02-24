@@ -18,6 +18,8 @@ import SvgItemRight from "./Svg/SvgItemRight.jsx";
 import LinksNetwork from "./Network/LinksNetwork.jsx";
 import Footer from "../../Footer/MainFooter.jsx";
 import BackToTopButton from "../../UI/ScrollToTop/BackToTopButton.jsx";
+import SvgLine from "../../Portfolio/Svg/SvgLine.jsx";
+import SvgLineRight from "./Svg/SvgLineRight.jsx";
 
 const DiscoverDesigner = () => {
   return (
@@ -74,17 +76,24 @@ const DiscoverDesigner = () => {
         <SvgIllustration />
       </div>
       <div className="flex justify-start relative">
+        <SvgLine />
+      </div>
+      <div className="flex justify-start relative">
+        <SvgLineRight />
+      </div>
+      <div className="flex justify-start relative">
         <SvgItemLeft />
       </div>
       <div className="flex justify-end relative">
         <SvgItemRight />
       </div>
+
       <div className="bg-fff6e4 flex justify-center pt-56">
         <Logo />
       </div>
       <BackToTopButton />
       <div className="bg-fff6e4 pt-10 flex flex-wrap justify-center pb-20 space-x-0 sm:space-x-10">
-        <div className="flex flex-row space-x-10 list-none mt-20 p-6">
+        <div className="flex flex-row space-x-10 list-none mt-20 p-6 px-10">
           <LinksNetwork />
         </div>
       </div>
