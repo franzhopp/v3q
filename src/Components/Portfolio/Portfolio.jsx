@@ -84,12 +84,7 @@ const Portfolio = () => {
             className={`absolute py-3 lg:flex hidden `}
           />
         </div>
-        <div className={`flex justify-center relative`}>
-          <img
-            src={ImgPatternNavi}
-            className={`absolute top-48 py-3 rotate-90 lg:hidden flex`}
-          />
-        </div>
+
         <div className={``}>
           <div class={`flex flex-wrap`}>
             <div
@@ -104,6 +99,12 @@ const Portfolio = () => {
               </div>
             </div>
             <div class={`bg-slate-500 py-20 px-20 h-96 w-full lg:w-1/2`}>
+              <div className={`flex justify-center relative`}>
+                <img
+                  src={ImgPatternNavi}
+                  className={`absolute -bottom-28 py-3 rotate-90 lg:hidden flex`}
+                />
+              </div>
               <h1 className="text-black text-2xl lg:text-4xl text-left font-extrabold">
                 {cards[currentIndex].title}
               </h1>
