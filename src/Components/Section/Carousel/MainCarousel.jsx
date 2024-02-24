@@ -4,7 +4,7 @@ import Img1 from "../../../assets/Pays/Toulouse.png";
 import Img3 from "../../../assets/Pays/Bruges.png";
 import Img5 from "../../../assets/Pays/Boston.png";
 import Img6 from "../../../assets/Pays/Espagne.png";
-import Img7 from "../../../assets/Pays/Mexique.png";
+// import Img7 from "../../../assets/Pays/Mexique.png";
 import Img8 from "../../../assets/Pays/Japon.png";
 import Img9 from "../../../assets/Pays/Malaisie.png";
 
@@ -34,11 +34,11 @@ const cards = [
     title: "Boston Massachusetts, 02186",
     country: "États-Unis 🇺🇸",
   },
-  {
-    image: Img7,
-    title: "Guadalajara Jalisco, 44100",
-    country: "Mexique 🇲🇽",
-  },
+  // {
+  //   image: Img7,
+  //   title: "Guadalajara Jalisco, 44100",
+  //   country: "Mexique 🇲🇽",
+  // },
   {
     image: Img9,
     title: "Kuala Lumpur, 50088",
@@ -61,9 +61,9 @@ export default function MainCarousel() {
               key={index}
               src={cards.image}
               alt={cards.title}
-              className="rounded-3xl"
+              className={`rounded-3xl`}
             />
-            <div className={`pt-2 relative`}>
+            <div className={`pt-1 relative`}>
               <svg
                 className={`absolute left-32`}
                 width="110"

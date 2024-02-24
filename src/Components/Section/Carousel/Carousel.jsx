@@ -8,7 +8,6 @@ export default function Carousel({
   autoSlide = false,
   autoSlideInterval = 3000,
 }) {
-
   const { isDarkMode } = useTheme();
 
   const [curr, setCurr] = useState(0);
@@ -34,14 +33,14 @@ export default function Carousel({
         data-aos-anchor-placement="top-bottom"
         className="bg-black border-c22e2e border-4 p-2 rounded-3xl flex justify-center w-96 3xl:w-1/2"
       >
-        <div className={`h-1/2 overflow-hidden shadow-2xl rounded-3xl`}>
+        <div className={`h-1/2 overflow-hidden shadow-2xl`}>
           <div className="flex justify-center">
             <NavLink to="https://www.instagram.com/navistudio.fr/">
               <div
                 className={`flex transition-transform ease-out duration-500`}
                 style={{ transform: `translateX(-${curr * 100}%)` }}
               >
-                <div className={`pt-2 relative`}>
+                <div className={`pt-1 relative`}>
                   <svg
                     className={`absolute left-32`}
                     width="110"
