@@ -8,38 +8,43 @@ export default function Carousel({
   autoSlide = false,
   autoSlideInterval = 3000,
 }) {
+
   const { isDarkMode } = useTheme();
+
   const [curr, setCurr] = useState(0);
+
   const handleNext = () => {
     setCurr((curr) => (curr === 0 ? cards.length - 1 : curr - 1));
   };
+
   const handlePrev = () => {
     setCurr((curr) => (curr === cards.length - 1 ? 0 : curr + 1));
   };
+
   useEffect(() => {
     if (!autoSlide) return;
     const slideInterval = setInterval(handleNext, autoSlideInterval);
     return () => clearInterval(slideInterval);
   });
+
   return (
     <div>
       <div
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
-        className="bg-black border-c22e2e border-4 test p-2 flex justify-center w-96 3xl:w-1/2"
+        className="bg-black border-c22e2e border-4 p-2 rounded-3xl flex justify-center w-96 3xl:w-1/2"
       >
-        <div className={`h-1/2 test overflow-hidden shadow-2xl`}>
+        <div className={`h-1/2 overflow-hidden shadow-2xl rounded-3xl`}>
           <div className="flex justify-center">
             <NavLink to="https://www.instagram.com/navistudio.fr/">
               <div
                 className={`flex transition-transform ease-out duration-500`}
                 style={{ transform: `translateX(-${curr * 100}%)` }}
               >
-                {cards}
-                {/* <div className={`relative`}>
+                <div className={`pt-2 relative`}>
                   <svg
-                    className={` absolute top-10`}
-                    width="90"
+                    className={`absolute left-32`}
+                    width="110"
                     height="60"
                     viewBox="0 0 64 21"
                     fill="none"
@@ -47,7 +52,8 @@ export default function Carousel({
                   >
                     <rect width="64" height="21" rx="10.5" fill="black" />
                   </svg>
-                </div> */}
+                </div>
+                {cards}
               </div>
             </NavLink>
           </div>
@@ -76,17 +82,6 @@ export default function Carousel({
           </button>
         </div>
       </div>
-      {/* <p
-        className={`font-arial tracking-tighter mt-6 text-center font-extrabold text-base overflow-auto p-5 h-40 ${
-          isDarkMode ? "text-black" : "text-fff6e4"
-        }`}
-      >
-        <div className="flex flex-col justify-center">
-          <span>{cards[curr].title}</span>
-          <span>{cards[curr].country}</span>
-          <span>{cards[curr].user}</span>
-        </div>
-      </p> */}
     </div>
   );
 }

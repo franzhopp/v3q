@@ -1,5 +1,6 @@
 import Carousel from "./Carousel.jsx";
 import Img1 from "../../../assets/Pays/Toulouse.png";
+// import Img2 from "../../../assets/Pays/LondonUk.png";
 import Img3 from "../../../assets/Pays/Bruges.png";
 import Img5 from "../../../assets/Pays/Boston.png";
 import Img6 from "../../../assets/Pays/Espagne.png";
@@ -13,6 +14,11 @@ const cards = [
     title: "Toulouse, 31000",
     country: "France 🇫🇷",
   },
+  // {
+  //   image: Img2,
+  //   title: "Londres, SW1X 7LX",
+  //   country: "Royaumi-Uni 🇬🇧",
+  // },
   {
     image: Img3,
     title: "Bruges, 8000",
@@ -48,9 +54,28 @@ const cards = [
 export default function MainCarousel() {
   return (
     <div className={`flex justify-center py-32`}>
-      <Carousel autoSlide={true} autoSlideInterval={1000}>
+      <Carousel autoSlide={true} autoSlideInterval={3000}>
         {cards.map((cards, index) => (
-          <img key={index} src={cards.image} className="test" />
+          <>
+            <img
+              key={index}
+              src={cards.image}
+              alt={cards.title}
+              className="rounded-3xl"
+            />
+            <div className={`pt-2 relative`}>
+              <svg
+                className={`absolute left-32`}
+                width="110"
+                height="60"
+                viewBox="0 0 64 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="64" height="21" rx="10.5" fill="black" />
+              </svg>
+            </div>
+          </>
         ))}
       </Carousel>
     </div>
