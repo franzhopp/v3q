@@ -99,12 +99,6 @@ const Portfolio = () => {
               </div>
             </div>
             <div class={`bg-slate-500 py-20 px-20 h-96 w-full lg:w-1/2`}>
-              <div className={`flex justify-center relative`}>
-                <img
-                  src={ImgPatternNavi}
-                  className={`absolute -bottom-28 py-3 rotate-90 lg:hidden flex`}
-                />
-              </div>
               <h1 className="text-black text-2xl lg:text-4xl text-left font-extrabold">
                 {cards[currentIndex].title}
               </h1>
@@ -116,8 +110,19 @@ const Portfolio = () => {
               >
                 {cards[currentIndex].content}
               </p>
-              <div className="flex justify-end">
-                <button>View details</button>
+              <div className={`flex justify-end pt-3`}>
+                <div className="">
+                  <div
+                    className={`bg-fff6e4 flex flex-wrap space-x-8 py-3 p-7 rounded-full`}
+                  >
+                    <button className="bg-black text-fff6e4 p-3 shadow-lg rounded-full transform active:scale-75 transition-transform">
+                      <FaArrowRight className="h-6 w-6" />
+                    </button>
+                    <button className="bg-gray-500 p-3 rounded-full font-extrabold px-7">
+                      View details
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
