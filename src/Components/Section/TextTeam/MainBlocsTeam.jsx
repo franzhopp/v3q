@@ -10,7 +10,7 @@ import TitleTeamNavi from "./Title.jsx";
 import ModalImage from "react-modal-image";
 import ImageLondon from "../../../assets/PictureTeam/London.png";
 import ImageParis from "../../../assets/PictureTeam/Paris.png";
-import SectionExploration from "../Carousel/SectionExploration.jsx";
+import SectionExploration from "../Carousel/MainCarousel.jsx";
 import SvgSun from "../Svg/SvgSun.jsx";
 import SvgFlower from "../Svg/SvgFlower.jsx";
 

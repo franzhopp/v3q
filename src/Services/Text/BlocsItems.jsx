@@ -1,9 +1,9 @@
+import { useLanguage } from "../../context/LanguageProvider.jsx";
 import translations from "../translate.jsx";
 import ImgBloc1 from "../Image/home1.png";
 import ImgBloc2 from "../Image/home2.png";
 import ImgBloc3 from "../Image/home3.png";
 import ImgBloc4 from "../Image/home4.png";
-import { useLanguage } from "../../context/LanguageProvider.jsx";
 
 const BlocsItems = () => {
   const { language } = useLanguage();
@@ -56,7 +56,7 @@ const BlocsItems = () => {
           </div>
         </div>
         <div data-aos="fade-left" data-aos-duration="300">
-          <div className="BgCardsTwo bg-cover bg-no-repeat p-6 rounded-2xl shadow-2xl mb-5 transition-transform transform hover:scale-90">
+          <div className="BgCardsTwo bg-cover bg-no-repeat p-5 rounded-2xl shadow-2xl mb-5 transition-transform transform hover:scale-90">
             <p className="text-fff6e4 text-center text-xl font-extrabold mb-5">
               Landing page
             </p>
@@ -77,7 +77,7 @@ const BlocsItems = () => {
           </div>
         </div>
         <div data-aos="fade-right" data-aos-duration="300">
-          <div className="bg-c22e2e p-6 rounded-2xl shadow-2xl mb-5 transition-transform transform hover:scale-90">
+          <div className="bg-c22e2e p-5 rounded-2xl shadow-2xl mb-5 transition-transform transform hover:scale-90">
             <p className="text-fff6e4 text-center text-xl font-extrabold mb-5">
               {translations[language].title3ServicesFr}
               {translations[language].title3ServicesEn}
