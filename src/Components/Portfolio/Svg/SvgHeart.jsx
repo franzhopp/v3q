@@ -1,6 +1,7 @@
 const SvgHeart = () => {
   return (
     <svg
+      className={`Swing`}
       width="95"
       height="64"
       viewBox="0 0 95 64"

@@ -8,7 +8,7 @@ import TitlePorfolio from "../UI/Title/TitlePorfolio.jsx";
 import ImgDefault from "../../assets/Svg/Hourglass.svg";
 import SvgLine from "./Svg/SvgLine.jsx";
 import SvgHeart from "./Svg/SvgHeart.jsx";
-import SvgStarPink from "./Svg/SvgStarPink.jsx";
+import SvgStarPink from "./Svg/SvgStar.jsx";
 import Footer from "../Footer/MainFooter.jsx";
 import BackToTopButton from "../UI/ScrollToTop/BackToTopButton";
 
@@ -31,84 +31,33 @@ const Portfolio = () => {
     );
   };
   return (
-    <section className="bg-fff6e4 BgPatternPortfolio bg-no-repeat">
-      <BackToTopButton />
+    <section x-comp={`Portfolio`} className={`bg-fff6e4`}>
       <NavbarPages />
       <TitlePorfolio />
-      <div className="flex justify-start relative">
-        <SvgLine />
+      {/* Title */}
+      <div
+        x-comp={`TitlePortfolio`}
+        className={`flex justify-start px-32 py-10`}
+      >
+        <h1 className={`text-c22e2e text-2xl lg:text-5xl font-extrabold`}>
+          Latest Projects
+        </h1>
+        <div className={`pt-1 px-2`}>
+          <SvgStarPink />
+        </div>
       </div>
-      <div className="flex justify-end relative">
-        <SvgStarPink />
-      </div>
-      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-        <div className="flex justify-center px-3 py-6">
-          <div className="bg-fff6e4 p-5 rounded-2xl shadow-2xl mr-5 ml-5">
-            {/* IMAGE */}
-            <div className="flex justify-center mt-3">
-              <img
-                src={cards[currentIndex].image}
-                alt={cards[currentIndex].title}
-                className={`w-auto h-44 object-cover rounded-2xl animate-formbounce`}
-              />
-            </div>
-            {/* LINK */}
-            <p
-              className={`mt-6 text-xl font-extrabold ${
-                isDarkMode ? "text-black" : "text-fff6e4"
-              }`}
-            >
-              <span className="font-bold number">{currentIndex + 1}.</span>{" "}
-              <span className="FontNumber font-extrabold">
-                {cards[currentIndex].title}
-              </span>
-              <div className="flex flex-col">
-                <NavLink
-                  to={cards[currentIndex].url}
-                  className={`font-inter text-sm hover:text-0c3e78 transition duration-500 ${
-                    isDarkMode ? "text-c22e2e" : "text-fff6e4"
-                  }`}
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <RiBardLine className="h-3 w-3 inline" />{" "}
-                  <span className="underline">Lien vers le site</span>
-                </NavLink>
-              </div>
-            </p>
-            {/* CONTENU */}
-            <div
-              className={`text-center ${
-                isDarkMode ? "text-black" : "text-fff6e4"
-              }`}
-            >
-              <p className="overflow-auto p-5 h-40">
-                {cards[currentIndex].content}
-              </p>
-            </div>
-            {/* BUTTON */}
-            <div className="flex justify-center">
-              <button
-                className="bg-black text-fff6e4 h-16 w-16 px-4 py-2 mr-2 rounded-full shadow-lg transform active:scale-75 transition-transform"
-                onClick={handlePrev}
-              >
-                <FaArrowLeft className="h-10 w-8" />
-              </button>
-              <button
-                className="bg-black text-fff6e4 h-16 w-16 px-4 py-2 rounded-full shadow-lg transform active:scale-75 transition-transform"
-                onClick={handleNext}
-              >
-                <FaArrowRight className="h-10 w-8" />
-              </button>
-            </div>
-            {/* SVG HEART */}
-            <div className="flex justify-center relative py-6">
-              <SvgHeart />
-            </div>
+      <div className={`flex`}>
+        <div className={`bg-gray-700 h-96 w-full`}>
+          <div className="flex flex-wrap ">
+            <div className={`bg-slate-300 h-96 w-1/2`}></div>
+            <div className={`bg-slate-500 h-96 w-1/2`}></div>
           </div>
         </div>
       </div>
-
+      <div className={`flex justify-center py-10`}>
+        <SvgHeart />
+      </div>
+      <BackToTopButton />
       <Footer />
     </section>
   );
