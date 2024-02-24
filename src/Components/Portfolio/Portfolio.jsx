@@ -19,35 +19,35 @@ const Portfolio = () => {
   const cards = [
     {
       image: ImgDefault,
-      title: "Project title -",
+      title: "Project title",
       subtitle: "Project short description",
       content:
         "This is a short text describing your project and use these few words to catch the customer's attention.",
     },
     {
       image: ImgDefault,
-      title: "Project title 2 -",
+      title: "Project title 2",
       subtitle: "Project short description 2",
       content:
         "This is a short text describing your project and use these few words to catch the customer's attention. 2",
     },
     {
       image: ImgDefault,
-      title: "Project title 3 -",
+      title: "Project title 3",
       subtitle: "Project short description 3",
       content:
         "This is a short text describing your project and use these few words to catch the customer's attention. 3",
     },
     {
       image: ImgDefault,
-      title: "Project title 4 -",
+      title: "Project title 4",
       subtitle: "Project short description 4",
       content:
         "This is a short text describing your project and use these few words to catch the customer's attention. 4",
     },
     {
       image: ImgDefault,
-      title: "Project title 5 -",
+      title: "Project title 5",
       subtitle: "Project short description 5",
       content:
         "This is a short text describing your project and use these few words to catch the customer's attention. 5",
@@ -84,6 +84,12 @@ const Portfolio = () => {
             className={`absolute py-3 lg:flex hidden `}
           />
         </div>
+        <div className={`flex justify-center relative`}>
+          <img
+            src={ImgPatternNavi}
+            className={`absolute top-48 py-3 rotate-90 lg:hidden flex`}
+          />
+        </div>
         <div className={``}>
           <div class={`flex flex-wrap`}>
             <div
@@ -97,7 +103,7 @@ const Portfolio = () => {
                 />
               </div>
             </div>
-            <div class={`bg-slate-500 py-24 px-20 h-96 w-full lg:w-1/2`}>
+            <div class={`bg-slate-500 py-20 px-20 h-96 w-full lg:w-1/2`}>
               <h1 className="text-black text-2xl lg:text-4xl text-left font-extrabold">
                 {cards[currentIndex].title}
               </h1>
@@ -105,10 +111,13 @@ const Portfolio = () => {
                 {cards[currentIndex].subtitle}
               </h2>
               <p
-                className={`text-black text-xl lg:text-2xl text-left font-extrabold py-5`}
+                className={`text-black text-md lg:text-2xl text-left font-extrabold py-5`}
               >
                 {cards[currentIndex].content}
               </p>
+              <div className="flex justify-end">
+                <button>View details</button>
+              </div>
             </div>
           </div>
         </div>
@@ -145,7 +154,9 @@ const Portfolio = () => {
             >
               Wanna see some more ?
             </h1>
-            <p className={`text-c22e2e text-2xl lg:text-4xl font-extrabold`}>
+            <p
+              className={`text-c22e2e text-2xl lg:text-4xl font-extrabold px-10`}
+            >
               Check out our personal portfolios
             </p>
           </div>
