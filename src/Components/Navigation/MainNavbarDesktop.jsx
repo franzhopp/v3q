@@ -98,7 +98,7 @@ const NavbarDesktop = () => {
               className="lg:h-20 h-10 w-auto transform active:scale-75 transition-transform"
             />
           </NavLink>
-          <div className="flex justify-center items-center">
+          <div className="flex justiufy-center items-center">
             <li className="relative group list-none">
               <NavLink
                 to="/"

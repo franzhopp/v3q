@@ -2,11 +2,9 @@ import { NavLink } from "react-router-dom";
 import { useTheme } from "../../context/ThemeProvider";
 import { useState } from "react";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-import { RiBardLine } from "react-icons/ri";
 import NavbarPages from "../Navigation/NavbarPages/NavbarPages.jsx";
 import TitlePorfolio from "../UI/Title/TitlePorfolio.jsx";
 import ImgDefault from "../../assets/Svg/Hourglass.svg";
-import SvgLine from "./Svg/SvgLine.jsx";
 import SvgHeart from "./Svg/SvgHeart.jsx";
 import SvgStarPink from "./Svg/SvgStar.jsx";
 import Footer from "../Footer/MainFooter.jsx";
@@ -63,10 +61,9 @@ const Portfolio = () => {
   };
   return (
     <>
-      <section x-comp={`Portfolio`} className={`bg-fff6e4`}>
+      <section x-comp={`PortfolioNavi`} className={`bg-fff6e4`}>
         <NavbarPages />
         <TitlePorfolio />
-        {/* Title */}
         <div
           x-comp={`TitlePortfolio`}
           className={`flex justify-center lg:justify-start px-10 lg:px-32 py-10`}
@@ -78,17 +75,17 @@ const Portfolio = () => {
             <SvgStarPink />
           </div>
         </div>
-        <div className={`flex justify-center relative`}>
+        <div x-comp={`ImgCarousel`} className={`flex justify-center relative`}>
           <img
             src={ImgPatternNavi}
             className={`absolute py-3 lg:flex hidden `}
           />
         </div>
 
-        <div className={``}>
+        <div x-comp={`Carousel`} className={``}>
           <div class={`flex flex-wrap`}>
             <div
-              class={`flex justify-center items-center bg-slate-300 h-96 w-full lg:w-1/2`}
+              class={`bg-slate-300 flex justify-center items-center h-96 w-full lg:w-1/2`}
             >
               <div>
                 <img
@@ -98,35 +95,36 @@ const Portfolio = () => {
                 />
               </div>
             </div>
-            <div class={`bg-slate-500 py-20 px-20 h-96 w-full lg:w-1/2`}>
-              <h1 className="text-black text-2xl lg:text-4xl text-left font-extrabold">
-                {cards[currentIndex].title}
-              </h1>
-              <h2 className="text-black text-2xl lg:text-4xl text-left font-extrabold">
-                {cards[currentIndex].subtitle}
-              </h2>
-              <p
-                className={`text-black text-md lg:text-2xl text-left font-extrabold py-5`}
-              >
-                {cards[currentIndex].content}
-              </p>
-              <div className={`flex justify-end pt-3`}>
-                <div className="">
-                  <div
-                    className={`bg-fff6e4 flex flex-wrap space-x-8 py-3 p-7 rounded-full`}
-                  >
-                    <button className="bg-black text-fff6e4 p-3 shadow-lg rounded-full transform active:scale-75 transition-transform">
-                      <FaArrowRight className="h-6 w-6" />
-                    </button>
-                    <button className="bg-gray-500 p-3 rounded-full font-extrabold px-7">
-                      View details
-                    </button>
-                  </div>
+            <div class={`bg-slate-500 h-1/2 lg:h-96 w-full lg:w-1/2 py-10`}>
+              <div className="px-10">
+                <h1 className="text-black text-2xl lg:text-4xl text-left font-extrabold">
+                  {cards[currentIndex].title}
+                </h1>
+                <h2 className="text-black text-2xl lg:text-4xl text-left font-extrabold">
+                  {cards[currentIndex].subtitle}
+                </h2>
+                <p
+                  className={`text-black text-md lg:text-2xl text-left font-extrabold py-5`}
+                >
+                  {cards[currentIndex].content}
+                </p>
+              </div>
+              <div className={`flex justify-end px-5 lg:px-10`}>
+                <div
+                  className={`bg-fff6e4 flex flex-wrap rounded-full space-x-6 p-3`}
+                >
+                  <button className="bg-black text-fff6e4 p-3 shadow-lg rounded-full transform active:scale-75 transition-transform">
+                    <FaArrowRight className="h-8 w-8" />
+                  </button>
+                  <button className="bg-gray-500 px-7 p-3 text-md lg:text-lg rounded-full font-extrabold ">
+                    View details
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
         <div x-comp={`BtnDisplayPrevNext`} className={`pt-10`}>
           <div className={`flex justify-center items-center gap-2`}>
             <button
@@ -150,7 +148,7 @@ const Portfolio = () => {
             </button>
           </div>
         </div>
-        <div className="flex justify-center">
+        <div x-comp={`TitlePortfolioDetails`} className="flex justify-center">
           <div
             x-comp={`SubTitlePortfolio`}
             className={`flex flex-col text-center pt-28`}
@@ -161,37 +159,57 @@ const Portfolio = () => {
               Wanna see some more ?
             </h1>
             <p
-              className={`text-c22e2e text-2xl lg:text-4xl font-extrabold px-10`}
+              className={`text-c22e2e text-2xl lg:text-4xl font-extrabold px-10 pb-20`}
             >
               Check out our personal portfolios
             </p>
           </div>
         </div>
-        <div
-          class={`flex flex-wrap justify-center space-x-0 sm:space-x-6 py-20`}
-        >
-          <div className="bg-slate-500 p-6 rounded-lg shadow-md transition-transform transform hover:scale-90">
-            <div className="w-72 mt-5">
-              <p data-aos="fade-up" data-aos-anchor-placement="top-bottom"></p>
+        <div x-comp={`PersonalPortfolios`} className={``}>
+          <div class={`flex flex-wrap`}>
+            <div class={`bg-slate-300 h-96 w-full lg:w-1/2`}>
+              <div className="flex justify-between">
+                <h1 className="text-black text-2xl lg:text-4xl text-left font-extrabold">
+                  Louisa
+                </h1>
+                <h2 className="text-black text-2xl lg:text-4xl text-left font-extrabold">
+                  Web Developer
+                </h2>
+              </div>
+              <div className={`flex justify-end px-5 lg:px-10`}>
+                <div
+                  className={`bg-fff6e4 flex flex-wrap rounded-full space-x-6 p-3`}
+                >
+                  <button className="bg-black text-fff6e4 p-3 shadow-lg rounded-full transform active:scale-75 transition-transform">
+                    <FaArrowRight className="h-8 w-8" />
+                  </button>
+                  <button className="bg-gray-500 px-7 p-3 text-md lg:text-lg rounded-full font-extrabold ">
+                    Website
+                  </button>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="bg-slate-500 p-6 rounded-lg shadow-md transition-transform transform hover:scale-90">
-            <div className="w-72 mt-5">
-              <p data-aos="fade-up" data-aos-anchor-placement="top-bottom"></p>
-            </div>
-          </div>
-        </div>
-        <div
-          class={`flex flex-wrap justify-center space-x-0 sm:space-x-6 py-20`}
-        >
-          <div className="bg-slate-500 p-6 rounded-lg shadow-md transition-transform transform hover:scale-90">
-            <div className="w-72 mt-5">
-              <p data-aos="fade-up" data-aos-anchor-placement="top-bottom"></p>
-            </div>
-          </div>
-          <div className="bg-slate-500 p-6 rounded-lg shadow-md transition-transform transform hover:scale-90">
-            <div className="w-72 mt-5">
-              <p data-aos="fade-up" data-aos-anchor-placement="top-bottom"></p>
+            <div class={`bg-slate-500 h-96 w-full lg:w-1/2`}>
+              <div className="flex justify-between">
+                <h1 className="text-black text-2xl lg:text-4xl text-left font-extrabold">
+                  Mélissa
+                </h1>
+                <h2 className="text-black text-2xl lg:text-4xl text-left font-extrabold">
+                  Designer
+                </h2>
+              </div>
+              <div className={`flex justify-end px-5 lg:px-10`}>
+                <div
+                  className={`bg-fff6e4 flex flex-wrap rounded-full space-x-6 p-3`}
+                >
+                  <button className="bg-black text-fff6e4 p-3 shadow-lg rounded-full transform active:scale-75 transition-transform">
+                    <FaArrowRight className="h-8 w-8" />
+                  </button>
+                  <button className="bg-gray-500 px-7 p-3 text-md lg:text-lg rounded-full font-extrabold ">
+                    Website
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
