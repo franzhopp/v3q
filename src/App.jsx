@@ -11,7 +11,7 @@ import Services from "./Services/MainServices.jsx";
 import PricingFr from "./Components/Pricing/MainPricingFr.jsx";
 import PricingUk from "./Components/Pricing/MainPricingUk.jsx";
 import MainPageQuote from "./Components/UI/Form/Quote/MainPageQuote.jsx";
-import Portfolio from "./Components/Portfolio/Portfolio.jsx";
+import Portfolio from "./Pages/Portfolio/Portfolio.jsx";
 import PageNotFound from "./Pages/Error/PageNotFound.jsx";
 
 const App = () => {

@@ -281,3 +281,11 @@ textarea {
         transform: translate3d(-100%, 0, 0);
     }
 }
+
+.transition-transform {
+    transition: transform 0.5s ease;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}

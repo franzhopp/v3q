@@ -18,8 +18,8 @@ import SvgItemRight from "./Svg/SvgItemRight.jsx";
 import LinksNetwork from "./Network/LinksNetwork.jsx";
 import Footer from "../../Footer/MainFooter.jsx";
 import BackToTopButton from "../../UI/ScrollToTop/BackToTopButton.jsx";
-import SvgLine from "../../Portfolio/Svg/SvgLine.jsx";
-import SvgLineRight from "./Svg/SvgLineRight.jsx";
+import SvgLineLeft from "./Svg/SvgLineLeft.jsx";
+import SvgLine from "./Svg/SvgLineRight.jsx";
 
 const DiscoverDesigner = () => {
   return (
@@ -79,7 +79,7 @@ const DiscoverDesigner = () => {
         <SvgLine />
       </div>
       <div className="flex justify-start relative">
-        <SvgLineRight />
+        <SvgLineLeft />
       </div>
       <div className="flex justify-start relative">
         <SvgItemLeft />

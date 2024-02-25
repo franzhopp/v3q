@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
+import { RxCross2 } from "react-icons/rx";
 import { FaSearch } from "react-icons/fa";
 import { useTheme } from "./../../context/ThemeProvider.jsx";
 import { useLanguage } from "./../../context/LanguageProvider.jsx";
@@ -19,10 +20,17 @@ const LinksNavbarMobile = () => {
   const [isAnimating, setIsAnimating] = useState(false);
   const [scrollNavbar, setScrollNavbar] = useState();
   const [toggleMenu, setToggleMenu] = useState(false);
+  // MES 4 LISTS
   const [showSousListsAgence, setShowSousListsAgence] = useState(false);
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
   const [showSousListsFiveMenu, setShowSousListsFiveMenu] = useState(false);
   const [showSousListsRate, setShowSousListsRate] = useState(false);
+  // MES 4 ICONS
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded2, setIsExpanded2] = useState(false);
+  const [isExpanded3, setIsExpanded3] = useState(false);
+  const [isExpanded4, setIsExpanded4] = useState(false);
+
   const [openModel, setOpenModel] = useState();
   const [searchQuery, setSearchQuery] = useState();
   const [isOpen, setIsOpen] = useState(false);
@@ -48,16 +56,21 @@ const LinksNavbarMobile = () => {
   };
   const toggleSousListsAgence = () => {
     setShowSousListsAgence(!showSousListsAgence);
+    setIsExpanded(!isExpanded);
   };
   const toggleSousListsMenu = () => {
     setShowSousListsMenu(!showSousListsMenu);
+    setIsExpanded2(!isExpanded2);
   };
   const toggleSousListsRate = () => {
     setShowSousListsRate(!showSousListsRate);
+    setIsExpanded3(!isExpanded3);
   };
   const toggleSousListsFiveMenu = () => {
     setShowSousListsFiveMenu(!showSousListsFiveMenu);
+    setIsExpanded4(!isExpanded4);
   };
+
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -120,7 +133,11 @@ const LinksNavbarMobile = () => {
                   {translations[language].navAgence}
                   {translations[language].navAgency}
                 </div>
-                <IoIosArrowDown className="mt-1" />
+                {isExpanded ? (
+                  <RxCross2 className="animate-formbounce" />
+                ) : (
+                  <IoIosArrowDown />
+                )}
               </div>
             </button>
             <ul className={`p-2 ${showSousListsAgence ? "block" : "hidden"}`}>
@@ -157,7 +174,11 @@ const LinksNavbarMobile = () => {
                         {translations[language].navSousTeamFr}
                         {translations[language].navSousTeamEn}
                       </div>
-                      <IoIosArrowDown className="mt-1" />
+                      {isExpanded2 ? (
+                        <RxCross2 className="animate-formbounce" />
+                      ) : (
+                        <IoIosArrowDown />
+                      )}
                     </div>
                   </button>
 
@@ -197,7 +218,11 @@ const LinksNavbarMobile = () => {
                   {translations[language].navServices}
                   {translations[language].navServicesEn}
                 </div>
-                <IoIosArrowDown className="mt-1" />
+                {isExpanded3 ? (
+                  <RxCross2 className="animate-formbounce" />
+                ) : (
+                  <IoIosArrowDown />
+                )}
               </div>
             </button>
             <ul
@@ -223,7 +248,11 @@ const LinksNavbarMobile = () => {
                         {translations[language].navSousPricingFr}
                         {translations[language].navSousPricingEn}
                       </div>
-                      <IoIosArrowDown className="mt-1" />
+                      {isExpanded4 ? (
+                        <RxCross2 className="animate-formbounce" />
+                      ) : (
+                        <IoIosArrowDown />
+                      )}
                     </div>
                   </button>
                   <ul

@@ -192,7 +192,7 @@ const Portfolio = () => {
             <div class={`bg-slate-500 h-96 w-full lg:w-1/2`}>
               <div className="flex justify-between">
                 <h1 className="text-black text-2xl lg:text-4xl text-left font-extrabold">
-                  MÃ©lissa
+                  Mélissa
                 </h1>
                 <h2 className="text-black text-2xl lg:text-4xl text-left font-extrabold">
                   Designer

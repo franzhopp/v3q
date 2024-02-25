@@ -4,12 +4,14 @@ import { IoIosArrowDown } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
 import { useTheme } from "../../context/ThemeProvider.jsx";
 import { useLanguage } from "../../context/LanguageProvider";
+import { RxCross2 } from "react-icons/rx";
 import DarkLightThemes from "../../hook/useTheme";
 import ModalSearch from "../UI/Modal/SearchModal.jsx";
 import translations from "./translate.jsx";
 import Image from "../../assets/Logo/LogoMainNaviStudio.png";
 
 const LinksNavbarDesktop = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
   const [showSousListsTwoMenu, setShowSousListsTwoMenu] = useState(false);
   const [showSousListsRate, setShowSousListsRate] = useState(false);
@@ -23,9 +25,11 @@ const LinksNavbarDesktop = () => {
   };
   const toggleSousListsTwoMenu = () => {
     setShowSousListsTwoMenu(!showSousListsTwoMenu);
+    setIsExpanded(!isExpanded);
   };
   const toggleSousListsRate = () => {
     setShowSousListsRate(!showSousListsRate);
+    setIsExpanded(!isExpanded);
   };
   const handleMouseEnterSubmenu = () => {
     setIsMouseOnSubmenu(true);
@@ -90,7 +94,11 @@ const LinksNavbarDesktop = () => {
                       {translations[language].navSousTeamFr}
                       {translations[language].navSousTeamEn}
                     </div>
-                    <IoIosArrowDown className="mt-1" />
+                    {isExpanded ? (
+                      <RxCross2 className="animate-formbounce" />
+                    ) : (
+                      <IoIosArrowDown />
+                    )}
                   </div>
                 </button>
                 <ul
@@ -153,7 +161,11 @@ const LinksNavbarDesktop = () => {
                       {translations[language].navSousPricingFr}
                       {translations[language].navSousPricingEn}
                     </div>
-                    <IoIosArrowDown className="mt-1" />
+                    {isExpanded ? (
+                      <RxCross2 className="animate-formbounce" />
+                    ) : (
+                      <IoIosArrowDown />
+                    )}
                   </div>
                 </button>
                 <ul

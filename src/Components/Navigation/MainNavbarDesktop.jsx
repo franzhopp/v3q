@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useLanguage } from "../../context/LanguageProvider.jsx";
-import { IoIosArrowDown } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
 import { useTheme } from "../../context/ThemeProvider.jsx";
 import translations from "./translate.jsx";
+import { IoIosArrowDown } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
 import ImgBlack from "../../assets/Logo/LogoMainNaviStudio.png";
 import TitleHome from "../UI/Title/TitleHome.jsx";
@@ -18,6 +18,7 @@ import "aos/dist/aos.css";
 
 const NavbarDesktop = () => {
   const [scrollNavbar, setScrollNavbar] = useState();
+  const [isExpanded, setIsExpanded] = useState(false);
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
   const [showSousListsTwoMenu, setShowSousListsTwoMenu] = useState(false);
   const [showSousListsRate, setShowSousListsRate] = useState(false);
@@ -55,9 +56,11 @@ const NavbarDesktop = () => {
   const toggleSousListsTwoMenu = () => {
     setShowSousListsTwoMenu(!showSousListsTwoMenu);
     setIsHovered(false);
+    setIsExpanded(!isExpanded);
   };
   const toggleSousListsRate = () => {
     setShowSousListsRate(!showSousListsRate);
+    setIsExpanded(!isExpanded);
   };
   const handleMouseEnterSubmenu = () => {
     setIsMouseOnSubmenu(true);
@@ -142,7 +145,11 @@ const NavbarDesktop = () => {
                         {translations[language].navSousTeamFr}
                         {translations[language].navSousTeamEn}
                       </div>
-                      <IoIosArrowDown className="mt-1" />
+                      {isExpanded ? (
+                        <RxCross2 className="animate-formbounce" />
+                      ) : (
+                        <IoIosArrowDown />
+                      )}
                     </div>
                   </button>
                   <ul
@@ -205,7 +212,11 @@ const NavbarDesktop = () => {
                         {translations[language].navSousPricingFr}
                         {translations[language].navSousPricingEn}
                       </div>
-                      <IoIosArrowDown className="mt-1" />
+                      {isExpanded ? (
+                        <RxCross2 className="animate-formbounce" />
+                      ) : (
+                        <IoIosArrowDown />
+                      )}
                     </div>
                   </button>
                   <ul
