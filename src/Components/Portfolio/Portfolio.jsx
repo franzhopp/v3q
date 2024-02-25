@@ -2,13 +2,13 @@ import { NavLink } from "react-router-dom";
 import { useTheme } from "../../context/ThemeProvider";
 import { useState } from "react";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-import NavbarPages from "../Navigation/NavbarPages/NavbarPages.jsx";
-import TitlePorfolio from "../UI/Title/TitlePorfolio.jsx";
+import NavbarPages from "../../Components/Navigation/NavbarPages/NavbarPages.jsx";
+import TitlePorfolio from "../../Components/UI/Title/TitlePorfolio.jsx";
 import ImgDefault from "../../assets/Svg/Hourglass.svg";
 import SvgHeart from "./Svg/SvgHeart.jsx";
 import SvgStarPink from "./Svg/SvgStar.jsx";
-import Footer from "../Footer/MainFooter.jsx";
-import BackToTopButton from "../UI/ScrollToTop/BackToTopButton";
+import Footer from "../../Components/Footer/MainFooter.jsx";
+import BackToTopButton from "../../Components/UI/ScrollToTop/BackToTopButton";
 import ImgPatternNavi from "../../assets/Picture/PatternNavi.png";
 
 const Portfolio = () => {
@@ -192,7 +192,7 @@ const Portfolio = () => {
             <div class={`bg-slate-500 h-96 w-full lg:w-1/2`}>
               <div className="flex justify-between">
                 <h1 className="text-black text-2xl lg:text-4xl text-left font-extrabold">
-                  Mélissa
+                  MÃ©lissa
                 </h1>
                 <h2 className="text-black text-2xl lg:text-4xl text-left font-extrabold">
                   Designer

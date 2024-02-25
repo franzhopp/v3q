@@ -20,6 +20,7 @@ const BlocsItemsHome = () => {
           <span className={`transform active:scale-75 transition-transform`}>
             {translations[language].scrollingTextFr}
             {translations[language].scrollingTextEn}
+            homeeeeeeeeeeeeeeeee
           </span>
         </div>
       </div>
