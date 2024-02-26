@@ -1,3 +1,4 @@
+import BackToTopButton from "../Components/UI/ScrollToTop/BackToTopButton.jsx";
 import NavbarServices from "../Components/Navigation/NavbarServices/NavbarServices.jsx";
 import TitleWebsite from "./Title/TitleWebsite.jsx";
 import SubTitle from "./Title/SubTitle.jsx";
@@ -8,7 +9,6 @@ import TextOffers from "./Text/TextOffers.jsx";
 import ButtonServices from "../Components/UI/Button/BtnServices.jsx";
 import TextMarketing from "./Text/TextMarketing";
 import TextReturnContact from "./Text/TextReturnContact";
-import BackToTopButton from "../Components/UI/ScrollToTop/BackToTopButton.jsx";
 import Footer from "../Components/Footer/MainFooter.jsx";
 
 const Services = () => {

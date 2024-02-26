@@ -11,7 +11,7 @@ const BlocsConditions = () => {
       <p
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
-        className="text-fff6e4 text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0"
+        className="text-black text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0"
       >
         <span>
           {translations[language].describeInfoFree1Fr}
@@ -19,14 +19,14 @@ const BlocsConditions = () => {
         </span>
       </p>
       <br />
-      <p className="text-fff6e4 mb-1 text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0">
+      <p className="text-black mb-1 text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0">
         <span className="font-extrabold underline">
           {translations[language].describleInfoFree2Fr}
           {translations[language].describleInfoFree2En}
         </span>
       </p>
 
-      <p className="text-fff6e4 mb-5 text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0">
+      <p className="text-black mb-5 text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0">
         <ul>
           <br />
           <li data-aos="fade-right">

@@ -1,9 +1,9 @@
 import { useLanguage } from "../../context/LanguageProvider.jsx";
 import translations from "../translate.jsx";
-import ImgBloc1 from "../Image/home1.png";
-import ImgBloc2 from "../Image/home2.png";
-import ImgBloc3 from "../Image/home3.png";
-import ImgBloc4 from "../Image/home4.png";
+import ImgBloc1 from "../Image/Img1.png";
+import ImgBloc2 from "../Image/Img2.png";
+import ImgBloc3 from "../Image/Img3.png";
+import ImgBloc4 from "../Image/Img4.png";
 
 const BlocsItems = () => {
   const { language } = useLanguage();

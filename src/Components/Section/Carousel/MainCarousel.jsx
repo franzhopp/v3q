@@ -1,6 +1,6 @@
 import Carousel from "./Carousel.jsx";
 import Img1 from "../../../assets/Pays/Toulouse.png";
-import Img2 from "../../../assets/Pays/LondonUk.png";
+// import Img2 from "../../../assets/Pays/LondonUk.png";
 import Img3 from "../../../assets/Pays/Bruges.png";
 import Img5 from "../../../assets/Pays/Boston.png";
 import Img6 from "../../../assets/Pays/Espagne.png";
@@ -14,11 +14,11 @@ const cards = [
     title: "Toulouse, 31000",
     country: "France 🇫🇷",
   },
-  {
-    image: Img2,
-    title: "Londres, SW1X 7LX",
-    country: "Royaumi-Uni 🇬🇧",
-  },
+  // {
+  //   image: Img2,
+  //   title: "Londres, SW1X 7LX",
+  //   country: "Royaumi-Uni 🇬🇧",
+  // },
   {
     image: Img3,
     title: "Bruges, 8000",

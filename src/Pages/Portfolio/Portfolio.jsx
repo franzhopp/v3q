@@ -96,11 +96,15 @@ const Portfolio = () => {
               </div>
             </div>
             <div class={`bg-slate-500 h-1/2 lg:h-96 w-full lg:w-1/2 py-10`}>
-              <div className="px-10">
-                <h1 className="text-black text-2xl lg:text-4xl text-left font-extrabold">
+              <div className={`px-10`}>
+                <h1
+                  className={`text-black text-2xl lg:text-4xl text-left font-extrabold`}
+                >
                   {cards[currentIndex].title}
                 </h1>
-                <h2 className="text-black text-2xl lg:text-4xl text-left font-extrabold">
+                <h2
+                  className={`text-black text-2xl lg:text-4xl text-left font-extrabold`}
+                >
                   {cards[currentIndex].subtitle}
                 </h2>
                 <p
@@ -113,10 +117,14 @@ const Portfolio = () => {
                 <div
                   className={`bg-fff6e4 flex flex-wrap rounded-full space-x-6 p-3`}
                 >
-                  <button className="bg-black text-fff6e4 p-3 shadow-lg rounded-full transform active:scale-75 transition-transform">
-                    <FaArrowRight className="h-8 w-8" />
+                  <button
+                    className={`bg-black text-fff6e4 p-3 shadow-lg rounded-full transform active:scale-75 transition-transform`}
+                  >
+                    <FaArrowRight className={`h-8 w-8`} />
                   </button>
-                  <button className="bg-gray-500 px-7 p-3 text-md lg:text-lg rounded-full font-extrabold ">
+                  <button
+                    className={`bg-gray-500 px-7 p-3 text-md lg:text-lg rounded-full font-extrabold`}
+                  >
                     View details
                   </button>
                 </div>
@@ -128,10 +136,10 @@ const Portfolio = () => {
         <div x-comp={`BtnDisplayPrevNext`} className={`pt-10`}>
           <div className={`flex justify-center items-center gap-2`}>
             <button
-              className="bg-black text-fff6e4 p-3 shadow-lg rounded-full mr-3 transform active:scale-75 transition-transform"
+              className={`bg-black text-fff6e4 p-3 shadow-lg rounded-full mr-3 transform active:scale-75 transition-transform`}
               onClick={handlePrev}
             >
-              <FaArrowLeft className="h-6 w-6" />
+              <FaArrowLeft className={`h-6 w-6`} />
             </button>
             {cards.map((_, i) => (
               <div
@@ -141,14 +149,14 @@ const Portfolio = () => {
               />
             ))}
             <button
-              className="bg-black text-fff6e4 p-3 shadow-lg rounded-full ml-3 transform active:scale-75 transition-transform"
+              className={`bg-black text-fff6e4 p-3 shadow-lg rounded-full ml-3 transform active:scale-75 transition-transform`}
               onClick={handleNext}
             >
-              <FaArrowRight className="h-6 w-6" />
+              <FaArrowRight className={`h-6 w-6`} />
             </button>
           </div>
         </div>
-        <div x-comp={`TitlePortfolioDetails`} className="flex justify-center">
+        <div x-comp={`TitlePortfolioDetails`} className={`flex justify-center`}>
           <div
             x-comp={`SubTitlePortfolio`}
             className={`flex flex-col text-center pt-28`}
@@ -165,14 +173,18 @@ const Portfolio = () => {
             </p>
           </div>
         </div>
-        <div x-comp={`PersonalPortfolios`} className={``}>
+        <div x-comp={`PersonalPortfolios`}>
           <div class={`flex flex-wrap`}>
             <div class={`bg-slate-300 h-96 w-full lg:w-1/2`}>
               <div className="flex justify-between">
-                <h1 className="text-black text-2xl lg:text-4xl text-left font-extrabold">
+                <h1
+                  className={`text-black text-2xl lg:text-4xl text-left font-extrabold`}
+                >
                   Louisa
                 </h1>
-                <h2 className="text-black text-2xl lg:text-4xl text-left font-extrabold">
+                <h2
+                  className={`text-black text-2xl lg:text-4xl text-left font-extrabold`}
+                >
                   Web Developer
                 </h2>
               </div>
@@ -180,21 +192,29 @@ const Portfolio = () => {
                 <div
                   className={`bg-fff6e4 flex flex-wrap rounded-full space-x-6 p-3`}
                 >
-                  <button className="bg-black text-fff6e4 p-3 shadow-lg rounded-full transform active:scale-75 transition-transform">
-                    <FaArrowRight className="h-8 w-8" />
+                  <button
+                    className={`bg-black text-fff6e4 p-3 shadow-lg rounded-full transform active:scale-75 transition-transform`}
+                  >
+                    <FaArrowRight className={`h-8 w-8`} />
                   </button>
-                  <button className="bg-gray-500 px-7 p-3 text-md lg:text-lg rounded-full font-extrabold ">
+                  <button
+                    className={`bg-gray-500 px-7 p-3 text-md lg:text-lg rounded-full font-extrabold`}
+                  >
                     Website
                   </button>
                 </div>
               </div>
             </div>
             <div class={`bg-slate-500 h-96 w-full lg:w-1/2`}>
-              <div className="flex justify-between">
-                <h1 className="text-black text-2xl lg:text-4xl text-left font-extrabold">
+              <div className={`flex justify-between`}>
+                <h1
+                  className={`text-black text-2xl lg:text-4xl text-left font-extrabold`}
+                >
                   Mélissa
                 </h1>
-                <h2 className="text-black text-2xl lg:text-4xl text-left font-extrabold">
+                <h2
+                  className={`text-black text-2xl lg:text-4xl text-left font-extrabold`}
+                >
                   Designer
                 </h2>
               </div>
@@ -202,10 +222,14 @@ const Portfolio = () => {
                 <div
                   className={`bg-fff6e4 flex flex-wrap rounded-full space-x-6 p-3`}
                 >
-                  <button className="bg-black text-fff6e4 p-3 shadow-lg rounded-full transform active:scale-75 transition-transform">
-                    <FaArrowRight className="h-8 w-8" />
+                  <button
+                    className={`bg-black text-fff6e4 p-3 shadow-lg rounded-full transform active:scale-75 transition-transform`}
+                  >
+                    <FaArrowRight className={`h-8 w-8`} />
                   </button>
-                  <button className="bg-gray-500 px-7 p-3 text-md lg:text-lg rounded-full font-extrabold ">
+                  <button
+                    className={`bg-gray-500 px-7 p-3 text-md lg:text-lg rounded-full font-extrabold`}
+                  >
                     Website
                   </button>
                 </div>

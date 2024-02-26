@@ -10,17 +10,21 @@ export default function Carousel({
 }) {
   const { isDarkMode } = useTheme();
   const [curr, setCurr] = useState(0);
+
   const handleNext = () => {
     setCurr((curr) => (curr === 0 ? cards.length - 1 : curr - 1));
   };
+
   const handlePrev = () => {
     setCurr((curr) => (curr === cards.length - 1 ? 0 : curr + 1));
   };
+
   useEffect(() => {
     if (!autoSlide) return;
     const slideInterval = setInterval(handleNext, autoSlideInterval);
     return () => clearInterval(slideInterval);
   });
+
   return (
     <div>
       <div
@@ -28,11 +32,11 @@ export default function Carousel({
         data-aos-anchor-placement="top-bottom"
         className="bg-black border-c22e2e border-4 p-2 rounded-3xl flex justify-center w-96 3xl:w-1/2"
       >
-        <div className={`h-1/2 overflow-hidden shadow-2xl`}>
+        <div className={`h-1/2 overflow-hidden rounded-3xl shadow-2xl`}>
           <div className="flex justify-center">
             <NavLink to="https://www.instagram.com/navistudio.fr/">
               <div
-                className={`flex transition-transform ease-out duration-500`}
+                className={`flex rounded-3xl transition-transform ease-out duration-500`}
                 style={{ transform: `translateX(-${curr * 100}%)` }}
               >
                 <div className={`pt-1 relative`}>
@@ -56,7 +60,7 @@ export default function Carousel({
       <div x-comp={`BtnDisplayPrevNext`} className={`pt-10`}>
         <div className={`flex justify-center items-center gap-2`}>
           <button
-            className="bg-c22e2e text-fff6e4 p-3 rounded-full mr-3 transform active:scale-75 transition-transform"
+            className={`bg-c22e2e text-fff6e4 p-3 rounded-full mr-3 transform active:scale-75 transition-transform`}
             onClick={handleNext}
           >
             <FaArrowLeft className="h-10 w-10" />
@@ -69,7 +73,7 @@ export default function Carousel({
             />
           ))}
           <button
-            className="bg-c22e2e text-fff6e4 p-3 rounded-full ml-3 transform active:scale-75 transition-transform"
+            className={`bg-c22e2e text-fff6e4 p-3 rounded-full ml-3 transform active:scale-75 transition-transform`}
             onClick={handlePrev}
           >
             <FaArrowRight className="h-10 w-10" />
