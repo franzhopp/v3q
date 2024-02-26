@@ -1,4 +1,3 @@
-
 import { useLanguage } from "../../context/LanguageProvider.jsx";
 import { useTheme } from "../../context/ThemeProvider.jsx";
 import translations from "../translate.jsx";
@@ -15,7 +14,7 @@ const TextServices = () => {
       <div
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
-        className="w-96 xl:w-1/3 px-5"
+        className={`w-96 xl:w-1/3 px-5`}
       >
         <p
           data-aos="fade-up"

@@ -6,25 +6,25 @@ import TextServices from "./Text/TextServices.jsx";
 import SvgSettings from "./Svg/SvgSettings.jsx";
 import TextOffers from "./Text/TextOffers.jsx";
 import ButtonServices from "../Components/UI/Button/BtnServices.jsx";
-import BackToTopButton from "../Components/UI/ScrollToTop/BackToTopButton.jsx";
 import TextMarketing from "./Text/TextMarketing";
 import TextReturnContact from "./Text/TextReturnContact";
+import BackToTopButton from "../Components/UI/ScrollToTop/BackToTopButton.jsx";
 import Footer from "../Components/Footer/MainFooter.jsx";
 
 const Services = () => {
   return (
-    <section className="bg-fff6e4">
+    <section className={`bg-fff6e4`}>
       <NavbarServices />
       <TitleWebsite />
       <SubTitle />
       <BlocsItems />
       <SvgSettings />
-      <BackToTopButton />
       <TextServices />
       <ButtonServices />
       <TextOffers />
       <TextMarketing />
       <TextReturnContact />
+      <BackToTopButton />
       <Footer />
     </section>
   );

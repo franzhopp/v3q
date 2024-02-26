@@ -11,7 +11,7 @@ const BlocsItemsHome = () => {
   const { isDarkMode } = useTheme();
   return (
     <>
-      <div className="py-3 bg-fff6e4 border-b-4 border-c22e2e">
+      <div className="border-c22e2e border-b-4 py-3">
         <div
           className={`font-extrabold px-10 text-lg lg:text-2xl tracking-tight inline-block whitespace-nowrap AnimationScrolling ${
             isDarkMode ? "text-black" : "text-fff6e4"

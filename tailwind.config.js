@@ -6,10 +6,6 @@ export default {
   ],
   theme: {
     extend: {
-  
-      backgroundImage: {
-
-      },
       animation: {
         'formbounce': 'button-design-formbounce 4s infinite',
       },
