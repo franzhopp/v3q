@@ -17,16 +17,20 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const LinksNavbarMobile = () => {
+  const { language, changeLanguage } = useLanguage();
+  const { isDarkMode } = useTheme();
   const [isAnimating, setIsAnimating] = useState(false);
   const [scrollNavbar, setScrollNavbar] = useState();
   const [toggleMenu, setToggleMenu] = useState(false);
+
   // MES 4 LISTS
   const [showSousListsAgence, setShowSousListsAgence] = useState(false);
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
   const [showSousListsFiveMenu, setShowSousListsFiveMenu] = useState(false);
   const [showSousListsRate, setShowSousListsRate] = useState(false);
+
   // MES 4 ICONS
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded1, setIsExpanded1] = useState(false);
   const [isExpanded2, setIsExpanded2] = useState(false);
   const [isExpanded3, setIsExpanded3] = useState(false);
   const [isExpanded4, setIsExpanded4] = useState(false);
@@ -34,11 +38,11 @@ const LinksNavbarMobile = () => {
   const [openModel, setOpenModel] = useState();
   const [searchQuery, setSearchQuery] = useState();
   const [isOpen, setIsOpen] = useState(false);
-  const { language, changeLanguage } = useLanguage();
-  const { isDarkMode } = useTheme();
+
   const changeLanguageHandler = (newLanguage) => {
     changeLanguage(newLanguage);
   };
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -46,28 +50,30 @@ const LinksNavbarMobile = () => {
       behavior: "smooth",
     });
   };
-  const toggleMenuMobile = () => {
-    setToggleMenu(!toggleMenu);
-    setIsOpen(!isOpen);
-    document.body.style.overflowY = "hidden";
-  };
+
   const handleAnimateButtonClick = () => {
     setIsAnimating(!isAnimating);
   };
-  const toggleSousListsAgence = () => {
-    setShowSousListsAgence(!showSousListsAgence);
-    setIsExpanded(!isExpanded);
+
+  const toggleMenuMobile = () => {
+    setToggleMenu(!toggleMenu);
+    setIsOpen(!isOpen);
   };
-  const toggleSousListsMenu = () => {
-    setShowSousListsMenu(!showSousListsMenu);
+
+  const toggleSousLists1 = () => {
+    setShowSousListsAgence(!showSousListsAgence);
+    setIsExpanded1(!isExpanded1);
+  };
+  const toggleSousLists2 = () => {
+    setShowSousListsFiveMenu(!showSousListsFiveMenu);
     setIsExpanded2(!isExpanded2);
   };
-  const toggleSousListsRate = () => {
-    setShowSousListsRate(!showSousListsRate);
+  const toggleSousLists3 = () => {
+    setShowSousListsMenu(!showSousListsMenu);
     setIsExpanded3(!isExpanded3);
   };
-  const toggleSousListsFiveMenu = () => {
-    setShowSousListsFiveMenu(!showSousListsFiveMenu);
+  const toggleSousLists4 = () => {
+    setShowSousListsRate(!showSousListsRate);
     setIsExpanded4(!isExpanded4);
   };
 
@@ -127,17 +133,13 @@ const LinksNavbarMobile = () => {
       <ul className={`p-5 FadeInDelayDesktop ${isOpen ? "block" : "hidden"}`}>
         <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
           <NavLink className="text-lg block px-3 py-2 border-c22e2e border-b-2 rounded-md font-extrabold">
-            <button onClick={toggleSousListsAgence}>
+            <button onClick={toggleSousLists1}>
               <div className="flex items-center justify-between">
                 <div className="pr-2">
                   {translations[language].navAgence}
                   {translations[language].navAgency}
                 </div>
-                {isExpanded ? (
-                  <RxCross2 className="animate-formbounce" />
-                ) : (
-                  <IoIosArrowDown />
-                )}
+                {isExpanded1 ? <RxCross2 /> : <IoIosArrowDown />}
               </div>
             </button>
             <ul className={`p-2 ${showSousListsAgence ? "block" : "hidden"}`}>
@@ -168,20 +170,15 @@ const LinksNavbarMobile = () => {
               </li>
               <li>
                 <NavLink className="text-lg block py-2 rounded-md font-extrabold">
-                  <button onClick={toggleSousListsFiveMenu}>
+                  <button onClick={toggleSousLists2}>
                     <div className="flex items-center justify-between">
                       <div className="pr-2">
                         {translations[language].navSousTeamFr}
                         {translations[language].navSousTeamEn}
                       </div>
-                      {isExpanded2 ? (
-                        <RxCross2 className="animate-formbounce" />
-                      ) : (
-                        <IoIosArrowDown />
-                      )}
+                      {isExpanded2 ? <RxCross2 /> : <IoIosArrowDown />}
                     </div>
                   </button>
-
                   <ul
                     data-aos="fade-left"
                     className={`toggle-menu ${
@@ -212,17 +209,13 @@ const LinksNavbarMobile = () => {
         </li>
         <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
           <NavLink className="text-lg block px-3 py-2 border-c22e2e border-b-2 rounded-md font-extrabold">
-            <button onClick={toggleSousListsMenu}>
+            <button onClick={toggleSousLists3}>
               <div className="flex items-center justify-between">
                 <div className="pr-2">
                   {translations[language].navServices}
                   {translations[language].navServicesEn}
                 </div>
-                {isExpanded3 ? (
-                  <RxCross2 className="animate-formbounce" />
-                ) : (
-                  <IoIosArrowDown />
-                )}
+                {isExpanded3 ? <RxCross2 /> : <IoIosArrowDown />}
               </div>
             </button>
             <ul
@@ -242,17 +235,13 @@ const LinksNavbarMobile = () => {
               </li>
               <NavLink className="block border-c22e2e border-b-2">
                 <li>
-                  <button onClick={toggleSousListsRate}>
+                  <button onClick={toggleSousLists4}>
                     <div className="flex items-center justify-between">
                       <div className="text-lg block hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold pr-2">
                         {translations[language].navSousPricingFr}
                         {translations[language].navSousPricingEn}
                       </div>
-                      {isExpanded4 ? (
-                        <RxCross2 className="animate-formbounce" />
-                      ) : (
-                        <IoIosArrowDown />
-                      )}
+                      {isExpanded4 ? <RxCross2 /> : <IoIosArrowDown />}
                     </div>
                   </button>
                   <ul

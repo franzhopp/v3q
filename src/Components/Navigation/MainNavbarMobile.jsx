@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { useTheme } from "../../context/ThemeProvider.jsx";
 import { useLanguage } from "../../context/LanguageProvider.jsx";
 import { IoIosArrowDown } from "react-icons/io";
+import { RxCross2 } from "react-icons/rx";
 import { FaSearch } from "react-icons/fa";
 import translations from "./translate.jsx";
 import DarkLightThemes from "../../hook/useTheme.jsx";
@@ -16,19 +17,30 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const NavbarMobile = () => {
-  const [scrollNavbar, setScrollNavbar] = useState();
-  const [isAnimating, setIsAnimating] = useState(false);
-  const [toggleMenu, setToggleMenu] = useState(false);
-  const [showSousListsAgence, setShowSousListsAgence] = useState(false);
-  const [showSousListsMenu, setShowSousListsMenu] = useState(false);
-  const [showSousListsThreeMenu, setShowSousListsThreeMenu] = useState(false);
-  const [showSousListsRate, setShowSousListsRate] = useState(false);
-  const [showSousListsFiveMenu, setShowSousListsFiveMenu] = useState(false);
+  const { language, changeLanguage } = useLanguage();
+  const { isDarkMode } = useTheme();
+
   const [openModel, setOpenModel] = useState();
   const [searchQuery, setSearchQuery] = useState();
   const [isOpen, setIsOpen] = useState(false);
-  const { language, changeLanguage } = useLanguage();
-  const { isDarkMode } = useTheme();
+  const [scrollNavbar, setScrollNavbar] = useState();
+  const [isAnimating, setIsAnimating] = useState(false);
+  const [toggleMenu, setToggleMenu] = useState(false);
+
+  const [showSousListsThreeMenu, setShowSousListsThreeMenu] = useState(false);
+
+  // MES 5 LISTS
+  const [showSousListsAgence, setShowSousListsAgence] = useState(false);
+  const [showSousListsMenu, setShowSousListsMenu] = useState(false);
+  const [showSousListsRate, setShowSousListsRate] = useState(false);
+  const [showSousListsFiveMenu, setShowSousListsFiveMenu] = useState(false);
+
+  // MES 4 ICONS
+  const [isExpanded1, setIsExpanded1] = useState(false);
+  const [isExpanded2, setIsExpanded2] = useState(false);
+  const [isExpanded3, setIsExpanded3] = useState(false);
+  const [isExpanded4, setIsExpanded4] = useState(false);
+
   const changeLanguageHandler = (newLanguage) => {
     changeLanguage(newLanguage);
   };
@@ -40,10 +52,16 @@ const NavbarMobile = () => {
     });
     setIsOpen(false);
   };
+
   const toggleMenuMobile = () => {
     setToggleMenu(!toggleMenu);
     setIsOpen(!isOpen);
   };
+
+  const handleAnimateButtonClick = () => {
+    setIsAnimating(!isAnimating);
+  };
+
   const SectionToSectionContact = () => {
     const ContactToScroll = document.getElementById("contact");
     if (ContactToScroll) {
@@ -51,21 +69,24 @@ const NavbarMobile = () => {
     }
     setIsOpen(false);
   };
-  const handleAnimateButtonClick = () => {
-    setIsAnimating(!isAnimating);
-  };
-  const toggleSousListsAgence = () => {
+
+  const toggleSousLists1 = () => {
     setShowSousListsAgence(!showSousListsAgence);
+    setIsExpanded1(!isExpanded1);
   };
-  const toggleSousListsMenu = () => {
-    setShowSousListsMenu(!showSousListsMenu);
-  };
-  const toggleSousListsRate = () => {
-    setShowSousListsRate(!showSousListsRate);
-  };
-  const toggleSousListsFiveMenu = () => {
+  const toggleSousLists2 = () => {
     setShowSousListsFiveMenu(!showSousListsFiveMenu);
+    setIsExpanded2(!isExpanded2);
   };
+  const toggleSousLists3 = () => {
+    setShowSousListsMenu(!showSousListsMenu);
+    setIsExpanded3(!isExpanded3);
+  };
+  const toggleSousLists4 = () => {
+    setShowSousListsRate(!showSousListsRate);
+    setIsExpanded4(!isExpanded4);
+  };
+
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -125,13 +146,13 @@ const NavbarMobile = () => {
       <ul className={`p-5 FadeInDelayDesktop ${isOpen ? "block" : "hidden"}`}>
         <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
           <NavLink className="text-lg block px-3 py-2 border-c22e2e border-b-2 rounded-md font-extrabold">
-            <button onClick={toggleSousListsAgence}>
+            <button onClick={toggleSousLists1}>
               <div className="flex items-center justify-between">
                 <div className="pr-2">
                   {translations[language].navAgence}
                   {translations[language].navAgency}
                 </div>
-                <IoIosArrowDown className="mt-1" />
+                {isExpanded1 ? <RxCross2 /> : <IoIosArrowDown />}
               </div>
             </button>
             <ul className={`p-2 ${showSousListsAgence ? "block" : "hidden"}`}>
@@ -162,13 +183,13 @@ const NavbarMobile = () => {
               </li>
               <li>
                 <NavLink className="text-lg block py-2 rounded-md font-extrabold">
-                  <button onClick={toggleSousListsFiveMenu}>
+                  <button onClick={toggleSousLists2}>
                     <div className="flex items-center justify-between">
                       <div className="pr-2">
                         {translations[language].navSousTeamFr}
                         {translations[language].navSousTeamEn}
                       </div>
-                      <IoIosArrowDown className="mt-1" />
+                      {isExpanded2 ? <RxCross2 /> : <IoIosArrowDown />}
                     </div>
                   </button>
                   <ul
@@ -201,13 +222,13 @@ const NavbarMobile = () => {
         </li>
         <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
           <NavLink className="text-lg block px-3 py-2 border-c22e2e border-b-2 rounded-md font-extrabold">
-            <button onClick={toggleSousListsMenu}>
+            <button onClick={toggleSousLists3}>
               <div className="flex items-center justify-between">
                 <div className="pr-2">
                   {translations[language].navServices}
                   {translations[language].navServicesEn}
                 </div>
-                <IoIosArrowDown className="mt-1" />
+                {isExpanded3 ? <RxCross2 /> : <IoIosArrowDown />}
               </div>
             </button>
             <ul
@@ -227,13 +248,13 @@ const NavbarMobile = () => {
               </li>
               <NavLink className="block border-c22e2e border-b-2">
                 <li>
-                  <button onClick={toggleSousListsRate}>
+                  <button onClick={toggleSousLists4}>
                     <div className="flex items-center justify-between">
                       <div className="text-lg block hover:text-0c3e78 transition duration-500 px-4 py-2 font-extrabold pr-2">
                         {translations[language].navSousPricingFr}
                         {translations[language].navSousPricingEn}
                       </div>
-                      <IoIosArrowDown className="mt-1" />
+                      {isExpanded4 ? <RxCross2 /> : <IoIosArrowDown />}
                     </div>
                   </button>
                   <ul

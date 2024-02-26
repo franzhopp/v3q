@@ -145,11 +145,7 @@ const NavbarDesktop = () => {
                         {translations[language].navSousTeamFr}
                         {translations[language].navSousTeamEn}
                       </div>
-                      {isExpanded ? (
-                        <RxCross2 className="animate-formbounce" />
-                      ) : (
-                        <IoIosArrowDown />
-                      )}
+                      {isExpanded ? <RxCross2 /> : <IoIosArrowDown />}
                     </div>
                   </button>
                   <ul
@@ -212,11 +208,7 @@ const NavbarDesktop = () => {
                         {translations[language].navSousPricingFr}
                         {translations[language].navSousPricingEn}
                       </div>
-                      {isExpanded ? (
-                        <RxCross2 className="animate-formbounce" />
-                      ) : (
-                        <IoIosArrowDown />
-                      )}
+                      {isExpanded ? <RxCross2 /> : <IoIosArrowDown />}
                     </div>
                   </button>
                   <ul
