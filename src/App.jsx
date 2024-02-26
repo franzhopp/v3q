@@ -4,12 +4,12 @@ import ThemeProvider from "./context/ThemeProvider.jsx";
 import LanguageProvider from "./context/LanguageProvider.jsx";
 import Homepage from "./Home/Homepage.jsx";
 import BlocsItemsHome from "./Components/Section/TextHome/MainBlocsHome.jsx";
-import PageValues from "./Components/Values/MainPageValues.jsx";
-import DiscoverDeveloper from "./Components/Discover/DiscoverDevelopper/MainPageDevelopper.jsx";
-import DiscoverDesigner from "./Components/Discover/DiscoverDesigner/MainPageDesigner.jsx";
+import PageValues from "./Pages/Values/MainPageValues.jsx";
+import DiscoverWebDeveloper from "./Pages/Discover/DiscoverDevelopper/MainPageDevelopper.jsx";
+import DiscoverDesigner from "./Pages/Discover/DiscoverDesigner/MainPageDesigner.jsx";
 import Services from "./Services/MainServices.jsx";
-import PricingFr from "./Components/Pricing/MainPricingFr.jsx";
-import PricingUk from "./Components/Pricing/MainPricingUk.jsx";
+import PricingFr from "./Pages/Pricing/MainPricingFr.jsx";
+import PricingUk from "./Pages/Pricing/MainPricingUk.jsx";
 import MainPageQuote from "./Components/UI/Form/Quote/MainPageQuote.jsx";
 import Portfolio from "./Pages/Portfolio/Portfolio.jsx";
 import PageNotFound from "./Pages/Error/PageNotFound.jsx";
@@ -24,7 +24,7 @@ const App = () => {
             <Route path="/" element={<Homepage />} />
             <Route path="/" element={<BlocsItemsHome />} />
             <Route path="/values" element={<PageValues />} />
-            <Route path="/developer" element={<DiscoverDeveloper />} />
+            <Route path="/developer" element={<DiscoverWebDeveloper />} />
             <Route path="/designer" element={<DiscoverDesigner />} />
             <Route path="/services" element={<Services />} />
             <Route path="/pricingfr" element={<PricingFr />} />

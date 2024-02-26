@@ -3,8 +3,8 @@ import { useEffect } from "react";
 import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import { FaArrowRight } from "react-icons/fa";
 import translations from "../translate.jsx";
-import NavbarDiscoverWebDevelopper from "../../Navigation/NavbarDiscover/NavbarDevelopper.jsx";
-import Avatar from "../../UI/Avatar/AvatarDeveloper.jsx";
+import NavbarDiscoverWebDevelopper from "../../../Components/Navigation/NavbarDiscover/NavbarDevelopper.jsx";
+import Avatar from "../../../Components/UI/Avatar/AvatarDeveloper.jsx";
 import TitlePage from "./Title/TitlePage.jsx";
 import SubTitlePage from "./Title/SubTitlePage.jsx";
 import SubDescTitle from "./Title/SubDescTitle.jsx";
@@ -17,8 +17,8 @@ import Frame from "./Svg/SvgFrame.jsx";
 import Vector from "./Svg/SvgVector.jsx";
 import LogoBrand from "./Logo/LogoBrand.jsx";
 import LinksNetwork from "./Network/LinksNetwork.jsx";
-import Footer from "../../Footer/MainFooter.jsx";
-import BackToTopButton from "../../UI/ScrollToTop/BackToTopButton.jsx";
+import Footer from "../../../Components/Footer/MainFooter.jsx";
+import BackToTopButton from "../../../Components/UI/ScrollToTop/BackToTopButton.jsx";
 
 const DiscoverWebDeveloper = () => {
   const { language } = useLanguage();

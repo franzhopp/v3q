@@ -1,22 +1,22 @@
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
-import { RiBardLine } from "react-icons/ri";
 import { useTheme } from "../../context/ThemeProvider.jsx";
-import NavbarPages from "../Navigation/NavbarPages/NavbarPages.jsx";
-import TitleWebsiteUk from "./Title/TitleWebsiteUk.jsx";
-import TitleUk from "./Title/TitleUk.jsx";
-import LinksFr from "./Links/LinksFr.jsx";
-import ConditionUk from "./Title/ConditionUk.jsx";
-import SvgReturnQuote from "./Svg/SvgReturnQuoteUk.jsx";
-import BackToTopButton from "../UI/ScrollToTop/BackToTopButton.jsx";
-import Footer from "../Footer/MainFooter.jsx";
+import { RiBardLine } from "react-icons/ri";
+import NavbarPages from "../../Components/Navigation/NavbarPages/NavbarPages.jsx";
+import TitlePricing from "../../Components/UI/Title/TitlePricing.jsx";
+import TitleWebsiteFr from "./Title/TitleWebsiteFr.jsx";
+import TitleMarketing from "./Title/TitleMarketing.jsx";
+import LinksUk from "./Links/LinksUk.jsx";
+import SvgStar from "./Svg/SvgStar.jsx";
+import ConditionFr from "./Title/ConditionFr.jsx";
+import SvgReturnQuote from "./Svg/SvgReturnQuote.jsx";
+import BackToTopButton from "../../Components/UI/ScrollToTop/BackToTopButton.jsx";
+import Footer from "../../Components/Footer/MainFooter.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import TitleMarketingUk from "./Title/TitleMarketingUk.jsx";
-import SvgStarUk from "./Svg/SvgStarUk.jsx";
 
-const Rate = () => {
+const PricingFr = () => {
   const { isDarkMode } = useTheme();
   const [openStates, setOpenStates] = useState({});
   const toggleSubList = (category) => {
@@ -25,107 +25,111 @@ const Rate = () => {
       [category]: !prevOpenStates[category],
     }));
   };
-  const Blue = "bg-fc7a44";
-  const e18ab0 = "bg-ec307a";
+  const Blue = "bg-0c3e78";
+  const e18ab0 = "bg-e18ab0";
   const InformationsSitesWeb = [
     {
       id: 1,
-      title: "Showcase site",
-      price: "starting at £590*",
-      details: ["5 pages, starting at £280", "10 pages, starting at £580"],
+      title: "Site vitrine",
+      price: "à partir de 650€*",
+      details: ["5 pages — À partir de 300€", "10 pages — À partir de 650€"],
       subDetails: [
-        "« Home » page with an overview of your company.",
-        "« About » page to share your story and vision.",
-        "« Services » page to introduce your offers.",
-        "« About us » page to introduce your business.",
-        "« Contact » page for your potential customers to reach you out.",
-        "Includes multiple pages for additional content or information about your business.",
+        "Page « d'Accueil » avec présentation de votre entreprise.",
+        "Page « À propos » pour partager votre histoire et votre mission.",
+        "Page « Services » pour présenter vos offres.",
+        "Page « Nous » concernant votre production.",
+        "Page de « Contact » pour vos clients potentiels.",
+        "Inclut de plusieurs pages pour plus de contenus, d'informations concernant votre entreprise.",
       ],
     },
     {
       id: 2,
-      title: "Website mock-up design",
-      price: " starting at £220*",
-      details: ["2 pages, starting at £220", "5 pages, starting at £400"],
+      title: "Maquette graphique",
+      price: "à partir de 250€*",
+      details: [
+        "2 pages — À partir de 250€",
+        "5 pages avec logo — À partir de 450€",
+      ],
       subDetails: [
-        "Graphic design for specific pages of the site layout.",
-        "Graphic design for multiple pages with the inclusion of a custom logo.",
+        "Conception graphique pour des pages spécifiques de la maquette du site.",
+        "Conception graphique pour plusieurs pages avec l'inclusion d'un logo personnalisé.",
       ],
     },
     {
       id: 3,
       title: "Landing page",
-      price: "starting at £280*",
-      details: ["5 pages, starting at £280", "10 pages, starting at £550"],
+      price: "à partir de 300€*",
+      details: ["5 pages — À partir de 300€", "10 pages — À partir de 600€"],
       subDetails: [
-        "Design of an impactful and eye-catching page.",
-        "Includes a page extension with additional features.",
+        "Conception d'une page impactante et convaincante.",
+        "Inclut une extension d'une page avec des fonctionnalités supplémentaires.",
       ],
     },
     {
       id: 4,
-      title: "E-commerce site",
-      price: "starting at £720*",
-      details: ["5 pages, starting at £450", "10 pages, starting at £720"],
+      title: "Site e-commerce",
+      price: "à partir de 800€*",
+      details: ["5 pages — À partir de 500€", "10 pages — À partir de 800€"],
       subDetails: [
-        "Homepage, product catalog, individual product pages, shopping cart, payment page.",
-        "Includes advanced features such as filtering options, customer reviews, etc.",
+        "Page d'accueil, catalogue de produits, pages de produits individuelles, panier, page de paiement.",
+        "Inclut des fonctionnalités avancées telles que des options de filtrage, des avis clients, etc.",
       ],
     },
     {
       id: 5,
-      title: "Custom site",
-      price: "starting at £800*",
-      details: ["5 pages, starting at £550", "10 pages, starting at £800"],
+      title: "Site sur-mesure",
+      price: "à partir de 900€*",
+      details: ["5 pages — À partir de 600€", "10 pages — À partir de 900€"],
       subDetails: [
-        "Customized design according to customer's specific needs.",
-        "Includes advanced features and highly customized design.",
+        "Conception personnalisée en fonction des besoins spécifiques du client.",
+        "Inclut des fonctionnalités avancées et une conception hautement personnalisée.",
       ],
     },
     {
       id: 6,
-      title: "Redesign",
-      price: "starting at £680*",
-      details: ["5 pages, starting at £325", "10 pages, starting at £680"],
+      title: "Refonte totale",
+      price: "à partir de 750€*",
+      details: ["5 pages — À partir de 350€", "10 pages — À partir de 750€"],
       subDetails: [
-        "Comprehensive user interface analysis and design update.",
-        "Includes significant improvements for an optimized user experience.",
+        "Analyse complète de l'interface utilisateur et mise à jour du design.",
+        "Inclut des améliorations significatives pour une expérience utilisateur optimisée.",
       ],
     },
     {
-      id: 5,
-      title: "Changes",
-      price: "starting at £80*",
-      details: ["5 pages, starting at £80", "10 pages, starting at £280"],
+      id: 7,
+      title: "Modifications",
+      price: "à partir de 100€*",
+      details: ["5 pages — À partir de 100€", "10 pages — À partir de 300€"],
       subDetails: [
-        "Specific changes on several existing pages of the site.",
-        "Includes more in-depth site-wide adjustments.",
+        "Modifications spécifiques sur plusieurs pages existantes du site.",
+        "Inclut des ajustements plus approfondis sur l'ensemble du site.",
       ],
     },
   ];
   const InformationsMarketing = [
     {
-      title: "Brand strategy",
-      price: "starting at £220*",
+      title: "Startégie de marque",
+      price: "à partir de 250€*",
     },
     {
-      title: "Socials & SEO ",
-      price: "starting at  £140*",
+      title: "Réseaux sociaux & SEO",
+      price: "à partir de 150€*",
     },
   ];
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, [openStates]);
+
   return (
     <section className="bg-fff6e4">
       <NavbarPages />
-      <TitleUk />
-      <TitleWebsiteUk />
+      <TitlePricing />
+      <TitleWebsiteFr />
       <div className="flex justify-center">
         <div className="flex flex-col justify-center pb-10 text-center">
           <div className="w-96">
-            <LinksFr />
+            <LinksUk />
           </div>
         </div>
       </div>
@@ -139,7 +143,7 @@ const Rate = () => {
           {InformationsSitesWeb.map((info) => (
             <div
               className={`flex flex-col justify-center font-inter shadow-md ${
-                info.id % 2 === 0 ? e18ab0 : Blue
+                info.id % 2 === 0 ? Blue : e18ab0
               }`}
               key={info.id}
             >
@@ -162,7 +166,7 @@ const Rate = () => {
                     }`}
                   >
                     <div className="flex ml-1 number">
-                      Learn more <IoIosArrowDown className="mt-2 ml-1" />
+                      En savoir plus <IoIosArrowDown className="mt-2 ml-1" />
                     </div>
                   </button>
                   {openStates[info.title] && (
@@ -177,9 +181,9 @@ const Rate = () => {
                         </li>
                       ))}
                       <div className="flex justify-start">
-                        <ul className="text-fff6e4 text-md mt-3 mb-3  px-10 sm:text-left text-justify">
+                        <ul className="text-fff6e4 text-md mt-3 mb-3 px-10 sm:text-left text-justify">
                           <p className="FontNumber mb-2">
-                            Detailed informations :
+                            Informations détaillées :
                           </p>
                           {info.subDetails.map((subDetail, subDetailIndex) => (
                             <li
@@ -197,7 +201,7 @@ const Rate = () => {
                         to="/quote"
                         className="text-md pt-5 font-extrabold FontNumber underline"
                       >
-                        Request a free quote
+                        Demander un devis gratuit
                       </NavLink>
                     </ul>
                   )}
@@ -207,8 +211,9 @@ const Rate = () => {
           ))}
         </div>
       </div>
-      <SvgStarUk />
-      <TitleMarketingUk />
+      <BackToTopButton />
+      <SvgStar />
+      <TitleMarketing />
       {/* ARRAY 2 */}
       <div
         data-aos="fade-up"
@@ -219,7 +224,7 @@ const Rate = () => {
           {InformationsMarketing.map((info, index) => (
             <div
               className={`flex flex-col justify-center font-inter shadow-md ${
-                index % 2 === 0 ? Blue : e18ab0
+                index % 2 === 0 ? e18ab0 : Blue
               }`}
               key={index}
             >
@@ -237,12 +242,11 @@ const Rate = () => {
           ))}
         </div>
       </div>
-      <ConditionUk />
-      <BackToTopButton />
+      <ConditionFr />
       <SvgReturnQuote />
       <Footer />
     </section>
   );
 };
 
-export default Rate;
+export default PricingFr;

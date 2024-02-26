@@ -2,9 +2,9 @@ import { useTheme } from "../../context/ThemeProvider";
 import { useEffect, useState } from "react";
 import SvgFontRight from "./Svg/SvgFontRight";
 import SvgFontLeft from "./Svg/SvgFontLeft";
-import NavbarEthics from "../Navigation/NavbarValues/NavbarValues.jsx";
+import NavbarValues from "../../Components/Navigation/NavbarValues/NavbarValues";
 import Img from "../../assets/Picture/PictureValuesMac.png";
-import BackToTopButton from "../UI/ScrollToTop/BackToTopButton";
+import BackToTopButton from "../../Components/UI/ScrollToTop/BackToTopButton";
 import Blocs from "./Blocs/Blocs";
 import SvgStarPink from "./Svg/SvgStarPink";
 import SvgArrowScroll from "./Svg/SvgArrowScroll";
@@ -13,9 +13,9 @@ import SvgStarPinkEnd from "./Svg/SvgStarPinkEnd";
 import SubBlocs from "./Blocs/SubBlocs";
 import SubBlocsBgPink from "./Blocs/SubBlocsBgPink";
 import EndTextValues from "./Text/EndTextValues";
-import Footer from "../Footer/MainFooter.jsx";
+import Footer from "../../Components/Footer/MainFooter";
 
-const EthicsPage = () => {
+const PageValues = () => {
   const { isDarkMode } = useTheme();
   const [scrollSection, setScrollSection] = useState();
   const ScrollToSectionEthics = () => {
@@ -39,7 +39,7 @@ const EthicsPage = () => {
   }, []);
   return (
     <section className="bg-fff6e4">
-      <NavbarEthics />
+      <NavbarValues />
       <div className="flex justify-center pt-16">
         {/* Les 3 blocs */}
         <Blocs />
@@ -95,4 +95,4 @@ const EthicsPage = () => {
   );
 };
 
-export default EthicsPage;
+export default PageValues;

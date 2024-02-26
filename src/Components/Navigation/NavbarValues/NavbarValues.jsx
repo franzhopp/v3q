@@ -6,7 +6,7 @@ import LinksNavbarMobile from "../LinksNavbarMobile.jsx";
 import "../../Section/TextHome/MainBlocsHome.jsx";
 import "../../../Home/Homepage";
 
-const NavbarEthics = () => {
+const NavbarValues = () => {
   const { language } = useLanguage();
   return (
     <div className="BgValues bg-cover bg-no-repeat bg-center h-full py-56">
@@ -35,4 +35,4 @@ const NavbarEthics = () => {
   );
 };
 
-export default NavbarEthics;
+export default NavbarValues;

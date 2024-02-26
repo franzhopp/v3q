@@ -1,5 +1,5 @@
-import NavbarDiscoverDesigner from "../../Navigation/NavbarDiscover/NavbarDesigner.jsx";
-import AvatarDesigner from "../../UI/Avatar/AvatarDesigner.jsx";
+import NavbarDiscoverDesigner from "../../../Components/Navigation/NavbarDiscover/NavbarDesigner.jsx";
+import AvatarDesigner from "../../../Components/UI/Avatar/AvatarDesigner.jsx";
 import TitleJob from "./Title/TitleJob.jsx";
 import TitleGallery from "./Title/TitleGallery.jsx";
 import Logo from "./Logo/Logo.jsx";
@@ -16,8 +16,8 @@ import SvgIllustration from "./Svg/SvgIllustration.jsx";
 import SvgItemLeft from "./Svg/SvgItemLeft.jsx";
 import SvgItemRight from "./Svg/SvgItemRight.jsx";
 import LinksNetwork from "./Network/LinksNetwork.jsx";
-import Footer from "../../Footer/MainFooter.jsx";
-import BackToTopButton from "../../UI/ScrollToTop/BackToTopButton.jsx";
+import Footer from "../../../Components/Footer/MainFooter.jsx";
+import BackToTopButton from "../../../Components/UI/ScrollToTop/BackToTopButton.jsx";
 import SvgLineLeft from "./Svg/SvgLineLeft.jsx";
 import SvgLine from "./Svg/SvgLineRight.jsx";
 

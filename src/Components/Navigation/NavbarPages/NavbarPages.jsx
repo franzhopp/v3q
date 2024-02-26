@@ -2,7 +2,7 @@ import LinksNavbarDesktop from "../LinksNavbarDestkop.jsx";
 import LinksNavbarMobile from "../LinksNavbarMobile.jsx";
 import "../../../Home/Homepage";
 
-const PagesNavbar = () => {
+const NavbarPages = () => {
   return (
     <>
       <LinksNavbarDesktop />
@@ -11,4 +11,4 @@ const PagesNavbar = () => {
   );
 };
 
-export default PagesNavbar;
+export default NavbarPages;
