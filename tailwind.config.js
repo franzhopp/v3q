@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontSize: {
+        'full-xs': '8px',
+      },
       animation: {
         'formbounce': 'button-design-formbounce 4s infinite',
       },

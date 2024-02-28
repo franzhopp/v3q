@@ -125,7 +125,7 @@ const DiscoverWebDeveloper = () => {
         <div className="p-6">
           <div
             data-aos="fade-in"
-            className="flex flex-row space-x-10 list-none px-10"
+            className="flex flex-row space-x-10 list-none"
           >
             <LinksNetwork />
           </div>
