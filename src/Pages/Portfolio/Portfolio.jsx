@@ -239,7 +239,7 @@ const Portfolio = () => {
           </div>
           <div class={`flex justify-center py-10 px-10`}>
             <div className={`flex flex-wrap justify-center gap-16`}>
-              <div className={`flex flex-col`}>
+              <div className={`flex flex-col px-10`}>
                 <div
                   className={`p-6 rounded-3xl shadow-md transition-transform transform hover:scale-90`}
                 >
@@ -247,7 +247,7 @@ const Portfolio = () => {
                     data-aos="fade-left"
                     className={`text-black text-8xl FontNumber font-bold mb-2`}
                   >
-                    Web Dev
+                    WebDev
                   </h2>
                 </div>
                 <div className={`flex justify-end`}>
@@ -259,7 +259,7 @@ const Portfolio = () => {
                   </p>
                 </div>
               </div>
-              <div className={`flex flex-col`}>
+              <div className={`flex flex-col px-10`}>
                 <div
                   className={`p-6 rounded-3xl shadow-md transition-transform transform hover:scale-90`}
                 >
