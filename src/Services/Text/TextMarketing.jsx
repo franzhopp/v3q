@@ -5,9 +5,7 @@ import { RiBardLine } from "react-icons/ri";
 const TextMarketing = () => {
   const { language } = useLanguage();
   return (
-    <div
-      className={`BgServicesMarketing lg:BgServicesMarketingMobile bg-cover bg-no-repeat py-32`}
-    >
+    <div className={`BgServicesMarketing bg-cover bg-no-repeat py-32`}>
       <div
         data-aos="fade-right"
         className={`text-fff6e4 text-4xl lg:text-5xl text-center font-extrabold py-3`}

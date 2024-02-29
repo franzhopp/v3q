@@ -4,12 +4,13 @@ import { useState } from "react";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import NavbarPages from "../../Components/Navigation/NavbarPages/NavbarPages.jsx";
 import TitlePorfolio from "../../Components/UI/Title/TitlePorfolio.jsx";
-import ImgDefault from "../../assets/Svg/Hourglass.svg";
+import ImgDefault from "../../assets/Background/BgHome.png";
 import SvgHeart from "./Svg/SvgHeart.jsx";
 import SvgStarPink from "./Svg/SvgStar.jsx";
 import Footer from "../../Components/Footer/MainFooter.jsx";
 import BackToTopButton from "../../Components/UI/ScrollToTop/BackToTopButton";
 import ImgPatternNavi from "../../assets/Picture/PatternNavi.png";
+import SvgStarRed from "./Svg/SvgStarRed";
 
 const Portfolio = () => {
   const { isDarkMode } = useTheme();
@@ -66,7 +67,7 @@ const Portfolio = () => {
         <TitlePorfolio />
         <div
           x-comp={`TitlePortfolio`}
-          className={`flex justify-center lg:justify-start px-10 lg:px-32 py-10`}
+          className={`flex justify-center lg:justify-start px-10 lg:px-32 py-16`}
         >
           <h1 className={`text-c22e2e text-2xl lg:text-5xl font-extrabold`}>
             Latest Projects
@@ -81,22 +82,39 @@ const Portfolio = () => {
             className={`absolute py-3 lg:flex hidden `}
           />
         </div>
-
         <div x-comp={`Carousel`} className={``}>
           <div class={`flex flex-wrap`}>
             <div
-              class={`bg-slate-300 flex justify-center items-center h-96 w-full lg:w-1/2`}
+              class={`bg-slate-300 flex justify-center items-center h-1/2 w-full lg:w-1/2`}
             >
-              <div>
-                <img
-                  src={cards[currentIndex].image}
-                  alt={cards[currentIndex].title}
-                  className={`w-auto h-44 animate-formbounce`}
-                />
-              </div>
+              {" "}
+              <img src={cards[currentIndex].image} className={``} />
             </div>
-            <div class={`bg-slate-500 h-1/2 lg:h-96 w-full lg:w-1/2 py-10`}>
+            <div class={`bg-slate-500 h-1/2 lg:h-2/5 w-full lg:w-1/2 py-10`}>
               <div className={`px-10`}>
+                <div className="flex justify-between">
+                  <div className="pb-10">
+                    <button
+                      className={`bg-fff6e4 px-7 p-3 text-md lg:text-lg rounded-full font-extrabold`}
+                    >
+                      Keyword
+                    </button>
+                  </div>
+                  <div className="pb-10">
+                    <button
+                      className={`bg-fff6e4 px-7 p-3 text-md lg:text-lg rounded-full font-extrabold`}
+                    >
+                      Another keyword
+                    </button>
+                  </div>
+                  <div className="pb-10">
+                    <button
+                      className={`bg-fff6e4 px-7 p-3 text-md lg:text-lg rounded-full font-extrabold`}
+                    >
+                      ...
+                    </button>
+                  </div>
+                </div>
                 <h1
                   className={`text-black text-2xl lg:text-4xl text-left font-extrabold`}
                 >
@@ -132,110 +150,31 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-
-        <div x-comp={`BtnDisplayPrevNext`} className={`pt-10`}>
+        <div x-comp={`BtnDisplayPrevNext`} className={``}>
           <div className={`flex justify-center items-center gap-2`}>
-            <button
-              className={`bg-black text-fff6e4 p-3 shadow-lg rounded-full mr-3 transform active:scale-75 transition-transform`}
-              onClick={handlePrev}
-            >
-              <FaArrowLeft className={`h-6 w-6`} />
-            </button>
-            {cards.map((_, i) => (
-              <div
-                className={`bg-black rounded-full w-3 h-3 ${
-                  currentIndex === i ? "p-2" : "bg-opacity-50"
-                }`}
-              />
-            ))}
-            <button
-              className={`bg-black text-fff6e4 p-3 shadow-lg rounded-full ml-3 transform active:scale-75 transition-transform`}
-              onClick={handleNext}
-            >
-              <FaArrowRight className={`h-6 w-6`} />
-            </button>
+            <SvgStarRed />
           </div>
         </div>
-        <div x-comp={`TitlePortfolioDetails`} className={`flex justify-center`}>
+        <div x-comp={`PersonalPortfolios`} class={`bg-black`}>
           <div
-            x-comp={`SubTitlePortfolio`}
-            className={`flex flex-col text-center pt-28`}
+            x-comp={`TitlePortfolioDetails`}
+            className={`flex justify-center`}
           >
-            <h1
-              className={`text-c22e2e text-2xl lg:text-4xl font-extrabold pb-5`}
+            <div
+              x-comp={`SubTitlePortfolio`}
+              className={`flex flex-col text-center`}
             >
-              Wanna see some more ?
-            </h1>
-            <p
-              className={`text-c22e2e text-2xl lg:text-4xl font-extrabold px-10 pb-20`}
-            >
-              Check out our personal portfolios
-            </p>
-          </div>
-        </div>
-        <div x-comp={`PersonalPortfolios`}>
-          <div class={`flex flex-wrap`}>
-            <div class={`bg-slate-300 h-96 w-full lg:w-1/2`}>
-              <div className="flex justify-between">
-                <h1
-                  className={`text-black text-2xl lg:text-4xl text-left font-extrabold`}
-                >
-                  Louisa
-                </h1>
-                <h2
-                  className={`text-black text-2xl lg:text-4xl text-left font-extrabold`}
-                >
-                  Web Developer
-                </h2>
-              </div>
-              <div className={`flex justify-end px-5 lg:px-10`}>
-                <div
-                  className={`bg-fff6e4 flex flex-wrap rounded-full space-x-6 p-3`}
-                >
-                  <button
-                    className={`bg-black text-fff6e4 p-3 shadow-lg rounded-full transform active:scale-75 transition-transform`}
-                  >
-                    <FaArrowRight className={`h-8 w-8`} />
-                  </button>
-                  <button
-                    className={`bg-gray-500 px-7 p-3 text-md lg:text-lg rounded-full font-extrabold`}
-                  >
-                    Website
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class={`bg-slate-500 h-96 w-full lg:w-1/2`}>
-              <div className={`flex justify-between`}>
-                <h1
-                  className={`text-black text-2xl lg:text-4xl text-left font-extrabold`}
-                >
-                  Mélissa
-                </h1>
-                <h2
-                  className={`text-black text-2xl lg:text-4xl text-left font-extrabold`}
-                >
-                  Designer
-                </h2>
-              </div>
-              <div className={`flex justify-end px-5 lg:px-10`}>
-                <div
-                  className={`bg-fff6e4 flex flex-wrap rounded-full space-x-6 p-3`}
-                >
-                  <button
-                    className={`bg-black text-fff6e4 p-3 shadow-lg rounded-full transform active:scale-75 transition-transform`}
-                  >
-                    <FaArrowRight className={`h-8 w-8`} />
-                  </button>
-                  <button
-                    className={`bg-gray-500 px-7 p-3 text-md lg:text-lg rounded-full font-extrabold`}
-                  >
-                    Website
-                  </button>
-                </div>
-              </div>
+              <h1 className={`text-c22e2e text-3xl lg:text-4xl font-extrabold`}>
+                Wanna see some more ?
+              </h1>
+              <p
+                className={`text-c22e2e text-xl lg:text-2xl font-extrabold px-10`}
+              >
+                Check out our personal portfolios
+              </p>
             </div>
           </div>
+          <div class={`flex justify-center`}></div>
         </div>
         <BackToTopButton />
         <div className={`flex justify-center py-20`}>
