@@ -5,9 +5,11 @@ import "../../../Home/Homepage";
 
 const NavbarDiscoverDesigner = () => {
   return (
-    <div className="PictureBannierMelissa h-96 bg-cover bg-left lg:bg-center">
-      <LinksNavbarDesktop />
-      <LinksNavbarMobile />
+    <div className={`WireBannier`}>
+      <div className="PictureBannierMelissa h-96 bg-left lg:bg-center">
+        <LinksNavbarDesktop />
+        <LinksNavbarMobile />
+      </div>
     </div>
   );
 };

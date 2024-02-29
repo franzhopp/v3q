@@ -18,10 +18,12 @@ const AvatarDesigner = () => {
           />
         </svg>
       </div>
-      <div
-        className={`bg-1e1e20 absolute rounded-full h-48 w-48 sm:h-56 sm:w-56 left-10 2xl:left-96 top-72 xl:top-64 sm:ml-4 mb-4`}
-      >
-        <img src={AvatarMelissa} className="rounded-full p-3" alt="Avatar" />
+      <div className={`WireBannier`}>
+        <div
+          className={`bg-1e1e20 absolute rounded-full h-48 w-48 sm:h-56 sm:w-56 left-10 2xl:left-96 top-72 xl:top-64 sm:ml-4 mb-4`}
+        >
+          <img src={AvatarMelissa} className="rounded-full p-3" alt="Avatar" />
+        </div>
       </div>
     </div>
   );

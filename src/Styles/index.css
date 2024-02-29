@@ -119,6 +119,10 @@ textarea {
     border-radius: 0px 0px 154px 0px;
 }
 
+.WireBannier {
+    background: lightgray;
+}
+
 .BgTitlePortfolio {
     border-radius: 0px 0px 154px 0px;
     background-image: url("../assets/Picture/PicturePortfolio.png");
