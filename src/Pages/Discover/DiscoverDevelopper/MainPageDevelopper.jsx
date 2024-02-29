@@ -90,14 +90,14 @@ const DiscoverWebDeveloper = () => {
         <div data-aos="fade-left">
           <img
             src={Pattern}
-            className="-rotate-6 transition duration-500 hover:opacity-90"
+            className="-rotate-12 transition duration-500 hover:opacity-90"
           />
           <Copyright />
         </div>
         <div className="flex relative">
           <Vector />
         </div>
-        <div className="bg-f9fefe p-5 mt-20 lg:mt-0 sm:w-96 sm:h-1/2 text-center rounded-2xl shadow-lg rotate-6">
+        <div className="bg-f9fefe p-5 mt-20 lg:mt-0 lg:w-96 lg:h-1/2 text-center rounded-2xl shadow-lg rotate-12">
           <div className="mt-5 text-base">
             <SubDescTitle />
           </div>
