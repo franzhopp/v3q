@@ -80,6 +80,7 @@ const Portfolio = () => {
 
   return (
     <>
+      <BackToTopButton />
       <section x-comp={`PortfolioNavi`} className={`bg-fff6e4`}>
         <SvgLineRight />
         <NavbarPages />
@@ -282,7 +283,6 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <BackToTopButton />
         <div className={`flex justify-center py-20`}>
           <SvgHeart />
         </div>

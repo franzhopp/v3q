@@ -114,9 +114,14 @@ textarea {
     animation: FadeIn 0.5s ease-in-out;
 }
 
+.WireTitle {
+    background: lightgray;
+    border-radius: 0px 0px 154px 0px;
+}
+
 .BgTitlePortfolio {
     border-radius: 0px 0px 154px 0px;
-    background: url("../assets/Picture/PicturePortfolio.png"), lightgray;
+    background-image: url("../assets/Picture/PicturePortfolio.png");
     animation: FadeIn 0.5s ease-in-out;
 }
 
