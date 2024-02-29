@@ -12,6 +12,7 @@ import Footer from "../../Components/Footer/MainFooter.jsx";
 import BackToTopButton from "../../Components/UI/ScrollToTop/BackToTopButton";
 import ImgPatternNavi from "../../assets/Picture/PatternNavi.png";
 import SvgStarRed from "./Svg/SvgStarRed";
+import SvgLineRight from "./Svg/SvgLineRight";
 
 const Portfolio = () => {
   const { isDarkMode } = useTheme();
@@ -80,6 +81,7 @@ const Portfolio = () => {
   return (
     <>
       <section x-comp={`PortfolioNavi`} className={`bg-fff6e4`}>
+        <SvgLineRight />
         <NavbarPages />
         <TitlePorfolio />
         <div
@@ -103,7 +105,7 @@ const Portfolio = () => {
           <div class={`flex flex-wrap`}>
             {/* 1 */}
             <div
-              class={`BgSlidePortfolio bg-cover bg-center flex justify-center items-center w-full lg:w-1/2`}
+              class={`BgSlidePortfolio bg-cover bg-center flex justify-center items-center w-full lg:w-1/2 relative`}
             >
               <div className={`flex justify-start relative`}>
                 <button onClick={handleNext}>
@@ -129,7 +131,9 @@ const Portfolio = () => {
               </p>
             </div>
             {/* 2 */}
-            <div class={` bg-0c3e78 h-1/2 lg:h-2/5 w-full lg:w-1/2 py-10`}>
+            <div
+              class={`bg-0c3e78 h-1/2 lg:h-2/5 w-full lg:w-1/2 py-10 relative`}
+            >
               <div className={`flex justify-end relative`}>
                 <button onClick={handlePrev}>
                   <svg
@@ -149,25 +153,25 @@ const Portfolio = () => {
                   </svg>
                 </button>
               </div>
-              <div className={`px-10`}>
+              <div className={`px-5 lg:px-16`}>
                 <div className="flex justify-start gap-2">
                   <div className="pb-10">
                     <button
-                      className={`bg-fff6e4 px-7 p-3 text-md lg:text-lg rounded-full font-extrabold`}
+                      className={`bg-fff6e4 px-5 p-3 text-md lg:text-lg rounded-full font-extrabold`}
                     >
                       Keyword
                     </button>
                   </div>
                   <div className="pb-10">
                     <button
-                      className={`bg-fff6e4 px-7 p-3 text-md lg:text-lg rounded-full font-extrabold`}
+                      className={`bg-fff6e4 px-5 p-3 text-md lg:text-lg rounded-full font-extrabold`}
                     >
                       Another keyword
                     </button>
                   </div>
                   <div className="pb-10">
                     <button
-                      className={`bg-fff6e4 px-7 p-3 text-md lg:text-lg rounded-full font-extrabold`}
+                      className={`bg-fff6e4 px-5 p-3 text-md lg:text-lg rounded-full font-extrabold`}
                     >
                       ...
                     </button>
@@ -233,40 +237,43 @@ const Portfolio = () => {
               </p>
             </div>
           </div>
-
           <div class={`flex justify-center py-10 px-10`}>
-            <div className="flex flex-wrap justify-center gap-16">
-              <div className="flex flex-col">
-                <div className="p-6 rounded-3xl shadow-md transition-transform transform hover:scale-90">
+            <div className={`flex flex-wrap justify-center gap-16`}>
+              <div className={`flex flex-col`}>
+                <div
+                  className={`p-6 rounded-3xl shadow-md transition-transform transform hover:scale-90`}
+                >
                   <h2
                     data-aos="fade-left"
-                    className="text-8xl FontNumber text-black font-bold mb-2"
+                    className={`text-black text-8xl FontNumber font-bold mb-2`}
                   >
                     Web Dev
                   </h2>
                 </div>
-                <div className="flex justify-end">
-                  <p className="text-fff6e4 flex flex-col pt-2">
+                <div className={`flex justify-end`}>
+                  <p className={`text-fff6e4 flex flex-col pt-2`}>
                     Tell us a bit more about yourself
-                    <span className="flex justify-end font-extrabold">
+                    <span className={`flex justify-end font-extrabold`}>
                       Find out more {`>`}
                     </span>
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col">
-                <div className="p-6 rounded-3xl shadow-md transition-transform transform hover:scale-90">
+              <div className={`flex flex-col`}>
+                <div
+                  className={`p-6 rounded-3xl shadow-md transition-transform transform hover:scale-90`}
+                >
                   <h2
                     data-aos="fade-left"
-                    className="text-8xl FontNumber text-black font-bold mb-2"
+                    className={`text-8xl FontNumber text-black font-bold mb-2`}
                   >
                     Designer
                   </h2>
                 </div>
-                <div className="flex justify-end">
-                  <p className="text-fff6e4 flex flex-col pt-2 ">
+                <div className={`flex justify-end`}>
+                  <p className={`text-fff6e4 flex flex-col pt-2`}>
                     Tell us a bit more about yourself
-                    <span className="flex justify-end font-extrabold">
+                    <span className={`flex justify-end font-extrabold`}>
                       Find out more {`>`}
                     </span>
                   </p>
@@ -275,7 +282,6 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-
         <BackToTopButton />
         <div className={`flex justify-center py-20`}>
           <SvgHeart />

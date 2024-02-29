@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const TitlePorfolio = () => {
   return (
-    <div className="BgTitlePortfolio bg-cover bg-center py-32">
+    <div className="BgTitlePortfolio bg-cover bg-center py-32 relative">
       <div className="flex justify-center lg:justify-start text-fff6e4 font-extrabold pt-20">
         <motion.span
           initial={{ opacity: 0, y: 20 }}

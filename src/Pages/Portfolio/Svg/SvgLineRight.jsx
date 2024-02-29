@@ -1,10 +1,10 @@
-const SvgLine = () => {
+const SvgLineRight = () => {
   return (
     <svg
-      className={`absolute left-5 xl:left-72`}
+      className={`absolute right-5 xl:right-44 bottom-0`}
       width="4"
-      height="1700"
-      viewBox="0 0 4 1800"
+      height="1000"
+      viewBox="0 0 4 400"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -36,4 +36,4 @@ const SvgLine = () => {
   );
 };
 
-export default SvgLine;
+export default SvgLineRight;
