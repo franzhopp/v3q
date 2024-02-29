@@ -3,8 +3,8 @@ const SvgLine = () => {
     <svg
       className="absolute left-5 xl:left-72"
       width="4"
-      height="1000"
-      viewBox="0 0 4 1490"
+      height="1500"
+      viewBox="0 0 4 1500"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
