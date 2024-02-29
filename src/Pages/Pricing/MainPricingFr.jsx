@@ -122,7 +122,7 @@ const PricingFr = () => {
   }, [openStates]);
 
   return (
-    <section className="bg-fff6e4">
+    <section className={`bg-fff6e4`}>
       <NavbarPages />
       <TitlePricing />
       <TitleWebsiteFr />

@@ -142,6 +142,10 @@ textarea {
     background: url("../assets/Background/BgServicesMarketing.png"), lightgray;
 }
 
+.BgServicesMarketingMobile {
+    background: url("../assets/Background/BgServicesMarketingMobile.png"), lightgray;
+}
+
 .BgColorFilterForm {
     background: rgba(0, 0, 0, 0.08);
     backdrop-filter: blur(6.5px);

@@ -63,7 +63,7 @@ export default function Carousel({
             className={`bg-c22e2e text-fff6e4 p-3 rounded-full mr-3 transform active:scale-75 transition-transform`}
             onClick={handleNext}
           >
-            <FaArrowLeft className="h-10 w-10" />
+            <FaArrowLeft className={`h-10 w-10`} />
           </button>
           {cards.map((_, i) => (
             <div
@@ -76,7 +76,7 @@ export default function Carousel({
             className={`bg-c22e2e text-fff6e4 p-3 rounded-full ml-3 transform active:scale-75 transition-transform`}
             onClick={handlePrev}
           >
-            <FaArrowRight className="h-10 w-10" />
+            <FaArrowRight className={`h-10 w-10`} />
           </button>
         </div>
       </div>
