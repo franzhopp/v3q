@@ -1,10 +1,9 @@
-import { NavLink } from "react-router-dom";
 import { useTheme } from "../../context/ThemeProvider";
 import { useState } from "react";
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import NavbarPages from "../../Components/Navigation/NavbarPages/NavbarPages.jsx";
 import TitlePorfolio from "../../Components/UI/Title/TitlePorfolio.jsx";
-import ImgDefault from "../../assets/Background/BgHome.png";
+import ImgDefault from "../../assets/Background/BgCardsTwo.png";
 import SvgHeart from "./Svg/SvgHeart.jsx";
 import SvgStarPink from "./Svg/SvgStar.jsx";
 import Footer from "../../Components/Footer/MainFooter.jsx";
@@ -79,20 +78,59 @@ const Portfolio = () => {
         <div x-comp={`ImgCarousel`} className={`flex justify-center relative`}>
           <img
             src={ImgPatternNavi}
-            className={`absolute py-3 lg:flex hidden `}
+            className={`absolute py-3 lg:flex hidden`}
           />
         </div>
-        <div x-comp={`Carousel`} className={``}>
+        <div x-comp={`Carousel`}>
           <div class={`flex flex-wrap`}>
+            {/* 1 */}
             <div
               class={`bg-slate-300 flex justify-center items-center h-1/2 w-full lg:w-1/2`}
             >
-              {" "}
+              <div className={`flex justify-start relative`}>
+                <button onClick={handleNext}>
+                  <svg
+                    className={`absolute -bottom-8 hidden lg:flex`}
+                    width="21"
+                    height="67"
+                    viewBox="0 0 21 67"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17 4L4 33.5L17 63"
+                      stroke="#8C8C8C"
+                      stroke-width="7"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </button>
+              </div>
               <img src={cards[currentIndex].image} className={``} />
             </div>
+            {/* 2 */}
             <div class={`bg-slate-500 h-1/2 lg:h-2/5 w-full lg:w-1/2 py-10`}>
+              <div className={`flex justify-end relative`}>
+                <button onClick={handlePrev}>
+                  <svg
+                    className={`absolute right-0 top-32 hidden lg:flex`}
+                    width="21"
+                    height="67"
+                    viewBox="0 0 21 67"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4 63L17 33.5L4.00001 4"
+                      stroke="#D9D9D9"
+                      stroke-width="7"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </button>
+              </div>
               <div className={`px-10`}>
-                <div className="flex justify-between">
+                <div className="flex justify-start gap-2">
                   <div className="pb-10">
                     <button
                       className={`bg-fff6e4 px-7 p-3 text-md lg:text-lg rounded-full font-extrabold`}
