@@ -3,7 +3,7 @@ const SvgLineRight = () => {
     <svg
       className={`absolute right-5 xl:right-44 bottom-0`}
       width="4"
-      height="1000"
+      height="700"
       viewBox="0 0 4 400"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

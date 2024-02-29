@@ -12,7 +12,6 @@ import Footer from "../../Components/Footer/MainFooter.jsx";
 import BackToTopButton from "../../Components/UI/ScrollToTop/BackToTopButton";
 import ImgPatternNavi from "../../assets/Picture/PatternNavi.png";
 import SvgStarRed from "./Svg/SvgStarRed";
-import SvgLineRight from "./Svg/SvgLineRight";
 
 const Portfolio = () => {
   const { isDarkMode } = useTheme();
@@ -82,7 +81,6 @@ const Portfolio = () => {
     <>
       <BackToTopButton />
       <section x-comp={`PortfolioNavi`} className={`bg-fff6e4`}>
-        <SvgLineRight />
         <NavbarPages />
         <TitlePorfolio />
         <div
@@ -96,6 +94,7 @@ const Portfolio = () => {
             <SvgStarPink />
           </div>
         </div>
+
         <div x-comp={`ImgCarousel`} className={`flex justify-center relative`}>
           <img
             src={ImgPatternNavi}
