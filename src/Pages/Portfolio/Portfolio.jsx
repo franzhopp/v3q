@@ -247,7 +247,7 @@ const Portfolio = () => {
                     data-aos="fade-left"
                     className={`text-black text-8xl FontNumber font-bold mb-2`}
                   >
-                    WebDev
+                    Dev
                   </h2>
                 </div>
                 <div className={`flex justify-end`}>
@@ -267,7 +267,7 @@ const Portfolio = () => {
                     data-aos="fade-left"
                     className={`text-8xl FontNumber text-black font-bold mb-2`}
                   >
-                    Designer
+                    Des
                   </h2>
                 </div>
                 <div className={`flex justify-end`}>
