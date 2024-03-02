@@ -14,7 +14,7 @@ const ButtonContactServices = () => {
           className={`relative bg-black text-fff6e4 border-black border-4 inline-flex items-center gap-2 rounded-full px-8 py-3 transform active:scale-75 transition-transform`}
         >
           <span className={`text-2xl lg:text-3xl font-semibold pr-3`}>
-            {translations[language].titleContactFr}
+            {translations[language].btnContact}
             {translations[language].titleContactEn}
           </span>
           <FaArrowRight className={`h-10 w-10`} />

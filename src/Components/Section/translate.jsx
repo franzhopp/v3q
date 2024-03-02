@@ -5,6 +5,7 @@ const translations = {
     navServices: "Services",
     navPortfolio: "Portfolio",
     navContact: "Contact",
+    btnContact: "Contactez-nous",
     // Page 404
     pageNotFoundFr: "Oups, mauvais chemin...",
     // Links

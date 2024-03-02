@@ -4,7 +4,7 @@ const TitleUk = () => {
   return (
     <div className={`BgTitlePricingUk bg-cover py-32`}>
       <div
-        className={`flex justify-center lg:justify-start text-fff6e4 font-extrabold pt-20 px-20 lg:px-28`}
+        className={`text-fff6e4 flex justify-center lg:justify-start font-extrabold pt-20 px-20 lg:px-28`}
       >
         <motion.span
           initial={{ opacity: 0, y: 20 }}

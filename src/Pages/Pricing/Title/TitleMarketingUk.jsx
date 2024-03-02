@@ -16,10 +16,10 @@ const TitleMarketingUk = () => {
     { dataAos: "fade-left", dataAosDelay: 600 },
   ];
   return (
-    <div className="flex justify-center">
+    <div className={`flex justify-center`}>
       <h1
         data-aos="fade-in"
-        className="text-0c3e78 text-center text-4xl mt-20 mb-10 font-extrabold sm:text-5xl md:text-6xl"
+        className={`text-0c3e78 text-center text-4xl lg:text-5xl md:text-6xl font-extrabold py-10`}
       >
         {letters2.map((letter, index) => (
           <span
@@ -30,8 +30,8 @@ const TitleMarketingUk = () => {
             {letter}
           </span>
         ))}
-        <div className="flex justify-center">
-          <span className="absolute w-32 h-1 bg-0c3e78"></span>
+        <div className={`flex justify-center`}>
+          <span className={`bg-0c3e78 absolute h-1 w-32`}></span>
         </div>
       </h1>
     </div>

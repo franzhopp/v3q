@@ -8,7 +8,7 @@ const SubTitle = () => {
   return (
     <div
       className={`flex justify-center ${
-        isDarkMode ? "text-black" : " text-fff6e4"
+        isDarkMode ? "text-black" : "text-fff6e4"
       }`}
     >
       <div className={`w-96 px-5`}>

@@ -1,8 +1,8 @@
 const SvgStarUk = () => {
   return (
-    <div className="flex justify-center pt-20">
+    <div className={`flex justify-center py-10`}>
       <svg
-        className="animate-formbounce"
+        className={`Swing`}
         xmlns="http://www.w3.org/2000/svg"
         width="83"
         height="83"

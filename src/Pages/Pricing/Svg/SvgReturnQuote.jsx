@@ -2,11 +2,11 @@ import { NavLink } from "react-router-dom";
 
 const SvgReturnQuote = () => {
   return (
-    <div className="flex flex-col text-center justify-center pt-6 pb-20">
-      <div className="flex justify-center mt-10 mb-10">
+    <div className={`flex flex-col text-center justify-center py-10`}>
+      <div className={`flex justify-center py-10`}>
         <NavLink to="/quote">
           <svg
-            className="rounded-full shadow-sm transform active:scale-75 transition-transform"
+            className={`rounded-full shadow-sm transform active:scale-75 transition-transform`}
             xmlns="http://www.w3.org/2000/svg"
             width="95"
             height="95"

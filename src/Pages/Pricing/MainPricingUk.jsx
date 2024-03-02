@@ -118,74 +118,73 @@ const PricingUk = () => {
     AOS.refresh();
   }, [openStates]);
   return (
-    <section className="bg-fff6e4">
+    <section className={`bg-fff6e4`}>
       <NavbarPages />
       <TitleUk />
       <TitleWebsiteUk />
-      <div className="flex justify-center">
-        <div className="flex flex-col justify-center pb-10 text-center">
-          <div className="w-96">
+      <div className={`flex justify-center`}>
+        <div className={`flex flex-col justify-center pb-10 text-center`}>
+          <div className={`w-96`}>
             <LinksFr />
           </div>
         </div>
       </div>
-      {/* ARRAY 1 */}
       <div
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
         className="flex justify-center"
       >
-        <div className="w-96 sm:w-1/2">
+        <div className={`w-96 lg:w-1/2`}>
           {InformationsSitesWeb.map((info) => (
             <div
               className={`flex flex-col justify-center font-inter shadow-md ${
-                info.id % 2 === 0 ? e18ab0 : Blue
+                info.id % 2 === 0 ? Blue : e18ab0
               }`}
               key={info.id}
             >
-              <div className="w-96 sm:w-full">
-                <div className="flex flex-wrap justify-between text-fff6e4 p-10 text-3xl sm:text-4xl">
-                  <div data-aos="fade-left" className="">
-                    {info.title}
-                  </div>
-                  <div data-aos="fade-right" className="text-right">
-                    {info.price}
-                  </div>
+              <div className={`w-96 lg:w-full`}>
+                <div
+                  className={`text-fff6e4 flex flex-wrap justify-between p-10 text-3xl lg:text-4xl`}
+                >
+                  <div data-aos="fade-left">{info.title}</div>
+                  <div data-aos="fade-right">{info.price}</div>
                 </div>
               </div>
-              <div className="flex justify-start ml-10 mb-10">
-                <div className="text-fff6e4">
+              <div className={`flex justify-start ml-10 mb-10`}>
+                <div className={`text-fff6e4`}>
                   <button
                     onClick={() => toggleSubList(info.title)}
                     className={`bg-fff6e4 p-3 rounded-3xl shadow-md cursor-pointer transform active:scale-75 transition-transform ${
-                      isDarkMode ? "text-0c3e78" : "text-fff6e4 "
+                      isDarkMode ? "text-0c3e78" : "text-fff6e4"
                     }`}
                   >
-                    <div className="flex ml-1 number">
-                      Learn more <IoIosArrowDown className="mt-2 ml-1" />
+                    <div className={`flex ml-1 number`}>
+                      Learn more <IoIosArrowDown className={`mt-2 ml-1`} />
                     </div>
                   </button>
                   {openStates[info.title] && (
-                    <ul className="text-md mt-3 font-arial">
+                    <ul className={`text-md font-arial mt-3`}>
                       {info.details.map((detail, detailIndex) => (
                         <li
                           data-aos="fade-left"
                           data-aos-duration="500"
                           key={detailIndex}
                         >
-                          <RiBardLine className="inline" /> {detail}
+                          <RiBardLine className={`inline`} /> {detail}
                         </li>
                       ))}
-                      <div className="flex justify-start">
-                        <ul className="text-fff6e4 text-md mt-3 mb-3  px-10 sm:text-left text-justify">
-                          <p className="FontNumber mb-2">
-                            Detailed informations :
+                      <div className={`flex justify-start`}>
+                        <ul
+                          className={`text-fff6e4 text-md py-3 px-10 lg:text-left text-justify`}
+                        >
+                          <p className={`FontNumber mb-2`}>
+                            Detailed informations:
                           </p>
                           {info.subDetails.map((subDetail, subDetailIndex) => (
                             <li
                               data-aos="fade-right"
                               data-aos-duration="600"
-                              className="list-decimal"
+                              className={`list-decimal`}
                               key={subDetailIndex}
                             >
                               {subDetail}
@@ -195,7 +194,7 @@ const PricingUk = () => {
                       </div>
                       <NavLink
                         to="/quote"
-                        className="text-md pt-5 font-extrabold FontNumber underline"
+                        className={`text-md pt-5 font-extrabold FontNumber underline`}
                       >
                         Request a free quote
                       </NavLink>
@@ -207,30 +206,28 @@ const PricingUk = () => {
           ))}
         </div>
       </div>
+      <BackToTopButton />
       <SvgStarUk />
       <TitleMarketingUk />
-      {/* ARRAY 2 */}
       <div
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
-        className="flex justify-center"
+        className={`flex justify-center`}
       >
-        <div className="w-96 sm:w-1/2">
+        <div className={`w-96 lg:w-1/2`}>
           {InformationsMarketing.map((info, index) => (
             <div
               className={`flex flex-col justify-center font-inter shadow-md ${
-                index % 2 === 0 ? Blue : e18ab0
+                index % 2 === 0 ? e18ab0 : Blue
               }`}
               key={index}
             >
-              <div className="w-96 sm:w-full">
-                <div className="flex flex-wrap justify-between text-fff6e4 p-10 text-3xl sm:text-4xl">
-                  <div data-aos="fade-left" className="">
-                    {info.title}
-                  </div>
-                  <div data-aos="fade-right" className="text-right">
-                    {info.price}
-                  </div>
+              <div className={`w-96 lg:w-full`}>
+                <div
+                  className={`text-fff6e4 flex flex-wrap justify-between p-10 text-3xl lg:text-4xl`}
+                >
+                  <div data-aos="fade-left">{info.title}</div>
+                  <div data-aos="fade-right">{info.price}</div>
                 </div>
               </div>
             </div>

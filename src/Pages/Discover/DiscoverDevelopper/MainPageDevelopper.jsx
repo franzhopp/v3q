@@ -75,7 +75,7 @@ const DiscoverWebDeveloper = () => {
       <div className="flex justify-center pt-20">
         <p
           data-aos="fade-right"
-          className="text-c22e2e text-center font-inter text-2xl lg:text-4xl"
+          className="text-c22e2e text-center font-inter text-3xl lg:text-4xl"
         >
           À propos
           <div className="flex justify-center">
@@ -92,13 +92,15 @@ const DiscoverWebDeveloper = () => {
             src={Pattern}
             className="-rotate-12 transition duration-500 hover:opacity-90"
           />
-          <Copyright />
+          <div className="flex justify-center pl-20">
+            <Copyright />
+          </div>
         </div>
         <div className="flex relative">
           <Vector />
         </div>
         <div className="bg-f9fefe p-5 mt-20 lg:mt-0 lg:w-96 lg:h-1/2 text-center rounded-2xl shadow-lg rotate-12">
-          <div className="mt-5 text-base">
+          <div className="mt-5">
             <SubDescTitle />
           </div>
         </div>
@@ -106,7 +108,7 @@ const DiscoverWebDeveloper = () => {
       <div className="flex justify-center pt-20">
         <p
           data-aos="fade-left"
-          className="text-c22e2e text-center font-inter text-2xl lg:text-4xl"
+          className="text-c22e2e text-center font-inter text-3xl lg:text-4xl"
         >
           Projets
           <div className="flex justify-center">

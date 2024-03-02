@@ -6,7 +6,7 @@ const LinksFr = () => {
       to="/pricingfr"
       className="text-0c3e78 text-center font-extrabold underline"
     >
-      Voir les tarifications FR.
+      Voir les tarifications FR
     </NavLink>
   );
 };

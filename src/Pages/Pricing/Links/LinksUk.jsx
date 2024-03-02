@@ -6,7 +6,7 @@ const LinksUk = () => {
       to="/pricinguk"
       className="text-c22e2e text-center font-extrabold underline"
     >
-      See UK prices.
+      See UK prices
     </NavLink>
   );
 };
