@@ -79,7 +79,6 @@ const Portfolio = () => {
 
   return (
     <>
-      <BackToTopButton />
       <section x-comp={`PortfolioNavi`} className={`bg-fff6e4`}>
         <NavbarPages />
         <TitlePorfolio />
@@ -90,11 +89,10 @@ const Portfolio = () => {
           <h1 className={`text-c22e2e text-2xl lg:text-5xl font-extrabold`}>
             Latest Projects
           </h1>
-          <div className={`pt-1 px-2`}>
+          <div className={`px-2`}>
             <SvgStarPink />
           </div>
         </div>
-
         <div x-comp={`ImgCarousel`} className={`flex justify-center relative`}>
           <img
             src={ImgPatternNavi}
@@ -105,7 +103,7 @@ const Portfolio = () => {
           <div class={`flex flex-wrap`}>
             {/* 1 */}
             <div
-              class={`BgSlidePortfolio bg-cover bg-center flex justify-center items-center w-full lg:w-1/2 relative`}
+              class={`bg-gray-300 BgSlidePortfolio bg-no-repeat bg-cover bg-center flex justify-center items-center w-full lg:w-1/2 relative`}
             >
               <div className={`flex justify-start relative`}>
                 <button onClick={handleNext}>
@@ -131,6 +129,7 @@ const Portfolio = () => {
               </p>
             </div>
             {/* 2 */}
+            <BackToTopButton />
             <div
               class={`bg-0c3e78 h-1/2 lg:h-2/5 w-full lg:w-1/2 py-10 relative`}
             >

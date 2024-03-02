@@ -53,11 +53,13 @@ const PageValues = () => {
             <SvgFontLeft />
           </div>
           <div className="px-10">
-            <img
-              src={Img}
-              alt="Image Values"
-              className="relative rounded-lg transition duration-500 hover:opacity-90"
-            />
+            <div className="WireBannier">
+              <img
+                src={Img}
+                alt="Image Values"
+                className="relative rounded-lg transition duration-500 hover:opacity-90"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -81,13 +83,15 @@ const PageValues = () => {
         <SubBlocsBgPink />
         <div id="ethics"></div>
       </div>
-      <div className="BgValuesBlur bg-cover bg-no-repeat pt-32 pb-20">
-        <div className="flex justify-center">
-          <SvgStarBeige />
-        </div>
-        <EndTextValues />
-        <div className="flex justify-center mt-20 pb-28">
-          <SvgStarPinkEnd />
+      <div className="WireBannier">
+        <div className="BgValuesBlur bg-cover bg-no-repeat pt-32 pb-20">
+          <div className="flex justify-center">
+            <SvgStarBeige />
+          </div>
+          <EndTextValues />
+          <div className="flex justify-center mt-20 pb-28">
+            <SvgStarPinkEnd />
+          </div>
         </div>
       </div>
       <Footer />
