@@ -124,7 +124,7 @@ const translations = {
     textSectionTeamBioBold2LouisaFr:
       "Venez connaître son histoire en cliquant sur",
     btnMoreFr: "Découvrir",
-    titleContactFr: "Contactez-nous",
+    titleContactFr: "Contact",
     describeContactFr:
       "Si vous recherchez une agence digitale qui peut donner vie à votre projet numérique, qui excelle dans le design et le développement web, ne cherchez pas plus loin. Choisissez",
     textContactFr:

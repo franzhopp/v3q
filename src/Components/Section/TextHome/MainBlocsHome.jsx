@@ -17,13 +17,15 @@ const BlocsItemsHome = () => {
             isDarkMode ? "text-black" : "text-fff6e4"
           }`}
         >
-          <span className={`transform active:scale-75 transition-transform`}>
+          <span
+            className={`text-xl lg:text-3xl transform active:scale-75 transition-transform`}
+          >
             {translations[language].scrollingTextFr}
             {translations[language].scrollingTextEn}
           </span>
         </div>
       </div>
-      <div className="bg-fff6e4 pt-24">
+      <div className={`bg-fff6e4 pt-16`}>
         <div
           className={`flex flex-wrap justify-center items-center space-x-0 sm:space-x-6 ${
             isDarkMode ? "text-black" : "text-fff6e4"

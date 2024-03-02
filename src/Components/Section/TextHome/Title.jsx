@@ -4,10 +4,10 @@ import translations from "../translate.jsx";
 const TitleTextHome = () => {
   const { language } = useLanguage();
   return (
-    <div className="w-80 relative">
+    <div className="w-80">
       <p
         data-aos="fade-left"
-        className="mt-10 font-extrabold text-4xl sm:text-left text-center relative"
+        className="text-2xl lg:text-4xl lg:text-left text-center font-extrabold pt-10"
       >
         {translations[language].titleSectionFr}
         {translations[language].titleSectionEn}

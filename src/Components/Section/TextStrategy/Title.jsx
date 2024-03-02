@@ -4,13 +4,13 @@ import translations from "../translate.jsx";
 const TitleStrategy = () => {
   const { language } = useLanguage();
   return (
-    <h3
-      className="text-left ml-5 sm:ml-10 font-extrabold text-3xl text-fff6e4"
+    <h1
+      className="text-fff6e4 text-left text-2xl lg:text-4xl px-10 font-extrabold"
       data-aos="fade-right"
     >
       {translations[language].titleSecondSectionFr}
       {translations[language].titleSecondSectionEn}
-    </h3>
+    </h1>
   );
 };
 
