@@ -103,7 +103,7 @@ const Portfolio = () => {
           <div class={`flex flex-wrap`}>
             {/* 1 */}
             <div
-              class={`bg-gray-300 BgSlidePortfolio bg-no-repeat bg-cover bg-center flex justify-center items-center w-full lg:w-1/2 relative`}
+              class={`BgSlidePortfolio bg-gray-300 bg-no-repeat bg-cover bg-center flex justify-center items-center w-full lg:w-1/2 relative`}
             >
               <div className={`flex justify-start relative`}>
                 <button onClick={handleNext}>

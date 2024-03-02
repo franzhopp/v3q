@@ -5,23 +5,23 @@ import translations from "../translate.jsx";
 const TitleAgency = () => {
   const { language } = useLanguage();
   return (
-    <>
-      <div className={`BgTitleAgency pb-24`}>
+    <div className="WireTitleHome">
+      <div className={`BgTitleAgency bg-cover bg-center py-28`}>
         <div
-          className={`text-fff6e4 pt-20 lg:ml-44 lg:text-left text-center font-extrabold`}
+          className={`text-fff6e4 lg:text-left text-center font-extrabold px-20 lg:px-44`}
         >
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className={`mt-4 mr-5 text-4xl sm:text-6xl`}
+            className={`text-4xl md:text-6xl lg:text-8xl`}
           >
             {translations[language].titleAgencyFr}
             {translations[language].titleAgencyEn}
           </motion.span>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

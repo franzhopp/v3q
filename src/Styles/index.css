@@ -105,18 +105,28 @@ textarea {
 
 .BgTitleAgency {
     border-radius: 0px 0px 0px 190px;
-    background: url("../assets/Background/BgTitleAgency.png"), lightgray;
+    background-image: url("../assets/Background/BgTitleAgency.png");
 }
 
 .BgTitleQuote {
     border-radius: 0px 0px 154px 0px;
-    background: url("../assets/Background/BgQuote.png"), lightgray;
+    background-image: url("../assets/Background/BgQuote.png");
     animation: FadeIn 0.5s ease-in-out;
 }
 
 .WireTitle {
     background: lightgray;
     border-radius: 0px 0px 154px 0px;
+}
+
+.WireTitleHome {
+    border-radius: 0px 0px 0px 190px;
+    background: lightgray;
+}
+
+.WireTitleMarketing {
+    border-radius: 0px 0px 290px 0px;
+    background: lightgray;
 }
 
 .WireBannier {
@@ -143,16 +153,12 @@ textarea {
 
 .BgTitleContact {
     border-radius: 0px 0px 154px 0px;
-    background: url("../assets/Background/BgTitleContact.png"), lightgray;
+    background-image: url("../assets/Background/BgTitleContact.png");
 }
 
 .BgServicesMarketing {
     border-radius: 0px 0px 290px 0px;
-    background: url("../assets/Background/BgServicesMarketing.png"), lightgray;
-}
-
-.BgServicesMarketingMobile {
-    background: url("../assets/Background/BgServicesMarketingMobile.png"), lightgray;
+    background-image: url("../assets/Background/BgServicesMarketing.png");
 }
 
 .BgColorFilterForm {
@@ -185,12 +191,6 @@ textarea {
 .MiniBannierMelissa {
     background-image: url("../assets/Picture/MiniBannierMelissa.png");
     animation: FadeIn 0.5s ease-in-out;
-}
-
-.BgSun {
-    width: 248px;
-    height: 230px;
-    background-image: url("../assets/Svg/BgSun.svg");
 }
 
 .FadeInDelayDesktop {

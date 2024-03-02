@@ -53,7 +53,7 @@ const PageValues = () => {
             <SvgFontLeft />
           </div>
           <div className="px-10">
-            <div className="WireBannier">
+            <div className="WireTitle">
               <img
                 src={Img}
                 alt="Image Values"
@@ -83,7 +83,7 @@ const PageValues = () => {
         <SubBlocsBgPink />
         <div id="ethics"></div>
       </div>
-      <div className="WireBannier">
+      <div className="WireTitle">
         <div className="BgValuesBlur bg-cover bg-no-repeat pt-32 pb-20">
           <div className="flex justify-center">
             <SvgStarBeige />

@@ -8,7 +8,7 @@ const TitleHome = () => {
   return (
     <>
       <div
-        className={`flex flex-col justify-center items-center h-screen pt-10`}
+        className={`flex flex-col justify-center items-center h-screen`}
       >
         <h1
           className={`text-fff6e4 text-5xl lg:text-8xl font-extrabold tracking-tight`}
@@ -27,9 +27,9 @@ const TitleHome = () => {
             Paris x London
           </h2>
         </div>
-      </div>
-      <div className={`flex justify-center lg:justify-end pb-24 px-32`}>
-        <ButtonDiscover />
+        {/* <div className={`flex justify-center lg:justify-end pt-10`}>
+          <ButtonDiscover />
+        </div> */}
       </div>
     </>
   );

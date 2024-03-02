@@ -6,7 +6,7 @@ import SectionTeam from "../TextTeam/MainBlocsTeam";
 
 const SectionAgency = () => {
   return (
-    <section className="bg-fff6e4">
+    <section className={`bg-fff6e4`}>
       <TitleAgency />
       <BlocAgency />
       <ButtonAgency />
