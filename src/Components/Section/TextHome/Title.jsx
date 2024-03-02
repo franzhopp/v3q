@@ -7,7 +7,7 @@ const TitleTextHome = () => {
     <div className="w-80">
       <p
         data-aos="fade-left"
-        className="text-3xl lg:text-4xl lg:text-left text-center font-extrabold pt-10"
+        className="pt-10 text-3xl lg:text-4xl lg:text-left text-center font-extrabold"
       >
         {translations[language].titleSectionFr}
         {translations[language].titleSectionEn}
