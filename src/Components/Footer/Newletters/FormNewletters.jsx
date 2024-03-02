@@ -68,7 +68,7 @@ const FormNewletters = () => {
   }, []);
   return (
     <form onSubmit={handleSubmit}>
-      <div className="flex justify-center">
+      <div className={`flex justify-center`}>
         <input
           type="text"
           placeholder="E-mail*"
@@ -87,16 +87,18 @@ const FormNewletters = () => {
             isDarkMode ? "text-c22e2e" : "text-fff6e4"
           }`}
         >
-          <span className="font-inter text-sm transition hover:opacity-30">
+          <span className={`font-inter text-sm transition hover:opacity-30`}>
             {translations[language].sendFooterFr}
             {translations[language].sendFooterEn}
           </span>
         </button>
       </div>
-      <div className="flex justify-center pt-1">
-        {errors.email && <p className="text-fff6e4 text-sm">{errors.email}</p>}
+      <div className={`flex justify-center pt-1`}>
+        {errors.email && (
+          <p className={`text-fff6e4 text-sm`}>{errors.email}</p>
+        )}
       </div>
-      <div className="text-center text-sm text-fff6e4">
+      <div className={`text-fff6e4 text-center text-sm`}>
         {status && <p>{status}</p>}
       </div>
     </form>
