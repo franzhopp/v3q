@@ -1,8 +1,7 @@
 const SvgFontRight = () => {
   return (
     <svg
-      // data-aos="fade-up-right"
-      className="relative top-14 right-0 Swing"
+      className={`relative top-14 right-0 Swing`}
       xmlns="http://www.w3.org/2000/svg"
       width="100"
       height="100"

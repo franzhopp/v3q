@@ -33,14 +33,16 @@ const Blocs = () => {
   return (
     <>
       <div
-        class={`mt-5 flex flex-wrap justify-center space-x-0 sm:space-x-6 ${
+        class={`flex flex-wrap justify-center space-x-0 sm:space-x-6 ${
           isDarkMode ? "text-black" : "text-fff6e4"
         }`}
       >
-        <div className="p-6 rounded-lg shadow-md transition-transform transform hover:scale-90">
+        <div
+          className={`p-6 rounded-lg shadow-md transition-transform transform hover:scale-90`}
+        >
           <h2
             data-aos="fade-left"
-            className="text-8xl FontNumber text-e18ab0 font-bold mb-2"
+            className={`text-e18ab0 FontNumber text-8xl mb-2`}
           >
             {letters.map((letter, index) => (
               <span
@@ -52,24 +54,24 @@ const Blocs = () => {
               </span>
             ))}
           </h2>
-          <p className="text-xl font-inter font-extrabold">
+          <p className={`text-xl font-inter font-extrabold`}>
             {translations[language].title1EthicsFr}
             {translations[language].title1EthicsEn}
           </p>
-          <span className="absolute w-48 h-1 bg-e18ab0"></span>
-          <div className="w-72 mt-5">
+          <span className={`bg-e18ab0 absolute w-48 h-1`}></span>
+          <div className={`w-72 mt-5`}>
             <p data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              <RiBardLine className="inline" />{" "}
+              <RiBardLine className={`inline`} />{" "}
               {translations[language].describe1EthicsFr}
               {translations[language].describe1EthicsEn}
-              <span className="font-extrabold">
+              <span className={`font-extrabold`}>
                 {" "}
                 {translations[language].describe1BoldEthicsFr}
                 {translations[language].describe1BoldEthicsEn}
               </span>{" "}
               {translations[language].describeWithoutBold1Fr}
               {translations[language].describeWithoutBold1En}
-              <span className="font-extrabold">
+              <span className={`font-extrabold`}>
                 {" "}
                 {translations[language].describe1Bold1Fr}
                 {translations[language].describe1Bold1En}
@@ -77,10 +79,12 @@ const Blocs = () => {
             </p>
           </div>
         </div>
-        <div className="p-6 rounded-lg shadow-md transition-transform transform hover:scale-90">
+        <div
+          className={`p-6 rounded-lg shadow-md transition-transform transform hover:scale-90`}
+        >
           <h2
             data-aos="fade-right"
-            className="text-8xl FontNumber text-e18ab0 font-bold mb-2"
+            className={`text-e18ab0 text-8xl FontNumber mb-2`}
           >
             {letters2.map((letter, index) => (
               <span
@@ -92,17 +96,17 @@ const Blocs = () => {
               </span>
             ))}
           </h2>
-          <p className="text-xl font-inter font-extrabold">
+          <p className={`text-xl font-inter font-extrabold`}>
             {translations[language].title2EthicsFr}
             {translations[language].title2EthicsEn}
           </p>
-          <span className="absolute w-48 h-1 bg-e18ab0"></span>
-          <div className="w-72 mt-5">
+          <span className={`bg-e18ab0 absolute w-48 h-1`}></span>
+          <div className={`w-72 mt-5`}>
             <p data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              <RiBardLine className="inline" />{" "}
+              <RiBardLine className={`inline`} />{" "}
               {translations[language].describe2EthicsFr}
               {translations[language].describe2EthicsEn}{" "}
-              <span className="font-extrabold">
+              <span className={`font-extrabold`}>
                 {translations[language].describe2BoldEthicsFr}
                 {translations[language].describe2BoldEthicsEn}{" "}
               </span>
@@ -111,10 +115,12 @@ const Blocs = () => {
             </p>
           </div>
         </div>
-        <div className="p-6 rounded-lg shadow-md transition-transform transform hover:scale-90">
+        <div
+          className={`p-6 rounded-lg shadow-md transition-transform transform hover:scale-90`}
+        >
           <h2
             data-aos="fade-left"
-            className="text-8xl FontNumber text-e18ab0 font-bold mb-2"
+            className={`text-e18ab0 text-8xl FontNumber mb-2`}
           >
             {letters3.map((letter, index) => (
               <span
@@ -126,16 +132,16 @@ const Blocs = () => {
               </span>
             ))}
           </h2>
-          <p className=" text-xl font-inter font-extrabold">
+          <p className={`text-xl font-inter font-extrabold`}>
             Passion & Motivation
           </p>
-          <span className="absolute w-48 h-1 bg-e18ab0"></span>
-          <div className="w-72 mt-5">
+          <span className={`bg-e18ab0 absolute w-48 h-1`}></span>
+          <div className={`w-72 mt-5`}>
             <p data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              <RiBardLine className="inline" />{" "}
+              <RiBardLine className={`inline`} />{" "}
               {translations[language].describe3EthicsFr}
               {translations[language].describe3EthicsEn}{" "}
-              <span className="font-extrabold">
+              <span className={`font-extrabold`}>
                 {translations[language].describe3BoldEthicsFr}
                 {translations[language].describe3BoldEthicsEn}{" "}
               </span>

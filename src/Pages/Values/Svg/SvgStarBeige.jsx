@@ -1,7 +1,7 @@
 const SvgStarBeige = () => {
   return (
     <svg
-      className="Swing"
+      className={`Swing`}
       width="70"
       height="70"
       viewBox="0 0 192 193"

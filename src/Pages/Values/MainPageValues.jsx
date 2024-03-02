@@ -38,25 +38,25 @@ const PageValues = () => {
     };
   }, []);
   return (
-    <section className="bg-fff6e4">
+    <section className={`bg-fff6e4`}>
       <NavbarValues />
-      <div className="flex justify-center pt-16">
+      <div className={`flex justify-center pt-16`}>
         <Blocs />
       </div>
-      <div className="flex justify-center">
+      <div className={`flex justify-center`}>
         <div>
-          <div className="flex justify-end">
+          <div className={`flex justify-end`}>
             <SvgFontRight />
           </div>
-          <div className="flex justify-start relative">
+          <div className={`flex justify-start relative`}>
             <SvgFontLeft />
           </div>
-          <div className="px-10">
-            <div className="WireBannier">
+          <div className={`px-10`}>
+            <div className={`WireBannier`}>
               <img
                 src={Img}
                 alt="ImageValues"
-                className="relative rounded-lg transition duration-500 hover:opacity-90"
+                className={`relative rounded-lg transition duration-500 hover:opacity-90`}
               />
             </div>
           </div>
@@ -70,26 +70,25 @@ const PageValues = () => {
         <SubBlocs />
       </div>
       <BackToTopButton />
-      <div className="flex justify-center pt-16">
+      <div className={`flex justify-center pt-16`}>
         <SvgStarPink />
       </div>
-      <div className="flex justify-center sm:justify-end relative right-24 top-20 sm:right-96">
+      <div
+        className={`flex justify-center sm:justify-end relative right-24 top-20 lg:right-96`}
+      >
         <div onClick={ScrollToSectionEthics}>
           <SvgArrowScroll />
         </div>
       </div>
-      <div className="bg-e18ab0 py-24 px-4 sm:px-6 lg:px-8">
+      <div className={`bg-e18ab0 py-24 px-4 sm:px-6 lg:px-8`}>
         <SubBlocsBgPink />
-        <div id="ethics"></div>
+        <div id={`ethics`}></div>
       </div>
-      <div className="WireBannier">
-        <div className="BgValuesBlur bg-cover bg-no-repeat pt-32 pb-20">
-          <div className="flex justify-center">
-            <SvgStarBeige />
-          </div>
+      <div className={`WireBannier`}>
+        <div className={`BgValuesBlur bg-cover bg-no-repeat py-36`}>
           <EndTextValues />
-          <div className="flex justify-center mt-20 pb-28">
-            <SvgStarPinkEnd />
+          <div className={`flex justify-center pt-10`}>
+            <SvgStarBeige />
           </div>
         </div>
       </div>
