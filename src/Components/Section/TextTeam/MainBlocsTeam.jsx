@@ -179,7 +179,7 @@ const SectionTeam = () => {
                     {
                       translations[language].textSectionTeamBioBold2LouisaEn
                     }{" "}
-                    <span className="text-c22e2e hover:text-0c3e78 transition duration-500 font-inter">
+                    <span className="text-c22e2e hover:opacity-80 transition duration-500 font-inter">
                       <NavLink to="/developer">Web Developer</NavLink>
                     </span>
                     .
@@ -278,7 +278,7 @@ const SectionTeam = () => {
                       {
                         translations[language].textSectionTeamBioBold2MelissaEn
                       }{" "}
-                      <span className="text-c22e2e hover:text-0c3e78 transition duration-500 font-inter">
+                      <span className="text-c22e2e hover:opacity-80 transition duration-500 font-inter">
                         <NavLink to="/designer">Designer</NavLink>
                       </span>
                       .

@@ -7,11 +7,11 @@ const TextMarketing = () => {
   return (
     <div className={`WireTitleMarketing`}>
       <div
-        className={`BgServicesMarketing bg-center bg-cover bg-no-repeat py-32`}
+        className={`BgServicesMarketing bg-cover bg-no-repeat py-32`}
       >
         <div
           data-aos="fade-right"
-          className={`text-fff6e4 t ext-4xl lg:text-5xl text-center font-extrabold py-3`}
+          className={`text-fff6e4 text-4xl lg:text-5xl text-center font-extrabold py-3`}
         >
           {translations[language].titleServicesMarketingFr}
           {translations[language].titleServicesMarketingEn}

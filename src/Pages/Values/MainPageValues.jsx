@@ -41,7 +41,6 @@ const PageValues = () => {
     <section className="bg-fff6e4">
       <NavbarValues />
       <div className="flex justify-center pt-16">
-        {/* Les 3 blocs */}
         <Blocs />
       </div>
       <div className="flex justify-center">
@@ -53,10 +52,10 @@ const PageValues = () => {
             <SvgFontLeft />
           </div>
           <div className="px-10">
-            <div className="WireTitle">
+            <div className="WireBannier">
               <img
                 src={Img}
-                alt="Image Values"
+                alt="ImageValues"
                 className="relative rounded-lg transition duration-500 hover:opacity-90"
               />
             </div>
