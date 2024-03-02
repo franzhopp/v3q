@@ -24,8 +24,8 @@ const ButtonContact = () => {
     };
   }, []);
   return (
-    <div className="flex justify-center sm:justify-end relative right-20 top-20 xl:right-96">
-      <NavLink to="/" onClick={SectionToScrollContact}>
+    <div className={`flex justify-center sm:justify-end relative right-20 top-20 xl:right-96`}>
+      <NavLink to={`/`} onClick={SectionToScrollContact}>
         <svg
           width="86"
           height="137"

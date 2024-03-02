@@ -45,7 +45,7 @@ const ModalSearch = ({ closeModal, searchQuery }) => {
         onKeyDown={handleSearch}
         value={searchQueryText}
         onChange={(e) => setSearchQueryText(e.target.value)}
-        className="text-c22e2e rounded-xl p-3 outline-none border border-1-c22e2e input-bordered input-primary mb-5 ml-3 mr-3 sm:mb-0 md:ml-0"
+        className={`text-c22e2e rounded-xl p-3 outline-none input-bordered input-primary mb-5 ml-3 mr-3 sm:mb-0 md:ml-0`}
       />
       <button onClick={handleSearch}>
         <ImCross

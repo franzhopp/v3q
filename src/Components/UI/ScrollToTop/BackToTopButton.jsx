@@ -27,14 +27,14 @@ const BackToTopButton = () => {
         <button>
           <div
             onClick={scrollUp}
-            className="fixed bottom-8 right-5 shadow-sm rounded-full z-50 animate-formbounce"
+            className={`fixed bottom-8 right-5 shadow-sm rounded-full z-50 animate-formbounce`}
           >
             <div
-              className={`p-4 border-d83939 border-4 h-53 h-54 rounded-full shadow-sm transform active:scale-75 transition-transform ${
+              className={`border-d83939 border-4 p-4 h-53 h-54 rounded-full shadow-sm transform active:scale-75 transition-transform ${
                 isDarkMode ? "bg-fff6e4" : "bg-061628"
               }`}
             >
-              <FaArrowUp className="text-d83939" />
+              <FaArrowUp className={`text-d83939`} />
             </div>
           </div>
         </button>

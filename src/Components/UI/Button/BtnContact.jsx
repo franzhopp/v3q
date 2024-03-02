@@ -11,7 +11,7 @@ const ButtonContactServices = () => {
       <div className={`flex justify-center px-10`}>
         <NavLink
           to="/"
-          className={`relative bg-black text-fff6e4 border-black border-4 inline-flex items-center gap-2 rounded-full px-8 py-3 transform active:scale-75 transition-transform`}
+          className={`bg-black text-fff6e4 border-black border-4 inline-flex items-center gap-2 rounded-full px-8 py-3 relative transform active:scale-75 transition-transform`}
         >
           <span className={`text-2xl lg:text-3xl font-semibold pr-3`}>
             {translations[language].btnContact}
