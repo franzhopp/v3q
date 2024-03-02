@@ -5,7 +5,7 @@ const TitleStrategy = () => {
   const { language } = useLanguage();
   return (
     <h1
-      className="text-fff6e4 text-left text-2xl lg:text-4xl px-10 font-extrabold"
+      className="text-fff6e4 text-center lg:text-left text-3xl lg:text-4xl px-10 font-extrabold"
       data-aos="fade-right"
     >
       {translations[language].titleSecondSectionFr}
