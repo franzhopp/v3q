@@ -83,7 +83,7 @@ const PageValues = () => {
         <SubBlocsBgPink />
         <div id="ethics"></div>
       </div>
-      <div className="WireTitle">
+      <div className="WireBannier">
         <div className="BgValuesBlur bg-cover bg-no-repeat pt-32 pb-20">
           <div className="flex justify-center">
             <SvgStarBeige />
