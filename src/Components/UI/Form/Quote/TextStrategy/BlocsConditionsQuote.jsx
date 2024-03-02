@@ -7,11 +7,11 @@ import { useLanguage } from "../../../../../context/LanguageProvider.jsx";
 const BlocsConditions = () => {
   const { language } = useLanguage();
   return (
-    <div className="mt-8">
+    <div className={`mt-8`}>
       <p
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
-        className="text-black text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0"
+        className={`text-black text-lg lg:text-xl lg:w-96 ml-6 lg:ml-0 w-80`}
       >
         <span>
           {translations[language].describeInfoFree1Fr}
@@ -19,29 +19,33 @@ const BlocsConditions = () => {
         </span>
       </p>
       <br />
-      <p className="text-black mb-1 text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0">
+      <p
+        className={`text-black text-lg lg:text-xl lg:w-96 ml-6 lg:ml-0 mb-1 w-80`}
+      >
         <span className="font-extrabold underline">
           {translations[language].describleInfoFree2Fr}
           {translations[language].describleInfoFree2En}
         </span>
       </p>
 
-      <p className="text-black mb-5 text-lg sm:text-xl w-80 sm:w-96 ml-6 sm:ml-0">
+      <p
+        className={`text-black text-lg lg:text-xl lg:w-96 ml-6 lg:ml-0 mb-5 w-80`}
+      >
         <ul>
           <br />
           <li data-aos="fade-right">
-            <span className="font-extrabold">1</span>.{" "}
+            <span className={`font-extrabold`}>1</span>.{" "}
             {translations[language].bloc1FreeFr}
             {translations[language].bloc1FreeEn}
           </li>
           <br />
           <li data-aos="fade-left">
-            <span className="font-extrabold">2</span>.{" "}
+            <span className={`font-extrabold`}>2</span>.{" "}
             {translations[language].bloc2FreeFr}
             {translations[language].bloc2FreeEn}{" "}
             <NavLink
               to="/services"
-              className="underline font-extrabold tracking-wide text-c22e2e"
+              className={`text-c22e2e underline font-extrabold tracking-wide`}
             >
               {" "}
               {translations[language].linkBlocFreeFr}
@@ -52,12 +56,12 @@ const BlocsConditions = () => {
           </li>
           <br />
           <li data-aos="fade-right">
-            <span className="font-extrabold">3</span>.{" "}
+            <span className={`font-extrabold`}>3</span>.{" "}
             {translations[language].bloc3FreeFr}
             {translations[language].bloc3FreeEn}{" "}
             <NavLink
               to="/pricingfr"
-              className="underline font-extrabold tracking-wide text-c22e2e"
+              className={`text-c22e2e underline font-extrabold tracking-wide`}
             >
               {" "}
               {translations[language].linkBlocFreeFr}
@@ -67,14 +71,14 @@ const BlocsConditions = () => {
           </li>
           <br />
           <li data-aos="fade-left">
-            <span className="font-extrabold">4</span>.{" "}
+            <span className={`font-extrabold`}>4</span>.{" "}
             {translations[language].bloc4FreeFr}
             {translations[language].bloc4FreeEn}
           </li>
         </ul>
       </p>
       <BackToTopButton />
-      <div className="flex flex-col text-left mx-6">
+      <div className={`flex justify-center`}>
         <NavLink to="/">
           <SvgBtnQuote />
         </NavLink>

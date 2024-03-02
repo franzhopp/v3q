@@ -6,7 +6,7 @@ const TitleQuoteBloc = () => {
   return (
     <p
       data-aos="fade-right"
-      className="text-black text-2xl sm:text-3xl font-extrabold max-w-xl ml-6 sm:ml-0"
+      className={`text-black text-2xl lg:text-3xl font-extrabold ml-6 lg:ml-0`}
     >
       {translations[language].titleInfoFreeFr}
       {translations[language].titleInfoFreeEn}
