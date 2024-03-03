@@ -10,7 +10,7 @@ const SubTextStrategy = () => {
         <p
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
-          className="mt-2 text-fff6e4 text-arial"
+          className="text-fff6e4 mt-0 lg:mt-5 text-arial"
         >
           <h1 className="text-4xl FontNumber font-semibold pb-5">01.</h1>
           <span className="font-extrabold">
@@ -31,7 +31,7 @@ const SubTextStrategy = () => {
         <p
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
-          className="mt-2 text-fff6e4 text-arial"
+          className="text-fff6e4 mt-2 text-arial"
         >
           <h1 className="text-4xl FontNumber font-semibold pb-5">02.</h1>
           <span className="font-extrabold">
@@ -52,7 +52,7 @@ const SubTextStrategy = () => {
         <p
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
-          className="mt-2 text-fff6e4 text-arial"
+          className="text-fff6e4 mt-2 text-arial"
         >
           <h1 className="text-4xl FontNumber font-semibold pb-5">03.</h1>
           <span className="font-extrabold">

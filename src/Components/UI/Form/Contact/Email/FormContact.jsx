@@ -125,7 +125,7 @@ const FormEmailJs = ({ label, type, value }) => {
     <>
       <form
         onSubmit={handleSubmit}
-        className="BgColorFilterForm rounded-3xl p-9 pb-12 shadow-lg space-y-4"
+        className={`BgColorFilterForm rounded-3xl p-9 pb-12 shadow-lg space-y-4`}
       >
         <div className="space-y-4">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">

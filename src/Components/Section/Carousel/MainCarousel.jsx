@@ -7,6 +7,7 @@ import Img6 from "../../../assets/Pays/Espagne.png";
 import Img8 from "../../../assets/Pays/Japon.png";
 import Img9 from "../../../assets/Pays/Malaisie.png";
 import Img10 from "../../../assets/Pays/Luxembourg.png";
+import Img11 from "../../../assets/Pays/Canada.png";
 
 const cards = [
   {
@@ -29,7 +30,11 @@ const cards = [
     title: "Barcelone, 08001",
     country: "Espagne 🇪🇸",
   },
-  
+  {
+    image: Img11,
+    title: "Ville de Québec",
+    country: "Canada 🇨🇦",
+  },
   {
     image: Img5,
     title: "Boston Massachusetts, 02186",
