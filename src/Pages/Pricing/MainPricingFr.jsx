@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
+import { RxCross2 } from "react-icons/rx";
 import { useTheme } from "../../context/ThemeProvider.jsx";
 import { RiBardLine } from "react-icons/ri";
 import NavbarPages from "../../Components/Navigation/NavbarPages/NavbarPages.jsx";
@@ -18,12 +19,14 @@ import "aos/dist/aos.css";
 
 const PricingFr = () => {
   const { isDarkMode } = useTheme();
+  const [isExpanded, setIsExpanded] = useState(false);
   const [openStates, setOpenStates] = useState({});
   const toggleSubList = (category) => {
     setOpenStates((prevOpenStates) => ({
       ...prevOpenStates,
       [category]: !prevOpenStates[category],
     }));
+    setIsExpanded(!isExpanded);
   };
   const Blue = "bg-0c3e78";
   const e18ab0 = "bg-e18ab0";
@@ -163,7 +166,12 @@ const PricingFr = () => {
                     }`}
                   >
                     <div className={`flex ml-1 number`}>
-                      En savoir plus <IoIosArrowDown className={`mt-2 ml-1`} />
+                      En savoir plus{" "}
+                      {isExpanded ? (
+                        <RxCross2 className={`mt-1 ml-1`} />
+                      ) : (
+                        <IoIosArrowDown className={`mt-1 ml-1`} />
+                      )}
                     </div>
                   </button>
                   {openStates[info.title] && (

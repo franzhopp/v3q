@@ -29,6 +29,7 @@ const cards = [
     title: "Barcelone, 08001",
     country: "Espagne 🇪🇸",
   },
+  
   {
     image: Img5,
     title: "Boston Massachusetts, 02186",

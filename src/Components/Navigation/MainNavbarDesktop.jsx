@@ -87,7 +87,7 @@ const NavbarDesktop = () => {
   });
   return (
     <div className={`WireBannier`}>
-      <div className="BgHome bg-cover bg-no-repeat">
+      <div className={`BgHome bg-cover bg-no-repeat`}>
         <nav
           className={`bg-fff6e4 border-b-4 border-c22e2e fixed w-full top-0 left-0 h-28 items-center shadow-md z-50 2xl:flex hidden`}
         >
