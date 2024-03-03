@@ -8,7 +8,7 @@ const TitleAgency = () => {
     <div className="WireTitleHome">
       <div className={`BgTitleAgency bg-cover bg-center py-28`}>
         <div
-          className={`text-fff6e4 lg:text-left text-center font-extrabold px-20 lg:px-44`}
+          className={`text-fff6e4 lg:text-left text-center font-extrabold px-0 lg:px-44`}
         >
           <motion.span
             initial={{ opacity: 0, y: 20 }}
