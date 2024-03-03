@@ -12,6 +12,13 @@ const Footer = () => {
         <div className={`flex justify-center mr-3`}>
           <ImgLogo />
         </div>
+        <div className={`flex justify-center`}>
+          <p
+            className={`text-fff6e4 text-full-xs font-aoboshi tracking-widest uppercase`}
+          >
+            Paris x London
+          </p>
+        </div>
         <Copyright />
         <TitleNewletter />
         <FormNewletters />
