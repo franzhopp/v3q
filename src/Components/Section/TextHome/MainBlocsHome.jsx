@@ -25,7 +25,7 @@ const BlocsItemsHome = () => {
           </span>
         </div>
       </div> */}
-      <div className={`bg-fff6e4 pt-16`}>
+      <div className={`bg-fff6e4 pt-36`}>
         <div
           className={`flex flex-wrap justify-center items-center space-x-0 sm:space-x-6 ${
             isDarkMode ? "text-black" : "text-fff6e4"
@@ -35,8 +35,8 @@ const BlocsItemsHome = () => {
           <SubTextHome />
         </div>
         <BackToTopButton />
-        <ButtonContact />
       </div>
+      <ButtonContact />
     </>
   );
 };

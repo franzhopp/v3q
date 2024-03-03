@@ -26,7 +26,7 @@ const SubTextHome = () => {
   }, []);
   return (
     <>
-      <div className="w-80 mt-10">
+      <div className="w-80">
         <div className="p-5">
           <p
             data-aos="fade-up"
@@ -44,7 +44,7 @@ const SubTextHome = () => {
           </p>
         </div>
       </div>
-      <div className="w-80 mt-3 sm:mt-10 relative">
+      <div className="w-80">
         <div className="p-5">
           <p
             data-aos="fade-up"
