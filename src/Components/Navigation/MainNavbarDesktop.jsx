@@ -91,7 +91,9 @@ const NavbarDesktop = () => {
         <nav
           className={`bg-fff6e4 border-b-4 border-c22e2e fixed w-full top-0 left-0 h-28 items-center shadow-md z-50 2xl:flex hidden`}
         >
-          <div className={`flex justify-between items-center h-24 mt-2 container mx-auto px-4 sm:px-6 lg:px-8`}>
+          <div
+            className={`flex justify-between items-center h-24 mt-2 container mx-auto px-4 sm:px-6 lg:px-8`}
+          >
             <NavLink to="/">
               <img
                 src={ImgBlack}
@@ -143,7 +145,9 @@ const NavbarDesktop = () => {
                     </li>
                     <button onClick={toggleSousListsTwoMenu}>
                       <div className={`flex justify-between items-center`}>
-                        <div className={`block hover:opacity-80 transition duration-500 px-4 py-2 pr-2 font-extrabold`}>
+                        <div
+                          className={`block hover:opacity-80 transition duration-500 px-4 py-2 pr-2 font-extrabold`}
+                        >
                           {translations[language].navSousTeamFr}
                           {translations[language].navSousTeamEn}
                         </div>
@@ -170,7 +174,7 @@ const NavbarDesktop = () => {
                       <li className={`ml-2`}>
                         <NavLink
                           to="/developer"
-                          className="FadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold"
+                          className={`border-c22e2e FadeInDelayDesktop block border-b-2 rounded-md hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold`}
                         >
                           Web Developer
                         </NavLink>
@@ -179,7 +183,7 @@ const NavbarDesktop = () => {
                   </ul>
                 </div>
               </li>
-              <li className="relative group list-none">
+              <li className={`relative group list-none`}>
                 <NavLink
                   to="/services"
                   className={`hover:opacity-80 transition duration-500 px-6 py-2 text-2xl font-extrabold ${
@@ -189,7 +193,7 @@ const NavbarDesktop = () => {
                   {translations[language].navServices}
                   {translations[language].navServicesEn}
                 </NavLink>
-                <div className="flex justify-center">
+                <div className={`flex justify-center`}>
                   <ul
                     className={`absolute hidden group-hover:block bg-fff6e4 w-48 mt-2 py-2 rounded-md text-left ${
                       isDarkMode ? "text-c22e2e" : "text-fff6e4"
@@ -198,15 +202,17 @@ const NavbarDesktop = () => {
                     <li>
                       <NavLink
                         to="/services"
-                        className="block hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold"
+                        className={`block hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold`}
                       >
                         {translations[language].navSousServicesFr}
                         {translations[language].navSousServicesEn}
                       </NavLink>
                     </li>
                     <button onClick={toggleSousListsRate}>
-                      <div className="flex items-center justify-between">
-                        <div className="block hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold pr-2">
+                      <div className={`flex justify-between items-center`}>
+                        <div
+                          className={`block hover:opacity-80 transition duration-500 px-4 py-2 pr-2 font-extrabold`}
+                        >
                           {translations[language].navSousPricingFr}
                           {translations[language].navSousPricingEn}
                         </div>
@@ -218,19 +224,19 @@ const NavbarDesktop = () => {
                         showSousListsRate ? "block" : "hidden"
                       }`}
                     >
-                      <li className="ml-2 font-extrabold">
+                      <li className={`ml-2`}>
                         <NavLink
                           to="/pricingfr"
-                          className="block border-c22e2e border-b-2 rounded-md hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold"
+                          className={`border-c22e2e block border-b-2 rounded-md hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold`}
                         >
                           {translations[language].navSousPricingFr}
                           {translations[language].navSousPricingEn} FR
                         </NavLink>
                       </li>
-                      <li className="ml-2 font-extrabold">
+                      <li className={`ml-2`}>
                         <NavLink
                           to="/pricinguk"
-                          className="block border-c22e2e border-b-2 rounded-md hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold"
+                          className={`border-c22e2e block border-b-2 rounded-md hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold`}
                         >
                           {translations[language].navSousPricingFr}
                           {translations[language].navSousPricingEn} UK
@@ -240,7 +246,7 @@ const NavbarDesktop = () => {
                     <li>
                       <NavLink
                         to="/quote"
-                        className="block hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold"
+                        className={`block hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold`}
                       >
                         {translations[language].navSousFreeFr}
                         {translations[language].navSousFreeEn}
@@ -252,14 +258,14 @@ const NavbarDesktop = () => {
               <div className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
                 <NavLink
                   to="/portfolio"
-                  className="hover:opacity-80 transition duration-500 px-6 py-2 text-2xl font-extrabold"
+                  className={`hover:opacity-80 transition duration-500 px-6 py-2 text-2xl font-extrabold`}
                 >
                   Portfolio
                 </NavLink>
                 <NavLink
                   to="/"
                   onClick={SectionToSectionContact}
-                  className="hover:opacity-80 transition duration-500 px-6 py-2 text-2xl font-extrabold"
+                  className={`hover:opacity-80 transition duration-500 px-6 py-2 text-2xl font-extrabold`}
                 >
                   Contact
                 </NavLink>
@@ -303,7 +309,7 @@ const NavbarDesktop = () => {
               >
                 <FaSearch
                   data-aos="fade-left"
-                  className="h-5 xl:h-7"
+                  className={`h-5 xl:h-7`}
                   onClick={() => {
                     setOpenModel(true);
                   }}

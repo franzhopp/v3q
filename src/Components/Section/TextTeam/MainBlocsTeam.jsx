@@ -79,7 +79,7 @@ const SectionTeam = () => {
   ];
 
   return (
-    <section id="team" className="bg-fff6e4 pt-24">
+    <section className="bg-fff6e4 pt-24">
       <div className="flex justify-center mt-10">
         <div data-aos="fade-left">
           <SvgHeart />

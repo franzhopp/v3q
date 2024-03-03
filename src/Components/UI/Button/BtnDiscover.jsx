@@ -43,7 +43,7 @@ const Button = () => {
     //   </span>
     //   <FaArrowRight className={`h-10 w-10`} />
     // </NavLink>
-    <div className={`absolute bottom-16`}>
+    <div className={`absolute bottom-20`}>
       <button>
         <div onClick={SectionToScroll} className={`animate-bounce`}>
           <div
