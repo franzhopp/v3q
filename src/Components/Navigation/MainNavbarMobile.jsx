@@ -52,16 +52,13 @@ const NavbarMobile = () => {
     });
     setIsOpen(false);
   };
-
   const toggleMenuMobile = () => {
     setToggleMenu(!toggleMenu);
     setIsOpen(!isOpen);
   };
-
   const handleAnimateButtonClick = () => {
     setIsAnimating(!isAnimating);
   };
-
   const SectionToSectionContact = () => {
     const ContactToScroll = document.getElementById("contact");
     if (ContactToScroll) {
@@ -69,7 +66,6 @@ const NavbarMobile = () => {
     }
     setIsOpen(false);
   };
-
   const toggleSousLists1 = () => {
     setShowSousListsAgence(!showSousListsAgence);
     setIsExpanded1(!isExpanded1);
@@ -164,6 +160,7 @@ const NavbarMobile = () => {
                   <li className="font-extrabold">
                     <NavLink
                       to="/"
+                      onClick={scrollToTop}
                       className="text-lg block border-c22e2e border-b-2 hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold"
                     >
                       {translations[language].navSousHomeFr}

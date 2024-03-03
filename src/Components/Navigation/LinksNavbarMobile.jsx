@@ -42,15 +42,6 @@ const LinksNavbarMobile = () => {
   const changeLanguageHandler = (newLanguage) => {
     changeLanguage(newLanguage);
   };
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      left: 100,
-      behavior: "smooth",
-    });
-  };
-
   const handleAnimateButtonClick = () => {
     setIsAnimating(!isAnimating);
   };
@@ -106,7 +97,6 @@ const LinksNavbarMobile = () => {
           <img
             // src={isDarkMode ? ImgBlack : ImgWhite}
             src={ImgBlack}
-            onClick={scrollToTop}
             alt="Logo navi studio."
             className="h-14 w-auto transform active:scale-75 transition-transform"
           />
