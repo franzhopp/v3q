@@ -9,19 +9,19 @@ const EndTextValues = () => {
     <div className={`text-center`}>
       <h1
         data-aos="fade-left"
-        className={`text-fff6e4 font-extrabold text-2xl lg:text-4xl my-10`}
+        className={`text-fff6e4 font-extrabold text-2xl lg:text-4xl`}
       >
         <div className={`flex justify-center`}>
           <h1
             data-aos="fade-left"
-            className={`px-10 font-inter mt-4 lg:mt-3 text-3xl lg:text-4xl`}
+            className={`px-10 pb-10 text-3xl lg:text-4xl font-inter`}
           >
             {translations[language].titleTrust1Fr}
             {translations[language].titleTrust1En}{" "}
             <span>
               <img
                 src={ImgLogo}
-                className={`h-20 lg:h-24 mx-2 inline`}
+                className={`h-20 lg:h-24 inline`}
                 alt="Icône navi studio."
               />
             </span>{" "}
@@ -50,7 +50,7 @@ const EndTextValues = () => {
               {translations[language].describe6Bold6En}
             </span>
           </p>
-          <div className={`text-transparent mb-6`}></div>
+          <div className={`text-transparent mb-5`}></div>
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"

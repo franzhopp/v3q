@@ -6,7 +6,7 @@ const SubBlocsBgPink = () => {
   const { language } = useLanguage();
   return (
     <div
-      className={`flex flex-wrap justify-center items-center space-x-0 lg:space-x-6 py-10`}
+      className={`flex flex-wrap justify-center items-center space-x-0 lg:space-x-6`}
     >
       <div className={`w-80 rounded-lg mt-5`}>
         <p

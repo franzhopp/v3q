@@ -70,7 +70,7 @@ const PageValues = () => {
         <SubBlocs />
       </div>
       <BackToTopButton />
-      <div className={`flex justify-center pt-16`}>
+      <div className={`flex justify-center pt-10`}>
         <SvgStarPink />
       </div>
       <div
@@ -80,14 +80,14 @@ const PageValues = () => {
           <SvgArrowScroll />
         </div>
       </div>
-      <div className={`bg-e18ab0 py-24 px-4 sm:px-6 lg:px-8`}>
+      <div className={`bg-e18ab0 px-4 sm:px-6 lg:px-8 py-28`}>
         <SubBlocsBgPink />
         <div id={`ethics`}></div>
       </div>
       <div className={`WireBannier`}>
-        <div className={`BgValuesBlur bg-cover bg-no-repeat py-36`}>
+        <div className={`BgValuesBlur bg-cover bg-no-repeat py-28`}>
           <EndTextValues />
-          <div className={`flex justify-center pt-10`}>
+          <div className={`flex justify-center pt-8`}>
             <SvgStarBeige />
           </div>
         </div>
