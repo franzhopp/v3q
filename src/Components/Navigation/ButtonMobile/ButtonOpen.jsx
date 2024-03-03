@@ -1,7 +1,7 @@
 const ButtonOpen = () => {
   return (
     <svg
-      className="transform active:scale-75 transition-transform"
+      className={`transform active:scale-75 transition-transform`}
       xmlns="http://www.w3.org/2000/svg"
       width="53"
       height="53"

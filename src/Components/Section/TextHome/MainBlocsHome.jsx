@@ -11,7 +11,7 @@ const BlocsItemsHome = () => {
   const { isDarkMode } = useTheme();
   return (
     <>
-      <div className="border-c22e2e border-b-4 py-3">
+      {/* <div className="border-c22e2e border-b-4 py-3">
         <div
           className={`font-extrabold px-10 text-lg lg:text-2xl tracking-tight inline-block whitespace-nowrap AnimationScrolling ${
             isDarkMode ? "text-black" : "text-fff6e4"
@@ -24,7 +24,7 @@ const BlocsItemsHome = () => {
             {translations[language].scrollingTextEn}
           </span>
         </div>
-      </div>
+      </div> */}
       <div className={`bg-fff6e4 pt-16`}>
         <div
           className={`flex flex-wrap justify-center items-center space-x-0 sm:space-x-6 ${

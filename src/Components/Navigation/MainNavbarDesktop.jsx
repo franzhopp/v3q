@@ -91,7 +91,7 @@ const NavbarDesktop = () => {
         <nav
           className={`bg-fff6e4 border-b-4 border-c22e2e fixed w-full top-0 left-0 h-28 items-center shadow-md z-50 2xl:flex hidden`}
         >
-          <div className="flex justify-between items-center h-24 mt-2 container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className={`flex justify-between items-center h-24 mt-2 container mx-auto px-4 sm:px-6 lg:px-8`}>
             <NavLink to="/">
               <img
                 src={ImgBlack}
@@ -99,11 +99,11 @@ const NavbarDesktop = () => {
                 alt="Logo"
                 onClick={scrollToTop}
                 data-aos="fade-left"
-                className="lg:h-20 h-10 w-auto transform active:scale-75 transition-transform"
+                className={`lg:h-20 h-10 w-auto transform active:scale-75 transition-transform`}
               />
             </NavLink>
-            <div className="flex justiufy-center items-center">
-              <li className="relative group list-none">
+            <div className={`flex justiufy-center items-center`}>
+              <li className={`relative group list-none`}>
                 <NavLink
                   to="/"
                   onClick={SectionToScroll}
@@ -116,9 +116,9 @@ const NavbarDesktop = () => {
                   {translations[language].navAgence}
                   {translations[language].navAgency}
                 </NavLink>
-                <div className="flex justify-center">
+                <div className={`flex justify-center`}>
                   <ul
-                    className={`absolute hidden group-hover:block rounded-md font-extrabold text-left w-48 bg-fff6e4 mt-2 py-2 ${
+                    className={`bg-fff6e4 absolute hidden group-hover:block rounded-md font-extrabold text-left w-48 mt-2 py-2 ${
                       isDarkMode ? "text-c22e2e" : "text-fff6e4"
                     } FadeInDelayDesktop`}
                   >
@@ -126,7 +126,7 @@ const NavbarDesktop = () => {
                       <NavLink
                         to="/"
                         onClick={scrollToTop}
-                        className="block hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold"
+                        className={`block hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold`}
                       >
                         {translations[language].navSousHomeFr}
                         {translations[language].navSousHomeEn}
@@ -134,7 +134,7 @@ const NavbarDesktop = () => {
                       <li>
                         <NavLink
                           to="/values"
-                          className="block hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold"
+                          className={`block hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold`}
                         >
                           {translations[language].navSousValuesFr}
                           {translations[language].navSousValuesEn}
@@ -142,8 +142,8 @@ const NavbarDesktop = () => {
                       </li>
                     </li>
                     <button onClick={toggleSousListsTwoMenu}>
-                      <div className="flex items-center justify-between">
-                        <div className="block hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold pr-2">
+                      <div className={`flex justify-between items-center`}>
+                        <div className={`block hover:opacity-80 transition duration-500 px-4 py-2 pr-2 font-extrabold`}>
                           {translations[language].navSousTeamFr}
                           {translations[language].navSousTeamEn}
                         </div>
@@ -162,12 +162,12 @@ const NavbarDesktop = () => {
                       >
                         <NavLink
                           to="/designer"
-                          className="FadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold"
+                          className={`border-c22e2e FadeInDelayDesktop block border-b-2 rounded-md hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold`}
                         >
                           Designer
                         </NavLink>
                       </li>
-                      <li className="ml-2 font-extrabold">
+                      <li className={`ml-2`}>
                         <NavLink
                           to="/developer"
                           className="FadeInDelayDesktop block border-c22e2e border-b-2 rounded-md hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold"

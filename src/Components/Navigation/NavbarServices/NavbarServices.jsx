@@ -10,11 +10,15 @@ const NavbarServices = () => {
   const { language } = useLanguage();
   return (
     <div className={`WireBannier`}>
-      <div className="BgServices bg-cover bg-no-repeat bg-center h-full py-56">
+      <div
+        className={`BgServices bg-cover bg-no-repeat bg-center h-full py-56`}
+      >
         <LinksNavbarDesktop />
         <LinksNavbarMobile />
-        <div className="px-10">
-          <h1 className="text-fff6e4 text-6xl lg:text-8xl tracking-tighter font-extrabold">
+        <div className={`px-10`}>
+          <h1
+            className={`text-fff6e4 text-6xl lg:text-8xl tracking-tighter font-extrabold`}
+          >
             <motion.span
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -24,8 +28,8 @@ const NavbarServices = () => {
               {translations[language].titleServicesEn}
             </motion.span>
           </h1>
-          <div className="w-80 lg:w-1/2 pt-5 pl-1">
-            <p className="text-fff6e4 text-lg lg:text-4xl font-extrabold">
+          <div className={`w-80 lg:w-1/2 pt-5 px-1`}>
+            <p className={`text-fff6e4 text-lg lg:text-4xl font-extrabold`}>
               {translations[language].titleServices1Fr}
               {translations[language].titleServices1En}
             </p>

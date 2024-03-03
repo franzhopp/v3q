@@ -2,6 +2,7 @@ import { useLanguage } from "../../../context/LanguageProvider";
 import translations from "../translate.jsx";
 import ImgLogo from "../../../assets/Logo/LogoMainNaviStudio.png";
 import { RiBardLine } from "react-icons/ri";
+import SvgStarBeige from "../Svg/SvgStarBeige";
 
 const EndTextValues = () => {
   const { language } = useLanguage();

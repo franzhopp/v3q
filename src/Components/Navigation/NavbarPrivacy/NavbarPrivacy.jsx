@@ -8,7 +8,7 @@ import "../Home/Homepage";
 const PrivacyNavbar = () => {
   // const { language, changeLanguage } = useLanguage();
   return (
-    <div className="BgServices h-screen sm:pb-20 mb:min-h-650 min-h-500">
+    <div className={`BgServices h-screen`}>
       <LinksNavbarDesktop />
       <LinksNavbarMobile />
     </div>

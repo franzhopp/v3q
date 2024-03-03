@@ -7,9 +7,7 @@ const TitleHome = () => {
   const { language } = useLanguage();
   return (
     <>
-      <div
-        className={`flex flex-col justify-center items-center h-screen`}
-      >
+      <div className={`flex flex-col justify-center items-center h-screen`}>
         <h1
           className={`text-fff6e4 text-5xl lg:text-8xl font-extrabold tracking-tight`}
         >
@@ -27,9 +25,9 @@ const TitleHome = () => {
             Paris x London
           </h2>
         </div>
-        {/* <div className={`flex justify-center lg:justify-end pt-10`}>
-          <ButtonDiscover />
-        </div> */}
+      </div>
+      <div className={`flex justify-center relative`}>
+        <ButtonDiscover />
       </div>
     </>
   );
