@@ -22,23 +22,19 @@ const LinksNavbarMobile = () => {
   const [isAnimating, setIsAnimating] = useState(false);
   const [scrollNavbar, setScrollNavbar] = useState();
   const [toggleMenu, setToggleMenu] = useState(false);
-
+  const [openModel, setOpenModel] = useState();
+  const [searchQuery, setSearchQuery] = useState();
+  const [isOpen, setIsOpen] = useState(false);
   // MES 4 LISTS
   const [showSousListsAgence, setShowSousListsAgence] = useState(false);
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
   const [showSousListsFiveMenu, setShowSousListsFiveMenu] = useState(false);
   const [showSousListsRate, setShowSousListsRate] = useState(false);
-
   // MES 4 ICONS
   const [isExpanded1, setIsExpanded1] = useState(false);
   const [isExpanded2, setIsExpanded2] = useState(false);
   const [isExpanded3, setIsExpanded3] = useState(false);
   const [isExpanded4, setIsExpanded4] = useState(false);
-
-  const [openModel, setOpenModel] = useState();
-  const [searchQuery, setSearchQuery] = useState();
-  const [isOpen, setIsOpen] = useState(false);
-
   const changeLanguageHandler = (newLanguage) => {
     changeLanguage(newLanguage);
   };
