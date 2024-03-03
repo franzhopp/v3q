@@ -21,8 +21,8 @@ const TitleHome = () => {
           </motion.span>
         </h1>
         <div className={`flex justify-center`}>
-          <h2 className={`text-fff6e4 text-sm font-inter uppercase`}>
-            Paris x London
+          <h2 className={`text-fff6e4 text-sm font-inter mt-1 uppercase`}>
+            Design • Développement • Marketing digital
           </h2>
         </div>
       </div>
