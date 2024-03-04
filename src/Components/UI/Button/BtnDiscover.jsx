@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { useTheme } from "../../../context/ThemeProvider.jsx";
 import { useLanguage } from "../../../context/LanguageProvider.jsx";
@@ -10,14 +10,25 @@ import "../../Section/TextHome/MainBlocsHome.jsx";
 const Button = () => {
   const { language } = useLanguage();
   const { isDarkMode } = useTheme();
-  const contactSectionRef = useRef(null);
+  const [scrollNavbar, setScrollNavbar] = useState();
+  const SectionToScroll = () => {
+    const contactSection = document.getElementById("team");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   useEffect(() => {
-    const scrollInterval = setInterval(() => {
-      if (contactSectionRef.current) {
-        contactSectionRef.current.scrollIntoView({ behavior: "smooth" });
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrollNavbar(true);
+      } else {
+        setScrollNavbar(false);
       }
-    }, 5000);
-    return () => clearInterval(scrollInterval);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
   return (
     // <NavLink
@@ -34,7 +45,7 @@ const Button = () => {
     // </NavLink>
     <div className={`absolute bottom-32 lg:bottom-10`}>
       <button>
-        <div ref={contactSectionRef} className={`animate-bounce`}>
+        <div onClick={SectionToScroll} className={`animate-bounce`}>
           <div
             className={`border-black border-4 p-2 h-53 rounded-full shadow-sm transform active:scale-75 transition-transform ${
               isDarkMode ? "bg-fff6e4" : "bg-061628"
