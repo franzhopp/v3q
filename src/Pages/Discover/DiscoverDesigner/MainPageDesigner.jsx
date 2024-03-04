@@ -81,12 +81,12 @@ const DiscoverDesigner = () => {
       <div className={`bg-1e1e20 flex justify-center pb-16`}>
         <SvgIllustration />
       </div>
-      <div className={`flex justify-start relative`}>
+      {/* <div className={`flex justify-start relative`}>
         <SvgLine />
-      </div>
-      <div className={`flex justify-start relative`}>
+      </div> */}
+      {/* <div className={`flex justify-start relative`}>
         <SvgLineLeft />
-      </div>
+      </div> */}
       <div className={`flex justify-start relative`}>
         <SvgItemLeft />
       </div>
