@@ -18,7 +18,6 @@ const BlocAgency = () => {
   });
   return (
     <>
-      <div id="team"></div>
       <div
         className={`flex justify-center h-1/3 ${
           isDarkMode ? "text-black" : "text-fff6e4"

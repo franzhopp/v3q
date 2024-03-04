@@ -127,9 +127,9 @@ const FormEmailJs = ({ label, type, value }) => {
         onSubmit={handleSubmit}
         className={`BgColorFilterForm rounded-3xl p-9 pb-12 shadow-lg space-y-4`}
       >
-        <div className="space-y-4">
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <div className="relative pb-5">
+        <div className={`space-y-4`}>
+          <div className={`grid grid-cols-1 gap-4 sm:grid-cols-2`}>
+            <div className={`relative pb-5`}>
               <label
                 className={`mt-1 absolute left-2 transition-all duration-200 ${
                   isFocused || value
@@ -154,12 +154,12 @@ const FormEmailJs = ({ label, type, value }) => {
                 onBlur={handleBlur}
               />
               {errors.firstname && (
-                <p className="text-left font-sans-serif text-red-700">
+                <p className={`text-red-700 text-left font-sans-serif`}>
                   {errors.firstname}
                 </p>
               )}
             </div>
-            <div className="relative pb-5">
+            <div className={`relative pb-5`}>
               <label
                 className={`mt-1 absolute left-2 transition-all duration-200 ${
                   isFocused || value
@@ -184,13 +184,13 @@ const FormEmailJs = ({ label, type, value }) => {
                 onBlur={handleBlur}
               />
               {errors.lastname && (
-                <p className="text-left font-sans-serif text-red-700">
+                <p className={`text-red-700 text-left font-sans-serif`}>
                   {errors.lastname}
                 </p>
               )}
             </div>
           </div>
-          <div className="relative pb-5">
+          <div className={`relative pb-5`}>
             <label
               className={`mt-1 absolute left-2 transition-all duration-200 ${
                 isFocused || value
@@ -214,12 +214,12 @@ const FormEmailJs = ({ label, type, value }) => {
               onBlur={handleBlur}
             />
             {errors.email && (
-              <p className="text-left font-sans-serif text-red-700">
+              <p className={`text-red-700 text-left font-sans-serif`}>
                 {errors.email}
               </p>
             )}
           </div>
-          <div className="relative pb-5">
+          <div className={`relative pb-5`}>
             <label
               className={`mt-1 absolute left-2 transition-all duration-200 ${
                 isFocused || value
@@ -244,13 +244,13 @@ const FormEmailJs = ({ label, type, value }) => {
               onBlur={handleBlur}
             />
             {errors.tel && (
-              <p className="text-left font-sans-serif text-red-700">
+              <p className={`text-red-700 text-left font-sans-serif`}>
                 {errors.tel}
               </p>
             )}
           </div>
 
-          <div className="relative">
+          <div className={`relative pb-5`}>
             <label
               className={`mt-1 absolute left-2 transition-all duration-200 ${
                 isFocused || value
@@ -275,7 +275,7 @@ const FormEmailJs = ({ label, type, value }) => {
               onBlur={handleBlur}
             ></textarea>
             {errors.message && (
-              <p className="text-left font-sans-serif text-red-700">
+              <p className={`text-red-700 text-left font-sans-serif`}>
                 {errors.message}
               </p>
             )}
@@ -283,20 +283,20 @@ const FormEmailJs = ({ label, type, value }) => {
         </div>
 
         <input
-          className="outline-none input-secondary border-gray-200 mr-1"
+          className={`border-gray-200 outline-none input-secondary mr-1`}
           type="checkbox"
           name="conditions"
           checked={formData.conditions}
           onChange={handleCheckboxChange}
         />
-        <span className="text-fff6e4 font-extrabold">
+        <span className={`text-fff6e4 font-extrabold`}>
           {" "}
           {translations[language].conditions2Fr}
           {translations[language].conditions2En}{" "}
           <span>
             <img
               src={ImgLogo}
-              className="h-10 mr-2 inline"
+              className={`h-10 mr-2 inline`}
               alt="Icône navi studio."
             />
           </span>
@@ -304,19 +304,19 @@ const FormEmailJs = ({ label, type, value }) => {
           {translations[language].conditions3En}{" "}
         </span>
         {errors.conditions && (
-          <p className="text-left font-sans-serif text-red-700">
+          <p className={`text-red-700 text-left font-sans-serif`}>
             {errors.conditions}
           </p>
         )}
-        <div className="flex justify-center pt-5">
+        <div className={`flex justify-center pt-5`}>
           <button type="submit" onClick={handleSubmit}>
             {isLoading ? (
               <div
-                className="animate-spin inline-block w-6 h-6 mt-2 border-[3px] border-current border-t-transparent text-white rounded-full"
+                className={`text-white animate-spin inline-block w-6 h-6 mt-2 border-[3px] border-current border-t-transparent rounded-full`}
                 role="status"
                 aria-label="loading"
               >
-                <span className="sr-only">Loading...</span>
+                <span className={`sr-only`}>Loading...</span>
               </div>
             ) : (
               <ButtonSend />
@@ -324,7 +324,7 @@ const FormEmailJs = ({ label, type, value }) => {
           </button>
         </div>
       </form>
-      <div className="tracking-tighter text-3be69e text-center pt-8">
+      <div className={`text-3be69e tracking-tighter text-center pt-8`}>
         {status && <p>{status}</p>}
       </div>
     </>

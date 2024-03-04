@@ -131,7 +131,7 @@ const SectionTeam = () => {
               </div>
             </div>
             <div className="flex flex-col">
-              <div className="relative">
+              <div className={`relative`}>
                 <SvgSun />
               </div>
               <div className="text-left mb-5 ml-10 sm:ml-0">
@@ -228,7 +228,7 @@ const SectionTeam = () => {
                 </p>
               </div>
               <div className="flex flex-col">
-                <div className="relative">
+                <div className={`relative`}>
                   <SvgFlower />
                 </div>
                 <div className="text-left mb-5 ml-10 sm:ml-0">
