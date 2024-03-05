@@ -47,7 +47,7 @@ const Button = () => {
       <button>
         <div onClick={SectionToScroll} className={`animate-bounce`}>
           <div
-            className={`border-black border-4 p-2 h-53 rounded-full shadow-sm transform active:scale-75 transition-transform ${
+            className={`p-2 h-53 rounded-full shadow-lg transform active:scale-75 transition-transform ${
               isDarkMode ? "bg-fff6e4" : "bg-061628"
             }`}
           >

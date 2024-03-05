@@ -22,7 +22,7 @@ const TitleHome = () => {
         </h1>
         <div className={`flex justify-center`}>
           <h2 className={`text-fff6e4 text-sm font-inter mt-1 uppercase`}>
-            Design • Développement • Marketing digital
+            Design / Développement / Marketing digital
           </h2>
         </div>
       </div>

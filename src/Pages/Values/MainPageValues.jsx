@@ -70,9 +70,9 @@ const PageValues = () => {
         <SubBlocs />
       </div>
       <BackToTopButton />
-      <div className={`flex justify-center pt-10`}>
+      {/* <div className={`flex justify-center pt-10`}>
         <SvgStarPink />
-      </div>
+      </div> */}
       <div
         className={`flex justify-center sm:justify-end relative right-24 top-20 lg:right-96`}
       >
@@ -87,9 +87,9 @@ const PageValues = () => {
       <div className={`WireBannier`}>
         <div className={`BgValuesBlur bg-cover bg-no-repeat py-28`}>
           <EndTextValues />
-          <div className={`flex justify-center pt-8`}>
+          {/* <div className={`flex justify-center pt-8`}>
             <SvgStarBeige />
-          </div>
+          </div> */}
         </div>
       </div>
       <Footer />

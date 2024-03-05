@@ -25,9 +25,13 @@ const DarkLightThemes = () => {
         {isDarkMode ? "" : ""}
         <div data-aos="fade-right">
           {isDarkMode ? (
-            <IoMdSunny className="h-10 w-6 lg:h-7 lg:w-7 2xl:mt-1 mt-0 transform active:scale-75 transition-transform animate-formbounce" />
+            <IoMdSunny
+              className={`h-10 w-6 lg:h-7 lg:w-7 2xl:mt-1 mt-0 transform active:scale-75 transition-transform animate-formbounce`}
+            />
           ) : (
-            <IoMdMoon className="h-10 w-6 lg:h-7 lg:w-7 2xl:mt-1 mt-0 transform active:scale-75 transition-transform animate-formbounce" />
+            <IoMdMoon
+              className={`h-10 w-6 lg:h-7 lg:w-7 2xl:mt-1 mt-0 transform active:scale-75 transition-transform animate-formbounce`}
+            />
           )}
         </div>
       </button>

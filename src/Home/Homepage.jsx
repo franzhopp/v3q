@@ -7,7 +7,7 @@ import Footer from "../Components/Footer/MainFooter.jsx";
 
 const Home = () => {
   return (
-    <div className="bg-fff6e4">
+    <div className={`bg-fff6e4`}>
       <Header />
       <BlocsItemsHome />
       <BlocsItemsStrategy />

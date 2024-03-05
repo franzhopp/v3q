@@ -73,6 +73,7 @@ textarea {
 
 .PictureBelgique {
     background-image: url("../assets/Picture/PictureBelgique.png");
+    animation: FadeIn 0.5s ease-in-out;
 }
 
 .BgHome {
@@ -90,22 +91,20 @@ textarea {
     animation: FadeIn 0.5s ease-in-out;
 }
 
-.BgPatternPortfolio {
-    background-image: url('../assets/Picture/Pattern.png');
-    background-position: 30% 10%;
-}
-
 .BgContactBlur {
     background-image: url('../assets/Background/BgContactBlur.png');
+    animation: FadeIn 0.5s ease-in-out;
 }
 
 .BgValuesBlur {
     background-image: url('../assets/Background/BgValuesBlur.png');
+    animation: FadeIn 0.5s ease-in-out;
 }
 
 .BgTitleAgency {
     border-radius: 0px 0px 0px 190px;
     background-image: url("../assets/Background/BgTitleAgency.png");
+    animation: FadeIn 0.5s ease-in-out;
 }
 
 .BgTitleQuote {
@@ -117,20 +116,24 @@ textarea {
 .WireTitle {
     background: lightgray;
     border-radius: 0px 0px 154px 0px;
+    animation: FadeIn 0.5s ease-in-out;
 }
 
 .WireTitleHome {
     border-radius: 0px 0px 0px 190px;
     background: lightgray;
+    animation: FadeIn 0.5s ease-in-out;
 }
 
 .WireTitleMarketing {
     border-radius: 0px 0px 290px 0px;
     background: lightgray;
+    animation: FadeIn 0.5s ease-in-out;
 }
 
 .WireBannier {
     background: lightgray;
+    animation: FadeIn 0.5s ease-in-out;
 }
 
 .BgTitlePortfolio {
@@ -154,12 +157,15 @@ textarea {
 .BgTitleContact {
     border-radius: 0px 0px 154px 0px;
     background-image: url("../assets/Background/BgTitleContact.png");
+    animation: FadeIn 0.5s ease-in-out;
 }
 
 .BgServicesMarketing {
     border-radius: 0px 0px 290px 0px;
     background-image: url("../assets/Background/BgServicesMarketing.png");
+    animation: FadeIn 0.5s ease-in-out;
 }
+
 
 .BgColorFilterForm {
     background: rgba(0, 0, 0, 0.08);
@@ -168,10 +174,12 @@ textarea {
 
 .BgCards {
     background-image: url("../assets/Background/BgCards.png");
+    animation: FadeIn 0.5s ease-in-out;
 }
 
 .BgCardsTwo {
     background-image: url("../assets/Background/BgCardsTwo.png");
+    animation: FadeIn 0.5s ease-in-out;
 }
 
 .PictureBannierLouisa {
@@ -186,6 +194,7 @@ textarea {
 
 .BgSlidePortfolio {
     background-image: url("../assets/Background/BgPortfolioSlide.png");
+    animation: FadeIn 0.5s ease-in-out;
 }
 
 .MiniBannierMelissa {

@@ -72,7 +72,7 @@ const FormNewletters = () => {
         <input
           type="text"
           placeholder="E-mail*"
-          className={`italic rounded-tl-2xl rounded-bl-2xl rounded-tr-none rounded-br-none w-50 p-2 pb-2 outline-none border-gray-200 text-sm ${
+          className={`italic text-sm outline-none rounded-tl-2xl rounded-bl-2xl rounded-tr-none rounded-br-none w-50 p-2 pb-2 ${
             errors.email ? "border-red-700" : ""
           }`}
           id="email"
@@ -87,7 +87,7 @@ const FormNewletters = () => {
             isDarkMode ? "text-c22e2e" : "text-fff6e4"
           }`}
         >
-          <span className={`font-inter text-sm transition hover:opacity-30`}>
+          <span className={`text-sm font-inter transition hover:opacity-30`}>
             {translations[language].sendFooterFr}
             {translations[language].sendFooterEn}
           </span>

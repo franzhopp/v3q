@@ -93,12 +93,12 @@ const Portfolio = () => {
             <SvgStarPink />
           </div>
         </div>
-        <div x-comp={`ImgCarousel`} className={`flex justify-center relative`}>
+        {/* <div x-comp={`ImgCarousel`} className={`flex justify-center relative`}>
           <img
             src={ImgPatternNavi}
             className={`absolute py-9 lg:flex hidden`}
           />
-        </div>
+        </div> */}
         <div x-comp={`Carousel`}>
           <div class={`flex flex-wrap`}>
             {/* 1 */}
