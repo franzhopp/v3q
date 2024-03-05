@@ -130,7 +130,7 @@ const PricingFr = () => {
       <TitlePricing />
       <TitleWebsiteFr />
       <div className={`flex justify-center`}>
-        <div className={`flex flex-col justify-center pb-10 text-center`}>
+        <div className={`flex flex-col justify-center text-center pb-10`}>
           <div className={`w-96`}>
             <LinksUk />
           </div>
@@ -141,7 +141,7 @@ const PricingFr = () => {
         data-aos-anchor-placement="top-bottom"
         className="flex justify-center"
       >
-        <div className={`w-96 lg:w-1/2`}>
+        <div className={`w-96 md:w-2/3 lg:w-1/2`}>
           {InformationsSitesWeb.map((info) => (
             <div
               className={`flex flex-col justify-center font-inter shadow-md ${
@@ -226,7 +226,7 @@ const PricingFr = () => {
         data-aos-anchor-placement="top-bottom"
         className={`flex justify-center`}
       >
-        <div className={`w-96 lg:w-1/2`}>
+        <div className={`w-96 md:w-2/3 lg:w-1/2`}>
           {InformationsMarketing.map((info, index) => (
             <div
               className={`flex flex-col justify-center font-inter shadow-md ${

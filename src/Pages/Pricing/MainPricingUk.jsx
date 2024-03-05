@@ -137,7 +137,7 @@ const PricingUk = () => {
         data-aos-anchor-placement="top-bottom"
         className="flex justify-center"
       >
-        <div className={`w-96 lg:w-1/2`}>
+        <div className={`w-96 md:w-2/3 lg:w-1/2`}>
           {InformationsSitesWeb.map((info) => (
             <div
               className={`flex flex-col justify-center font-inter shadow-md ${
@@ -222,7 +222,7 @@ const PricingUk = () => {
         data-aos-anchor-placement="top-bottom"
         className={`flex justify-center`}
       >
-        <div className={`w-96 lg:w-1/2`}>
+        <div className={`w-96 md:w-2/3 lg:w-1/2`}>
           {InformationsMarketing.map((info, index) => (
             <div
               className={`flex flex-col justify-center font-inter shadow-md ${

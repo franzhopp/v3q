@@ -19,7 +19,7 @@ const SubBlocs = () => {
       </div>
       <div className={`flex justify-center px-3 pt-6`}>
         <div
-          className={`rounded-lg shadow-md w-96 xl:w-1/3 lg:px-0 px-3 transition-transform transform hover:scale-90`}
+          className={`rounded-lg shadow-md w-full xl:w-1/3 lg:px-5 transition-transform transform hover:scale-90`}
         >
           <p
             data-aos="fade-up"

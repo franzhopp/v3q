@@ -10,7 +10,7 @@ const BlocsItems = () => {
   return (
     <div className={`flex justify-center mt-10`}>
       <div
-        className={`mt-5 flex flex-wrap justify-center space-x-0 sm:space-x-6`}
+        className={`flex flex-wrap justify-center mt-5 space-x-0 lg:space-x-3`}
       >
         <div data-aos="fade-left" data-aos-duration="300">
           <div
