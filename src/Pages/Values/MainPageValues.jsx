@@ -6,10 +6,7 @@ import NavbarValues from "../../Components/Navigation/NavbarValues/NavbarValues"
 import Img from "../../assets/Picture/PictureValuesMac.png";
 import BackToTopButton from "../../Components/UI/ScrollToTop/BackToTopButton";
 import Blocs from "./Blocs/Blocs";
-import SvgStarPink from "./Svg/SvgStarPink";
 import SvgArrowScroll from "./Svg/SvgArrowScroll";
-import SvgStarBeige from "./Svg/SvgStarBeige";
-import SvgStarPinkEnd from "./Svg/SvgStarPinkEnd";
 import SubBlocs from "./Blocs/SubBlocs";
 import SubBlocsBgPink from "./Blocs/SubBlocsBgPink";
 import EndTextValues from "./Text/EndTextValues";
@@ -70,9 +67,20 @@ const PageValues = () => {
         <SubBlocs />
       </div>
       <BackToTopButton />
-      {/* <div className={`flex justify-center pt-10`}>
-        <SvgStarPink />
-      </div> */}
+      <div className={`flex justify-center pt-10`}>
+        <svg
+          width="51"
+          height="51"
+          viewBox="0 0 51 51"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M25.5 0L32.1716 18.8284L51 25.5L32.1716 32.1716L25.5 51L18.8284 32.1716L0 25.5L18.8284 18.8284L25.5 0Z"
+            fill="#E18AB0"
+          />
+        </svg>
+      </div>
       <div
         className={`flex justify-center sm:justify-end relative right-24 top-20 lg:right-96`}
       >
@@ -87,9 +95,6 @@ const PageValues = () => {
       <div className={`WireBannier`}>
         <div className={`BgValuesBlur bg-cover bg-no-repeat py-28`}>
           <EndTextValues />
-          {/* <div className={`flex justify-center pt-8`}>
-            <SvgStarBeige />
-          </div> */}
         </div>
       </div>
       <Footer />
