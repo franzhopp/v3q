@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import NavbarPages from "../../Components/Navigation/NavbarPages/NavbarPages.jsx";
 import TitlePorfolio from "../../Components/UI/Title/TitlePorfolio.jsx";
-// import ImgDefault from "../../assets/Background/BgCardsTwo.png";
 import ImgDefault from "../../assets/Background/BgPortfolioSlide.png";
 import SvgHeart from "./Svg/SvgHeart.jsx";
 import SvgStarPink from "./Svg/SvgStar.jsx";
@@ -20,10 +19,9 @@ const Portfolio = () => {
     {
       id: 1,
       image: ImgDefault,
-      title: "Project title",
-      subtitle: "Project short description",
-      content:
-        "This is a short text describing your project and use these few words to catch the customer's attention.",
+      title: "Bientôt disponible -",
+      subtitle: "En travaux",
+      content: "C'est ici que vous découvrirez nos dernières réalisations.",
     },
     {
       id: 2,
@@ -158,14 +156,14 @@ const Portfolio = () => {
                     <button
                       className={`bg-fff6e4 px-5 p-3 text-md lg:text-lg rounded-full font-extrabold`}
                     >
-                      Keyword
+                      Design
                     </button>
                   </div>
                   <div className="pb-10">
                     <button
                       className={`bg-fff6e4 px-5 p-3 text-md lg:text-lg rounded-full font-extrabold`}
                     >
-                      Another keyword
+                      Web Devlopment
                     </button>
                   </div>
                   <div className="pb-10">
@@ -204,9 +202,9 @@ const Portfolio = () => {
                     <FaArrowRight className={`h-8 w-8`} />
                   </button>
                   <button
-                    className={` bg-0c3e78 px-7 p-3 text-md lg:text-lg rounded-full font-extrabold`}
+                    className={`bg-black px-7 p-3 text-md lg:text-lg rounded-full font-extrabold`}
                   >
-                    <p className={`text-fff6e4`}>View details</p>
+                    <p className={`text-fff6e4`}>Découvrir</p>
                   </button>
                 </div>
               </div>
@@ -227,12 +225,12 @@ const Portfolio = () => {
               className={`flex flex-col text-center`}
             >
               <h1 className={`text-fff6e4 text-3xl lg:text-4xl font-extrabold`}>
-                Wanna see some more ?
+                Vous voulez en voir plus ?
               </h1>
               <p
                 className={`text-fff6e4 text-xl lg:text-2xl font-extrabold px-10`}
               >
-                Check out our personal portfolios
+                Découvrez nos portfolios personnels
               </p>
             </div>
           </div>
@@ -250,10 +248,10 @@ const Portfolio = () => {
                   </h2>
                 </div>
                 <div className={`flex justify-end`}>
-                  <p className={`text-fff6e4 flex flex-col pt-2`}>
-                    Tell us a bit more about yourself
+                  <p className={`text-fff6e4 text-right flex flex-col pt-2`}>
+                    Laissez-vous bercer par l'innovation et la créativité
                     <span className={`flex justify-end font-extrabold`}>
-                      Find out more {`>`}
+                      Découvrir {`>`}
                     </span>
                   </p>
                 </div>
@@ -270,10 +268,10 @@ const Portfolio = () => {
                   </h2>
                 </div>
                 <div className={`flex justify-end`}>
-                  <p className={`text-fff6e4 flex flex-col pt-2`}>
-                    Tell us a bit more about yourself
+                  <p className={`text-fff6e4 text-right flex flex-col pt-2`}>
+                    Entrez dans un univers à la fois graphique et artistique
                     <span className={`flex justify-end font-extrabold`}>
-                      Find out more {`>`}
+                      Découvrir {`>`}
                     </span>
                   </p>
                 </div>
