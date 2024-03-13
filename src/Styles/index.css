@@ -150,7 +150,7 @@ textarea {
 
 .BgTitlePricingUk {
     border-radius: 0px 0px 154px 0px;
-    background: lightgray;
+    background-image: url("../assets/Background/BgPricingUk.png");
     animation: FadeIn 0.5s ease-in-out;
 }
 

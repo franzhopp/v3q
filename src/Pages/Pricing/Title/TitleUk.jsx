@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const TitleUk = () => {
   return (
-    <div className={`BgTitlePricingUk bg-cover py-32`}>
+    <div className={`BgTitlePricingUk bg-center lg:bg-left py-32`}>
       <div
         className={`text-fff6e4 flex justify-center lg:justify-start font-extrabold pt-20 px-20 lg:px-28`}
       >
