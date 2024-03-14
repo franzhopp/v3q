@@ -33,7 +33,7 @@ const Blocs = () => {
   return (
     <>
       <div
-        class={`flex flex-wrap justify-center space-x-0 sm:space-x-6 ${
+        className={`flex flex-wrap justify-center space-x-0 sm:space-x-6 ${
           isDarkMode ? "text-black" : "text-fff6e4"
         }`}
       >

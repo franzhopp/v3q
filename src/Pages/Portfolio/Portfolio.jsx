@@ -99,10 +99,10 @@ const Portfolio = () => {
           />
         </div> */}
         <div x-comp={`Carousel`}>
-          <div class={`flex flex-wrap`}>
+          <div className={`flex flex-wrap`}>
             {/* 1 */}
             <div
-              class={`BgSlidePortfolio bg-gray-300 bg-no-repeat bg-cover bg-center flex justify-center items-center w-full lg:w-1/2 relative`}
+              className={`BgSlidePortfolio bg-gray-300 bg-no-repeat bg-cover bg-center flex justify-center items-center w-full lg:w-1/2 relative`}
             >
               <div className={`flex justify-start relative`}>
                 <button
@@ -120,8 +120,8 @@ const Portfolio = () => {
                     <path
                       d="M17 4L4 33.5L17 63"
                       stroke="#8C8C8C"
-                      stroke-width="7"
-                      stroke-linecap="round"
+                      strokeWidth="7"
+                      strokeLinecap="round"
                     />
                   </svg>
                 </button>
@@ -133,12 +133,12 @@ const Portfolio = () => {
             {/* 2 */}
             <BackToTopButton />
             <div
-              class={`bg-0c3e78 h-1/2 lg:h-2/5 w-full lg:w-1/2 py-10 relative`}
+              className={`bg-0c3e78 h-1/2 lg:h-2/5 w-full lg:w-1/2 py-10 relative`}
             >
               <div className={`flex justify-end relative`}>
                 <button
                   onClick={handlePrev}
-                  className={`transition-transform transform hover:scale-90`}
+                  className={`transform active:scale-75 transition-transform`}
                 >
                   <svg
                     className={`absolute right-0 top-32 mr-5 hidden xl:flex`}
@@ -151,8 +151,8 @@ const Portfolio = () => {
                     <path
                       d="M4 63L17 33.5L4.00001 4"
                       stroke="#D9D9D9"
-                      stroke-width="7"
-                      stroke-linecap="round"
+                      strokeWidth="7"
+                      strokeLinecap="round"
                     />
                   </svg>
                 </button>
@@ -222,7 +222,10 @@ const Portfolio = () => {
         <div className={`py-20`}>
           <SvgStarRed />
         </div>
-        <div x-comp={`PersonalPortfolios`} class={`bg-e18ab0 relative py-20`}>
+        <div
+          x-comp={`PersonalPortfolios`}
+          className={`bg-e18ab0 relative py-24`}
+        >
           <div
             x-comp={`TitlePortfolioDetails`}
             className={`flex justify-center`}
@@ -239,7 +242,10 @@ const Portfolio = () => {
               </p>
             </div>
           </div>
-          <div class={`flex justify-center py-10 px-10`}>
+          <div className={`flex justify-center pt-10 px-10`}>
+            {/* <div
+            className={`inset-0 bg-e18ab0/30 blur-lg rounded-full`}
+          ></div>
             <div className={`flex flex-wrap justify-center gap-16`}>
               <div className={`flex flex-col px-10`}>
                 <div
@@ -273,6 +279,57 @@ const Portfolio = () => {
                       Découvrir {`>`}
                     </span>
                   </p>
+                </div>
+              </div>
+            </div> */}
+            <div className={`relative`}>
+              <div
+                className={`bg-c22e2e/30 absolute inset-0 blur-xl rounded-full`}
+              ></div>
+              <div className={`flex justify-center pt-10 px-10 relative z-10`}>
+                <div className={`flex flex-wrap justify-center gap-16`}>
+                  <div className={`flex flex-col px-0 lg:px-10`}>
+                    <div
+                      className={`transition-transform transform hover:scale-90`}
+                    >
+                      <img src={ImgDev} className={``} />
+                    </div>
+                    <div className={`flex justify-end`}>
+                      <p
+                        className={`text-fff6e4 text-right flex flex-col pt-2`}
+                      >
+                        Laissez-vous bercer par l'innovation et la créativité
+                        <span
+                          className={`flex justify-end font-extrabold transform active:scale-75 transition-transform`}
+                        >
+                          Découvrir {`>`}
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div className={`flex flex-col px-0 lg:px-10`}>
+                    <div
+                      className={`transition-transform transform hover:scale-90`}
+                    >
+                      <div
+                        className={`transition-transform transform hover:scale-90`}
+                      >
+                        <img src={ImgDesigner} className={``} />
+                      </div>
+                    </div>
+                    <div className={`flex justify-end`}>
+                      <p
+                        className={`text-fff6e4 text-right flex flex-col pt-2`}
+                      >
+                        Entrez dans un univers à la fois graphique et artistique
+                        <span
+                          className={`flex justify-end font-extrabold transform active:scale-75 transition-transform`}
+                        >
+                          Découvrir {`>`}
+                        </span>
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -90,7 +90,7 @@ const DiscoverWebDeveloper = () => {
             src={Pattern}
             className="-rotate-12 transition duration-500 hover:opacity-90"
           />
-          <div className="flex justify-center pl-20">
+          <div className="flex justify-center pl-24">
             <Copyright />
           </div>
         </div>
