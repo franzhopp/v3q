@@ -75,8 +75,7 @@ const Portfolio = () => {
 
   //   // Cleanup function to clear the interval when the component unmounts
   //   return () => clearInterval(intervalId);
-  // }, []);
-
+  // }, []);u
   return (
     <>
       <section x-comp={`PortfolioNavi`} className={`bg-fff6e4`}>
@@ -223,7 +222,7 @@ const Portfolio = () => {
         <div className={`py-20`}>
           <SvgStarRed />
         </div>
-        <div x-comp={`PersonalPortfolios`} class={`bg-e18ab0 py-20 relative`}>
+        <div x-comp={`PersonalPortfolios`} class={`bg-e18ab0 relative py-20`}>
           <div
             x-comp={`TitlePortfolioDetails`}
             className={`flex justify-center`}
@@ -246,7 +245,7 @@ const Portfolio = () => {
                 <div
                   className={`transition-transform transform hover:scale-90`}
                 >
-                  <img src={ImgDev} className={` `} />
+                  <img src={ImgDev} className={``} />
                 </div>
                 <div className={`flex justify-end`}>
                   <p className={`text-fff6e4 text-right flex flex-col pt-2`}>
