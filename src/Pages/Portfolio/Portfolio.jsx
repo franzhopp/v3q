@@ -4,6 +4,8 @@ import { FaArrowRight } from "react-icons/fa";
 import NavbarPages from "../../Components/Navigation/NavbarPages/NavbarPages.jsx";
 import TitlePorfolio from "../../Components/UI/Title/TitlePorfolio.jsx";
 import ImgDefault from "../../assets/Background/BgPortfolioSlide.png";
+import ImgDev from "../../assets/test1.png";
+import ImgDesigner from "../../assets/test2.png";
 import SvgHeart from "./Svg/SvgHeart.jsx";
 import SvgStarPink from "./Svg/SvgStar.jsx";
 import SvgLine from "./Svg/SvgLine.jsx";
@@ -104,7 +106,10 @@ const Portfolio = () => {
               class={`BgSlidePortfolio bg-gray-300 bg-no-repeat bg-cover bg-center flex justify-center items-center w-full lg:w-1/2 relative`}
             >
               <div className={`flex justify-start relative`}>
-                <button onClick={handleNext}>
+                <button
+                  onClick={handleNext}
+                  className={`transition-transform transform hover:scale-90`}
+                >
                   <svg
                     className={`absolute left-0 bottom-2 ml-5 hidden xl:flex`}
                     width="21"
@@ -132,7 +137,10 @@ const Portfolio = () => {
               class={`bg-0c3e78 h-1/2 lg:h-2/5 w-full lg:w-1/2 py-10 relative`}
             >
               <div className={`flex justify-end relative`}>
-                <button onClick={handlePrev}>
+                <button
+                  onClick={handlePrev}
+                  className={`transition-transform transform hover:scale-90`}
+                >
                   <svg
                     className={`absolute right-0 top-32 mr-5 hidden xl:flex`}
                     width="21"
@@ -227,9 +235,7 @@ const Portfolio = () => {
               <h1 className={`text-fff6e4 text-3xl lg:text-4xl font-extrabold`}>
                 Vous voulez en voir plus ?
               </h1>
-              <p
-                className={`text-fff6e4 text-xl lg:text-2xl font-extrabold px-10`}
-              >
+              <p className={`text-fff6e4 text-xl lg:text-2xl font-extrabold`}>
                 Découvrez nos portfolios personnels
               </p>
             </div>
@@ -238,14 +244,9 @@ const Portfolio = () => {
             <div className={`flex flex-wrap justify-center gap-16`}>
               <div className={`flex flex-col px-10`}>
                 <div
-                  className={`p-6 rounded-3xl shadow-md transition-transform transform hover:scale-90`}
+                  className={`transition-transform transform hover:scale-90`}
                 >
-                  <h2
-                    data-aos="fade-left"
-                    className={`text-black text-8xl FontNumber font-bold mb-2`}
-                  >
-                    Dev
-                  </h2>
+                  <img src={ImgDev} className={` `} />
                 </div>
                 <div className={`flex justify-end`}>
                   <p className={`text-fff6e4 text-right flex flex-col pt-2`}>
@@ -258,14 +259,13 @@ const Portfolio = () => {
               </div>
               <div className={`flex flex-col px-10`}>
                 <div
-                  className={`p-6 rounded-3xl shadow-md transition-transform transform hover:scale-90`}
+                  className={`transition-transform transform hover:scale-90`}
                 >
-                  <h2
-                    data-aos="fade-left"
-                    className={`text-8xl FontNumber text-black font-bold mb-2`}
+                  <div
+                    className={`transition-transform transform hover:scale-90`}
                   >
-                    Des
-                  </h2>
+                    <img src={ImgDesigner} className={``} />
+                  </div>
                 </div>
                 <div className={`flex justify-end`}>
                   <p className={`text-fff6e4 text-right flex flex-col pt-2`}>
