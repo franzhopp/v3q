@@ -81,10 +81,7 @@ const DiscoverWebDeveloper = () => {
           </div>
         </p>
       </div>
-      <div className="flex flex-wrap justify-center pt-20 space-x-10">
-        <div className="flex relative">
-          <Frame />
-        </div>
+      <div className="flex flex-wrap justify-center pt-20 space-x-12 lg:space-x-28">
         <div data-aos="fade-left">
           <img
             src={Pattern}
@@ -93,9 +90,6 @@ const DiscoverWebDeveloper = () => {
           <div className="flex justify-center pl-24">
             <Copyright />
           </div>
-        </div>
-        <div className="flex relative">
-          <Vector />
         </div>
         <div className="bg-f9fefe p-5 mt-20 lg:mt-0 lg:w-96 lg:h-1/2 text-center rounded-2xl shadow-lg rotate-12">
           <div className="mt-5">
