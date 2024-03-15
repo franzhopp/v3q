@@ -10,7 +10,7 @@ import SvgHeart from "./Svg/SvgHeart.jsx";
 import SvgStarPink from "./Svg/SvgStar.jsx";
 import SvgLine from "./Svg/SvgLine.jsx";
 import Footer from "../../Components/Footer/MainFooter.jsx";
-import BackToTopButton from "../../Components/UI/ScrollToTop/BackToTopButton";
+// import BackToTopButton from "../../Components/UI/ScrollToTop/BackToTopButton";
 import ImgPatternNavi from "../../assets/Picture/PatternNavi.png";
 import SvgStarRed from "./Svg/SvgStarRed";
 
@@ -131,7 +131,7 @@ const Portfolio = () => {
               </p>
             </div>
             {/* 2 */}
-            <BackToTopButton />
+            {/* <BackToTopButton /> */}
             <div
               className={`bg-0c3e78 h-1/2 lg:h-2/5 w-full lg:w-1/2 py-10 relative`}
             >
@@ -170,7 +170,7 @@ const Portfolio = () => {
                     <button
                       className={`bg-fff6e4 px-5 p-3 text-md lg:text-lg rounded-full font-extrabold`}
                     >
-                      Web Devlopment
+                      Web Dev
                     </button>
                   </div>
                   <div className="pb-10">
@@ -243,45 +243,6 @@ const Portfolio = () => {
             </div>
           </div>
           <div className={`flex justify-center pt-10 px-10`}>
-            {/* <div
-            className={`inset-0 bg-e18ab0/30 blur-lg rounded-full`}
-          ></div>
-            <div className={`flex flex-wrap justify-center gap-16`}>
-              <div className={`flex flex-col px-10`}>
-                <div
-                  className={`transition-transform transform hover:scale-90`}
-                >
-                  <img src={ImgDev} className={``} />
-                </div>
-                <div className={`flex justify-end`}>
-                  <p className={`text-fff6e4 text-right flex flex-col pt-2`}>
-                    Laissez-vous bercer par l'innovation et la créativité
-                    <span className={`flex justify-end font-extrabold`}>
-                      Découvrir {`>`}
-                    </span>
-                  </p>
-                </div>
-              </div>
-              <div className={`flex flex-col px-10`}>
-                <div
-                  className={`transition-transform transform hover:scale-90`}
-                >
-                  <div
-                    className={`transition-transform transform hover:scale-90`}
-                  >
-                    <img src={ImgDesigner} className={``} />
-                  </div>
-                </div>
-                <div className={`flex justify-end`}>
-                  <p className={`text-fff6e4 text-right flex flex-col pt-2`}>
-                    Entrez dans un univers à la fois graphique et artistique
-                    <span className={`flex justify-end font-extrabold`}>
-                      Découvrir {`>`}
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div> */}
             <div className={`relative`}>
               <div
                 className={`bg-c22e2e/30 absolute inset-0 blur-2xl rounded-full`}
