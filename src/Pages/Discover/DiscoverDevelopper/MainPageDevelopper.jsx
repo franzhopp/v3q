@@ -81,7 +81,7 @@ const DiscoverWebDeveloper = () => {
           </div>
         </p>
       </div>
-      <div className="flex flex-wrap justify-center pt-20 space-x-12 lg:space-x-28">
+      <div className="flex flex-wrap justify-center pt-20 space-x-10 lg:space-x-28">
         <div data-aos="fade-left">
           <img
             src={Pattern}
@@ -114,7 +114,7 @@ const DiscoverWebDeveloper = () => {
         </div>
       </div>
       <LogoBrand />
-      <div className="pb-32 pt-10 flex flex-wrap justify-center space-x-0 sm:space-x-10">
+      <div className="pb-32 pt-10 flex flex-wrap justify-center space-x-0 lg:space-x-10">
         <div className="p-6">
           <div
             data-aos="fade-in"

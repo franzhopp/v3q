@@ -68,7 +68,7 @@ const LinksNavbarDesktop = () => {
             </NavLink>
             <div className={`flex justify-center`}>
               <ul
-                className={`absolute hidden group-hover:block rounded-md font-extrabold text-left w-48 bg-fff6e4 mt-2 py-2 ${
+                className={`bg-fff6e4 absolute hidden group-hover:block font-extrabold text-left w-44 rounded-lg py-3 ${
                   isDarkMode ? "text-c22e2e" : "text-fff6e4"
                 } FadeInDelayDesktop`}
               >
@@ -142,7 +142,7 @@ const LinksNavbarDesktop = () => {
             </NavLink>
             <div className={`flex justify-center`}>
               <ul
-                className={`absolute hidden group-hover:block bg-fff6e4 w-48 mt-2 py-2 rounded-md text-left ${
+                className={`bg-fff6e4 absolute hidden group-hover:block w-44 rounded-lg py-3 text-left ${
                   isDarkMode ? "text-c22e2e" : "text-fff6e4"
                 } FadeInDelayDesktop`}
               >
