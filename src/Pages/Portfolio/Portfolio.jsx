@@ -244,9 +244,6 @@ const Portfolio = () => {
           </div>
           <div className={`flex justify-center pt-10 px-10`}>
             <div className={`relative`}>
-              <div
-                className={`bg-c22e2e absolute inset-0 blur-2xl rounded-full`}
-              ></div>
               <div className={`flex justify-center pt-10 px-10 relative z-10`}>
                 <div className={`flex flex-wrap justify-center gap-16`}>
                   <div className={`flex flex-col px-0 lg:px-10`}>
