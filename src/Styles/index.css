@@ -73,6 +73,7 @@ textarea {
 
 .PictureBelgique {
     background-image: url("../assets/Picture/PictureBelgique.png");
+    border-radius: 0px 0px 154px 0px;
     animation: FadeIn 0.5s ease-in-out;
 }
 
