@@ -122,7 +122,7 @@ const DiscoverWebDeveloper = () => {
             data-aos="fade-in"
             className="flex flex-row space-x-10 list-none"
           >
-            <LinksNetwork />
+            {/* <LinksNetwork /> */}
           </div>
         </div>
       </div>
