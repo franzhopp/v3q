@@ -10,7 +10,7 @@ import SvgHeart from "./Svg/SvgHeart.jsx";
 import SvgStarPink from "./Svg/SvgStar.jsx";
 import SvgLine from "./Svg/SvgLine.jsx";
 import Footer from "../../Components/Footer/MainFooter.jsx";
-// import BackToTopButton from "../../Components/UI/ScrollToTop/BackToTopButton";
+import BackToTopButton from "../../Components/UI/ScrollToTop/BackToTopButton";
 import ImgPatternNavi from "../../assets/Picture/PatternNavi.png";
 import SvgStarRed from "./Svg/SvgStarRed";
 
@@ -131,7 +131,7 @@ const Portfolio = () => {
               </p>
             </div>
             {/* 2 */}
-            {/* <BackToTopButton /> */}
+            <BackToTopButton />
             <div
               className={`bg-0c3e78 h-1/2 lg:h-2/5 w-full lg:w-1/2 py-10 relative`}
             >

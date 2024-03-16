@@ -67,7 +67,7 @@ const DiscoverWebDeveloper = () => {
           </NavLink>
         </div>
       </div>
-      <div className="PictureBelgique bg-cover bg-no-repeat h-52"></div>
+      <div className="PictureBelgique bg-cover bg-right bg-no-repeat h-52"></div>
       <div id="AboutLouisa" className="pt-16"></div>
       <BackToTopButton />
       <div className="flex justify-center pt-20">
@@ -81,7 +81,7 @@ const DiscoverWebDeveloper = () => {
           </div>
         </p>
       </div>
-      <div className="flex flex-wrap justify-center pt-20 space-x-10 lg:space-x-28">
+      <div className="flex flex-wrap justify-center pt-20 space-x-8 lg:space-x-28">
         <div data-aos="fade-left">
           <img
             src={Pattern}
