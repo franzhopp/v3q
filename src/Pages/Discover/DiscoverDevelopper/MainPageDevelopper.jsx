@@ -13,8 +13,8 @@ import SvgPyramid from "./Svg/SvgPyramid.jsx";
 import ImageProjects from "./Image/ImageProjects.jsx";
 import Pattern from "../../../assets/Picture/PictureLouisa.png";
 import Copyright from "./Copyright/LocationCopyright.jsx";
-import Frame from "./Svg/SvgFrame.jsx";
-import Vector from "./Svg/SvgVector.jsx";
+// import Frame from "./Svg/SvgFrame.jsx";
+// import Vector from "./Svg/SvgVector.jsx";
 import LogoBrand from "./Logo/LogoBrand.jsx";
 import LinksNetwork from "./Network/LinksNetwork.jsx";
 import Footer from "../../../Components/Footer/MainFooter.jsx";
@@ -115,7 +115,7 @@ const DiscoverWebDeveloper = () => {
           <ImageProjects />
         </div>
       </div>
-      <LogoBrand />
+      {/* <LogoBrand /> */}
       <div className="pb-32 pt-10 flex flex-wrap justify-center space-x-0 lg:space-x-10">
         <div className="p-6">
           <div
