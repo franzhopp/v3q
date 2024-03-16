@@ -61,7 +61,7 @@ const translations = {
     textWithoutBoldFsFr:
       "Votre site est votre vision. Chaque site raconte une histoire que notre équipe restranscrit en développant des expériences uniques qui reflètent l'identité de votre marque. Découvrez l'équipe",
     // Second Section :
-    titleSecondSectionFr: "Découvrez des offres adaptées à vos besoins",
+    titleSecondSectionFr: "Découvrez des offres adaptées  à vos besoins",
     wordBoldSecondSectionFr: "Efficacité.",
     textSecondSectionWithoutBoldFr:
       "Nos sites internet ne sont pas seulement esthétiquement plaisants, ils sont élaborés & travaillés sur-mesure pour répondre à vos besoins. Nous nous inspirons de vous & de votre histoire, chaque histoire est différente et chaque site l'est aussi ! Cet aspect unique et pratique font de nos réalisations digitales :",
