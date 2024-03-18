@@ -110,22 +110,21 @@ const SectionTeam = () => {
           </p>
         </div>
       </div>
-
       <div
         className={`flex justify-center mt-16 ${
           isDarkMode ? "text-black" : "text-fff6e4"
         } px-10`}
       >
-        <div className="flex flex-col justify-center">
-          <div className="flex flex-col space-x-3 mb-5 sm:flex-row">
-            <div className="mb-10 sm:mb-0">
-              <div className="w-auto h-auto">
+        <div className={`flex flex-col justify-center`}>
+          <div className={`flex flex-col lg:flex-row space-x-3 mb-5`}>
+            <div className={`mb-10 lg:mb-0`}>
+              <div className={`w-auto h-auto`}>
                 <ModalImage
                   large={ImageParis}
                   small={ImageParis}
-                  className="rounded-2xl ml-10 sm:ml-0 transition-transform hover:opacity-90 transform active:scale-75"
+                  className={`rounded-2xl ml-10 lg:ml-0 transition-transform hover:opacity-90 transform active:scale-75`}
                 />
-                <p className="text-sm sm:ml-0 ml-10">
+                <p className={`text-sm lg:ml-0 ml-10`}>
                   📍 Paris, Île-de-France, France.
                 </p>
               </div>

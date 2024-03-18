@@ -1,7 +1,7 @@
 const Vector = () => {
   return (
     <svg
-      className="absolute top-64 left-24"
+      className="absolute "
       xmlns="http://www.w3.org/2000/svg"
       width="372"
       height="235"

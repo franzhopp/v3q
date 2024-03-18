@@ -19,6 +19,8 @@ import LogoBrand from "./Logo/LogoBrand.jsx";
 import LinksNetwork from "./Network/LinksNetwork.jsx";
 import Footer from "../../../Components/Footer/MainFooter.jsx";
 import BackToTopButton from "../../../Components/UI/ScrollToTop/BackToTopButton.jsx";
+import Frame from "./Svg/SvgFrame.jsx";
+import Vector from "./Svg/SvgVector.jsx";
 
 const DiscoverWebDeveloper = () => {
   const { language } = useLanguage();
@@ -78,13 +80,14 @@ const DiscoverWebDeveloper = () => {
           className="text-c22e2e text-center font-inter text-3xl lg:text-4xl"
         >
           À propos
-          <div className="flex justify-center">
-            <SvgPyramid />
+          <div className={`flex justify-center`}>
+            <span className={`bg-c22e2e absolute h-1 w-24`}></span>
           </div>
         </p>
       </div>
       <div className="flex flex-wrap justify-center pt-20 space-x-8 lg:space-x-28">
         <div data-aos="fade-left">
+          {/* <Frame /> */}
           <img
             src={Pattern}
             className="-rotate-12 transition duration-500 hover:opacity-90"
@@ -105,8 +108,8 @@ const DiscoverWebDeveloper = () => {
           className="text-c22e2e text-center font-inter text-3xl lg:text-4xl"
         >
           Projets
-          <div className="flex justify-center">
-            <SvgPyramid />
+          <div className={`flex justify-center`}>
+            <span className={`bg-c22e2e absolute h-1 w-24`}></span>
           </div>
         </p>
       </div>
@@ -122,7 +125,7 @@ const DiscoverWebDeveloper = () => {
             data-aos="fade-in"
             className="flex flex-row space-x-10 list-none"
           >
-            {/* <LinksNetwork /> */}
+            <LinksNetwork />
           </div>
         </div>
       </div>

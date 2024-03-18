@@ -6,7 +6,7 @@ const TitleQuote = () => {
   const { language } = useLanguage();
   return (
     <div className={`WireTitle`}>
-      <div className={`BgTitleQuote bg-cover py-32`}>
+      <div className={`BgTitleQuote py-32`}>
         <div
           className={`text-fff6e4 flex justify-center lg:justify-start font-extrabold pt-20 px-20 lg:px-28`}
         >
