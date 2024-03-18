@@ -8,15 +8,12 @@ const SubBlocs = () => {
     <div className={`text-center`}>
       <h1
         data-aos="fade-right"
-        className={`text-2xl lg:text-4xl font-inter font-extrabold`}
+        className={`text-2xl lg:text-4xl font-extrabold`}
       >
         {" "}
         {translations[language].titleWorkEthicsFr}
         {translations[language].titleWorkEthicsEn}{" "}
       </h1>
-      <div className={`flex justify-center`}>
-        <span className={`bg-e18ab0 absolute w-48 h-1`}></span>
-      </div>
       <div className={`flex justify-center px-3 pt-6`}>
         <div
           className={`rounded-lg shadow-md w-full xl:w-1/3 lg:px-5 transition-transform transform hover:scale-90`}
