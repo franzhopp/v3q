@@ -63,7 +63,6 @@ const LinksNavbarMobile = () => {
     setShowSousListsRate(!showSousListsRate);
     setIsExpanded4(!isExpanded4);
   };
-
   useEffect(() => {
     AOS.init();
     AOS.refresh();

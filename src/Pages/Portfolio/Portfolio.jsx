@@ -110,7 +110,7 @@ const Portfolio = () => {
                   className={`transition-transform transform hover:scale-90`}
                 >
                   <svg
-                    className={`absolute left-0 -bottom-1 ml-5 hidden xl:flex`}
+                    className={`absolute left-0 -bottom-9 ml-5 hidden xl:flex`}
                     width="21"
                     height="67"
                     viewBox="0 0 21 67"
@@ -141,7 +141,7 @@ const Portfolio = () => {
                   className={`transform active:scale-75 transition-transform`}
                 >
                   <svg
-                    className={`absolute right-0 top-32 mr-5`}
+                    className={`absolute right-0 top-40 mr-5`}
                     width="21"
                     height="67"
                     viewBox="0 0 21 67"
