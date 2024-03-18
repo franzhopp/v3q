@@ -244,46 +244,44 @@ const Portfolio = () => {
             </div>
           </div>
           <div className={`flex justify-center pt-10 px-10`}>
-            <div className={`relative`}>
-              <div className={`flex justify-center pt-10 px-10 relative z-10`}>
-                <div className={`flex flex-wrap justify-center gap-16`}>
-                  <div className={`flex flex-col px-0 lg:px-10`}>
-                    <div className={``}>
-                      <img src={ImgDev} className={``} />
-                    </div>
-                    <div className={`flex justify-end`}>
-                      <p
-                        className={`text-fff6e4 text-right flex flex-col pt-2`}
-                      >
-                        Laissez-vous bercer par l'innovation et la créativité
-                        <span className={`flex justify-end font-extrabold`}>
-                          Découvrir {`>`}
-                        </span>
-                      </p>
+            <div className={`flex justify-center pt-10 px-10 relative`}>
+              <div
+                className={`absolute inset-0 bg-c22e2e/30 backdrop-blur blur-lg rounded-full`}
+              ></div>
+              <div className={`flex flex-wrap justify-center gap-16 relative`}>
+                <div className={`flex flex-col px-0 lg:px-10`}>
+                  <div className={` `}>
+                    <img src={ImgDev} className={``} />
+                  </div>
+                  <div className={`flex justify-end`}>
+                    <p className={`text-fff6e4 text-right flex flex-col pt-2`}>
+                      Laissez-vous bercer par l'innovation et la créativité
+                      <span className={`flex justify-end font-extrabold`}>
+                        Découvrir {`>`}
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                <div className={`flex flex-col px-0 lg:px-10`}>
+                  <div className={``}>
+                    <div className={` `}>
+                      <img src={ImgDesigner} className={``} />
                     </div>
                   </div>
-                  <div className={`flex flex-col px-0 lg:px-10`}>
-                    <div className={``}>
-                      <div className={` `}>
-                        <img src={ImgDesigner} className={``} />
-                      </div>
-                    </div>
-                    <div className={`flex justify-end`}>
-                      <p
-                        className={`text-fff6e4 text-right flex flex-col pt-2`}
-                      >
-                        Entrez dans un univers à la fois graphique et artistique
-                        <span className={`flex justify-end font-extrabold`}>
-                          Découvrir {`>`}
-                        </span>
-                      </p>
-                    </div>
+                  <div className={`flex justify-end`}>
+                    <p className={`text-fff6e4 text-right flex flex-col pt-2`}>
+                      Entrez dans un univers à la fois graphique et artistique
+                      <span className={`flex justify-end font-extrabold`}>
+                        Découvrir {`>`}
+                      </span>
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
         <div className={`flex justify-center py-20`}>
           <SvgHeart />
         </div>
