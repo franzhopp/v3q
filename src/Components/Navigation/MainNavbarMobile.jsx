@@ -188,9 +188,9 @@ const NavbarMobile = () => {
                   </button>
                   <ul
                     data-aos="fade-left"
-                    className={`toggle-menu ${
+                    className={`p-2 ${
                       showSousListsFiveMenu ? "block" : "hidden"
-                    } p-2`}
+                    }`}
                   >
                     <li className={`font-extrabold`}>
                       <NavLink

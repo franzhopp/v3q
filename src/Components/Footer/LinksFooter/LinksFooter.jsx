@@ -1,16 +1,9 @@
 import { NavLink } from "react-router-dom";
 import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import translations from "../translate.jsx";
-import { useEffect } from "react";
 
 const LinksFooter = () => {
   const { language } = useLanguage();
-  const SectionToSectionContact = () => {
-    const ContactToScroll = document.getElementById("contact");
-    if (ContactToScroll) {
-      ContactToScroll.scrollIntoView({ behavior: "smooth" });
-    }
-  };
   const ScrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -18,19 +11,6 @@ const LinksFooter = () => {
       behavior: "smooth",
     });
   };
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrollNavbar(true);
-      } else {
-        setScrollNavbar(false);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  });
   return (
     <ul
       className={`flex flex-wrap justify-center pt-16 gap-6 md:gap-8 lg:gap-24`}
@@ -117,19 +97,10 @@ const LinksFooter = () => {
       <li>
         <NavLink
           to="/"
-          onClick={SectionToSectionContact}
           className={`text-fff6e4 transition duration-500 hover:opacity-80`}
         >
           Contact
         </NavLink>
-      </li>
-      <li>
-        <a
-          href="https://instagram.com/navistudio.fr"
-          className={`text-fff6e4 transition duration-500 hover:opacity-80`}
-        >
-          — <span className={`italic`}>Rejoignez-nous</span>
-        </a>
       </li>
     </ul>
   );
