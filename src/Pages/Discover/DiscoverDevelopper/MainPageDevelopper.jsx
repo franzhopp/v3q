@@ -13,18 +13,15 @@ import SvgPyramid from "./Svg/SvgPyramid.jsx";
 import ImageProjects from "./Image/ImageProjects.jsx";
 import Pattern from "../../../assets/Picture/PictureLouisa.png";
 import Copyright from "./Copyright/LocationCopyright.jsx";
-// import Frame from "./Svg/SvgFrame.jsx";
-// import Vector from "./Svg/SvgVector.jsx";
-import LogoBrand from "./Logo/LogoBrand.jsx";
 import LinksNetwork from "./Network/LinksNetwork.jsx";
 import Footer from "../../../Components/Footer/MainFooter.jsx";
 import BackToTopButton from "../../../Components/UI/ScrollToTop/BackToTopButton.jsx";
-import Frame from "./Svg/SvgFrame.jsx";
-import Vector from "./Svg/SvgVector.jsx";
+import LogoBrand from "./Logo/LogoBrand.jsx";
+// import Frame from "./Svg/SvgFrame.jsx";
+// import Vector from "./Svg/SvgVector.jsx";
 
 const DiscoverWebDeveloper = () => {
   const { language } = useLanguage();
-
   const SectionToScrollDesc = () => {
     const contactSection = document.getElementById("AboutLouisa");
     if (contactSection) {
@@ -87,11 +84,8 @@ const DiscoverWebDeveloper = () => {
       </div>
       <div className="flex flex-wrap justify-center pt-20 space-x-8 lg:space-x-28">
         <div data-aos="fade-left">
-          <Frame />
-          <img
-            src={Pattern}
-            className="-rotate-12 transition duration-500 hover:opacity-90"
-          />
+          {/* <Frame /> */}
+          <img src={Pattern} className="-rotate-12" />
           <div className="flex justify-center pl-24">
             <Copyright />
           </div>
@@ -115,18 +109,18 @@ const DiscoverWebDeveloper = () => {
         </p>
       </div>
       <div className="flex justify-center pt-20 p-10">
-        <div className="bg-f9fefe p-4 rounded-2xl shadow-lg sm:w-1/2 sm:h-1/2 transition duration-500 hover:opacity-90">
+        <div className="bg-f9fefe p-4 rounded-2xl shadow-lg lg:w-1/2 lg:h-1/2">
           <ImageProjects />
         </div>
       </div>
-      {/* <LogoBrand /> */}
+      <LogoBrand />
       <div className="pb-32 pt-10 flex flex-wrap justify-center space-x-0 lg:space-x-10">
         <div className="p-6">
           <div
             data-aos="fade-in"
             className="flex flex-row space-x-10 list-none"
           >
-            {/* <LinksNetwork /> */}
+            <LinksNetwork />
           </div>
         </div>
       </div>
