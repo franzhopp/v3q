@@ -229,9 +229,7 @@ const NavbarMobile = () => {
             </button>
             <ul
               data-aos="fade-left"
-              className={`toggle-menu ${
-                showSousListsMenu ? "block" : "hidden"
-              } p-2`}
+              className={`${showSousListsMenu ? "block" : "hidden"} p-2`}
             >
               <li>
                 <NavLink
@@ -257,9 +255,7 @@ const NavbarMobile = () => {
                   </button>
                   <ul
                     data-aos="fade-left"
-                    className={`toggle-menu ${
-                      showSousListsRate ? "block" : "hidden"
-                    } p-2`}
+                    className={` ${showSousListsRate ? "block" : "hidden"} p-2`}
                   >
                     <li className={`font-extrabold`}>
                       <NavLink
