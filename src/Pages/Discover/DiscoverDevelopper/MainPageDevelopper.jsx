@@ -71,9 +71,7 @@ const DiscoverWebDeveloper = () => {
         </div>
       </div>
       <div className={`WireTitle`}>
-        <div
-          className={`PictureLille bg-cover bg-right bg-no-repeat h-52`}
-        ></div>
+        <div className={`bg-cover bg-right bg-no-repeat h-52`}></div>
       </div>
       <div id="AboutLouisa" className="pt-16"></div>
       <BackToTopButton />
@@ -113,13 +111,12 @@ const DiscoverWebDeveloper = () => {
           <ImageProjects />
         </div>
       </div>
-      <LogoBrand />
-      <div className="pb-32 pt-10 flex flex-wrap justify-center space-x-0 lg:space-x-10">
-        <div className="p-6">
-          <div
-            data-aos="fade-in"
-            className="flex flex-row space-x-10 list-none"
-          >
+      {/* <LogoBrand /> */}
+      <div
+        className={`flex flex-wrap justify-center pb-32 pt-10 space-x-0 lg:space-x-10`}
+      >
+        <div className={`p-6`}>
+          <div className={`flex flex-row space-x-10 list-none`}>
             <LinksNetwork />
           </div>
         </div>
