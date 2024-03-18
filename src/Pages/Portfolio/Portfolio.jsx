@@ -21,9 +21,10 @@ const Portfolio = () => {
     {
       id: 1,
       image: ImgDefault,
-      title: "Bientôt disponible -",
-      subtitle: "En travaux",
-      content: "C'est ici que vous découvrirez nos dernières réalisations.",
+      title: "Project title 1",
+      subtitle: "Project short description 1",
+      content:
+        "This is a short text describing your project and use these few words to catch the customer's attention. 1",
     },
     {
       id: 2,
