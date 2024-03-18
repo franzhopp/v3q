@@ -50,7 +50,11 @@ const DiscoverWebDeveloper = () => {
         <div className="flex justify-center py-20">
           <TitlePage />
         </div>
-        <div className="flex justify-center py-10">
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          className="flex justify-center py-10"
+        >
           <SubTitlePage />
         </div>
         <div className="flex justify-center py-20">
@@ -67,15 +71,14 @@ const DiscoverWebDeveloper = () => {
         </div>
       </div>
       <div className={`WireTitle`}>
-        <div className="WireTitle bg-cover bg-right bg-no-repeat h-52"></div>
+        <div
+          className={`PictureLille bg-cover bg-right bg-no-repeat h-52`}
+        ></div>
       </div>
       <div id="AboutLouisa" className="pt-16"></div>
       <BackToTopButton />
       <div className="flex justify-center pt-20">
-        <p
-          data-aos="fade-right"
-          className="text-c22e2e text-center font-inter text-3xl lg:text-4xl"
-        >
+        <p className="text-c22e2e text-center font-inter text-3xl lg:text-4xl">
           À propos
           <div className="flex justify-center">
             <SvgPyramid />
@@ -98,10 +101,7 @@ const DiscoverWebDeveloper = () => {
         </div>
       </div>
       <div className="flex justify-center pt-20">
-        <p
-          data-aos="fade-left"
-          className="text-c22e2e text-center font-inter text-3xl lg:text-4xl"
-        >
+        <p className="text-c22e2e text-center font-inter text-3xl lg:text-4xl">
           Projets
           <div className="flex justify-center">
             <SvgPyramid />

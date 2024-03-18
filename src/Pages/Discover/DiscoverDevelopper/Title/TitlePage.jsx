@@ -8,7 +8,7 @@ const TitlePage = () => {
         data-aos="fade-right"
         className={`text-fff6e4 text-center absolute font-inter w-96 lg:w-1/2 text-3xl lg:text-4xl px-3`}
       >
-        Bienvenue sur la page dédiée à la description du développeur
+        Bienvenue sur la page dédiée à l'histoire unique du développeur
       </h2>
     </div>
   );

@@ -7,8 +7,8 @@ const SubTitlePage = () => {
       <p
         className={`text-fff6e4 text-center absolute w-96 lg:w-2/5 text-md lg:text-base px-3`}
       >
-        Rassemblant toute sa description, tous ses projets, vous découvrirez
-        tout ce qui la motive dans la vie quotidienne & ce qui la passionne.
+        Rassemblant toute sa description, ses projets, vous découvrirez tout ce
+        qui la motive dans la vie quotidienne & ce qui la passionne.
       </p>
     </div>
   );
