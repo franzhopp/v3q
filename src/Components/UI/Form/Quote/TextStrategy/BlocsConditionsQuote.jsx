@@ -78,8 +78,8 @@ const BlocsConditions = () => {
         </ul>
       </p>
       <BackToTopButton />
-      <div className={`flex justify-center`}>
-        <NavLink to="/">
+      <div className={`flex justify-start lg:justify-center mx-6 lg:mx-0`}>
+        <NavLink to={`/`}>
           <SvgBtnQuote />
         </NavLink>
       </div>

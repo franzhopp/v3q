@@ -42,7 +42,7 @@ const translations = {
     // Sous liste Services
     navSousServicesFr: "Prestations",
     navSousPricingFr: "Tarification",
-    navSousFreeFr: "Formulaire en ligne",
+    navSousFreeFr: "Demande de formulaire",
     // Cookie
     cookieTitleFr: "Politique de cookies",
     cookieDescFr:
@@ -246,7 +246,7 @@ const translations = {
     bloc2ServicesFr:
       "Vous disposez d'un suivi de production complet, notre équipe reste disponible et à votre écoute 24/7. Nous travaillons main dans la main avec nos clients.",
     bloc3ServicesFr:
-      "Obtenez un Formulaire en ligne dès maintenant et commencez votre aventure dans le monde du digital à nos côtés !",
+      "Obtenez un Demande de formulaire dès maintenant et commencez votre aventure dans le monde du digital à nos côtés !",
     titleServicesMarketingFr: "Marketing digital",
     subTitleMarketing1Fr: "Stratégie de marque",
     describeMarketing1Fr:
@@ -280,7 +280,7 @@ const translations = {
     titleInfoFreeFr:
       "Avant de soumettre un formulaire, nous vous invitons à lire attentivement ces lignes.",
     describeInfoFree1Fr:
-      "Le formulaire en ligne permet de sécuriser le traitement de votre demande. Prenez le temps de bien comprendre les questions qui vous sont posées et veillez à fournir des réponses claires. Nous ne pourrons pas traiter un devis si les informations fournies sont illisibles.",
+      "La demande de formulaire permet de sécuriser le traitement de celle-ci. Prenez le temps de bien comprendre les questions qui vous sont posées et veillez à fournir des réponses claires. Nous ne pourrons pas traiter un formulaire si les informations fournies sont illisibles.",
     describleInfoFree2Fr:
       "Veuillez prendre en considération ces directives essentielles :",
     bloc1FreeFr:
@@ -288,9 +288,9 @@ const translations = {
     bloc2FreeFr:
       "Renseignez le service que vous souhaitez afin que nous puissions élaborer votre projet en conséquence. N'hésitez pas à consulter notre page « Services »",
     linkBlocFreeFr: "en cliquant sur ce lien",
-    bloc2dFreeFr: "avant de soumettre votre devis.",
+    bloc2dFreeFr: "avant de soumettre votre demande.",
     bloc3FreeFr:
-      "Indiquez vos moyens budgétaires pour nous aider à déterminer les tarifs qui correspondent à votre service. Avant de soumettre votre devis, consultez notre page « Tarification »",
+      "Indiquez vos moyens budgétaires pour nous aider à déterminer les tarifs qui correspondent à votre service. Avant de nous soumettre votre demande, consultez notre page « Tarification »",
     bloc4FreeFr:
       "Si vous possédez déjà une charte graphique, veuillez simplement répondre « oui » et nous l'envoyer à notre adresse de contact « contact@navistudio.io », ou contactez-nous directement, merci.",
     // DEVIS SUITE
