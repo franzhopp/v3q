@@ -102,6 +102,14 @@ const LinksFooter = () => {
           Contact
         </NavLink>
       </li>
+      <li>
+        <span className={`text-fff6e4`}>—</span>{" "}
+        <span
+          className={`text-fff6e4 italic transition duration-500 hover:opacity-80`}
+        >
+          Rejoignez-nous{" "}
+        </span>{" "}
+      </li>
     </ul>
   );
 };

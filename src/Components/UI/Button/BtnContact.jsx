@@ -20,7 +20,7 @@ const ButtonContactServices = () => {
           <FaArrowRight className={`h-10 w-10`} />
         </NavLink>
       </div>
-      <div className={`pt-5`}>
+      <div className={`py-20`}>
         <img src={Artwork} alt="Icône Artwork" />
       </div>
     </>

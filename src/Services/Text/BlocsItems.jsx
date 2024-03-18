@@ -8,7 +8,7 @@ import ImgBloc4 from "../Image/Img4.png";
 const BlocsItems = () => {
   const { language } = useLanguage();
   return (
-    <div className={`flex justify-center mt-10`}>
+    <div className={`flex justify-center`}>
       <div
         className={`flex flex-wrap justify-center mt-5 space-x-0 lg:space-x-3`}
       >

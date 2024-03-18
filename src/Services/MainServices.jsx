@@ -1,7 +1,7 @@
 import BackToTopButton from "../Components/UI/ScrollToTop/BackToTopButton.jsx";
 import NavbarServices from "../Components/Navigation/NavbarServices/NavbarServices.jsx";
 import TitleWebsite from "./Title/TitleWebsite.jsx";
-import SubTitle from "./Title/SubTitle.jsx";
+// import SubTitle from "./Title/SubTitle.jsx";
 import BlocsItems from "./Text/BlocsItems.jsx";
 import TextServices from "./Text/TextServices.jsx";
 import SvgSettings from "./Svg/SvgSettings.jsx";
@@ -16,7 +16,7 @@ const Services = () => {
     <section className={`bg-fff6e4`}>
       <NavbarServices />
       <TitleWebsite />
-      <SubTitle />
+      {/* <SubTitle /> */}
       <BlocsItems />
       <SvgSettings />
       <TextServices />
