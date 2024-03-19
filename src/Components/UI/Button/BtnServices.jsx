@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "../../Section/TextHome/MainBlocsHome.jsx";
+import SvgLine from "../../../Services/Svg/SvgLine.jsx";
 
 const ButtonServices = () => {
   const [scrollNavbar, setScrollNavbar] = useState();
@@ -25,7 +26,7 @@ const ButtonServices = () => {
   return (
     <>
       <div
-        className={`flex justify-center sm:justify-end relative right-20 top-20 xl:right-96`}
+        className={`flex justify-center lg:justify-end relative right-20 top-20 xl:right-96`}
       >
         <svg
           onClick={SectionToSectionContactServices}

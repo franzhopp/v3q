@@ -10,11 +10,13 @@ import ButtonServices from "../Components/UI/Button/BtnServices.jsx";
 import TextMarketing from "./Text/TextMarketing";
 import TextReturnContact from "./Text/TextReturnContact";
 import Footer from "../Components/Footer/MainFooter.jsx";
+import SvgLine from "./Svg/SvgLine.jsx";
 
 const Services = () => {
   return (
     <section className={`bg-fff6e4`}>
       <NavbarServices />
+      {/* <SvgLine /> */}
       <TitleWebsite />
       {/* <SubTitle /> */}
       <BlocsItems />

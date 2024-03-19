@@ -6,7 +6,7 @@ const Title = () => {
   const { language } = useLanguage();
   return (
     <div className={`WireTitle`}>
-      <div className={`BgTitleContact bg-cover bg-center py-28`}>
+      <div className={`BgTitleContact relative bg-cover bg-center py-28`}>
         <div
           className={`text-fff6e4 lg:text-left text-center font-extrabold px-0 lg:px-44`}
         >

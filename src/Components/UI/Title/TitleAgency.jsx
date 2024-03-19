@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import translations from "../translate.jsx";
+import SvgLine from "../../Section/Svg/SvgLine.jsx";
 
 const TitleAgency = () => {
   const { language } = useLanguage();
   return (
     <>
-      <div className="WireTitleHome">
+      <div className={`WireTitleHome`}>
         <div className={`BgTitleAgency bg-cover bg-center py-28`}>
           <div
             className={`text-fff6e4 lg:text-left text-center font-extrabold px-0 lg:px-44`}

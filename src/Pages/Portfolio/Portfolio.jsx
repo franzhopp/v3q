@@ -281,7 +281,7 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-
+        <SvgLine />
         <div className={`flex justify-center py-20`}>
           <SvgHeart />
         </div>

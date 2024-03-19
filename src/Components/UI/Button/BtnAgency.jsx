@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "../../Section/TextHome/MainBlocsHome.jsx";
+import SvgLine from "../../Section/Svg/SvgLine.jsx";
 
 const ButtonAgency = () => {
   const [scrollNavbar, setScrollNavbar] = useState();
@@ -25,7 +26,9 @@ const ButtonAgency = () => {
   }, []);
   return (
     <>
-      <div className={`flex justify-center sm:justify-start relative left-20 top-20 xl:left-96`}>
+      <div
+        className={`flex justify-center lg:justify-start relative left-20 top-20 xl:left-96`}
+      >
         <NavLink to={`/`} onClick={SectionToScrollContact}>
           <svg
             width="86"

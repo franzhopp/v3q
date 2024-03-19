@@ -2,6 +2,7 @@ import { useTheme } from "../../../context/ThemeProvider.jsx";
 import { useLanguage } from "../../../context/LanguageProvider.jsx";
 import { useSpring, animated } from "react-spring";
 import translations from "../translate.jsx";
+import SvgLine from "../Svg/SvgLine.jsx";
 
 const BlocAgency = () => {
   const { isDarkMode } = useTheme();
@@ -18,6 +19,7 @@ const BlocAgency = () => {
   });
   return (
     <>
+      {/* <SvgLine /> */}
       <div id="team" className="pt-40"></div>
       <div
         className={`flex justify-center h-1/3 ${
