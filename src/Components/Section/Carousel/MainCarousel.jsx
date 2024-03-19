@@ -59,7 +59,7 @@ const cards = [
 
 export default function MainCarousel() {
   return (
-    <div className={`flex justify-center py-32`}>
+    <div className={`flex justify-center pt-32`}>
       <Carousel autoSlide={true} autoSlideInterval={3000}>
         {cards.map((cards, index) => (
           <>

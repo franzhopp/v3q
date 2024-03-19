@@ -26,14 +26,14 @@ const SubTextHome = () => {
   }, []);
   return (
     <>
-      <div className="w-80">
-        <div className="p-5">
+      <div className={`w-80`}>
+        <div className={`p-5`}>
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className="text-center"
+            className={`text-center`}
           >
-            <span className="font-extrabold">
+            <span className={`font-extrabold`}>
               {translations[language].textBoldOneFr}
               {translations[language].textBoldOneEn}
             </span>{" "}
@@ -44,18 +44,18 @@ const SubTextHome = () => {
           </p>
         </div>
       </div>
-      <div className="w-80">
-        <div className="p-5">
+      <div className={`w-80`}>
+        <div className={`p-5`}>
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className="font-extrabold text-center sm:text-right"
+            className={`font-extrabold text-center lg:text-right`}
           >
             {translations[language].textWithoutBoldFsFr}
             {translations[language].textWithoutBoldFsEn}{" "}
             <a
               onClick={SectionToScroll}
-              className="font-extrabold underline text-c22e2e"
+              className={`text-c22e2e font-extrabold underline`}
             >
               #navi
             </a>

@@ -19,17 +19,15 @@ const BlocAgency = () => {
   });
   return (
     <>
-      {/* <SvgLine /> */}
-      <div id="team" className="pt-40"></div>
       <div
-        className={`flex justify-center h-1/3 ${
+        className={`flex justify-center h-1/3 pt-32 ${
           isDarkMode ? "text-black" : "text-fff6e4"
         }`}
       >
-        <div className="w-4/5 xl:w-1/2">
+        <div className={`w-4/5 xl:w-1/2`}>
           <h3
             data-aos="fade-right"
-            className="text-center font-extrabold text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
+            className={`text-center font-extrabold text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl`}
           >
             {translations[language].welcomeAgencyFr}
             {translations[language].welcomeAgencyEn} <span>navi studio.™</span>{" "}
@@ -51,21 +49,21 @@ const BlocAgency = () => {
           isDarkMode ? "text-black" : "text-fff6e4"
         }`}
       >
-        <div className="w-4/5 xl:w-1/2">
+        <div className={`w-4/5 xl:w-1/2`}>
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className="font-arial tracking-tighter px-5 text-center text-lg sm:text-2xl my-10"
+            className={`font-arial tracking-tighter px-5 text-center text-lg sm:text-2xl my-10`}
           >
             <span>
               {translations[language].textAgency2Fr}
               {translations[language].textAgency2En}
-              <span className="font-extrabold">
+              <span className={`font-extrabold`}>
                 {" "}
                 {translations[language].textAgency3Fr}
                 {translations[language].textAgency3En}
               </span>{" "}
-              <span className="font-extrabold">
+              <span className={`font-extrabold`}>
                 {" "}
                 {translations[language].textAgencyBold4Fr}
                 {translations[language].textAgencyBold4En}

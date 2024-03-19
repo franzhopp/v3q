@@ -22,7 +22,7 @@
 //             Informations
 //           </h2>
 //           <p className="text-black text-justify mb-4">
-//             <RiBardLine className="inline" /> Les informations et documents sur
+//             <RiBardLine className={`inline`} /> Les informations et documents sur
 //             ce site sont à titre indicatif et ne sont pas exhaustifs. Le
 //             propriétaire du site ne peut être tenu responsable des dommages
 //             directs ou indirects résultant de l'accès au site.
@@ -31,7 +31,7 @@
 //             Interactivité
 //           </h2>
 //           <p className="text-black text-justify mb-4">
-//             <RiBardLine className="inline" /> Les utilisateurs peuvent soumettre
+//             <RiBardLine className={`inline`} /> Les utilisateurs peuvent soumettre
 //             du contenu sur le site, notamment via les commentaires. Ce contenu
 //             reste sous la responsabilité de leurs auteurs, qui en assument la
 //             pleine responsabilité juridique. Le propriétaire se réserve le droit
@@ -42,7 +42,7 @@
 //             Propriété intellectuelle
 //           </h2>
 //           <p className="text-black text-justify mb-4">
-//             <RiBardLine className="inline" /> Sauf indication contraire, tous
+//             <RiBardLine className={`inline`} /> Sauf indication contraire, tous
 //             les éléments du site restent la propriété exclusive de leurs auteurs
 //             en matière de droits de propriété intellectuelle. Toute utilisation
 //             non autorisée est interdite.
@@ -51,7 +51,7 @@
 //             Liens sortants
 //           </h2>
 //           <p className="text-black text-justify mb-4">
-//             <RiBardLine className="inline" /> Le propriétaire du site n'assume
+//             <RiBardLine className={`inline`} /> Le propriétaire du site n'assume
 //             aucune responsabilité pour les liens vers des ressources tierces sur
 //             Internet en ce qui concerne leur contenu ou leur pertinence.
 //           </p>
@@ -59,7 +59,7 @@
 //             Liens entrants
 //           </h2>
 //           <p className="text-black text-justify mb-4">
-//             <RiBardLine className="inline" /> Les liens vers ce site sont
+//             <RiBardLine className={`inline`} /> Les liens vers ce site sont
 //             autorisés à condition qu'ils s'ouvrent dans une nouvelle fenêtre et
 //             soient clairement identifiés pour éviter toute confusion avec le
 //             site source et respecter les lois en vigueur. Le propriétaire se
@@ -70,7 +70,7 @@
 //             Responsabilité
 //           </h2>
 //           <p className="text-black text-justify mb-4">
-//             <RiBardLine className="inline" /> Le propriétaire du site ne peut
+//             <RiBardLine className={`inline`} /> Le propriétaire du site ne peut
 //             être tenu responsable de tout préjudice, perte ou dommage, qu'il
 //             soit direct ou indirect, résultant de l'utilisation de ce site ou de
 //             son contenu. Les informations fournies sont à titre informatif
@@ -81,7 +81,7 @@
 //             Sécurité
 //           </h2>
 //           <p className="text-black text-justify mb-4">
-//             <RiBardLine className="inline" /> Le propriétaire du site s'engage à
+//             <RiBardLine className={`inline`} /> Le propriétaire du site s'engage à
 //             prendre des mesures raisonnables pour protéger la sécurité et la
 //             confidentialité des données des utilisateurs. Cependant, il ne peut
 //             garantir la sécurité absolue des informations transmises par les
@@ -91,7 +91,7 @@
 //             Modifications des Conditions
 //           </h2>
 //           <p className="text-black text-justify mb-4">
-//             <RiBardLine className="inline" /> Le propriétaire se réserve le
+//             <RiBardLine className={`inline`} /> Le propriétaire se réserve le
 //             droit de modifier ces conditions d'utilisation à tout moment. Les
 //             utilisateurs sont encouragés à consulter régulièrement les
 //             conditions pour rester informés des mises à jour.
@@ -100,7 +100,7 @@
 //             Contact
 //           </h2>
 //           <p className="text-black text-justify mb-4">
-//             <RiBardLine className="inline" /> Pour toute question ou
+//             <RiBardLine className={`inline`} /> Pour toute question ou
 //             préoccupation concernant ces conditions d'utilisation, veuillez nous
 //             contacter à l'adresse{" "}
 //             <span className="font-extrabold font-inter">
@@ -113,7 +113,7 @@
 //             Droit applicable et juridiction
 //           </h2>
 //           <p className="text-black text-justify mb-4">
-//             <RiBardLine className="inline" /> Ces conditions d'utilisation sont
+//             <RiBardLine className={`inline`} /> Ces conditions d'utilisation sont
 //             régies par les lois en vigueur en France / United Kingdom. Tout
 //             litige découlant de l'utilisation de ce site sera soumis à la
 //             compétence exclusive des tribunaux de nos villes.
@@ -122,7 +122,7 @@
 //             Dispositions finales
 //           </h2>
 //           <p className="text-black text-justify mb-4">
-//             <RiBardLine className="inline" /> Ces conditions d'utilisation
+//             <RiBardLine className={`inline`} /> Ces conditions d'utilisation
 //             constituent l'accord complet entre l'utilisateur et le propriétaire
 //             du site. Elles remplacent toutes les communications antérieures,
 //             qu'elles soient écrites ou orales, en ce qui concerne l'utilisation

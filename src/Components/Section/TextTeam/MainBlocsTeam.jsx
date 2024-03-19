@@ -79,8 +79,8 @@ const SectionTeam = () => {
   ];
 
   return (
-    <section className="bg-fff6e4 pt-24">
-      <div className="flex justify-center mt-10">
+    <section className={`bg-fff6e4 pt-20`}>
+      <div className={`flex justify-center`}>
         <div data-aos="fade-left">
           <SvgHeart />
         </div>
@@ -97,11 +97,11 @@ const SectionTeam = () => {
             data-aos-anchor-placement="top-bottom"
             className="font-arial px-5 text-center tracking-tighter text-lg md:text-center lg:text-center sm:text-2xl mt-10 mb-5"
           >
-            <span className="font-extrabold">
+            <span className={`font-extrabold`}>
               {translations[language].textSectionTeamBold1Fr}
               {translations[language].textSectionTeamBold1En} navi studio.™{" "}
             </span>
-            <span className="font-extrabold">
+            <span className={`font-extrabold`}>
               {translations[language].textSectionTeamBold2Fr}
               {translations[language].textSectionTeamBold2En}{" "}
             </span>
@@ -159,9 +159,9 @@ const SectionTeam = () => {
 
               <div className="w-80 lg:w-60">
                 <p className="relative text-left text-base mb-10 ml-10 sm:ml-0">
-                  <span className="font-extrabold">
+                  <span className={`font-extrabold`}>
                     {" "}
-                    <RiBardLine className="inline" />{" "}
+                    <RiBardLine className={`inline`} />{" "}
                     {translations[language].textSectionTeamBioBold1LouisaFr}
                     {translations[language].textSectionTeamBioBold1LouisaEn}
                   </span>{" "}
@@ -173,7 +173,7 @@ const SectionTeam = () => {
                     translations[language]
                       .textSectionTeamBioWithoutBold1LouisaEn
                   }{" "}
-                  <span className="font-extrabold">
+                  <span className={`font-extrabold`}>
                     {translations[language].textSectionTeamBioBold2LouisaFr}
                     {
                       translations[language].textSectionTeamBioBold2LouisaEn
@@ -258,9 +258,9 @@ const SectionTeam = () => {
                 </div>
                 <div className="w-80 lg:w-60">
                   <p className="relative text-left text-base mb-10 ml-10 sm:ml-0">
-                    <span className="font-extrabold">
+                    <span className={`font-extrabold`}>
                       {" "}
-                      <RiBardLine className="inline" />{" "}
+                      <RiBardLine className={`inline`} />{" "}
                       {translations[language].textSectionTeamBioBold1MelissaFr}
                       {translations[language].textSectionTeamBioBold1MelissaEn}
                     </span>{" "}
@@ -272,7 +272,7 @@ const SectionTeam = () => {
                       translations[language]
                         .textSectionTeamBioWithoutBold1MelissaEn
                     }{" "}
-                    <span className="font-extrabold">
+                    <span className={`font-extrabold`}>
                       {translations[language].textSectionTeamBioBold2MelissaFr}
                       {
                         translations[language].textSectionTeamBioBold2MelissaEn
