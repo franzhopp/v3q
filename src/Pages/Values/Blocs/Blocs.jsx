@@ -54,7 +54,7 @@ const Blocs = () => {
               </span>
             ))}
           </h2>
-          <p className={`text-xl font-extrabold`}>
+          <p className={`text-xl font-inter font-extrabold`}>
             {translations[language].title1EthicsFr}
             {translations[language].title1EthicsEn}
           </p>
@@ -96,7 +96,7 @@ const Blocs = () => {
               </span>
             ))}
           </h2>
-          <p className={`text-xl font-extrabold`}>
+          <p className={`text-xl font-inter font-extrabold`}>
             {translations[language].title2EthicsFr}
             {translations[language].title2EthicsEn}
           </p>
@@ -132,7 +132,7 @@ const Blocs = () => {
               </span>
             ))}
           </h2>
-          <p className={`text-xl font-extrabold`}>
+          <p className={`text-xl font-inter font-extrabold`}>
             Passion & Motivation
           </p>
           <span className={`bg-e18ab0 absolute w-48 h-1`}></span>
