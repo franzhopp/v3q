@@ -115,20 +115,20 @@ textarea {
 }
 
 .WireTitle {
-    background: lightgray;
+    background: rgb(180, 178, 178);
     border-radius: 0px 0px 154px 0px;
     animation: FadeIn 0.5s ease-in-out;
 }
 
 .WireTitleHome {
     border-radius: 0px 0px 0px 190px;
-    background: lightgray;
+    background: rgb(180, 178, 178);
     animation: FadeIn 0.5s ease-in-out;
 }
 
 .WireTitleMarketing {
     border-radius: 0px 0px 290px 0px;
-    background: lightgray;
+    background: rgb(180, 178, 178);
     animation: FadeIn 0.5s ease-in-out;
 }
 
