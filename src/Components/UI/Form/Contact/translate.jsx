@@ -1,5 +1,5 @@
 const translations = {
-  fr: {
+  FR: {
     // Navbar + Footer
     navAgence: "Agence",
     navServices: "Services",
@@ -301,7 +301,7 @@ const translations = {
     info5DevisFr: "Avez-vous une charte graphique ?",
     info6DevisFr: "Écrivez-nous un peu plus concernant votre projet...",
   },
-  en: {
+  EN: {
     // Navbar + Footer
     navAgency: "Agency",
     navServicesEn: "Services",

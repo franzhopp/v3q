@@ -30,11 +30,13 @@ const LinksNavbarMobile = () => {
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
   const [showSousListsFiveMenu, setShowSousListsFiveMenu] = useState(false);
   const [showSousListsRate, setShowSousListsRate] = useState(false);
+  const [showSousListsTrad, setShowSousListsTrad] = useState(false);
   // MES 4 ICONS
   const [isExpanded1, setIsExpanded1] = useState(false);
   const [isExpanded2, setIsExpanded2] = useState(false);
   const [isExpanded3, setIsExpanded3] = useState(false);
   const [isExpanded4, setIsExpanded4] = useState(false);
+  const [isExpanded5, setIsExpanded5] = useState(false);
   const changeLanguageHandler = (newLanguage) => {
     changeLanguage(newLanguage);
   };
@@ -63,6 +65,10 @@ const LinksNavbarMobile = () => {
     setShowSousListsRate(!showSousListsRate);
     setIsExpanded4(!isExpanded4);
   };
+  const toggleSousLists5 = () => {
+    setShowSousListsTrad(!showSousListsTrad);
+    setIsExpanded5(!isExpanded5);
+  };
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -82,6 +88,7 @@ const LinksNavbarMobile = () => {
     showSousListsFiveMenu,
     showSousListsMenu,
     showSousListsRate,
+    showSousListsTrad,
   ]);
   return (
     <nav
@@ -290,26 +297,39 @@ const LinksNavbarMobile = () => {
         </li>
         <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
           <div
-            className={`border-c22e2e text-lg block px-2 py-2 border-b-2 rounded-md font-extrabold`}
+            className={`border-c22e2e border-b-2 text-lg block px-1 rounded-md font-extrabold`}
           >
-            <select
-              className={`${isDarkMode ? "bg-fff6e4" : "bg-061628"}`}
-              value={language}
-              onChange={(e) => changeLanguageHandler(e.target.value)}
-            >
-              <option
-                value="fr"
-                className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}
+            <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
+              <div
+                className={` text-lg block px-3 py-2 rounded-md font-extrabold`}
               >
-                FR
-              </option>
-              <option
-                value="en"
-                className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}
-              >
-                EN
-              </option>
-            </select>
+                <button onClick={toggleSousLists5}>
+                  <div className={`flex justify-between items-center`}>
+                    <div className={`pr-2`}>
+                      <span className="mr-1">{language}</span>
+                    </div>
+                    {isExpanded5 ? <RxCross2 /> : <IoIosArrowDown />}
+                  </div>
+                </button>
+                <ul
+                  data-aos="fade-left"
+                  className={`${showSousListsTrad ? "block" : "hidden"} p-2`}
+                >
+                  <li
+                    className="px-4 py-2 text-c22e2e hover:opacity-80"
+                    onClick={() => changeLanguageHandler("FR")}
+                  >
+                    FR 🇫🇷
+                  </li>
+                  <li
+                    className="px-4 py-2 text-c22e2e hover:opacity-80"
+                    onClick={() => changeLanguageHandler("EN")}
+                  >
+                    EN 🇬🇧
+                  </li>
+                </ul>
+              </div>
+            </li>
           </div>
         </li>
         <div className={`flex justify-start px-3 py-4`}>

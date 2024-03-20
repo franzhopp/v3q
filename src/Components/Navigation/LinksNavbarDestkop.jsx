@@ -16,6 +16,8 @@ const LinksNavbarDesktop = () => {
   const [showSousListsTwoMenu, setShowSousListsTwoMenu] = useState(false);
   const [showSousListsRate, setShowSousListsRate] = useState(false);
   const [isMouseOnSubmenu, setIsMouseOnSubmenu] = useState(false);
+  const [showSousListsTrad, setShowSousListsTrad] = useState(false);
+  const [isExpanded5, setIsExpanded5] = useState(false);
   const [openModel, setOpenModel] = useState();
   const [searchQuery, setSearchQuery] = useState();
   const { language, changeLanguage } = useLanguage();
@@ -33,6 +35,10 @@ const LinksNavbarDesktop = () => {
   };
   const handleMouseEnterSubmenu = () => {
     setIsMouseOnSubmenu(true);
+  };
+  const toggleSousLists5 = () => {
+    setShowSousListsTrad(!showSousListsTrad);
+    setIsExpanded5(!isExpanded5);
   };
   const closeSubmenuWithDelay = () => {
     setTimeout(() => {
@@ -217,32 +223,36 @@ const LinksNavbarDesktop = () => {
             </NavLink>
           </div>
           <li
-            className={`relative group list-none ${
+            className={`relative group list-none px-2 ${
               isDarkMode ? "text-c22e2e" : "text-fff6e4"
             }`}
           >
-            <div
-              className={`hover:opacity-80 transition duration-500 px-6 py-2 text-2xl font-extrabold`}
-            >
-              <select
-                className={`${isDarkMode ? "bg-fff6e4" : "bg-061628"}`}
-                value={language}
-                onChange={(e) => changeLanguageHandler(e.target.value)}
-              >
-                <option
-                  value="fr"
-                  className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}
-                >
-                  FR
-                </option>
-                <option
-                  value="en"
-                  className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}
-                >
-                  EN
-                </option>
-              </select>
+            <div className={`flex justify-between items-center`}>
+              <div className={`pr-2`}>
+                <span className={`mr-1 text-2xl font-extrabold`}>
+                  {language}
+                </span>
+              </div>
+              {isExpanded5 ? <RxCross2 /> : <IoIosArrowDown />}
             </div>
+            <ul
+              className={`bg-fff6e4 absolute hidden group-hover:block font-extrabold text-left w-20 rounded-lg py-3 ${
+                isDarkMode ? "text-c22e2e" : "text-fff6e4"
+              } FadeInDelayDesktop`}
+            >
+              <li
+                className="text-c22e2e hover:opacity-80 px-4 py-2"
+                onClick={() => changeLanguageHandler("FR")}
+              >
+                FR 🇫🇷
+              </li>
+              <li
+                className="text-c22e2e hover:opacity-80 px-4 py-2"
+                onClick={() => changeLanguageHandler("EN")}
+              >
+                EN 🇬🇧
+              </li>
+            </ul>
           </li>
           <div
             className={`hover:opacity-80 duration-500  px-6 py-2 text-2xl font-extrabold transform active:scale-75 transition-transform ${
