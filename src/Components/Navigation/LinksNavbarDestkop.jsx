@@ -9,6 +9,8 @@ import DarkLightThemes from "../../hook/useTheme";
 import ModalSearch from "../UI/Modal/SearchModal.jsx";
 import translations from "./translate.jsx";
 import Image from "../../assets/Logo/LogoMainNaviStudio.png";
+import FlagFr from "./FlagTrad/FlagFr.jsx";
+import FlagUk from "./FlagTrad/FlagUk.jsx";
 
 const LinksNavbarDesktop = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -229,14 +231,12 @@ const LinksNavbarDesktop = () => {
           >
             <div className={`flex justify-between items-center`}>
               <div className={`pr-2`}>
-                <span className={`text-2xl font-extrabold`}>
-                  {language}
-                </span>
+                <span className={`text-2xl font-extrabold`}>{language}</span>
               </div>
               {isExpanded5 ? <RxCross2 /> : <IoIosArrowDown />}
             </div>
             <ul
-              className={`bg-fff6e4 absolute hidden group-hover:block font-extrabold text-left w-20 rounded-lg py-3 ${
+              className={`bg-fff6e4 absolute hidden group-hover:block font-extrabold text-left w-24 rounded-lg py-3 ${
                 isDarkMode ? "text-c22e2e" : "text-fff6e4"
               } FadeInDelayDesktop`}
             >
@@ -244,13 +244,13 @@ const LinksNavbarDesktop = () => {
                 className="text-c22e2e hover:opacity-80 px-4 py-2"
                 onClick={() => changeLanguageHandler("FR")}
               >
-                FR 🇫🇷
+                FR <FlagFr />
               </li>
               <li
                 className="text-c22e2e hover:opacity-80 px-4 py-2"
                 onClick={() => changeLanguageHandler("EN")}
               >
-                EN 🇬🇧
+                EN <FlagUk />
               </li>
             </ul>
           </li>

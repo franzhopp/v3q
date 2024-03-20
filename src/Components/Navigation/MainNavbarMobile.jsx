@@ -15,6 +15,8 @@ import "../Section/TextHome/MainBlocsHome.jsx";
 import "../../Home/Homepage";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import FlagFr from "./FlagTrad/FlagFr.jsx";
+import FlagUk from "./FlagTrad/FlagUk.jsx";
 
 const NavbarMobile = () => {
   const { language, changeLanguage } = useLanguage();
@@ -337,13 +339,13 @@ const NavbarMobile = () => {
                     className="border-c22e2e border-b-2 text-c22e2e hover:opacity-80 px-4 py-2"
                     onClick={() => changeLanguageHandler("FR")}
                   >
-                    FR 🇫🇷
+                    FR <FlagFr />
                   </li>
                   <li
                     className="text-c22e2e hover:opacity-80 px-4 py-2"
                     onClick={() => changeLanguageHandler("EN")}
                   >
-                    EN 🇬🇧
+                    EN <FlagUk />
                   </li>
                 </ul>
               </div>

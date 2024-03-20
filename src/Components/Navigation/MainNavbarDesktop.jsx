@@ -15,6 +15,8 @@ import DarkLightThemes from "../../hook/useTheme.jsx";
 import NavbarMobile from "./MainNavbarMobile.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import FlagFr from "./FlagTrad/FlagFr.jsx";
+import FlagUk from "./FlagTrad/FlagUk.jsx";
 
 const NavbarDesktop = () => {
   const [scrollNavbar, setScrollNavbar] = useState();
@@ -290,7 +292,7 @@ const NavbarDesktop = () => {
                   {isExpanded5 ? <RxCross2 /> : <IoIosArrowDown />}
                 </div>
                 <ul
-                  className={`bg-fff6e4 absolute hidden group-hover:block font-extrabold text-left w-20 rounded-lg py-3 ${
+                  className={`bg-fff6e4 absolute hidden group-hover:block font-extrabold text-left w-24 rounded-lg py-3 ${
                     isDarkMode ? "text-c22e2e" : "text-fff6e4"
                   } FadeInDelayDesktop`}
                 >
@@ -298,13 +300,13 @@ const NavbarDesktop = () => {
                     className="text-c22e2e hover:opacity-80 px-4 py-2"
                     onClick={() => changeLanguageHandler("FR")}
                   >
-                    FR 🇫🇷
+                    FR <FlagFr />
                   </li>
                   <li
                     className="text-c22e2e hover:opacity-80 px-4 py-2"
                     onClick={() => changeLanguageHandler("EN")}
                   >
-                    EN 🇬🇧
+                    EN <FlagUk />
                   </li>
                 </ul>
               </li>
