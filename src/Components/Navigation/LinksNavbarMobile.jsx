@@ -306,7 +306,7 @@ const LinksNavbarMobile = () => {
                 <button onClick={toggleSousLists5}>
                   <div className={`flex justify-between items-center`}>
                     <div className={`pr-2`}>
-                      <span className="mr-1">{language}</span>
+                      <span>{language}</span>
                     </div>
                     {isExpanded5 ? <RxCross2 /> : <IoIosArrowDown />}
                   </div>

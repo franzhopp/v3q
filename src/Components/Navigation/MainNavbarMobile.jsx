@@ -315,7 +315,7 @@ const NavbarMobile = () => {
         </li>
         <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
           <div
-            className={`border-c22e2e border-b-2 text-lg block px-1  rounded-md font-extrabold`}
+            className={`border-c22e2e border-b-2 text-lg block px-1 rounded-md font-extrabold`}
           >
             <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
               <div
@@ -324,7 +324,7 @@ const NavbarMobile = () => {
                 <button onClick={toggleSousLists5}>
                   <div className={`flex justify-between items-center`}>
                     <div className={`pr-2`}>
-                      <span className="mr-1">{language}</span>
+                      <span>{language}</span>
                     </div>
                     {isExpanded5 ? <RxCross2 /> : <IoIosArrowDown />}
                   </div>
@@ -334,7 +334,7 @@ const NavbarMobile = () => {
                   className={`${showSousListsTrad ? "block" : "hidden"} p-2`}
                 >
                   <li
-                    className="text-c22e2e hover:opacity-80 px-4 py-2"
+                    className="border-c22e2e border-b-2 text-c22e2e hover:opacity-80 px-4 py-2"
                     onClick={() => changeLanguageHandler("FR")}
                   >
                     FR 🇫🇷

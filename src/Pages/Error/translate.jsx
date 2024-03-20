@@ -42,7 +42,7 @@ const translations = {
     // Sous liste Services
     navSousServicesFr: "Prestations",
     navSousPricingFr: "Tarification",
-    navSousFreeFr: "Demande de formulaire",
+    navSousFreeFr: "Demande de devis",
     // Cookie
     cookieTitleFr: "Politique de cookies",
     cookieDescFr:
@@ -246,7 +246,7 @@ const translations = {
     bloc2ServicesFr:
       "Vous disposez d'un suivi de production complet, notre équipe reste disponible et à votre écoute 24/7. Nous travaillons main dans la main avec nos clients.",
     bloc3ServicesFr:
-      "Obtenez un Demande de formulaire dès maintenant et commencez votre aventure dans le monde du digital à nos côtés !",
+      "Obtenez un Demande de devis dès maintenant et commencez votre aventure dans le monde du digital à nos côtés !",
     titleServicesMarketingFr: "Marketing digital",
     subTitleMarketing1Fr: "Stratégie de marque",
     describeMarketing1Fr:
@@ -280,7 +280,7 @@ const translations = {
     titleInfoFreeFr:
       "Avant de soumettre un formulaire, nous vous invitons à lire attentivement ces lignes.",
     describeInfoFree1Fr:
-      "La demande de formulaire permet de sécuriser le traitement de celle-ci. Prenez le temps de bien comprendre les questions qui vous sont posées et veillez à fournir des réponses claires. Nous ne pourrons pas traiter un formulaire si les informations fournies sont illisibles.",
+      "La demande de devis permet de sécuriser le traitement de celle-ci. Prenez le temps de bien comprendre les questions qui vous sont posées et veillez à fournir des réponses claires. Nous ne pourrons pas traiter un formulaire si les informations fournies sont illisibles.",
     describleInfoFree2Fr:
       "Veuillez prendre en considération ces directives essentielles :",
     bloc1FreeFr:

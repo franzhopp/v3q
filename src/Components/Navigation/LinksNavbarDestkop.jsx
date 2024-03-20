@@ -229,7 +229,7 @@ const LinksNavbarDesktop = () => {
           >
             <div className={`flex justify-between items-center`}>
               <div className={`pr-2`}>
-                <span className={`mr-1 text-2xl font-extrabold`}>
+                <span className={`text-2xl font-extrabold`}>
                   {language}
                 </span>
               </div>

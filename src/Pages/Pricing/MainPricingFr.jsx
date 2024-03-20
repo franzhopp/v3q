@@ -208,7 +208,7 @@ const PricingFr = () => {
                         to="/quote"
                         className={`text-md pt-5 font-extrabold FontNumber underline`}
                       >
-                        Demander un Demande de formulaire
+                        Demander un Demande de devis
                       </NavLink>
                     </ul>
                   )}
