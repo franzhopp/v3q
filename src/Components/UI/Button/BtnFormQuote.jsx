@@ -13,9 +13,10 @@ const ButtonQuote = () => {
         isDarkMode ? "text-black" : "text-fff6e4"
       }`}
     >
+      {/* border-black border-4 */}
       <NavLink
         to="/quote"
-        className={`bg-fff6e4 border-black border-4 inline-flex items-center rounded-full shadow-2xl px-8 py-3 transform active:scale-75 transition-transform`}
+        className={`bg-fff6e4 inline-flex items-center rounded-full shadow-2xl px-8 py-3 transform active:scale-75 transition-transform`}
       >
         <span className={`text-2xl lg:text-3xl font-extrabold pr-3`}>
           {" "}

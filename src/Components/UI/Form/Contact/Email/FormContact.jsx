@@ -249,7 +249,6 @@ const FormEmailJs = ({ label, type, value }) => {
               </p>
             )}
           </div>
-
           <div className={`relative pb-5`}>
             <label
               className={`mt-1 absolute left-2 transition-all duration-200 ${
@@ -281,7 +280,6 @@ const FormEmailJs = ({ label, type, value }) => {
             )}
           </div>
         </div>
-
         <input
           className={`border-gray-200 outline-none input-secondary mr-1`}
           type="checkbox"

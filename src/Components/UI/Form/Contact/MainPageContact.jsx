@@ -17,7 +17,7 @@ const MainPageContact = () => {
             <div className={`mr-10 lg:col-span-2 lg:py-12`}>
               <TextStrategy />
               <div
-                className={`flex justify-start sm:justify-center my-10 w-80 lg:w-96 ml-6 lg:ml-0`}
+                className={`flex justify-start lg:justify-center my-6 lg:my-8 mx-6 lg:mx-0`}
               >
                 <NavLink to="/quote">
                   <SvgBtnContact />

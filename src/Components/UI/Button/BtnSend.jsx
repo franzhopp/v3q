@@ -9,7 +9,7 @@ const ButtonSend = () => {
     <>
       <div className={`flex justify-center`}>
         <NavLink
-          className={`bg-black text-fff6e4 border-fff6e4 border-4 inline-flex items-center gap-2 rounded-full shadow-2xl px-8 py-3 transform active:scale-75 transition-transform`}
+          className={`bg-black text-fff6e4 inline-flex items-center gap-2 rounded-full shadow-2xl px-8 py-3 transform active:scale-75 transition-transform`}
         >
           <span className={`text-3xl mr-3 font-semibold`}>
             {translations[language].btnSendFr}
