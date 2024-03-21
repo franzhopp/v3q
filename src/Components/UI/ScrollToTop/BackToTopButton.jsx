@@ -27,7 +27,8 @@ const BackToTopButton = () => {
         <button>
           <div
             onClick={scrollUp}
-            className={`fixed bottom-8 right-5 shadow-sm rounded-full z-50 animate-formbounce`}
+            data-aos="fade-right"
+            className={`fixed bottom-8 right-5 shadow-sm rounded-full z-50`}
           >
             <div
               className={`border-d83939 border-4 p-4 h-53 h-54 rounded-full shadow-lg transform active:scale-75 transition-transform ${

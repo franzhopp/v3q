@@ -236,7 +236,7 @@ const LinksNavbarDesktop = () => {
               {isExpanded5 ? <RxCross2 /> : <IoIosArrowDown />}
             </div>
             <ul
-              className={`bg-fff6e4 absolute hidden group-hover:block font-extrabold text-left w-24 rounded-lg py-3 ${
+              className={`bg-fff6e4 absolute -right-2 hidden group-hover:block font-extrabold text-left w-24 rounded-lg py-3 ${
                 isDarkMode ? "text-c22e2e" : "text-fff6e4"
               } FadeInDelayDesktop`}
             >
