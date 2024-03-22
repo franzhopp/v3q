@@ -157,11 +157,11 @@ const NavbarMobile = () => {
                 {isExpanded1 ? <RxCross2 /> : <IoIosArrowDown />}
               </div>
             </button>
-            <ul className={`p-2 ${showSousListsAgence ? "block" : "hidden"}`}>
+            <ul className={`${showSousListsAgence ? "block" : "hidden"} p-2`}>
               <li>
                 <ul
                   data-aos="fade-left"
-                  className={`p-2 ${showSousListsAgence ? "block" : "hidden"}`}
+                  className={`${showSousListsAgence ? "block" : "hidden"} p-2`}
                 >
                   <li className={`font-extrabold`}>
                     <NavLink
@@ -355,23 +355,28 @@ const NavbarMobile = () => {
             </li>
           </div>
         </li>
-        <div className={`flex justify-start px-3 py-4`}>
-          <div
-            className={`hover:opacity-80 duration-500 transform active:scale-75 transition-transform ${
-              isDarkMode ? "text-c22e2e" : "text-fff6e4"
-            }`}
-          >
-            <FaSearch
-              className={`h-10 w-5 mr-5`}
-              onClick={() => {
-                setOpenModel(true);
-              }}
-            />
+        <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
+          <div className={`flex justify-start px-3 py-4`}>
+            <div
+              className={`hover:opacity-80 duration-500 transform active:scale-75 transition-transform ${
+                isDarkMode ? "text-c22e2e" : "text-fff6e4"
+              }`}
+            >
+              <FaSearch
+                className={`h-10 w-5 mr-5`}
+                onClick={() => {
+                  setOpenModel(true);
+                }}
+              />
+            </div>
           </div>
-        </div>
-        {openModel && (
-          <ModalSearch closeModal={setOpenModel} searchQuery={setSearchQuery} />
-        )}
+          {openModel && (
+            <ModalSearch
+              closeModal={setOpenModel}
+              searchQuery={setSearchQuery}
+            />
+          )}
+        </li>
       </ul>
       <div id="home"></div>
     </nav>
