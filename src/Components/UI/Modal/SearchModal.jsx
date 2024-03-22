@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { ImCross } from "react-icons/im";
 import { data } from "./Data/SearchData.jsx";
 import { useTheme } from "../../../context/ThemeProvider.jsx";
-const ModalSearch = ({ searchQuery, closeModal }) => {
+const ModalSearch = ({ closeModal, searchQuery }) => {
   const [searchQueryText, setSearchQueryText] = useState("");
   const { isDarkMode } = useTheme();
   const navigate = useNavigate();
@@ -51,7 +51,6 @@ const ModalSearch = ({ searchQuery, closeModal }) => {
             className={`bg-fff6e4 text-c22e2e h-12 2xl:h-16 text-lg 2xl:text-2xl outline-none`}
           />
           <button
-            onClick={handleSearch}
             className={`text-c22e2e inline transform active:scale-75 transition-transform`}
           >
             <ImCross onClick={() => closeModal(false)} />
