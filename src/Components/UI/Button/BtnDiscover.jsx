@@ -31,31 +31,34 @@ const Button = () => {
     };
   }, []);
   return (
-    // <NavLink
-    //   onClick={SectionToScroll}
-    //   className={`bg-fff6e4 border-black border-4 inline-flex items-center gap-2 px-8 py-3 shadow-2xl rounded-full transform active:scale-75 transition-transform animate-bounce ${
-    //     isDarkMode ? "text-black" : "text-fff6e4"
-    //   }`}
-    // >
-    //   <span className={`text-3xl mr-3 font-semibold`}>
-    //     {translations[language].btnDiscoverFr}
-    //     {translations[language].btnDiscoverEn}
-    //   </span>
-    //   <FaArrowRight className={`h-10 w-10`} />
-    // </NavLink>
-    <div className={`absolute bottom-32 lg:bottom-10`}>
-      <button>
-        <div onClick={SectionToScroll} className={`animate-bounce`}>
-          <div
-            className={`p-2 h-53 rounded-full shadow-lg transform active:scale-75 transition-transform ${
-              isDarkMode ? "bg-fff6e4" : "bg-061628"
-            }`}
-          >
-            <FaArrowDown className={`text-black h-10 w-10`} />
-          </div>
-        </div>
-      </button>
+    <div className={`absolute bottom-32 lg:bottom-20`}>
+      <NavLink
+        to="/services"
+        onClick={SectionToScroll}
+        className={`bg-fff6e4 inline-flex items-center gap-2 px-8 py-3 shadow-2xl rounded-full transform active:scale-75 transition-transform ${
+          isDarkMode ? "text-black" : "text-fff6e4"
+        }`}
+      >
+        <span className={`text-3xl mr-3 font-semibold`}>
+          {translations[language].btnDiscoverFr}
+          {translations[language].btnDiscoverEn}
+        </span>
+        <FaArrowRight className={`h-10 w-10`} />
+      </NavLink>
     </div>
+    // <div className={`absolute bottom-32 lg:bottom-10`}>
+    //   <button>
+    //     <div onClick={SectionToScroll} className={`animate-bounce`}>
+    //       <div
+    //         className={`p-2 h-53 rounded-full shadow-lg transform active:scale-75 transition-transform ${
+    //           isDarkMode ? "bg-fff6e4" : "bg-061628"
+    //         }`}
+    //       >
+    //         <FaArrowDown className={`text-black h-10 w-10`} />
+    //       </div>
+    //     </div>
+    //   </button>
+    // </div>
   );
 };
 

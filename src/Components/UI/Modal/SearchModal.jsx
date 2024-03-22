@@ -41,7 +41,7 @@ const ModalSearch = ({ closeModal, searchQuery }) => {
         data-aos="fade-in"
         className={`bg-fff6e4 sticky 2xl:fixed w-full h-12 2xl:h-16 top-96 2xl:top-28 left-0`}
       >
-        <div className={`flex justify-between px-3`}>
+        <div className={`flex justify-between px-3 2xl:px-8`}>
           <input
             type="text"
             placeholder="Search..."
