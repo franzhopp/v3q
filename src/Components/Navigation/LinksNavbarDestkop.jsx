@@ -274,7 +274,9 @@ const LinksNavbarDesktop = () => {
               searchQuery={setSearchQuery}
             />
           )}
-          {/* <DarkLightThemes /> */}
+          <div data-aos="fade-right" className={`pt-2`}>
+            <DarkLightThemes />
+          </div>
         </div>
       </div>
     </nav>

@@ -26,11 +26,11 @@ const DarkLightThemes = () => {
         <div data-aos="fade-right">
           {isDarkMode ? (
             <IoMdSunny
-              className={`h-10 w-6 lg:h-7 lg:w-7 2xl:mt-1 mt-0 transform active:scale-75 transition-transform`}
+              className={`h-10 w-6 lg:h-7 lg:w-7 transform active:scale-75 transition-transform`}
             />
           ) : (
             <IoMdMoon
-              className={`h-10 w-6 lg:h-7 lg:w-7 2xl:mt-1 mt-0 transform active:scale-75 transition-transform`}
+              className={`h-10 w-6 lg:h-7 lg:w-7 transform active:scale-75 transition-transform`}
             />
           )}
         </div>

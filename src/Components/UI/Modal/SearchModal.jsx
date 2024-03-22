@@ -3,8 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { ImCross } from "react-icons/im";
 import { data } from "./Data/SearchData.jsx";
 import { useTheme } from "../../../context/ThemeProvider.jsx";
-import { FaSearch } from "react-icons/fa";
-
 const ModalSearch = ({ searchQuery, closeModal }) => {
   const [searchQueryText, setSearchQueryText] = useState("");
   const { isDarkMode } = useTheme();
@@ -52,7 +50,6 @@ const ModalSearch = ({ searchQuery, closeModal }) => {
             onChange={(e) => setSearchQueryText(e.target.value)}
             className={`bg-fff6e4 text-c22e2e h-12 2xl:h-16 text-lg 2xl:text-2xl outline-none px-8`}
           />
-
           <button
             onClick={handleSearch}
             className={`text-c22e2e px-8 inline transform active:scale-75 transition-transform`}

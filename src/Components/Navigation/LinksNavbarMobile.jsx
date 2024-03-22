@@ -107,18 +107,24 @@ const LinksNavbarMobile = () => {
         </NavLink>
         <div
           data-aos="fade-left"
-          onClick={toggleMenuMobile}
           className={`cursor-pointer rounded-full mr-1`}
         >
-          {isAnimating ? (
-            <div onClick={handleAnimateButtonClick}>
-              <ButtonOpen />
+          <div className={`flex justify-between items-center`}>
+            <div data-aos="fade-right" className={`pt-2 px-3`}>
+              <DarkLightThemes />
             </div>
-          ) : (
-            <div onClick={handleAnimateButtonClick}>
-              <ButtonClose />
+            <div data-aos="fade-left" onClick={toggleMenuMobile}>
+              {isAnimating ? (
+                <div onClick={handleAnimateButtonClick}>
+                  <ButtonOpen />
+                </div>
+              ) : (
+                <div onClick={handleAnimateButtonClick}>
+                  <ButtonClose />
+                </div>
+              )}
             </div>
-          )}
+          </div>
         </div>
       </div>
       <ul className={`p-5 FadeInDelayDesktop ${isOpen ? "block" : "hidden"}`}>
