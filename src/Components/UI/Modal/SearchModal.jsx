@@ -40,7 +40,8 @@ const ModalSearch = ({ searchQuery, closeModal }) => {
   return (
     <div className={`flex space-x-2 ${isDarkMode ? "bg-fff6e4" : "bg-061628"}`}>
       <div
-        className={`bg-fff6e4 fixed w-full h-12 2xl:h-16 top-96 2xl:top-28 left-0 FadeInDelayDesktop`}
+        data-aos="fade-in"
+        className={`bg-fff6e4 fixed w-full h-12 2xl:h-16 top-96 2xl:top-28 left-0`}
       >
         <div className={`flex justify-between`}>
           <input
@@ -52,7 +53,10 @@ const ModalSearch = ({ searchQuery, closeModal }) => {
             className={`bg-fff6e4 text-c22e2e h-12 2xl:h-16 text-lg 2xl:text-2xl outline-none px-8`}
           />
 
-          <button onClick={handleSearch} className={`text-c22e2e px-8 inline`}>
+          <button
+            onClick={handleSearch}
+            className={`text-c22e2e px-8 inline transform active:scale-75 transition-transform`}
+          >
             <ImCross onClick={() => closeModal(false)} />
           </button>
         </div>
