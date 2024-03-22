@@ -31,7 +31,7 @@ const Button = () => {
     };
   }, []);
   return (
-    <div className={`absolute bottom-32 lg:bottom-20`}>
+    <div className={`absolute bottom-36 lg:bottom-20`}>
       <NavLink
         to="/services"
         onClick={SectionToScroll}
