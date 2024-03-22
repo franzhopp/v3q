@@ -344,7 +344,7 @@ const LinksNavbarMobile = () => {
               }}
             />
           </div>
-          <DarkLightThemes />
+          {/* <DarkLightThemes /> */}
         </div>
 
         {openModel && (

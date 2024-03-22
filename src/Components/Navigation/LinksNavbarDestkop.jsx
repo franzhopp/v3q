@@ -274,7 +274,7 @@ const LinksNavbarDesktop = () => {
               searchQuery={setSearchQuery}
             />
           )}
-          <DarkLightThemes />
+          {/* <DarkLightThemes /> */}
         </div>
       </div>
     </nav>

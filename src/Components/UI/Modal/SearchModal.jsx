@@ -4,7 +4,7 @@ import { ImCross } from "react-icons/im";
 import { data } from "./Data/SearchData.jsx";
 import { useTheme } from "../../../context/ThemeProvider.jsx";
 
-const ModalSearch = ({ closeModal, searchQuery }) => {
+const ModalSearch = ({ searchQuery, closeModal }) => {
   const [searchQueryText, setSearchQueryText] = useState("");
   const { isDarkMode } = useTheme();
   const navigate = useNavigate();
@@ -38,23 +38,24 @@ const ModalSearch = ({ closeModal, searchQuery }) => {
   }, [closeModal]);
   return (
     <div className={`flex space-x-2 ${isDarkMode ? "bg-fff6e4" : "bg-061628"}`}>
-      <input
-        data-aos="fade-left"
-        type="text"
-        placeholder="Search"
-        onKeyDown={handleSearch}
-        value={searchQueryText}
-        onChange={(e) => setSearchQueryText(e.target.value)}
-        className={`text-c22e2e rounded-xl p-3 outline-none input-bordered input-primary mb-5 ml-3 mr-3 sm:mb-0 md:ml-0`}
-      />
-      <button onClick={handleSearch}>
-        <ImCross
-          onClick={() => closeModal(false)}
-          className={`mb-6 mr-6 sm:mb-0 hover:opacity-80 duration-500 transform active:scale-75 transition-transform animate-formbounce ${
-            isDarkMode ? "text-c22e2e" : "text-fff6e4"
-          }`}
-        />
-      </button>
+      <div className={`flex justify-between`}>
+        <div
+          className={`bg-fff6e4 fixed w-full h-16 top-96 2xl:top-28 left-0`}
+        >
+          <input
+            type="text"
+            placeholder="Search..."
+            onKeyDown={handleSearch}
+            value={searchQueryText}
+            onChange={(e) => setSearchQueryText(e.target.value)}
+            className={`bg-fff6e4 text-lg outline-none px-8 2xltext-2xl h-16`}
+          />
+          {/* p-3 outline-none input-bordered input-primary */}
+          <button onClick={handleSearch} className={`text-c22e2e`}>
+            <ImCross onClick={() => closeModal(false)} />
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

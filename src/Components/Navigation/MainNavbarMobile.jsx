@@ -362,9 +362,8 @@ const NavbarMobile = () => {
               }}
             />
           </div>
-          <DarkLightThemes />
+          {/* <DarkLightThemes /> */}
         </div>
-
         {openModel && (
           <ModalSearch closeModal={setOpenModel} searchQuery={setSearchQuery} />
         )}
