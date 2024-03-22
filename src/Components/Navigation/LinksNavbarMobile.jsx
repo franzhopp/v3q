@@ -346,7 +346,6 @@ const LinksNavbarMobile = () => {
           </div>
           {/* <DarkLightThemes /> */}
         </div>
-
         {openModel && (
           <ModalSearch closeModal={setOpenModel} searchQuery={setSearchQuery} />
         )}

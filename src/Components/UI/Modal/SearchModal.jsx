@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { ImCross } from "react-icons/im";
 import { data } from "./Data/SearchData.jsx";
 import { useTheme } from "../../../context/ThemeProvider.jsx";
+import { FaSearch } from "react-icons/fa";
 
 const ModalSearch = ({ searchQuery, closeModal }) => {
   const [searchQueryText, setSearchQueryText] = useState("");
@@ -38,20 +39,20 @@ const ModalSearch = ({ searchQuery, closeModal }) => {
   }, [closeModal]);
   return (
     <div className={`flex space-x-2 ${isDarkMode ? "bg-fff6e4" : "bg-061628"}`}>
-      <div className={`flex justify-between`}>
-        <div
-          className={`bg-fff6e4 fixed w-full h-16 top-96 2xl:top-28 left-0`}
-        >
+      <div
+        className={`bg-fff6e4 fixed w-full h-12 2xl:h-16 top-96 2xl:top-28 left-0 FadeInDelayDesktop`}
+      >
+        <div className={`flex justify-between`}>
           <input
             type="text"
             placeholder="Search..."
             onKeyDown={handleSearch}
             value={searchQueryText}
             onChange={(e) => setSearchQueryText(e.target.value)}
-            className={`bg-fff6e4 text-lg outline-none px-8 2xltext-2xl h-16`}
+            className={`bg-fff6e4 text-c22e2e h-12 2xl:h-16 text-lg 2xl:text-2xl outline-none px-8`}
           />
-          {/* p-3 outline-none input-bordered input-primary */}
-          <button onClick={handleSearch} className={`text-c22e2e`}>
+
+          <button onClick={handleSearch} className={`text-c22e2e px-8 inline`}>
             <ImCross onClick={() => closeModal(false)} />
           </button>
         </div>

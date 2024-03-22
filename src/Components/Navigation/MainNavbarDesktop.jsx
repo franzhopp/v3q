@@ -20,7 +20,7 @@ import FlagUk from "./FlagTrad/FlagUk.jsx";
 
 const NavbarDesktop = () => {
   const [scrollNavbar, setScrollNavbar] = useState();
-  const [searchCrossOpenHidden, setSearchCrossOpenHidden] = useState(false);
+
   const [isExpanded, setIsExpanded] = useState(false);
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
   const [showSousListsTwoMenu, setShowSousListsTwoMenu] = useState(false);
@@ -34,6 +34,7 @@ const NavbarDesktop = () => {
   const [isHovered, setIsHovered] = useState(false);
   const { language, changeLanguage } = useLanguage();
   const { isDarkMode } = useTheme();
+
   const changeLanguageHandler = (newLanguage) => {
     changeLanguage(newLanguage);
   };
@@ -324,7 +325,6 @@ const NavbarDesktop = () => {
                   }}
                 />
               </div>
-              
               {openModel && (
                 <ModalSearch
                   className={`${isDarkMode ? "bg-fff6e4" : "bg-061628"}`}
