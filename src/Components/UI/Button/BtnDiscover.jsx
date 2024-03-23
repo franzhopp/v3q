@@ -48,15 +48,15 @@ const Button = () => {
     // </div>
     <div className={`absolute bottom-36 lg:bottom-10`}>
       <button>
-        <div onClick={SectionToScroll} className={`animate-bounce`}>
+        <NavLink to="/services">
           <div
-            className={`p-2 h-53 rounded-full shadow-lg transform active:scale-75 transition-transform ${
+            className={`p-2 h-53 rounded-full shadow-lg transform active:scale-75 transition-transform animate-bounce ${
               isDarkMode ? "bg-fff6e4" : "bg-061628"
             }`}
           >
-            <FaArrowDown className={`text-black h-10 w-10`} />
+            <FaArrowRight className={`text-black h-10 w-10`} />
           </div>
-        </div>
+        </NavLink>
       </button>
     </div>
   );
