@@ -129,6 +129,28 @@ const LinksNavbarMobile = () => {
       </div>
       <ul className={`p-5 FadeInDelayDesktop ${isOpen ? "block" : "hidden"}`}>
         <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
+          <div className={`flex justify-start px-3`}>
+            <div
+              className={`hover:opacity-80 duration-500 transform active:scale-75 transition-transform ${
+                isDarkMode ? "text-c22e2e" : "text-fff6e4"
+              }`}
+            >
+              <FaSearch
+                className={`h-10 w-5 mr-5 transform active:scale-75 transition-transform`}
+                onClick={() => {
+                  setOpenModel(true);
+                }}
+              />
+            </div>
+          </div>
+          {openModel && (
+            <ModalSearch
+              closeModal={setOpenModel}
+              searchQuery={setSearchQuery}
+            />
+          )}
+        </li>
+        <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
           <NavLink
             className={`border-c22e2e text-lg block px-3 py-2 border-b-2 rounded-md font-extrabold`}
           >
@@ -300,7 +322,7 @@ const LinksNavbarMobile = () => {
             Contact
           </NavLink>
         </li>
-        <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
+        <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"} pb-3`}>
           <div
             className={`border-c22e2e border-b-2 text-lg block px-1 rounded-md font-extrabold`}
           >
@@ -337,24 +359,6 @@ const LinksNavbarMobile = () => {
             </li>
           </div>
         </li>
-        <div className={`flex justify-start px-3 py-4`}>
-          <div
-            className={`hover:opacity-80 duration-500 transform active:scale-75 transition-transform ${
-              isDarkMode ? "text-c22e2e" : "text-fff6e4"
-            }`}
-          >
-            <FaSearch
-              className={`h-10 w-5 mr-5`}
-              onClick={() => {
-                setOpenModel(true);
-              }}
-            />
-          </div>
-          {/* <DarkLightThemes /> */}
-        </div>
-        {openModel && (
-          <ModalSearch closeModal={setOpenModel} searchQuery={setSearchQuery} />
-        )}
       </ul>
       <div id={`home`}></div>
     </nav>
