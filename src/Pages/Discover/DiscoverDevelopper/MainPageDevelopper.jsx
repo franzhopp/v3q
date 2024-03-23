@@ -9,14 +9,14 @@ import TitlePage from "./Title/TitlePage.jsx";
 import SubTitlePage from "./Title/SubTitlePage.jsx";
 import SubDescTitle from "./Title/SubDescTitle.jsx";
 import BaseBackground from "./Svg/SvgMainBackground.jsx";
-import SvgPyramid from "./Svg/SvgPyramid.jsx";
+// import SvgPyramid from "./Svg/SvgPyramid.jsx";
 import ImageProjects from "./Image/ImageProjects.jsx";
 import Pattern from "../../../assets/Picture/PictureLouisa.png";
 import Copyright from "./Copyright/LocationCopyright.jsx";
 import LinksNetwork from "./Network/LinksNetwork.jsx";
 import Footer from "../../../Components/Footer/MainFooter.jsx";
 import BackToTopButton from "../../../Components/UI/ScrollToTop/BackToTopButton.jsx";
-import LogoBrand from "./Logo/LogoBrand.jsx";
+// import LogoBrand from "./Logo/LogoBrand.jsx";
 // import Frame from "./Svg/SvgFrame.jsx";
 // import Vector from "./Svg/SvgVector.jsx";
 
@@ -50,11 +50,7 @@ const DiscoverWebDeveloper = () => {
         <div className="flex justify-center py-20">
           <TitlePage />
         </div>
-        <div
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-bottom"
-          className="flex justify-center py-10"
-        >
+        <div className="flex justify-center py-10">
           <SubTitlePage />
         </div>
         <div className="flex justify-center py-20">
@@ -76,7 +72,7 @@ const DiscoverWebDeveloper = () => {
       <div id="AboutLouisa" className="pt-16"></div>
       <BackToTopButton />
       <div className="flex justify-center pt-20">
-        <p className="text-c22e2e text-center font-inter text-3xl lg:text-4xl">
+        <p className="text-c22e2e text-center text-3xl lg:text-4xl tracking-tighter font-extrabold">
           À propos
           {/* <div className="flex justify-center">
             <SvgPyramid />
@@ -99,7 +95,7 @@ const DiscoverWebDeveloper = () => {
         </div>
       </div>
       <div className="flex justify-center pt-20">
-        <p className="text-c22e2e text-center font-inter text-3xl lg:text-4xl">
+        <p className="text-c22e2e text-center tracking-tighter text-3xl lg:text-4xl font-extrabold">
           Projets
           {/* <div className="flex justify-center">
             <SvgPyramid />

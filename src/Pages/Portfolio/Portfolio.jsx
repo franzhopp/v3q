@@ -86,7 +86,7 @@ const Portfolio = () => {
           x-comp={`TitlePortfolio`}
           className={`flex justify-center lg:justify-start px-10 lg:px-32 py-16`}
         >
-          <h1 className={`text-c22e2e text-2xl lg:text-5xl font-extrabold`}>
+          <h1 className={`text-c22e2e tracking-tighter text-2xl lg:text-5xl font-extrabold`}>
             Latest Projects
           </h1>
           <div className={`px-2`}>

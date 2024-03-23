@@ -8,7 +8,7 @@ const SubBlocs = () => {
     <div className={`text-center`}>
       <h1
         data-aos="fade-right"
-        className={`text-2xl lg:text-4xl font-inter font-extrabold`}
+        className={`text-2xl lg:text-4xl tracking-tighter font-extrabold`}
       >
         {" "}
         {translations[language].titleWorkEthicsFr}

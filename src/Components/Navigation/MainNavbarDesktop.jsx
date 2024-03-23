@@ -129,7 +129,7 @@ const NavbarDesktop = () => {
                 </NavLink>
                 <div className={`flex justify-center`}>
                   <ul
-                    className={`bg-fff6e4 absolute hidden group-hover:block font-extrabold text-left w-44 rounded-lg py-3 ${
+                    className={`bg-fff6e4 border-c22e2e border-b-2 absolute hidden group-hover:block font-extrabold text-left w-44 rounded-lg py-3 ${
                       isDarkMode ? "text-c22e2e" : "text-fff6e4"
                     } FadeInDelayDesktop`}
                   >
@@ -204,7 +204,7 @@ const NavbarDesktop = () => {
                 </NavLink>
                 <div className={`flex justify-center`}>
                   <ul
-                    className={`bg-fff6e4 absolute hidden group-hover:block w-44 rounded-lg py-3 text-left ${
+                    className={`bg-fff6e4 border-c22e2e border-b-2 absolute hidden group-hover:block w-44 rounded-lg py-3 text-left ${
                       isDarkMode ? "text-c22e2e" : "text-fff6e4"
                     } FadeInDelayDesktop`}
                   >

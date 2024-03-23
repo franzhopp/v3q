@@ -19,7 +19,7 @@ const TitleMarketingUk = () => {
     <div className={`flex justify-center`}>
       <h1
         data-aos="fade-in"
-        className={`text-0c3e78 text-center text-4xl lg:text-5xl md:text-6xl font-extrabold py-10`}
+        className={`text-0c3e78 tracking-tighter text-center text-4xl lg:text-5xl md:text-6xl font-extrabold py-10`}
       >
         {letters2.map((letter, index) => (
           <span

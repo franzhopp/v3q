@@ -18,7 +18,7 @@ const TitleWebsite = () => {
   return (
     <h1
       data-aos="fade-right"
-      className={`text-c22e2e font-inter text-center text-4xl py-20 font-extrabold sm:text-5xl md:text-6xl`}
+      className={`text-c22e2e tracking-tighter text-center text-4xl py-20 font-extrabold sm:text-5xl md:text-6xl`}
     >
       {letters.map((letter, index) => (
         <span

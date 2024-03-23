@@ -21,7 +21,7 @@ const TitleMarketing = () => {
     <div className={`flex justify-center`}>
       <h1
         data-aos="fade-in"
-        className={`text-c22e2e text-center text-4xl lg:text-5xl md:text-6xl font-extrabold py-10`}
+        className={`text-c22e2e tracking-tighter text-4xl lg:text-5xl md:text-6xl font-extrabold py-10`}
       >
         {letters2.map((letter, index) => (
           <span
