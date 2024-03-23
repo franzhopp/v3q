@@ -48,7 +48,7 @@ const ModalSearch = ({ closeModal, searchQuery }) => {
             onKeyDown={handleSearch}
             value={searchQueryText}
             onChange={(e) => setSearchQueryText(e.target.value)}
-            className={`bg-fff6e4 border-c22e2e border-b-2 text-c22e2e h-12 2xl:h-16 text-lg 2xl:text-2xl outline-none`}
+            className={`bg-fff6e4 border-c22e2e border-b-2 rounded-none text-c22e2e h-12 2xl:h-16 text-lg 2xl:text-2xl outline-none`}
           />
           <button
             className={`text-c22e2e inline transform active:scale-75 transition-transform`}
