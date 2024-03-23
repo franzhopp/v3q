@@ -7,7 +7,10 @@ const TitleHome = () => {
   const { language } = useLanguage();
   return (
     <>
-      <div className={`flex flex-col justify-center items-center h-screen`}>
+      <div
+        id="home"
+        className={`flex flex-col justify-center items-center h-screen`}
+      >
         <h1
           className={`text-fff6e4 text-5xl lg:text-8xl font-extrabold tracking-tight`}
         >
@@ -24,7 +27,7 @@ const TitleHome = () => {
           <h2
             className={`text-fff6e4 font-inter text-xs font-extrabold uppercase mt-8`}
           >
-            Design / Développement / Marketing digital
+            Design | Développement | Marketing digital
           </h2>
         </div>
       </div>

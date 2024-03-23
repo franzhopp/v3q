@@ -14,7 +14,7 @@ const SubBlocs = () => {
         {translations[language].titleWorkEthicsFr}
         {translations[language].titleWorkEthicsEn}{" "}
       </h1>
-      <div className={`flex justify-center`}>
+      {/* <div className={`flex justify-center`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="116"
@@ -24,7 +24,7 @@ const SubBlocs = () => {
         >
           <path d="M0 0L61 20L116 0H0Z" fill="#e18ab0" />
         </svg>
-      </div>
+      </div> */}
       <div className={`flex justify-center px-3 pt-6`}>
         <div
           className={`rounded-lg shadow-md w-full xl:w-1/3 lg:px-5 transition-transform transform hover:scale-90`}

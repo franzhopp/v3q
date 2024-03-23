@@ -3,24 +3,23 @@ import { NavLink } from "react-router-dom";
 import { useLanguage } from "../../context/LanguageProvider.jsx";
 import { FaSearch } from "react-icons/fa";
 import { useTheme } from "../../context/ThemeProvider.jsx";
-import translations from "./translate.jsx";
 import { IoIosArrowDown } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
 import ImgBlack from "../../assets/Logo/LogoMainNaviStudio.png";
 import TitleHome from "../UI/Title/TitleHome.jsx";
 import ModalSearch from "../UI/Modal/SearchModal.jsx";
-import "../Section/TextHome/MainBlocsHome.jsx";
-import "../../Home/Homepage";
 import DarkLightThemes from "../../hook/useTheme.jsx";
 import NavbarMobile from "./MainNavbarMobile.jsx";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import translations from "./translate.jsx";
 import FlagFr from "./FlagTrad/FlagFr.jsx";
 import FlagUk from "./FlagTrad/FlagUk.jsx";
+import "../Section/TextHome/MainBlocsHome.jsx";
+import "../../Home/Homepage";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const NavbarDesktop = () => {
   const [scrollNavbar, setScrollNavbar] = useState();
-
   const [isExpanded, setIsExpanded] = useState(false);
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
   const [showSousListsTwoMenu, setShowSousListsTwoMenu] = useState(false);

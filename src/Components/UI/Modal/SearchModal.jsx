@@ -53,7 +53,7 @@ const ModalSearch = ({ closeModal, searchQuery }) => {
           <button
             className={`text-c22e2e inline transform active:scale-75 transition-transform`}
           >
-            <ImCross onClick={() => closeModal(false)} />
+            <ImCross onClick={() => closeModal(false) } />
           </button>
         </div>
       </div>

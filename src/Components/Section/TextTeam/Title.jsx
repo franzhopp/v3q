@@ -34,7 +34,7 @@ const TitleTeamNavi = () => {
                 {letter}
               </span>
             ))}
-            <div className={`flex justify-center`}>
+            {/* <div className={`flex justify-center`}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="116"
@@ -44,7 +44,7 @@ const TitleTeamNavi = () => {
               >
                 <path d="M0 0L61 20L116 0H0Z" fill="#c22e2e" />
               </svg>
-            </div>
+            </div> */}
           </span>
         </h3>
       </div>
