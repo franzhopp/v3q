@@ -78,9 +78,9 @@ const DiscoverWebDeveloper = () => {
       <div className="flex justify-center pt-20">
         <p className="text-c22e2e text-center font-inter text-3xl lg:text-4xl">
           À propos
-          <div className="flex justify-center">
+          {/* <div className="flex justify-center">
             <SvgPyramid />
-          </div>
+          </div> */}
         </p>
       </div>
       <div className="flex flex-wrap justify-center pt-20 space-x-8 lg:space-x-28">
@@ -101,9 +101,9 @@ const DiscoverWebDeveloper = () => {
       <div className="flex justify-center pt-20">
         <p className="text-c22e2e text-center font-inter text-3xl lg:text-4xl">
           Projets
-          <div className="flex justify-center">
+          {/* <div className="flex justify-center">
             <SvgPyramid />
-          </div>
+          </div> */}
         </p>
       </div>
       <div className="flex justify-center pt-20 p-10">
