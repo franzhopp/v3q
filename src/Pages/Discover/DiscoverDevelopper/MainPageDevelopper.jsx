@@ -67,7 +67,7 @@ const DiscoverWebDeveloper = () => {
         </div>
       </div>
       <div className={`WireTitle`}>
-        <div className={`BgValuesBlur bg-center bg-no-repeat h-52`}></div>
+        <div className={`BgDev bg-center bg-no-repeat h-52`}></div>
       </div>
       <div id="AboutLouisa" className="pt-10"></div>
       <BackToTopButton />

@@ -7,7 +7,8 @@ const TitlePage = () => {
       <h2
         className={`text-fff6e4 text-center absolute tracking-tighter font-extrabold w-96 lg:w-1/2 text-3xl lg:text-4xl px-3`}
       >
-        Bienvenue sur la page dédiée à l'histoire unique du développeur
+        Nous vous souhaitons la bienvenue sur la page dédiée à l'histoire du
+        développeur
       </h2>
     </div>
   );

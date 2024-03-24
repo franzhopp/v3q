@@ -13,6 +13,7 @@ import Footer from "../../Components/Footer/MainFooter.jsx";
 import BackToTopButton from "../../Components/UI/ScrollToTop/BackToTopButton";
 import ImgPatternNavi from "../../assets/Picture/PatternNavi.png";
 import SvgStarRed from "./Svg/SvgStarRed";
+import { NavLink } from "react-router-dom";
 
 const Portfolio = () => {
   const { isDarkMode } = useTheme();
@@ -21,43 +22,42 @@ const Portfolio = () => {
     {
       id: 1,
       image: ImgDefault,
-      title: "Project title 1",
-      subtitle: "Project short description 1",
-      content:
-        "This is a short text describing your project and use these few words to catch the customer's attention. 1",
+      title: "Bientôt disponible",
+      subtitle: "En travaux",
+      content: "C'est ici que vous découvrirez nos dernières réalisations.",
     },
-    {
-      id: 2,
-      image: ImgDefault,
-      title: "Project title 2",
-      subtitle: "Project short description 2",
-      content:
-        "This is a short text describing your project and use these few words to catch the customer's attention. 2",
-    },
-    {
-      id: 3,
-      image: ImgDefault,
-      title: "Project title 3",
-      subtitle: "Project short description 3",
-      content:
-        "This is a short text describing your project and use these few words to catch the customer's attention. 3",
-    },
-    {
-      id: 4,
-      image: ImgDefault,
-      title: "Project title 4",
-      subtitle: "Project short description 4",
-      content:
-        "This is a short text describing your project and use these few words to catch the customer's attention. 4",
-    },
-    {
-      id: 5,
-      image: ImgDefault,
-      title: "Project title 5",
-      subtitle: "Project short description 5",
-      content:
-        "This is a short text describing your project and use these few words to catch the customer's attention. 5",
-    },
+    // {
+    //   id: 2,
+    //   image: ImgDefault,
+    //   title: "Project title 2",
+    //   subtitle: "Project short description 2",
+    //   content:
+    //     "This is a short text describing your project and use these few words to catch the customer's attention. 2",
+    // },
+    // {
+    //   id: 3,
+    //   image: ImgDefault,
+    //   title: "Project title 3",
+    //   subtitle: "Project short description 3",
+    //   content:
+    //     "This is a short text describing your project and use these few words to catch the customer's attention. 3",
+    // },
+    // {
+    //   id: 4,
+    //   image: ImgDefault,
+    //   title: "Project title 4",
+    //   subtitle: "Project short description 4",
+    //   content:
+    //     "This is a short text describing your project and use these few words to catch the customer's attention. 4",
+    // },
+    // {
+    //   id: 5,
+    //   image: ImgDefault,
+    //   title: "Project title 5",
+    //   subtitle: "Project short description 5",
+    //   content:
+    //     "This is a short text describing your project and use these few words to catch the customer's attention. 5",
+    // },
   ];
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
@@ -76,7 +76,7 @@ const Portfolio = () => {
 
   //   // Cleanup function to clear the interval when the component unmounts
   //   return () => clearInterval(intervalId);
-  // }, []);u
+  // }, []);
   return (
     <>
       <section x-comp={`PortfolioNavi`} className={`bg-fff6e4`}>
@@ -86,19 +86,15 @@ const Portfolio = () => {
           x-comp={`TitlePortfolio`}
           className={`flex justify-center lg:justify-start px-10 lg:px-32 py-16`}
         >
-          <h1 className={`text-c22e2e tracking-tighter text-2xl lg:text-5xl font-extrabold`}>
+          <h1
+            className={`text-c22e2e tracking-tighter text-2xl lg:text-5xl font-extrabold`}
+          >
             Latest Projects
           </h1>
           <div className={`px-2`}>
             <SvgStarPink />
           </div>
         </div>
-        {/* <div x-comp={`ImgCarousel`} className={`flex justify-center relative`}>
-          <img
-            src={ImgPatternNavi}
-            className={`absolute py-9 lg:flex hidden`}
-          />
-        </div> */}
         <div x-comp={`Carousel`}>
           <div className={`flex flex-wrap`}>
             {/* 1 */}
@@ -108,7 +104,7 @@ const Portfolio = () => {
               <div className={`flex justify-start relative`}>
                 <button
                   onClick={handleNext}
-                  className={`transition-transform transform hover:scale-90`}
+                  className={`transform active:scale-75 transition-transform`}
                 >
                   <svg
                     className={`absolute left-0 -bottom-9 ml-5 hidden xl:flex`}
@@ -160,23 +156,23 @@ const Portfolio = () => {
               </div>
               <div className={`px-5 lg:px-16`}>
                 <div className="flex justify-start gap-2">
-                  <div className="pb-10">
+                  <NavLink to="/designer" className="pb-10">
                     <button
-                      className={`bg-fff6e4 px-5 p-3 text-md lg:text-lg rounded-full font-extrabold`}
+                      className={`bg-fff6e4 px-5 p-3 text-md lg:text-lg rounded-full font-extrabold transform active:scale-75 transition-transform`}
                     >
                       Design
                     </button>
-                  </div>
-                  <div className="pb-10">
+                  </NavLink>
+                  <NavLink to="/developer" className="pb-10">
                     <button
-                      className={`bg-fff6e4 px-5 p-3 text-md lg:text-lg rounded-full font-extrabold`}
+                      className={`bg-fff6e4 px-5 p-3 text-md lg:text-lg rounded-full font-extrabold transform active:scale-75 transition-transform`}
                     >
                       Web Dev
                     </button>
-                  </div>
+                  </NavLink>
                   <div className="pb-10">
                     <button
-                      className={`bg-fff6e4 px-5 p-3 text-md lg:text-lg rounded-full font-extrabold`}
+                      className={`bg-fff6e4 px-5 p-3 text-md lg:text-lg rounded-full font-extrabold transform active:scale-75 transition-transform`}
                     >
                       ...
                     </button>
@@ -200,7 +196,7 @@ const Portfolio = () => {
                   </p>
                 </div>
               </div>
-              <div className={`flex justify-end px-5 lg:px-10`}>
+              <div className={`flex justify-end px-5 lg:px-10 pt-10`}>
                 <div
                   className={`bg-fff6e4 flex flex-wrap rounded-full space-x-6 p-3`}
                 >
@@ -210,7 +206,7 @@ const Portfolio = () => {
                     <FaArrowRight className={`h-8 w-8`} />
                   </button>
                   <button
-                    className={`bg-black px-7 p-3 text-md lg:text-lg rounded-full font-extrabold`}
+                    className={`bg-black px-7 p-3 text-md lg:text-lg rounded-full font-extrabold transform active:scale-75 transition-transform`}
                   >
                     <p className={`text-fff6e4`}>Découvrir</p>
                   </button>
@@ -238,7 +234,9 @@ const Portfolio = () => {
               <h1 className={`text-fff6e4 text-3xl lg:text-4xl font-extrabold`}>
                 Vous voulez en voir plus ?
               </h1>
-              <p className={`text-fff6e4 text-xl lg:text-2xl font-extrabold italic`}>
+              <p
+                className={`text-fff6e4 text-xl lg:text-2xl font-extrabold italic`}
+              >
                 Découvrez nos portfolios personnels
               </p>
             </div>
