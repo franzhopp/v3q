@@ -69,7 +69,7 @@ const DiscoverWebDeveloper = () => {
       <div className={`WireTitle`}>
         <div className={`BgValuesBlur bg-center bg-no-repeat h-52`}></div>
       </div>
-      <div id="AboutLouisa" className="pt-16"></div>
+      <div id="AboutLouisa" className="pt-10"></div>
       <BackToTopButton />
       <div className="flex justify-center pt-20">
         <p className="text-c22e2e text-center text-3xl lg:text-4xl tracking-tighter font-extrabold">
@@ -87,7 +87,7 @@ const DiscoverWebDeveloper = () => {
             <Copyright />
           </div>
         </div>
-        <div className="bg-f9fefe p-5 mt-20 lg:mt-0 lg:w-96 lg:h-1/2 text-center rounded-2xl shadow-lg rotate-12">
+        <div className="bg-f9fefe p-5 mt-20 lg:mt-0 w-96 lg:w-96 lg:h-1/2 text-center rounded-2xl shadow-lg rotate-12">
           <div className="mt-5">
             <SubDescTitle />
           </div>
@@ -109,7 +109,7 @@ const DiscoverWebDeveloper = () => {
       </div> */}
       <LogoBrand />
       <div
-        className={`flex flex-wrap justify-center pb-32 pt-10 space-x-0 lg:space-x-10`}
+        className={`flex flex-wrap justify-center pb-28 pt-10 space-x-0 lg:space-x-10`}
       >
         <div className={`p-6`}>
           <div className={`flex flex-row space-x-10 list-none`}>
