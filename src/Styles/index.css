@@ -112,6 +112,12 @@ textarea {
     animation: FadeIn 0.5s ease-in-out;
 }
 
+.BgValuesBlur {
+    background-image: url('../assets/Background/BgContactBlur.png');
+    animation: FadeIn 0.5s ease-in-out;
+    border-radius: 0px 0px 154px 0px;
+}
+
 .WireTitle {
     background: rgb(213, 213, 213);
     border-radius: 0px 0px 154px 0px;

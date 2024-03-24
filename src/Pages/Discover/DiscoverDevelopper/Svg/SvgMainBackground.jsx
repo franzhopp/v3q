@@ -1,6 +1,6 @@
 const BaseBackground = () => {
   return (
-    <div className={`relative pt-10`}>
+    <div className={`relative pt-5`}>
       <svg
         className={`relative top-8`}
         width="3000"

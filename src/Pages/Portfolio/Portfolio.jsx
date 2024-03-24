@@ -238,7 +238,7 @@ const Portfolio = () => {
               <h1 className={`text-fff6e4 text-3xl lg:text-4xl font-extrabold`}>
                 Vous voulez en voir plus ?
               </h1>
-              <p className={`text-fff6e4 text-xl lg:text-2xl font-extrabold`}>
+              <p className={`text-fff6e4 text-xl lg:text-2xl font-extrabold italic`}>
                 Découvrez nos portfolios personnels
               </p>
             </div>
