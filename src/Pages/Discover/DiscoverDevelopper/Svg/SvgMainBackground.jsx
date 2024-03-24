@@ -1,7 +1,8 @@
 const BaseBackground = () => {
   return (
-    <div className="pt-20 relative">
+    <div className={`relative pt-10`}>
       <svg
+        className={`relative top-8`}
         width="3000"
         height="263"
         viewBox="0 0 3000 263"

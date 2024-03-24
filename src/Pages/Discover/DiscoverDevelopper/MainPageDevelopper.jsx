@@ -16,7 +16,7 @@ import Copyright from "./Copyright/LocationCopyright.jsx";
 import LinksNetwork from "./Network/LinksNetwork.jsx";
 import Footer from "../../../Components/Footer/MainFooter.jsx";
 import BackToTopButton from "../../../Components/UI/ScrollToTop/BackToTopButton.jsx";
-// import LogoBrand from "./Logo/LogoBrand.jsx";
+import LogoBrand from "./Logo/LogoBrand.jsx";
 // import Frame from "./Svg/SvgFrame.jsx";
 // import Vector from "./Svg/SvgVector.jsx";
 
@@ -42,7 +42,7 @@ const DiscoverWebDeveloper = () => {
     };
   }, []);
   return (
-    <section className="bg-fff6e4">
+    <section className={`bg-fff6e4`}>
       <NavbarDiscoverWebDevelopper />
       <Avatar />
       <BaseBackground />
@@ -107,7 +107,7 @@ const DiscoverWebDeveloper = () => {
           <ImageProjects />
         </div>
       </div>
-      {/* <LogoBrand /> */}
+      <LogoBrand />
       <div
         className={`flex flex-wrap justify-center pb-32 pt-10 space-x-0 lg:space-x-10`}
       >
