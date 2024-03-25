@@ -17,13 +17,15 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import FlagFr from "./FlagTrad/FlagFr.jsx";
 import FlagUk from "./FlagTrad/FlagUk.jsx";
+import { motion } from "framer-motion";
+import ButtonDiscover from "../UI/Button/BtnDiscover.jsx";
 
 const NavbarMobile = () => {
   const { language, changeLanguage } = useLanguage();
   const { isDarkMode } = useTheme();
+  const [isOpen, setIsOpen] = useState(false);
   const [openModel, setOpenModel] = useState();
   const [searchQuery, setSearchQuery] = useState();
-  const [isOpen, setIsOpen] = useState(false);
   const [scrollNavbar, setScrollNavbar] = useState();
   const [isAnimating, setIsAnimating] = useState(false);
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -40,6 +42,7 @@ const NavbarMobile = () => {
   const [isExpanded3, setIsExpanded3] = useState(false);
   const [isExpanded4, setIsExpanded4] = useState(false);
   const [isExpanded5, setIsExpanded5] = useState(false);
+  const [isBlurred, setIsBlurred] = useState(false);
   const changeLanguageHandler = (newLanguage) => {
     changeLanguage(newLanguage);
   };
@@ -54,6 +57,7 @@ const NavbarMobile = () => {
   const toggleMenuMobile = () => {
     setToggleMenu(!toggleMenu);
     setIsOpen(!isOpen);
+    setIsBlurred(!isBlurred);
   };
   const handleAnimateButtonClick = () => {
     setIsAnimating(!isAnimating);
@@ -108,278 +112,319 @@ const NavbarMobile = () => {
     showSousListsTrad,
   ]);
   return (
-    <nav
-      className={`bg-fff6e4 fixed w-full top-0 left-0 shadow-md 2xl:hidden z-50`}
-    >
-      <div className={`flex justify-between items-center h-28 px-5`}>
-        <NavLink to="/" data-aos="fade-left">
-          <img
-            src={ImgBlack}
-            onClick={scrollToTop}
-            alt="Logo navi studio."
-            className={`h-14 w-auto transform active:scale-75 transition-transform`}
-          />
-        </NavLink>
-        <div
-          data-aos="fade-left"
-          className={`cursor-pointer rounded-full mr-1`}
-        >
-          <div className={`flex justify-between items-center`}>
-            <div data-aos="fade-right" className={`pt-2 px-3`}>
-              <DarkLightThemes />
-            </div>
-            <div data-aos="fade-left" onClick={toggleMenuMobile}>
-              {isAnimating ? (
-                <div onClick={handleAnimateButtonClick}>
-                  <ButtonOpen />
-                </div>
-              ) : (
-                <div onClick={handleAnimateButtonClick}>
-                  <ButtonClose />
-                </div>
-              )}
+    <>
+      <nav
+        className={`bg-fff6e4 fixed w-full top-0 left-0 shadow-md 2xl:hidden z-50`}
+      >
+        <div className={`flex justify-between items-center h-28 px-5`}>
+          <NavLink to="/" data-aos="fade-left">
+            <img
+              src={ImgBlack}
+              onClick={scrollToTop}
+              alt="Logo navi studio."
+              className={`h-14 w-auto transform active:scale-75 transition-transform`}
+            />
+          </NavLink>
+          <div
+            data-aos="fade-left"
+            className={`cursor-pointer rounded-full mr-1`}
+          >
+            <div className={`flex justify-between items-center`}>
+              <div data-aos="fade-right" className={`pt-2 px-3`}>
+                <DarkLightThemes />
+              </div>
+              <div data-aos="fade-left" onClick={toggleMenuMobile}>
+                {isAnimating ? (
+                  <div onClick={handleAnimateButtonClick}>
+                    <ButtonOpen />
+                  </div>
+                ) : (
+                  <div onClick={handleAnimateButtonClick}>
+                    <ButtonClose />
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      {/* LINKS */}
-      <ul className={`p-5 FadeInDelayDesktop ${isOpen ? "block" : "hidden"}`}>
-        <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
-          <div className={`flex justify-start px-3`}>
-            <div
-              className={`hover:opacity-80 duration-500 transform active:scale-75 transition-transform ${
-                isDarkMode ? "text-c22e2e" : "text-fff6e4"
-              }`}
-            >
-              <FaSearch
-                className={`h-10 w-5 mr-5 transform active:scale-75 transition-transform`}
-                onClick={() => {
-                  setOpenModel(true);
-                }}
-              />
+        {/* LINKS */}
+        <ul className={`p-5 FadeInDelayDesktop ${isOpen ? "block" : "hidden"}`}>
+          <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
+            <div className={`flex justify-start px-3`}>
+              <div
+                className={`hover:opacity-80 duration-500 transform active:scale-75 transition-transform ${
+                  isDarkMode ? "text-c22e2e" : "text-fff6e4"
+                }`}
+              >
+                <FaSearch
+                  className={`h-10 w-5 mr-5 transform active:scale-75 transition-transform`}
+                  onClick={() => {
+                    setOpenModel(true);
+                  }}
+                />
+              </div>
             </div>
-          </div>
-          {openModel && (
-            <ModalSearch
-              closeModal={setOpenModel}
-              searchQuery={setSearchQuery}
-            />
-          )}
-        </li>
-        <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
-          <NavLink
-            className={`border-c22e2e border-b-2 text-lg block px-3 py-2 rounded-md font-extrabold`}
-          >
-            <button onClick={toggleSousLists1}>
-              <div className={`flex justify-between items-center`}>
-                <div className={`pr-2`}>
-                  {translations[language].navAgence}
-                  {translations[language].navAgency}
-                </div>
-                {isExpanded1 ? <RxCross2 /> : <IoIosArrowDown />}
-              </div>
-            </button>
-            <ul className={`${showSousListsAgence ? "block" : "hidden"} p-2`}>
-              <li>
-                <ul
-                  data-aos="fade-left"
-                  className={`${showSousListsAgence ? "block" : "hidden"} p-2`}
-                >
-                  <li className={`font-extrabold`}>
-                    <NavLink
-                      to="/"
-                      onClick={scrollToTop}
-                      className={`border-c22e2e border-b-2 text-lg block hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold`}
-                    >
-                      {translations[language].navSousHomeFr}
-                      {translations[language].navSousHomeEn}
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      to="/values"
-                      className={`text-lg block hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold`}
-                    >
-                      {translations[language].navSousValuesFr}
-                      {translations[language].navSousValuesEn}
-                    </NavLink>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <NavLink
-                  className={`text-lg block py-2 rounded-md font-extrabold`}
-                >
-                  <button onClick={toggleSousLists2}>
-                    <div className={`flex justify-between items-center`}>
-                      <div className="pr-2">
-                        {translations[language].navSousTeamFr}
-                        {translations[language].navSousTeamEn}
-                      </div>
-                      {isExpanded2 ? <RxCross2 /> : <IoIosArrowDown />}
-                    </div>
-                  </button>
-                  <ul
-                    data-aos="fade-left"
-                    className={`p-2 ${
-                      showSousListsFiveMenu ? "block" : "hidden"
-                    }`}
-                  >
-                    <li className={`font-extrabold`}>
-                      <NavLink
-                        to="/designer"
-                        className={`border-c22e2e border-b-2 text-lg block hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold`}
-                      >
-                        Designer
-                      </NavLink>
-                    </li>
-                    <li className={`font-extrabold`}>
-                      <NavLink
-                        to="/developer"
-                        className={`text-lg block rounded-md hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold`}
-                      >
-                        Web Developer
-                      </NavLink>
-                    </li>
-                  </ul>
-                </NavLink>
-              </li>
-            </ul>
-          </NavLink>
-        </li>
-        <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
-          <NavLink
-            className={`border-c22e2e border-b-2 text-lg block px-3 py-2 rounded-md font-extrabold`}
-          >
-            <button onClick={toggleSousLists3}>
-              <div className={`flex justify-between items-center`}>
-                <div className={`pr-2`}>
-                  {translations[language].navServices}
-                  {translations[language].navServicesEn}
-                </div>
-                {isExpanded3 ? <RxCross2 /> : <IoIosArrowDown />}
-              </div>
-            </button>
-            <ul
-              data-aos="fade-left"
-              className={`${showSousListsMenu ? "block" : "hidden"} p-2`}
+            {openModel && (
+              <ModalSearch
+                closeModal={setOpenModel}
+                searchQuery={setSearchQuery}
+              />
+            )}
+          </li>
+          <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
+            <NavLink
+              className={`border-c22e2e border-b-2 text-lg block px-3 py-2 rounded-md font-extrabold`}
             >
-              <li>
-                <NavLink
-                  to="/services"
-                  className={`border-c22e2e border-b-2 text-lg block hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold`}
-                >
-                  {translations[language].navSousServicesFr}
-                  {translations[language].navSousServicesEn}
-                </NavLink>
-              </li>
-              <NavLink className={`border-c22e2e border-b-2 block`}>
+              <button onClick={toggleSousLists1}>
+                <div className={`flex justify-between items-center`}>
+                  <div className={`pr-2`}>
+                    {translations[language].navAgence}
+                    {translations[language].navAgency}
+                  </div>
+                  {isExpanded1 ? <RxCross2 /> : <IoIosArrowDown />}
+                </div>
+              </button>
+              <ul className={`${showSousListsAgence ? "block" : "hidden"} p-2`}>
                 <li>
-                  <button onClick={toggleSousLists4}>
-                    <div className={`flex justify-between items-center`}>
-                      <div
-                        className={`text-lg block hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold pr-2`}
-                      >
-                        {translations[language].navSousPricingFr}
-                        {translations[language].navSousPricingEn}
-                      </div>
-                      {isExpanded4 ? <RxCross2 /> : <IoIosArrowDown />}
-                    </div>
-                  </button>
                   <ul
                     data-aos="fade-left"
-                    className={` ${showSousListsRate ? "block" : "hidden"} p-2`}
+                    className={`${
+                      showSousListsAgence ? "block" : "hidden"
+                    } p-2`}
                   >
                     <li className={`font-extrabold`}>
                       <NavLink
-                        to="/pricingfr"
+                        to="/"
+                        onClick={scrollToTop}
                         className={`border-c22e2e border-b-2 text-lg block hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold`}
                       >
-                        {translations[language].navSousPricingFr}
-                        {translations[language].navSousPricingEn} FR
+                        {translations[language].navSousHomeFr}
+                        {translations[language].navSousHomeEn}
                       </NavLink>
                     </li>
-                    <li className={`font-extrabold`}>
+                    <li>
                       <NavLink
-                        to="/pricinguk"
-                        className={`text-lg block rounded-md hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold`}
+                        to="/values"
+                        className={`text-lg block hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold`}
                       >
-                        {translations[language].navSousPricingFr}
-                        {translations[language].navSousPricingEn} UK
+                        {translations[language].navSousValuesFr}
+                        {translations[language].navSousValuesEn}
                       </NavLink>
                     </li>
                   </ul>
                 </li>
-              </NavLink>
-              <li>
-                <NavLink
-                  to="/quote"
-                  className={`text-lg block hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold`}
-                >
-                  {translations[language].navSousFreeFr}
-                  {translations[language].navSousFreeEn}
-                </NavLink>
-              </li>
-            </ul>
-          </NavLink>
-        </li>
-        <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
-          <NavLink
-            to="/portfolio"
-            className={`border-c22e2e border-b-2 text-lg block px-3 py-2 rounded-md font-extrabold hover:opacity-80 transition duration-500`}
-          >
-            Portfolio
-          </NavLink>
-        </li>
-        <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
-          <NavLink
-            to="/"
-            onClick={SectionToSectionContact}
-            className={`border-c22e2e border-b-2 text-lg block px-3 py-2 rounded-md font-extrabold hover:opacity-80 transition duration-500`}
-          >
-            Contact
-          </NavLink>
-        </li>
-        <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"} pb-3`}>
-          <div
-            className={`border-c22e2e border-b-2 text-lg block px-1 rounded-md font-extrabold`}
-          >
-            <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
-              <div
-                className={` text-lg block px-3 py-2 rounded-md font-extrabold`}
-              >
-                <button onClick={toggleSousLists5}>
-                  <div className={`flex justify-between items-center`}>
-                    <div className={`pr-2`}>
-                      <span>{language}</span>
-                    </div>
-                    {isExpanded5 ? <RxCross2 /> : <IoIosArrowDown />}
+                <li>
+                  <NavLink
+                    className={`text-lg block py-2 rounded-md font-extrabold`}
+                  >
+                    <button onClick={toggleSousLists2}>
+                      <div className={`flex justify-between items-center`}>
+                        <div className="pr-2">
+                          {translations[language].navSousTeamFr}
+                          {translations[language].navSousTeamEn}
+                        </div>
+                        {isExpanded2 ? <RxCross2 /> : <IoIosArrowDown />}
+                      </div>
+                    </button>
+                    <ul
+                      data-aos="fade-left"
+                      className={`p-2 ${
+                        showSousListsFiveMenu ? "block" : "hidden"
+                      }`}
+                    >
+                      <li className={`font-extrabold`}>
+                        <NavLink
+                          to="/designer"
+                          className={`border-c22e2e border-b-2 text-lg block hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold`}
+                        >
+                          Designer
+                        </NavLink>
+                      </li>
+                      <li className={`font-extrabold`}>
+                        <NavLink
+                          to="/developer"
+                          className={`text-lg block rounded-md hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold`}
+                        >
+                          Web Developer
+                        </NavLink>
+                      </li>
+                    </ul>
+                  </NavLink>
+                </li>
+              </ul>
+            </NavLink>
+          </li>
+          <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
+            <NavLink
+              className={`border-c22e2e border-b-2 text-lg block px-3 py-2 rounded-md font-extrabold`}
+            >
+              <button onClick={toggleSousLists3}>
+                <div className={`flex justify-between items-center`}>
+                  <div className={`pr-2`}>
+                    {translations[language].navServices}
+                    {translations[language].navServicesEn}
                   </div>
-                </button>
-                <ul
-                  data-aos="fade-left"
-                  className={`${showSousListsTrad ? "block" : "hidden"} p-2`}
+                  {isExpanded3 ? <RxCross2 /> : <IoIosArrowDown />}
+                </div>
+              </button>
+              <ul
+                data-aos="fade-left"
+                className={`${showSousListsMenu ? "block" : "hidden"} p-2`}
+              >
+                <li>
+                  <NavLink
+                    to="/services"
+                    className={`border-c22e2e border-b-2 text-lg block hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold`}
+                  >
+                    {translations[language].navSousServicesFr}
+                    {translations[language].navSousServicesEn}
+                  </NavLink>
+                </li>
+                <NavLink className={`border-c22e2e border-b-2 block`}>
+                  <li>
+                    <button onClick={toggleSousLists4}>
+                      <div className={`flex justify-between items-center`}>
+                        <div
+                          className={`text-lg block hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold pr-2`}
+                        >
+                          {translations[language].navSousPricingFr}
+                          {translations[language].navSousPricingEn}
+                        </div>
+                        {isExpanded4 ? <RxCross2 /> : <IoIosArrowDown />}
+                      </div>
+                    </button>
+                    <ul
+                      data-aos="fade-left"
+                      className={` ${
+                        showSousListsRate ? "block" : "hidden"
+                      } p-2`}
+                    >
+                      <li className={`font-extrabold`}>
+                        <NavLink
+                          to="/pricingfr"
+                          className={`border-c22e2e border-b-2 text-lg block hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold`}
+                        >
+                          {translations[language].navSousPricingFr}
+                          {translations[language].navSousPricingEn} FR
+                        </NavLink>
+                      </li>
+                      <li className={`font-extrabold`}>
+                        <NavLink
+                          to="/pricinguk"
+                          className={`text-lg block rounded-md hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold`}
+                        >
+                          {translations[language].navSousPricingFr}
+                          {translations[language].navSousPricingEn} UK
+                        </NavLink>
+                      </li>
+                    </ul>
+                  </li>
+                </NavLink>
+                <li>
+                  <NavLink
+                    to="/quote"
+                    className={`text-lg block hover:opacity-80 transition duration-500 px-4 py-2 font-extrabold`}
+                  >
+                    {translations[language].navSousFreeFr}
+                    {translations[language].navSousFreeEn}
+                  </NavLink>
+                </li>
+              </ul>
+            </NavLink>
+          </li>
+          <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
+            <NavLink
+              to="/portfolio"
+              className={`border-c22e2e border-b-2 text-lg block px-3 py-2 rounded-md font-extrabold hover:opacity-80 transition duration-500`}
+            >
+              Portfolio
+            </NavLink>
+          </li>
+          <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
+            <NavLink
+              to="/"
+              onClick={SectionToSectionContact}
+              className={`border-c22e2e border-b-2 text-lg block px-3 py-2 rounded-md font-extrabold hover:opacity-80 transition duration-500`}
+            >
+              Contact
+            </NavLink>
+          </li>
+          <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"} pb-3`}>
+            <div
+              className={`border-c22e2e border-b-2 text-lg block px-1 rounded-md font-extrabold`}
+            >
+              <li className={`${isDarkMode ? "text-c22e2e" : "text-fff6e4"}`}>
+                <div
+                  className={` text-lg block px-3 py-2 rounded-md font-extrabold`}
                 >
-                  <li
-                    className="border-c22e2e border-b-2 text-c22e2e hover:opacity-80 px-4 py-2"
-                    onClick={() => changeLanguageHandler("FR")}
+                  <button onClick={toggleSousLists5}>
+                    <div className={`flex justify-between items-center`}>
+                      <div className={`pr-2`}>
+                        <span>{language}</span>
+                      </div>
+                      {isExpanded5 ? <RxCross2 /> : <IoIosArrowDown />}
+                    </div>
+                  </button>
+                  <ul
+                    data-aos="fade-left"
+                    className={`${showSousListsTrad ? "block" : "hidden"} p-2`}
                   >
-                    FR <FlagFr />
-                  </li>
-                  <li
-                    className="text-c22e2e hover:opacity-80 px-4 py-2"
-                    onClick={() => changeLanguageHandler("EN")}
-                  >
-                    EN <FlagUk />
-                  </li>
-                </ul>
-              </div>
-            </li>
+                    <li
+                      className="border-c22e2e border-b-2 text-c22e2e hover:opacity-80 px-4 py-2"
+                      onClick={() => changeLanguageHandler("FR")}
+                    >
+                      FR <FlagFr />
+                    </li>
+                    <li
+                      className="text-c22e2e hover:opacity-80 px-4 py-2"
+                      onClick={() => changeLanguageHandler("EN")}
+                    >
+                      EN <FlagUk />
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </div>
+          </li>
+        </ul>
+        <div id="home"></div>
+      </nav>
+      <div className={`WireBannier`}>
+        <div
+          className={`BgHome bg-cover bg-no-repeat 2xl:blur-none ${
+            isBlurred ? "testblur" : ""
+          }`}
+        >
+          <div
+            id="home"
+            className={`flex flex-col justify-center items-center h-screen`}
+          >
+            <h1
+              className={`text-fff6e4 text-5xl lg:text-8xl font-extrabold tracking-tight`}
+            >
+              <motion.span
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.5 }}
+              >
+                {translations[language].titleHomeFr}
+                {translations[language].titleHomeEn}
+              </motion.span>
+            </h1>
+            <div className={`flex justify-center`}>
+              <h2
+                className={`text-fff6e4 tracking-tighter text-xs font-extrabold uppercase mt-8`}
+              >
+                Design | Développement | Marketing digital
+              </h2>
+            </div>
           </div>
-        </li>
-      </ul>
-      <div id="home"></div>
-    </nav>
+          <div className={`flex justify-center relative`}>
+            <ButtonDiscover />
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

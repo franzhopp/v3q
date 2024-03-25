@@ -224,6 +224,11 @@ textarea {
     animation: Swing 2s ease infinite;
 }
 
+.testblur {
+    background-image: linear-gradient(-100deg, #c22e2e 20%, #fff6e4 100%);
+    filter: blur(5px);
+}
+
 @keyframes FadeIn {
     from {
         opacity: 0;

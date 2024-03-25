@@ -46,7 +46,7 @@ const Button = () => {
     //     <FaArrowRight className={`h-10 w-10`} />
     //   </NavLink>
     // </div>
-    <div className={`absolute bottom-36 lg:bottom-10`}>
+    <div className={`absolute bottom-36 lg:bottom-20`}>
       <button>
         <NavLink to="/services">
           <div
