@@ -225,8 +225,8 @@ textarea {
 }
 
 .testblur {
-    background-image: linear-gradient(-100deg, #c22e2e 20%, #fff6e4 100%);
-    filter: blur(5px);
+    backdrop-filter: 0;
+    filter: blur(9px);
 }
 
 @keyframes FadeIn {
